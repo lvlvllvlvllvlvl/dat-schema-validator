@@ -1,3 +1,4 @@
+import * as csv from "csv-stringify";
 import * as fs from "fs/promises";
 import path from "path";
 import { SchemaFile, SchemaTable } from "pathofexile-dat-schema";
@@ -23,8 +24,8 @@ class FileLoader {
     private index: {
       bundlesInfo: Uint8Array;
       filesInfo: Uint8Array;
-    }
-  ) { }
+    },
+  ) {}
 
   static async create(bundleLoader: IBundleLoader) {
     console.log("Loading bundles index...");
@@ -64,7 +65,10 @@ interface IBundleLoader {
 }
 
 class CdnBundleLoader {
-  private constructor(private cacheDir: string, private patchVer: string) { }
+  private constructor(
+    private cacheDir: string,
+    private patchVer: string,
+  ) {}
 
   static async create(cacheRoot: string, patchVer: string) {
     const cacheDir = path.join(cacheRoot, patchVer);
@@ -85,7 +89,7 @@ class CdnBundleLoader {
       await fs.access(cachedFilePath);
       const bundleBin = await fs.readFile(cachedFilePath);
       return bundleBin;
-    } catch { }
+    } catch {}
 
     console.log(`Loading from CDN: ${name} ...`);
 
@@ -102,16 +106,16 @@ class CdnBundleLoader {
 }
 
 const TRANSLATIONS = [
-  { name: "English", path: "Data" },
-  { name: "French", path: "Data/French" },
-  { name: "German", path: "Data/German" },
-  { name: "Japanese", path: "Data/Japanese" },
-  { name: "Korean", path: "Data/Korean" },
-  { name: "Portuguese", path: "Data/Portuguese" },
-  { name: "Russian", path: "Data/Russian" },
-  { name: "Spanish", path: "Data/Spanish" },
-  { name: "Thai", path: "Data/Thai" },
-  { name: "Traditional Chinese", path: "Data/Traditional Chinese" },
+  { name: "English", path: "data" },
+  { name: "French", path: "data/french" },
+  { name: "German", path: "data/german" },
+  { name: "Japanese", path: "data/japanese" },
+  { name: "Korean", path: "data/korean" },
+  { name: "Portuguese", path: "data/portuguese" },
+  { name: "Russian", path: "data/russian" },
+  { name: "Spanish", path: "data/spanish" },
+  { name: "Thai", path: "data/thai" },
+  { name: "Traditional Chinese", path: "data/traditional chinese" },
 ];
 
 const missing = [] as string[];
@@ -119,14 +123,14 @@ const errors = [] as string[];
 
 console.log("Loading schema for dat files");
 const version = await fetch(
-  "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt"
+  "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt",
 ).then((r) => r.text());
 const schema: SchemaFile = await fetch(
-  "https://github.com/poe-tool-dev/dat-schema/releases/download/latest/schema.min.json"
+  "https://github.com/poe-tool-dev/dat-schema/releases/download/latest/schema.min.json",
 ).then((r) => r.json());
 
 const loader = await FileLoader.create(
-  await CdnBundleLoader.create(path.join(process.cwd(), "/.cache"), version)
+  await CdnBundleLoader.create(path.join(process.cwd(), "/.cache"), version),
 );
 
 const wasm = await fs.readFile("node_modules/pathofexile-dat/dist/analysis.wasm");
@@ -147,7 +151,7 @@ for (const tr of includeTranslations) {
 for (const tr of includeTranslations) {
   loader.clearBundleCache();
   for (const table of schema.tables.sort(({ name: a }, { name: b }) =>
-    a.localeCompare(b, undefined, { sensitivity: "base" })
+    a.localeCompare(b, undefined, { sensitivity: "base" }),
   )) {
     try {
       console.log(`validating ${table.name}`);
@@ -168,8 +172,8 @@ for (const tr of includeTranslations) {
             invalid = Math.min(invalid, i);
             errors.push(
               `${table.name}.dat64 column ${i} ${header.name || "<unknown>"}: ${getType(
-                header
-              )} not valid at offset ${header.offset}`
+                header,
+              )} not valid at offset ${header.offset}`,
             );
           } else {
             return table.columns[i].type !== "array";
@@ -186,8 +190,11 @@ for (const tr of includeTranslations) {
 
       try {
         await fs.writeFile(
-          path.join(process.cwd(), tr.path, `${table.name}.json`),
-          JSON.stringify(exportAllRows(headers, datFile), null, 2)
+          path.join(process.cwd(), tr.path, `${table.name}.csv`),
+          csv.stringify(exportAllRows(headers, datFile), {
+            quoted_empty: true,
+            quoted_string: true,
+          }),
         );
       } catch (e) {
         console.error(table.name, headers, e);
@@ -246,20 +253,20 @@ function importHeaders(sch: SchemaTable, datFile: DatFile): NamedHeader[] {
             ? { unsigned: false, size: 4 }
             : // : column.type === 'i64' ? { unsigned: false, size: 8 }
             column.type === "enumrow"
-              ? { unsigned: false, size: 4 }
-              : undefined,
+            ? { unsigned: false, size: 4 }
+            : undefined,
         decimal:
           column.type === "f32"
             ? { size: 4 }
             : // : column.type === 'f64' ? { size: 8 }
-            undefined,
+              undefined,
         string: column.type === "string" ? {} : undefined,
         boolean: column.type === "bool" ? {} : undefined,
         key:
           column.type === "row" || column.type === "foreignrow"
             ? {
-              foreign: column.type === "foreignrow",
-            }
+                foreign: column.type === "foreignrow",
+              }
             : undefined,
       },
     });
