@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1690453614,
+  "createdAt": 1691943801,
   "tables": [
     {
       "name": "AbyssObjects",
@@ -31372,7 +31372,19 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": null,
@@ -31417,13 +31429,39 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "AOFile",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
+          "until": null,
+          "file": ".ao",
+          "files": null
+        },
+        {
+          "name": "Stance",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "BetrayalTargetsKey",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BetrayalTargets"
+          },
           "until": null,
           "file": null,
           "files": null

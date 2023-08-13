@@ -38,8 +38,7 @@
 37,"ReminderTextAscendantShadowNodes","(You can only take one of the three Shadow Ascendancy passives)",""
 38,"ReminderTextIgnoreResistances","(Ignoring Resistances means your Damage cannot be modified in any way by any Resistance stats)",""
 39,"ReminderTextTaunt","(Enemies you Taunt can only target you, and deal 10% less damage to anyone else. Taunt lasts for 3 seconds)",""
-40,"ReminderTextElementalConfluxes","(These are consecutive)
-(Each Conflux means all damage causes that Ailment)",""
+40,"ReminderTextElementalConfluxes","(These are consecutive)\n(Each Conflux means all damage causes that Ailment)",""
 41,"ReminderTextChill","(Chill reduces Enemy Action Speed by up to 30%, depending on the amount of Cold Damage in the hit, for 2 seconds)",""
 42,"ReminderTextChillNonHit","(Chill reduces Enemy Action Speed by 10% for 2 seconds)",""
 43,"ReminderTextChillNonHitNoDuration","(Chill reduces Enemy Action Speed by 10%)",""
@@ -89,8 +88,7 @@
 87,"ReminderTextLucky","(Lucky things are rolled twice and the best result used)",""
 88,"ReminderTextUnlucky","(Unlucky things are rolled twice and the worst result used)",""
 89,"ReminderTextUncappedResist","(Uncapped Resistance is the value Resistance would have if ignoring Maximum Resistance)",""
-90,"ReminderTextKeystoneAvatarOfFire","(50% of Physical, Cold and Lightning Damage Converted to Fire Damage.
-Deal no Non-Fire Damage)",""
+90,"ReminderTextKeystoneAvatarOfFire","(50% of Physical, Cold and Lightning Damage Converted to Fire Damage.\nDeal no Non-Fire Damage)",""
 91,"ReminderTextKeystoneAncestralBond","(You can't deal Damage with Skills yourself.  +1 to maximum number of Summoned Totems)",""
 92,"ReminderTextKeystoneEldritchBattery","(Spend Energy Shield before Mana for Skill Mana Costs. Energy Shield protects Mana instead of Life. 50% less Energy Shield Recharge Rate)",""
 93,"ReminderTextCoveredInAsh","(Being Covered in Ash applies 20% less Movement Speed and 20% increased Fire Damage Taken, for 4 seconds)",""
@@ -115,19 +113,11 @@ Deal no Non-Fire Damage)",""
 112,"ReminderTextMalachaisEndurance","(Malachai's Endurance gives 20% chance to grant an Endurance Charge on Kill)",""
 113,"ReminderTextMalachaisFrenzy","(Malachai's Frenzy gives 20% chance to grant a Frenzy Charge on Kill)",""
 114,"ReminderTextMalachaisPower","(Malachai's Power gives 20% chance to grant a Power Charge on Kill)",""
-115,"ReminderTextHerEmbrace","(Her Embrace grants the following:
-Cannot be Stunned
-123% of Sword Physical Damage gained as Extra Fire Damage
-Unaffected by Burning Ground
-Immune to Freeze, Chill and Ignite
-20% increased Attack, Cast and Movement Speed)",""
+115,"ReminderTextHerEmbrace","(Her Embrace grants the following:\nCannot be Stunned\n123% of Sword Physical Damage gained as Extra Fire Damage\nUnaffected by Burning Ground\nImmune to Freeze, Chill and Ignite\n20% increased Attack, Cast and Movement Speed)",""
 116,"ReminderTextEquippedItems","(Flasks and Jewels are not Equipped)",""
 117,"ReminderTextAbyssalSockets","(Only Abyss Jewels can be Socketed in Abyssal Sockets)",""
 118,"ReminderTextAttributes","(Attributes are Strength, Dexterity, and Intelligence)",""
-119,"ReminderTextRage","(Inherent effects from having Rage are:
-1% increased Attack Damage per 1 Rage
-1% increased Attack Speed per 2 Rage
-1% increased Movement Speed per 5 Rage)",""
+119,"ReminderTextRage","(Inherent effects from having Rage are:\n1% increased Attack Damage per 1 Rage\n1% increased Attack Speed per 2 Rage\n1% increased Movement Speed per 5 Rage)",""
 120,"ReminderTextRageDecay","(You lose 1 Rage every 0.5 seconds if you have not been Hit or gained Rage Recently)",""
 121,"ReminderTextRageMaximum","(Maximum Rage is 50)",""
 122,"ReminderTextMalediction","(Enemies with Malediction deal 10% reduced damage and take 10% increased damage)",""
@@ -153,8 +143,7 @@ Immune to Freeze, Chill and Ignite
 142,"ReminderTextReoccurringSpell","(Spell cast time is 10% longer for each time the Spell Reoccurs)",""
 143,"ReminderTextKeystoneInnerConviction","(3% more Spell Damage per Power Charge. Gain Power Charges instead of Frenzy Charges)",""
 144,"ReminderTextLifeFlasksStillRemovedOnFullLife","(Life flask effects are still removed when unreserved life is filled)",""
-145,"ReminderTextKeystoneWickedWard","(Energy Shield Recharge is not interrupted by Damage if Recharge began Recently
-40% less Energy Shield Recharge Rate)",""
+145,"ReminderTextKeystoneWickedWard","(Energy Shield Recharge is not interrupted by Damage if Recharge began Recently\n40% less Energy Shield Recharge Rate)",""
 146,"ReminderTextConqueredPassives","(Conquered Passive Skills cannot be modified by other Jewels)",""
 147,"ReminderTextWeaponCritChanceOverride","(This is used instead of the Critical Strike Chance of the Weapon)",""
 148,"ReminderTextFireExposure","(Fire Exposure applies -10% to Fire Resistance for 4 seconds)",""
@@ -176,8 +165,7 @@ Immune to Freeze, Chill and Ignite
 164,"ReminderTextExpectedPoisonDamage","(The Expected Damage of Poison is its Damage per second multiplied by its Duration)",""
 165,"ReminderTextPsudoKeystoneTransfigurationOfBody","(Increases and Reductions to Maximum Life also apply to Attack Damage at 30% of their value)",""
 166,"ReminderTextPsudoKeystoneTransfigurationOfMind","(Increases and Reductions to Maximum Mana also apply to Damage at 30% of their value)",""
-167,"ReminderTextPsudoKeystoneTransfigurationOfSoul","(Increases and Reductions to Maximum Energy Shield
-also apply to Spell Damage at 30% of their value)",""
+167,"ReminderTextPsudoKeystoneTransfigurationOfSoul","(Increases and Reductions to Maximum Energy Shield\nalso apply to Spell Damage at 30% of their value)",""
 168,"ReminderTextCorruptionUniqueTooManyImplicits","(Loses all but 1 Implicit Modifier if this Modifier is lost)",""
 169,"ReminderTextPhysReductionNotNegative","(Physical Damage Reduction cannot be negative)",""
 170,"ReminderTextPhantasmalMight","(Phantasmal Might grants Added Spell Physical Damage based on the level of the Phantasm. Multiple instances of Phantasmal Might stack)",""
@@ -194,9 +182,7 @@ also apply to Spell Damage at 30% of their value)",""
 181,"ReminderTextBrandDamage","(Brand Damage is any Damage dealt by Brand Skills or by Skills Triggered by a Brand)",""
 182,"ReminderTextBrandCrits","(Brand Critical Strikes are any Critical Strikes dealt by Brand Skills or by Skills Triggered by a Brand)",""
 183,"ReminderTextPower","(Normal Monsters have 1 Power, Magic Monsters 2, Rare Monsters 10, Unique Monsters 20, and Players 5)",""
-184,"ReminderTextKeystoneGlancingBlows","(Chance to Block Attack Damage is doubled
-Chance to Block Spell Damage is doubled
-You take 65% of Damage from Blocked Hits)",""
+184,"ReminderTextKeystoneGlancingBlows","(Chance to Block Attack Damage is doubled\nChance to Block Spell Damage is doubled\nYou take 65% of Damage from Blocked Hits)",""
 185,"ReminderTextKeystoneSoulTether","(Energy Shield starts at zero. Cannot Recharge or Regenerate Energy Shield. Lose 5% of Energy Shield per second. Life Leech effects are not removed when Unreserved Life is Filled. Life Leech effects Recover Energy Shield instead while on Full Life)",""
 186,"ReminderTextAlchemistsGenius","(Alchemist's Genius increases Flask Charges gained by 20% and effect of Flasks by 10%, for 4 seconds)",""
 187,"ReminderTextKeystoneSacredBastion","(100% chance to Defend with Double Armour. Maximum Damage Reduction for any Damage Type is 50%)",""
@@ -216,13 +202,9 @@ You take 65% of Damage from Blocked Hits)",""
 201,"ReminderTextInherentRageLoss","(This only affects the inherent loss of Rage when you haven't been Hit or gained Rage Recently)",""
 202,"ReminderTextColdAilments","(Cold Ailments are Chilled, Frozen and Brittle)",""
 203,"ReminderTextLightningAilments","(Lightning Ailments are Shocked and Sapped)",""
-204,"ReminderTextKeystoneSecretsOfSuffering","(Cannot Ignite, Chill, Freeze or Shock
-Critical Strikes inflict Scorch, Brittle and Sapped)",""
-205,"ReminderTextKeystoneCorruptedSoul","(50% of Non-Chaos Damage taken bypasses Energy Shield
-Gain 15% of Maximum Life as Extra Maximum Energy Shield)",""
-206,"ReminderTextKeystoneHollowPalmTechnique","(You count as Dual Wielding while you are Unencumbered
-40% more Attack Speed with Melee Skills while you are Unencumbered
-Adds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you are Unencumbered)",""
+204,"ReminderTextKeystoneSecretsOfSuffering","(Cannot Ignite, Chill, Freeze or Shock\nCritical Strikes inflict Scorch, Brittle and Sapped)",""
+205,"ReminderTextKeystoneCorruptedSoul","(50% of Non-Chaos Damage taken bypasses Energy Shield\nGain 15% of Maximum Life as Extra Maximum Energy Shield)",""
+206,"ReminderTextKeystoneHollowPalmTechnique","(You count as Dual Wielding while you are Unencumbered\n40% more Attack Speed with Melee Skills while you are Unencumbered\nAdds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you are Unencumbered)",""
 207,"ReminderTextScorchNonHit","(Scorched Enemies have their Elemental Resistances lowered by 10% for 4 seconds)",""
 208,"ReminderTextBrittleNonHit","(Hits have +2% Critical Strike Chance against Brittle Enemies, for 4 seconds)",""
 209,"ReminderTextSapNonHit","(Sapped Enemies deal 6% less Damage for 4 seconds)",""
@@ -268,9 +250,7 @@ Adds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you 
 249,"ReminderTextAtlasConquerors","(Conquerors are Baran, the Crusader, Veritania, the Redeemer, Al-Hezmin, the Hunter and Drox, the Warlord)",""
 250,"ReminderTextBasicCurrency","(Basic Currency includes any currency that drops from non-league content)",""
 251,"ReminderTextInfluencedItems","(Influenced Items can have modifiers not found anywhere else)",""
-252,"ReminderTextKeystoneDivineFlesh","(All Damage taken bypasses Energy Shield
-50% of Elemental Damage taken as Chaos Damage
-+5% to maximum Chaos Resistance)",""
+252,"ReminderTextKeystoneDivineFlesh","(All Damage taken bypasses Energy Shield\n50% of Elemental Damage taken as Chaos Damage\n+5% to maximum Chaos Resistance)",""
 253,"ReminderTextCruelty","(Cruelty makes all Skills Supported by Cruelty Support deal up to 40% more Damage over Time, based on the amount of Damage in the Hit which grants it)",""
 254,"ReminderTextKeystoneEverlastingSacrifice","(When you reach full Energy Shield, Sacrifice all Energy Shield to gain +5% to all Maximum Resistances for 4 seconds)",""
 255,"ReminderTextShepherdOfSouls","(When you use a Vaal Skill, other Vaal skills gain 50% of the consumed Souls. Deal 30% less Damage with Non-Vaal Skills)",""
@@ -320,8 +300,7 @@ Adds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you 
 299,"ReminderTextSmallAtlasPassives","(Atlas Passive Skills that are not Notable or Keystones are Small)",""
 300,"ReminderTextAtlasExtraContent","(Abysses, Blight Encounters, Breaches, Expedition Encounters, Legion Encounters, Metamorph Encounters, Mirrors of Delirium, Monsters Imprisoned by Essences, Ritual Altars, Rogue Exiles, the Sacred Grove, Shrines, Smuggler's Caches, Strongboxes, and Tormented Spirits are Extra Content)",""
 301,"ReminderTextLifeModifierNoCorpse","(This modifier does not affect things that check the life of corpses)",""
-302,"ReminderTextEmpowerment","(Empowerment increases the damage and damage reduction of an enemy
-as well as increasing experience and item yield when killed)",""
+302,"ReminderTextEmpowerment","(Empowerment increases the damage and damage reduction of an enemy\nas well as increasing experience and item yield when killed)",""
 303,"ReminderTextSapMaximumEffectNoDuration","(Sapped Enemies deal 20% less Damage)",""
 304,"ReminderTextFragment","(Fragments are non-Map items that can be used in a Map Device)",""
 305,"ReminderTextMaximumShockEffect","(Base Maximum Effect of Shock is 50% increased Damage taken)",""
@@ -329,8 +308,7 @@ as well as increasing experience and item yield when killed)",""
 307,"ReminderTextSingularScoutingReports","(Singular Scouting Reports reroll all of Kirac's Atlas Missions, including at least one Unique map)",""
 308,"ReminderTextVaalScoutingReports","(Vaal Scouting Reports reroll all of Kirac's Atlas Missions, corrupting all non-Unique Maps.)",""
 309,"ReminderTextHexTransfer","(Hexes from Auras or Cursed Ground cannot be Transferred)",""
-310,"ReminderTextKeystoneHexMaster","(Your Hexes have infinite Duration
-20% less Effect of your Curses)",""
+310,"ReminderTextKeystoneHexMaster","(Your Hexes have infinite Duration\n20% less Effect of your Curses)",""
 311,"ReminderTextAllElementalDamageConvertedToChaos","(Any Elemental Damage not Converted by other effects is Converted by this)",""
 312,"ReminderTextGateways","(Allocating a Gateway allows you to allocate Atlas Passive Skills from its connected Gateway)",""
 313,"ReminderTextAll3ExposuresNoDuration","(Each Exposure applies -10% to the matching Resistance)",""

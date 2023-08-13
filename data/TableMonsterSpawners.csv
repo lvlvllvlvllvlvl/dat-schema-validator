@@ -2028,16 +2028,8 @@
 2027,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/HeistEmergeOnAlarmFromVent_Reliquary",68,[8385],1,"triggerer.ChangeStance( default ); triggerer.SetStateTo( spawned, 1 ); triggerer.DoAction( EASHeistRobotSkitterbotEmerge );",""
 2028,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/HeistEmergeOnAlarmFromVent_Reliquary",73,[8385],1,"triggerer.ChangeStance( default ); triggerer.SetStateTo( spawned, 1 ); triggerer.DoAction( EASHeistRobotSkitterbotEmerge );",""
 2029,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/HeistEmergeOnAlarmFromVent_Reliquary",78,[8385],1,"triggerer.ChangeStance( default ); triggerer.SetStateTo( spawned, 1 ); triggerer.DoAction( EASHeistRobotSkitterbotEmerge );",""
-2030,"Metadata/Monsters/Thaumaturgy/ThaumaturgyRatSpawner",1,[4720],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2031,"Metadata/Monsters/Thaumaturgy/ThaumaturgyRatSpawnerOffset",1,[4720],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
+2030,"Metadata/Monsters/Thaumaturgy/ThaumaturgyRatSpawner",1,[4720],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2031,"Metadata/Monsters/Thaumaturgy/ThaumaturgyRatSpawnerOffset",1,[4720],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
 2032,"Metadata/Terrain/Endgame/MapFrozenCabins/Objects/BossShipmateSpawner",1,[8231],1,"triggerer.DoAction( Emerge );",""
 2033,"Metadata/Monsters/LeagueHeist/Science/Objects/UndeadPortalSpawner",1,"[8306,8308,8310,8313]",1,"triggerer.ChangeStance( default ); triggerer.DoAction( Emerge ); triggerer.SetStateTo( increase_alert_level, 0 ); ",""
 2034,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/ProjectPortalSpawner",1,"[8318,8303,8323,8328]",3,"triggerer.ChangeStance( default ); triggerer.SetStateTo( spawned, 1 ); triggerer.DoAction( WalkEmerge );",""
@@ -2080,56 +2072,16 @@
 2071,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawner",68,[8336],1,"triggerer.DoAction( WalkEmerge );",""
 2072,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawner",73,[8336],1,"triggerer.DoAction( WalkEmerge );",""
 2073,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawner",78,[8336],1,"triggerer.DoAction( WalkEmerge );",""
-2074,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",1,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2075,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",4,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2076,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",9,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2077,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",13,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2078,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",25,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2079,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",40,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2080,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",55,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2081,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",68,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2082,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",73,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
-2083,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",78,[8336],1,"triggerer.DoAction( WalkEmerge ); 		triggerer.DoRandom(
-		{
-			AddStat( phase_through_objects, 1 );
-			AddStat( suppress_phasing_visual, 1 );
-		}, {} );",""
+2074,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",1,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2075,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",4,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2076,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",9,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2077,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",13,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2078,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",25,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2079,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",40,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2080,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",55,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2081,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",68,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2082,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",73,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
+2083,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/RatSpawnerOffset",78,[8336],1,"triggerer.DoAction( WalkEmerge ); \t\ttriggerer.DoRandom(\r\n\t\t{\r\n\t\t\tAddStat( phase_through_objects, 1 );\r\n\t\t\tAddStat( suppress_phasing_visual, 1 );\r\n\t\t}, {} );",""
 2084,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/HeistEmergeOnAlarmFromDoorway_BanditSewers",1,"[8339,8341,8343,8345,8347,8349,8351,8361,8363,8365,8367]",4,"triggerer.ChangeStance( default ); triggerer.SetStateTo( spawned, 1 ); triggerer.DoAction( WalkEmerge );",""
 2085,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/HeistEmergeOnAlarmFromDoorway_BanditSewers",4,"[8339,8341,8343,8345,8347,8349,8351,8361,8363,8365,8367]",4,"triggerer.ChangeStance( default ); triggerer.SetStateTo( spawned, 1 ); triggerer.DoAction( WalkEmerge );",""
 2086,"Metadata/Terrain/Leagues/Heist/Objects/Spawners/HeistEmergeOnAlarmFromDoorway_BanditSewers",9,"[8339,8341,8343,8345,8347,8349,8351,8361,8363,8365,8367]",4,"triggerer.ChangeStance( default ); triggerer.SetStateTo( spawned, 1 ); triggerer.DoAction( WalkEmerge );",""
