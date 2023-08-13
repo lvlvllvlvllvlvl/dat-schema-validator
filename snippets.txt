@@ -1,0 +1,8 @@
+find all versions that a file's width was changed in:
+jq '.builds | to_entries[] | select(.value.changed.fixed_size["Data/HeistDoodadNPCs.dat64"]) | .value.game_version' changes.json
+
+show files that were added in the same build that a file was changed in:
+jq '.builds | to_entries[] | select(.value.changed.fixed_size["Data/HeistDoodadNPCs.dat64"]) | .value.added | to_entries[] | .key' changes.json
+
+show files whose content changed in the same build, filtered by minimum row count:
+jq '.builds | to_entries[] | select(.value.changed.fixed_size["Data/HeistDoodadNPCs.dat64"]) | .value.changed.row_count | to_entries[] | select(.value[1] > 1254)' changes.json
