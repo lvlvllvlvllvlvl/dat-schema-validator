@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1692385751,
+  "createdAt": 1692733534,
   "tables": [
     {
       "name": "AbyssObjects",
@@ -13570,6 +13570,18 @@
           "until": null,
           "file": null,
           "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
         }
       ],
       "tags": []
@@ -13812,6 +13824,30 @@
           "description": null,
           "array": false,
           "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -38628,7 +38664,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,

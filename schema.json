@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1692385751,
+  "createdAt": 1692733534,
   "tables": [
     {
       "name": "RogueExiles",
@@ -34449,6 +34449,18 @@
           "until": null,
           "file": null,
           "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
         }
       ],
       "tags": []
@@ -34702,7 +34714,7 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "bool",
+          "type": "f32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -34714,7 +34726,7 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "f32",
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -49184,7 +49196,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
