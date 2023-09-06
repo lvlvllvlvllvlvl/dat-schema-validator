@@ -20,9 +20,25 @@ export function exportAllRows(headers: NamedHeader[], datFile: DatFile) {
     .fill(undefined)
     .map((_, idx) =>
       columns.map((col) =>
-        idx === 0 ? (col.name ? col.name : graphqlType(col.header)) : col.data[idx - 1]
+        idx === 0
+          ? col.name
+            ? col.name
+            : graphqlType(col.header)
+          : col.header?.type?.decimal
+          ? formatFloat(col.data[idx - 1])
+          : col.data[idx - 1]
       )
     );
+}
+
+function formatFloat(float?: any) {
+  if (Array.isArray(float)) {
+    return float.map(formatFloat);
+  } else if (isNaN(float)) {
+    return float;
+  } else {
+    return parseFloat(float.toFixed(4));
+  }
 }
 
 export interface NamedHeader extends Header {

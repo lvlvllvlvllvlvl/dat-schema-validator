@@ -15,7 +15,7 @@ import {
   setWasmExports,
   validateHeader,
 } from "pathofexile-dat/dat.js";
-import { ShapeChange, changes } from "./changes.js";
+import { ShapeChange } from "./changes.js";
 import { NamedHeader, exportAllRows, importHeaders } from "./datfile.js";
 import { getPossibleHeaders, guessType } from "./heuristic.js";
 
@@ -202,22 +202,19 @@ for (const tr of includeTranslations) {
           return fs.readFile(csvName);
         })
         .catch(() => null);
+      const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
 
       let invalid = table.columns.length;
       const headers = importHeaders(table, datFile).filter((header, i) => {
         try {
           if (!validateHeader(header, columnStats)) {
             invalid = Math.min(invalid, i);
-            const build = Object.keys(changes.builds).findLast(
-              (build) => changes.builds[build].changed?.fixed_size?.[`Data/${table.name}.dat64`]
-            );
-            const lastChanged = build
-              ? ` Last changed in build ${build} (${changes.builds[build].game_version})`
-              : "";
+            const changeVer = meta?.findLast((v) => v.version !== version)?.version;
+            const change = changeVer ? ` Last changed in version ${changeVer}` : "";
             errors.push(
               `${table.name}.dat64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
                 header
-              )} not valid at offset ${header.offset}.${lastChanged}`
+              )} not valid at offset ${header.offset}.${change}`
             );
           } else {
             return table.columns[i].type !== "array";
@@ -232,24 +229,23 @@ for (const tr of includeTranslations) {
         table.columns = table.columns.slice(0, invalid);
       }
 
-      const possibles = await getPossibleHeaders(
-        headers.slice(0, invalid),
-        columnStats,
-        datFile,
-        datFile.rowLength
-      );
+      const possible = (
+        await getPossibleHeaders(headers.slice(0, invalid), columnStats, datFile, datFile.rowLength)
+      )[0];
 
-      possibles.slice(0, 8).forEach((possible, i) => {
+      if (!possible) {
+        console.log("Could not guess schema", table.name);
+      } else if (possible.length) {
         const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFile) : p));
         promises.push(
           fs.writeFile(
-            path.join("heuristics/schema/json", `${table.name}${i + 1}.json`),
+            path.join("heuristics/schema/json", `${table.name}.json`),
             JSON.stringify(hdr, undefined, 2)
           )
         );
         promises.push(
           fs.writeFile(
-            path.join("heuristics/csv", tr.path.replace("data", "."), `${table.name}${i + 1}.csv`),
+            path.join("heuristics/csv", tr.path.replace("data", "."), `${table.name}.csv`),
             csv.stringify(exportAllRows(hdr, datFile), {
               cast: {
                 string: (v) => JSON.stringify(v).slice(1, -1),
@@ -259,7 +255,7 @@ for (const tr of includeTranslations) {
             })
           )
         );
-      });
+      }
 
       const shape: ShapeChange = {
         version,
@@ -269,7 +265,6 @@ for (const tr of includeTranslations) {
         var_offset: datFile.dataFixed.length + datFile.memsize / 2,
         var_size: datFile.dataVariable.length,
       };
-      const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
       var latest = meta.length === 0 ? null : meta[meta.length - 1];
       const metaName = table.name + ".csv";
       metas.add(metaName);

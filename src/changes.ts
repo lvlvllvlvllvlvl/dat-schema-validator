@@ -19,6 +19,7 @@ interface BuildChanges extends Build {
   removed?: { [filename: string]: Shape };
   changed?: { [prop in keyof Shape]?: { [filename: string]: [number, number] } };
 }
+// https://github.com/pale-court/dat-meta
 const { builds }: { builds: { [id: string]: Build } } = await fs
   .readFile("dat-meta/global.json")
   .then((buf) => JSON.parse(buf.toString()));
