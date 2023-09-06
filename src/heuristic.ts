@@ -14,15 +14,15 @@ const sleep = () => new Promise((resolve) => setImmediate(resolve));
 export const headerTypes = {
   "[string]": { array: true, string: {} },
   "[rid]": { array: true, key: { foreign: true } },
-  "[row]": { array: true, key: { foreign: false } },
   "[i32]": { array: true, integer: { unsigned: false, size: 4 } },
   "[f32]": { array: true, decimal: { size: 4 } },
+  "[row]": { array: true, key: { foreign: false } },
   string: { array: false, string: {} },
   rid: { array: false, key: { foreign: true } },
-  row: { array: false, key: { foreign: false } },
   i32: { array: false, integer: { unsigned: false, size: 4 } },
   f32: { array: false, decimal: { size: 4 } },
-  bool: { boolean: true },
+  row: { array: false, key: { foreign: false } },
+  bool: { array: false, boolean: true },
 } as const;
 
 export function typeEq(l: Header["type"], r: Header["type"]) {
@@ -69,7 +69,7 @@ export async function getPossibleHeaders(
   maxOffset: number,
   recursive = false
 ): Promise<PossibleHeaders[]> {
-  const len = (header: Pick<Header, "type">) => getHeaderLength(header, datFile);
+  const len = (header: NamedHeader) => header.size || getHeaderLength(header, datFile);
   const last = headers[headers.length - 1];
   const offset = last
     ? Array.isArray(last)
@@ -85,28 +85,13 @@ export async function getPossibleHeaders(
     return [];
   }
 
-  const valid = (header: Header) => validateHeader(header, stats);
-  var possibleTypes = Object.values(headerTypes)
-    .map((type) => ({ type, offset }))
-    .filter(valid)
-    .reduce((arr, poss) => {
-      const l = len(poss);
-      const existing = arr.find((v) => len(v[0]) === l);
-      if (existing) {
-        existing.push(poss);
-      } else {
-        arr.push([poss]);
-      }
-      return arr;
-    }, [] as Header[][])
-    .filter((exists) => exists && exists.length)
-    .map((arr) => (arr.length === 1 ? arr[0] : arr));
-  if (!possibleTypes.length) {
+  var possibleHeaders = possibleColumnHeaders(offset, stats, datFile, Object.values(headerTypes));
+  if (!possibleHeaders.length) {
     return [];
   }
 
   var exact = [] as PossibleHeaders[];
-  for (const type of possibleTypes) {
+  for (const type of possibleHeaders) {
     const possibles = await getPossibleHeaders(
       headers.concat([type]),
       stats,
@@ -131,6 +116,32 @@ export async function getPossibleHeaders(
   return [];
 }
 
+export function possibleColumnHeaders(
+  offset: number,
+  stats: ColumnStats[],
+  datFile: DatFile,
+  types: HeaderType[]
+) {
+  const valid = (header: Header) => validateHeader(header, stats);
+  var possibleHeaders = types
+    .map((type) => ({ type, offset } as NamedHeader))
+    .filter(valid)
+    .reduce((result, header) => {
+      const size = header.size || getHeaderLength(header, datFile);
+      header.size = size;
+      const existing = result.find((v) => v[0].size === size);
+      if (existing) {
+        existing.push(header);
+      } else {
+        result.push([header]);
+      }
+      return result;
+    }, [] as NamedHeader[][])
+    .filter((exists) => exists && exists.length)
+    .map((arr) => (arr.length === 1 ? arr[0] : arr));
+  return possibleHeaders;
+}
+
 export function guess(possibles: PossibleHeaders, datFile: DatFile): NamedHeader[] {
   return possibles.map((p) => (Array.isArray(p) ? guessType(p, datFile) : p));
 }
@@ -144,12 +155,29 @@ function assertEq(l: number, r: number, msg: any) {
 }
 
 export function guessType(possibles: NamedHeader[], datFile: DatFile): NamedHeader {
-  return (
+  let header =
     possibles.find((p) => p.type.string) ||
     looksLikeFloat(possibles, datFile) ||
     possibles.find((p) => !p.type.decimal) ||
-    possibles[0]
-  );
+    possibles[0];
+
+  let hasValue = readColumn(header, datFile).find((v) => (Array.isArray(v) ? v.length : v));
+  if (!hasValue && header.type.string) {
+    header =
+      possibles.find((p) => !p.type.string) ||
+      looksLikeFloat(possibles, datFile) ||
+      possibles.find((p) => !p.type.decimal && !p.type.string) ||
+      possibles[0];
+  }
+  hasValue = readColumn(header, datFile).find((v) => (Array.isArray(v) ? v.length : v));
+  if (!hasValue) {
+    header.noData = true;
+  }
+  if (header.type.array && !header.type.string) {
+    header.unknownArray = true;
+  }
+
+  return header;
 }
 
 const SMALLEST_NORMAL_F32 = Math.pow(2, -126);
