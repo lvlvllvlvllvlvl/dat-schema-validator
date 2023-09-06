@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "CompletionsRequired",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AchievementsKey",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Achievements"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 45,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 46,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 47,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

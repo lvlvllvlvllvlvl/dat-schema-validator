@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BaseItemType",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "PosX",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "PosY",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Width",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Height",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 53,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BaseItemType",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "ButtonFile",
+    "offset": 25,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 33,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "HeistJobsKey",
+    "offset": 37,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistJobs"
+      }
+    }
+  },
+  {
+    "name": "Columns",
+    "offset": 53,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Rows",
+    "offset": 57,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 61,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 65,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 69,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 73,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ItemClass",
+    "offset": 77,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    }
+  }
+]

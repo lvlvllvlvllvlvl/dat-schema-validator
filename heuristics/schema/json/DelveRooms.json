@@ -1,0 +1,32 @@
+[
+  {
+    "name": "DelveBiomesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "DelveBiomes"
+      }
+    }
+  },
+  {
+    "name": "DelveFeaturesKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "DelveFeatures"
+      }
+    }
+  },
+  {
+    "name": "ARMFile",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

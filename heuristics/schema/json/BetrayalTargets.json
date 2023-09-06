@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BetrayalRanksKey",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalRanks"
+      }
+    }
+  },
+  {
+    "name": "MonsterVarietiesKey",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "BetrayalJobsKey",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalJobs"
+      }
+    }
+  },
+  {
+    "name": "Art",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "ItemClasses",
+    "offset": 65,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    }
+  },
+  {
+    "name": "FullName",
+    "offset": 81,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Safehouse_ARMFile",
+    "offset": 89,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ShortName",
+    "offset": 97,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 105,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "SafehouseLeader_AcheivementItemsKey",
+    "offset": 109,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "Level3_AchievementItemsKey",
+    "offset": 125,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 141,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 145,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 149,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 153,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "ScriptArgument",
+    "offset": 169,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

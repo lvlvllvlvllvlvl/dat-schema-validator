@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Text",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SoundFile",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 24
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 32
+  }
+]

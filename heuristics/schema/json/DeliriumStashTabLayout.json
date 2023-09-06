@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BaseItemType",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "X",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Y",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "IntId",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Width",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Height",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

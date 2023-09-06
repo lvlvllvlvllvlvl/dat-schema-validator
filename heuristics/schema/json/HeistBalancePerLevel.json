@@ -1,0 +1,223 @@
+[
+  {
+    "name": "Level",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "HeistValueScalingKey1",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistValueScaling"
+      }
+    }
+  },
+  {
+    "name": "HeistValueScalingKey2",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistValueScaling"
+      }
+    }
+  },
+  {
+    "name": "HeistValueScalingKey3",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistValueScaling"
+      }
+    }
+  },
+  {
+    "name": "HeistValueScalingKey4",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistValueScaling"
+      }
+    }
+  },
+  {
+    "name": "HeistValueScalingKey5",
+    "offset": 92,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistValueScaling"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 112,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 120,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "HeistValueScalingKey6",
+    "offset": 124,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistValueScaling"
+      }
+    }
+  },
+  {
+    "name": "HeistValueScalingKey7",
+    "offset": 140,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistValueScaling"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 156,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 160,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 164,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "name": "QuestFlag",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    }
+  },
+  {
+    "name": "CompletionString",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  },
+  {
+    "name": "Boss",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

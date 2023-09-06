@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ChestsKey",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Chests"
+      }
+    }
+  },
+  {
+    "name": "SpawnWeight",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MinLabyrinthTier",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MaxLabyrinthTier",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 36
+  }
+]

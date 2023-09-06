@@ -1,0 +1,46 @@
+[
+  {
+    "name": "RacesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Races"
+      }
+    }
+  },
+  {
+    "name": "Index",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "StartUNIXTime",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "EndUNIXTime",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

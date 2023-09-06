@@ -1,0 +1,827 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HASH16",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ModTypeKey",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ModType"
+      }
+    }
+  },
+  {
+    "name": "Level",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "StatsKey1",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "StatsKey2",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "StatsKey3",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "StatsKey4",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "Domain",
+    "offset": 96,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "GenerationType",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Families",
+    "offset": 112,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ModFamily"
+      }
+    }
+  },
+  {
+    "name": "Stat1Min",
+    "offset": 128,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat1Max",
+    "offset": 132,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat2Min",
+    "offset": 136,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat2Max",
+    "offset": 140,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat3Min",
+    "offset": 144,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat3Max",
+    "offset": 148,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat4Min",
+    "offset": 152,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat4Max",
+    "offset": 156,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "SpawnWeight_TagsKeys",
+    "offset": 160,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "SpawnWeight_Values",
+    "offset": 176,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "TagsKeys",
+    "offset": 192,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "GrantedEffectsPerLevelKeys",
+    "offset": 208,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffectsPerLevel"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 224,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MonsterMetadata",
+    "offset": 240,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MonsterKillAchievements",
+    "offset": 248,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "ChestModType",
+    "offset": 264,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ModType"
+      }
+    }
+  },
+  {
+    "name": "Stat5Min",
+    "offset": 280,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat5Max",
+    "offset": 284,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "StatsKey5",
+    "offset": 288,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "FullAreaClear_AchievementItemsKey",
+    "offset": 304,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "AchievementItemsKey",
+    "offset": 320,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "GenerationWeight_TagsKeys",
+    "offset": 336,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "GenerationWeight_Values",
+    "offset": 352,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ModifyMapsAchievements",
+    "offset": 368,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "IsEssenceOnlyModifier",
+    "offset": 384,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Stat6Min",
+    "offset": 385,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Stat6Max",
+    "offset": 389,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "StatsKey6",
+    "offset": 393,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "MaxLevel",
+    "offset": 409,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 413,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CraftingItemClassRestrictions",
+    "offset": 414,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    }
+  },
+  {
+    "name": "MonsterOnDeath",
+    "offset": 430,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 438,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 442,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffectsPerLevel"
+      }
+    }
+  },
+  {
+    "name": "Heist_SubStatValue1",
+    "offset": 458,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Heist_SubStatValue2",
+    "offset": 462,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Heist_StatsKey0",
+    "offset": 466,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "Heist_StatsKey1",
+    "offset": 482,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "Heist_AddStatValue1",
+    "offset": 498,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Heist_AddStatValue2",
+    "offset": 502,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "InfluenceTypes",
+    "offset": 506,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ImplicitTagsKeys",
+    "offset": 510,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 526,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 527,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 531,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 535,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 539,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 543,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 547,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 551,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 555,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 559,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 563,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 567,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 571,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 575,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 579,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 583,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 587,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "BuffTemplate",
+    "offset": 591,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BuffTemplates"
+      }
+    }
+  },
+  {
+    "name": "ArchnemesisMinionMod",
+    "offset": 607,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "HASH32",
+    "offset": 615,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 619,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 635,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 639,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffectsPerLevel"
+      }
+    }
+  }
+]

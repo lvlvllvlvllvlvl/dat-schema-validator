@@ -1,0 +1,223 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "AddedModsKeys",
+    "offset": 16,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "NegativeWeight_TagsKeys",
+    "offset": 32,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "NegativeWeight_Values",
+    "offset": 48,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ForcedAddModsKeys",
+    "offset": 64,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "ForbiddenDelveCraftingTagsKeys",
+    "offset": 80,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "DelveCraftingTags"
+      }
+    }
+  },
+  {
+    "name": "AllowedDelveCraftingTagsKeys",
+    "offset": 96,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "DelveCraftingTags"
+      }
+    }
+  },
+  {
+    "name": "CanMirrorItem",
+    "offset": 112,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CorruptedEssenceChance",
+    "offset": 113,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "CanImproveQuality",
+    "offset": 117,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanRollEnchant",
+    "offset": 118,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "HasLuckyRolls",
+    "offset": 119,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "SellPrice_ModsKeys",
+    "offset": 120,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "CanRollWhiteSockets",
+    "offset": 136,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Weight_TagsKeys",
+    "offset": 137,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "Weight_Values",
+    "offset": 153,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "DelveCraftingModifierDescriptionsKeys",
+    "offset": 169,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "DelveCraftingModifierDescriptions"
+      }
+    }
+  },
+  {
+    "name": "BlockedDelveCraftingModifierDescriptionsKeys",
+    "offset": 185,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "DelveCraftingModifierDescriptions"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 201,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 202,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 203,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 219,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

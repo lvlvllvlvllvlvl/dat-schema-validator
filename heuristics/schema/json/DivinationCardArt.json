@@ -1,0 +1,32 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "VirtualFile",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

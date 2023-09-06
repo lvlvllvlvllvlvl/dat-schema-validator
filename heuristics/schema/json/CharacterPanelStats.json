@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Text",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "StatsKeys1",
+    "offset": 16,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "CharacterPanelDescriptionModesKey",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CharacterPanelDescriptionModes"
+      }
+    }
+  },
+  {
+    "name": "StatsKeys2",
+    "offset": 48,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "StatsKeys3",
+    "offset": 64,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "CharacterPanelTabsKey",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CharacterPanelTabs"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 96,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 97,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 113,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MasteryEffects",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "PassiveSkillMasteryEffects"
+      }
+    }
+  },
+  {
+    "name": "InactiveIcon",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ActiveIcon",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ActiveEffectImage",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "SoundEffect",
+    "offset": 49,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "SoundEffects"
+      }
+    }
+  },
+  {
+    "name": "MasteryCountStat",
+    "offset": 65,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  }
+]

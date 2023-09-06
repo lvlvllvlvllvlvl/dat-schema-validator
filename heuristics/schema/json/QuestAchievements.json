@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "QuestStates",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AchievementItems",
+    "offset": 40,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "NPCs",
+    "offset": 56,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "NPCs"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "name": "LabyrinthSectionKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "LabyrinthSection"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "LabyrinthSectionLayoutKeys",
+    "offset": 20,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": false,
+        "name": "LabyrinthSectionLayout"
+      }
+    }
+  },
+  {
+    "name": "LabyrinthSecretsKey0",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "LabyrinthSecrets"
+      }
+    }
+  },
+  {
+    "name": "LabyrinthSecretsKey1",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "LabyrinthSecrets"
+      }
+    }
+  },
+  {
+    "name": "LabyrinthAreasKey",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "LabyrinthAreas"
+      }
+    }
+  },
+  {
+    "name": "Float0",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Float1",
+    "offset": 88,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "LabyrinthNodeOverridesKeys",
+    "offset": 92,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "LabyrinthNodeOverrides"
+      }
+    }
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Server",
+    "offset": 16,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsEnabled",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Server2",
+    "offset": 33,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "ShortName",
+    "offset": 49,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 57,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": false,
+        "name": "Realms"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 73,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "Realms"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 81,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "IsGammaRealm",
+    "offset": 85,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "SpeedtestUrl",
+    "offset": 86,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Metadata",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "NPCMasterKey",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCMaster"
+      }
+    }
+  },
+  {
+    "name": "ShortName",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "NPCAudios1",
+    "offset": 68,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "NPCAudio"
+      }
+    }
+  },
+  {
+    "name": "NPCAudios2",
+    "offset": 84,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "NPCAudio"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 104,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "NPCs"
+      }
+    }
+  },
+  {
+    "name": "Portrait",
+    "offset": 112,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCPortraits"
+      }
+    }
+  },
+  {
+    "name": "DialogueStyle",
+    "offset": 128,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCDialogueStyles"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 144,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 145,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "Gender",
+    "offset": 161,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "type": {
+      "boolean": true
+    },
+    "offset": 169
+  }
+]

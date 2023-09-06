@@ -1,0 +1,187 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SpawnWeight",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "LegionBalancePerLevelKey",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "LegionBalancePerLevel"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "BuffVisualsKey",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BuffVisuals"
+      }
+    }
+  },
+  {
+    "name": "MiscAnimatedKey1",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "MiscAnimatedKey2",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "MiscAnimatedKey3",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "AchievementItemsKeys1",
+    "offset": 100,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "MiscAnimatedKey4",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "MiscAnimatedKey5",
+    "offset": 132,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 148,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 152,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AchievementItemsKeys2",
+    "offset": 156,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "StatsKey",
+    "offset": 172,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "Shard",
+    "offset": 188,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "RewardJewelArt",
+    "offset": 196,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

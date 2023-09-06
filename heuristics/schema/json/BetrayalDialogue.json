@@ -1,0 +1,168 @@
+[
+  {
+    "name": "",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "BetrayalTargetsKey",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalTargets"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 76,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "BetrayalUpgradesKey",
+    "offset": 92,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalUpgrades"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 109,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 125,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 141,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 142,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "NPCTextAudioKey",
+    "offset": 158,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 174,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

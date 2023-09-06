@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tribe",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AncestralTrialTribes"
+      }
+    }
+  },
+  {
+    "name": "Image",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "TotemImage",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HASH16",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Position",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AncestralTrialUnitPositions"
+      }
+    }
+  }
+]

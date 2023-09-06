@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Mod",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "Icon",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Type",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WeaponPassiveSkillTypes"
+      }
+    }
+  },
+  {
+    "name": "Achievements",
+    "offset": 84,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  }
+]

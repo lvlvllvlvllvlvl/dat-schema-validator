@@ -1,0 +1,78 @@
+[
+  {
+    "name": "ItemVisualIdentityKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualIdentity"
+      }
+    }
+  },
+  {
+    "name": "WorldAreasKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "WordsKey",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Words"
+      }
+    }
+  },
+  {
+    "name": "FlavourTextKey",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "FlavourText"
+      }
+    }
+  },
+  {
+    "name": "HasGuildCharacter",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "GuildCharacter",
+    "offset": 65,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 73,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsDropDisabled",
+    "offset": 81,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SkillGemInfoKey1",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "SkillGemInfo"
+      }
+    }
+  },
+  {
+    "name": "SkillGemInfoKey2",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "SkillGemInfo"
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "International_BK2File",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SkillGemsKey",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "SkillGems"
+      }
+    }
+  },
+  {
+    "name": "China_BK2File",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "CharactersKey",
+    "offset": 80,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Characters"
+      }
+    }
+  }
+]

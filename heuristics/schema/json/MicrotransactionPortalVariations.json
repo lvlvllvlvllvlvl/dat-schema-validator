@@ -1,0 +1,122 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "Id",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AOFile",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MapAOFile",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MiscObject",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscObjects"
+      }
+    }
+  },
+  {
+    "name": "PortalEffect",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "PortalEffectLarge",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 84
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 88
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 92
+  }
+]

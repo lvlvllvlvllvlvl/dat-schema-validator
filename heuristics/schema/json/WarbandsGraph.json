@@ -1,0 +1,24 @@
+[
+  {
+    "name": "WorldAreasKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "Connections",
+    "offset": 16,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

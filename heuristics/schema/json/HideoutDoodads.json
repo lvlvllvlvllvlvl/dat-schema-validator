@@ -1,0 +1,140 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "Variation_AOFiles",
+    "offset": 16,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsNonMasterDoodad",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "InheritsFrom",
+    "offset": 33,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 41,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IsCraftingBench",
+    "offset": 42,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Tags",
+    "offset": 43,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "HideoutDoodadTags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 59,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "Category",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HideoutDoodadCategory"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 92,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 96,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 97,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 113,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 114,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

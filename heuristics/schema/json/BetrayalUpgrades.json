@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ModsKey",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "ArtFile",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BetrayalUpgradeSlotsKey",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 52,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ItemVisualIdentityKey0",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualIdentity"
+      }
+    }
+  },
+  {
+    "name": "ItemVisualIdentityKey1",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualIdentity"
+      }
+    }
+  },
+  {
+    "name": "GrantedEffectsKey",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffects"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ItemClassesKey",
+    "offset": 120,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    }
+  }
+]

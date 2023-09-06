@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Monster",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "Spectre",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

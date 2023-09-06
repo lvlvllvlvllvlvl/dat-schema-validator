@@ -1,0 +1,121 @@
+[
+  {
+    "name": "HeistAreasKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistAreas"
+      }
+    }
+  },
+  {
+    "name": "Id",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ARMFile",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HeistJobsKey1",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistJobs"
+      }
+    }
+  },
+  {
+    "name": "HeistJobsKey2",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistJobs"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 85,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

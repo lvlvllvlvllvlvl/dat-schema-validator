@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "CharactersKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Characters"
+      }
+    }
+  },
+  {
+    "name": "Level",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "PassiveSkillsKeys",
+    "offset": 36,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "PassiveSkills"
+      }
+    }
+  },
+  {
+    "name": "CharacterStartStateSetKey",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CharacterStartStateSet"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "CharacterStartQuestStateKeys",
+    "offset": 84,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterStartQuestState"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "InfoText",
+    "offset": 101,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 109,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

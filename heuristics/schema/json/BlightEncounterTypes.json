@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Icon",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsGeneric",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Weight",
+    "offset": 17,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

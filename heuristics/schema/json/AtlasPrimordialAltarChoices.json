@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Mod",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "Type",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AtlasPrimordialAltarChoiceTypes"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

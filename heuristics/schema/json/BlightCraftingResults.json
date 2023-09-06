@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ModsKey",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "PassiveSkillsKey",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "PassiveSkills"
+      }
+    }
+  }
+]

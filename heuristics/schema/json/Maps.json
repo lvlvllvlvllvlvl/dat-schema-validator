@@ -1,0 +1,185 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "Regular_WorldAreasKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "Unique_WorldAreasKey",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "MapUpgrade_BaseItemTypesKey",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "MonsterPacksKeys",
+    "offset": 64,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterPacks"
+      }
+    }
+  },
+  {
+    "name": "AchievementItem",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "Regular_GuildCharacter",
+    "offset": 96,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Unique_GuildCharacter",
+    "offset": 104,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier",
+    "offset": 112,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Shaped_Base_MapsKey",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "Maps"
+      }
+    }
+  },
+  {
+    "name": "Shaped_AreaLevel",
+    "offset": 124,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "UpgradedFrom_MapsKey",
+    "offset": 128,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "Maps"
+      }
+    }
+  },
+  {
+    "name": "MapsKey2",
+    "offset": 136,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "Maps"
+      }
+    }
+  },
+  {
+    "name": "MapsKey3",
+    "offset": 144,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "Maps"
+      }
+    }
+  },
+  {
+    "name": "MapSeriesKey",
+    "offset": 152,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 156,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 157,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 158,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

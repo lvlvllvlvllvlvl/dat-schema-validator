@@ -1,0 +1,260 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MonsterVarietiesKeys",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "AchievementItemsKeys",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "PlayerConditionsKeys",
+    "offset": 41,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "PlayerConditions"
+      }
+    }
+  },
+  {
+    "name": "MonsterDeathConditionsKeys",
+    "offset": 57,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterDeathConditions"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 73,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 89,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 93,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 97,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 98,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 99
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 115
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 131
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 147
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 163
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 179
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 183
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 199
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 203
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 207
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 211
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 215
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 219
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 223
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 227
+  },
+  {
+    "type": {
+      "boolean": true
+    },
+    "offset": 231
+  },
+  {
+    "type": {
+      "boolean": true
+    },
+    "offset": 232
+  }
+]

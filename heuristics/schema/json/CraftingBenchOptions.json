@@ -1,0 +1,405 @@
+[
+  {
+    "name": "HideoutNPCsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HideoutNPCs"
+      }
+    }
+  },
+  {
+    "name": "Order",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AddMod",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "Cost_BaseItemTypes",
+    "offset": 36,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "Cost_Values",
+    "offset": 52,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "RequiredLevel",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "CraftingBenchCustomAction",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ItemClasses",
+    "offset": 84,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    }
+  },
+  {
+    "name": "Links",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "SocketColours",
+    "offset": 104,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Sockets",
+    "offset": 112,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ItemQuantity",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 120,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 136,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsDisabled",
+    "offset": 144,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IsAreaOption",
+    "offset": 145,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "RecipeIds",
+    "offset": 146,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Tier",
+    "offset": 162,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "CraftingItemClassCategories",
+    "offset": 166,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CraftingItemClassCategories"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 182,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "UnlockCategory",
+    "offset": 186,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CraftingBenchUnlockCategories"
+      }
+    }
+  },
+  {
+    "name": "UnveilsRequired",
+    "offset": 202,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "UnveilsRequired2",
+    "offset": 206,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 210,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 226,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 242,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 246,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 250,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "AddEnchantment",
+    "offset": 266,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "SortCategory",
+    "offset": 282,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CraftingBenchSortCategories"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 298,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 314,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 315,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 319,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 335,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 351,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "MapDevice",
+    "offset": 367,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 368,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

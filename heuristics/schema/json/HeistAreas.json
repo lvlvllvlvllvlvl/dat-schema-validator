@@ -1,0 +1,196 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "WorldAreasKeys",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "EnvironmentsKey1",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Environments"
+      }
+    }
+  },
+  {
+    "name": "EnvironmentsKey2",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Environments"
+      }
+    }
+  },
+  {
+    "name": "HeistJobsKeys",
+    "offset": 60,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "HeistJobs"
+      }
+    }
+  },
+  {
+    "name": "Contract_BaseItemTypesKey",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "Blueprint_BaseItemTypesKey",
+    "offset": 92,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "DGRFile",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 120,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 124,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 125,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Blueprint_DDSFile",
+    "offset": 126,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Achievements1",
+    "offset": 134,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "Achievements2",
+    "offset": 150,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "Reward",
+    "offset": 166,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  },
+  {
+    "name": "Achievements3",
+    "offset": 182,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "RewardHardmode",
+    "offset": 198,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  }
+]

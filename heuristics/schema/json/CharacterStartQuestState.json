@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "QuestKeys",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Quest"
+      }
+    }
+  },
+  {
+    "name": "QuestStates",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "MapPinsKeys",
+    "offset": 56,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MapPins"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 72,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 88,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

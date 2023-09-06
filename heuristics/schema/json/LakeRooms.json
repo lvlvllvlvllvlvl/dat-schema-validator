@@ -1,0 +1,190 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ARMFiles",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "Script",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Stats",
+    "offset": 48,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "StatsValues",
+    "offset": 64,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 88,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Type",
+    "offset": 96,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "WorldArea",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "Icon",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 124,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MinLevel",
+    "offset": 128,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 132,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 148,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "ExtraStats",
+    "offset": 149,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "ExtraStatsValues",
+    "offset": 165,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ReminderText",
+    "offset": 181,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "TextAudio",
+    "offset": 189,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 205
+  },
+  {
+    "type": {
+      "boolean": true
+    },
+    "offset": 221
+  }
+]

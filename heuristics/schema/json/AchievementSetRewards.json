@@ -1,0 +1,78 @@
+[
+  {
+    "name": "SetId",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AchievementsRequired",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Rewards",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "TotemPieceEveryNAchievements",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Message",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "NotificationIcon",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HideoutName",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Id",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

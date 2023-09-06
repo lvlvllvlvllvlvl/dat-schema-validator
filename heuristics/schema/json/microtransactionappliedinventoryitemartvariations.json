@@ -1,0 +1,44 @@
+[
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 0
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 32
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 48
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 64
+  }
+]

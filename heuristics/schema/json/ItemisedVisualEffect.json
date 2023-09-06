@@ -1,0 +1,180 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "ItemVisualEffectKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualEffect"
+      }
+    }
+  },
+  {
+    "name": "ItemVisualIdentityKey1",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualIdentity"
+      }
+    }
+  },
+  {
+    "name": "ItemVisualIdentityKey2",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualIdentity"
+      }
+    }
+  },
+  {
+    "name": "Stats",
+    "offset": 64,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "ItemClasses",
+    "offset": 80,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 96,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 112,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 113,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 129,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 145,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 162,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 163
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 179
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 195
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 211
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 227
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 243
+  },
+  {
+    "type": {
+      "boolean": true
+    },
+    "offset": 259
+  }
+]

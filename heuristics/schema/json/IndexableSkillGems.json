@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Index",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "SkillGem1",
+    "offset": 4,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "SkillGems"
+      }
+    }
+  },
+  {
+    "name": "Name1",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SkillGem2",
+    "offset": 28,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "SkillGems"
+      }
+    }
+  },
+  {
+    "name": "Name2",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "IndexableSkillGems"
+      }
+    }
+  }
+]

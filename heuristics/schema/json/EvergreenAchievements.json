@@ -1,0 +1,34 @@
+[
+  {
+    "name": "",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

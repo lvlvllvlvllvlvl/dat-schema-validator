@@ -1,0 +1,80 @@
+[
+  {
+    "name": "",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MapStatConditionsKeys",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MapStatConditions"
+      }
+    }
+  },
+  {
+    "name": "StatsKeys",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "AchievementItemsKeys",
+    "offset": 40,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "MapTierAchievementsKeys",
+    "offset": 56,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MapTierAchievements"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "WorldAreasKeys",
+    "offset": 73,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 89
+  }
+]

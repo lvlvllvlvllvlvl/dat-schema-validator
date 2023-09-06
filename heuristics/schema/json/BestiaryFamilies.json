@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Icon",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "IconSmall",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Illustration",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "PageArt",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "FlavourText",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "TagsKey",
+    "offset": 57,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 73,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ModsKeys",
+    "offset": 77,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "CurrencyItemsKey",
+    "offset": 93,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CurrencyItems"
+      }
+    }
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Area",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "Title",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  },
+  {
+    "name": "RoomIcon",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BossIcon",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Summary",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  },
+  {
+    "name": "Itemised",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  }
+]

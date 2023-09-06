@@ -1,0 +1,203 @@
+[
+  {
+    "name": "NPCsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCs"
+      }
+    }
+  },
+  {
+    "name": "MonsterVarietiesKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "SkillLevel_HeistJobsKeys",
+    "offset": 32,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "HeistJobs"
+      }
+    }
+  },
+  {
+    "name": "PortraitFile",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HeistNPCStatsKeys",
+    "offset": 56,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "HeistNPCStats"
+      }
+    }
+  },
+  {
+    "name": "StatValues",
+    "offset": 72,
+    "type": {
+      "array": true,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 88,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "SkillLevel_Values",
+    "offset": 92,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SilhouetteFile",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 124,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 128,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "HeistNPCsKey",
+    "offset": 132,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "HeistNPCs"
+      }
+    }
+  },
+  {
+    "name": "StatValues2",
+    "offset": 140,
+    "type": {
+      "array": true,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Ally_NPCsKey",
+    "offset": 156,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCs"
+      }
+    }
+  },
+  {
+    "name": "ActiveNPCIcon",
+    "offset": 172,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HeistJobsKey",
+    "offset": 180,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistJobs"
+      }
+    }
+  },
+  {
+    "name": "Equip_AchievementItemsKeys",
+    "offset": 196,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "AOFile",
+    "offset": 212,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 220,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

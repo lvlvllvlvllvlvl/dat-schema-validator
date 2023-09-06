@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Wordlist",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Text",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SpawnWeight_Tags",
+    "offset": 12,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "SpawnWeight_Values",
+    "offset": 28,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Text2",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Inflection",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

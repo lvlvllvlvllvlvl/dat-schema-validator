@@ -1,0 +1,249 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "GrantedEffectsKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffects"
+      }
+    }
+  },
+  {
+    "name": "Str",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Dex",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Int",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "GemTagsKeys",
+    "offset": 44,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "GemTags"
+      }
+    }
+  },
+  {
+    "name": "VaalVariant_BaseItemTypesKey",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "IsVaalVariant",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 77,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Consumed_ModsKey",
+    "offset": 85,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "GrantedEffectsKey2",
+    "offset": 101,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffects"
+      }
+    }
+  },
+  {
+    "name": "MinionGlobalSkillLevelStat",
+    "offset": 117,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "SupportSkillName",
+    "offset": 133,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsSupport",
+    "offset": 141,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 142,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 143,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 144,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 145,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 146,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "AwakenedVariant",
+    "offset": 147,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "SkillGems"
+      }
+    }
+  },
+  {
+    "name": "RegularVariant",
+    "offset": 155,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "SkillGems"
+      }
+    }
+  },
+  {
+    "name": "GrantedEffectHardMode",
+    "offset": 163,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffects"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 179,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 195,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ItemExperienceType",
+    "offset": 199,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemExperienceTypes"
+      }
+    }
+  }
+]

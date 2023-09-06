@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Base_ENVFile",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Corrupted_ENVFile",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "EnvironmentTransitionsKey",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "EnvironmentTransitions"
+      }
+    }
+  },
+  {
+    "name": "PreloadGroup",
+    "offset": 88,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "PreloadGroups"
+      }
+    }
+  }
+]

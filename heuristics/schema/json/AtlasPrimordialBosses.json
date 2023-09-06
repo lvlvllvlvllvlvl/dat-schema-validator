@@ -1,0 +1,151 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "InfluenceComplete",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "MiniBossInvitation",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "BossInvitation",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "PickUpKey",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 88,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 104,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "Tag",
+    "offset": 120,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "Altar",
+    "offset": 136,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscObjects"
+      }
+    }
+  },
+  {
+    "name": "AltarActivated",
+    "offset": 152,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  }
+]

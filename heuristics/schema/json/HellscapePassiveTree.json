@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "AllocationsRequired",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Passives",
+    "offset": 12,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "HellscapePassives"
+      }
+    }
+  }
+]

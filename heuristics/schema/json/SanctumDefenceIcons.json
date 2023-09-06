@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Stat",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "DefenceIcon",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "DefenceBrokenIcon",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BrokenStat",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "name": "WorldAreasKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "ItemVisualIdentityKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualIdentity"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "MapsKey",
+    "offset": 33,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Maps"
+      }
+    }
+  },
+  {
+    "name": "FlavourTextKey",
+    "offset": 49,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "FlavourText"
+      }
+    }
+  },
+  {
+    "name": "AtlasNodeKeys",
+    "offset": 65,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": false,
+        "name": "AtlasNode"
+      }
+    }
+  },
+  {
+    "name": "Tier0",
+    "offset": 81,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Tier1",
+    "offset": 85,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Tier2",
+    "offset": 89,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Tier3",
+    "offset": 93,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Tier4",
+    "offset": 97,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 101,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 105,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 109,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 113,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 117,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "DDSFile",
+    "offset": 121,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 129,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "NotOnAtlas",
+    "offset": 130,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 131
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 135
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 139
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 143
+  }
+]

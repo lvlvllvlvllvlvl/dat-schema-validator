@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HeistJobsKey",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistJobs"
+      }
+    }
+  },
+  {
+    "name": "SkillIcon",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

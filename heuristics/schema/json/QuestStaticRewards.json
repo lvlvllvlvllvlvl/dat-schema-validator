@@ -1,0 +1,112 @@
+[
+  {
+    "name": "QuestFlag",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "StatsKeys",
+    "offset": 20,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "StatValues",
+    "offset": 36,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "QuestKey",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Quest"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ClientStringsKey",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 88,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "StatValuesHardmode",
+    "offset": 92,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ClientStringHardmode",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  }
+]

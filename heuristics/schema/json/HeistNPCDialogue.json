@@ -1,0 +1,57 @@
+[
+  {
+    "name": "DialogueEventKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "DialogueEvent"
+      }
+    }
+  },
+  {
+    "name": "HeistNPCsKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistNPCs"
+      }
+    }
+  },
+  {
+    "name": "AudioNormal",
+    "offset": 32,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    }
+  },
+  {
+    "name": "AudioLoud",
+    "offset": 48,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

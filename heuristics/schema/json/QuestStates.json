@@ -1,0 +1,180 @@
+[
+  {
+    "name": "QuestKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Quest"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "QuestStates",
+    "offset": 20,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 36,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Text",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Message",
+    "offset": 61,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MapPinsKeys1",
+    "offset": 69,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MapPins"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 85,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MapPinsTexts",
+    "offset": 89,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "MapPinsKeys2",
+    "offset": 105,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MapPins"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 121,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 137,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 138,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 154,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 170,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "SoundEffect",
+    "offset": 174,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "SoundEffects"
+      }
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 190
+  }
+]

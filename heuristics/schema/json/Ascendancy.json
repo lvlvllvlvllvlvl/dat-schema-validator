@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ClassNo",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Characters",
+    "offset": 12,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Characters"
+      }
+    }
+  },
+  {
+    "name": "CoordinateRect",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "RGBFlavourTextColour",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "FlavourText",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "OGGFile",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "PassiveTreeImage",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "BackgroundImage",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

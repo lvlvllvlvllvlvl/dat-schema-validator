@@ -1,0 +1,273 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "TradeMarketCategory",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "TradeMarketCategory"
+      }
+    }
+  },
+  {
+    "name": "ItemClassCategory",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemClassCategories"
+      }
+    }
+  },
+  {
+    "name": "RemovedIfLeavesArea",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IdentifyAchievements",
+    "offset": 65,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "AllocateToMapOwner",
+    "offset": 81,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "AlwaysAllocate",
+    "offset": 82,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanHaveVeiledMods",
+    "offset": 83,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "PickedUpQuest",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AlwaysShow",
+    "offset": 104,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanBeCorrupted",
+    "offset": 105,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanHaveIncubators",
+    "offset": 106,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanHaveInfluence",
+    "offset": 107,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanBeDoubleCorrupted",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanHaveAspects",
+    "offset": 109,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanTransferSkin",
+    "offset": 110,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "ItemStance",
+    "offset": 111,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemStances"
+      }
+    }
+  },
+  {
+    "name": "CanScourge",
+    "offset": 127,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanUpgradeRarity",
+    "offset": 128,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 129,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 130,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "MaxInventoryDimensions",
+    "offset": 131,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Flags",
+    "offset": 147,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Unmodifiable",
+    "offset": 163,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CanBeFractured",
+    "offset": 164,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "EquipAchievements",
+    "offset": 165,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 181,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "type": {
+      "boolean": true
+    },
+    "offset": 182
+  },
+  {
+    "type": {
+      "boolean": true
+    },
+    "offset": 183
+  }
+]

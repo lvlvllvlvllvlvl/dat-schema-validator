@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BlightCraftingItemsKeys",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BlightCraftingItems"
+      }
+    }
+  },
+  {
+    "name": "BlightCraftingResultsKey",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BlightCraftingResults"
+      }
+    }
+  },
+  {
+    "name": "BlightCraftingTypesKey",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BlightCraftingTypes"
+      }
+    }
+  }
+]

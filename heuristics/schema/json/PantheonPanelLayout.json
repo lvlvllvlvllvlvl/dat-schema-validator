@@ -1,0 +1,239 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "X",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Y",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "IsMajorGod",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CoverImage",
+    "offset": 17,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "GodName2",
+    "offset": 25,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SelectionImage",
+    "offset": 33,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Effect1_StatsKeys",
+    "offset": 41,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "Effect1_Values",
+    "offset": 57,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Effect2_StatsKeys",
+    "offset": 73,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "GodName3",
+    "offset": 89,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Effect3_Values",
+    "offset": 97,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Effect3_StatsKeys",
+    "offset": 113,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "GodName4",
+    "offset": 129,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Effect4_StatsKeys",
+    "offset": 137,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "Effect4_Values",
+    "offset": 153,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "GodName1",
+    "offset": 169,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Effect2_Values",
+    "offset": 177,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "QuestState1",
+    "offset": 193,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestStates"
+      }
+    }
+  },
+  {
+    "name": "QuestState2",
+    "offset": 209,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestStates"
+      }
+    }
+  },
+  {
+    "name": "QuestState3",
+    "offset": 225,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestStates"
+      }
+    }
+  },
+  {
+    "name": "QuestState4",
+    "offset": 241,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestStates"
+      }
+    }
+  },
+  {
+    "name": "IsDisabled",
+    "offset": 257,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "AchievementItems",
+    "offset": 258,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  }
+]

@@ -1,0 +1,474 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "DDSFile",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "AOFile",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "InventorySoundEffect",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "SoundEffects"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AOFile2",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MarauderSMFiles",
+    "offset": 52,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "RangerSMFiles",
+    "offset": 68,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "WitchSMFiles",
+    "offset": 84,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "DuelistDexSMFiles",
+    "offset": 100,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "TemplarSMFiles",
+    "offset": 116,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "ShadowSMFiles",
+    "offset": 132,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "ScionSMFiles",
+    "offset": 148,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "MarauderShape",
+    "offset": 164,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "RangerShape",
+    "offset": 172,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "WitchShape",
+    "offset": 180,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "DuelistShape",
+    "offset": 188,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "TemplarShape",
+    "offset": 196,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ShadowShape",
+    "offset": 204,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ScionShape",
+    "offset": 212,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 220,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 224,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Pickup_AchievementItemsKeys",
+    "offset": 228,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "SMFiles",
+    "offset": 244,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "Identify_AchievementItemsKeys",
+    "offset": 260,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "EPKFile",
+    "offset": 276,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Corrupt_AchievementItemsKeys",
+    "offset": 284,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "IsAlternateArt",
+    "offset": 300,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 301,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "CreateCorruptedJewelAchievementItemsKey",
+    "offset": 302,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "AnimationLocation",
+    "offset": 318,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 326,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 334,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 342,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 350,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 358,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 366,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 374,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 382,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 390,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 398,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 406,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 414,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsAtlasOfWorldsMapIcon",
+    "offset": 422,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IsTier16Icon",
+    "offset": 423,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 424,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 440,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 441,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 457,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 465,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 469,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 485,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 501,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 517,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

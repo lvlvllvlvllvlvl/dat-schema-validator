@@ -1,0 +1,219 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "TimeoutInSeconds",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ChargesShared",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Player_ShrineBuffsKey",
+    "offset": 13,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ShrineBuffs"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 29,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 33,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Monster_ShrineBuffsKey",
+    "offset": 37,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ShrineBuffs"
+      }
+    }
+  },
+  {
+    "name": "SummonMonster_MonsterVarietiesKey",
+    "offset": 53,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "SummonPlayer_MonsterVarietiesKey",
+    "offset": 69,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 85,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 89,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ShrineSoundsKey",
+    "offset": 93,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ShrineSounds"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 109,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "AchievementItemsKeys",
+    "offset": 110,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "IsPVPOnly",
+    "offset": 126,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 127,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IsLesserShrine",
+    "offset": 128,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 129,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 145,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 161,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 162
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 178
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "name": "BaseItemType",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "Scaling",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Act",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Icon_DDSFile",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "QuestId",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Type",
+    "offset": 33,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestType"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 49,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 65,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "TrackerGroup",
+    "offset": 69,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestTrackerGroup"
+      }
+    }
+  },
+  {
+    "type": {
+      "boolean": true
+    },
+    "offset": 85
+  }
+]

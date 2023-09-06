@@ -1,0 +1,62 @@
+[
+  {
+    "name": "RecipeId",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "CraftingItemClassCategoriesKeys",
+    "offset": 12,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CraftingItemClassCategories"
+      }
+    }
+  },
+  {
+    "name": "UnlockDescription",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Rank",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "UnlockArea",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  }
+]

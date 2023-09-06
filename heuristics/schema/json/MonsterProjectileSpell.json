@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Projectile",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Projectiles"
+      }
+    }
+  },
+  {
+    "name": "Animation",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Animation"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 37,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 38,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 42,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

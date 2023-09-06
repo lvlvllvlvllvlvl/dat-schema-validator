@@ -1,0 +1,24 @@
+[
+  {
+    "name": "BaseUnique",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Words"
+      }
+    }
+  },
+  {
+    "name": "UpgradeCurrency",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  }
+]

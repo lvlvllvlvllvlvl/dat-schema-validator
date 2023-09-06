@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Slot",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "PassiveSkills"
+      }
+    }
+  },
+  {
+    "name": "ClusterJewelSize",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "PassiveTreeExpansionJewelSizes"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ReplacesSlot",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "PassiveJewelSlots"
+      }
+    }
+  },
+  {
+    "name": "ProxySlot",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "PassiveSkills"
+      }
+    }
+  },
+  {
+    "name": "StartIndices",
+    "offset": 60,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "EssenceType",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "IsCorruptedEssence",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "WordsKey",
+    "offset": 13,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Words"
+      }
+    }
+  }
+]

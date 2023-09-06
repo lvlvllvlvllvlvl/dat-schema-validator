@@ -1,0 +1,174 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IsLocal",
+    "offset": 9,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IsWeaponLocal",
+    "offset": 10,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Semantics",
+    "offset": 11,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Text",
+    "offset": 15,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 23,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IsVirtual",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "MainHandAlias_StatsKey",
+    "offset": 25,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "OffHandAlias_StatsKey",
+    "offset": 33,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 41,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "HASH32",
+    "offset": 42,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "BelongsActiveSkillsKey",
+    "offset": 46,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "Category",
+    "offset": 62,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "PassiveSkillStatCategories"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 78,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 79,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IsScalable",
+    "offset": 80,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "ContextFlags",
+    "offset": 81,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "VirtualStatContextFlags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 97,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

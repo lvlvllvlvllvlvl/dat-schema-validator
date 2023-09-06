@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "DoubleLine",
+    "offset": 9,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "HeaderSingle",
+    "offset": 10,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HeaderDouble",
+    "offset": 18,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HardmodeHeaderSingle",
+    "offset": 26,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HardmodeHeaderDouble",
+    "offset": 34,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Color",
+    "offset": 42,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Separator",
+    "offset": 58,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 66,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Rarity",
+    "offset": 67,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Rarity"
+      }
+    }
+  },
+  {
+    "name": "DisplayString",
+    "offset": 83,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    }
+  },
+  {
+    "name": "ColorMarkup",
+    "offset": 99,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

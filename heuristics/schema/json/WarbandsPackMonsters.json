@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 13,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 14,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 15,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Tier4_MonsterVarietiesKeys",
+    "offset": 20,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "Tier3_MonsterVarietiesKeys",
+    "offset": 36,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "Tier2_MonsterVarietiesKeys",
+    "offset": 52,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "Tier1_MonsterVarietiesKeys",
+    "offset": 68,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "Tier1Name",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier2Name",
+    "offset": 92,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier3Name",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier4Name",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier1Art",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier2Art",
+    "offset": 124,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier3Art",
+    "offset": 132,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier4Art",
+    "offset": 140,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

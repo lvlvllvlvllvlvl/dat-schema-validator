@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Tier",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MinLevel",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "RoomUpgrade_IncursionRoomsKey",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "IncursionRooms"
+      }
+    }
+  },
+  {
+    "name": "Mods",
+    "offset": 32,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "PresentARMFile",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HASH16",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "IncursionArchitectKey",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "IncursionArchitect"
+      }
+    }
+  },
+  {
+    "name": "PastARMFile",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "TSIFile",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "UIIcon",
+    "offset": 92,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "FlavourText",
+    "offset": 100,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 108,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "AchievementItemsKeys",
+    "offset": 116,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 132,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 136,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "RoomUpgradeFrom_IncursionRoomsKey",
+    "offset": 140,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "IncursionRooms"
+      }
+    }
+  },
+  {
+    "name": "ItemisedFlavourText",
+    "offset": 148,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "FlavourText"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 164,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 172,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  }
+]

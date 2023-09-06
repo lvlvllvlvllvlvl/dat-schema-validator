@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsCategory",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Category",
+    "offset": 17,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "ShopTag"
+      }
+    }
+  },
+  {
+    "name": "SkillGem",
+    "offset": 25,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  }
+]

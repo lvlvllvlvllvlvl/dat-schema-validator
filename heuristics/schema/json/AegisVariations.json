@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Name",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "DefendsAgainstPhysical",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "DefendsAgainstFire",
+    "offset": 9,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "DefendsAgainstCold",
+    "offset": 10,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "DefendsAgainstLightning",
+    "offset": 11,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "DefendsAgainstChaos",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 13,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 29,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 45,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 61,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 77
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MinLevel",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MaxLevel",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Weight",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "TopologiesKey",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Topologies"
+      }
+    }
+  },
+  {
+    "name": "MonsterPacksKeys",
+    "offset": 36,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterPacks"
+      }
+    }
+  },
+  {
+    "name": "ArtFile",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "SynthesisAreaSizeKey",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "SynthesisAreaSize"
+      }
+    }
+  },
+  {
+    "name": "AchievementItemsKey",
+    "offset": 84,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  }
+]

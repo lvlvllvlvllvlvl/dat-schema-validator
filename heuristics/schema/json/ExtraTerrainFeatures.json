@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ArmFiles",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "TdtFiles",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 41,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 57,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 73,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "ExtraTerrainFeatures"
+      }
+    }
+  },
+  {
+    "name": "WorldAreasKey",
+    "offset": 81,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 97,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 98,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Stat",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "GrantedEffect",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffects"
+      }
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "BetrayalJobsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalJobs"
+      }
+    }
+  },
+  {
+    "name": "BetrayalTargetsKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalTargets"
+      }
+    }
+  },
+  {
+    "name": "BetrayalRanksKey",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalRanks"
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 56
+  }
+]

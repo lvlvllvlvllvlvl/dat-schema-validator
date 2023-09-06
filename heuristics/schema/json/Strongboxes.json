@@ -1,0 +1,73 @@
+[
+  {
+    "name": "ChestsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Chests"
+      }
+    }
+  },
+  {
+    "name": "SpawnWeight",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "IsCartographerBox",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 25,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "SpawnWeightIncrease",
+    "offset": 26,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "SpawnWeightHardmode",
+    "offset": 42,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

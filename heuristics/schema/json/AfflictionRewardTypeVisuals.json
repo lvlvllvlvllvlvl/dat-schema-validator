@@ -1,0 +1,29 @@
+[
+  {
+    "name": "AfflictionRewardTypes",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Id",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

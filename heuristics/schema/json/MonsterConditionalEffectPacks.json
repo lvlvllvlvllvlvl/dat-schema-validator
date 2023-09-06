@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MiscEffectPack1",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MiscEffectPacks"
+      }
+    }
+  },
+  {
+    "name": "MiscEffectPack2",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MiscEffectPacks"
+      }
+    }
+  },
+  {
+    "name": "MiscEffectPack3",
+    "offset": 40,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MiscEffectPacks"
+      }
+    }
+  },
+  {
+    "name": "MiscEffectPack4",
+    "offset": 56,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MiscEffectPacks"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  }
+]

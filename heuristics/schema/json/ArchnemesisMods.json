@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Mod",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Visual",
+    "offset": 24,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ArchnemesisModVisuals"
+      }
+    }
+  },
+  {
+    "name": "TextStyles",
+    "offset": 40,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 57,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "IsSupport",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "AllowedActiveSkillTypes",
+    "offset": 9,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkillType"
+      }
+    }
+  },
+  {
+    "name": "SupportGemLetter",
+    "offset": 25,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Attribute",
+    "offset": 33,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "AddedActiveSkillTypes",
+    "offset": 37,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkillType"
+      }
+    }
+  },
+  {
+    "name": "ExcludedActiveSkillTypes",
+    "offset": 53,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkillType"
+      }
+    }
+  },
+  {
+    "name": "SupportsGemsOnly",
+    "offset": 69,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 70,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 74,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "CannotBeSupported",
+    "offset": 90,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 91,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "CastTime",
+    "offset": 95,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ActiveSkill",
+    "offset": 99,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkills"
+      }
+    }
+  },
+  {
+    "name": "IgnoreMinionTypes",
+    "offset": 115,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 116,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "AddedMinionActiveSkillTypes",
+    "offset": 117,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkillType"
+      }
+    }
+  },
+  {
+    "name": "Animation",
+    "offset": 133,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Animation"
+      }
+    }
+  },
+  {
+    "name": "MultiPartAchievement",
+    "offset": 149,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MultiPartAchievements"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 165,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "SupportWeaponRestrictions",
+    "offset": 166,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    }
+  },
+  {
+    "name": "RegularVariant",
+    "offset": 182,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "GrantedEffects"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 190,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 194,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 198,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 202,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "StatSet",
+    "offset": 203,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffectStatSets"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 219,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

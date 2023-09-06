@@ -1,0 +1,21 @@
+[
+  {
+    "name": "TagsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    }
+  },
+  {
+    "name": "ItemClass",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

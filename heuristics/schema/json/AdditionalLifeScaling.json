@@ -1,0 +1,29 @@
+[
+  {
+    "name": "IntId",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ID",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "DatFile",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Index",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "SupportGem",
+    "offset": 4,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "SkillGems"
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 20,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

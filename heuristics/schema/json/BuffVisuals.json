@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BuffDDSFile",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "EPKFiles1",
+    "offset": 16,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "EPKFiles2",
+    "offset": 32,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "PreloadGroups",
+    "offset": 48,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "PreloadGroups"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "BuffName",
+    "offset": 65,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MiscAnimated1",
+    "offset": 73,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "MiscAnimated2",
+    "offset": 89,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "BuffDescription",
+    "offset": 105,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "EPKFile",
+    "offset": 113,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HasExtraArt",
+    "offset": 121,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "ExtraArt",
+    "offset": 122,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 130,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "EPKFiles",
+    "offset": 146,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "BuffVisualOrbs",
+    "offset": 162,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BuffVisualOrbs"
+      }
+    }
+  },
+  {
+    "name": "MiscAnimated3",
+    "offset": 178,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 194,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    }
+  }
+]

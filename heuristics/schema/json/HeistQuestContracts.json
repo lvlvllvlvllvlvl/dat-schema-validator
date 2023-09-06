@@ -1,0 +1,307 @@
+[
+  {
+    "name": "HeistContractsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistContracts"
+      }
+    }
+  },
+  {
+    "name": "HeistObjectivesKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistObjectives"
+      }
+    }
+  },
+  {
+    "name": "HeistNPCsKey",
+    "offset": 32,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "HeistNPCs"
+      }
+    }
+  },
+  {
+    "name": "HeistJobsKey",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistJobs"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 68,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 72,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "HeistRoomsKey1",
+    "offset": 77,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistRooms"
+      }
+    }
+  },
+  {
+    "name": "WorldAreasKey",
+    "offset": 93,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 109,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 110,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 111,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 115,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 119,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 120,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "HaveObjective",
+    "offset": 121,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 137,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "QuestActive",
+    "offset": 138,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    }
+  },
+  {
+    "name": "HaveQuest",
+    "offset": 154,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    }
+  },
+  {
+    "name": "HaveObjective2",
+    "offset": 170,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 186,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 187,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Objective",
+    "offset": 188,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 196,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 197,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 213,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "HeistIntroAreasKey",
+    "offset": 214,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistIntroAreas"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 230,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "HeistRoomsKey2",
+    "offset": 234,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "HeistRooms"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 250,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  }
+]

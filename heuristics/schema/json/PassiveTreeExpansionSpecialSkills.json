@@ -1,0 +1,24 @@
+[
+  {
+    "name": "PassiveSkillsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "PassiveSkills"
+      }
+    }
+  },
+  {
+    "name": "StatsKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "name": "MonsterVarietiesKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "BestiaryGroupsKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BestiaryGroups"
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "BestiaryEncountersKey",
+    "offset": 40,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BestiaryEncounters"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "IconSmall",
+    "offset": 57,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Icon",
+    "offset": 65,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Boss_MonsterVarietiesKey",
+    "offset": 73,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "BestiaryGenusKey",
+    "offset": 89,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BestiaryGenus"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 105,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "BestiaryCapturableMonstersKey",
+    "offset": 106,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "BestiaryCapturableMonsters"
+      }
+    }
+  },
+  {
+    "name": "IsDisabled",
+    "offset": 114,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "",
+    "offset": 115,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 119,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]

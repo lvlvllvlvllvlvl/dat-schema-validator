@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Types",
+    "offset": 8,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "UltimatumModifierTypes"
+      }
+    }
+  },
+  {
+    "name": "ExtraMods",
+    "offset": 24,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "TypesFiltered",
+    "offset": 40,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "UltimatumModifierTypes"
+      }
+    }
+  },
+  {
+    "name": "DaemonSpawningData",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "DaemonSpawningData"
+      }
+    }
+  },
+  {
+    "name": "PreviousTiers",
+    "offset": 72,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": false,
+        "name": "UltimatumModifiers"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 88,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Bosses",
+    "offset": 89,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    }
+  },
+  {
+    "name": "Radius",
+    "offset": 105,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Name",
+    "offset": 109,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "Icon",
+    "offset": 117,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "HASH16",
+    "offset": 125,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "TypesExtra",
+    "offset": 129,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "UltimatumModifierTypes"
+      }
+    }
+  },
+  {
+    "name": "MonsterTypesApplyingRuin",
+    "offset": 145,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "MiscAnimated",
+    "offset": 149,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    }
+  },
+  {
+    "name": "BuffTemplates",
+    "offset": 165,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BuffTemplates"
+      }
+    }
+  },
+  {
+    "name": "Tier",
+    "offset": 181,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 185,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 189,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MonsterSpawners",
+    "offset": 197,
+    "type": {
+      "array": true,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 213,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "Achievements",
+    "offset": 214,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    }
+  },
+  {
+    "name": "TextAudio",
+    "offset": 230,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    }
+  },
+  {
+    "name": "UniqueMapMod",
+    "offset": 246,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  }
+]

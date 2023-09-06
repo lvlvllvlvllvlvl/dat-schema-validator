@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Event",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CharacterAudioEvents"
+      }
+    }
+  },
+  {
+    "name": "Character",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Characters"
+      }
+    }
+  },
+  {
+    "name": "TextAudio",
+    "offset": 32,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    }
+  }
+]

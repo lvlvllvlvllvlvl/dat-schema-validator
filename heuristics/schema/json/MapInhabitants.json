@@ -1,0 +1,24 @@
+[
+  {
+    "name": "StatsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    }
+  },
+  {
+    "name": "MonsterPacksKeys",
+    "offset": 16,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterPacks"
+      }
+    }
+  }
+]

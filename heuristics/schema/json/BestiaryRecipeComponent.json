@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "MinLevel",
+    "offset": 8,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "BestiaryFamiliesKey",
+    "offset": 12,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BestiaryFamilies"
+      }
+    }
+  },
+  {
+    "name": "BestiaryGroupsKey",
+    "offset": 28,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BestiaryGroups"
+      }
+    }
+  },
+  {
+    "name": "ModsKey",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    }
+  },
+  {
+    "name": "BestiaryCapturableMonstersKey",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BestiaryCapturableMonsters"
+      }
+    }
+  },
+  {
+    "name": "BeastRarity",
+    "offset": 76,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Rarity"
+      }
+    }
+  },
+  {
+    "name": "BestiaryGenusKey",
+    "offset": 92,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BestiaryGenus"
+      }
+    }
+  }
+]

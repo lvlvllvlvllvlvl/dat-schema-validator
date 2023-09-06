@@ -1,0 +1,75 @@
+[
+  {
+    "name": "BetrayalJobsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalJobs"
+      }
+    }
+  },
+  {
+    "name": "BetrayalTargetsKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalTargets"
+      }
+    }
+  },
+  {
+    "name": "Rank",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "Description",
+    "offset": 36,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "ServerCommand",
+    "offset": 44,
+    "type": {
+      "array": false,
+      "string": {}
+    }
+  },
+  {
+    "name": "",
+    "offset": 52,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    }
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 68
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 76
+  }
+]

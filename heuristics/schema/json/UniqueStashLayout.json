@@ -1,0 +1,125 @@
+[
+  {
+    "name": "WordsKey",
+    "offset": 0,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Words"
+      }
+    }
+  },
+  {
+    "name": "ItemVisualIdentityKey",
+    "offset": 16,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualIdentity"
+      }
+    }
+  },
+  {
+    "name": "UniqueStashTypesKey",
+    "offset": 32,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "UniqueStashTypes"
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 48,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "",
+    "offset": 52,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "OverrideWidth",
+    "offset": 56,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "OverrideHeight",
+    "offset": 60,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    }
+  },
+  {
+    "name": "ShowIfEmptyChallengeLeague",
+    "offset": 64,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "ShowIfEmptyStandard",
+    "offset": 65,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  },
+  {
+    "name": "RenamedVersion",
+    "offset": 66,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "UniqueStashLayout"
+      }
+    }
+  },
+  {
+    "name": "BaseVersion",
+    "offset": 74,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "UniqueStashLayout"
+      }
+    }
+  },
+  {
+    "name": "IsAlternateArt",
+    "offset": 82,
+    "type": {
+      "array": false,
+      "boolean": true
+    }
+  }
+]
