@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "HeistAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Id",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "ARMFile",
@@ -27,7 +29,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "HeistJobsKey1",
@@ -38,7 +41,8 @@
         "foreign": true,
         "name": "HeistJobs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "HeistJobsKey2",
@@ -49,7 +53,8 @@
         "foreign": true,
         "name": "HeistJobs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -60,7 +65,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -71,7 +77,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -82,7 +89,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -90,7 +98,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -100,7 +109,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -108,7 +118,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -116,6 +127,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

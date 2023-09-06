@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "ItemVisualIdentity"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "WorldAreasKey",
@@ -19,7 +20,8 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "WordsKey",
@@ -30,7 +32,8 @@
         "foreign": true,
         "name": "Words"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "FlavourTextKey",
@@ -41,7 +44,8 @@
         "foreign": true,
         "name": "FlavourText"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "HasGuildCharacter",
@@ -49,7 +53,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "GuildCharacter",
@@ -57,7 +62,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -65,7 +71,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IsDropDisabled",
@@ -73,6 +80,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

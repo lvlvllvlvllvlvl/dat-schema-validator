@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BaseItemType",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -24,7 +26,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "ButtonFile",
@@ -32,7 +35,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -43,7 +47,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "HeistJobsKey",
@@ -54,7 +59,8 @@
         "foreign": true,
         "name": "HeistJobs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Columns",
@@ -65,7 +71,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Rows",
@@ -76,7 +83,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -87,7 +95,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -98,7 +107,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -109,7 +119,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -120,7 +131,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "ItemClass",
@@ -131,6 +143,7 @@
         "foreign": true,
         "name": "ItemClasses"
       }
-    }
+    },
+    "size": 16
   }
 ]

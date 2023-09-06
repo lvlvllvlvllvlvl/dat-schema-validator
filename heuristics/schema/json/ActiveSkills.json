@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "DisplayedName",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Description",
@@ -21,7 +23,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -29,7 +32,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Icon_DDSFile",
@@ -37,7 +41,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "ActiveSkillTargetTypes",
@@ -48,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ActiveSkillTypes",
@@ -59,7 +65,8 @@
         "foreign": true,
         "name": "ActiveSkillType"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "WeaponRestriction_ItemClassesKeys",
@@ -70,7 +77,8 @@
         "foreign": true,
         "name": "ItemClasses"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "WebsiteDescription",
@@ -78,7 +86,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "WebsiteImage",
@@ -86,7 +95,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -94,7 +104,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -102,7 +113,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -110,7 +122,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "SkillTotemId",
@@ -121,7 +134,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "IsManuallyCasted",
@@ -129,7 +143,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Input_StatKeys",
@@ -140,7 +155,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Output_StatKeys",
@@ -151,7 +167,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MinionActiveSkillTypes",
@@ -162,7 +179,8 @@
         "foreign": true,
         "name": "ActiveSkillType"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -170,7 +188,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -178,7 +197,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -189,7 +209,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -200,7 +221,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "AlternateSkillTargetingBehavioursKey",
@@ -211,7 +233,8 @@
         "foreign": true,
         "name": "AlternateSkillTargetingBehaviours"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -219,7 +242,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "AIFile",
@@ -227,7 +251,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -237,7 +262,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -245,7 +271,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -253,7 +280,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -261,6 +289,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

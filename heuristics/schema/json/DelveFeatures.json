@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "SpawnWeight",
@@ -24,7 +26,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "WorldAreasKey",
@@ -35,7 +38,8 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Image",
@@ -43,7 +47,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "AchievementItemsKeys",
@@ -54,7 +59,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -65,7 +71,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MinDepth",
@@ -76,7 +83,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Description",
@@ -84,7 +92,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -95,7 +104,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -106,7 +116,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -117,7 +128,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -128,7 +140,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "type": {
@@ -138,6 +151,8 @@
         "size": 4
       }
     },
-    "offset": 164
+    "offset": 164,
+    "size": 16,
+    "unknownArray": true
   }
 ]

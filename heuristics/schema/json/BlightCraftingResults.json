@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "ModsKey",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "PassiveSkillsKey",
@@ -27,6 +29,7 @@
         "foreign": true,
         "name": "PassiveSkills"
       }
-    }
+    },
+    "size": 16
   }
 ]

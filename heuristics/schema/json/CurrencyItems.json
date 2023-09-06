@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Stacks",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "CurrencyUseType",
@@ -30,7 +32,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Action",
@@ -38,7 +41,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Directions",
@@ -46,7 +50,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "FullStack_BaseItemTypesKey",
@@ -57,7 +62,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Description",
@@ -65,7 +71,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Usage_AchievementItemsKeys",
@@ -76,7 +83,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -84,7 +92,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "CosmeticTypeName",
@@ -92,7 +101,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Possession_AchievementItemsKey",
@@ -103,7 +113,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -113,7 +124,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -124,7 +136,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "CurrencyTab_StackSize",
@@ -135,7 +148,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "XBoxDirections",
@@ -143,7 +157,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -154,7 +169,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -164,7 +180,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -174,7 +191,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ModifyMapsAchievements",
@@ -185,7 +203,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ModifyContractsAchievements",
@@ -196,7 +215,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "CombineAchievements",
@@ -207,7 +227,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -218,7 +239,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -229,7 +251,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ShopTag",
@@ -240,7 +263,8 @@
         "foreign": true,
         "name": "ShopTag"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsHardmode",
@@ -248,7 +272,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "DescriptionHardmode",
@@ -256,7 +281,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IsGold",
@@ -264,6 +290,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

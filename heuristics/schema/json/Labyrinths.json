@@ -8,7 +8,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Name",
@@ -16,7 +17,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "OfferingItem",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "QuestFlag",
@@ -38,7 +41,8 @@
         "foreign": true,
         "name": "QuestFlags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "RequiredTrials",
@@ -49,7 +53,8 @@
         "foreign": true,
         "name": "LabyrinthTrials"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AreaLevel",
@@ -60,7 +65,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -71,7 +77,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "JewelReward",
@@ -82,7 +89,8 @@
         "foreign": true,
         "name": "Words"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -93,7 +101,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -104,7 +113,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MinLevel",
@@ -115,7 +125,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -126,7 +137,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -137,7 +149,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "CraftingFontDescription",
@@ -148,6 +161,7 @@
         "foreign": true,
         "name": "ClientStrings"
       }
-    }
+    },
+    "size": 16
   }
 ]

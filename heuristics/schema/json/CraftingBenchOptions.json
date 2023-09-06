@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "HideoutNPCs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Order",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "AddMod",
@@ -30,7 +32,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost_BaseItemTypes",
@@ -41,7 +44,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost_Values",
@@ -52,7 +56,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "RequiredLevel",
@@ -63,7 +68,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Name",
@@ -71,7 +77,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "CraftingBenchCustomAction",
@@ -82,7 +89,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "ItemClasses",
@@ -93,7 +101,8 @@
         "foreign": true,
         "name": "ItemClasses"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Links",
@@ -104,7 +113,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "SocketColours",
@@ -112,7 +122,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Sockets",
@@ -123,7 +134,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "ItemQuantity",
@@ -134,7 +146,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -145,7 +158,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Description",
@@ -153,7 +167,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IsDisabled",
@@ -161,7 +176,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsAreaOption",
@@ -169,7 +185,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "RecipeIds",
@@ -180,7 +197,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Tier",
@@ -191,7 +209,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "CraftingItemClassCategories",
@@ -202,7 +221,8 @@
         "foreign": true,
         "name": "CraftingItemClassCategories"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -213,7 +233,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "UnlockCategory",
@@ -224,7 +245,8 @@
         "foreign": true,
         "name": "CraftingBenchUnlockCategories"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "UnveilsRequired",
@@ -235,7 +257,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "UnveilsRequired2",
@@ -246,7 +269,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -256,7 +280,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -266,7 +291,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -277,7 +303,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -288,7 +315,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -298,7 +326,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AddEnchantment",
@@ -309,7 +338,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SortCategory",
@@ -320,7 +350,8 @@
         "foreign": true,
         "name": "CraftingBenchSortCategories"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -330,7 +361,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -338,7 +370,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -349,7 +382,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -360,7 +394,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -371,7 +406,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -382,7 +418,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MapDevice",
@@ -390,7 +427,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -400,6 +438,7 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   }
 ]

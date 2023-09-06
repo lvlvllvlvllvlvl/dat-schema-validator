@@ -4,7 +4,8 @@
       "array": false,
       "string": {}
     },
-    "offset": 0
+    "offset": 0,
+    "size": 8
   },
   {
     "type": {
@@ -14,7 +15,8 @@
         "size": 4
       }
     },
-    "offset": 8
+    "offset": 8,
+    "size": 4
   },
   {
     "type": {
@@ -24,7 +26,8 @@
         "size": 4
       }
     },
-    "offset": 12
+    "offset": 12,
+    "size": 4
   },
   {
     "type": {
@@ -34,7 +37,8 @@
         "size": 4
       }
     },
-    "offset": 16
+    "offset": 16,
+    "size": 4
   },
   {
     "type": {
@@ -44,7 +48,8 @@
         "size": 4
       }
     },
-    "offset": 20
+    "offset": 20,
+    "size": 4
   },
   {
     "type": {
@@ -53,7 +58,8 @@
         "foreign": true
       }
     },
-    "offset": 24
+    "offset": 24,
+    "size": 16
   },
   {
     "type": {
@@ -62,6 +68,8 @@
         "foreign": true
       }
     },
-    "offset": 40
+    "offset": 40,
+    "size": 16,
+    "unknownArray": true
   }
 ]

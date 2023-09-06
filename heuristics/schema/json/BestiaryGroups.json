@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Description",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Illustration",
@@ -21,7 +23,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -29,7 +32,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Icon",
@@ -37,7 +41,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IconSmall",
@@ -45,7 +50,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BestiaryFamiliesKey",
@@ -56,7 +62,8 @@
         "foreign": true,
         "name": "BestiaryFamilies"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AchievementItemsKeys",
@@ -67,6 +74,7 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   }
 ]

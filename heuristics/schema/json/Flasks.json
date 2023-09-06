@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Name",
@@ -16,7 +17,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Group",
@@ -27,7 +29,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "LifePerUse",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "ManaPerUse",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "RecoveryTime",
@@ -60,7 +65,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "BuffDefinitionsKey",
@@ -71,7 +77,8 @@
         "foreign": true,
         "name": "BuffDefinitions"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BuffStatValues",
@@ -82,7 +89,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "RecoveryTime2",
@@ -93,7 +101,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "BuffStatValues2",
@@ -104,6 +113,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   }
 ]

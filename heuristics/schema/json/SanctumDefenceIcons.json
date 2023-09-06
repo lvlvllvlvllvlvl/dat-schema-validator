@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Stat",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "DefenceIcon",
@@ -24,7 +26,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "DefenceBrokenIcon",
@@ -32,7 +35,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BrokenStat",
@@ -43,7 +47,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Description",
@@ -51,6 +56,7 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   }
 ]

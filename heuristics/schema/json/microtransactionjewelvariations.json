@@ -6,7 +6,8 @@
         "foreign": true
       }
     },
-    "offset": 0
+    "offset": 0,
+    "size": 16
   },
   {
     "type": {
@@ -16,21 +17,24 @@
         "size": 4
       }
     },
-    "offset": 16
+    "offset": 16,
+    "size": 4
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 20
+    "offset": 20,
+    "size": 8
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 28
+    "offset": 28,
+    "size": 8
   },
   {
     "type": {
@@ -40,7 +44,8 @@
         "size": 4
       }
     },
-    "offset": 36
+    "offset": 36,
+    "size": 4
   },
   {
     "type": {
@@ -50,21 +55,25 @@
         "size": 4
       }
     },
-    "offset": 40
+    "offset": 40,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 56
+    "offset": 56,
+    "size": 8
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 64
+    "offset": 64,
+    "size": 8
   },
   {
     "type": {
@@ -74,7 +83,9 @@
         "size": 4
       }
     },
-    "offset": 72
+    "offset": 72,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -84,14 +95,16 @@
         "size": 4
       }
     },
-    "offset": 76
+    "offset": 76,
+    "size": 4
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 80
+    "offset": 80,
+    "size": 8
   },
   {
     "type": {
@@ -101,14 +114,16 @@
         "size": 4
       }
     },
-    "offset": 88
+    "offset": 88,
+    "size": 4
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 92
+    "offset": 92,
+    "size": 8
   },
   {
     "type": {
@@ -118,7 +133,8 @@
         "size": 4
       }
     },
-    "offset": 100
+    "offset": 100,
+    "size": 4
   },
   {
     "type": {
@@ -127,18 +143,23 @@
         "foreign": true
       }
     },
-    "offset": 104
+    "offset": 104,
+    "size": 16
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 120
+    "offset": 120,
+    "size": 1
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 121
+    "offset": 121,
+    "size": 1
   }
 ]

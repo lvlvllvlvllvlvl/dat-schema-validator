@@ -4,7 +4,8 @@
       "array": false,
       "string": {}
     },
-    "offset": 0
+    "offset": 0,
+    "size": 8
   },
   {
     "type": {
@@ -13,7 +14,8 @@
         "foreign": true
       }
     },
-    "offset": 8
+    "offset": 8,
+    "size": 16
   },
   {
     "type": {
@@ -22,7 +24,8 @@
         "foreign": true
       }
     },
-    "offset": 24
+    "offset": 24,
+    "size": 16
   },
   {
     "type": {
@@ -31,7 +34,8 @@
         "foreign": true
       }
     },
-    "offset": 40
+    "offset": 40,
+    "size": 16
   },
   {
     "type": {
@@ -40,7 +44,8 @@
         "foreign": true
       }
     },
-    "offset": 56
+    "offset": 56,
+    "size": 16
   },
   {
     "type": {
@@ -49,7 +54,8 @@
         "foreign": true
       }
     },
-    "offset": 72
+    "offset": 72,
+    "size": 16
   },
   {
     "type": {
@@ -58,7 +64,8 @@
         "foreign": true
       }
     },
-    "offset": 88
+    "offset": 88,
+    "size": 16
   },
   {
     "type": {
@@ -67,7 +74,8 @@
         "foreign": true
       }
     },
-    "offset": 104
+    "offset": 104,
+    "size": 16
   },
   {
     "type": {
@@ -76,7 +84,9 @@
         "foreign": true
       }
     },
-    "offset": 120
+    "offset": 120,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
@@ -85,6 +95,7 @@
         "foreign": true
       }
     },
-    "offset": 136
+    "offset": 136,
+    "size": 16
   }
 ]

@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "WorldAreasKey",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MonsterVarietiesKeys",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "MonsterVarieties"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -38,6 +41,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   }
 ]

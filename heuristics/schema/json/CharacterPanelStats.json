@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Text",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "StatsKeys1",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "CharacterPanelDescriptionModesKey",
@@ -35,7 +38,8 @@
         "foreign": true,
         "name": "CharacterPanelDescriptionModes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "StatsKeys2",
@@ -46,7 +50,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "StatsKeys3",
@@ -57,7 +62,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "CharacterPanelTabsKey",
@@ -68,7 +74,8 @@
         "foreign": true,
         "name": "CharacterPanelTabs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -76,7 +83,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -87,7 +95,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -98,6 +107,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   }
 ]

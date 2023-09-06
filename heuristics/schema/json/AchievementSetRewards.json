@@ -8,7 +8,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "AchievementsRequired",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Rewards",
@@ -30,7 +32,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "TotemPieceEveryNAchievements",
@@ -41,7 +44,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Message",
@@ -49,7 +53,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "NotificationIcon",
@@ -57,7 +62,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "HideoutName",
@@ -65,7 +71,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Id",
@@ -73,6 +80,7 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   }
 ]

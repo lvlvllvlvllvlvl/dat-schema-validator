@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "DDSFile",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "AOFile",
@@ -21,7 +23,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "InventorySoundEffect",
@@ -32,7 +35,8 @@
         "foreign": true,
         "name": "SoundEffects"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -43,7 +47,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "AOFile2",
@@ -51,7 +56,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "MarauderSMFiles",
@@ -59,7 +65,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "RangerSMFiles",
@@ -67,7 +74,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "WitchSMFiles",
@@ -75,7 +83,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "DuelistDexSMFiles",
@@ -83,7 +92,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "TemplarSMFiles",
@@ -91,7 +101,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "ShadowSMFiles",
@@ -99,7 +110,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "ScionSMFiles",
@@ -107,7 +119,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "MarauderShape",
@@ -115,7 +128,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "RangerShape",
@@ -123,7 +137,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "WitchShape",
@@ -131,7 +146,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "DuelistShape",
@@ -139,7 +155,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "TemplarShape",
@@ -147,7 +164,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "ShadowShape",
@@ -155,7 +173,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "ScionShape",
@@ -163,7 +182,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -174,7 +194,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -185,7 +206,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Pickup_AchievementItemsKeys",
@@ -196,7 +218,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SMFiles",
@@ -204,7 +227,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "Identify_AchievementItemsKeys",
@@ -215,7 +239,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "EPKFile",
@@ -223,7 +248,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Corrupt_AchievementItemsKeys",
@@ -234,7 +260,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsAlternateArt",
@@ -242,7 +269,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -250,7 +278,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "CreateCorruptedJewelAchievementItemsKey",
@@ -261,7 +290,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AnimationLocation",
@@ -269,7 +299,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -277,7 +308,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -285,7 +317,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -293,7 +326,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -301,7 +335,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -309,7 +344,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -317,7 +353,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -325,7 +362,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -333,7 +371,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -341,7 +380,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -349,7 +389,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -357,7 +398,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -365,7 +407,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IsAtlasOfWorldsMapIcon",
@@ -373,7 +416,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsTier16Icon",
@@ -381,7 +425,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -392,7 +437,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -400,7 +446,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -410,7 +457,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -418,7 +466,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -429,7 +478,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -439,7 +489,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -449,7 +500,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -459,7 +511,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -469,6 +522,7 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   }
 ]

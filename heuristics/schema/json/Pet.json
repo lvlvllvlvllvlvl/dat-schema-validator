@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BaseItemTypesKey",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "HASH16",
@@ -27,7 +29,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "HASH32",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -57,7 +62,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -65,7 +71,19 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 38,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "name": "",
@@ -75,7 +93,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "type": {
@@ -84,7 +103,9 @@
         "foreign": true
       }
     },
-    "offset": 70
+    "offset": 70,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
@@ -94,13 +115,16 @@
         "size": 4
       }
     },
-    "offset": 86
+    "offset": 86,
+    "size": 4
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 90
+    "offset": 90,
+    "size": 1
   },
   {
     "type": {
@@ -109,12 +133,15 @@
         "foreign": true
       }
     },
-    "offset": 91
+    "offset": 91,
+    "size": 16
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 107
+    "offset": 107,
+    "size": 1
   }
 ]

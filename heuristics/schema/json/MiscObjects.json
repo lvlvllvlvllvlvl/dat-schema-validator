@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "EffectVirtualPath",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "PreloadGroupsKeys",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "PreloadGroups"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -35,7 +38,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -46,7 +50,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "type": {
@@ -56,6 +61,7 @@
         "size": 4
       }
     },
-    "offset": 40
+    "offset": 40,
+    "size": 4
   }
 ]

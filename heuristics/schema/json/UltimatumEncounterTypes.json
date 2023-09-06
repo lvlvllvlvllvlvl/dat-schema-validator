@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "ProgressBarText",
@@ -21,7 +23,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -29,7 +32,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -37,7 +41,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "NormalAchievements",
@@ -48,7 +53,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "InscribedAchievement",
@@ -59,6 +65,7 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   }
 ]

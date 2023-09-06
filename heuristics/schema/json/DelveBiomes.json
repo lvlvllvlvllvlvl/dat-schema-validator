@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "WorldAreasKeys",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "UIImage",
@@ -32,7 +35,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "SpawnWeight_Depth",
@@ -43,7 +47,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SpawnWeight_Values",
@@ -54,7 +59,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -65,7 +71,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -76,7 +83,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Art2D",
@@ -84,7 +92,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "AchievementItemsKeys",
@@ -95,7 +104,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -103,7 +113,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -114,6 +125,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   }
 ]

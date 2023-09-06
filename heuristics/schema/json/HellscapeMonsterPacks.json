@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "MonsterPack",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "MonsterPacks"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Faction",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "HellscapeFactions"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsDonutPack",
@@ -35,7 +38,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsElite",
@@ -43,7 +47,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "MinLevel",
@@ -54,7 +59,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "MaxLevel",
@@ -65,6 +71,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   }
 ]

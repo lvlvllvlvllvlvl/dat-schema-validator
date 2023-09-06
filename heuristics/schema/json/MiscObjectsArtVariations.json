@@ -5,7 +5,19 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 8,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "name": "",
@@ -16,7 +28,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -27,7 +40,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -37,6 +51,7 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   }
 ]

@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "type": {
@@ -15,14 +16,17 @@
         "size": 4
       }
     },
-    "offset": 8
+    "offset": 8,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 12
+    "offset": 12,
+    "size": 8
   },
   {
     "type": {
@@ -32,7 +36,8 @@
         "size": 4
       }
     },
-    "offset": 20
+    "offset": 20,
+    "size": 4
   },
   {
     "type": {
@@ -42,7 +47,8 @@
         "size": 4
       }
     },
-    "offset": 24
+    "offset": 24,
+    "size": 4
   },
   {
     "type": {
@@ -52,7 +58,8 @@
         "size": 4
       }
     },
-    "offset": 28
+    "offset": 28,
+    "size": 4
   },
   {
     "type": {
@@ -62,7 +69,8 @@
         "size": 4
       }
     },
-    "offset": 32
+    "offset": 32,
+    "size": 4
   },
   {
     "type": {
@@ -72,7 +80,9 @@
         "size": 4
       }
     },
-    "offset": 36
+    "offset": 36,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -82,7 +92,8 @@
         "size": 4
       }
     },
-    "offset": 40
+    "offset": 40,
+    "size": 4
   },
   {
     "type": {
@@ -92,18 +103,24 @@
         "size": 4
       }
     },
-    "offset": 44
+    "offset": 44,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 48
+    "offset": 48,
+    "size": 1
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 49
+    "offset": 49,
+    "size": 1
   }
 ]

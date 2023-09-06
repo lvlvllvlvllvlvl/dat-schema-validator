@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Icon_DDSFile",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Stats",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Stat1Value",
@@ -35,7 +38,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Stat2Value",
@@ -46,7 +50,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Stat3Value",
@@ -57,7 +62,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Stat4Value",
@@ -68,7 +74,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "PassiveSkillGraphId",
@@ -79,7 +86,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Name",
@@ -87,7 +95,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Characters",
@@ -98,7 +107,8 @@
         "foreign": true,
         "name": "Characters"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsKeystone",
@@ -106,7 +116,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsNotable",
@@ -114,7 +125,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "FlavourText",
@@ -122,7 +134,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IsJustIcon",
@@ -130,7 +143,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "AchievementItem",
@@ -141,7 +155,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsJewelSocket",
@@ -149,7 +164,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "AscendancyKey",
@@ -160,7 +176,8 @@
         "foreign": true,
         "name": "Ascendancy"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsAscendancyStartingNode",
@@ -168,7 +185,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "ReminderStrings",
@@ -179,7 +197,8 @@
         "foreign": true,
         "name": "ClientStrings"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SkillPointsGranted",
@@ -190,7 +209,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "IsMultipleChoice",
@@ -198,7 +218,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsMultipleChoiceOption",
@@ -206,7 +227,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Stat5Value",
@@ -217,7 +239,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "PassiveSkillBuffs",
@@ -228,7 +251,8 @@
         "foreign": true,
         "name": "BuffTemplates"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "GrantedEffectsPerLevel",
@@ -239,7 +263,8 @@
         "foreign": true,
         "name": "GrantedEffectsPerLevel"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsAnointmentOnly",
@@ -247,7 +272,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -258,7 +284,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "IsExpansion",
@@ -266,7 +293,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsProxyPassive",
@@ -274,7 +302,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "SkillType",
@@ -285,7 +314,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "MasteryGroup",
@@ -296,7 +326,8 @@
         "foreign": true,
         "name": "PassiveSkillMasteryGroups"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -306,7 +337,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SoundEffect",
@@ -317,7 +349,8 @@
         "foreign": true,
         "name": "SoundEffects"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -325,7 +358,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -336,7 +370,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -347,7 +382,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -358,7 +394,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -369,7 +406,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -380,7 +418,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -388,7 +427,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -398,7 +438,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -409,7 +450,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -419,7 +461,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -427,6 +470,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

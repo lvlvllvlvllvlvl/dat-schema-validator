@@ -6,19 +6,23 @@
         "foreign": true
       }
     },
-    "offset": 0
+    "offset": 0,
+    "size": 16
   },
   {
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 16
+    "offset": 16,
+    "size": 16
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 32
+    "offset": 32,
+    "size": 1
   }
 ]

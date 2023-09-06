@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Description",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BestiaryRecipeComponentKeys",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "BestiaryRecipeComponent"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Notes",
@@ -32,7 +35,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Category",
@@ -43,7 +47,8 @@
         "foreign": true,
         "name": "BestiaryRecipeCategories"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -51,7 +56,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Achievements",
@@ -62,7 +68,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -70,7 +77,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -81,7 +89,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -92,7 +101,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -103,7 +113,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "FlaskMod",
@@ -114,6 +125,7 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   }
 ]

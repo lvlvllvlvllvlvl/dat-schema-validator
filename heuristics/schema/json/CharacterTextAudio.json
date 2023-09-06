@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Text",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "SoundFile",
@@ -21,14 +23,16 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 24
+    "offset": 24,
+    "size": 8
   },
   {
     "type": {
@@ -38,6 +42,7 @@
         "size": 4
       }
     },
-    "offset": 32
+    "offset": 32,
+    "size": 4
   }
 ]

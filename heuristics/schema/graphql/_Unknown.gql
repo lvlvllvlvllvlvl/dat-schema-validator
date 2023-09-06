@@ -1,0 +1,726 @@
+type abyssbosslifescalingperlevel {
+  _: i32
+  _: i32
+}
+
+type activesettings {
+  _: string
+  _: i32
+  _: i32
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+}
+
+type alternatetreeart {
+  _: rid
+  _: string
+  _: string
+  _: string
+}
+
+type animateweaponuniques {
+  _: string
+  _: rid
+  _: rid
+  _: i32
+}
+
+type atlasmemoryline {
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+}
+
+type battlepasses {
+  _: string
+  _: i32
+  _: string
+  _: string
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: bool
+}
+
+type battlepassrewards {
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: rid
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+}
+
+type battlepasstracks {
+  _: string
+  _: string
+}
+
+type breachartvariations {
+  _: string
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: [_]
+  _: rid
+}
+
+type breachstones {
+  _: rid
+  _: i32
+  _: i32
+  _: rid
+  _: rid
+}
+
+type conditionalachievements {
+  _: rid
+  _: i32
+  _: i32
+}
+
+type corpsesinkvariations {
+  _: string
+  _: string
+  _: string
+  _: [string]
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+}
+
+type cosmeticsequippanelmode {
+  _: string
+  _: [_]
+}
+
+type craftingbenchspecificoptionid {
+  _: string
+  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+}
+
+type crucibledifficulty {
+  _: string
+  _: string
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type crucibleendgamemonsterpacks {
+  _: string
+  _: [_]
+  _: i32
+  _: i32
+  _: bool
+}
+
+type cruciblelifescalingperlevel {
+  _: i32
+  _: i32
+}
+
+type crucibleplayerclassoffsets {
+  _: rid
+  _: i32
+  _: i32
+}
+
+type crucibletags {
+  _: string
+  _: bool
+}
+
+type currencyuseeffects {
+  _: rid
+  _: i32 # All rows empty
+  _: string
+  _: string
+  _: i32
+  _: i32 # All rows empty
+  _: bool
+  _: bool
+  _: rid
+  _: f32
+}
+
+type damageeffectvariations {
+  _: string
+  _: [string]
+  _: [string]
+  _: i32
+  _: i32
+  _: [string]
+  _: [string]
+  _: rid
+}
+
+type damagewhenhiteffects {
+  _: rid
+  _: rid
+  _: bool
+}
+
+type delverobotvariations {
+  _: string
+  _: string
+  _: [string]
+  _: rid
+  _: rid
+}
+
+type divinationwindowvisuals {
+  _: string
+  _: string
+  _: string
+}
+
+type entityinfobarstyle {
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: i32
+  _: i32
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+}
+
+type flaskstashbasetypeordering {
+  _: rid
+  _: i32
+}
+
+type gameobjecttasksfromstats {
+  _: rid
+  _: rid
+  _: i32
+  _: bool
+  _: bool
+  _: bool
+}
+
+type gamepadbuttoncombination {
+  _: string
+  _: rid
+  _: rid
+  _: i32
+}
+
+type gamepadthumbstick {
+  _: string
+  _: string
+}
+
+type goldactscaling {
+  _: string
+  _: i32
+  _: i32
+  _: i32
+}
+
+type goldconstants {
+  _: string
+  _: i32
+}
+
+type hardmodeextracontentchances {
+  _: string
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: [_]
+  _: bool
+}
+
+type hardmodeextracontentchancespermaptier {
+  _: rid
+  _: i32 # All rows empty
+}
+
+type harvestcraftcostscalingbybasetype {
+  _: rid
+  _: rid
+  _: i32
+}
+
+type hideoutcraftingbenchdoodads {
+  _: rid
+  _: rid
+}
+
+type hideoutcraftingbenchinterfacevisuals {
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+}
+
+type hideoutstashdoodads {
+  _: rid
+  _: bool
+  _: bool
+  _: bool
+}
+
+type hideoutwaypointdoodads {
+  _: rid
+  _: [_]
+}
+
+type hudenergyshieldvisuals {
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: bool
+}
+
+type hudlifevisuals {
+  _: string
+  _: string
+  _: string
+  _: [_]
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: i32
+}
+
+type hudvisualsfromstat {
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+}
+
+type itemclasspickupeffect {
+  _: rid
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+}
+
+type itemclassvisualreplacement {
+  _: rid
+  _: rid
+  _: rid
+  _: i32
+}
+
+type itempickupeffect {
+  _: rid
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+}
+
+type itemvisualreplacement {
+  _: rid
+  _: rid
+  _: rid
+  _: i32
+}
+
+type legacyatlasinfluenceoutcomes {
+  _: string
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  _: [_]
+}
+
+type mapstashsubstashgroup {
+  _: string
+  _: string
+  _: string
+  _: rid
+  _: string
+}
+
+type memorylinetype {
+  _: string
+  _: rid
+  _: i32
+  _: [_]
+  _: [_]
+  _: i32
+  _: i32
+  _: rid
+  _: i32 # All rows empty
+  _: string
+  _: rid
+}
+
+type microtransactionappliedinventoryitemartvariations {
+  _: rid
+  _: [string]
+  _: [_]
+  _: [_]
+  _: [_] # All rows empty
+}
+
+type microtransactionchargevariations {
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+}
+
+type microtransactionconditionalapparitionevents {
+  _: rid
+  _: i32 # All rows empty
+  _: i32
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+}
+
+type microtransactionconditionalapparitions {
+  _: string
+  _: [_]
+  _: [_]
+  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: rid
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+}
+
+type microtransactionequippediconvariations {
+  _: rid
+  _: [string]
+  _: [_]
+}
+
+type microtransactionjewelvariations {
+  _: rid
+  _: i32
+  _: string
+  _: string
+  _: i32
+  _: [_]
+  _: string
+  _: string
+  _: i32 # All rows empty
+  _: i32
+  _: string
+  _: i32
+  _: string
+  _: i32
+  _: rid
+  _: bool
+  _: bool
+}
+
+type microtransactionobjecteffects {
+  _: string
+  _: [_]
+  _: string
+  _: [_]
+  _: [string]
+  _: rid
+  _: [_]
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type microtransactiononkillbeams {
+  _: string
+  _: rid
+  _: string
+  _: string
+  _: string
+  _: rid
+  _: bool
+}
+
+type microtransactiononkillconditions {
+  _: string
+  _: [_]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: i32
+  _: i32
+  _: rid
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32
+  _: i32 # All rows empty
+  _: bool
+  _: bool
+}
+
+type microtransactiononkilleffects {
+  _: string
+  _: rid
+  _: rid
+  _: rid
+  _: i32
+  _: rid
+  _: i32
+}
+
+type miniontype {
+  _: string
+  _: rid
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+}
+
+type passivejewelart {
+  _: rid
+  _: string
+  _: string
+  _: rid
+}
+
+type portalaudio {
+  _: rid
+  _: rid
+  _: rid
+  _: i32
+}
+
+type portalaudioevents {
+  _: string
+  _: i32
+}
+
+type preloadfromstats {
+  _: rid
+  _: [_]
+  _: [_] # All rows empty
+  _: [_]
+  _: [_]
+  _: i32
+}
+
+type relicinventorylayout {
+  _: i32
+  _: i32
+  _: i32
+  _: string
+}
+
+type relicitemeffectvariations {
+  _: string
+  _: string
+  _: string
+}
+
+type shrinevisualartvariations {
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+}
+
+type skillgemlevelupeffects {
+  _: string
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+}
+
+type stampchoice {
+  _: string
+  _: rid
+  _: i32
+  _: string
+  _: string
+  _: rid
+  _: [_]
+  _: i32
+}
+
+type stampfamily {
+  _: string
+  _: i32
+}
+
+type statsfromskillstats {
+  _: rid
+  _: rid
+}
+
+type statvisuals {
+  _: rid
+  _: [string]
+  _: bool
+}
+
+type tieredmicrotransactions {
+  _: rid
+  _: [_]
+  _: rid
+  _: [_]
+  _: rid
+  _: i32
+  _: [_]
+  _: [_]
+  _: [_]
+  _: bool
+  _: bool
+  _: rid
+}
+
+type tieredmicrotransactionsvisuals {
+  _: rid
+  _: i32
+  _: string
+  _: string
+  _: i32
+}
+
+type tormentedspiritlifescalingperlevel {
+  _: i32
+  _: i32
+}
+
+type trademarketimplicitmoddisplay {
+  _: rid
+  _: string
+}
+
+type trythenewleagueversions {
+  _: string
+  _: string
+}
+
+enum ancestraltrialmonsterranks @indexing(first: 0) { _ }
+
+enum ancestraltrialopiniontypes @indexing(first: 0) { _ }
+
+enum ancestraltrialshopslots @indexing(first: 0) { _ }
+
+enum ancestraltrialunittypes @indexing(first: 0) { _ }
+
+enum atlasentities @indexing(first: 0) { _ }
+
+enum battlepassrewardtypes @indexing(first: 0) { _ }
+
+enum customleaguetemplate @indexing(first: 0) { _ }
+
+enum damagehittypes @indexing(first: 0) { _ }
+
+enum dropreplacementcustomreplacements @indexing(first: 0) { _ }
+
+enum dropreplacementcustomtargets @indexing(first: 0) { _ }
+
+enum duplicategrantedeffect @indexing(first: 0) { _ }
+
+enum mapdevicecustomeffects @indexing(first: 0) { _ }
+
+enum microtransactionconditionalapparitioneventtype @indexing(first: 0) { _ }
+
+enum microtransactionconditionalapparitionorientation @indexing(first: 0) { _ }
+
+enum microtransactionconditionalapparitionposition @indexing(first: 0) { _ }
+
+enum monsterpushtypes @indexing(first: 0) { _ }
+
+enum npcshopsellpricetype @indexing(first: 0) { _ }
+
+enum onhiteffecttarget @indexing(first: 0) { _ }
+
+enum pantheonmapbossselection @indexing(first: 0) { _ }
+
+enum passiveskilltattootargets @indexing(first: 0) { _ }
+
+enum passivetattoovendorgroups @indexing(first: 0) { _ }
+
+enum projectilecollisiontypes @indexing(first: 0) { _ }
+
+enum raritymask @indexing(first: 0) { _ }
+
+enum sanctumeffecttriggers @indexing(first: 0) { _ }
+
+enum sanctumimmediateeffecttype @indexing(first: 0) { _ }
+
+enum sanctumpersistenteffectfamily @indexing(first: 0) { _ }
+
+enum skillweaponeffects @indexing(first: 0) { _ }
+
+enum userinterfacemodecondition @indexing(first: 0) { _ }

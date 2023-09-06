@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "MiscAnimatedKey1",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SpawnWeight",
@@ -27,7 +29,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "LevelMin",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "LevelMax",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "BuffDefinitionsKey",
@@ -60,7 +65,8 @@
         "foreign": true,
         "name": "BuffDefinitions"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -71,7 +77,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SpawnPatterns",
@@ -82,7 +89,8 @@
         "foreign": true,
         "name": "RitualSpawnPatterns"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ModsKey",
@@ -93,7 +101,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -104,7 +113,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -115,7 +125,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MiscAnimatedKey2",
@@ -126,7 +137,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "EnvironmentsKey",
@@ -137,7 +149,8 @@
         "foreign": true,
         "name": "Environments"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -148,7 +161,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Achievements",
@@ -159,7 +173,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Type",
@@ -167,7 +182,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Description",
@@ -175,7 +191,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "DaemonSpawningDataKey",
@@ -186,7 +203,8 @@
         "foreign": true,
         "name": "DaemonSpawningData"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -194,6 +212,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

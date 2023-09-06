@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Cost1Currencies",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost1Values",
@@ -27,7 +29,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost2Currencies",
@@ -38,7 +41,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost2Values",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost3Currencies",
@@ -60,7 +65,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost3Values",
@@ -71,7 +77,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost4Currencies",
@@ -82,7 +89,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Cost4Values",
@@ -93,7 +101,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "type": {
@@ -103,6 +112,8 @@
         "size": 4
       }
     },
-    "offset": 136
+    "offset": 136,
+    "size": 16,
+    "unknownArray": true
   }
 ]

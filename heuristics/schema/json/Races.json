@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Mods",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -24,7 +26,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -32,7 +35,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -43,7 +47,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -54,7 +59,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -64,7 +70,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -72,7 +79,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -83,7 +91,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "type": {
@@ -93,7 +102,9 @@
         "size": 4
       }
     },
-    "offset": 69
+    "offset": 69,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
@@ -102,6 +113,8 @@
         "foreign": true
       }
     },
-    "offset": 85
+    "offset": 85,
+    "size": 16,
+    "unknownArray": true
   }
 ]

@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "ArmFile",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "RoomType",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "SanctumRoomTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Script",
@@ -32,7 +35,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Floor",
@@ -43,7 +47,8 @@
         "foreign": true,
         "name": "SanctumFloors"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Area",
@@ -54,6 +59,7 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   }
 ]

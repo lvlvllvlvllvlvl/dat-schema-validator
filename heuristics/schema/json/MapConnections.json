@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "MapPins"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MapPinsKey1",
@@ -19,7 +20,8 @@
         "foreign": true,
         "name": "MapPins"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -29,7 +31,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "RestrictedAreaText",
@@ -37,7 +40,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -47,7 +51,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -57,7 +62,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -67,13 +73,19 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
-    "offset": 104
+    "offset": 104,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
   }
 ]

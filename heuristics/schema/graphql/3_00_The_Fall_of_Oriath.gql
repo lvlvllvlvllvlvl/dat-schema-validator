@@ -1,0 +1,35 @@
+type PantheonPanelLayout {
+  Id: string @unique
+  X: i32
+  Y: i32
+  IsMajorGod: bool
+  CoverImage: string
+  GodName2: string
+  SelectionImage: string
+  Effect1_StatsKeys: [Stats]
+  Effect1_Values: [i32]
+  Effect2_StatsKeys: [Stats]
+  GodName3: string
+  Effect3_Values: [i32]
+  Effect3_StatsKeys: [Stats]
+  GodName4: string
+  Effect4_StatsKeys: [Stats]
+  Effect4_Values: [i32]
+  GodName1: string
+  Effect2_Values: [i32]
+  QuestState1: QuestStates
+  QuestState2: QuestStates
+  QuestState3: QuestStates
+  QuestState4: QuestStates
+  IsDisabled: bool
+  AchievementItems: [AchievementItems]
+}
+
+type PantheonSouls @tags(list: ["item:itemized"]) {
+  WorldArea: WorldAreas
+  CapturedVessel: BaseItemTypes
+  QuestFlag: QuestFlags
+  _: [_]
+  _: rid
+  _: string
+}

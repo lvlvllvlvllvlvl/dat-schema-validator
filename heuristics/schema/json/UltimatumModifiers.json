@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Types",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "UltimatumModifierTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ExtraMods",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "TypesFiltered",
@@ -38,7 +41,8 @@
         "foreign": true,
         "name": "UltimatumModifierTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "DaemonSpawningData",
@@ -49,7 +53,8 @@
         "foreign": true,
         "name": "DaemonSpawningData"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "PreviousTiers",
@@ -60,7 +65,8 @@
         "foreign": false,
         "name": "UltimatumModifiers"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -68,7 +74,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Bosses",
@@ -79,7 +86,8 @@
         "foreign": true,
         "name": "MonsterVarieties"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Radius",
@@ -90,7 +98,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Name",
@@ -98,7 +107,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Icon",
@@ -106,7 +116,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "HASH16",
@@ -117,7 +128,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "TypesExtra",
@@ -128,7 +140,8 @@
         "foreign": true,
         "name": "UltimatumModifierTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MonsterTypesApplyingRuin",
@@ -139,7 +152,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "MiscAnimated",
@@ -150,7 +164,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BuffTemplates",
@@ -161,7 +176,8 @@
         "foreign": true,
         "name": "BuffTemplates"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Tier",
@@ -172,7 +188,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -183,7 +200,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Description",
@@ -191,7 +209,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "MonsterSpawners",
@@ -199,7 +218,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -207,7 +227,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Achievements",
@@ -218,7 +239,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "TextAudio",
@@ -229,7 +251,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "UniqueMapMod",
@@ -240,6 +263,7 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   }
 ]

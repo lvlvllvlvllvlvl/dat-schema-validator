@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "GrantedEffectsKey",
@@ -19,7 +20,8 @@
         "foreign": true,
         "name": "GrantedEffects"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Str",
@@ -30,7 +32,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Dex",
@@ -41,7 +44,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Int",
@@ -52,7 +56,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "GemTagsKeys",
@@ -63,7 +68,8 @@
         "foreign": true,
         "name": "GemTags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "VaalVariant_BaseItemTypesKey",
@@ -74,7 +80,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsVaalVariant",
@@ -82,7 +89,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Description",
@@ -90,7 +98,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Consumed_ModsKey",
@@ -101,7 +110,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "GrantedEffectsKey2",
@@ -112,7 +122,8 @@
         "foreign": true,
         "name": "GrantedEffects"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MinionGlobalSkillLevelStat",
@@ -123,7 +134,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SupportSkillName",
@@ -131,7 +143,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IsSupport",
@@ -139,7 +152,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -147,7 +161,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -155,7 +170,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -163,7 +179,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -171,7 +188,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -179,7 +197,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "AwakenedVariant",
@@ -190,7 +209,8 @@
         "foreign": false,
         "name": "SkillGems"
       }
-    }
+    },
+    "size": 8
   },
   {
     "name": "RegularVariant",
@@ -201,7 +221,8 @@
         "foreign": false,
         "name": "SkillGems"
       }
-    }
+    },
+    "size": 8
   },
   {
     "name": "GrantedEffectHardMode",
@@ -212,7 +233,8 @@
         "foreign": true,
         "name": "GrantedEffects"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -222,7 +244,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -233,7 +256,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "ItemExperienceType",
@@ -244,6 +268,7 @@
         "foreign": true,
         "name": "ItemExperienceTypes"
       }
-    }
+    },
+    "size": 16
   }
 ]

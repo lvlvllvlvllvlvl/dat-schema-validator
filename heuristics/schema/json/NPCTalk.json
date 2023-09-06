@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "NPCs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "DialogueOption",
@@ -27,7 +29,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -60,7 +65,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Script",
@@ -68,7 +74,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "TextAudio",
@@ -79,7 +86,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Category",
@@ -90,7 +98,8 @@
         "foreign": true,
         "name": "NPCTalkCategory"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "QuestRewardOffersKey",
@@ -101,7 +110,8 @@
         "foreign": true,
         "name": "QuestRewardOffers"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "QuestFlag",
@@ -112,7 +122,8 @@
         "foreign": true,
         "name": "QuestFlags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "NPCTextAudioKeys",
@@ -123,7 +134,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Script2",
@@ -131,7 +143,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -139,7 +152,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -147,7 +161,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -158,7 +173,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -169,7 +185,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -180,7 +197,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -191,7 +209,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -202,7 +221,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -210,7 +230,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -220,7 +241,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -228,7 +250,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -236,7 +259,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "DialogueOption2",
@@ -244,7 +268,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -254,7 +279,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -264,7 +290,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -275,7 +302,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -286,7 +314,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -297,7 +326,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "type": {
@@ -306,6 +336,7 @@
         "foreign": true
       }
     },
-    "offset": 313
+    "offset": 313,
+    "size": 16
   }
 ]

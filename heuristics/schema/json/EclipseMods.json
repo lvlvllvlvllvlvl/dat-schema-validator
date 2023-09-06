@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "SpawnWeight_TagsKeys",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "Tags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SpawnWeight_Values",
@@ -27,7 +29,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ModsKey",
@@ -38,7 +41,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MinLevel",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "MaxLevel",
@@ -60,7 +65,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "IsPrefix",
@@ -68,6 +74,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

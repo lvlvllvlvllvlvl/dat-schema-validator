@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "WordsKey",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "Words"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "FlavourTextKey",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "FlavourText"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MinLevel",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "ModsKeys",
@@ -49,7 +53,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SpawnWeight",
@@ -60,7 +65,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -71,7 +77,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AOFile",
@@ -79,7 +86,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -87,7 +95,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -98,7 +107,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AppearanceChestsKey",
@@ -109,7 +119,8 @@
         "foreign": true,
         "name": "Chests"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ChestsKey",
@@ -120,7 +131,8 @@
         "foreign": true,
         "name": "Chests"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -130,6 +142,7 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   }
 ]

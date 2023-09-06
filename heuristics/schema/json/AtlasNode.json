@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ItemVisualIdentityKey",
@@ -19,7 +20,8 @@
         "foreign": true,
         "name": "ItemVisualIdentity"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -27,7 +29,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "MapsKey",
@@ -38,7 +41,8 @@
         "foreign": true,
         "name": "Maps"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "FlavourTextKey",
@@ -49,7 +53,8 @@
         "foreign": true,
         "name": "FlavourText"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AtlasNodeKeys",
@@ -60,7 +65,8 @@
         "foreign": false,
         "name": "AtlasNode"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Tier0",
@@ -71,7 +77,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Tier1",
@@ -82,7 +89,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Tier2",
@@ -93,7 +101,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Tier3",
@@ -104,7 +113,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Tier4",
@@ -115,7 +125,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -125,7 +136,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -135,7 +147,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -145,7 +158,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -155,7 +169,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -165,7 +180,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "DDSFile",
@@ -173,7 +189,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -181,7 +198,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "NotOnAtlas",
@@ -189,7 +207,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "type": {
@@ -199,7 +218,8 @@
         "size": 4
       }
     },
-    "offset": 131
+    "offset": 131,
+    "size": 4
   },
   {
     "type": {
@@ -209,7 +229,8 @@
         "size": 4
       }
     },
-    "offset": 135
+    "offset": 135,
+    "size": 4
   },
   {
     "type": {
@@ -219,7 +240,8 @@
         "size": 4
       }
     },
-    "offset": 139
+    "offset": 139,
+    "size": 4
   },
   {
     "type": {
@@ -229,6 +251,7 @@
         "size": 4
       }
     },
-    "offset": 143
+    "offset": 143,
+    "size": 4
   }
 ]

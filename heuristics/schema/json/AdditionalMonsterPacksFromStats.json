@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "MonsterPacksKeys",
@@ -30,7 +32,8 @@
         "foreign": true,
         "name": "MonsterPacks"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AdditionalMonsterPacksStatMode",
@@ -41,7 +44,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "PackCountStatsKey",
@@ -52,7 +56,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "StatsKeys",
@@ -63,7 +68,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "StatsValues",
@@ -74,7 +80,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -85,7 +92,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "type": {
@@ -94,6 +102,7 @@
         "foreign": true
       }
     },
-    "offset": 92
+    "offset": 92,
+    "size": 16
   }
 ]

@@ -4,7 +4,8 @@
       "array": false,
       "string": {}
     },
-    "offset": 0
+    "offset": 0,
+    "size": 8
   },
   {
     "type": {
@@ -13,21 +14,33 @@
         "foreign": true
       }
     },
-    "offset": 8
+    "offset": 8,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
-    "offset": 24
+    "offset": 24,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
   },
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
-    "offset": 40
+    "offset": 40,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
   },
   {
     "type": {
@@ -37,7 +50,8 @@
         "size": 4
       }
     },
-    "offset": 56
+    "offset": 56,
+    "size": 4
   },
   {
     "type": {
@@ -47,7 +61,8 @@
         "size": 4
       }
     },
-    "offset": 60
+    "offset": 60,
+    "size": 4
   },
   {
     "type": {
@@ -56,16 +71,8 @@
         "foreign": true
       }
     },
-    "offset": 64
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": false
-      }
-    },
-    "offset": 80
+    "offset": 64,
+    "size": 16
   },
   {
     "type": {
@@ -75,7 +82,9 @@
         "size": 4
       }
     },
-    "offset": 88
+    "offset": 80,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -85,18 +94,47 @@
         "size": 4
       }
     },
-    "offset": 92
+    "offset": 84,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
-      "boolean": true
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "offset": 96
+    "offset": 88,
+    "size": 4
   },
   {
     "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 92,
+    "size": 4,
+    "noData": true
+  },
+  {
+    "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 97
+    "offset": 96,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 97,
+    "size": 1
   }
 ]

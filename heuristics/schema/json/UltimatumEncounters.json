@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Description",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "ModTypes",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "UltimatumModifierTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BossARMFile",
@@ -32,7 +35,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Type",
@@ -43,7 +47,8 @@
         "foreign": true,
         "name": "UltimatumEncounterTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Icon",
@@ -51,7 +56,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "HASH16",
@@ -62,7 +68,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -70,7 +77,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -81,6 +89,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   }
 ]

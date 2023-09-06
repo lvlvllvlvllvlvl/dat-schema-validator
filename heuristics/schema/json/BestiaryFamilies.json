@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Icon",
@@ -21,7 +23,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IconSmall",
@@ -29,7 +32,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Illustration",
@@ -37,7 +41,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "PageArt",
@@ -45,7 +50,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "FlavourText",
@@ -53,7 +59,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -61,7 +68,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "TagsKey",
@@ -72,7 +80,8 @@
         "foreign": true,
         "name": "Tags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -83,7 +92,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "ModsKeys",
@@ -94,7 +104,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "CurrencyItemsKey",
@@ -105,6 +116,7 @@
         "foreign": true,
         "name": "CurrencyItems"
       }
-    }
+    },
+    "size": 16
   }
 ]

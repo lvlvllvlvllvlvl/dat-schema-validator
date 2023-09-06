@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Id",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "AOFile",
@@ -27,7 +29,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "MapAOFile",
@@ -35,7 +38,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -45,7 +49,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "MiscObject",
@@ -56,7 +61,8 @@
         "foreign": true,
         "name": "MiscObjects"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "PortalEffect",
@@ -64,7 +70,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -74,7 +81,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -82,7 +90,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "PortalEffectLarge",
@@ -90,7 +99,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "type": {
@@ -100,7 +110,8 @@
         "size": 4
       }
     },
-    "offset": 84
+    "offset": 84,
+    "size": 4
   },
   {
     "type": {
@@ -110,13 +121,15 @@
         "size": 4
       }
     },
-    "offset": 88
+    "offset": 88,
+    "size": 4
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 92
+    "offset": 92,
+    "size": 8
   }
 ]

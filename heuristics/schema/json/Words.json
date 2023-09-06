@@ -8,7 +8,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Text",
@@ -16,7 +17,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "SpawnWeight_Tags",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "Tags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SpawnWeight_Values",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Text2",
@@ -57,7 +62,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Inflection",
@@ -65,6 +71,7 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   }
 ]

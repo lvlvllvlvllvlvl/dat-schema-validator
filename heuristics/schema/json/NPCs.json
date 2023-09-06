@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Metadata",
@@ -21,7 +23,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -31,7 +34,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "NPCMasterKey",
@@ -42,7 +46,8 @@
         "foreign": true,
         "name": "NPCMaster"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ShortName",
@@ -50,7 +55,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -61,7 +67,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "NPCAudios1",
@@ -72,7 +79,8 @@
         "foreign": true,
         "name": "NPCAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "NPCAudios2",
@@ -83,7 +91,8 @@
         "foreign": true,
         "name": "NPCAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -94,7 +103,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -105,7 +115,8 @@
         "foreign": false,
         "name": "NPCs"
       }
-    }
+    },
+    "size": 8
   },
   {
     "name": "Portrait",
@@ -116,7 +127,8 @@
         "foreign": true,
         "name": "NPCPortraits"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "DialogueStyle",
@@ -127,7 +139,8 @@
         "foreign": true,
         "name": "NPCDialogueStyles"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -135,7 +148,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -145,7 +159,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Gender",
@@ -153,12 +168,15 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 169
+    "offset": 169,
+    "size": 1
   }
 ]

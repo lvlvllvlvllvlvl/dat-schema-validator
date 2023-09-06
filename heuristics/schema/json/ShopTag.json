@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "IsCategory",
@@ -21,7 +23,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Category",
@@ -32,7 +35,8 @@
         "foreign": false,
         "name": "ShopTag"
       }
-    }
+    },
+    "size": 8
   },
   {
     "name": "SkillGem",
@@ -43,6 +47,7 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   }
 ]

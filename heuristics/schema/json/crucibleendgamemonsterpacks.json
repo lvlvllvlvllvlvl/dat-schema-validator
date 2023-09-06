@@ -4,7 +4,8 @@
       "array": false,
       "string": {}
     },
-    "offset": 0
+    "offset": 0,
+    "size": 8
   },
   {
     "type": {
@@ -14,7 +15,9 @@
         "size": 4
       }
     },
-    "offset": 8
+    "offset": 8,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
@@ -24,7 +27,8 @@
         "size": 4
       }
     },
-    "offset": 24
+    "offset": 24,
+    "size": 4
   },
   {
     "type": {
@@ -34,12 +38,15 @@
         "size": 4
       }
     },
-    "offset": 28
+    "offset": 28,
+    "size": 4
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 32
+    "offset": 32,
+    "size": 1
   }
 ]

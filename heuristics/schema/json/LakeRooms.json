@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "ARMFiles",
@@ -13,7 +14,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "Script",
@@ -21,7 +23,20 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 32,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
   },
   {
     "name": "Stats",
@@ -32,7 +47,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "StatsValues",
@@ -43,7 +59,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Description",
@@ -51,7 +68,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -59,7 +77,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Type",
@@ -70,7 +89,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "WorldArea",
@@ -81,7 +101,8 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Icon",
@@ -89,7 +110,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -100,7 +122,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "MinLevel",
@@ -111,7 +134,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -121,7 +145,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -129,7 +154,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "ExtraStats",
@@ -140,7 +166,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ExtraStatsValues",
@@ -151,7 +178,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ReminderText",
@@ -159,7 +187,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "TextAudio",
@@ -170,7 +199,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "type": {
@@ -179,12 +209,15 @@
         "foreign": true
       }
     },
-    "offset": 205
+    "offset": 205,
+    "size": 16
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 221
+    "offset": 221,
+    "size": 1
   }
 ]

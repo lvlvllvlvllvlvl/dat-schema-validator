@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "QuestFlags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "CompletionString",
@@ -19,7 +20,8 @@
         "foreign": true,
         "name": "ClientStrings"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Boss",
@@ -27,7 +29,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -35,6 +38,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

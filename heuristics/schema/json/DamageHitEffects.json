@@ -8,7 +8,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -30,7 +32,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "type": {
@@ -39,13 +42,16 @@
         "foreign": true
       }
     },
-    "offset": 12
+    "offset": 12,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 28
+    "offset": 28,
+    "size": 16
   }
 ]

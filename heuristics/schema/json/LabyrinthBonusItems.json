@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AreaLevel",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "LabyrinthName",
@@ -27,6 +29,7 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   }
 ]

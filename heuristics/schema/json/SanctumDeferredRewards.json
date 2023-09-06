@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "DeferralIcon",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "DeferralCategory",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "SanctumPersistentEffectCategories"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "RewardCategory",
@@ -35,7 +38,8 @@
         "foreign": true,
         "name": "SanctumDeferredRewardCategories"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Count",
@@ -46,6 +50,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   }
 ]

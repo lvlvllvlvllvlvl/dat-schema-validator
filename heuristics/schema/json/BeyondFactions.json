@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Boss",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "MonsterVarieties"
       }
-    }
+    },
+    "size": 16
   },
   {
     "type": {
@@ -25,6 +27,7 @@
         "foreign": true
       }
     },
-    "offset": 24
+    "offset": 24,
+    "size": 16
   }
 ]

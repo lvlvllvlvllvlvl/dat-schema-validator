@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Area",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Title",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "ClientStrings"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "RoomIcon",
@@ -35,7 +38,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BossIcon",
@@ -43,7 +47,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Description",
@@ -51,7 +56,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Summary",
@@ -62,7 +68,8 @@
         "foreign": true,
         "name": "ClientStrings"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Itemised",
@@ -73,6 +80,7 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   }
 ]

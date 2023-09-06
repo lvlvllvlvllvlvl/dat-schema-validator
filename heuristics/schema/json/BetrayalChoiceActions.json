@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BetrayalChoicesKey",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "BetrayalChoices"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ClientStringsKey",
@@ -27,6 +29,7 @@
         "foreign": true,
         "name": "ClientStrings"
       }
-    }
+    },
+    "size": 16
   }
 ]

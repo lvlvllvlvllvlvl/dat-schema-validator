@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "NPCs",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "NPCs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "RerollItem",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -60,7 +65,8 @@
         "foreign": true,
         "name": "QuestFlags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Faction",
@@ -71,7 +77,8 @@
         "foreign": true,
         "name": "ExpeditionFactions"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Reroll",
@@ -82,7 +89,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AllBombsPlaced",
@@ -93,7 +101,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BombPlacedRemnant",
@@ -104,7 +113,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BombPlacedTreasure",
@@ -115,7 +125,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BombPlacedMonsters",
@@ -126,7 +137,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BombPlacedGeneric",
@@ -137,7 +149,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "EncounterComplete",
@@ -148,7 +161,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -159,7 +173,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -170,6 +185,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   }
 ]

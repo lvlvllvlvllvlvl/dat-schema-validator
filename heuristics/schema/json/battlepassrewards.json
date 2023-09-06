@@ -6,7 +6,8 @@
         "foreign": true
       }
     },
-    "offset": 0
+    "offset": 0,
+    "size": 16
   },
   {
     "type": {
@@ -16,7 +17,8 @@
         "size": 4
       }
     },
-    "offset": 16
+    "offset": 16,
+    "size": 4
   },
   {
     "type": {
@@ -26,7 +28,8 @@
         "size": 4
       }
     },
-    "offset": 20
+    "offset": 20,
+    "size": 4
   },
   {
     "type": {
@@ -36,7 +39,8 @@
         "size": 4
       }
     },
-    "offset": 24
+    "offset": 24,
+    "size": 4
   },
   {
     "type": {
@@ -46,7 +50,8 @@
         "size": 4
       }
     },
-    "offset": 28
+    "offset": 28,
+    "size": 4
   },
   {
     "type": {
@@ -56,7 +61,9 @@
         "size": 4
       }
     },
-    "offset": 32
+    "offset": 32,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -66,7 +73,8 @@
         "size": 4
       }
     },
-    "offset": 36
+    "offset": 36,
+    "size": 4
   },
   {
     "type": {
@@ -75,7 +83,8 @@
         "foreign": true
       }
     },
-    "offset": 40
+    "offset": 40,
+    "size": 16
   },
   {
     "type": {
@@ -85,7 +94,8 @@
         "size": 4
       }
     },
-    "offset": 56
+    "offset": 56,
+    "size": 4
   },
   {
     "type": {
@@ -95,7 +105,9 @@
         "size": 4
       }
     },
-    "offset": 60
+    "offset": 60,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -105,7 +117,8 @@
         "size": 4
       }
     },
-    "offset": 64
+    "offset": 64,
+    "size": 4
   },
   {
     "type": {
@@ -115,7 +128,9 @@
         "size": 4
       }
     },
-    "offset": 68
+    "offset": 68,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -125,7 +140,8 @@
         "size": 4
       }
     },
-    "offset": 72
+    "offset": 72,
+    "size": 4
   },
   {
     "type": {
@@ -135,7 +151,8 @@
         "size": 4
       }
     },
-    "offset": 76
+    "offset": 76,
+    "size": 4
   },
   {
     "type": {
@@ -145,7 +162,8 @@
         "size": 4
       }
     },
-    "offset": 80
+    "offset": 80,
+    "size": 4
   },
   {
     "type": {
@@ -155,7 +173,9 @@
         "size": 4
       }
     },
-    "offset": 84
+    "offset": 84,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -165,16 +185,30 @@
         "size": 4
       }
     },
-    "offset": 88
+    "offset": 88,
+    "size": 4
   },
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": false
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
-    "offset": 92
+    "offset": 92,
+    "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 96,
+    "size": 4
   },
   {
     "type": {
@@ -183,7 +217,8 @@
         "foreign": true
       }
     },
-    "offset": 100
+    "offset": 100,
+    "size": 16
   },
   {
     "type": {
@@ -193,7 +228,9 @@
         "size": 4
       }
     },
-    "offset": 116
+    "offset": 116,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -203,16 +240,8 @@
         "size": 4
       }
     },
-    "offset": 120
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": false
-      }
-    },
-    "offset": 124
+    "offset": 120,
+    "size": 4
   },
   {
     "type": {
@@ -222,7 +251,8 @@
         "size": 4
       }
     },
-    "offset": 132
+    "offset": 124,
+    "size": 4
   },
   {
     "type": {
@@ -232,18 +262,45 @@
         "size": 4
       }
     },
-    "offset": 136
+    "offset": 128,
+    "size": 4
   },
   {
     "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 132,
+    "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 136,
+    "size": 4
+  },
+  {
+    "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 140
+    "offset": 140,
+    "size": 1
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 141
+    "offset": 141,
+    "size": 1
   }
 ]

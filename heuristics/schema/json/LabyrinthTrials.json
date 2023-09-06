@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -19,7 +20,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -30,7 +32,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -41,7 +44,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "NPCTextAudioKey",
@@ -52,7 +56,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -60,7 +65,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -68,7 +74,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -79,16 +86,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": false
-      }
     },
-    "offset": 64
+    "size": 4
   },
   {
     "type": {
@@ -98,6 +97,32 @@
         "size": 4
       }
     },
-    "offset": 72
+    "offset": 64,
+    "size": 4,
+    "noData": true
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 68,
+    "size": 4,
+    "noData": true
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 72,
+    "size": 4,
+    "noData": true
   }
 ]

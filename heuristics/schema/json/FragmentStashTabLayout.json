@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "PosX",
@@ -16,7 +17,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "PosY",
@@ -27,7 +29,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Order",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "SizeX",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "SizeY",
@@ -60,7 +65,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -68,7 +74,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Tab",
@@ -79,7 +86,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -90,7 +98,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "IsDisabled",
@@ -98,7 +107,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Subtab",
@@ -109,7 +119,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "FragmentItems",
@@ -120,7 +131,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "type": {
@@ -130,7 +142,8 @@
         "size": 4
       }
     },
-    "offset": 58
+    "offset": 58,
+    "size": 4
   },
   {
     "type": {
@@ -140,7 +153,9 @@
         "size": 4
       }
     },
-    "offset": 62
+    "offset": 62,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -150,12 +165,15 @@
         "size": 4
       }
     },
-    "offset": 66
+    "offset": 66,
+    "size": 4
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 70
+    "offset": 70,
+    "size": 1
   }
 ]

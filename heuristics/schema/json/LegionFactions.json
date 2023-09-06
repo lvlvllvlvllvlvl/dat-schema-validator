@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "SpawnWeight",
@@ -16,7 +17,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "LegionBalancePerLevelKey",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "LegionBalancePerLevel"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -37,7 +40,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -47,7 +51,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "BuffVisualsKey",
@@ -58,7 +63,8 @@
         "foreign": true,
         "name": "BuffVisuals"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MiscAnimatedKey1",
@@ -69,7 +75,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MiscAnimatedKey2",
@@ -80,7 +87,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MiscAnimatedKey3",
@@ -91,7 +99,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AchievementItemsKeys1",
@@ -102,7 +111,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MiscAnimatedKey4",
@@ -113,7 +123,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MiscAnimatedKey5",
@@ -124,7 +135,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -134,7 +146,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -144,7 +157,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "AchievementItemsKeys2",
@@ -155,7 +169,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "StatsKey",
@@ -166,7 +181,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Shard",
@@ -174,7 +190,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "RewardJewelArt",
@@ -182,6 +199,7 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   }
 ]

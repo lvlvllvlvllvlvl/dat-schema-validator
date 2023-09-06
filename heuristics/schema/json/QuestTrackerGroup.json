@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "QuestType",
@@ -24,6 +26,7 @@
         "foreign": true,
         "name": "QuestType"
       }
-    }
+    },
+    "size": 16
   }
 ]

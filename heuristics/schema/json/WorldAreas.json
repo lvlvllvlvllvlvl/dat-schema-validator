@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Name",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Act",
@@ -24,7 +26,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "IsTown",
@@ -32,7 +35,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "HasWaypoint",
@@ -40,7 +44,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Connections_WorldAreasKeys",
@@ -51,7 +56,8 @@
         "foreign": false,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AreaLevel",
@@ -62,7 +68,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "HASH16",
@@ -73,7 +80,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -84,7 +92,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -95,7 +104,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "LoadingScreen_DDSFile",
@@ -103,7 +113,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -113,7 +124,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -123,7 +135,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -134,7 +147,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "TopologiesKeys",
@@ -145,7 +159,8 @@
         "foreign": true,
         "name": "Topologies"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ParentTown_WorldAreasKey",
@@ -156,7 +171,8 @@
         "foreign": false,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -167,7 +183,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -177,7 +194,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -187,7 +205,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Bosses_MonsterVarietiesKeys",
@@ -198,7 +217,8 @@
         "foreign": true,
         "name": "MonsterVarieties"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Monsters_MonsterVarietiesKeys",
@@ -209,7 +229,8 @@
         "foreign": true,
         "name": "MonsterVarieties"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SpawnWeight_TagsKeys",
@@ -220,7 +241,8 @@
         "foreign": true,
         "name": "Tags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SpawnWeight_Values",
@@ -231,7 +253,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsMapArea",
@@ -239,7 +262,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "FullClear_AchievementItemsKeys",
@@ -250,7 +274,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -260,7 +285,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AchievementItemsKey",
@@ -271,7 +297,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "ModsKeys",
@@ -282,7 +309,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -293,7 +321,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "VaalArea",
@@ -304,7 +333,8 @@
         "foreign": false,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -312,7 +342,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "MaxLevel",
@@ -323,7 +354,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "AreaTypeTags",
@@ -334,7 +366,8 @@
         "foreign": true,
         "name": "Tags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -345,7 +378,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "IsHideout",
@@ -353,7 +387,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "Inflection",
@@ -361,7 +396,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -372,7 +408,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -383,7 +420,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "Tags",
@@ -394,7 +432,8 @@
         "foreign": true,
         "name": "Tags"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsVaalArea",
@@ -402,7 +441,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsLabyrinthAirlock",
@@ -410,7 +450,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsLabyrinthArea",
@@ -418,7 +459,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "TwinnedFullClear_AchievementItemsKey",
@@ -429,7 +471,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Enter_AchievementItemsKey",
@@ -440,7 +483,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "TSIFile",
@@ -448,7 +492,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -458,7 +503,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "WaypointActivation_AchievementItemsKeys",
@@ -469,7 +515,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "IsUniqueMapArea",
@@ -477,7 +524,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "IsLabyrinthBossArea",
@@ -485,7 +533,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "FirstEntry_NPCTextAudioKey",
@@ -496,7 +545,8 @@
         "foreign": true,
         "name": "NPCTextAudio"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "FirstEntry_SoundEffectsKey",
@@ -507,7 +557,8 @@
         "foreign": true,
         "name": "SoundEffects"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "FirstEntry_NPCsKey",
@@ -515,7 +566,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -526,7 +578,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "EnvironmentsKey",
@@ -537,7 +590,8 @@
         "foreign": true,
         "name": "Environments"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -548,7 +602,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -558,7 +613,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -569,7 +625,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -580,7 +637,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -591,7 +649,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -602,7 +661,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -613,7 +673,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -621,7 +682,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -629,7 +691,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -640,7 +703,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -651,7 +715,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -662,7 +727,20 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 556,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
   },
   {
     "name": "",
@@ -672,7 +750,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -683,7 +762,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -693,7 +773,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -703,7 +784,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -714,7 +796,8 @@
         "foreign": true,
         "name": "Rulesets"
       }
-    }
+    },
+    "size": 16
   },
   {
     "type": {
@@ -724,6 +807,7 @@
         "size": 4
       }
     },
-    "offset": 640
+    "offset": 640,
+    "size": 4
   }
 ]

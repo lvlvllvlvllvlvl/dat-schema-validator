@@ -8,7 +8,8 @@
         "foreign": true,
         "name": "MonsterVarieties"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SkillType",
@@ -19,7 +20,8 @@
         "foreign": true,
         "name": "MetamorphosisMetaSkillTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -29,7 +31,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -39,7 +42,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -50,7 +54,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -60,7 +65,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Animation",
@@ -71,7 +77,8 @@
         "foreign": true,
         "name": "Animation"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Stats",
@@ -82,7 +89,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "StatsValues",
@@ -93,7 +101,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -104,7 +113,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -114,7 +124,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "GrantedEffects",
@@ -125,7 +136,8 @@
         "foreign": true,
         "name": "GrantedEffects"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -136,7 +148,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -146,7 +159,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Script1",
@@ -154,7 +168,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Script2",
@@ -162,7 +177,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Mods",
@@ -173,7 +189,8 @@
         "foreign": true,
         "name": "Mods"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "Name",
@@ -181,7 +198,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -192,7 +210,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -202,7 +221,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -213,7 +233,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -224,7 +245,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -235,7 +257,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -245,7 +268,32 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 300,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 316,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
   },
   {
     "name": "MiscAnimations",
@@ -256,7 +304,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -264,6 +313,7 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   }
 ]

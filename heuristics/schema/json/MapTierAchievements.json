@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "AchievementItemsKey",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MapTiers",
@@ -27,6 +29,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   }
 ]

@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BuffDefinitionsKey",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "BuffDefinitions"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -27,7 +29,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AuraRadius",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -49,7 +53,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -60,7 +65,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BuffVisualsKey",
@@ -71,7 +77,8 @@
         "foreign": true,
         "name": "BuffVisuals"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -81,7 +88,8 @@
       "decimal": {
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -89,7 +97,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "StatsKey",
@@ -100,7 +109,8 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -111,7 +121,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -122,7 +133,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -130,7 +142,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -141,6 +154,7 @@
         "foreign": true,
         "name": "Stats"
       }
-    }
+    },
+    "size": 16
   }
 ]

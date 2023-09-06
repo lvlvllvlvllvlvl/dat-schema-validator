@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "CharactersKey",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "Characters"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BaseItemTypesKey",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "BaseItemTypes"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "SocketColours",
@@ -35,7 +38,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "WorldAreasKey",
@@ -46,6 +50,7 @@
         "foreign": true,
         "name": "WorldAreas"
       }
-    }
+    },
+    "size": 16
   }
 ]

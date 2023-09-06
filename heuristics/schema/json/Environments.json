@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Base_ENVFile",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "Corrupted_ENVFile",
@@ -21,7 +23,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -31,7 +34,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -41,7 +45,20 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 56,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
   },
   {
     "name": "EnvironmentTransitionsKey",
@@ -52,7 +69,8 @@
         "foreign": true,
         "name": "EnvironmentTransitions"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "PreloadGroup",
@@ -63,6 +81,7 @@
         "foreign": true,
         "name": "PreloadGroups"
       }
-    }
+    },
+    "size": 16
   }
 ]

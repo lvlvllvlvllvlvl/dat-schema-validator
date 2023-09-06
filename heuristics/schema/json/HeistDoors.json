@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "HeistJobsKey1",
@@ -24,7 +26,8 @@
         "foreign": true,
         "name": "HeistJobs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "HeistJobsKey2",
@@ -35,7 +38,8 @@
         "foreign": true,
         "name": "HeistJobs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -43,7 +47,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -51,7 +56,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -59,7 +65,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -70,7 +77,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "HeistAreasKey",
@@ -81,6 +89,7 @@
         "foreign": true,
         "name": "HeistAreas"
       }
-    }
+    },
+    "size": 16
   }
 ]

@@ -4,28 +4,32 @@
       "array": false,
       "string": {}
     },
-    "offset": 0
+    "offset": 0,
+    "size": 8
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 8
+    "offset": 8,
+    "size": 8
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 16
+    "offset": 16,
+    "size": 8
   },
   {
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 24
+    "offset": 24,
+    "size": 16
   },
   {
     "type": {
@@ -35,7 +39,8 @@
         "size": 4
       }
     },
-    "offset": 40
+    "offset": 40,
+    "size": 4
   },
   {
     "type": {
@@ -45,7 +50,8 @@
         "size": 4
       }
     },
-    "offset": 44
+    "offset": 44,
+    "size": 4
   },
   {
     "type": {
@@ -55,18 +61,23 @@
         "size": 4
       }
     },
-    "offset": 48
+    "offset": 48,
+    "size": 4
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 52
+    "offset": 52,
+    "size": 1
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 53
+    "offset": 53,
+    "size": 1
   }
 ]

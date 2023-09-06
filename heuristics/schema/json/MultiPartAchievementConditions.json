@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "MultiPartAchievementsKey1",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "MultiPartAchievements"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MultiPartAchievementsKey2",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "MultiPartAchievements"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -38,7 +41,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -49,6 +53,7 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   }
 ]

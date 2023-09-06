@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "BuffDDSFile",
@@ -13,7 +14,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "EPKFiles1",
@@ -21,7 +23,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "EPKFiles2",
@@ -29,7 +32,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "PreloadGroups",
@@ -40,7 +44,8 @@
         "foreign": true,
         "name": "PreloadGroups"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -48,7 +53,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "BuffName",
@@ -56,7 +62,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "MiscAnimated1",
@@ -67,7 +74,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MiscAnimated2",
@@ -78,7 +86,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "BuffDescription",
@@ -86,7 +95,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "EPKFile",
@@ -94,7 +104,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "HasExtraArt",
@@ -102,7 +113,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "ExtraArt",
@@ -110,7 +122,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "",
@@ -121,7 +134,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "EPKFiles",
@@ -129,7 +143,8 @@
     "type": {
       "array": true,
       "string": {}
-    }
+    },
+    "size": 16
   },
   {
     "name": "BuffVisualOrbs",
@@ -140,7 +155,8 @@
         "foreign": true,
         "name": "BuffVisualOrbs"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MiscAnimated3",
@@ -151,7 +167,8 @@
         "foreign": true,
         "name": "MiscAnimated"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -161,6 +178,7 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   }
 ]

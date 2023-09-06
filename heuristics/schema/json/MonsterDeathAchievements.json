@@ -5,7 +5,8 @@
     "type": {
       "array": false,
       "string": {}
-    }
+    },
+    "size": 8
   },
   {
     "name": "MonsterVarietiesKeys",
@@ -16,7 +17,8 @@
         "foreign": true,
         "name": "MonsterVarieties"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "AchievementItemsKeys",
@@ -27,7 +29,8 @@
         "foreign": true,
         "name": "AchievementItems"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -35,7 +38,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "PlayerConditionsKeys",
@@ -46,7 +50,8 @@
         "foreign": true,
         "name": "PlayerConditions"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "MonsterDeathConditionsKeys",
@@ -57,7 +62,8 @@
         "foreign": true,
         "name": "MonsterDeathConditions"
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -67,7 +73,8 @@
       "key": {
         "foreign": true
       }
-    }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -78,7 +85,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -89,7 +97,8 @@
         "unsigned": false,
         "size": 4
       }
-    }
+    },
+    "size": 4
   },
   {
     "name": "",
@@ -97,7 +106,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "name": "",
@@ -105,7 +115,8 @@
     "type": {
       "array": false,
       "boolean": true
-    }
+    },
+    "size": 1
   },
   {
     "type": {
@@ -114,28 +125,33 @@
         "foreign": true
       }
     },
-    "offset": 99
+    "offset": 99,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 115
+    "offset": 115,
+    "size": 16
   },
   {
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 131
+    "offset": 131,
+    "size": 16
   },
   {
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 147
+    "offset": 147,
+    "size": 16
   },
   {
     "type": {
@@ -144,7 +160,8 @@
         "foreign": true
       }
     },
-    "offset": 163
+    "offset": 163,
+    "size": 16
   },
   {
     "type": {
@@ -154,7 +171,8 @@
         "size": 4
       }
     },
-    "offset": 179
+    "offset": 179,
+    "size": 4
   },
   {
     "type": {
@@ -163,7 +181,9 @@
         "foreign": true
       }
     },
-    "offset": 183
+    "offset": 183,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
@@ -173,7 +193,8 @@
         "size": 4
       }
     },
-    "offset": 199
+    "offset": 199,
+    "size": 4
   },
   {
     "type": {
@@ -183,7 +204,9 @@
         "size": 4
       }
     },
-    "offset": 203
+    "offset": 203,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -193,7 +216,8 @@
         "size": 4
       }
     },
-    "offset": 207
+    "offset": 207,
+    "size": 4
   },
   {
     "type": {
@@ -203,7 +227,9 @@
         "size": 4
       }
     },
-    "offset": 211
+    "offset": 211,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -213,7 +239,8 @@
         "size": 4
       }
     },
-    "offset": 215
+    "offset": 215,
+    "size": 4
   },
   {
     "type": {
@@ -223,7 +250,9 @@
         "size": 4
       }
     },
-    "offset": 219
+    "offset": 219,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
@@ -233,7 +262,8 @@
         "size": 4
       }
     },
-    "offset": 223
+    "offset": 223,
+    "size": 4
   },
   {
     "type": {
@@ -243,18 +273,24 @@
         "size": 4
       }
     },
-    "offset": 227
+    "offset": 227,
+    "size": 4,
+    "noData": true
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 231
+    "offset": 231,
+    "size": 1
   },
   {
     "type": {
+      "array": false,
       "boolean": true
     },
-    "offset": 232
+    "offset": 232,
+    "size": 1
   }
 ]
