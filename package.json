@@ -1,11 +1,12 @@
 {
   "type": "module",
   "dependencies": {
-    "csv-stringify": "^6.4.0",
+    "csv-parse": "^5.5.0",
+    "csv-stringify": "^6.4.2",
     "pathofexile-dat": "^8.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.10"
+    "@types/node": "^20.5.9"
   },
   "prettier": {
     "printWidth": 100,

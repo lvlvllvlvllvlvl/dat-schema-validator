@@ -1,3 +1,4 @@
+import { parse as csvParse } from "csv-parse/sync";
 import * as csv from "csv-stringify";
 import * as fs from "fs/promises";
 import path from "path";
@@ -14,7 +15,7 @@ import {
   setWasmExports,
   validateHeader,
 } from "pathofexile-dat/dat.js";
-import { changes } from "./changes.js";
+import { ShapeChange, changes } from "./changes.js";
 import { NamedHeader, exportAllRows, importHeaders } from "./datfile.js";
 import { getPossibleHeaders, guessType } from "./heuristic.js";
 
@@ -89,7 +90,6 @@ class CdnBundleLoader {
       await fs.access(cacheDir);
     } catch {
       console.log("Creating new bundle cache...");
-      await fs.rm(cacheRoot, { recursive: true, force: true });
       await fs.mkdir(cacheDir, { recursive: true });
     }
     return new CdnBundleLoader(cacheDir, patchVer);
@@ -137,8 +137,9 @@ const TRANSLATIONS = [
   { name: "Traditional Chinese", path: "data/traditional chinese" },
 ];
 
-const missing = [] as string[];
 const errors = [] as string[];
+const metas = new Set<string>();
+const tablesSeen = new Set<string>();
 
 console.log("Loading schema for dat files");
 const version = await fetch(
@@ -182,19 +183,26 @@ for (const tr of includeTranslations) {
       if (fileComponents.ext !== ".dat64") continue;
       const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
       const buf = await loader.getFileContents(file).catch((e) => {
-        if ((e as Error).message === "never") {
-          missing.push("missing file " + file);
-        } else {
-          console.error(e);
-        }
+        console.error(e);
       });
       if (!buf) continue;
+      tablesSeen.add(table.name);
       console.log("validating", table.name);
       const datFile = readDatFile(".dat64", buf);
       const columnStats = await analyzeDatFile(datFile);
       if (columnStats.length !== datFile.rowLength) {
         console.log(table.name, columnStats.length, datFile.rowLength);
       }
+      let csvName = table.name + ".csv";
+      const csvFile = await fs
+        .readFile(path.join("meta", csvName))
+        .catch(() => {
+          csvName = path.join("meta", table.name.toLowerCase() + ".csv");
+          console.warn("trying", csvName);
+          return fs.readFile(csvName);
+        })
+        .catch(() => null);
+
       let invalid = table.columns.length;
       const headers = importHeaders(table, datFile).filter((header, i) => {
         try {
@@ -253,6 +261,32 @@ for (const tr of includeTranslations) {
         );
       });
 
+      const shape: ShapeChange = {
+        version,
+        row_count: datFile.rowCount,
+        row_width: datFile.rowLength,
+        fixed_size: datFile.dataFixed.length,
+        var_offset: datFile.dataFixed.length + datFile.memsize / 2,
+        var_size: datFile.dataVariable.length,
+      };
+      const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
+      var latest = meta.length === 0 ? null : meta[meta.length - 1];
+      const metaName = table.name + ".csv";
+      metas.add(metaName);
+      if (
+        Object.keys(shape).find(
+          (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k])
+        )
+      ) {
+        meta.push(shape);
+        if (csvFile && csvName !== metaName) {
+          promises.push(fs.rm(csvName));
+        }
+        promises.push(
+          fs.writeFile(path.join("meta", metaName), csv.stringify(meta, { header: true }))
+        );
+      }
+
       promises.push(
         fs.writeFile(
           path.join(tr.path, `${table.name}.csv`),
@@ -272,6 +306,30 @@ for (const tr of includeTranslations) {
 }
 
 promises.push(fs.writeFile("errors.txt", errors.join("\n")));
-promises.push(fs.writeFile("missing.txt", missing.join("\n")));
+promises.push(
+  fs.writeFile(
+    "missing.txt",
+    schema.tables
+      .map((t) => t.name)
+      .filter((t) => !tablesSeen.has(t))
+      .map((t) => `missing file ${t}.dat64`)
+      .sort()
+      .join("\n")
+  )
+);
 promises.push(fs.writeFile("filtered-schema.json", JSON.stringify(schema, null, 2)));
 promises.push(fs.writeFile("version.txt", version));
+await promises;
+
+const metafiles = await fs.readdir("meta");
+await Promise.all(
+  metafiles
+    .filter((csv) => !metas.has(csv))
+    .map(async (csv) => {
+      const rows = csvParse(await fs.readFile(path.join("meta", csv)));
+      if (rows[rows.length - 1].row_count) {
+        rows.push({ version });
+        await fs.writeFile(path.join("meta", csv), rows.stringify(rows, { header: true }));
+      }
+    })
+);
