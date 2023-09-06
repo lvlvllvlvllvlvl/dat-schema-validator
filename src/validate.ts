@@ -1,21 +1,25 @@
 import * as csv from "csv-stringify";
 import * as fs from "fs/promises";
 import path from "path";
-import { SchemaFile, SchemaTable } from "pathofexile-dat-schema";
-import { decompressSliceInBundle, getFileInfo, readIndexBundle } from "pathofexile-dat/bundles.js";
+import { SchemaFile } from "pathofexile-dat-schema";
 import {
-  DatFile,
-  Header,
+  decompressSliceInBundle,
+  getDirContent,
+  getFileInfo,
+  readIndexBundle,
+} from "pathofexile-dat/bundles.js";
+import {
   analyzeDatFile,
-  getHeaderLength,
-  readColumn,
   readDatFile,
   setWasmExports,
   validateHeader,
 } from "pathofexile-dat/dat.js";
-import { changes } from './changes.js';
+import { changes } from "./changes.js";
+import { NamedHeader, exportAllRows, importHeaders } from "./datfile.js";
+import { getPossibleHeaders, guessType } from "./heuristic.js";
 
 const BUNDLE_DIR = "Bundles2";
+const promises = [] as Promise<any>[];
 
 class FileLoader {
   private bundleCache = new Map<string, ArrayBuffer>();
@@ -25,8 +29,10 @@ class FileLoader {
     private index: {
       bundlesInfo: Uint8Array;
       filesInfo: Uint8Array;
-    },
-  ) { }
+      pathReps: Uint8Array;
+      dirsInfo: Uint8Array;
+    }
+  ) {}
 
   static async create(bundleLoader: IBundleLoader) {
     console.log("Loading bundles index...");
@@ -34,10 +40,13 @@ class FileLoader {
     const indexBin = await bundleLoader.fetchFile("_.index.bin");
     const indexBundle = await decompressSliceInBundle(new Uint8Array(indexBin));
     const _index = readIndexBundle(indexBundle);
+    const pathReps = await decompressSliceInBundle(_index.pathRepsBundle);
 
     return new FileLoader(bundleLoader, {
       bundlesInfo: _index.bundlesInfo,
       filesInfo: _index.filesInfo,
+      pathReps: pathReps,
+      dirsInfo: _index.dirsInfo,
     });
   }
 
@@ -56,6 +65,10 @@ class FileLoader {
     return await decompressSliceInBundle(new Uint8Array(bundleBin), location.offset, location.size);
   }
 
+  listFiles(dir: string) {
+    return getDirContent("data", this.index.pathReps, this.index.dirsInfo).files;
+  }
+
   clearBundleCache() {
     this.bundleCache.clear();
   }
@@ -66,10 +79,9 @@ interface IBundleLoader {
 }
 
 class CdnBundleLoader {
-  private constructor(
-    private cacheDir: string,
-    private patchVer: string,
-  ) { }
+  private constructor(private cacheDir: string, private patchVer: string) {}
+
+  private filePromise = Promise.resolve();
 
   static async create(cacheRoot: string, patchVer: string) {
     const cacheDir = path.join(cacheRoot, patchVer);
@@ -86,11 +98,14 @@ class CdnBundleLoader {
   async fetchFile(name: string): Promise<ArrayBuffer> {
     const cachedFilePath = path.join(this.cacheDir, name.replace(/\//g, "@"));
 
+    //ensure previous file write has completed before reading
+    await this.filePromise;
+
     try {
       await fs.access(cachedFilePath);
       const bundleBin = await fs.readFile(cachedFilePath);
       return bundleBin;
-    } catch { }
+    } catch {}
 
     console.log(`Loading from CDN: ${name} ...`);
 
@@ -101,7 +116,10 @@ class CdnBundleLoader {
       process.exit(1);
     }
     const bundleBin = await response.arrayBuffer();
-    await fs.writeFile(cachedFilePath, Buffer.from(bundleBin, 0, bundleBin.byteLength));
+    this.filePromise = fs.writeFile(
+      cachedFilePath,
+      Buffer.from(bundleBin, 0, bundleBin.byteLength)
+    );
     return bundleBin;
   }
 }
@@ -124,17 +142,15 @@ const errors = [] as string[];
 
 console.log("Loading schema for dat files");
 const version = await fetch(
-  "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt",
+  "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt"
 ).then((r) => r.text());
 const schema: SchemaFile = await fetch(
-  "https://github.com/poe-tool-dev/dat-schema/releases/download/latest/schema.min.json",
+  "https://github.com/poe-tool-dev/dat-schema/releases/download/latest/schema.min.json"
 ).then((r) => r.json());
 
-await fs.writeFile("schema.json", JSON.stringify(schema, null, 2));
+promises.push(fs.writeFile("schema.json", JSON.stringify(schema, null, 2)));
 
-const loader = await FileLoader.create(
-  await CdnBundleLoader.create(path.join(process.cwd(), "/.cache"), version),
-);
+const loader = await FileLoader.create(await CdnBundleLoader.create(path.join(".cache"), version));
 
 const wasm = await fs.readFile("node_modules/pathofexile-dat/dist/analysis.wasm");
 const { instance } = await WebAssembly.instantiate(wasm);
@@ -148,37 +164,52 @@ const getType = ({ type }: NamedHeader) =>
 
 const includeTranslations = [TRANSLATIONS[0]];
 for (const tr of includeTranslations) {
-  await fs.rm(path.join(tr.path), { recursive: true, force: true });
-  await fs.mkdir(path.join(tr.path), { recursive: true });
+  await fs.rm(tr.path, { recursive: true, force: true });
+  await fs.rm("heuristics", { recursive: true, force: true });
+  await fs.mkdir(tr.path, { recursive: true });
+  await fs.mkdir(path.join("heuristics/csv", tr.path.replace("data", ".")), { recursive: true });
+  await fs.mkdir("heuristics/schema/json", { recursive: true });
+  await fs.mkdir("heuristics/schema/graphql", { recursive: true });
 }
 for (const tr of includeTranslations) {
+  const tableMap = Object.fromEntries(
+    schema.tables.map((t) => [`${tr.path}/${t.name}.dat64`.toLowerCase(), t])
+  );
   loader.clearBundleCache();
-  for (const table of schema.tables.sort(({ name: a }, { name: b }) =>
-    a.localeCompare(b, undefined, { sensitivity: "base" }),
-  )) {
+  for (const file of loader.listFiles(tr.path).sort()) {
     try {
-      console.log(`validating ${table.name}`);
-      const buf = await loader.getFileContents(`${tr.path}/${table.name}.dat64`).catch((e) => {
+      const fileComponents = path.parse(file);
+      if (fileComponents.ext !== ".dat64") continue;
+      const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
+      const buf = await loader.getFileContents(file).catch((e) => {
         if ((e as Error).message === "never") {
-          missing.push("missing file " + table.name + ".dat64");
+          missing.push("missing file " + file);
         } else {
           console.error(e);
         }
       });
       if (!buf) continue;
+      console.log("validating", table.name);
       const datFile = readDatFile(".dat64", buf);
       const columnStats = await analyzeDatFile(datFile);
+      if (columnStats.length !== datFile.rowLength) {
+        console.log(table.name, columnStats.length, datFile.rowLength);
+      }
       let invalid = table.columns.length;
       const headers = importHeaders(table, datFile).filter((header, i) => {
         try {
           if (!validateHeader(header, columnStats)) {
             invalid = Math.min(invalid, i);
-            const build = Object.keys(changes.builds).findLast(build => changes.builds[build].changed?.fixed_size?.[`Data/${table.name}.dat64`])
-            const lastChanged = build ? ` Last changed in build ${build} (${changes.builds[build].game_version})` : ""
+            const build = Object.keys(changes.builds).findLast(
+              (build) => changes.builds[build].changed?.fixed_size?.[`Data/${table.name}.dat64`]
+            );
+            const lastChanged = build
+              ? ` Last changed in build ${build} (${changes.builds[build].game_version})`
+              : "";
             errors.push(
               `${table.name}.dat64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
-                header,
-              )} not valid at offset ${header.offset}.${lastChanged}`,
+                header
+              )} not valid at offset ${header.offset}.${lastChanged}`
             );
           } else {
             return table.columns[i].type !== "array";
@@ -193,92 +224,54 @@ for (const tr of includeTranslations) {
         table.columns = table.columns.slice(0, invalid);
       }
 
-      try {
-        await fs.writeFile(
-          path.join(process.cwd(), tr.path, `${table.name}.csv`),
+      const possibles = await getPossibleHeaders(
+        headers.slice(0, invalid),
+        columnStats,
+        datFile,
+        datFile.rowLength
+      );
+
+      possibles.slice(0, 8).forEach((possible, i) => {
+        const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFile) : p));
+        promises.push(
+          fs.writeFile(
+            path.join("heuristics/schema/json", `${table.name}${i + 1}.json`),
+            JSON.stringify(hdr, undefined, 2)
+          )
+        );
+        promises.push(
+          fs.writeFile(
+            path.join("heuristics/csv", tr.path.replace("data", "."), `${table.name}${i + 1}.csv`),
+            csv.stringify(exportAllRows(hdr, datFile), {
+              cast: {
+                string: (v) => JSON.stringify(v).slice(1, -1),
+              },
+              quoted_empty: true,
+              quoted_string: true,
+            })
+          )
+        );
+      });
+
+      promises.push(
+        fs.writeFile(
+          path.join(tr.path, `${table.name}.csv`),
           csv.stringify(exportAllRows(headers, datFile), {
             cast: {
               string: (v) => JSON.stringify(v).slice(1, -1),
             },
             quoted_empty: true,
             quoted_string: true,
-          }),
-        );
-      } catch (e) {
-        console.error(table.name, headers, e);
-      }
+          })
+        )
+      );
     } catch (e) {
-      console.error(table.name, e);
+      console.error(file, e);
     }
   }
 }
 
-function exportAllRows(headers: NamedHeader[], datFile: DatFile) {
-  const columns = headers.map((header) => ({
-    name: header.name,
-    data: readColumn(header, datFile),
-  }));
-
-  columns.unshift({
-    name: "_index",
-    data: Array(datFile.rowCount)
-      .fill(undefined)
-      .map((_, idx) => idx),
-  });
-
-  return Array(datFile.rowCount)
-    .fill(undefined)
-    .map((_, idx) => Object.fromEntries(columns.map((col) => [col.name, col.data[idx]])));
-}
-
-interface NamedHeader extends Header {
-  name: string;
-}
-
-function importHeaders(sch: SchemaTable, datFile: DatFile): NamedHeader[] {
-  const headers = [] as NamedHeader[];
-
-  let offset = 0;
-  for (const column of sch.columns) {
-    headers.push({
-      name: column.name || "",
-      offset,
-      type: {
-        array: column.array,
-        integer:
-          // column.type === 'u8' ? { unsigned: true, size: 1 }
-          // : column.type === 'u16' ? { unsigned: true, size: 2 }
-          // : column.type === 'u32' ? { unsigned: true, size: 4 }
-          // : column.type === 'u64' ? { unsigned: true, size: 8 }
-          // : column.type === 'i8' ? { unsigned: false, size: 1 }
-          // : column.type === 'i16' ? { unsigned: false, size: 2 }
-          column.type === "i32"
-            ? { unsigned: false, size: 4 }
-            : // : column.type === 'i64' ? { unsigned: false, size: 8 }
-            column.type === "enumrow"
-              ? { unsigned: false, size: 4 }
-              : undefined,
-        decimal:
-          column.type === "f32"
-            ? { size: 4 }
-            : // : column.type === 'f64' ? { size: 8 }
-            undefined,
-        string: column.type === "string" ? {} : undefined,
-        boolean: column.type === "bool" ? {} : undefined,
-        key:
-          column.type === "row" || column.type === "foreignrow"
-            ? {
-              foreign: column.type === "foreignrow",
-            }
-            : undefined,
-      },
-    });
-    offset += getHeaderLength(headers[headers.length - 1], datFile);
-  }
-  return headers;
-}
-
-await fs.writeFile("errors.txt", errors.join("\n"));
-await fs.writeFile("missing.txt", missing.join("\n"));
-await fs.writeFile("filtered-schema.json", JSON.stringify(schema, null, 2));
-await fs.writeFile("version.txt", version);
+promises.push(fs.writeFile("errors.txt", errors.join("\n")));
+promises.push(fs.writeFile("missing.txt", missing.join("\n")));
+promises.push(fs.writeFile("filtered-schema.json", JSON.stringify(schema, null, 2)));
+promises.push(fs.writeFile("version.txt", version));
