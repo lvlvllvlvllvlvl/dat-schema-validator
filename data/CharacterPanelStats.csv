@@ -184,8 +184,8 @@
 183,"BlockChance","Chance to Block Attack Damage","[940,14799]",5,[7244],[],1,0
 184,"ProjBlockChance","Chance to Block Projectile Attack Damage",[1071],1,"[1068,7244]",[],1,0
 185,"SpellBlockChance","Chance to Block Spell Damage",[241],1,[7245],[],1,0
-186,"SpellProjBlockChance","Chance to Block Projectile Spell Damage",[1070],1,"[1068,7245,8157]",[],1,0
-187,"BlockRec","Block Recovery modifier",[17755],7,[],[],1,0
+186,"SpellProjBlockChance","Chance to Block Projectile Spell Damage",[1070],1,[18988],[],1,0
+187,"BlockRec","Block Recovery modifier",[17756],7,[],[],1,0
 188,"StunRec","Stun Recovery modifier",[280],7,[],[],1,0
 189,"StunAvoid","Stun Avoidance",[194],1,[],[1187],1,0
 190,"StunImmune","Cannot be Stunned",[1187],4,[],[],1,0
@@ -195,7 +195,7 @@
 194,"BleedingAvoid","Bleeding Avoidance",[4430],1,[],[8113],1,0
 195,"BleedingCannotBe","Cannot gain Bleeding",[8113],4,[],[4688],1,0
 196,"BleedingImmune","Immune to Bleeding",[4688],4,[],[],1,0
-197,"BleedingDurationRed","Bleeding Duration on self reduction",[16939],1,[],[8113],1,0
+197,"BleedingDurationRed","Bleeding Duration on self reduction",[16940],1,[],[8113],1,0
 198,"IgniteAvoid","Ignite Avoidance",[628],1,[],[6872],1,0
 199,"IgniteCannotBe","Cannot be Ignited",[6872],4,[],[4913],1,0
 200,"IgniteImmune","Immune to Ignite",[4913],4,[],[],1,0
@@ -215,7 +215,7 @@
 214,"PoisonAvoid","Poison Avoidance",[6796],1,[],[11809],1,0
 215,"PoisonCannotBe","Cannot gain Poison",[11809],4,[],[8713],1,0
 216,"PoisonImmune","Immune to Poison",[8713],4,[],[],1,0
-217,"PoisonDurationRed","Poison Duration on self reduction",[16940],1,[],[11809],1,0
+217,"PoisonDurationRed","Poison Duration on self reduction",[16941],1,[],[11809],1,0
 218,"PhysicalReflect","Physical Damage Reflected to Melee Attackers","[763,758]",6,[],[],1,0
 219,"FireReflect","Fire Damage Reflected to Melee Attackers","[764,759]",6,[],[],1,0
 220,"ColdReflect","Cold Damage Reflected to Melee Attackers","[765,760]",6,[],[],1,0
@@ -311,7 +311,7 @@
 310,"BrandNum","Brand Limit",[8431],0,[8587],[],2,0
 311,"BrandNumPerTarget","Attached Brand Limit per Target",[8792],0,[8587],[],2,0
 312,"Devotion","Devotion",[9609],0,[],[],2,0
-313,"Presence","Presence Range",[15892],0,[15584],[],2,0
+313,"Presence","Presence Range",[15892],11,[15584],[],2,0
 314,"LightningDamageChargeEnd","Lightning Damage when a Charge expires or is consumed","[1317,1318]",6,[],[],3,0
 315,"EnduranceCharges","Endurance Charges","[4,2648]",3,[],[],3,0
 316,"EnduranceDuration","Endurance Charge Duration modifier",[2688],7,[],[],3,0
