@@ -139,11 +139,16 @@ const TRANSLATIONS = [
 ];
 
 const errors = [] as string[];
-const metas = new Set<string>();
 const tablesSeen = new Set<string>();
 const tables = [] as SchemaTable[];
 const enumerations = [] as SchemaEnumeration[];
 const headerMap = {} as { [name: string]: NamedHeader[] };
+const metafiles = Object.fromEntries(
+  (await fs.readdir("meta")).map((f) => [
+    f.toLowerCase().replaceAll(".csv", ""),
+    path.join("meta", f),
+  ])
+);
 
 console.log("Loading schema for dat files");
 const version = await fetch(
@@ -191,22 +196,23 @@ for (const tr of includeTranslations) {
         console.error(e);
       });
       if (!buf) continue;
+
+      const csvName = metafiles[table.name.toLowerCase()];
+      const csvFile = csvName && (await fs.readFile(csvName));
+      delete metafiles[table.name.toLowerCase()];
+      const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
+      if (csvName && csvName !== csvName.toLowerCase() && table.name === table.name.toLowerCase()) {
+        table.name = path.parse(csvName).name;
+      }
+
       tablesSeen.add(table.name);
       console.log("validating", table.name);
+
       const datFile = readDatFile(".dat64", buf);
       const columnStats = await analyzeDatFile(datFile);
       if (columnStats.length !== datFile.rowLength) {
         console.log(table.name, columnStats.length, datFile.rowLength);
       }
-      let csvName = table.name + ".csv";
-      const csvFile = await fs
-        .readFile(path.join("meta", csvName))
-        .catch(() => {
-          csvName = path.join("meta", table.name.toLowerCase() + ".csv");
-          return fs.readFile(csvName);
-        })
-        .catch(() => console.warn(csvName, "not found"));
-      const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
 
       if (datFile.rowLength) {
         let invalid = table.columns.length;
@@ -314,8 +320,7 @@ for (const tr of includeTranslations) {
         var_size: datFile.dataVariable.length,
       };
       var latest = meta.length === 0 ? null : meta[meta.length - 1];
-      const metaName = table.name + ".csv";
-      metas.add(metaName);
+      const metaName = path.join("meta", table.name + ".csv");
       if (
         Object.keys(shape).find(
           (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k])
@@ -325,9 +330,7 @@ for (const tr of includeTranslations) {
         if (csvFile && csvName !== metaName) {
           promises.push(fs.rm(csvName));
         }
-        promises.push(
-          fs.writeFile(path.join("meta", metaName), csv.stringify(meta, { header: true }))
-        );
+        promises.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })));
       }
     } catch (e) {
       console.error(file, e);
@@ -354,15 +357,12 @@ promises.push(fs.writeFile("filtered-schema.json", JSON.stringify(schema, null, 
 promises.push(fs.writeFile("version.txt", version));
 await promises;
 
-const metafiles = await fs.readdir("meta");
 await Promise.all(
-  metafiles
-    .filter((csv) => !metas.has(csv))
-    .map(async (csv) => {
-      const rows = csvParse(await fs.readFile(path.join("meta", csv)));
-      if (rows[rows.length - 1].row_count) {
-        rows.push({ version });
-        await fs.writeFile(path.join("meta", csv), rows.stringify(rows, { header: true }));
-      }
-    })
+  Object.values(metafiles).map(async (filename) => {
+    const rows = csvParse(await fs.readFile(filename));
+    if (rows[rows.length - 1].row_count) {
+      rows.push({ version });
+      await fs.writeFile(filename, rows.stringify(rows, { header: true }));
+    }
+  })
 );
