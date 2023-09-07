@@ -1,3 +1,4 @@
+import { Presets, SingleBar } from "cli-progress";
 import { parse as csvParse } from "csv-parse/sync";
 import * as csv from "csv-stringify";
 import * as fs from "fs/promises";
@@ -15,10 +16,42 @@ import {
   setWasmExports,
   validateHeader,
 } from "pathofexile-dat/dat.js";
+import { argv, exit } from "process";
 import { ShapeChange } from "./changes.js";
 import { NamedHeader, exportAllRows, importHeaders } from "./datfile.js";
 import { Enumeration, Table, exportGQL } from "./graphql.js";
 import { getPossibleHeaders, guessType } from "./heuristic.js";
+
+const TRANSLATIONS = [
+  { name: "English", path: "data" },
+  { name: "French", path: "data/french" },
+  { name: "German", path: "data/german" },
+  { name: "Japanese", path: "data/japanese" },
+  { name: "Korean", path: "data/korean" },
+  { name: "Portuguese", path: "data/portuguese" },
+  { name: "Russian", path: "data/russian" },
+  { name: "Spanish", path: "data/spanish" },
+  { name: "Thai", path: "data/thai" },
+  { name: "Traditional Chinese", path: "data/traditional chinese" },
+];
+
+const args = argv[1].includes("validate.ts") ? argv.slice(2).map((v) => v.toLowerCase()) : null;
+const progress =
+  args && !args.find((v) => v === "-q" || v === "--quiet")
+    ? new SingleBar(
+        {
+          format: "[{bar}] {percentage}% | ETA: {eta}s | {value}/{total} | {lang} | {table}",
+        },
+        Presets.rect
+      )
+    : null;
+if (args?.find((v) => v === "-h" || v === "--help")) {
+  console.log(
+    "Usage: npx tsx src/validate.ts [-q|--quiet] [-t|--table <tables>] [-l|--lang <languages>]"
+  );
+  console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
+  exit();
+}
 
 const BUNDLE_DIR = "Bundles2";
 const promises = [] as Promise<any>[];
@@ -125,19 +158,6 @@ class CdnBundleLoader {
   }
 }
 
-const TRANSLATIONS = [
-  { name: "English", path: "data" },
-  { name: "French", path: "data/french" },
-  { name: "German", path: "data/german" },
-  { name: "Japanese", path: "data/japanese" },
-  { name: "Korean", path: "data/korean" },
-  { name: "Portuguese", path: "data/portuguese" },
-  { name: "Russian", path: "data/russian" },
-  { name: "Spanish", path: "data/spanish" },
-  { name: "Thai", path: "data/thai" },
-  { name: "Traditional Chinese", path: "data/traditional chinese" },
-];
-
 const errors = [] as string[];
 const tablesSeen = new Set<string>();
 const tables = [] as Table[];
@@ -170,7 +190,10 @@ const getType = ({ type }: NamedHeader) =>
     .map((key) => (key === "key" && !type.key?.foreign ? "self" : key))
     .join("/");
 
-const includeTranslations = [TRANSLATIONS[0]];
+let includeTranslations = args?.find((v) => v === "-l" || v === "--lang" || v === "--langs")
+  ? TRANSLATIONS.filter((t) => args?.includes(t.name.toLowerCase()))
+  : TRANSLATIONS.slice(0, 1);
+
 for (const tr of includeTranslations) {
   await fs.rm(tr.path, { recursive: true, force: true });
   await fs.rm("heuristics", { recursive: true, force: true });
@@ -187,15 +210,25 @@ for (const tr of includeTranslations) {
     )
   );
   loader.clearBundleCache();
-  for (const file of loader.listFiles(tr.path).sort()) {
+  const allTables = !args?.find((v) => v === "-t" || v === "--table" || v === "--tables");
+  const files = loader
+    .listFiles(tr.path)
+    .filter(
+      (f) => f.endsWith(".dat64") && (allTables || args?.includes(path.parse(f).name.toLowerCase()))
+    )
+    .sort();
+  progress?.start(files.length, 0, { lang: tr.name });
+  for (const file of files) {
     try {
       const fileComponents = path.parse(file);
-      if (fileComponents.ext !== ".dat64") continue;
       const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
+      progress?.increment({ lang: tr.name, table: table.name });
       const buf = await loader.getFileContents(file).catch((e) => {
         console.error(e);
       });
-      if (!buf) continue;
+      if (!buf) {
+        continue;
+      }
 
       const csvName = metafiles[table.name.toLowerCase()];
       const csvFile = csvName && (await fs.readFile(csvName));
@@ -207,10 +240,9 @@ for (const tr of includeTranslations) {
       }
 
       tablesSeen.add(table.name);
-      console.log("validating", table.name);
 
       const datFile = readDatFile(".dat64", buf);
-      const columnStats = await analyzeDatFile(datFile);
+      const columnStats = analyzeDatFile(datFile);
       if (columnStats.length !== datFile.rowLength) {
         console.log(table.name, columnStats.length, datFile.rowLength);
       }
@@ -337,6 +369,7 @@ for (const tr of includeTranslations) {
       console.error(file, e);
     }
   }
+  progress?.stop();
 }
 
 promises.push(

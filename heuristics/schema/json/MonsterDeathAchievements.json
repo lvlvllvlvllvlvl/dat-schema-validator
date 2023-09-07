@@ -132,10 +132,13 @@
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 115,
-    "size": 16
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {
@@ -148,10 +151,13 @@
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 147,
-    "size": 16
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {

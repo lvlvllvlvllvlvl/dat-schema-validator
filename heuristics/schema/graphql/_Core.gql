@@ -1183,7 +1183,7 @@ type DamageHitEffects {
   _: i32
   _: i32
   _: [_]
-  _: [string]
+  _: [_]
 }
 
 type DamageParticleEffects {
@@ -1444,7 +1444,7 @@ enum EvergreenAchievementTypes @indexing(first: 0) { _ }
 type ExecuteGEAL {
   _: i32
   _: i32 # All rows empty
-  _: [string]
+  _: [_]
   _: i32
   _: i32
   _: i32
@@ -2262,7 +2262,7 @@ type ItemisedVisualEffect {
   _: [_] # All rows empty
   _: [_]
   _: rid
-  _: [string]
+  _: [_]
   _: [_]
   _: rid
   _: bool
@@ -2876,7 +2876,7 @@ type MiscEffectPacks {
 
 type MiscEffectPacksArtVariations {
   _: string
-  _: [string]
+  _: [_]
   _: i32
 }
 
@@ -3157,9 +3157,9 @@ type MonsterDeathAchievements {
   _: bool
   _: bool
   _: [_]
+  _: [_]
   _: [string]
-  _: [string]
-  _: [string]
+  _: [_]
   _: rid
   _: i32
   _: [_]

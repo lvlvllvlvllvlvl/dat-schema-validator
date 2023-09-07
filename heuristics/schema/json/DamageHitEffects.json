@@ -49,9 +49,12 @@
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 28,
-    "size": 16
+    "size": 16,
+    "unknownArray": true
   }
 ]

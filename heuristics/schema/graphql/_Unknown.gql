@@ -201,7 +201,7 @@ type CurrencyUseEffects {
 # Added 3.17
 type DamageEffectVariations {
   _: string
-  _: [string]
+  _: [_]
   _: [string]
   _: bool
   _: i32

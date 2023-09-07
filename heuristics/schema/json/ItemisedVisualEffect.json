@@ -180,10 +180,13 @@
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 211,
-    "size": 16
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {

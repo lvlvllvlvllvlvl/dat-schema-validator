@@ -12,11 +12,11 @@ const MAX_POSSIBLES = 100;
 const sleep = () => new Promise((resolve) => setImmediate(resolve));
 
 export const headerTypes = {
-  "[string]": { array: true, string: {} },
   "[rid]": { array: true, key: { foreign: true } },
   "[i32]": { array: true, integer: { unsigned: false, size: 4 } },
   "[f32]": { array: true, decimal: { size: 4 } },
   "[row]": { array: true, key: { foreign: false } },
+  "[string]": { array: true, string: {} },
   string: { array: false, string: {} },
   rid: { array: false, key: { foreign: true } },
   i32: { array: false, integer: { unsigned: false, size: 4 } },
@@ -224,13 +224,13 @@ function looksLikeFloat(possibles: NamedHeader[], datFile: DatFile): NamedHeader
 }
 
 function isString(header: NamedHeader, datFile: DatFile) {
-  !readColumn(header, datFile).find((v) =>
+  return !readColumn(header, datFile).find((v) =>
     Array.isArray(v) ? v.find(unprintable) : unprintable(v)
   );
 }
 
 function unprintable(data: any) {
-  return data && /[\x00-\x08\x0E-\x1F]/.test(data);
+  return /[\x00-\x08\x0E-\x1F]/.test(data);
 }
 
 export function toGraphql(headers: NamedHeader[]): string[] {
