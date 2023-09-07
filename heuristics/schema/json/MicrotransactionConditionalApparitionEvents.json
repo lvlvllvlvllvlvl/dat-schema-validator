@@ -45,12 +45,20 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
     "offset": 40,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 41,
     "size": 4
   },
   {
@@ -61,18 +69,7 @@
         "size": 4
       }
     },
-    "offset": 44,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 48,
+    "offset": 45,
     "size": 4
   },
   {
@@ -82,7 +79,17 @@
         "foreign": true
       }
     },
-    "offset": 52,
+    "offset": 49,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 65,
     "size": 16
   },
   {
@@ -93,7 +100,7 @@
         "size": 4
       }
     },
-    "offset": 68,
+    "offset": 81,
     "size": 4
   },
   {
@@ -104,48 +111,7 @@
         "size": 4
       }
     },
-    "offset": 72,
+    "offset": 85,
     "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 76,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 80,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 84,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 88,
-    "size": 1
   }
 ]

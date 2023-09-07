@@ -6,6 +6,10 @@ import * as fs from "fs/promises";
 import path from "path";
 export interface Table extends SchemaTable {
   tags?: string[];
+  added?: string;
+}
+export interface Enumeration extends SchemaEnumeration {
+  added?: string;
 }
 
 function stringify(strings: string[]) {
@@ -77,11 +81,15 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
     })
     .filter(Boolean)
     .join("\n");
+
+  const comment = table.added
+    ? `# Added ${table.added.slice(0, table.added.indexOf(".", 2))}\n`
+    : "";
   const tableTags = table.tags?.length ? ` @tags(list: ${stringify(table.tags)})` : "";
-  return `type ${table.name}${tableTags} {\n${fields}\n}\n`;
+  return `${comment}type ${table.name}${tableTags} {\n${fields}\n}\n`;
 }
 
-export function enumGQL({ name, indexing, enumerators }: SchemaEnumeration) {
+export function enumGQL({ name, indexing, enumerators }: Enumeration) {
   const values = enumerators?.length
     ? `\n  ${enumerators.map((v) => v || "_").join("\n  ")}\n`
     : " _ ";
@@ -90,7 +98,7 @@ export function enumGQL({ name, indexing, enumerators }: SchemaEnumeration) {
 
 export async function exportGQL(
   tables: Table[],
-  enumerations: SchemaEnumeration[],
+  enumerations: Enumeration[],
   getHeaders: (table: Table) => NamedHeader[],
   dest: string
 ) {
@@ -104,6 +112,7 @@ export async function exportGQL(
   }
 
   for (const table of tables) {
+    if (table.name in sourceMap) delete table.added;
     const gql = tableGQL(table, getHeaders(table));
     const mapping = sourceMap[table.name];
     delete sourceMap[table.name];
@@ -124,9 +133,6 @@ export async function exportGQL(
       files["_Unknown.gql"] = files["_Unknown.gql"] || [];
       files["_Unknown.gql"].push(gql);
     }
-  }
-  for (const mapping of Object.values(sourceMap)) {
-    files;
   }
   await Promise.all(
     Object.entries(files).map(([file, gql]) =>

@@ -30,13 +30,18 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
     "offset": 40,
-    "size": 4
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 41,
+    "size": 1
   },
   {
     "type": {
@@ -46,18 +51,55 @@
         "size": 4
       }
     },
-    "offset": 44,
+    "offset": 42,
     "size": 4
   },
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
+    },
+    "offset": 46,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 47,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
     },
     "offset": 48,
-    "size": 4
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 49,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 50,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 51,
+    "size": 1
   }
 ]

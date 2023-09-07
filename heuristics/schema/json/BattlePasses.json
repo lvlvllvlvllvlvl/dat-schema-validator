@@ -48,32 +48,17 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 32,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 36,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
       "boolean": true
     },
-    "offset": 40,
+    "offset": 32,
     "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 33,
+    "size": 8
   }
 ]

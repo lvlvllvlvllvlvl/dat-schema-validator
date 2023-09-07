@@ -2,7 +2,7 @@ import { parse as csvParse } from "csv-parse/sync";
 import * as csv from "csv-stringify";
 import * as fs from "fs/promises";
 import path from "path";
-import { SCHEMA_URL, SchemaEnumeration, SchemaFile, SchemaTable } from "pathofexile-dat-schema";
+import { SCHEMA_URL, SchemaFile } from "pathofexile-dat-schema";
 import {
   decompressSliceInBundle,
   getDirContent,
@@ -17,7 +17,7 @@ import {
 } from "pathofexile-dat/dat.js";
 import { ShapeChange } from "./changes.js";
 import { NamedHeader, exportAllRows, importHeaders } from "./datfile.js";
-import { exportGQL } from "./graphql.js";
+import { Enumeration, Table, exportGQL } from "./graphql.js";
 import { getPossibleHeaders, guessType } from "./heuristic.js";
 
 const BUNDLE_DIR = "Bundles2";
@@ -140,8 +140,8 @@ const TRANSLATIONS = [
 
 const errors = [] as string[];
 const tablesSeen = new Set<string>();
-const tables = [] as SchemaTable[];
-const enumerations = [] as SchemaEnumeration[];
+const tables = [] as Table[];
+const enumerations = [] as Enumeration[];
 const headerMap = {} as { [name: string]: NamedHeader[] };
 const metafiles = Object.fromEntries(
   (await fs.readdir("meta")).map((f) => [
@@ -180,7 +180,7 @@ for (const tr of includeTranslations) {
   await fs.mkdir("heuristics/schema/graphql", { recursive: true });
 }
 for (const tr of includeTranslations) {
-  const tableMap = Object.assign(
+  const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
     Object.fromEntries(schema.tables.map((t) => [`${tr.path}/${t.name}.dat64`.toLowerCase(), t])),
     Object.fromEntries(
       schema.enumerations.map((t) => [`${tr.path}/${t.name}.dat64`.toLowerCase(), t])
@@ -201,6 +201,7 @@ for (const tr of includeTranslations) {
       const csvFile = csvName && (await fs.readFile(csvName));
       delete metafiles[table.name.toLowerCase()];
       const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
+      table.added = meta?.[0]?.version;
       if (csvName && csvName !== csvName.toLowerCase() && table.name === table.name.toLowerCase()) {
         table.name = path.parse(csvName).name;
       }

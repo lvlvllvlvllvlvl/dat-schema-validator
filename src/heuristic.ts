@@ -137,9 +137,22 @@ export function possibleColumnHeaders(
       }
       return result;
     }, [] as NamedHeader[][])
-    .filter((exists) => exists && exists.length)
-    .map((arr) => (arr.length === 1 ? arr[0] : arr));
-  return possibleHeaders;
+    .filter((exists) => exists && exists.length);
+
+  // if this looks like a bool column and isn't an array, make bool the first option
+  if (
+    stats[offset].maxValue === 1 &&
+    possibleHeaders.length > 1 &&
+    !possibleHeaders.find((h) => h[0].type.array)
+  ) {
+    const bool = possibleHeaders.pop()!;
+    if (!bool[0].type.boolean) {
+      console.log("Expected last header to be boolean", bool);
+    } else {
+      possibleHeaders.unshift(bool);
+    }
+  }
+  return possibleHeaders.map((arr) => (arr.length === 1 ? arr[0] : arr));
 }
 
 export function guess(possibles: PossibleHeaders, datFile: DatFile): NamedHeader[] {
@@ -156,7 +169,7 @@ function assertEq(l: number, r: number, msg: any) {
 
 export function guessType(possibles: NamedHeader[], datFile: DatFile): NamedHeader {
   let header =
-    possibles.find((p) => p.type.string) ||
+    possibles.find((p) => p.type.string && isString(p, datFile)) ||
     looksLikeFloat(possibles, datFile) ||
     possibles.find((p) => !p.type.decimal) ||
     possibles[0];
@@ -208,6 +221,16 @@ function looksLikeFloat(possibles: NamedHeader[], datFile: DatFile): NamedHeader
       return header;
     }
   }
+}
+
+function isString(header: NamedHeader, datFile: DatFile) {
+  !readColumn(header, datFile).find((v) =>
+    Array.isArray(v) ? v.find(unprintable) : unprintable(v)
+  );
+}
+
+function unprintable(data: any) {
+  return data && /[\x00-\x08\x0E-\x1F]/.test(data);
 }
 
 export function toGraphql(headers: NamedHeader[]): string[] {

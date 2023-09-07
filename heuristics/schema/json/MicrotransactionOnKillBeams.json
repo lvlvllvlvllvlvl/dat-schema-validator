@@ -44,19 +44,19 @@
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "boolean": true
     },
     "offset": 48,
-    "size": 16
+    "size": 1
   },
   {
     "type": {
       "array": false,
-      "boolean": true
+      "key": {
+        "foreign": true
+      }
     },
-    "offset": 64,
-    "size": 1
+    "offset": 49,
+    "size": 16
   }
 ]

@@ -69,7 +69,10 @@ type AncestralTrialMonsters {
   _: rid
   _: i32
   Achievement: [AchievementItems]
-  _: i32
+  _: bool
+  _: bool
+  _: bool
+  _: bool
 }
 
 type AncestralTrialPositionType {

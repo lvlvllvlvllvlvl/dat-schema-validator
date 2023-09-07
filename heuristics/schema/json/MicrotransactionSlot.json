@@ -55,20 +55,21 @@
   {
     "type": {
       "array": false,
+      "boolean": true
+    },
+    "offset": 48,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "offset": 48,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 52,
-    "size": 1
+    "offset": 49,
+    "size": 4,
+    "noData": true
   }
 ]

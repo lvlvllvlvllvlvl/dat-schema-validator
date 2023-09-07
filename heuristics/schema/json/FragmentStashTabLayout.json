@@ -137,43 +137,28 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 58,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 62,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 66,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
       "boolean": true
     },
-    "offset": 70,
+    "offset": 58,
     "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 59,
+    "size": 8
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 67,
+    "size": 4
   }
 ]

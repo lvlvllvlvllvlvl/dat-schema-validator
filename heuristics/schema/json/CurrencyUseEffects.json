@@ -40,33 +40,18 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 36,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 40,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
       "boolean": true
     },
-    "offset": 44,
+    "offset": 36,
     "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 37,
+    "size": 8
   },
   {
     "type": {

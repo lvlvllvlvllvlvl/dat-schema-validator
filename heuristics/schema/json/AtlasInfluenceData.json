@@ -183,12 +183,33 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
     "offset": 136,
-    "size": 4
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 137,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 138,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 139,
+    "size": 1
   }
 ]

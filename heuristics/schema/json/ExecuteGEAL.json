@@ -89,12 +89,20 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
     "offset": 44,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 45,
     "size": 4
   },
   {
@@ -105,7 +113,7 @@
         "size": 4
       }
     },
-    "offset": 48,
+    "offset": 49,
     "size": 4
   },
   {
@@ -116,19 +124,28 @@
         "size": 4
       }
     },
-    "offset": 52,
+    "offset": 53,
     "size": 4
   },
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "boolean": true
+    },
+    "offset": 57,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
       }
     },
-    "offset": 56,
-    "size": 4
+    "offset": 58,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
   },
   {
     "type": {
@@ -138,42 +155,7 @@
         "size": 4
       }
     },
-    "offset": 60,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 64,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 68,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 72,
+    "offset": 74,
     "size": 4
   },
   {
@@ -183,7 +165,7 @@
         "foreign": true
       }
     },
-    "offset": 76,
+    "offset": 78,
     "size": 16
   },
   {
@@ -194,240 +176,143 @@
         "size": 4
       }
     },
-    "offset": 92,
+    "offset": 94,
     "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 98,
+    "size": 4,
+    "noData": true
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 102,
+    "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 106,
+    "size": 4,
+    "noData": true
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 110,
+    "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 114,
+    "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 118,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 119,
+    "size": 4
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 123,
+    "size": 16
   },
   {
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 96,
+    "offset": 139,
     "size": 8
   },
   {
     "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 147,
+    "size": 16,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 163,
+    "size": 16,
+    "unknownArray": true
+  },
+  {
+    "type": {
       "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "offset": 104,
+    "offset": 179,
     "size": 4
   },
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
-    "offset": 108,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 112,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 116,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 120,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 124,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 128,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 132,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 136,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 140,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 144,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 148,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 152,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 156,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 160,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 164,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 168,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 172,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 176,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 180,
-    "size": 4
+    "offset": 183,
+    "size": 1
   },
   {
     "type": {

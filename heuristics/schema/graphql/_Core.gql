@@ -402,7 +402,10 @@ type AtlasInfluenceData {
   _: i32
   _: i32
   _: i32
-  _: i32
+  _: bool
+  _: bool
+  _: bool
+  _: bool
 }
 
 type AtlasInfluenceOutcomes {
@@ -1036,12 +1039,9 @@ type CoreLeagues {
   _: i32
   _: bool
   _: Stats
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
   _: bool
   _: bool
+  _: [_]
 }
 
 type CostTypes {
@@ -1450,37 +1450,28 @@ type ExecuteGEAL {
   _: i32
   _: i32
   _: i32
+  _: bool
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
+  _: bool
+  _: [_] # All rows empty
   _: i32
   _: rid
   _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: [string]
   _: string
+  _: [_]
+  _: [_]
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
+  _: bool
   _: [_]
   _: rid
   _: bool
@@ -1547,12 +1538,9 @@ type FixedHideoutDoodadTypes {
   BaseTypeHideoutDoodadsKey: HideoutDoodads
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
   _: bool
+  _: rid
+  _: i32
   _: rid
 }
 
@@ -1619,10 +1607,9 @@ type FragmentStashTabLayout {
   IsDisabled: bool
   Subtab: i32
   FragmentItems: [BaseItemTypes]
-  _: i32
-  _: i32 # All rows empty
-  _: i32
   _: bool
+  _: string
+  _: i32
 }
 
 type GameConstants {
@@ -1739,11 +1726,11 @@ type GeometryAttack {
   _: bool
   _: bool
   _: i32 # All rows empty
-  _: i32
+  _: bool
+  _: bool
+  _: i32 # All rows empty
   _: i32 # All rows empty
   _: i32
-  _: bool
-  _: bool
   _: bool
   _: rid
 }
@@ -1833,7 +1820,8 @@ type GeometryTrigger {
   _: i32
   _: i32 # All rows empty
   _: i32
-  _: i32
+  _: bool
+  _: i32 # All rows empty
   _: i32
   _: rid
   _: i32 # All rows empty
@@ -1841,7 +1829,9 @@ type GeometryTrigger {
   _: i32
   _: i32
   _: i32
-  _: i32 # All rows empty
+  _: bool
+  _: bool
+  _: bool
 }
 
 type GiftWrapArtVariations {
@@ -2811,8 +2801,8 @@ type MicrotransactionSlot {
   Name: string @localized
   _: rid
   _: i32
-  _: i32
   _: bool
+  _: i32 # All rows empty
 }
 
 type MicrotransactionSocialFrameVariations {
@@ -3173,15 +3163,9 @@ type MonsterDeathAchievements {
   _: rid
   _: i32
   _: [_]
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
   _: bool
+  _: [_]
+  _: [_]
   _: bool
 }
 
@@ -3328,7 +3312,10 @@ type MonsterPacks {
   _: i32
   _: bool
   _: [_] # All rows empty
-  _: i32
+  _: bool
+  _: bool
+  _: bool
+  _: bool
 }
 
 type MonsterProjectileAttack {
@@ -4127,8 +4114,8 @@ type Pet {
   _: [_]
   _: rid
   _: [_]
-  _: i32
   _: bool
+  _: i32
   _: rid
   _: bool
 }
@@ -4261,7 +4248,10 @@ type QuestRewardOffers {
   _: bool
   _: bool
   RewardWindowTitle: ClientStrings
-  _: i32
+  _: bool
+  _: bool
+  _: bool
+  _: bool
   _: rid
 }
 

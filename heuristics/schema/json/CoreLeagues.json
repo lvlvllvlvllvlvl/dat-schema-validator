@@ -157,55 +157,9 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
     "offset": 159,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 163,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 167,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 171,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 175,
     "size": 1
   },
   {
@@ -213,7 +167,18 @@
       "array": false,
       "boolean": true
     },
-    "offset": 176,
+    "offset": 160,
     "size": 1
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 161,
+    "size": 16,
+    "unknownArray": true
   }
 ]

@@ -139,20 +139,20 @@
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "boolean": true
     },
     "offset": 104,
-    "size": 16
+    "size": 1
   },
   {
     "type": {
       "array": false,
-      "boolean": true
+      "key": {
+        "foreign": true
+      }
     },
-    "offset": 120,
-    "size": 1
+    "offset": 105,
+    "size": 16
   },
   {
     "type": {

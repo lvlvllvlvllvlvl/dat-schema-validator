@@ -507,13 +507,18 @@
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
     "offset": 242,
-    "size": 4
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 243,
+    "size": 1
   },
   {
     "type": {
@@ -523,7 +528,7 @@
         "size": 4
       }
     },
-    "offset": 246,
+    "offset": 244,
     "size": 4,
     "noData": true
   },
@@ -535,24 +540,20 @@
         "size": 4
       }
     },
-    "offset": 250,
+    "offset": 248,
+    "size": 4,
+    "noData": true
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 252,
     "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 254,
-    "size": 1
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 255,
-    "size": 1
   },
   {
     "type": {
