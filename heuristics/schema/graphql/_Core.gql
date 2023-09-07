@@ -1456,12 +1456,14 @@ type ExecuteGEAL {
   _: i32
   _: bool
   _: [_] # All rows empty
+  _: bool
   _: i32
   _: rid
+  _: bool
+  _: string
+  _: bool
   _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
+  _: bool
   _: i32
   _: i32
   _: bool
@@ -1473,8 +1475,8 @@ type ExecuteGEAL {
   _: i32
   _: bool
   _: [_]
-  _: rid
   _: bool
+  _: rid
   _: bool
   _: bool
   _: i32
@@ -2476,7 +2478,7 @@ type MapCompletionAchievements {
   MapTierAchievementsKeys: [MapTierAchievements]
   _: bool
   WorldAreasKeys: [WorldAreas]
-  _: [string]
+  _: [_]
 }
 
 type MapConnections {
@@ -2690,12 +2692,10 @@ type MeleeTrails {
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
   _: bool
+  _: string
   _: bool
+  _: string
 }
 
 type MetamorphosisStashTabLayout {
@@ -3794,9 +3794,7 @@ type NPCShops {
   _: i32
   Shop: NPCShop
   ShopHardmode: NPCShop
-  _: string
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: rid
 }
 
 type NPCTalk {
@@ -4268,7 +4266,7 @@ type QuestRewards @tags(list: ["item:reward"]) {
   RewardStack: i32
   _: bool
   _: bool
-  _: [string]
+  _: [_]
   _: i32
   _: i32
   _: [_] # All rows empty

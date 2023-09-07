@@ -153,12 +153,20 @@
   {
     "type": {
       "array": false,
+      "boolean": true
+    },
+    "offset": 74,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "offset": 74,
+    "offset": 75,
     "size": 4
   },
   {
@@ -168,54 +176,51 @@
         "foreign": true
       }
     },
-    "offset": 78,
+    "offset": 79,
     "size": 16
   },
   {
     "type": {
       "array": false,
+      "boolean": true
+    },
+    "offset": 95,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 96,
+    "size": 8
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 104,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "offset": 94,
+    "offset": 105,
     "size": 4
   },
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
-    "offset": 98,
-    "size": 4,
-    "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 102,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 106,
-    "size": 4,
-    "noData": true
+    "offset": 109,
+    "size": 1
   },
   {
     "type": {
@@ -332,20 +337,20 @@
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "boolean": true
     },
     "offset": 200,
-    "size": 16
+    "size": 1
   },
   {
     "type": {
       "array": false,
-      "boolean": true
+      "key": {
+        "foreign": true
+      }
     },
-    "offset": 216,
-    "size": 1
+    "offset": 201,
+    "size": 16
   },
   {
     "type": {

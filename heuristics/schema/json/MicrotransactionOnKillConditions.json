@@ -113,12 +113,20 @@
   {
     "type": {
       "array": false,
+      "boolean": true
+    },
+    "offset": 89,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "offset": 89,
+    "offset": 90,
     "size": 4
   },
   {
@@ -129,16 +137,8 @@
         "size": 4
       }
     },
-    "offset": 93,
+    "offset": 94,
     "size": 4,
     "noData": true
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 97,
-    "size": 1
   }
 ]

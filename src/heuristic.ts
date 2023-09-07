@@ -122,7 +122,15 @@ export function possibleColumnHeaders(
   datFile: DatFile,
   types: HeaderType[]
 ) {
-  const valid = (header: Header) => validateHeader(header, stats);
+  const valid = (header: Header) => {
+    if (!validateHeader(header, stats)) {
+      return false;
+    }
+    if (header.type.string && !isString(header, datFile)) {
+      return false;
+    }
+    return true;
+  };
   var possibleHeaders = types
     .map((type) => ({ type, offset } as NamedHeader))
     .filter(valid)
@@ -141,7 +149,9 @@ export function possibleColumnHeaders(
 
   // if this looks like a bool column and isn't an array, make bool the first option
   if (
-    stats[offset].maxValue === 1 &&
+    (stats[offset].maxValue === 1 ||
+      stats.length === offset + 1 ||
+      (stats[offset].maxValue === 0 && stats[offset + 1].maxValue !== 0)) &&
     possibleHeaders.length > 1 &&
     !possibleHeaders.find((h) => h[0].type.array)
   ) {
@@ -169,15 +179,14 @@ function assertEq(l: number, r: number, msg: any) {
 
 export function guessType(possibles: NamedHeader[], datFile: DatFile): NamedHeader {
   let header =
-    possibles.find((p) => p.type.string && isString(p, datFile)) ||
+    possibles.find((p) => p.type.string) ||
     looksLikeFloat(possibles, datFile) ||
     possibles.find((p) => !p.type.decimal) ||
     possibles[0];
 
-  let hasValue = readColumn(header, datFile).find((v) => (Array.isArray(v) ? v.length : v));
+  let hasValue = readColumn(header, datFile).find((v) => (Array.isArray(v) ? v.find((i) => i) : v));
   if (!hasValue && header.type.string) {
     header =
-      possibles.find((p) => !p.type.string) ||
       looksLikeFloat(possibles, datFile) ||
       possibles.find((p) => !p.type.decimal && !p.type.string) ||
       possibles[0];

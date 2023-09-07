@@ -41,10 +41,13 @@
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 48,
-    "size": 16
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {

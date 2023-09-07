@@ -519,9 +519,7 @@ type MicrotransactionConditionalApparitions {
   _: string
   _: [_]
   _: [_]
-  _: string
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: rid
   _: rid
   _: i32
   _: bool
@@ -563,7 +561,7 @@ type MicrotransactionObjectEffects {
   _: [_]
   _: string
   _: [_]
-  _: [string]
+  _: [_]
   _: rid
   _: [_]
   _: i32
@@ -600,9 +598,9 @@ type MicrotransactionOnKillConditions {
   _: i32 # All rows empty
   _: i32 # All rows empty
   _: i32 # All rows empty
+  _: bool
   _: i32
   _: i32 # All rows empty
-  _: bool
 }
 
 # Added 3.21
