@@ -2,6 +2,7 @@
   {
     "name": "HeistContractsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "HeistContracts"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "HeistObjectivesKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "HeistObjectives"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HeistNPCsKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -38,6 +43,7 @@
   {
     "name": "HeistJobsKey",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,11 +51,13 @@
         "name": "HeistJobs"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -57,11 +65,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,11 +79,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -81,20 +93,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "HeistRoomsKey1",
     "offset": 77,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -102,11 +118,13 @@
         "name": "HeistRooms"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "WorldAreasKey",
     "offset": 93,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -114,29 +132,35 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 109,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 110,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 111,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -144,11 +168,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 115,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -156,29 +182,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 119,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "HaveObjective",
     "offset": 121,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -186,20 +218,24 @@
         "name": "QuestFlags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 137,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "QuestActive",
     "offset": 138,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -207,11 +243,13 @@
         "name": "QuestFlags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HaveQuest",
     "offset": 154,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -219,11 +257,13 @@
         "name": "QuestFlags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "HaveObjective2",
     "offset": 170,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -231,47 +271,57 @@
         "name": "QuestFlags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 186,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 187,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Objective",
     "offset": 188,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 196,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "BaseItemTypesKey",
     "offset": 197,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -279,20 +329,24 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 213,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "HeistIntroAreasKey",
     "offset": 214,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -300,11 +354,13 @@
         "name": "HeistIntroAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 230,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -312,11 +368,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "HeistRoomsKey2",
     "offset": 234,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -324,15 +382,18 @@
         "name": "HeistRooms"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 250,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

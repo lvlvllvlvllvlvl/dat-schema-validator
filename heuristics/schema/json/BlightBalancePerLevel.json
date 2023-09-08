@@ -2,6 +2,7 @@
   {
     "name": "Level",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,11 +10,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 4,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -38,6 +43,7 @@
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -45,11 +51,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -57,11 +65,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,11 +79,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -81,11 +93,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,11 +107,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -105,6 +121,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

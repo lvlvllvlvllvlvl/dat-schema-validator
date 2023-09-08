@@ -2,51 +2,62 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 9,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Message",
     "offset": 10,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 18,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 26,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,24 +65,29 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 30,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 31,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

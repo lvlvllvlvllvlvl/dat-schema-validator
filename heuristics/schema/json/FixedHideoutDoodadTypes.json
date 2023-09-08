@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "HideoutDoodadsKeys",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -23,6 +26,7 @@
   {
     "name": "BaseTypeHideoutDoodadsKey",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -30,7 +34,8 @@
         "name": "HideoutDoodads"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -41,7 +46,8 @@
       }
     },
     "offset": 40,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -52,7 +58,8 @@
       }
     },
     "offset": 44,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -60,7 +67,8 @@
       "boolean": true
     },
     "offset": 48,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -70,7 +78,8 @@
       }
     },
     "offset": 49,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -81,7 +90,8 @@
       }
     },
     "offset": 65,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -91,6 +101,7 @@
       }
     },
     "offset": 69,
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

@@ -2,82 +2,100 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "BaseIcon_DDSFile",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Infected_DDSFile",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Shaper_DDSFile",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Elder_DDSFile",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Drawn_DDSFile",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Delirious_DDSFile",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "UberBlight_DDSFile",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

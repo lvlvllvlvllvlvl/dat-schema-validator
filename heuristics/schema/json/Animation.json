@@ -2,75 +2,91 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 9,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 10,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Mainhand_AnimationKey",
     "offset": 11,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Offhand_AnimationKey",
     "offset": 19,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 27,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

@@ -2,6 +2,7 @@
   {
     "name": "Mod",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "TiersWhitelist",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -26,6 +29,7 @@
   {
     "name": "TransformAchievement",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +37,13 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ModFamilies",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

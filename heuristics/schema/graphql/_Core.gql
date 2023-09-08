@@ -1006,14 +1006,14 @@ type Commands {
 }
 
 type ComponentAttributeRequirements @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes @ref(column: "Id") @unique
+  BaseItemTypesKey: BaseItemTypes @unique @ref(column: "Id")
   ReqStr: i32
   ReqDex: i32
   ReqInt: i32
 }
 
 type ComponentCharges @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes @ref(column: "Id") @unique
+  BaseItemTypesKey: BaseItemTypes @unique @ref(column: "Id")
   MaxCharges: i32
   PerCharge: i32
   MaxCharges2: i32
@@ -1636,7 +1636,7 @@ type GamepadButton {
   _: string
   _: string
   _: string
-  _: string
+  _: string @unique
 }
 
 type GamepadType {
@@ -2756,7 +2756,7 @@ type MicrotransactionPeriodicCharacterEffectVariations {
   Id: string @unique
   AOFile: string @file(ext: ".ao")
   MiscObject: MiscObjects
-  _: i32
+  _: i32 @unique
 }
 
 type MicrotransactionPortalVariations {
@@ -2886,7 +2886,7 @@ type MiscObjects {
   PreloadGroupsKeys: [PreloadGroups]
   _: i32
   _: i32
-  _: i32
+  _: i32 @unique
 }
 
 type MiscObjectsArtVariations {
@@ -3211,7 +3211,7 @@ type MonsterHeightBrackets {
   Tag: Tags
   _: i32
   _: f32
-  _: f32
+  _: f32 @unique
 }
 
 type MonsterHeights {

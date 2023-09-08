@@ -2,51 +2,61 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Base_ENVFile",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Corrupted_ENVFile",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -63,6 +73,7 @@
   {
     "name": "EnvironmentTransitionsKey",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -70,11 +81,13 @@
         "name": "EnvironmentTransitions"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "PreloadGroup",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -82,6 +95,7 @@
         "name": "PreloadGroups"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

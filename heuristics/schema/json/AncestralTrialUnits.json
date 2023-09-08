@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Tribe",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -27,29 +32,35 @@
         "name": "AncestralTrialTribes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Image",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "TotemImage",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "HASH16",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -57,11 +68,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,20 +82,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Description",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -90,11 +107,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -102,11 +121,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Position",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -114,6 +135,7 @@
         "name": "AncestralTrialUnitPositions"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

@@ -2,6 +2,7 @@
   {
     "name": "",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,11 +10,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "ProjectilesKey",
     "offset": 4,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,22 +24,26 @@
         "name": "Projectiles"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Dynamite_MiscObjectsKey",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -44,11 +51,13 @@
         "name": "MiscObjects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -56,11 +65,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -68,11 +79,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -80,11 +93,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -92,11 +107,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -104,11 +121,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -116,11 +135,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -128,11 +149,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MiscAnimatedKey",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -140,11 +163,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -152,6 +177,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

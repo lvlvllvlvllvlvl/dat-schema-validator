@@ -2,6 +2,7 @@
   {
     "name": "BaseItemTypesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "LabyrinthSecretsKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -26,6 +29,7 @@
   {
     "name": "Buff_BuffDefinitionsKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +37,13 @@
         "name": "BuffDefinitions"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Buff_StatValues",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {

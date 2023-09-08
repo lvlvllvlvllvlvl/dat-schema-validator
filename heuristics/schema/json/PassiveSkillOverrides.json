@@ -2,33 +2,40 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "NodeIcon",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Stats",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -41,6 +48,7 @@
   {
     "name": "StatValues",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -53,6 +61,7 @@
   {
     "name": "HASH16",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -60,20 +69,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "PassiveBG",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Effect",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -81,11 +94,13 @@
         "name": "GrantedEffectsPerLevel"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Type",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -93,11 +108,13 @@
         "name": "PassiveSkillOverrideTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Limit",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -105,11 +122,13 @@
         "name": "PassiveOverrideLimits"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -117,11 +136,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -129,7 +150,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -139,6 +161,7 @@
       }
     },
     "offset": 124,
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

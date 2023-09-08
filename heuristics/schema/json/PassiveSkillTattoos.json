@@ -2,6 +2,7 @@
   {
     "name": "Tattoo",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Override",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "PassiveSkillOverrides"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Set",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,7 +38,8 @@
         "name": "PassiveSkillTattooTargetSets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -44,7 +50,8 @@
       }
     },
     "offset": 48,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -54,6 +61,7 @@
       }
     },
     "offset": 52,
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

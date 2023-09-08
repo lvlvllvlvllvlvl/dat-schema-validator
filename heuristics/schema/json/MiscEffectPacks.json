@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "EPKFile",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -27,11 +32,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -39,11 +46,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -51,11 +60,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "PreloadGroups",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -68,28 +79,34 @@
   {
     "name": "",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "PlayerOnly_EPKFile",
     "offset": 45,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 53,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

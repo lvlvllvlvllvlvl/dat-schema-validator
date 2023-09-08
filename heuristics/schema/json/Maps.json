@@ -2,6 +2,7 @@
   {
     "name": "BaseItemTypesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Regular_WorldAreasKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Unique_WorldAreasKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +38,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MapUpgrade_BaseItemTypesKey",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,11 +52,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MonsterPacksKeys",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -62,6 +71,7 @@
   {
     "name": "AchievementItem",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -69,29 +79,35 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Regular_GuildCharacter",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Unique_GuildCharacter",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Tier",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -99,11 +115,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Shaped_Base_MapsKey",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -111,11 +129,13 @@
         "name": "Maps"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Shaped_AreaLevel",
     "offset": 124,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -123,11 +143,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "UpgradedFrom_MapsKey",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -135,11 +157,13 @@
         "name": "Maps"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "MapsKey2",
     "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -147,11 +171,13 @@
         "name": "Maps"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "MapsKey3",
     "offset": 144,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -159,11 +185,13 @@
         "name": "Maps"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "MapSeriesKey",
     "offset": 152,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -171,33 +199,40 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 156,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 157,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 158,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

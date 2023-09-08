@@ -2,6 +2,7 @@
   {
     "name": "DelveBiomesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "DelveBiomes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "DelveFeaturesKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,15 +24,18 @@
         "name": "DelveFeatures"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ARMFile",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

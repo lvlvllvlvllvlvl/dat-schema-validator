@@ -2,6 +2,7 @@
   {
     "name": "BaseItemTypesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "ItemVisualEffectKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "ItemVisualEffect"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ItemVisualIdentityKey1",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +38,13 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ItemVisualIdentityKey2",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,11 +52,13 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Stats",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -62,6 +71,7 @@
   {
     "name": "ItemClasses",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -74,6 +84,7 @@
   {
     "name": "",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -85,15 +96,18 @@
   {
     "name": "",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 113,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -106,6 +120,7 @@
   {
     "name": "",
     "offset": 129,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -118,11 +133,13 @@
   {
     "name": "",
     "offset": 145,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -138,11 +155,13 @@
   {
     "name": "",
     "offset": 162,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -175,7 +194,8 @@
       }
     },
     "offset": 195,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -207,7 +227,8 @@
       }
     },
     "offset": 243,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -215,6 +236,7 @@
       "boolean": true
     },
     "offset": 259,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

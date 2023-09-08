@@ -2,6 +2,7 @@
   {
     "name": "BetrayalJobsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BetrayalJobs"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "BetrayalTargetsKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "BetrayalTargets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "BetrayalRanksKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,16 +38,19 @@
         "name": "BetrayalRanks"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Description",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "type": {
@@ -50,6 +58,7 @@
       "string": {}
     },
     "offset": 56,
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

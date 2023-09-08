@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "ItemClassesKey",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "ItemClasses"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Width",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -30,11 +35,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Height",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,29 +49,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Name",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "InheritsFrom",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "DropLevel",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -72,11 +85,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "FlavourTextKey",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -84,11 +99,13 @@
         "name": "FlavourText"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Implicit_ModsKeys",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -101,6 +118,7 @@
   {
     "name": "SizeOnGround",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -108,11 +126,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SoundEffect",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -120,11 +140,13 @@
         "name": "SoundEffects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "TagsKeys",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -137,6 +159,7 @@
   {
     "name": "ModDomain",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -144,11 +167,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SiteVisibility",
     "offset": 124,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -156,11 +181,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ItemVisualIdentity",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -168,11 +195,13 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HASH32",
     "offset": 144,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -180,11 +209,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "VendorRecipe_AchievementItems",
     "offset": 148,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -197,15 +228,18 @@
   {
     "name": "Inflection",
     "offset": 164,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Equip_AchievementItemsKey",
     "offset": 172,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -213,20 +247,24 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "IsCorrupted",
     "offset": 188,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Identify_AchievementItems",
     "offset": 189,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -239,6 +277,7 @@
   {
     "name": "IdentifyMagic_AchievementItems",
     "offset": 205,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -251,6 +290,7 @@
   {
     "name": "FragmentBaseItemTypesKey",
     "offset": 221,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -258,51 +298,61 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 229,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 230,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 246,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 262,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "TradeMarketCategory",
     "offset": 263,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -310,20 +360,24 @@
         "name": "TradeMarketCategory"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Unmodifiable",
     "offset": 279,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Achievement",
     "offset": 280,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

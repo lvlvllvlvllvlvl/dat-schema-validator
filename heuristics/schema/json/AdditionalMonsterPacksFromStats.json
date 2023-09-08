@@ -2,6 +2,7 @@
   {
     "name": "StatsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MonsterPacksKeys",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -38,6 +43,7 @@
   {
     "name": "AdditionalMonsterPacksStatMode",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -45,11 +51,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "PackCountStatsKey",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -57,11 +65,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "StatsKeys",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -74,6 +84,7 @@
   {
     "name": "StatsValues",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -86,6 +97,7 @@
   {
     "name": "",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,7 +105,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -103,6 +116,7 @@
       }
     },
     "offset": 92,
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

@@ -2,78 +2,95 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Icon",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "IconSmall",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Illustration",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "PageArt",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "FlavourText",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "TagsKey",
     "offset": 57,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -81,11 +98,13 @@
         "name": "Tags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 73,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,11 +112,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "ModsKeys",
     "offset": 77,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -110,6 +131,7 @@
   {
     "name": "CurrencyItemsKey",
     "offset": 93,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -117,6 +139,7 @@
         "name": "CurrencyItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   }
 ]

@@ -2,6 +2,7 @@
   {
     "name": "DialogueEventKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "DialogueEvent"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HeistNPCsKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "HeistNPCs"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "AudioNormal",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -38,6 +43,7 @@
   {
     "name": "AudioLoud",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -50,6 +56,7 @@
   {
     "name": "",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -57,6 +64,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

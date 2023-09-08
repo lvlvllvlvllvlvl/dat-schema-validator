@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Column",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,11 +21,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Row",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -30,20 +35,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "IsMapSlot",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 17,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -51,11 +60,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Width",
     "offset": 21,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -63,11 +74,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Height",
     "offset": 25,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -75,11 +88,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Stat",
     "offset": 29,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -87,11 +102,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "StatValue",
     "offset": 45,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -99,11 +116,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "UnlockedWith",
     "offset": 49,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -111,11 +130,13 @@
         "name": "HellscapePassives"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Quest",
     "offset": 65,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -123,6 +144,7 @@
         "name": "Quest"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

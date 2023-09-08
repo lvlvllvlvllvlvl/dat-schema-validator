@@ -2,42 +2,51 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsLocal",
     "offset": 9,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsWeaponLocal",
     "offset": 10,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Semantics",
     "offset": 11,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -45,38 +54,46 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Text",
     "offset": 15,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 23,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsVirtual",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "MainHandAlias_StatsKey",
     "offset": 25,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -84,11 +101,13 @@
         "name": "Stats"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "OffHandAlias_StatsKey",
     "offset": 33,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -96,20 +115,24 @@
         "name": "Stats"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 41,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "HASH32",
     "offset": 42,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -117,11 +140,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "BelongsActiveSkillsKey",
     "offset": 46,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -131,6 +156,7 @@
   {
     "name": "Category",
     "offset": 62,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -138,38 +164,46 @@
         "name": "PassiveSkillStatCategories"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 78,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 79,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsScalable",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "ContextFlags",
     "offset": 81,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -182,6 +216,7 @@
   {
     "name": "",
     "offset": 97,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

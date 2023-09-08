@@ -2,6 +2,7 @@
   {
     "name": "LabyrinthSectionKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "LabyrinthSection"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "LabyrinthSectionLayoutKeys",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -38,6 +43,7 @@
   {
     "name": "LabyrinthSecretsKey0",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,11 +51,13 @@
         "name": "LabyrinthSecrets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "LabyrinthSecretsKey1",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -57,11 +65,13 @@
         "name": "LabyrinthSecrets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "LabyrinthAreasKey",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -69,33 +79,39 @@
         "name": "LabyrinthAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Float0",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Float1",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "LabyrinthNodeOverridesKeys",
     "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

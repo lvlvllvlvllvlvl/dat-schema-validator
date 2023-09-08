@@ -46,25 +46,40 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
         type = header.type.key.foreign ? header.type.key.name ?? "rid" : table.name;
       }
 
-      const tags = [] as string[];
+      const directives = [] as string[];
+      if (header.unique && !col) {
+        directives.push("unique");
+      }
       if (col) {
         if (col.references && "column" in col.references) {
-          tags.push(`ref(column: "${col.references.column}")`);
+          directives.push(`ref(column: "${col.references.column}")`);
         }
-        for (const tag of ["unique", "localized"]) {
-          if (col[tag]) {
-            tags.push(tag);
+        if (col.unique) {
+          if (header.unique === false) {
+            console.log(
+              table.name,
+              "column",
+              i,
+              "-",
+              col.name,
+              "marked unique, but non-unique values were found"
+            );
+          } else {
+            directives.push("unique");
           }
         }
+        if (col.localized) {
+          directives.push("localized");
+        }
         if (col?.file) {
-          tags.push(`file(ext: "${col.file}")`);
+          directives.push(`file(ext: "${col.file}")`);
         }
         if (col?.files) {
-          tags.push(`files(ext: ${stringify(col.files)})`);
+          directives.push(`files(ext: ${stringify(col.files)})`);
         }
       }
 
-      const tag = tags.length ? " @" + tags.join(" @") : "";
+      const directive = directives.length ? " @" + directives.join(" @") : "";
       const description = col?.description
         ? col.description.includes('"')
           ? `  """\n  ${col.description}\n  """\n`
@@ -74,9 +89,9 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
       if (!type) {
         throw `No type found for column ${i}, ${header.name}`;
       } else if (header.type.array) {
-        return `${description}  ${header.name || "_"}: [${type}]${tag}${comment}`;
+        return `${description}  ${header.name || "_"}: [${type}]${directive}${comment}`;
       } else {
-        return `${description}  ${header.name || "_"}: ${type}${tag}${comment}`;
+        return `${description}  ${header.name || "_"}: ${type}${directive}${comment}`;
       }
     })
     .filter(Boolean)

@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Minion",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,17 +21,20 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   }
 ]

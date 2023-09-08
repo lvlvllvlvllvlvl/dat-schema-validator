@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "HASH16",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,20 +21,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "RewardText",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "ItemVisualIdentityKey",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -39,11 +46,13 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "RewardType",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -51,11 +60,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SacrificeItem",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -63,11 +74,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "SacrificeAmount",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -75,29 +88,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SacrificeText",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "TrialMods",
     "offset": 69,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

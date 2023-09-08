@@ -7,7 +7,8 @@
       }
     },
     "offset": 0,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -29,7 +30,8 @@
       }
     },
     "offset": 32,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -51,7 +53,8 @@
       }
     },
     "offset": 64,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -62,7 +65,8 @@
       }
     },
     "offset": 80,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -105,7 +109,8 @@
       "boolean": true
     },
     "offset": 132,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -113,7 +118,8 @@
       "boolean": true
     },
     "offset": 133,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -123,6 +129,7 @@
       }
     },
     "offset": 134,
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

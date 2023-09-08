@@ -2,6 +2,7 @@
   {
     "name": "BetrayalTargetsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BetrayalTargets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "BetrayalJobsKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "BetrayalJobs"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "AchievementItemsKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,6 +38,7 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   }
 ]

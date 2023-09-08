@@ -2,6 +2,7 @@
   {
     "name": "BaseItemTypesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,34 +10,41 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "BK2File",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "BoxId",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "BundleId",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "type": {
@@ -44,6 +52,7 @@
       "boolean": true
     },
     "offset": 40,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

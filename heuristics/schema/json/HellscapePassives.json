@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Stats",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -32,6 +37,7 @@
   {
     "name": "StatsValues",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -44,6 +50,7 @@
   {
     "name": "Points",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -51,11 +58,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "HASH16",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -63,29 +72,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "Icon",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "IconMaxed",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "SoundEffect",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -93,11 +108,13 @@
         "name": "SoundEffects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -105,11 +122,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Quest",
     "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -117,6 +136,7 @@
         "name": "Quest"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

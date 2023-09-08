@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "BaseItemTypesKey",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "X",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -30,11 +35,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Y",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,11 +49,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "IntId",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,11 +63,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "Width",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -66,11 +77,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Height",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -78,11 +91,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "StackSize",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -90,24 +105,29 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "HideIfNoneOwned",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Image",
     "offset": 49,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

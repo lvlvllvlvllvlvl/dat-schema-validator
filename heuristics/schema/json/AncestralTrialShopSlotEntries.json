@@ -2,6 +2,7 @@
   {
     "name": "",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,11 +10,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 4,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -33,29 +38,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 13,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 14,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -63,7 +74,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -71,6 +83,7 @@
       "boolean": true
     },
     "offset": 18,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

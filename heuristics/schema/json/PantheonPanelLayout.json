@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "X",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,11 +21,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "Y",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -30,47 +35,57 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "IsMajorGod",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CoverImage",
     "offset": 17,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "GodName2",
     "offset": 25,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "SelectionImage",
     "offset": 33,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Effect1_StatsKeys",
     "offset": 41,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -83,6 +98,7 @@
   {
     "name": "Effect1_Values",
     "offset": 57,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -95,6 +111,7 @@
   {
     "name": "Effect2_StatsKeys",
     "offset": 73,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -107,15 +124,18 @@
   {
     "name": "GodName3",
     "offset": 89,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Effect3_Values",
     "offset": 97,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -128,6 +148,7 @@
   {
     "name": "Effect3_StatsKeys",
     "offset": 113,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -140,15 +161,18 @@
   {
     "name": "GodName4",
     "offset": 129,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Effect4_StatsKeys",
     "offset": 137,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -161,6 +185,7 @@
   {
     "name": "Effect4_Values",
     "offset": 153,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -173,15 +198,18 @@
   {
     "name": "GodName1",
     "offset": 169,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Effect2_Values",
     "offset": 177,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -194,6 +222,7 @@
   {
     "name": "QuestState1",
     "offset": 193,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -201,11 +230,13 @@
         "name": "QuestStates"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "QuestState2",
     "offset": 209,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -213,11 +244,13 @@
         "name": "QuestStates"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "QuestState3",
     "offset": 225,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -225,11 +258,13 @@
         "name": "QuestStates"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "QuestState4",
     "offset": 241,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -237,20 +272,24 @@
         "name": "QuestStates"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "IsDisabled",
     "offset": 257,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "AchievementItems",
     "offset": 258,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

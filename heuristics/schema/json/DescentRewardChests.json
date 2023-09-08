@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "BaseItemTypesKeys1",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -23,6 +26,7 @@
   {
     "name": "BaseItemTypesKeys2",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -35,6 +39,7 @@
   {
     "name": "BaseItemTypesKeys3",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -47,6 +52,7 @@
   {
     "name": "BaseItemTypesKeys4",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -59,6 +65,7 @@
   {
     "name": "BaseItemTypesKeys5",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -71,6 +78,7 @@
   {
     "name": "BaseItemTypesKeys6",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -83,6 +91,7 @@
   {
     "name": "BaseItemTypesKeys7",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -95,6 +104,7 @@
   {
     "name": "BaseItemTypesKeys8",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -107,6 +117,7 @@
   {
     "name": "BaseItemTypesKeys9",
     "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -119,6 +130,7 @@
   {
     "name": "BaseItemTypesKeys10",
     "offset": 152,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -131,6 +143,7 @@
   {
     "name": "BaseItemTypesKeys11",
     "offset": 168,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -143,6 +156,7 @@
   {
     "name": "BaseItemTypesKeys12",
     "offset": 184,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -155,6 +169,7 @@
   {
     "name": "WorldAreasKey",
     "offset": 200,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -162,11 +177,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "BaseItemTypesKeys13",
     "offset": 216,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -179,6 +196,7 @@
   {
     "name": "BaseItemTypesKeys14",
     "offset": 232,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

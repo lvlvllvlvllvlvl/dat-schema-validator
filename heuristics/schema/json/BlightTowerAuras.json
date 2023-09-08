@@ -2,6 +2,7 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,11 +10,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "BuffDefinitionsKey",
     "offset": 4,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "BuffDefinitions"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -33,11 +38,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MiscAnimatedKey",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,6 +52,7 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

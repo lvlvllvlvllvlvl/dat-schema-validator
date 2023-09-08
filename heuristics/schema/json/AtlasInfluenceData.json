@@ -2,6 +2,7 @@
   {
     "name": "InfluencePack",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "AtlasInfluenceOutcomes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "MonsterPacks",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -26,17 +29,20 @@
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -49,6 +55,7 @@
   {
     "name": "",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -56,7 +63,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -68,7 +76,8 @@
     },
     "offset": 68,
     "size": 4,
-    "noData": true
+    "noData": true,
+    "unique": false
   },
   {
     "type": {
@@ -79,7 +88,8 @@
       }
     },
     "offset": 72,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -91,7 +101,8 @@
     },
     "offset": 76,
     "size": 4,
-    "noData": true
+    "noData": true,
+    "unique": false
   },
   {
     "type": {
@@ -113,7 +124,8 @@
       }
     },
     "offset": 96,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -124,7 +136,8 @@
       }
     },
     "offset": 100,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -134,7 +147,8 @@
       }
     },
     "offset": 104,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -145,7 +159,8 @@
       }
     },
     "offset": 120,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -156,7 +171,8 @@
       }
     },
     "offset": 124,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -167,7 +183,8 @@
       }
     },
     "offset": 128,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -178,7 +195,8 @@
       }
     },
     "offset": 132,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -186,7 +204,8 @@
       "boolean": true
     },
     "offset": 136,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -194,7 +213,8 @@
       "boolean": true
     },
     "offset": 137,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -202,7 +222,8 @@
       "boolean": true
     },
     "offset": 138,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -210,6 +231,7 @@
       "boolean": true
     },
     "offset": 139,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

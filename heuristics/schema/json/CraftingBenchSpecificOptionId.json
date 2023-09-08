@@ -5,7 +5,8 @@
       "string": {}
     },
     "offset": 0,
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "type": {
@@ -13,7 +14,8 @@
       "string": {}
     },
     "offset": 8,
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "type": {
@@ -25,7 +27,8 @@
     },
     "offset": 16,
     "size": 4,
-    "noData": true
+    "noData": true,
+    "unique": false
   },
   {
     "type": {
@@ -37,6 +40,7 @@
     },
     "offset": 20,
     "size": 4,
-    "noData": true
+    "noData": true,
+    "unique": false
   }
 ]

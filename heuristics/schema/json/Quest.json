@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Act",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,29 +21,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Name",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Icon_DDSFile",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "QuestId",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -48,20 +57,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Type",
     "offset": 33,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -69,11 +82,13 @@
         "name": "QuestType"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 49,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -86,6 +101,7 @@
   {
     "name": "",
     "offset": 65,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,11 +109,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "TrackerGroup",
     "offset": 69,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -105,7 +123,8 @@
         "name": "QuestTrackerGroup"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -113,6 +132,7 @@
       "boolean": true
     },
     "offset": 85,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

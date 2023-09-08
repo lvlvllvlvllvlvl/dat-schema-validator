@@ -2,6 +2,7 @@
   {
     "name": "ItemVisualIdentityKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "WorldAreasKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "WordsKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +38,13 @@
         "name": "Words"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "FlavourTextKey",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,42 +52,51 @@
         "name": "FlavourText"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HasGuildCharacter",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "GuildCharacter",
     "offset": 65,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Name",
     "offset": 73,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "IsDropDisabled",
     "offset": 81,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

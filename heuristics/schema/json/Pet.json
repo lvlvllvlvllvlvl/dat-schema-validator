@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "BaseItemTypesKey",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "HASH16",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -30,11 +35,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "HASH32",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,11 +49,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,25 +63,30 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 37,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -88,13 +102,15 @@
   {
     "name": "",
     "offset": 54,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -113,7 +129,8 @@
       "boolean": true
     },
     "offset": 86,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -124,7 +141,8 @@
       }
     },
     "offset": 87,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -134,7 +152,8 @@
       }
     },
     "offset": 91,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -142,6 +161,7 @@
       "boolean": true
     },
     "offset": 107,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

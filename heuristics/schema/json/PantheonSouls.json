@@ -2,6 +2,7 @@
   {
     "name": "WorldArea",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "CapturedVessel",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "QuestFlag",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,7 +38,8 @@
         "name": "QuestFlags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -54,7 +60,8 @@
       }
     },
     "offset": 64,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -62,6 +69,7 @@
       "string": {}
     },
     "offset": 80,
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

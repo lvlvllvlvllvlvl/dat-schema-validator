@@ -2,6 +2,7 @@
   {
     "name": "BaseItemType",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Tier",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "NPC",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +38,13 @@
         "name": "ExpeditionNPCs"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "LootSound",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,6 +52,7 @@
         "name": "SoundEffects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

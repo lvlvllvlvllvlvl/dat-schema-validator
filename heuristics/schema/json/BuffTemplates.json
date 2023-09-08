@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "BuffDefinitionsKey",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "BuffDefinitions"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -35,6 +40,7 @@
   {
     "name": "AuraRadius",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,11 +48,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -59,6 +67,7 @@
   {
     "name": "",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -71,6 +80,7 @@
   {
     "name": "BuffVisualsKey",
     "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -78,31 +88,37 @@
         "name": "BuffVisuals"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "StatsKey",
     "offset": 97,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -115,6 +131,7 @@
   {
     "name": "",
     "offset": 113,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -122,11 +139,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 117,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -134,20 +153,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 121,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 122,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -155,6 +178,7 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "MonsterPacksKey",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "MonsterPacks"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MonsterVarietiesKey",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -30,15 +35,18 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MonsterSpawnerId",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

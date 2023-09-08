@@ -2,6 +2,7 @@
   {
     "name": "",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,11 +10,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "MonsterVarietiesKey",
     "offset": 4,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "AfflictionRandomModCategoriesKey",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,6 +38,7 @@
         "name": "AfflictionRandomModCategories"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

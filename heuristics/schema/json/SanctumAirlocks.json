@@ -2,6 +2,7 @@
   {
     "name": "Floor",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "SanctumFloors"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -38,6 +43,7 @@
   {
     "name": "Area1",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,11 +51,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Area2",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -57,6 +65,7 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   }
 ]

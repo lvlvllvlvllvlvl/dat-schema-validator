@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Description",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "ModTypes",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -32,15 +37,18 @@
   {
     "name": "BossARMFile",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Type",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -48,20 +56,24 @@
         "name": "UltimatumEncounterTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Icon",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "HASH16",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,20 +81,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 69,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -90,6 +106,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

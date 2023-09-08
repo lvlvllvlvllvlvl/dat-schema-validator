@@ -2,6 +2,7 @@
   {
     "name": "HideoutNPCsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "HideoutNPCs"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Order",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AddMod",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +38,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Cost_BaseItemTypes",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -50,6 +57,7 @@
   {
     "name": "Cost_Values",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -62,6 +70,7 @@
   {
     "name": "RequiredLevel",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,20 +78,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Name",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "CraftingBenchCustomAction",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -90,11 +103,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ItemClasses",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -107,6 +122,7 @@
   {
     "name": "Links",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -114,20 +130,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SocketColours",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Sockets",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -135,11 +155,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ItemQuantity",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -147,11 +169,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -164,33 +188,40 @@
   {
     "name": "Description",
     "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "IsDisabled",
     "offset": 144,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsAreaOption",
     "offset": 145,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "RecipeIds",
     "offset": 146,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -203,6 +234,7 @@
   {
     "name": "Tier",
     "offset": 162,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -210,11 +242,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "CraftingItemClassCategories",
     "offset": 166,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -227,6 +261,7 @@
   {
     "name": "",
     "offset": 182,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -234,11 +269,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "UnlockCategory",
     "offset": 186,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -246,11 +283,13 @@
         "name": "CraftingBenchUnlockCategories"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "UnveilsRequired",
     "offset": 202,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -258,11 +297,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "UnveilsRequired2",
     "offset": 206,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -270,11 +311,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 210,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -286,6 +329,7 @@
   {
     "name": "",
     "offset": 226,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -297,6 +341,7 @@
   {
     "name": "",
     "offset": 242,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -304,11 +349,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 246,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -316,22 +363,26 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 250,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "AddEnchantment",
     "offset": 266,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -339,11 +390,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "SortCategory",
     "offset": 282,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -351,31 +404,37 @@
         "name": "CraftingBenchSortCategories"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 298,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 314,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 315,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -383,11 +442,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 319,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -395,11 +456,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 335,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -407,11 +470,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 351,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -419,20 +484,24 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MapDevice",
     "offset": 367,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 368,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

@@ -2,6 +2,7 @@
   {
     "name": "MonsterVarietiesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "MiscAnimatedKey0",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MiscAnimatedKey1",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,29 +38,35 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 49,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 50,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -63,11 +74,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 54,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -75,11 +88,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 58,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -87,11 +102,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 62,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -99,25 +116,30 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 66,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 67,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -146,6 +168,7 @@
   {
     "name": "",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -153,29 +176,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 105,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 106,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -183,6 +212,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

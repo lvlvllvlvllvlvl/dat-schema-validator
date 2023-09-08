@@ -2,6 +2,7 @@
   {
     "name": "WorldAreasKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "ItemVisualIdentityKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,20 +24,24 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Tier",
     "offset": 33,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,11 +49,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 37,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,11 +63,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 41,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -66,7 +77,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -74,6 +86,7 @@
       "boolean": true
     },
     "offset": 45,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

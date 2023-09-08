@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Server",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -29,15 +34,18 @@
   {
     "name": "IsEnabled",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Server2",
     "offset": 33,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -47,15 +55,18 @@
   {
     "name": "ShortName",
     "offset": 49,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 57,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -68,6 +79,7 @@
   {
     "name": "",
     "offset": 73,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -75,11 +87,13 @@
         "name": "Realms"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 81,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -87,20 +101,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "IsGammaRealm",
     "offset": 85,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "SpeedtestUrl",
     "offset": 86,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}

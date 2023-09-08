@@ -2,53 +2,64 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "RequiredSkillIcon",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "SkillIcon",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -56,20 +67,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MapIcon",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Level_StatsKey",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -77,11 +92,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Alert_StatsKey",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -89,11 +106,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Alarm_StatsKey",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -101,11 +120,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Cost_StatsKey",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -113,11 +134,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "ExperienceGain_StatsKey",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -125,24 +148,29 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "ConsoleBlueprintLegend",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Description",
     "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   }
 ]

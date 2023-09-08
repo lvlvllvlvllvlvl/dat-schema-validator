@@ -2,17 +2,20 @@
   {
     "name": "",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -20,11 +23,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -32,11 +37,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -49,6 +56,7 @@
   {
     "name": "BetrayalTargetsKey",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -56,11 +64,13 @@
         "name": "BetrayalTargets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -68,22 +78,26 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -95,6 +109,7 @@
   {
     "name": "BetrayalUpgradesKey",
     "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -102,20 +117,24 @@
         "name": "BetrayalUpgrades"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 108,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 109,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -128,6 +147,7 @@
   {
     "name": "",
     "offset": 125,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -139,15 +159,18 @@
   {
     "name": "",
     "offset": 141,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 142,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -160,6 +183,7 @@
   {
     "name": "NPCTextAudioKey",
     "offset": 158,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -167,11 +191,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 174,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {

@@ -2,6 +2,7 @@
   {
     "name": "Slot",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "PassiveSkills"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "ClusterJewelSize",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "PassiveTreeExpansionJewelSizes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -33,11 +38,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ReplacesSlot",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,11 +52,13 @@
         "name": "PassiveJewelSlots"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "ProxySlot",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -57,11 +66,13 @@
         "name": "PassiveSkills"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "StartIndices",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {

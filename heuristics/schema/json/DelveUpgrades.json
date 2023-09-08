@@ -2,6 +2,7 @@
   {
     "name": "DelveUpgradeTypeKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,11 +10,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "UpgradeLevel",
     "offset": 4,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "StatsKeys",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -38,6 +43,7 @@
   {
     "name": "StatValues",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -50,6 +56,7 @@
   {
     "name": "Cost",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -57,11 +64,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,11 +78,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AchievementItemsKey",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -81,11 +92,13 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,6 +106,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

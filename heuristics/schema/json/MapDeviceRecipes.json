@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "RecipeItems",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -23,6 +26,7 @@
   {
     "name": "WorldArea",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -30,11 +34,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MicrotransactionPortalVariation",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -42,11 +48,13 @@
         "name": "MicrotransactionPortalVariations"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "AreaLevel",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,22 +62,26 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -77,38 +89,46 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 81,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 82,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "OpenAchievemnts",
     "offset": 83,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -124,6 +144,7 @@
       "boolean": true
     },
     "offset": 99,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

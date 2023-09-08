@@ -2,6 +2,7 @@
   {
     "name": "Room",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "LakeRooms"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -33,11 +38,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Achievements",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -50,6 +57,7 @@
   {
     "name": "",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -74,6 +82,7 @@
   {
     "name": "",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -81,6 +90,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

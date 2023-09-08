@@ -2,6 +2,7 @@
   {
     "name": "Level",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,33 +10,39 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 4,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -43,11 +50,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -55,33 +64,39 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "HeistValueScalingKey1",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -89,11 +104,13 @@
         "name": "HeistValueScaling"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HeistValueScalingKey2",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -101,11 +118,13 @@
         "name": "HeistValueScaling"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HeistValueScalingKey3",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -113,11 +132,13 @@
         "name": "HeistValueScaling"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HeistValueScalingKey4",
     "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -125,11 +146,13 @@
         "name": "HeistValueScaling"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HeistValueScalingKey5",
     "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -137,55 +160,65 @@
         "name": "HeistValueScaling"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 108,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "HeistValueScalingKey6",
     "offset": 124,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -193,11 +226,13 @@
         "name": "HeistValueScaling"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "HeistValueScalingKey7",
     "offset": 140,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -205,33 +240,39 @@
         "name": "HeistValueScaling"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 156,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 160,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 164,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -239,6 +280,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

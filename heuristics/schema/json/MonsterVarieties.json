@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "MonsterTypesKey",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "MonsterTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -30,11 +35,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ObjectSize",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,11 +49,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MinimumAttackDistance",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,11 +63,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MaximumAttackDistance",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -66,11 +77,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ACTFiles",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -80,6 +93,7 @@
   {
     "name": "AOFiles",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -89,15 +103,18 @@
   {
     "name": "BaseMonsterTypeIndex",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "ModsKeys",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -110,6 +127,7 @@
   {
     "name": "",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -117,29 +135,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 108,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "ModelSizeMultiplier",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -147,11 +171,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -159,11 +185,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 124,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -171,11 +199,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -183,11 +213,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 132,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -195,11 +227,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -207,11 +241,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "TagsKeys",
     "offset": 140,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -224,6 +260,7 @@
   {
     "name": "ExperienceMultiplier",
     "offset": 156,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -231,11 +268,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 160,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -248,6 +287,7 @@
   {
     "name": "",
     "offset": 176,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -255,11 +295,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 180,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -267,11 +309,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 184,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -279,11 +323,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "CriticalStrikeChance",
     "offset": 188,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -291,11 +337,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 192,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -303,11 +351,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "GrantedEffectsKeys",
     "offset": 196,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -320,15 +370,18 @@
   {
     "name": "AISFile",
     "offset": 212,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "ModsKeys2",
     "offset": 220,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -341,35 +394,42 @@
   {
     "name": "Stance",
     "offset": 236,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 244,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Name",
     "offset": 260,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "DamageMultiplier",
     "offset": 268,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -377,11 +437,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "LifeMultiplier",
     "offset": 272,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -389,11 +451,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AttackSpeed",
     "offset": 276,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -401,11 +465,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Weapon1_ItemVisualIdentityKeys",
     "offset": 280,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -418,6 +484,7 @@
   {
     "name": "Weapon2_ItemVisualIdentityKeys",
     "offset": 296,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -430,6 +497,7 @@
   {
     "name": "Back_ItemVisualIdentityKey",
     "offset": 312,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -437,11 +505,13 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MainHand_ItemClassesKey",
     "offset": 328,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -449,11 +519,13 @@
         "name": "ItemClasses"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "OffHand_ItemClassesKey",
     "offset": 344,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -461,11 +533,13 @@
         "name": "ItemClasses"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Helmet_ItemVisualIdentityKey",
     "offset": 360,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -473,11 +547,13 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 376,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -485,11 +561,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "KillSpecificMonsterCount_AchievementItemsKeys",
     "offset": 380,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -502,6 +580,7 @@
   {
     "name": "Special_ModsKeys",
     "offset": 396,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -514,6 +593,7 @@
   {
     "name": "KillRare_AchievementItemsKeys",
     "offset": 412,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -526,15 +606,18 @@
   {
     "name": "",
     "offset": 428,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 429,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -542,11 +625,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 433,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -554,11 +639,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 437,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -566,11 +653,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 441,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -578,11 +667,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 445,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -590,11 +681,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 449,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -602,11 +695,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 453,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -614,29 +709,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 457,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 458,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "KillWhileOnslaughtIsActive_AchievementItemsKey",
     "offset": 466,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -644,11 +745,13 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MonsterSegmentsKey",
     "offset": 482,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -656,11 +759,13 @@
         "name": "MonsterSegments"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MonsterArmoursKey",
     "offset": 498,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -668,11 +773,13 @@
         "name": "MonsterArmours"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "KillWhileTalismanIsActive_AchievementItemsKey",
     "offset": 514,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -680,11 +787,13 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Part1_ModsKeys",
     "offset": 530,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -697,6 +806,7 @@
   {
     "name": "Part2_ModsKeys",
     "offset": 546,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -709,6 +819,7 @@
   {
     "name": "Endgame_ModsKeys",
     "offset": 562,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -721,17 +832,20 @@
   {
     "name": "",
     "offset": 578,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 594,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -739,11 +853,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 598,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -751,11 +867,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 602,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -767,6 +885,7 @@
   {
     "name": "",
     "offset": 618,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -778,6 +897,7 @@
   {
     "name": "",
     "offset": 634,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -785,29 +905,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SinkAnimation_AOFile",
     "offset": 638,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 646,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 647,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -819,33 +945,40 @@
   {
     "name": "",
     "offset": 663,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 664,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 665,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 666,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -853,11 +986,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 670,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -865,22 +1000,26 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 674,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 678,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -888,20 +1027,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "EPKFile",
     "offset": 682,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 690,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -909,11 +1052,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MonsterConditionalEffectPacksKey",
     "offset": 694,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -921,29 +1066,35 @@
         "name": "MonsterConditionalEffectPacks"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 710,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 711,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 712,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -951,20 +1102,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 716,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 717,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -972,11 +1127,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 721,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -984,11 +1141,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 725,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -996,11 +1155,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 729,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -1008,11 +1169,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 733,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -1020,11 +1183,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 737,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -1032,7 +1197,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -1045,6 +1211,7 @@
   {
     "name": "",
     "offset": 757,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -1052,11 +1219,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 761,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -1064,11 +1233,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 765,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -1076,11 +1247,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 769,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -1088,11 +1261,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 773,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -1100,15 +1275,18 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 777,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

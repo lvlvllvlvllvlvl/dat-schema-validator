@@ -2,33 +2,40 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "DDSFile",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "AOFile",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "InventorySoundEffect",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -36,11 +43,13 @@
         "name": "SoundEffects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -48,20 +57,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "AOFile2",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "MarauderSMFiles",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -71,6 +84,7 @@
   {
     "name": "RangerSMFiles",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -80,6 +94,7 @@
   {
     "name": "WitchSMFiles",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -89,6 +104,7 @@
   {
     "name": "DuelistDexSMFiles",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -98,6 +114,7 @@
   {
     "name": "TemplarSMFiles",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -107,6 +124,7 @@
   {
     "name": "ShadowSMFiles",
     "offset": 132,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -116,6 +134,7 @@
   {
     "name": "ScionSMFiles",
     "offset": 148,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -125,69 +144,84 @@
   {
     "name": "MarauderShape",
     "offset": 164,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "RangerShape",
     "offset": 172,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "WitchShape",
     "offset": 180,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "DuelistShape",
     "offset": 188,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "TemplarShape",
     "offset": 196,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "ShadowShape",
     "offset": 204,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "ScionShape",
     "offset": 212,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 220,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -195,11 +229,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 224,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -207,11 +243,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Pickup_AchievementItemsKeys",
     "offset": 228,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -224,6 +262,7 @@
   {
     "name": "SMFiles",
     "offset": 244,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -233,6 +272,7 @@
   {
     "name": "Identify_AchievementItemsKeys",
     "offset": 260,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -245,15 +285,18 @@
   {
     "name": "EPKFile",
     "offset": 276,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Corrupt_AchievementItemsKeys",
     "offset": 284,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -266,24 +309,29 @@
   {
     "name": "IsAlternateArt",
     "offset": 300,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 301,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CreateCorruptedJewelAchievementItemsKey",
     "offset": 302,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -291,146 +339,178 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "AnimationLocation",
     "offset": 318,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 326,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 334,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 342,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 350,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 358,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 366,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 374,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 382,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 390,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 398,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 406,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 414,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "IsAtlasOfWorldsMapIcon",
     "offset": 422,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsTier16Icon",
     "offset": 423,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 424,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -443,15 +523,18 @@
   {
     "name": "",
     "offset": 440,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 441,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -463,15 +546,18 @@
   {
     "name": "",
     "offset": 457,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 465,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -479,50 +565,59 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 469,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 485,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 501,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 517,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "WorldAreasKeys",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -32,15 +37,18 @@
   {
     "name": "UIImage",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "SpawnWeight_Depth",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -53,6 +61,7 @@
   {
     "name": "SpawnWeight_Values",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -65,6 +74,7 @@
   {
     "name": "",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -77,6 +87,7 @@
   {
     "name": "",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -89,15 +100,18 @@
   {
     "name": "Art2D",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "AchievementItemsKeys",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -110,15 +124,18 @@
   {
     "name": "",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 129,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {

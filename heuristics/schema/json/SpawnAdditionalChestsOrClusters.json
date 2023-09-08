@@ -2,6 +2,7 @@
   {
     "name": "StatsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "ChestsKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "Chests"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ChestClustersKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,6 +38,7 @@
         "name": "ChestClusters"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "MiscAnimatedKey1",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "SpawnWeight",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -30,11 +35,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "LevelMin",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,11 +49,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "LevelMax",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,11 +63,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "BuffDefinitionsKey",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -66,11 +77,13 @@
         "name": "BuffDefinitions"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -83,6 +96,7 @@
   {
     "name": "SpawnPatterns",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -95,6 +109,7 @@
   {
     "name": "ModsKey",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -107,6 +122,7 @@
   {
     "name": "",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -119,6 +135,7 @@
   {
     "name": "",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -131,6 +148,7 @@
   {
     "name": "MiscAnimatedKey2",
     "offset": 132,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -138,11 +156,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "EnvironmentsKey",
     "offset": 148,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -150,11 +170,13 @@
         "name": "Environments"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 164,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -162,11 +184,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Achievements",
     "offset": 168,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -179,24 +203,29 @@
   {
     "name": "Type",
     "offset": 184,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Description",
     "offset": 192,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "DaemonSpawningDataKey",
     "offset": 200,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -204,15 +233,18 @@
         "name": "DaemonSpawningData"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 216,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

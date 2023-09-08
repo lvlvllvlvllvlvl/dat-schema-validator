@@ -4,15 +4,23 @@ import { PossibleHeaders, graphqlType, headerTypes, possibleColumnHeaders } from
 
 export function exportAllRows(headers: NamedHeader[], datFile: DatFile, name: string) {
   const columns = headers.map((header) => {
-    try {
-      return {
-        name: header.name,
-        header,
-        data: readColumn(header, datFile),
-      };
-    } catch (e) {
-      console.log(header, name, datFile.rowLength, e);
+    const data = readColumn(header, datFile);
+    if (data.length > 1 && !header.type.array) {
+      const seen = new Set();
+      header.unique = true;
+      for (const d of data) {
+        if (seen.has(d)) {
+          header.unique = false;
+          break;
+        }
+        seen.add(d);
+      }
     }
+    return {
+      name: header.name,
+      header,
+      data,
+    };
   });
 
   columns.unshift({
@@ -51,6 +59,7 @@ export interface NamedHeader extends Header {
   name?: string;
   unknownArray?: boolean;
   noData?: boolean;
+  unique?: boolean;
   size?: number;
   type: Header["type"] & {
     key?: {
@@ -87,7 +96,7 @@ export function importHeaders(
       headers.push({
         name: column.name || "",
         offset,
-        comment: column.type === "array" ? "Unknown array type" : undefined,
+        unknownArray: column.type === "array",
         type:
           column.type === "array"
             ? headerTypes["[i32]"]

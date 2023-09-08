@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "TradeMarketCategory",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -27,11 +32,13 @@
         "name": "TradeMarketCategory"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ItemClassCategory",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -39,16 +46,19 @@
         "name": "ItemClassCategories"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "RemovedIfLeavesArea",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -65,6 +75,7 @@
   {
     "name": "IdentifyAchievements",
     "offset": 65,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -77,33 +88,40 @@
   {
     "name": "AllocateToMapOwner",
     "offset": 81,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "AlwaysAllocate",
     "offset": 82,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanHaveVeiledMods",
     "offset": 83,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "PickedUpQuest",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -111,11 +129,13 @@
         "name": "QuestFlags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -123,74 +143,90 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AlwaysShow",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanBeCorrupted",
     "offset": 105,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanHaveIncubators",
     "offset": 106,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanHaveInfluence",
     "offset": 107,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanBeDoubleCorrupted",
     "offset": 108,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanHaveAspects",
     "offset": 109,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanTransferSkin",
     "offset": 110,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "ItemStance",
     "offset": 111,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -198,47 +234,57 @@
         "name": "ItemStances"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "CanScourge",
     "offset": 127,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanUpgradeRarity",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 129,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 130,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "MaxInventoryDimensions",
     "offset": 131,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -251,6 +297,7 @@
   {
     "name": "Flags",
     "offset": 147,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -263,24 +310,29 @@
   {
     "name": "Unmodifiable",
     "offset": 163,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanBeFractured",
     "offset": 164,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "EquipAchievements",
     "offset": 165,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -288,16 +340,19 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 181,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -305,7 +360,8 @@
       "boolean": true
     },
     "offset": 182,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -313,6 +369,7 @@
       "boolean": true
     },
     "offset": 183,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

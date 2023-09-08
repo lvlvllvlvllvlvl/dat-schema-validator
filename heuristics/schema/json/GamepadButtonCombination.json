@@ -5,7 +5,8 @@
       "string": {}
     },
     "offset": 0,
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "type": {
@@ -15,7 +16,8 @@
       }
     },
     "offset": 8,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -25,7 +27,8 @@
       }
     },
     "offset": 24,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -33,7 +36,8 @@
       "boolean": true
     },
     "offset": 40,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -41,7 +45,8 @@
       "boolean": true
     },
     "offset": 41,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -49,7 +54,8 @@
       "boolean": true
     },
     "offset": 42,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -57,6 +63,7 @@
       "boolean": true
     },
     "offset": 43,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

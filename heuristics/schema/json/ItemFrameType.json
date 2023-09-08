@@ -2,69 +2,84 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "DoubleLine",
     "offset": 9,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "HeaderSingle",
     "offset": 10,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "HeaderDouble",
     "offset": 18,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "HardmodeHeaderSingle",
     "offset": 26,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "HardmodeHeaderDouble",
     "offset": 34,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Color",
     "offset": 42,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -77,24 +92,29 @@
   {
     "name": "Separator",
     "offset": 58,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 66,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Rarity",
     "offset": 67,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -102,11 +122,13 @@
         "name": "Rarity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "DisplayString",
     "offset": 83,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -114,15 +136,18 @@
         "name": "ClientStrings"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ColorMarkup",
     "offset": 99,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   }
 ]

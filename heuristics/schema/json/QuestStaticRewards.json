@@ -2,6 +2,7 @@
   {
     "name": "QuestFlag",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "QuestFlags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "StatsKeys",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -38,6 +43,7 @@
   {
     "name": "StatValues",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -50,6 +56,7 @@
   {
     "name": "QuestKey",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -57,11 +64,13 @@
         "name": "Quest"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,11 +78,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ClientStringsKey",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -81,11 +92,13 @@
         "name": "ClientStrings"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,11 +106,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "StatValuesHardmode",
     "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -110,6 +125,7 @@
   {
     "name": "ClientStringHardmode",
     "offset": 108,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -117,6 +133,7 @@
         "name": "ClientStrings"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

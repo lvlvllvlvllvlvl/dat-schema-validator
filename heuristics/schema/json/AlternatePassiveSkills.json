@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "AlternateTreeVersionsKey",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,20 +21,24 @@
         "name": "AlternateTreeVersions"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Name",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "PassiveType",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -44,6 +51,7 @@
   {
     "name": "StatsKeys",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -56,6 +64,7 @@
   {
     "name": "Stat1Min",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -63,11 +72,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Stat1Max",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -75,11 +86,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Stat2Min",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -87,11 +100,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Stat2Max",
     "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -99,11 +114,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -111,11 +128,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -123,11 +142,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -135,11 +156,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -147,11 +170,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -159,11 +184,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -171,11 +198,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -183,11 +212,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 108,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -195,11 +226,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SpawnWeight",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -207,11 +240,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -219,11 +254,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "RandomMin",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -231,11 +268,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "RandomMax",
     "offset": 124,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -243,29 +282,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "FlavourText",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "DDSIcon",
     "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "AchievementItemsKeys",
     "offset": 144,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -278,6 +323,7 @@
   {
     "name": "",
     "offset": 160,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -285,11 +331,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 164,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -297,6 +345,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

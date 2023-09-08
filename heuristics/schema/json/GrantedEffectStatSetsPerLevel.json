@@ -2,6 +2,7 @@
   {
     "name": "StatSet",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "GrantedEffectStatSets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "GemLevel",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,22 +24,26 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "PlayerLevelReq",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SpellCritChance",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -44,11 +51,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AttackCritChance",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -56,11 +65,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "BaseMultiplier",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -68,11 +79,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "DamageEffectiveness",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -80,11 +93,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AdditionalFlags",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -97,6 +112,7 @@
   {
     "name": "FloatStats",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -109,6 +125,7 @@
   {
     "name": "InterpolationBases",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -121,6 +138,7 @@
   {
     "name": "AdditionalStats",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -133,6 +151,7 @@
   {
     "name": "StatInterpolations",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -145,6 +164,7 @@
   {
     "name": "FloatStatsValues",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": true,
       "decimal": {
@@ -156,6 +176,7 @@
   {
     "name": "BaseResolvedValues",
     "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -168,6 +189,7 @@
   {
     "name": "AdditionalStatsValues",
     "offset": 152,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -180,6 +202,7 @@
   {
     "name": "GrantedEffects",
     "offset": 168,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

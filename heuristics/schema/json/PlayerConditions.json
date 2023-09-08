@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "BuffDefinitionsKeys",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -23,15 +26,18 @@
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "BuffStacks",
     "offset": 25,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -39,11 +45,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "CharactersKey",
     "offset": 29,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -51,11 +59,13 @@
         "name": "Characters"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "StatsKeys",
     "offset": 45,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -68,15 +78,18 @@
   {
     "name": "",
     "offset": 61,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "StatValue",
     "offset": 62,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -84,11 +97,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 66,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -100,10 +115,12 @@
   {
     "name": "",
     "offset": 82,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

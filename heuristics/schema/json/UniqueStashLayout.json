@@ -2,6 +2,7 @@
   {
     "name": "WordsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "Words"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ItemVisualIdentityKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "ItemVisualIdentity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "UniqueStashTypesKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +38,13 @@
         "name": "UniqueStashTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -45,11 +52,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -57,11 +66,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "OverrideWidth",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,11 +80,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "OverrideHeight",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -81,29 +94,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ShowIfEmptyChallengeLeague",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "ShowIfEmptyStandard",
     "offset": 65,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "RenamedVersion",
     "offset": 66,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -111,11 +130,13 @@
         "name": "UniqueStashLayout"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "BaseVersion",
     "offset": 74,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -123,15 +144,18 @@
         "name": "UniqueStashLayout"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "IsAlternateArt",
     "offset": 82,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

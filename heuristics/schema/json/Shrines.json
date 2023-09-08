@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "TimeoutInSeconds",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,20 +21,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ChargesShared",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Player_ShrineBuffsKey",
     "offset": 13,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -39,11 +46,13 @@
         "name": "ShrineBuffs"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 29,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -51,11 +60,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 33,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -63,11 +74,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Monster_ShrineBuffsKey",
     "offset": 37,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -75,11 +88,13 @@
         "name": "ShrineBuffs"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "SummonMonster_MonsterVarietiesKey",
     "offset": 53,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -87,11 +102,13 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "SummonPlayer_MonsterVarietiesKey",
     "offset": 69,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -99,11 +116,13 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 85,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -111,11 +130,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 89,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -123,11 +144,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ShrineSoundsKey",
     "offset": 93,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -135,20 +158,24 @@
         "name": "ShrineSounds"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 109,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "AchievementItemsKeys",
     "offset": 110,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -161,33 +188,40 @@
   {
     "name": "IsPVPOnly",
     "offset": 126,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 127,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsLesserShrine",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Description",
     "offset": 129,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -195,11 +229,13 @@
         "name": "ClientStrings"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Name",
     "offset": 145,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -207,16 +243,19 @@
         "name": "ClientStrings"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 161,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -226,7 +265,8 @@
       }
     },
     "offset": 162,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {

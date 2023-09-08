@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "ModsKey",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "PassiveSkillsKey",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -30,6 +35,7 @@
         "name": "PassiveSkills"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

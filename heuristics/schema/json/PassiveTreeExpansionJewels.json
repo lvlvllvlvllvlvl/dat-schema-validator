@@ -2,6 +2,7 @@
   {
     "name": "BaseItemTypesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "PassiveTreeExpansionJewelSizesKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "PassiveTreeExpansionJewelSizes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "MinNodes",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -33,11 +38,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "MaxNodes",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -45,11 +52,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "SmallIndices",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -62,6 +71,7 @@
   {
     "name": "NotableIndices",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -74,6 +84,7 @@
   {
     "name": "SocketIndices",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -86,6 +97,7 @@
   {
     "name": "TotalIndices",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,6 +105,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

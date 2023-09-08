@@ -2,6 +2,7 @@
   {
     "name": "BaseItemTypesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "AddedModsKeys",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -26,6 +29,7 @@
   {
     "name": "NegativeWeight_TagsKeys",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -38,6 +42,7 @@
   {
     "name": "NegativeWeight_Values",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -50,6 +55,7 @@
   {
     "name": "ForcedAddModsKeys",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -62,6 +68,7 @@
   {
     "name": "ForbiddenDelveCraftingTagsKeys",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -74,6 +81,7 @@
   {
     "name": "AllowedDelveCraftingTagsKeys",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -86,15 +94,18 @@
   {
     "name": "CanMirrorItem",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CorruptedEssenceChance",
     "offset": 113,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -102,38 +113,46 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "CanImproveQuality",
     "offset": 117,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CanRollEnchant",
     "offset": 118,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "HasLuckyRolls",
     "offset": 119,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "SellPrice_ModsKeys",
     "offset": 120,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -146,15 +165,18 @@
   {
     "name": "CanRollWhiteSockets",
     "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Weight_TagsKeys",
     "offset": 137,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -167,6 +189,7 @@
   {
     "name": "Weight_Values",
     "offset": 153,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -179,6 +202,7 @@
   {
     "name": "DelveCraftingModifierDescriptionsKeys",
     "offset": 169,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -191,6 +215,7 @@
   {
     "name": "BlockedDelveCraftingModifierDescriptionsKeys",
     "offset": 185,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -203,24 +228,29 @@
   {
     "name": "",
     "offset": 201,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 202,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 203,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -233,6 +263,7 @@
   {
     "name": "",
     "offset": 219,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {

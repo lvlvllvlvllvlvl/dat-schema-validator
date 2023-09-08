@@ -2,6 +2,7 @@
   {
     "name": "QuestKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "Quest"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "QuestStates",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -38,6 +43,7 @@
   {
     "name": "",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -50,33 +56,40 @@
   {
     "name": "Text",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Message",
     "offset": 61,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "MapPinsKeys1",
     "offset": 69,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -89,6 +102,7 @@
   {
     "name": "",
     "offset": 85,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -96,11 +110,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MapPinsTexts",
     "offset": 89,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -110,6 +126,7 @@
   {
     "name": "MapPinsKeys2",
     "offset": 105,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -122,6 +139,7 @@
   {
     "name": "",
     "offset": 121,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -133,15 +151,18 @@
   {
     "name": "",
     "offset": 137,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 138,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -154,6 +175,7 @@
   {
     "name": "",
     "offset": 154,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -166,6 +188,7 @@
   {
     "name": "",
     "offset": 170,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -173,11 +196,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "SoundEffect",
     "offset": 174,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -185,7 +210,8 @@
         "name": "SoundEffects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -195,6 +221,7 @@
       }
     },
     "offset": 190,
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

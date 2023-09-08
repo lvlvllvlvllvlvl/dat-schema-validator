@@ -2,6 +2,7 @@
   {
     "name": "Conqueror",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "AtlasExiles"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "WorldArea",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,6 +24,7 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   }
 ]

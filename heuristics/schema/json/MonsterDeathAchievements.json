@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "MonsterVarietiesKeys",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -23,6 +26,7 @@
   {
     "name": "AchievementItemsKeys",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -35,15 +39,18 @@
   {
     "name": "",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "PlayerConditionsKeys",
     "offset": 41,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -56,6 +63,7 @@
   {
     "name": "MonsterDeathConditionsKeys",
     "offset": 57,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -68,6 +76,7 @@
   {
     "name": "",
     "offset": 73,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -79,6 +88,7 @@
   {
     "name": "",
     "offset": 89,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -86,11 +96,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 93,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -98,25 +110,30 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 97,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 98,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -167,7 +184,8 @@
       }
     },
     "offset": 163,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -178,7 +196,8 @@
       }
     },
     "offset": 179,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -197,7 +216,8 @@
       "boolean": true
     },
     "offset": 199,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -228,6 +248,7 @@
       "boolean": true
     },
     "offset": 232,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

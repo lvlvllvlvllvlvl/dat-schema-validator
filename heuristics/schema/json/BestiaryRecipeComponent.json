@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "MinLevel",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,11 +21,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "BestiaryFamiliesKey",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -30,11 +35,13 @@
         "name": "BestiaryFamilies"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "BestiaryGroupsKey",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -42,11 +49,13 @@
         "name": "BestiaryGroups"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ModsKey",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -54,11 +63,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "BestiaryCapturableMonstersKey",
     "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -66,11 +77,13 @@
         "name": "BestiaryCapturableMonsters"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "BeastRarity",
     "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -78,11 +91,13 @@
         "name": "Rarity"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "BestiaryGenusKey",
     "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -90,6 +105,7 @@
         "name": "BestiaryGenus"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

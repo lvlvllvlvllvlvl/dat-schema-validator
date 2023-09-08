@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Description",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "BestiaryRecipeComponentKeys",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -32,15 +37,18 @@
   {
     "name": "Notes",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Category",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -48,20 +56,24 @@
         "name": "BestiaryRecipeCategories"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Achievements",
     "offset": 57,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -74,15 +86,18 @@
   {
     "name": "",
     "offset": 73,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 74,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -90,11 +105,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 78,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -102,11 +119,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 82,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -114,11 +133,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "FlaskMod",
     "offset": 86,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -126,6 +147,7 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

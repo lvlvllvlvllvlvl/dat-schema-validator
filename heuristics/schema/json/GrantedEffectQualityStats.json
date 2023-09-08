@@ -2,6 +2,7 @@
   {
     "name": "GrantedEffectsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "GrantedEffects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "SetId",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "StatsKeys",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -38,6 +43,7 @@
   {
     "name": "StatsValuesPermille",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -50,6 +56,7 @@
   {
     "name": "Weight",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -57,11 +64,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -74,6 +83,7 @@
   {
     "name": "",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {

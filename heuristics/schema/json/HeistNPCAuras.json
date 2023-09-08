@@ -2,6 +2,7 @@
   {
     "name": "Stat",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "GrantedEffect",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,6 +24,7 @@
         "name": "GrantedEffects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   }
 ]

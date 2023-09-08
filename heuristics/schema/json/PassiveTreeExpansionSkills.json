@@ -2,6 +2,7 @@
   {
     "name": "PassiveSkillsKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "PassiveSkills"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Mastery_PassiveSkillsKey",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "PassiveSkills"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "TagsKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +38,13 @@
         "name": "Tags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "PassiveTreeExpansionJewelSizesKey",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,6 +52,7 @@
         "name": "PassiveTreeExpansionJewelSizes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

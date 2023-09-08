@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Normal_WorldAreasKeys",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -23,6 +26,7 @@
   {
     "name": "Cruel_WorldAreasKeys",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -35,6 +39,7 @@
   {
     "name": "Merciless_WorldAreasKeys",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -47,6 +52,7 @@
   {
     "name": "Endgame_WorldAreasKeys",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -59,6 +65,7 @@
   {
     "name": "",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -66,6 +73,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

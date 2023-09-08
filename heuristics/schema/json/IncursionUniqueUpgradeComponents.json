@@ -2,6 +2,7 @@
   {
     "name": "BaseUnique",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "Words"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "UpgradeCurrency",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,6 +24,7 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

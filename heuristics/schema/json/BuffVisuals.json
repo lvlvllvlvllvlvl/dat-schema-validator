@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "BuffDDSFile",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "EPKFiles1",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -29,6 +34,7 @@
   {
     "name": "EPKFiles2",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -38,6 +44,7 @@
   {
     "name": "PreloadGroups",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -50,24 +57,29 @@
   {
     "name": "",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "BuffName",
     "offset": 65,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "MiscAnimated1",
     "offset": 73,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -75,11 +87,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MiscAnimated2",
     "offset": 89,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -87,47 +101,57 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "BuffDescription",
     "offset": 105,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "EPKFile",
     "offset": 113,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "HasExtraArt",
     "offset": 121,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "ExtraArt",
     "offset": 122,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 130,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -140,6 +164,7 @@
   {
     "name": "EPKFiles",
     "offset": 146,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -149,6 +174,7 @@
   {
     "name": "BuffVisualOrbs",
     "offset": 162,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -161,6 +187,7 @@
   {
     "name": "MiscAnimated3",
     "offset": 178,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -168,17 +195,20 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 194,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "SpawnWeight",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -32,6 +37,7 @@
   {
     "name": "WorldAreasKey",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -39,20 +45,24 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Image",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "AchievementItemsKeys",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -65,6 +75,7 @@
   {
     "name": "",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -77,6 +88,7 @@
   {
     "name": "MinDepth",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -89,15 +101,18 @@
   {
     "name": "Description",
     "offset": 104,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -105,11 +120,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -122,6 +139,7 @@
   {
     "name": "",
     "offset": 132,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -134,6 +152,7 @@
   {
     "name": "",
     "offset": 148,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {

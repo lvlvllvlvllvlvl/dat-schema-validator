@@ -290,12 +290,6 @@ for (const tr of includeTranslations) {
           const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFile) : p));
           promises.push(
             fs.writeFile(
-              path.join("heuristics/schema/json", `${table.name}.json`),
-              JSON.stringify(hdr, undefined, 2)
-            )
-          );
-          promises.push(
-            fs.writeFile(
               path.join("heuristics/csv", tr.path.replace("data", "."), `${table.name}.csv`),
               csv.stringify(exportAllRows(hdr, datFile, table.name), {
                 cast: {
@@ -304,6 +298,12 @@ for (const tr of includeTranslations) {
                 quoted_empty: true,
                 quoted_string: true,
               })
+            )
+          );
+          promises.push(
+            fs.writeFile(
+              path.join("heuristics/schema/json", `${table.name}.json`),
+              JSON.stringify(hdr, undefined, 2)
             )
           );
           promises.push(

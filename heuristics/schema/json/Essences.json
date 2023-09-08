@@ -2,6 +2,7 @@
   {
     "name": "BaseItemTypesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,132 +10,156 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 144,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 160,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 176,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Wand_ModsKey",
     "offset": 192,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -142,11 +167,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Bow_ModsKey",
     "offset": 208,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -154,11 +181,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Quiver_ModsKey",
     "offset": 224,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -166,11 +195,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Display_Amulet_ModsKey",
     "offset": 240,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -178,11 +209,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Ring_ModsKey",
     "offset": 256,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -190,11 +223,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Belt_ModsKey",
     "offset": 272,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -202,11 +237,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Gloves_ModsKey",
     "offset": 288,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -214,11 +251,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Boots_ModsKey",
     "offset": 304,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -226,11 +265,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_BodyArmour_ModsKey",
     "offset": 320,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -238,11 +279,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Helmet_ModsKey",
     "offset": 336,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -250,11 +293,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Shield_ModsKey",
     "offset": 352,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -262,11 +307,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 368,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -274,11 +321,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "DropLevelMinimum",
     "offset": 372,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -286,11 +335,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "DropLevelMaximum",
     "offset": 376,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -298,11 +349,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Monster_ModsKeys",
     "offset": 380,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -315,6 +368,7 @@
   {
     "name": "EssenceTypeKey",
     "offset": 396,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -322,11 +376,13 @@
         "name": "EssenceType"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Level",
     "offset": 412,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -334,11 +390,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 416,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -346,11 +404,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Display_Weapon_ModsKey",
     "offset": 420,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -358,11 +418,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_MeleeWeapon_ModsKey",
     "offset": 436,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -370,11 +432,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_OneHandWeapon_ModsKey",
     "offset": 452,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -382,11 +446,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_TwoHandWeapon_ModsKey",
     "offset": 468,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -394,11 +460,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_TwoHandMeleeWeapon_ModsKey",
     "offset": 484,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -406,11 +474,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_Armour_ModsKey",
     "offset": 500,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -418,11 +488,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Display_RangedWeapon_ModsKey",
     "offset": 516,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -430,11 +502,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Helmet_ModsKey",
     "offset": 532,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -442,11 +516,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "BodyArmour_ModsKey",
     "offset": 548,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -454,11 +530,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Boots_ModsKey",
     "offset": 564,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -466,11 +544,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Gloves_ModsKey",
     "offset": 580,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -478,11 +558,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Bow_ModsKey",
     "offset": 596,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -490,11 +572,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Wand_ModsKey",
     "offset": 612,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -502,11 +586,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Staff_ModsKey",
     "offset": 628,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -514,11 +600,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "TwoHandSword_ModsKey",
     "offset": 644,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -526,11 +614,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "TwoHandAxe_ModsKey",
     "offset": 660,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -538,11 +628,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "TwoHandMace_ModsKey",
     "offset": 676,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -550,11 +642,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Claw_ModsKey",
     "offset": 692,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -562,11 +656,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Dagger_ModsKey",
     "offset": 708,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -574,11 +670,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "OneHandSword_ModsKey",
     "offset": 724,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -586,11 +684,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "OneHandThrustingSword_ModsKey",
     "offset": 740,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -598,11 +698,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "OneHandAxe_ModsKey",
     "offset": 756,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -610,11 +712,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "OneHandMace_ModsKey",
     "offset": 772,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -622,11 +726,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Sceptre_ModsKey",
     "offset": 788,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -634,11 +740,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Display_Monster_ModsKey",
     "offset": 804,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -646,11 +754,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "ItemLevelRestriction",
     "offset": 820,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -658,11 +768,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Belt_ModsKey",
     "offset": 824,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -670,11 +782,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Amulet_ModsKey",
     "offset": 840,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -682,11 +796,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Ring_ModsKey",
     "offset": 856,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -694,11 +810,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Display_Jewellery_ModsKey",
     "offset": 872,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -706,11 +824,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Shield_ModsKey",
     "offset": 888,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -718,11 +838,13 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Display_Items_ModsKey",
     "offset": 904,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -730,20 +852,24 @@
         "name": "Mods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "IsScreamingEssence",
     "offset": 920,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 921,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -755,6 +881,7 @@
   {
     "name": "",
     "offset": 937,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -762,11 +889,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 941,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -774,11 +903,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 945,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -786,6 +917,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

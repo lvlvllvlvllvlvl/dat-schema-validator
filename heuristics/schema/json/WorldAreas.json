@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "Name",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Act",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -27,29 +32,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "IsTown",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "HasWaypoint",
     "offset": 21,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Connections_WorldAreasKeys",
     "offset": 22,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -62,6 +73,7 @@
   {
     "name": "AreaLevel",
     "offset": 38,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,11 +81,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "HASH16",
     "offset": 42,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -81,11 +95,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 46,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,11 +109,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 50,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -105,31 +123,37 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "LoadingScreen_DDSFile",
     "offset": 54,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 62,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 78,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -141,6 +165,7 @@
   {
     "name": "",
     "offset": 94,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -148,11 +173,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "TopologiesKeys",
     "offset": 98,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -165,6 +192,7 @@
   {
     "name": "ParentTown_WorldAreasKey",
     "offset": 114,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -172,11 +200,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 122,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -184,33 +214,39 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 126,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 142,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Bosses_MonsterVarietiesKeys",
     "offset": 158,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -223,6 +259,7 @@
   {
     "name": "Monsters_MonsterVarietiesKeys",
     "offset": 174,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -235,6 +272,7 @@
   {
     "name": "SpawnWeight_TagsKeys",
     "offset": 190,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -247,6 +285,7 @@
   {
     "name": "SpawnWeight_Values",
     "offset": 206,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -259,15 +298,18 @@
   {
     "name": "IsMapArea",
     "offset": 222,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "FullClear_AchievementItemsKeys",
     "offset": 223,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -280,17 +322,20 @@
   {
     "name": "",
     "offset": 239,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "AchievementItemsKey",
     "offset": 255,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -298,11 +343,13 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ModsKeys",
     "offset": 271,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -315,6 +362,7 @@
   {
     "name": "",
     "offset": 287,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -322,11 +370,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "VaalArea",
     "offset": 291,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -339,15 +389,18 @@
   {
     "name": "",
     "offset": 307,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "MaxLevel",
     "offset": 308,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -355,11 +408,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AreaTypeTags",
     "offset": 312,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -372,6 +427,7 @@
   {
     "name": "",
     "offset": 328,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -379,29 +435,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "IsHideout",
     "offset": 332,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Inflection",
     "offset": 333,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 341,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -409,11 +471,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 345,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -421,11 +485,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Tags",
     "offset": 349,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -438,33 +504,40 @@
   {
     "name": "IsVaalArea",
     "offset": 365,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsLabyrinthAirlock",
     "offset": 366,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsLabyrinthArea",
     "offset": 367,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "TwinnedFullClear_AchievementItemsKey",
     "offset": 368,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -472,11 +545,13 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Enter_AchievementItemsKey",
     "offset": 384,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -484,31 +559,37 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "TSIFile",
     "offset": 400,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 408,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "WaypointActivation_AchievementItemsKeys",
     "offset": 424,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -521,24 +602,29 @@
   {
     "name": "IsUniqueMapArea",
     "offset": 440,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsLabyrinthBossArea",
     "offset": 441,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "FirstEntry_NPCTextAudioKey",
     "offset": 442,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -546,11 +632,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "FirstEntry_SoundEffectsKey",
     "offset": 458,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -558,20 +646,24 @@
         "name": "SoundEffects"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "FirstEntry_NPCsKey",
     "offset": 474,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 482,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -579,11 +671,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "EnvironmentsKey",
     "offset": 486,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -591,11 +685,13 @@
         "name": "Environments"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 502,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -603,22 +699,26 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 506,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 522,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -626,11 +726,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 526,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -638,11 +740,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 530,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -650,11 +754,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 534,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -662,11 +768,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 538,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -674,29 +782,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 542,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 543,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 544,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -704,11 +818,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 548,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -716,11 +832,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 552,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -728,7 +846,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -745,17 +864,20 @@
   {
     "name": "",
     "offset": 572,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 588,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -763,33 +885,39 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 592,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 608,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 624,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -797,7 +925,8 @@
         "name": "Rulesets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -808,6 +937,7 @@
       }
     },
     "offset": 640,
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

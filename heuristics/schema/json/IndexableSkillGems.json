@@ -2,6 +2,7 @@
   {
     "name": "Index",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,11 +10,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "SkillGem1",
     "offset": 4,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -26,15 +29,18 @@
   {
     "name": "Name1",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "SkillGem2",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -47,15 +53,18 @@
   {
     "name": "Name2",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -63,6 +72,7 @@
         "name": "IndexableSkillGems"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

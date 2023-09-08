@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,20 +21,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "IsSummoned",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "Armour",
     "offset": 13,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -39,11 +46,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Evasion",
     "offset": 17,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -51,11 +60,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "EnergyShieldFromLife",
     "offset": 21,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -63,11 +74,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "DamageSpread",
     "offset": 25,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -75,11 +88,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MonsterResistancesKey",
     "offset": 29,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -87,33 +102,40 @@
         "name": "MonsterResistances"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "IsLargeAbyssMonster",
     "offset": 45,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "IsSmallAbyssMonster",
     "offset": 46,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 47,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

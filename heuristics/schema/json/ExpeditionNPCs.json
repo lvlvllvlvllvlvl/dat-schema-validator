@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "NPCs",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -23,6 +26,7 @@
   {
     "name": "RerollItem",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -30,11 +34,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,11 +48,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,11 +62,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -66,11 +76,13 @@
         "name": "QuestFlags"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Faction",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -78,11 +90,13 @@
         "name": "ExpeditionFactions"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Reroll",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -90,11 +104,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "AllBombsPlaced",
     "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -102,11 +118,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "BombPlacedRemnant",
     "offset": 112,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -114,11 +132,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "BombPlacedTreasure",
     "offset": 128,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -126,11 +146,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "BombPlacedMonsters",
     "offset": 144,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -138,11 +160,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "BombPlacedGeneric",
     "offset": 160,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -150,11 +174,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "EncounterComplete",
     "offset": 176,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -162,11 +188,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "",
     "offset": 192,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -174,11 +202,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "name": "",
     "offset": 196,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -186,6 +216,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   }
 ]

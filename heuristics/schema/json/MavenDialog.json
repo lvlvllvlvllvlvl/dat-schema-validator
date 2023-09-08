@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "TextAudioT1",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -18,11 +21,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "TextAudioT2",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -30,11 +35,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "TextAudioT3",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -42,11 +49,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "TextAudioT4",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -54,11 +63,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "TextAudioT5",
     "offset": 72,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -66,20 +77,24 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "TextAudioT6",
     "offset": 89,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -87,6 +102,7 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

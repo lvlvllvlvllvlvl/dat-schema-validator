@@ -2,6 +2,7 @@
   {
     "name": "ActiveSkill",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "ActiveSkills"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MiscAnimated",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -33,11 +38,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MeleeTrailsKey1",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -45,11 +52,13 @@
         "name": "MeleeTrails"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MeleeTrailsKey2",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -57,11 +66,13 @@
         "name": "MeleeTrails"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MeleeTrailsKey3",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -69,11 +80,13 @@
         "name": "MeleeTrails"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MeleeTrailsKey4",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -81,11 +94,13 @@
         "name": "MeleeTrails"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MeleeTrailsKey5",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -93,11 +108,13 @@
         "name": "MeleeTrails"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MeleeTrailsKey6",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -105,11 +122,13 @@
         "name": "MeleeTrails"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MeleeTrailsKey7",
     "offset": 132,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -117,42 +136,51 @@
         "name": "MeleeTrails"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 148,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "SurgeEffect_EPKFile",
     "offset": 149,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 157,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 165,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   }
 ]

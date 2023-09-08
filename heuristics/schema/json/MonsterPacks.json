@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "WorldAreasKeys",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -23,6 +26,7 @@
   {
     "name": "",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -30,11 +34,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -42,11 +48,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "BossMonsterSpawnChance",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -54,11 +62,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "BossMonsterCount",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -66,11 +76,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "BossMonster_MonsterVarietiesKeys",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -83,15 +95,18 @@
   {
     "name": "",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 57,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -99,11 +114,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 61,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
@@ -113,6 +130,7 @@
   {
     "name": "TagsKeys",
     "offset": 77,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -125,6 +143,7 @@
   {
     "name": "MinLevel",
     "offset": 93,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -132,11 +151,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "MaxLevel",
     "offset": 97,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -144,11 +165,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "WorldAreas2",
     "offset": 101,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -161,6 +184,7 @@
   {
     "name": "",
     "offset": 117,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -168,11 +192,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "PackFormation",
     "offset": 121,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -180,11 +206,13 @@
         "name": "PackFormation"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 137,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -192,16 +220,19 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 141,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -221,7 +252,8 @@
       "boolean": true
     },
     "offset": 158,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -229,7 +261,8 @@
       "boolean": true
     },
     "offset": 159,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -237,7 +270,8 @@
       "boolean": true
     },
     "offset": 160,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -245,6 +279,7 @@
       "boolean": true
     },
     "offset": 161,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

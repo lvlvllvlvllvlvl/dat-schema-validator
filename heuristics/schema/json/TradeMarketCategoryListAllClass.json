@@ -2,6 +2,7 @@
   {
     "name": "TradeCategory",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "TradeMarketCategory"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "ItemClass",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,6 +24,7 @@
         "name": "ItemClasses"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   }
 ]

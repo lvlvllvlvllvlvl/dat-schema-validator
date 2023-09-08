@@ -7,7 +7,8 @@
       }
     },
     "offset": 0,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -17,7 +18,8 @@
       }
     },
     "offset": 16,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -25,6 +27,7 @@
       "boolean": true
     },
     "offset": 32,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

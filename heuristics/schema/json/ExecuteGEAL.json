@@ -2,6 +2,7 @@
   {
     "name": "",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -9,7 +10,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "type": {
@@ -21,7 +23,8 @@
     },
     "offset": 4,
     "size": 4,
-    "noData": true
+    "noData": true,
+    "unique": false
   },
   {
     "type": {
@@ -43,7 +46,8 @@
       }
     },
     "offset": 24,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -54,7 +58,8 @@
       }
     },
     "offset": 28,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -65,7 +70,8 @@
       }
     },
     "offset": 32,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -76,7 +82,8 @@
       }
     },
     "offset": 36,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -87,7 +94,8 @@
       }
     },
     "offset": 40,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -95,7 +103,8 @@
       "boolean": true
     },
     "offset": 44,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -106,7 +115,8 @@
       }
     },
     "offset": 45,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -117,7 +127,8 @@
       }
     },
     "offset": 49,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -128,7 +139,8 @@
       }
     },
     "offset": 53,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -136,7 +148,8 @@
       "boolean": true
     },
     "offset": 57,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -156,7 +169,8 @@
       "boolean": true
     },
     "offset": 74,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -167,7 +181,8 @@
       }
     },
     "offset": 75,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -177,7 +192,8 @@
       }
     },
     "offset": 79,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -185,7 +201,8 @@
       "boolean": true
     },
     "offset": 95,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -193,7 +210,8 @@
       "string": {}
     },
     "offset": 96,
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "type": {
@@ -201,7 +219,8 @@
       "boolean": true
     },
     "offset": 104,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -212,7 +231,8 @@
       }
     },
     "offset": 105,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -220,7 +240,8 @@
       "boolean": true
     },
     "offset": 109,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -231,7 +252,8 @@
       }
     },
     "offset": 110,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -242,7 +264,8 @@
       }
     },
     "offset": 114,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -250,7 +273,8 @@
       "boolean": true
     },
     "offset": 118,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -261,7 +285,8 @@
       }
     },
     "offset": 119,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -277,7 +302,8 @@
       "string": {}
     },
     "offset": 139,
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "type": {
@@ -312,7 +338,8 @@
       }
     },
     "offset": 179,
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "type": {
@@ -320,7 +347,8 @@
       "boolean": true
     },
     "offset": 183,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -340,7 +368,8 @@
       "boolean": true
     },
     "offset": 200,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -350,7 +379,8 @@
       }
     },
     "offset": 201,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -358,7 +388,8 @@
       "boolean": true
     },
     "offset": 217,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -366,7 +397,8 @@
       "boolean": true
     },
     "offset": 218,
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "type": {
@@ -377,6 +409,7 @@
       }
     },
     "offset": 219,
-    "size": 4
+    "size": 4,
+    "unique": false
   }
 ]

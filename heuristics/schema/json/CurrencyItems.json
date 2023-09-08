@@ -2,6 +2,7 @@
   {
     "name": "BaseItemTypesKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Stacks",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,11 +24,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "CurrencyUseType",
     "offset": 20,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -33,29 +38,35 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "Action",
     "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Directions",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "FullStack_BaseItemTypesKey",
     "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -63,20 +74,24 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "Description",
     "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Usage_AchievementItemsKeys",
     "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -89,24 +104,29 @@
   {
     "name": "",
     "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "CosmeticTypeName",
     "offset": 81,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Possession_AchievementItemsKey",
     "offset": 89,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -114,11 +134,13 @@
         "name": "AchievementItems"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 105,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -130,6 +152,7 @@
   {
     "name": "",
     "offset": 121,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -142,6 +165,7 @@
   {
     "name": "CurrencyTab_StackSize",
     "offset": 137,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -149,20 +173,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "XBoxDirections",
     "offset": 141,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 149,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -170,33 +198,39 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 153,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 169,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "ModifyMapsAchievements",
     "offset": 185,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -209,6 +243,7 @@
   {
     "name": "ModifyContractsAchievements",
     "offset": 201,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -221,6 +256,7 @@
   {
     "name": "CombineAchievements",
     "offset": 217,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -233,6 +269,7 @@
   {
     "name": "",
     "offset": 233,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -240,11 +277,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 237,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -257,6 +296,7 @@
   {
     "name": "ShopTag",
     "offset": 253,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -264,33 +304,40 @@
         "name": "ShopTag"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "IsHardmode",
     "offset": 269,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "DescriptionHardmode",
     "offset": 270,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "IsGold",
     "offset": 278,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]

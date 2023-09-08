@@ -1,15 +1,15 @@
 # Added 3.21
 type AbyssBossLifeScalingPerLevel {
-  _: i32
-  _: i32
+  _: i32 @unique
+  _: i32 @unique
 }
 
 # Added 3.21
 type ActiveSettings {
-  _: string
-  _: i32
-  _: i32
-  _: rid
+  _: string @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: rid @unique
   _: rid
   _: rid
   _: rid
@@ -18,15 +18,15 @@ type ActiveSettings {
 
 # Added 3.19
 type AlternateTreeArt {
-  _: rid
-  _: string
-  _: string
-  _: string
+  _: rid @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
 }
 
 # Added 3.21
 type AnimateWeaponUniques {
-  _: string
+  _: string @unique
   _: rid
   _: rid
   _: i32
@@ -34,23 +34,23 @@ type AnimateWeaponUniques {
 
 # Added 3.19
 type AtlasMemoryLine {
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
 }
 
 # Added 3.17
 type BattlePasses {
-  _: string
-  _: i32
-  _: string
-  _: string
+  _: string @unique
+  _: i32 @unique
+  _: string @unique
+  _: string @unique
   _: i32
   _: bool
-  _: string
+  _: string @unique
 }
 
 # Added 3.17
@@ -86,47 +86,47 @@ type BattlePassRewards {
 
 # Added 3.21
 type BattlePassTracks {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
 }
 
 # Added 3.20
 type BreachArtVariations {
-  _: string
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
   _: [_]
-  _: rid
+  _: rid @unique
 }
 
 # Added 3.21
 type Breachstones {
-  _: rid
+  _: rid @unique
   _: i32
-  _: i32
+  _: i32 @unique
   _: rid
   _: rid
 }
 
 # Added 3.22
 type conditionalachievements {
-  _: rid
+  _: rid @unique
   _: i32
   _: i32
 }
 
 # Added 3.18
 type CorpseSinkVariations {
-  _: string
+  _: string @unique
   _: string
   _: string
   _: [string]
-  _: i32
+  _: i32 @unique
   _: bool
   _: i32
   _: i32
@@ -135,23 +135,23 @@ type CorpseSinkVariations {
 
 # Added 3.21
 type CosmeticsEquipPanelMode {
-  _: string
+  _: string @unique
   _: [_]
 }
 
 # Added 3.21
 type CraftingBenchSpecificOptionId {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
   _: i32 # All rows empty
   _: i32 # All rows empty
 }
 
 # Added 3.21
 type CrucibleDifficulty {
-  _: string
-  _: string
-  _: i32
+  _: string @unique
+  _: string @unique
+  _: i32 @unique
   _: i32
   _: i32
   _: i32
@@ -159,7 +159,7 @@ type CrucibleDifficulty {
 
 # Added 3.21
 type CrucibleEndgameMonsterPacks {
-  _: string
+  _: string @unique
   _: [_]
   _: i32
   _: i32
@@ -168,26 +168,26 @@ type CrucibleEndgameMonsterPacks {
 
 # Added 3.21
 type CrucibleLifeScalingPerLevel {
-  _: i32
+  _: i32 @unique
   _: i32
 }
 
 # Added 3.21
 type CruciblePlayerClassOffsets {
-  _: rid
+  _: rid @unique
   _: i32
   _: i32
 }
 
 # Added 3.21
 type CrucibleTags {
-  _: string
+  _: string @unique
   _: bool
 }
 
 # Added 3.21
 type CurrencyUseEffects {
-  _: rid
+  _: rid @unique
   _: i32 # All rows empty
   _: string
   _: string
@@ -200,7 +200,7 @@ type CurrencyUseEffects {
 
 # Added 3.17
 type DamageEffectVariations {
-  _: string
+  _: string @unique
   _: [_]
   _: [string]
   _: bool
@@ -221,40 +221,40 @@ type DamageEffectVariations {
 
 # Added 3.20
 type DamageWhenHitEffects {
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
   _: bool
 }
 
 # Added 3.20
 type DelveRobotVariations {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
   _: [string]
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
 }
 
 # Added 3.22
 type divinationwindowvisuals {
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
 }
 
 # Added 3.22
 type entityinfobarstyle {
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
   _: string
   _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
   _: i32
   _: i32
   _: string
@@ -266,13 +266,13 @@ type entityinfobarstyle {
 
 # Added 3.17
 type FlaskStashBaseTypeOrdering {
-  _: rid
-  _: i32
+  _: rid @unique
+  _: i32 @unique
 }
 
 # Added 3.20
 type GameObjectTasksFromStats {
-  _: rid
+  _: rid @unique
   _: rid
   _: bool
   _: i32
@@ -282,7 +282,7 @@ type GameObjectTasksFromStats {
 
 # Added 3.17
 type GamepadButtonCombination {
-  _: string
+  _: string @unique
   _: rid
   _: rid
   _: bool
@@ -293,16 +293,16 @@ type GamepadButtonCombination {
 
 # Added 3.17
 type GamepadThumbstick {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
 }
 
 # Added 3.20
 type GoldActScaling {
-  _: string
+  _: string @unique
   _: i32
-  _: i32
-  _: i32
+  _: i32 @unique
+  _: i32 @unique
 }
 
 # Added 3.20
@@ -313,7 +313,7 @@ type GoldConstants {
 
 # Added 3.20
 type HardModeExtraContentChances {
-  _: string
+  _: string @unique
   _: i32
   _: i32
   _: bool
@@ -327,36 +327,36 @@ type HardModeExtraContentChances {
 
 # Added 3.22
 type hardmodeextracontentchancespermaptier {
-  _: rid
+  _: rid @unique
   _: i32 # All rows empty
 }
 
 # Added 3.19
 type HarvestCraftCostScalingByBasetype {
   _: rid
-  _: rid
+  _: rid @unique
   _: i32
 }
 
 # Added 3.20
 type HideoutCraftingBenchDoodads {
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
 }
 
 # Added 3.20
 type HideoutCraftingBenchInterfaceVisuals {
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
 }
 
 # Added 3.20
 type HideoutStashDoodads {
-  _: rid
+  _: rid @unique
   _: bool
   _: bool
   _: bool
@@ -364,38 +364,38 @@ type HideoutStashDoodads {
 
 # Added 3.19
 type HideoutWaypointDoodads {
-  _: rid
+  _: rid @unique
   _: [_]
 }
 
 # Added 3.21
 type HudEnergyShieldVisuals {
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
   _: bool
 }
 
 # Added 3.21
 type HudLifeVisuals {
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
   _: [_]
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
   _: string
   _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: bool
+  _: string @unique
+  _: bool @unique
   _: bool
   _: bool
   _: bool
@@ -403,7 +403,7 @@ type HudLifeVisuals {
 
 # Added 3.21
 type HudVisualsFromStat {
-  _: rid
+  _: rid @unique
   _: rid
   _: rid
   _: rid
@@ -419,7 +419,7 @@ type itemclasspickupeffect {
 
 # Added 3.22
 type itemclassvisualreplacement {
-  _: rid
+  _: rid @unique
   _: rid
   _: rid
   _: bool
@@ -430,9 +430,9 @@ type itemclassvisualreplacement {
 
 # Added 3.22
 type itempickupeffect {
-  _: rid
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
   _: i32 # All rows empty
 }
 
@@ -449,7 +449,7 @@ type ItemVisualReplacement {
 
 # Added 3.17
 type LegacyAtlasInfluenceOutcomes {
-  _: string
+  _: string @unique
   _: i32
   _: i32
   _: i32
@@ -460,31 +460,31 @@ type LegacyAtlasInfluenceOutcomes {
 
 # Added 3.22
 type mapstashsubstashgroup {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
   _: string
   _: rid
-  _: string
+  _: string @unique
 }
 
 # Added 3.19
 type MemoryLineType {
-  _: string
+  _: string @unique
   _: rid
-  _: i32
+  _: i32 @unique
   _: [_]
   _: [_]
   _: i32
-  _: i32
-  _: rid
+  _: i32 @unique
+  _: rid @unique
   _: i32 # All rows empty
-  _: string
+  _: string @unique
   _: rid
 }
 
 # Added 3.19
 type MicrotransactionAppliedInventoryItemArtVariations {
-  _: rid
+  _: rid @unique
   _: [string]
   _: [_]
   _: [_]
@@ -493,10 +493,10 @@ type MicrotransactionAppliedInventoryItemArtVariations {
 
 # Added 3.18
 type MicrotransactionChargeVariations {
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
 }
 
 # Added 3.19
@@ -516,10 +516,10 @@ type MicrotransactionConditionalApparitionEvents {
 
 # Added 3.19
 type MicrotransactionConditionalApparitions {
-  _: string
+  _: string @unique
   _: [_]
   _: [_]
-  _: rid
+  _: rid @unique
   _: rid
   _: i32
   _: bool
@@ -536,9 +536,9 @@ type MicrotransactionEquippedIconVariations {
 
 # Added 3.17
 type MicrotransactionJewelVariations {
-  _: rid
-  _: i32
-  _: string
+  _: rid @unique
+  _: i32 @unique
+  _: string @unique
   _: string
   _: i32
   _: [_]
@@ -557,7 +557,7 @@ type MicrotransactionJewelVariations {
 
 # Added 3.21
 type MicrotransactionObjectEffects {
-  _: string
+  _: string @unique
   _: [_]
   _: string
   _: [_]
@@ -588,7 +588,7 @@ type MicrotransactionOnKillBeams {
 
 # Added 3.21
 type MicrotransactionOnKillConditions {
-  _: string
+  _: string @unique
   _: [_]
   _: [_] # All rows empty
   _: [_] # All rows empty
@@ -599,24 +599,24 @@ type MicrotransactionOnKillConditions {
   _: i32 # All rows empty
   _: i32 # All rows empty
   _: bool
-  _: i32
+  _: i32 @unique
   _: i32 # All rows empty
 }
 
 # Added 3.21
 type MicrotransactionOnKillEffects {
-  _: string
+  _: string @unique
   _: rid
+  _: rid @unique
   _: rid
-  _: rid
-  _: i32
+  _: i32 @unique
   _: rid
   _: i32
 }
 
 # Added 3.22
 type miniontype {
-  _: string
+  _: string @unique
   _: rid
   _: rid
   _: bool
@@ -632,7 +632,7 @@ type miniontype {
 
 # Added 3.19
 type PassiveJewelArt {
-  _: rid
+  _: rid @unique
   _: string
   _: string
   _: rid
@@ -642,19 +642,19 @@ type PassiveJewelArt {
 type PortalAudio {
   _: rid
   _: rid
-  _: rid
+  _: rid @unique
   _: i32
 }
 
 # Added 3.18
 type PortalAudioEvents {
-  _: string
+  _: string @unique
   _: i32
 }
 
 # Added 3.21
 type PreloadFromStats {
-  _: rid
+  _: rid @unique
   _: [_]
   _: [_] # All rows empty
   _: [_]
@@ -672,16 +672,16 @@ type RelicInventoryLayout {
 
 # Added 3.20
 type RelicItemEffectVariations {
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
 }
 
 # Added 3.20
 type ShrineVisualArtVariations {
-  _: rid
+  _: rid @unique
   _: bool
-  _: rid
+  _: rid @unique
   _: bool
   _: bool
   _: bool
@@ -689,16 +689,16 @@ type ShrineVisualArtVariations {
 
 # Added 3.19
 type SkillGemLevelUpEffects {
-  _: string
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
 }
 
 # Added 3.19
 type StampChoice {
-  _: string
+  _: string @unique
   _: rid
   _: i32
   _: string
@@ -710,7 +710,7 @@ type StampChoice {
 
 # Added 3.19
 type StampFamily {
-  _: string
+  _: string @unique
   _: i32
 }
 
@@ -722,14 +722,14 @@ type StatsFromSkillStats {
 
 # Added 3.20
 type StatVisuals {
-  _: rid
+  _: rid @unique
   _: [string]
   _: bool
 }
 
 # Added 3.19
 type TieredMicrotransactions {
-  _: rid
+  _: rid @unique
   _: [_]
   _: rid
   _: [_]
@@ -746,27 +746,27 @@ type TieredMicrotransactions {
 # Added 3.22
 type tieredmicrotransactionsvisuals {
   _: rid
-  _: i32
-  _: string
-  _: string
-  _: i32
+  _: i32 @unique
+  _: string @unique
+  _: string @unique
+  _: i32 @unique
 }
 
 # Added 3.22
 type tormentedspiritlifescalingperlevel {
-  _: i32
+  _: i32 @unique
   _: i32
 }
 
 # Added 3.19
 type TradeMarketImplicitModDisplay {
-  _: rid
+  _: rid @unique
   _: string
 }
 
 # Added 3.21
 type TryTheNewLeagueVersions {
-  _: string
+  _: string @unique
   _: string
 }
 

@@ -2,24 +2,29 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "IsSupport",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "AllowedActiveSkillTypes",
     "offset": 9,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -32,15 +37,18 @@
   {
     "name": "SupportGemLetter",
     "offset": 25,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "Attribute",
     "offset": 33,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -48,11 +56,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AddedActiveSkillTypes",
     "offset": 37,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -65,6 +75,7 @@
   {
     "name": "ExcludedActiveSkillTypes",
     "offset": 53,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -77,15 +88,18 @@
   {
     "name": "SupportsGemsOnly",
     "offset": 69,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 70,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,11 +107,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 74,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -110,15 +126,18 @@
   {
     "name": "CannotBeSupported",
     "offset": 90,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 91,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -126,11 +145,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "CastTime",
     "offset": 95,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -138,11 +159,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "ActiveSkill",
     "offset": 99,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -150,29 +173,35 @@
         "name": "ActiveSkills"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "IgnoreMinionTypes",
     "offset": 115,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "AddedMinionActiveSkillTypes",
     "offset": 117,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -185,6 +214,7 @@
   {
     "name": "Animation",
     "offset": 133,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -192,11 +222,13 @@
         "name": "Animation"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MultiPartAchievement",
     "offset": 149,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -204,20 +236,24 @@
         "name": "MultiPartAchievements"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 165,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "SupportWeaponRestrictions",
     "offset": 166,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -230,6 +266,7 @@
   {
     "name": "RegularVariant",
     "offset": 182,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -237,11 +274,13 @@
         "name": "GrantedEffects"
       }
     },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "name": "",
     "offset": 190,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -249,11 +288,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 194,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -261,11 +302,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 198,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -273,20 +316,24 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 202,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
     "name": "StatSet",
     "offset": 203,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -294,11 +341,13 @@
         "name": "GrantedEffectStatSets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 219,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {

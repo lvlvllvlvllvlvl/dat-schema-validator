@@ -2,15 +2,18 @@
   {
     "name": "Id",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "SpawnWeight",
     "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,11 +21,13 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "LegionBalancePerLevelKey",
     "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -30,33 +35,39 @@
         "name": "LegionBalancePerLevel"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "BuffVisualsKey",
     "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -64,11 +75,13 @@
         "name": "BuffVisuals"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "MiscAnimatedKey1",
     "offset": 52,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -76,11 +89,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "MiscAnimatedKey2",
     "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -88,11 +103,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "MiscAnimatedKey3",
     "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -100,11 +117,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "AchievementItemsKeys1",
     "offset": 100,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -117,6 +136,7 @@
   {
     "name": "MiscAnimatedKey4",
     "offset": 116,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -124,11 +144,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "MiscAnimatedKey5",
     "offset": 132,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -136,33 +158,39 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 148,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "",
     "offset": 152,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
     "name": "AchievementItemsKeys2",
     "offset": 156,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -175,6 +203,7 @@
   {
     "name": "StatsKey",
     "offset": 172,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -182,24 +211,29 @@
         "name": "Stats"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Shard",
     "offset": 188,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "name": "RewardJewelArt",
     "offset": 196,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "unique": true
   }
 ]

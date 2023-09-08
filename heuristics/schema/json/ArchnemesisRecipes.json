@@ -2,6 +2,7 @@
   {
     "name": "Result",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "ArchnemesisMods"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Recipe",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
@@ -26,6 +29,7 @@
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -33,6 +37,7 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "unique": true
   }
 ]

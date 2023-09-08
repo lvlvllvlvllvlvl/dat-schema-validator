@@ -2,6 +2,7 @@
   {
     "name": "WorldAreasKey",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "name": "Connections",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {

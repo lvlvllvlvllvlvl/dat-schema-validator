@@ -2,6 +2,7 @@
   {
     "name": "",
     "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -9,11 +10,13 @@
         "name": "TalkingPetAudioEvents"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
@@ -21,11 +24,13 @@
         "name": "TalkingPets"
       }
     },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
     "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": true,
       "integer": {
@@ -41,7 +46,8 @@
       "string": {}
     },
     "offset": 48,
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
     "type": {
@@ -49,6 +55,7 @@
       "boolean": true
     },
     "offset": 56,
-    "size": 1
+    "size": 1,
+    "unique": false
   }
 ]
