@@ -134,8 +134,7 @@ export async function exportGQL(
     if (mapping) {
       files[mapping.file][mapping.index] = gql;
     } else {
-      files["_Unknown.gql"] = files["_Unknown.gql"] || [];
-      files["_Unknown.gql"].push(gql);
+      files["_Core.gql"].push(gql);
     }
   }
   for (const enumeration of enumerations) {
@@ -145,13 +144,12 @@ export async function exportGQL(
     if (mapping) {
       files[mapping.file][mapping.index] = gql;
     } else {
-      files["_Unknown.gql"] = files["_Unknown.gql"] || [];
-      files["_Unknown.gql"].push(gql);
+      files["_Core.gql"].push(gql);
     }
   }
   await Promise.all(
     Object.entries(files).map(([file, gql]) =>
-      fs.writeFile(path.join(dest, file), (gql as string[]).join("\n"))
+      fs.writeFile(path.join(dest, file), (gql as string[]).filter((v) => v).join("\n"))
     )
   );
 }

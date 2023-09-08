@@ -375,18 +375,12 @@ for (const tr of includeTranslations) {
 promises.push(
   exportGQL(tables, enumerations, (table) => headerMap[table.name], "heuristics/schema/graphql")
 );
-promises.push(fs.writeFile("errors.txt", errors.join("\n")));
-promises.push(
-  fs.writeFile(
-    "missing.txt",
-    schema.tables
-      .map((t) => t.name)
-      .filter((t) => !tablesSeen.has(t))
-      .map((t) => `missing file ${t}.dat64`)
-      .sort()
-      .join("\n")
-  )
-);
+errors.length && promises.push(fs.writeFile("errors.txt", errors.join("\n")));
+const missing = schema.tables
+  .map((t) => t.name)
+  .filter((t) => !tablesSeen.has(t))
+  .map((t) => `missing file ${t}.dat64`);
+missing.length && promises.push(fs.writeFile("missing.txt", missing.sort().join("\n")));
 promises.push(fs.writeFile("filtered-schema.json", JSON.stringify(schema, null, 2)));
 promises.push(fs.writeFile("version.txt", version));
 await promises;
