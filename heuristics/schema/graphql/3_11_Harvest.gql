@@ -35,16 +35,11 @@ type HarvestCraftFilters {
   Name: string
 }
 
-
-
 type HarvestInfrastructure {
   Object: string
   _: i32
   ClientStringsKey: ClientStrings
 }
-
-
-
 
 type HarvestPerLevelValues {
   Level: i32
@@ -60,8 +55,6 @@ type HarvestPerLevelValues {
   _: i32
   _: i32
 }
-
-
 
 type HarvestLifeScalingPerLevel {
   Level: i32
@@ -86,6 +79,3 @@ type HarvestSeedItems @tags(list: ["item:def"]) {
   BaseItem: BaseItemTypes
   DropStat: Stats
 }
-
-
-

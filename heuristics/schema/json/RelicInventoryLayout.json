@@ -1,17 +1,8 @@
 [
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 0,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -19,11 +10,13 @@
         "size": 4
       }
     },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "",
     "offset": 4,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -31,16 +24,31 @@
         "size": 4
       }
     },
-    "offset": 8,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 8,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "Requirement",
+    "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 12,
     "size": 8,
     "unique": false
   }

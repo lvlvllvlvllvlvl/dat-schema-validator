@@ -1,14 +1,19 @@
 [
   {
+    "name": "Act",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 0,
     "size": 8,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -16,11 +21,13 @@
         "size": 4
       }
     },
-    "offset": 8,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 12,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -28,11 +35,13 @@
         "size": 4
       }
     },
-    "offset": 12,
     "size": 4,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -40,7 +49,6 @@
         "size": 4
       }
     },
-    "offset": 16,
     "size": 4,
     "unique": true
   }

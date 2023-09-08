@@ -1,29 +1,35 @@
 [
   {
+    "name": "",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 0,
     "size": 16,
     "unique": true
   },
   {
+    "name": "EPKFiles",
+    "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 16,
     "size": 16
   },
   {
+    "name": "",
+    "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 32,
     "size": 1,
     "unique": false
   }

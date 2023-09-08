@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "Label",
+    "offset": 8,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "Icon",
+    "offset": 16,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16,
+    "unique": false
+  },
+  {
+    "name": "Description",
+    "offset": 40,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "unique": true
+  }
+]

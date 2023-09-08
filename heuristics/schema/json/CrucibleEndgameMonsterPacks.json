@@ -1,10 +1,12 @@
 [
   {
+    "name": "Tier",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 0,
     "size": 8,
     "unique": true
   },
@@ -21,18 +23,9 @@
     "unknownArray": true
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 24,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -40,16 +33,31 @@
         "size": 4
       }
     },
-    "offset": 28,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 28,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 32,
     "size": 1,
     "unique": false
   }

@@ -109,13 +109,16 @@
     "unique": false
   },
   {
+    "name": "PackSizeStatsKey",
+    "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
-    "offset": 92,
     "size": 16,
     "unique": false
   }

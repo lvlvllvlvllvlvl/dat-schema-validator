@@ -154,13 +154,16 @@
     "unique": false
   },
   {
+    "name": "AllocatedPassiveSkill",
+    "offset": 124,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "PassiveSkills"
       }
     },
-    "offset": 124,
     "size": 16,
     "unique": false
   }

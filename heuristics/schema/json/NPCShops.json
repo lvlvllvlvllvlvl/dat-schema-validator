@@ -53,13 +53,16 @@
     "unique": false
   },
   {
+    "name": "ShopHardmodeGold",
+    "offset": 44,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "NPCShop"
       }
     },
-    "offset": 44,
     "size": 16,
     "unique": false
   }

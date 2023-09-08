@@ -1,16 +1,21 @@
 [
   {
+    "name": "",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 0,
     "size": 16,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,75 +23,87 @@
         "size": 4
       }
     },
-    "offset": 16,
     "size": 4,
-    "noData": true,
     "unique": false
   },
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "BK2File",
     "offset": 20,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "SoundFile",
     "offset": 28,
-    "size": 8,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 36,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 37,
     "size": 8,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 36,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 45,
     "size": 1,
     "unique": false
   },
   {
+    "name": "BK2File2",
+    "offset": 37,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 45,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 46,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 46,
     "size": 16,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 62,
+    "unknownArray": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "offset": 62,
     "size": 4,
     "unique": false
   }

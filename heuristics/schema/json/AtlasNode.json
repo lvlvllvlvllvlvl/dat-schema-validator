@@ -248,18 +248,9 @@
     "unique": false
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 131,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -267,11 +258,13 @@
         "size": 4
       }
     },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "",
     "offset": 135,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -279,11 +272,13 @@
         "size": 4
       }
     },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "",
     "offset": 139,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -291,7 +286,20 @@
         "size": 4
       }
     },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "",
     "offset": 143,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "size": 4,
     "unique": false
   }

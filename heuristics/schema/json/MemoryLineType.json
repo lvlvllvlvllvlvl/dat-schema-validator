@@ -1,25 +1,32 @@
 [
   {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 0,
     "size": 8,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 8,
     "size": 16,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -27,7 +34,6 @@
         "size": 4
       }
     },
-    "offset": 24,
     "size": 4,
     "unique": true
   },
@@ -55,6 +61,9 @@
     "unknownArray": true
   },
   {
+    "name": "",
+    "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -62,11 +71,13 @@
         "size": 4
       }
     },
-    "offset": 60,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -74,22 +85,26 @@
         "size": 4
       }
     },
-    "offset": 64,
     "size": 4,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 68,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 68,
     "size": 16,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 84,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -97,28 +112,30 @@
         "size": 4
       }
     },
-    "offset": 84,
     "size": 4,
-    "noData": true,
     "unique": false
   },
   {
+    "name": "Suffix",
+    "offset": 88,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 88,
     "size": 8,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 96,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 96,
     "size": 16,
     "unique": false
   }

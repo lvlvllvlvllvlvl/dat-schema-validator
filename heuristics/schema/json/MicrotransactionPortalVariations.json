@@ -123,18 +123,9 @@
     "unique": false
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 84,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -142,16 +133,31 @@
         "size": 4
       }
     },
-    "offset": 88,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 88,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "Script",
+    "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 92,
     "size": 8,
     "unique": false
   }

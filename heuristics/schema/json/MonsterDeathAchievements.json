@@ -177,17 +177,22 @@
     "unknownArray": true
   },
   {
+    "name": "",
+    "offset": 163,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 163,
     "size": 16,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 179,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -195,40 +200,45 @@
         "size": 4
       }
     },
-    "offset": 179,
     "size": 4,
     "unique": false
   },
   {
+    "name": "NearbyMonsterConditionsKeys",
+    "offset": 183,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "NearbyMonsterConditions"
       }
     },
-    "offset": 183,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 199,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 199,
     "size": 1,
     "unique": false
   },
   {
+    "name": "MultiPartAchievementConditionsKeys",
+    "offset": 200,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "MultiPartAchievementConditions"
       }
     },
-    "offset": 200,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
     "type": {
@@ -243,11 +253,13 @@
     "unknownArray": true
   },
   {
+    "name": "",
+    "offset": 232,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 232,
     "size": 1,
     "unique": false
   }

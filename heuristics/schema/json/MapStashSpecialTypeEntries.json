@@ -64,42 +64,50 @@
     "unique": false
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "IsShaperGuardian",
     "offset": 40,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 41,
     "size": 1,
     "unique": false
   },
   {
+    "name": "IsElderGuardian",
+    "offset": 41,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 42,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 42,
     "size": 16,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 58,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 58,
     "size": 16,
     "unique": false
   }

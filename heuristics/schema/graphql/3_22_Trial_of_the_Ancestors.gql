@@ -154,8 +154,8 @@ type PassiveSkillTattoos {
   Tattoo: BaseItemTypes
   Override: PassiveSkillOverrides
   Set: PassiveSkillTattooTargetSets
-  _: i32
-  _: rid
+  Tribe: i32
+  OverrideType: PassiveSkillOverrideTypes
 }
 
 type PassiveSkillTattooTargetSets {

@@ -42,33 +42,40 @@
     "unique": true
   },
   {
+    "name": "CapturedMonster",
+    "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "MonsterVarieties"
       }
     },
-    "offset": 48,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "PanelLayout",
+    "offset": 64,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "PantheonPanelLayout"
       }
     },
-    "offset": 64,
     "size": 16,
     "unique": false
   },
   {
+    "name": "CapturedMonsterDescription",
+    "offset": 80,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 80,
     "size": 8,
     "unique": false
   }

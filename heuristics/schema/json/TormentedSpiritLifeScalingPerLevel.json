@@ -1,16 +1,8 @@
 [
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Level",
     "offset": 0,
-    "size": 16,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,9 +10,21 @@
         "size": 4
       }
     },
-    "offset": 16,
     "size": 4,
-    "noData": true,
+    "unique": true
+  },
+  {
+    "name": "Life",
+    "offset": 4,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4,
     "unique": false
   }
 ]

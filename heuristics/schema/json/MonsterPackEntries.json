@@ -64,13 +64,16 @@
     "unique": false
   },
   {
+    "name": "",
+    "offset": 45,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": false
+        "foreign": false,
+        "name": "MonsterPackEntries"
       }
     },
-    "offset": 45,
     "size": 8,
     "unique": false
   }

@@ -1,47 +1,58 @@
 [
   {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 0,
     "size": 8,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 8,
     "size": 16,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 24,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 24,
     "size": 16,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 40,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 40,
     "size": 16,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 56,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -49,22 +60,26 @@
         "size": 4
       }
     },
-    "offset": 56,
     "size": 4,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 60,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 60,
     "size": 16,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 76,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -72,7 +87,6 @@
         "size": 4
       }
     },
-    "offset": 76,
     "size": 4,
     "unique": false
   }

@@ -1,14 +1,19 @@
 [
   {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 0,
     "size": 8,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 8,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -16,29 +21,35 @@
         "size": 4
       }
     },
-    "offset": 8,
     "size": 4,
     "unique": true
   },
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "International_BK2File",
     "offset": 12,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 20,
     "size": 8,
     "unique": true
   },
   {
+    "name": "China_BK2File",
+    "offset": 20,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "",
+    "offset": 28,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -46,25 +57,28 @@
         "size": 4
       }
     },
-    "offset": 28,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 32,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 32,
     "size": 1,
     "unique": false
   },
   {
+    "name": "Id2",
+    "offset": 33,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 33,
     "size": 8,
     "unique": true
   }

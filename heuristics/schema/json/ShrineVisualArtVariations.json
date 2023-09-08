@@ -1,59 +1,71 @@
 [
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "",
     "offset": 0,
-    "size": 16,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 16,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 17,
     "size": 16,
     "unique": true
   },
   {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 17,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16,
+    "unique": true
+  },
+  {
+    "name": "",
     "offset": 33,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1,
+    "unique": false
+  },
+  {
+    "name": "",
     "offset": 34,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1,
+    "unique": false
+  },
+  {
+    "name": "",
     "offset": 35,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
     "size": 1,
     "unique": false
   }

@@ -38,18 +38,9 @@
     "unique": true
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 40,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -57,31 +48,51 @@
         "size": 4
       }
     },
-    "offset": 44,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 44,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 48,
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 48,
     "size": 1,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 49,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 49,
     "size": 16,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 65,
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -89,18 +100,19 @@
         "size": 4
       }
     },
-    "offset": 65,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 69,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 69,
     "size": 16,
     "unique": false
   }

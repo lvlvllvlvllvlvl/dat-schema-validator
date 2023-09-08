@@ -1,28 +1,34 @@
 [
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "Id",
     "offset": 0,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "Description",
     "offset": 8,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "DDSFile",
     "offset": 16,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
     "size": 8,
     "unique": true
   }

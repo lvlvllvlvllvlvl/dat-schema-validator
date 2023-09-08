@@ -42,8 +42,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "name": "ShrineBuffs"
+        "foreign": true
       }
     },
     "size": 16,
@@ -84,8 +83,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "name": "ShrineBuffs"
+        "foreign": true
       }
     },
     "size": 16,
@@ -258,13 +256,15 @@
     "unique": false
   },
   {
+    "name": "",
+    "offset": 162,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 162,
     "size": 16,
     "unique": false
   },

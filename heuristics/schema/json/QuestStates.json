@@ -214,13 +214,16 @@
     "unique": false
   },
   {
+    "name": "",
+    "offset": 190,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": false
+        "foreign": false,
+        "name": "QuestStates"
       }
     },
-    "offset": 190,
     "size": 8,
     "unique": false
   }

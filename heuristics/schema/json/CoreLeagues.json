@@ -181,32 +181,38 @@
     "unique": false
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 159,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 160,
     "size": 1,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 160,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 161,
+    "unknownArray": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
-    "offset": 161,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   }
 ]

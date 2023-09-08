@@ -1,26 +1,19 @@
 [
   {
+    "name": "",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 0,
     "size": 8,
     "unique": true
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 8,
-    "size": 4,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -28,55 +21,13 @@
         "size": 4
       }
     },
+    "size": 4,
+    "unique": true
+  },
+  {
+    "name": "",
     "offset": 12,
-    "size": 4,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 16,
-    "size": 16,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 32,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 48,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 64,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -84,9 +35,73 @@
         "size": 4
       }
     },
-    "offset": 80,
     "size": 4,
-    "noData": true,
+    "unique": true
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16,
+    "unique": true
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 48,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 80,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4,
     "unique": false
   }
 ]

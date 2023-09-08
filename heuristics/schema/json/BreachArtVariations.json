@@ -1,87 +1,103 @@
 [
   {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 0,
     "size": 8,
     "unique": true
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "",
     "offset": 8,
-    "size": 16,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16,
+    "unique": true
+  },
+  {
+    "name": "",
     "offset": 24,
-    "size": 16,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16,
+    "unique": true
+  },
+  {
+    "name": "",
     "offset": 40,
-    "size": 16,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16,
+    "unique": true
+  },
+  {
+    "name": "",
     "offset": 56,
-    "size": 16,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16,
+    "unique": true
+  },
+  {
+    "name": "",
     "offset": 72,
-    "size": 16,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16,
+    "unique": true
+  },
+  {
+    "name": "",
     "offset": 88,
-    "size": 16,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16,
+    "unique": true
+  },
+  {
+    "name": "",
     "offset": 104,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "size": 16,
     "unique": true
   },
@@ -97,13 +113,15 @@
     "unknownArray": true
   },
   {
+    "name": "",
+    "offset": 136,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 136,
     "size": 16,
     "unique": true
   }

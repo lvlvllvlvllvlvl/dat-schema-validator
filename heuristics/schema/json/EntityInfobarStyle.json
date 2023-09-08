@@ -1,116 +1,129 @@
 [
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "Id",
     "offset": 0,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "FrameLeft",
     "offset": 8,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "FrameMiddle",
     "offset": 16,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "FrameRepeat",
     "offset": 24,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "FrameRight",
     "offset": 32,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "EntityLeft",
     "offset": 40,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "EntityMiddle",
     "offset": 48,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "EntityRepeat",
     "offset": 56,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "EntityRight",
     "offset": 64,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "EntityStats",
     "offset": 72,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "EntityStatsSmall",
     "offset": 80,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
     "size": 8,
     "unique": true
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 88,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "integer": {
@@ -118,52 +131,75 @@
         "size": 4
       }
     },
-    "offset": 92,
     "size": 4,
     "unique": false
   },
   {
+    "name": "",
+    "offset": 92,
+    "unknownArray": false,
     "type": {
       "array": false,
-      "string": {}
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
+    "size": 4,
+    "unique": false
+  },
+  {
+    "name": "LifeBar",
     "offset": 96,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "LifeBarLeft",
     "offset": 104,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "LifeBarMiddle",
     "offset": 112,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "LifeBarRepeat",
     "offset": 120,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": false
+  },
+  {
+    "name": "LifeBarRight",
     "offset": 128,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
     "size": 8,
     "unique": false
   }

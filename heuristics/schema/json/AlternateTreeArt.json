@@ -1,39 +1,47 @@
 [
   {
+    "name": "",
+    "offset": 0,
+    "unknownArray": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 0,
     "size": 16,
     "unique": true
   },
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "Circle1",
     "offset": 16,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "Circle2",
     "offset": 24,
-    "size": 8,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8,
+    "unique": true
+  },
+  {
+    "name": "Glow",
     "offset": 32,
+    "unknownArray": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
     "size": 8,
     "unique": true
   }
