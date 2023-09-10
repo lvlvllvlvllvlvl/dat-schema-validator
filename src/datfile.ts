@@ -11,6 +11,8 @@ import { ColumnStats, DatFile, Header, getHeaderLength, readColumn } from "patho
 import { PossibleHeaders, graphqlType, headerTypes, possibleColumnHeaders } from "./heuristic.js";
 
 const BUNDLE_DIR = "Bundles2";
+const sleep = (ms: number) =>
+  new Promise((resolve) => (ms ? setTimeout(resolve, ms) : setImmediate(resolve)));
 
 export class FileLoader {
   private bundleCache = new Map<string, ArrayBuffer>();
@@ -46,7 +48,7 @@ export class FileLoader {
   }
 
   listFiles(dir: string) {
-    return getDirContent("data", this.index.pathReps, this.index.dirsInfo).files;
+    return getDirContent(dir, this.index.pathReps, this.index.dirsInfo).files;
   }
 
   clearBundleCache() {
@@ -89,10 +91,18 @@ export class CdnBundleLoader {
     } catch {}
 
     const webpath = `${this.patchVer}/${BUNDLE_DIR}/${name}`;
-    const response = await fetch(`http://patchcdn.pathofexile.com/${webpath}`);
-    if (!response.ok) {
+    let response: Response | null = null;
+    for (let i = 0; i < 5; i++) {
+      response = await fetch(`http://patchcdn.pathofexile.com/${webpath}`);
+      if (response.ok) {
+        break;
+      } else {
+        await sleep(1000 * Math.pow(2, i));
+      }
+    }
+    if (!response?.ok) {
       console.error(`Failed to fetch ${name} from CDN.`);
-      throw await response.text();
+      throw await response?.text();
     }
     const bundleBin = await response.arrayBuffer();
     await fs.writeFile(cachedFilePath, Buffer.from(bundleBin, 0, bundleBin.byteLength));
@@ -101,35 +111,54 @@ export class CdnBundleLoader {
   }
 }
 
-export function exportAllRows(headers: NamedHeader[], datFile: DatFile, name: string) {
-  const columns = headers.map((header) => {
-    const data = readColumn(header, datFile);
-    if (data.length > 1 && !header.type.array) {
-      const seen = new Set();
-      header.unique = true;
-      for (const d of data) {
-        if (seen.has(d)) {
-          header.unique = false;
-          break;
+export function exportAllRows(
+  headers: NamedHeader[],
+  datFiles: { name: string; datFile: DatFile }[],
+  name: string
+) {
+  const columns = headers.flatMap((header) => {
+    const data = datFiles.map(({ name, datFile }) => ({ name, rows: readColumn(header, datFile) }));
+
+    const seen = datFiles.map((d) => new Set());
+    header.unique = header.unique || (data[0].rows.length > 1 && !header.type.array);
+    data.find(({ rows }, i) => {
+      rows.find((row, j) => {
+        if (Array.isArray(row)) {
+          if (row.find((cell, k) => cell !== data[0].rows[j]![k])) {
+            header.localized = true;
+          }
+        } else {
+          if (seen[i].has(row)) {
+            header.unique = false;
+          }
+          if (row !== data[0].rows[j]) {
+            header.localized = true;
+          }
         }
-        seen.add(d);
-      }
-    }
-    return {
-      name: header.name,
-      header,
-      data,
-    };
+        seen[i].add(row);
+
+        // if there's nothing more to learn, return true, ending the find loops
+        return header.localized && !header.unique;
+      });
+    });
+
+    return header.localized
+      ? data.map(({ name, rows }) => ({ name: `${header.name} (${name})`, header, data: rows }))
+      : {
+          name: header.name,
+          header,
+          data: data[0].rows,
+        };
   });
 
   columns.unshift({
     name: "rownum",
-    data: Array(datFile.rowCount)
+    data: Array(datFiles[0].datFile.rowCount)
       .fill(undefined)
       .map((_, idx) => idx),
   } as any);
 
-  return Array(datFile.rowCount + 1)
+  return Array(datFiles[0].datFile.rowCount + 1)
     .fill(undefined)
     .map((_, idx) =>
       columns.map((col) =>
@@ -159,6 +188,7 @@ export interface NamedHeader extends Header {
   unknownArray?: boolean;
   noData?: boolean;
   unique?: boolean;
+  localized?: boolean;
   size?: number;
   type: Header["type"] & {
     key?: {
@@ -170,24 +200,24 @@ export interface NamedHeader extends Header {
 export function importHeaders(sch: SchemaTable): NamedHeader[];
 export function importHeaders(
   sch: SchemaTable,
-  datFile: DatFile,
-  stats: ColumnStats[]
+  datFiles: DatFile[],
+  stats: ColumnStats[][]
 ): PossibleHeaders;
 export function importHeaders(
   sch: SchemaTable,
-  datFile?: DatFile,
-  stats?: ColumnStats[]
+  datFiles?: DatFile[],
+  stats?: ColumnStats[][]
 ): PossibleHeaders {
   const headers = [] as PossibleHeaders;
 
   let offset = 0;
   for (const column of sch.columns) {
-    if (column.type === "array" && datFile && stats) {
+    if (column.type === "array" && datFiles && stats) {
       headers.push(
         possibleColumnHeaders(
           offset,
           stats,
-          datFile,
+          datFiles,
           Object.values(headerTypes).filter((t) => t.array)
         )[0] || []
       );
@@ -196,6 +226,7 @@ export function importHeaders(
         name: column.name || "",
         offset,
         unknownArray: column.type === "array",
+        unique: column.unique,
         type:
           column.type === "array"
             ? headerTypes["[i32]"]
@@ -231,12 +262,12 @@ export function importHeaders(
               },
       });
     }
-    if (datFile) {
+    if (datFiles?.[0]) {
       const header = headers[headers.length - 1];
       if (Array.isArray(header)) {
         offset += header[0]?.size || 0;
       } else {
-        const size = getHeaderLength(header, datFile);
+        const size = getHeaderLength(header, datFiles?.[0]);
         header.size = size;
         offset += size;
       }

@@ -20,16 +20,17 @@ jobs:
           node-version: 20
       - name: npm install
         run: npm i
-      - name: validate schema
-        run: npx -y tsx src/validate.ts --quiet
-      - name: set version
-        id: set-version
-        run: echo "version=$(cat version.txt)" >> "$GITHUB_OUTPUT"
-      - uses: actions/cache@v3
+      - name: get version
+        id: get-version
+        run: curl https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt >> "$GITHUB_OUTPUT"
+      - name: cache cdn downloads
+        uses: actions/cache@v3
         with:
           path: .cache
-          key: poecdn-${{ hashFiles('version.txt') }}
+          key: poecdn-${{ steps.get-version.outputs.version }}
+      - name: validate schema
+        run: npx -y tsx src/validate.ts --quiet
       - name: commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "validate schema at version ${{ steps.set-version.outputs.version }}"
+          commit_message: "validate schema at version ${{ steps.get-version.outputs.version }}"

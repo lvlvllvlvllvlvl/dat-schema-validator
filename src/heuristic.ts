@@ -64,12 +64,11 @@ export type LenFn = (header: Header) => number;
 
 export async function getPossibleHeaders(
   headers: PossibleHeaders,
-  stats: ColumnStats[],
-  datFile: DatFile,
-  maxOffset: number,
-  recursive = false
+  stats: ColumnStats[][],
+  datFiles: DatFile[]
 ): Promise<PossibleHeaders[]> {
-  const len = (header: NamedHeader) => header.size || getHeaderLength(header, datFile);
+  const maxOffset = datFiles[0].rowLength;
+  const len = (header: NamedHeader) => header.size || getHeaderLength(header, datFiles[0]);
   const last = headers[headers.length - 1];
   const offset = last
     ? Array.isArray(last)
@@ -85,20 +84,14 @@ export async function getPossibleHeaders(
     return [];
   }
 
-  var possibleHeaders = possibleColumnHeaders(offset, stats, datFile, Object.values(headerTypes));
+  var possibleHeaders = possibleColumnHeaders(offset, stats, datFiles, Object.values(headerTypes));
   if (!possibleHeaders.length) {
     return [];
   }
 
   var exact = [] as PossibleHeaders[];
   for (const type of possibleHeaders) {
-    const possibles = await getPossibleHeaders(
-      headers.concat([type]),
-      stats,
-      datFile,
-      maxOffset,
-      true
-    );
+    const possibles = await getPossibleHeaders(headers.concat([type]), stats, datFiles);
     for (const possible of possibles) {
       let end = possible[possible.length - 1];
       end = Array.isArray(end) ? end[0] : end;
@@ -115,15 +108,15 @@ export async function getPossibleHeaders(
 
 export function possibleColumnHeaders(
   offset: number,
-  stats: ColumnStats[],
-  datFile: DatFile,
+  stats: ColumnStats[][],
+  datFiles: DatFile[],
   types: HeaderType[]
 ) {
   const valid = (header: Header) => {
-    if (!validateHeader(header, stats)) {
+    if (!stats.every((s) => validateHeader(header, s))) {
       return false;
     }
-    if (header.type.string && !isString(header, datFile)) {
+    if (header.type.string && !isString(header, datFiles)) {
       return false;
     }
     return true;
@@ -132,7 +125,7 @@ export function possibleColumnHeaders(
     .map((type) => ({ type, offset } as NamedHeader))
     .filter(valid)
     .reduce((result, header) => {
-      const size = header.size || getHeaderLength(header, datFile);
+      const size = header.size || getHeaderLength(header, datFiles[0]);
       header.size = size;
       const existing = result.find((v) => v[0].size === size);
       if (existing) {
@@ -146,9 +139,9 @@ export function possibleColumnHeaders(
 
   // if this looks like a bool column and isn't an array, make bool the first option
   if (
-    (stats[offset].maxValue === 1 ||
-      stats.length === offset + 1 ||
-      (stats[offset].maxValue === 0 && stats[offset + 1].maxValue !== 0)) &&
+    (stats[0].length === offset + 1 ||
+      stats.every((s) => s[offset].maxValue === 1) ||
+      stats.every((s) => s[offset].maxValue === 0 && s[offset + 1].maxValue !== 0)) &&
     possibleHeaders.length > 1 &&
     !possibleHeaders.find((h) => h[0].type.array)
   ) {
@@ -230,9 +223,11 @@ function looksLikeFloat(possibles: NamedHeader[], datFile: DatFile): NamedHeader
   }
 }
 
-function isString(header: NamedHeader, datFile: DatFile) {
-  return !readColumn(header, datFile).find((v) =>
-    Array.isArray(v) ? v.find(unprintable) : unprintable(v)
+function isString(header: NamedHeader, datFiles: DatFile[]) {
+  return !datFiles.find((datFile) =>
+    readColumn(header, datFile).find((v) =>
+      Array.isArray(v) ? v.find(unprintable) : unprintable(v)
+    )
   );
 }
 

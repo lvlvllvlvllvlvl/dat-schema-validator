@@ -47,9 +47,6 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
       }
 
       const directives = [] as string[];
-      if (header.unique && !col) {
-        directives.push("unique");
-      }
       if (col) {
         if (col.references && "column" in col.references) {
           directives.push(`ref(column: "${col.references.column}")`);
@@ -68,7 +65,7 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
             directives.push("unique");
           }
         }
-        if (col.localized) {
+        if (col.localized || header.localized) {
           directives.push("localized");
         }
         if (col?.file) {
@@ -76,6 +73,13 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
         }
         if (col?.files) {
           directives.push(`files(ext: ${stringify(col.files)})`);
+        }
+      } else {
+        if (header.unique) {
+          directives.push("unique");
+        }
+        if (header.localized) {
+          directives.push("localized");
         }
       }
 
