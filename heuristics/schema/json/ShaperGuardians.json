@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "WorldArea",
     "offset": 8,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -21,7 +22,6 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   }
 ]

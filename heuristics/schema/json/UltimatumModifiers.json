@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Types",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -27,6 +28,7 @@
     "name": "ExtraMods",
     "offset": 24,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -40,6 +42,7 @@
     "name": "TypesFiltered",
     "offset": 40,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -53,6 +56,7 @@
     "name": "DaemonSpawningData",
     "offset": 56,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -60,13 +64,13 @@
         "name": "DaemonSpawningData"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "PreviousTiers",
     "offset": 72,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -80,17 +84,18 @@
     "name": "",
     "offset": 88,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "Bosses",
     "offset": 89,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -104,6 +109,7 @@
     "name": "Radius",
     "offset": 105,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -111,35 +117,36 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "Name",
     "offset": 109,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "Icon",
     "offset": 117,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "HASH16",
     "offset": 125,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "integer": {
@@ -147,13 +154,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "TypesExtra",
     "offset": 129,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -167,6 +174,7 @@
     "name": "MonsterTypesApplyingRuin",
     "offset": 145,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -174,13 +182,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "MiscAnimated",
     "offset": 149,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -188,13 +196,13 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "BuffTemplates",
     "offset": 165,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -208,6 +216,7 @@
     "name": "Tier",
     "offset": 181,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -215,13 +224,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 185,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -229,24 +238,25 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "Description",
     "offset": 189,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "MonsterSpawners",
     "offset": 197,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -257,17 +267,18 @@
     "name": "",
     "offset": 213,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "Achievements",
     "offset": 214,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -281,6 +292,7 @@
     "name": "TextAudio",
     "offset": 230,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -288,13 +300,13 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "UniqueMapMod",
     "offset": 246,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -302,7 +314,6 @@
         "name": "Mods"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Part",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -21,24 +22,25 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 12,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "ActNumber",
     "offset": 20,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -46,13 +48,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 24,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "integer": {
@@ -60,35 +62,35 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "WorldPanelImage",
     "offset": 28,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "WorldPanelImageEpilogue",
     "offset": 36,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "",
     "offset": 44,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -96,24 +98,24 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "IsPostGame",
     "offset": 48,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "",
     "offset": 49,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -121,13 +123,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 53,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {

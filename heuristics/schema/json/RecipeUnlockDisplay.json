@@ -3,6 +3,7 @@
     "name": "RecipeId",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "integer": {
@@ -10,24 +11,25 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "Description",
     "offset": 4,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": true
+    "localized": true
   },
   {
     "name": "CraftingItemClassCategoriesKeys",
     "offset": 12,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -41,17 +43,19 @@
     "name": "UnlockDescription",
     "offset": 28,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "Rank",
     "offset": 36,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -59,13 +63,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "UnlockArea",
     "offset": 40,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -73,7 +77,6 @@
         "name": "WorldAreas"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   }
 ]

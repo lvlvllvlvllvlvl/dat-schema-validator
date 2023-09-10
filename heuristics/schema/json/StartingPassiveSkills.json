@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "PassiveSkills",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {

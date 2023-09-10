@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Stats",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -27,6 +28,7 @@
     "name": "StatValues",
     "offset": 24,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -40,28 +42,30 @@
     "name": "Name",
     "offset": 40,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "Icon",
     "offset": 48,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "",
     "offset": 56,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -69,24 +73,24 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 60,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "EffectCategory",
     "offset": 61,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -94,13 +98,13 @@
         "name": "SanctumPersistentEffectCategories"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "NextEffect",
     "offset": 77,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -108,46 +112,48 @@
         "name": "SanctumPersistentEffects"
       }
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "",
     "offset": 85,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "BoonDesc",
     "offset": 93,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "CurseDesc",
     "offset": 101,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "",
     "offset": 109,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -155,13 +161,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 113,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -169,24 +175,24 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 117,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "",
     "offset": 118,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -199,6 +205,7 @@
     "name": "Guard",
     "offset": 134,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -212,6 +219,7 @@
     "name": "FirstEffect",
     "offset": 150,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -219,13 +227,13 @@
         "name": "SanctumPersistentEffects"
       }
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "",
     "offset": 158,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -233,13 +241,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 162,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -247,35 +255,35 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 166,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "",
     "offset": 167,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "HASH16",
     "offset": 168,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -283,7 +291,6 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

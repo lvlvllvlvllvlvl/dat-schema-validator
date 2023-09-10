@@ -4,18 +4,18 @@ type PantheonPanelLayout {
   Y: i32
   IsMajorGod: bool
   CoverImage: string
-  GodName2: string
+  GodName2: string @localized
   SelectionImage: string
   Effect1_StatsKeys: [Stats]
   Effect1_Values: [i32]
   Effect2_StatsKeys: [Stats]
-  GodName3: string
+  GodName3: string @localized
   Effect3_Values: [i32]
   Effect3_StatsKeys: [Stats]
-  GodName4: string
+  GodName4: string @localized
   Effect4_StatsKeys: [Stats]
   Effect4_Values: [i32]
-  GodName1: string
+  GodName1: string @localized
   Effect2_Values: [i32]
   QuestState1: QuestStates
   QuestState2: QuestStates
@@ -31,5 +31,5 @@ type PantheonSouls @tags(list: ["item:itemized"]) {
   QuestFlag: QuestFlags
   CapturedMonster: [MonsterVarieties]
   PanelLayout: PantheonPanelLayout
-  CapturedMonsterDescription: string
+  CapturedMonsterDescription: string @localized
 }

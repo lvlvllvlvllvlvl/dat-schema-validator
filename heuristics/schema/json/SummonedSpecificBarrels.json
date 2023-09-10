@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Chest",
     "offset": 8,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -21,57 +22,56 @@
         "name": "Chests"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   },
   {
     "name": "",
     "offset": 24,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 40,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 56,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 72,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]

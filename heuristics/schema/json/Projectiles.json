@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "AOFiles",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -24,6 +25,7 @@
     "name": "LoopAnimationIds",
     "offset": 24,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -34,6 +36,7 @@
     "name": "ImpactAnimationIds",
     "offset": 40,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -44,6 +47,7 @@
     "name": "ProjectileSpeed",
     "offset": 56,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -51,24 +55,24 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 60,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "",
     "offset": 61,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -76,46 +80,46 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 65,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "",
     "offset": 66,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "InheritsFrom",
     "offset": 67,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "",
     "offset": 75,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -123,26 +127,26 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 79,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 95,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -150,35 +154,35 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 99,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "",
     "offset": 100,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "Stuck_AOFile",
     "offset": 101,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -189,17 +193,18 @@
     "name": "Bounce_AOFile",
     "offset": 117,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "",
     "offset": 125,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -207,13 +212,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 129,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -221,13 +226,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 133,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -235,13 +240,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 137,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -249,39 +254,39 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 141,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 157,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 173,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -289,13 +294,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 177,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -303,13 +308,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 181,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -317,13 +322,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 185,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -331,13 +336,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 189,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -345,13 +350,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 193,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -362,17 +367,18 @@
     "name": "",
     "offset": 209,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "",
     "offset": 210,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -386,6 +392,7 @@
     "name": "",
     "offset": 226,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -393,7 +400,6 @@
         "name": "Projectiles"
       }
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]

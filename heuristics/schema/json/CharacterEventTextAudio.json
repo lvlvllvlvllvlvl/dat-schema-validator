@@ -3,6 +3,7 @@
     "name": "Event",
     "offset": 0,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -10,13 +11,13 @@
         "name": "CharacterAudioEvents"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "Character",
     "offset": 16,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -24,13 +25,13 @@
         "name": "Characters"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "TextAudio",
     "offset": 32,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {

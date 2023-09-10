@@ -3,6 +3,7 @@
     "name": "NPCsKey",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -10,13 +11,13 @@
         "name": "NPCs"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   },
   {
     "name": "MonsterVarietiesKey",
     "offset": 16,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -24,13 +25,13 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   },
   {
     "name": "SkillLevel_HeistJobsKeys",
     "offset": 32,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -44,17 +45,18 @@
     "name": "PortraitFile",
     "offset": 48,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "HeistNPCStatsKeys",
     "offset": 56,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -68,6 +70,7 @@
     "name": "StatValues",
     "offset": 72,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "decimal": {
@@ -80,19 +83,20 @@
     "name": "",
     "offset": 88,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "SkillLevel_Values",
     "offset": 92,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -106,28 +110,29 @@
     "name": "Name",
     "offset": 108,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "SilhouetteFile",
     "offset": 116,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "",
     "offset": 124,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -135,13 +140,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 128,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -149,13 +154,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "HeistNPCsKey",
     "offset": 132,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -163,13 +168,13 @@
         "name": "HeistNPCs"
       }
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "StatValues2",
     "offset": 140,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "decimal": {
@@ -182,6 +187,7 @@
     "name": "Ally_NPCsKey",
     "offset": 156,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -189,24 +195,24 @@
         "name": "NPCs"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   },
   {
     "name": "ActiveNPCIcon",
     "offset": 172,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "HeistJobsKey",
     "offset": 180,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -214,13 +220,13 @@
         "name": "HeistJobs"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "Equip_AchievementItemsKeys",
     "offset": 196,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -234,24 +240,24 @@
     "name": "AOFile",
     "offset": 212,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "",
     "offset": 220,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

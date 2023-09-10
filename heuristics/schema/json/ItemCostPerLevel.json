@@ -3,6 +3,7 @@
     "name": "Contract_BaseItemTypesKey",
     "offset": 0,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -10,13 +11,13 @@
         "name": "BaseItemTypes"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "Level",
     "offset": 16,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -24,13 +25,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "Cost",
     "offset": 20,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -38,13 +39,13 @@
         "name": "ItemCosts"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "CostHardmode",
     "offset": 36,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -52,7 +53,6 @@
         "name": "ItemCosts"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

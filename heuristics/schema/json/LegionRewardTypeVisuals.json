@@ -3,6 +3,7 @@
     "name": "IntId",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "integer": {
@@ -10,13 +11,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "MinimapIconsKey",
     "offset": 4,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -24,24 +25,24 @@
         "name": "MinimapIcons"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 20,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "MiscAnimatedKey",
     "offset": 28,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -49,31 +50,30 @@
         "name": "MiscAnimated"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 44,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "Id",
     "offset": 48,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]

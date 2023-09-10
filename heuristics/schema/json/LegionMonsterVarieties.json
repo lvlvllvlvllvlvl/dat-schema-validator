@@ -3,6 +3,7 @@
     "name": "MonsterVarietiesKey",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -10,13 +11,13 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   },
   {
     "name": "LegionFactionsKey",
     "offset": 16,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -24,13 +25,13 @@
         "name": "LegionFactions"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "LegionRanksKey",
     "offset": 32,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -38,13 +39,13 @@
         "name": "LegionRanks"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 48,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -52,13 +53,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "MiscAnimatedKey",
     "offset": 52,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -72,6 +73,7 @@
     "name": "",
     "offset": 68,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -79,13 +81,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 72,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,13 +95,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 76,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -113,6 +115,7 @@
     "name": "",
     "offset": 92,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -126,6 +129,7 @@
     "name": "",
     "offset": 108,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -139,6 +143,7 @@
     "name": "",
     "offset": 124,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -152,6 +157,7 @@
     "name": "",
     "offset": 140,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -165,6 +171,7 @@
     "name": "",
     "offset": 156,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -178,6 +185,7 @@
     "name": "",
     "offset": 172,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -185,13 +193,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 176,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -199,13 +207,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "",
     "offset": 180,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -218,6 +226,7 @@
     "name": "MonsterVarietiesKey2",
     "offset": 196,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -225,7 +234,6 @@
         "name": "MonsterVarieties"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

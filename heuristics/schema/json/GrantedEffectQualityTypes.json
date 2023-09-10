@@ -3,6 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "integer": {
@@ -10,24 +11,25 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "Text",
     "offset": 4,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "ClientStringsKey",
     "offset": 12,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -35,7 +37,6 @@
         "name": "ClientStrings"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   }
 ]

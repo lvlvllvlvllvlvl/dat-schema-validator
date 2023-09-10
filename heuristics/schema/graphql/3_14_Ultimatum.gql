@@ -1,6 +1,6 @@
 type UltimatumEncounters {
   Id: string @unique
-  Description: string
+  Description: string @localized
   ModTypes: [UltimatumModifierTypes]
   BossARMFile: string
   Type: UltimatumEncounterTypes
@@ -12,8 +12,8 @@ type UltimatumEncounters {
 
 type UltimatumEncounterTypes {
   Id: string @unique
-  Name: string
-  ProgressBarText: string
+  Name: string @localized
+  ProgressBarText: string @localized
   _: bool
   _: bool
   NormalAchievements: [AchievementItems]
@@ -23,12 +23,12 @@ type UltimatumEncounterTypes {
 type UltimatumItemisedRewards {
   Id: string @unique
   HASH16: i32
-  RewardText: string
+  RewardText: string @localized
   ItemVisualIdentityKey: ItemVisualIdentity
   RewardType: i32
   SacrificeItem: BaseItemTypes
   SacrificeAmount: i32
-  SacrificeText: string
+  SacrificeText: string @localized
   _: bool
   TrialMods: [Mods]
 }
@@ -48,7 +48,7 @@ type UltimatumModifiers {
   _: bool
   Bosses: [MonsterVarieties]
   Radius: i32
-  Name: string
+  Name: string @localized
   Icon: string
   HASH16: i32
   TypesExtra: [UltimatumModifierTypes]
@@ -57,7 +57,7 @@ type UltimatumModifiers {
   BuffTemplates: [BuffTemplates]
   Tier: i32
   _: i32
-  Description: string
+  Description: string @localized
   MonsterSpawners: [string]
   _: bool
   Achievements: [AchievementItems]

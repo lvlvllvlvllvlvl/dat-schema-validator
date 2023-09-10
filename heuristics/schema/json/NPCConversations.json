@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "DialogueEvent",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -21,13 +22,13 @@
         "name": "DialogueEvent"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "NPCTextAudioKeys",
     "offset": 24,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -41,6 +42,7 @@
     "name": "",
     "offset": 40,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -54,6 +56,7 @@
     "name": "",
     "offset": 56,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -61,7 +64,6 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

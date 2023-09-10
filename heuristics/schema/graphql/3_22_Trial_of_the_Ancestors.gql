@@ -42,7 +42,7 @@ type AncestralTrialFieldItems {
   _: rid
   _: rid
   HASH32: i32
-  Description: string
+  Description: string @localized
   Achievement: [AchievementItems]
   _: rid
   _: rid
@@ -51,12 +51,12 @@ type AncestralTrialFieldItems {
 type AncestralTrialItems {
   Id: string
   HASH16: i32
-  Name: string
+  Name: string @localized
   Image: string
   _: rid
   _: i32
   Mods: [Mods]
-  FlavorText: string
+  FlavorText: string @localized
   _: i32
   _: [_] # All rows empty
   _: rid
@@ -78,7 +78,7 @@ type AncestralTrialMonsters {
 type AncestralTrialPositionType {
   Id: string
   PlayerTotemIcon: string
-  Name: string
+  Name: string @localized
   EnemyTotemIcon: string
   PlayerTotemSmallIcon: string
   EnemyTotemSmallIcon: string
@@ -105,10 +105,10 @@ type AncestralTrialTribes {
   _: rid
   Portrait: string
   TribeIcon: string
-  TribeName: string
+  TribeName: string @localized
   FavourTracker: string
   _: [rid]
-  Name: string
+  Name: string @localized
   _: rid
   _: rid
   _: rid
@@ -133,13 +133,13 @@ type AncestralTrialUnitPositions {
 
 type AncestralTrialUnits {
   Id: string
-  Name: string
+  Name: string @localized
   Tribe: AncestralTrialTribes
   Image: string
   TotemImage: string
   HASH16: i32
   _: i32
-  Description: string
+  Description: string @localized
   _: i32
   _: i32
   Position: AncestralTrialUnitPositions
@@ -161,6 +161,6 @@ type PassiveSkillTattoos {
 type PassiveSkillTattooTargetSets {
   Id: string
   Set: [i32]
-  _: string
-  _: string
+  _: string @localized
+  _: string @localized
 }

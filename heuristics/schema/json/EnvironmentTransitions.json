@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "OTFiles",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -24,6 +25,7 @@
     "name": "",
     "offset": 24,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}

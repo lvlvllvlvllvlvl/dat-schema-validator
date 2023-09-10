@@ -6,7 +6,7 @@ type SynthesisAreas {
   TopologiesKey: Topologies
   MonsterPacksKeys: [MonsterPacks]
   ArtFile: string
-  Name: string
+  Name: string @localized
   SynthesisAreaSizeKey: SynthesisAreaSize
   AchievementItemsKey: AchievementItems
 }
@@ -68,7 +68,7 @@ type SynthesisRewardCategories {
 
 type SynthesisRewardTypes {
   Id: string @unique
-  Description: string
+  Description: string @localized
   ArtFile: string
   AchievementItemsKey: AchievementItems
 }

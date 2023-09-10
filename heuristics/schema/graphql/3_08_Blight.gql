@@ -24,7 +24,7 @@ type BlightCraftingItems @tags(list: ["item:def"]) {
   Tier: i32
   Achievements: [AchievementItems]
   UseType: i32
-  NameShort: string
+  NameShort: string @localized
 }
 
 type BlightCraftingRecipes @tags(list: ["crafting"]) {
@@ -114,8 +114,8 @@ type BlightTowerAuras {
 
 type BlightTowers {
   Id: string @unique
-  Name: string
-  Description: string
+  Name: string @localized
+  Description: string @localized
   Icon: string
   NextUpgradeOptions: [BlightTowers]
   _: i32

@@ -3,24 +3,24 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Multiplier",
     "offset": 8,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   }
 ]

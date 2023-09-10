@@ -72,7 +72,7 @@ type ExpeditionDeals {
 
 type ExpeditionFactions {
   Id: string @unique
-  Name: string
+  Name: string @localized
   FactionFlag: string
   _: i32
   FactionIcon: string
@@ -122,7 +122,7 @@ type ExpeditionRelicMods {
 
 type ExpeditionRelics {
   Id: string @unique
-  Name: string
+  Name: string @localized
   ItemTag: Tags
   AOFile: string
   MinLevel: i32

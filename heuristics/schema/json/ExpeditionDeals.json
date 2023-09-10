@@ -3,6 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "integer": {
@@ -10,35 +11,35 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "Function",
     "offset": 4,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "Arguments",
     "offset": 12,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "TextAudio",
     "offset": 20,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -46,24 +47,25 @@
         "name": "NPCTextAudio"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "Description",
     "offset": 36,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "BuyAchievements",
     "offset": 44,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -77,19 +79,20 @@
     "name": "",
     "offset": 60,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "DealFamily",
     "offset": 76,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -97,7 +100,6 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

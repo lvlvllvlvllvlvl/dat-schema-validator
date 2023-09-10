@@ -3,6 +3,7 @@
     "name": "LabyrinthSectionKey",
     "offset": 0,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -10,13 +11,13 @@
         "name": "LabyrinthSection"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
     "offset": 16,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -24,13 +25,13 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "LabyrinthSectionLayoutKeys",
     "offset": 20,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -44,6 +45,7 @@
     "name": "LabyrinthSecretsKey0",
     "offset": 36,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -51,13 +53,13 @@
         "name": "LabyrinthSecrets"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "LabyrinthSecretsKey1",
     "offset": 52,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -65,13 +67,13 @@
         "name": "LabyrinthSecrets"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "LabyrinthAreasKey",
     "offset": 68,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -79,39 +81,39 @@
         "name": "LabyrinthAreas"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "Float0",
     "offset": 84,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "Float1",
     "offset": 88,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
     "name": "LabyrinthNodeOverridesKeys",
     "offset": 92,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {

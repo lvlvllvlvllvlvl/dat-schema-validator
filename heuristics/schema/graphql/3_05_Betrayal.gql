@@ -6,7 +6,7 @@ type BetrayalChoiceActions {
 
 type BetrayalChoices {
   Id: string
-  Text: string
+  Text: string @localized
   _: i32
   Achievements: [AchievementItems]
 }
@@ -44,7 +44,7 @@ type BetrayalForts {
 
 type BetrayalJobs {
   Id: string
-  Text: string
+  Text: string @localized
   ExtraTerrainFeaturesKey: ExtraTerrainFeatures
   Art: string
   _: i32
@@ -57,14 +57,14 @@ type BetrayalJobs {
 
 type BetrayalRanks {
   Id: string
-  Text: string
+  Text: string @localized
   Level: i32
   RankImage: string
 }
 
 type BetrayalRelationshipState {
   Id: string
-  Text: string
+  Text: string @localized
 }
 
 enum BetrayalTargetFlags @indexing(first: 0) { _ }
@@ -88,9 +88,9 @@ type BetrayalTargets {
   Art: string
   _: bool
   ItemClasses: ItemClasses
-  FullName: string
+  FullName: string @localized
   Safehouse_ARMFile: string @file(ext: ".arm")
-  ShortName: string
+  ShortName: string @localized
   _: i32
   SafehouseLeader_AcheivementItemsKey: AchievementItems
   Level3_AchievementItemsKey: AchievementItems
@@ -105,14 +105,14 @@ type BetrayalTraitorRewards @tags(list: ["item:droptable"]) {
   BetrayalJobsKey: BetrayalJobs
   BetrayalTargetsKey: BetrayalTargets
   BetrayalRanksKey: BetrayalRanks
-  Description: string
-  Description2: string
+  Description: string @localized
+  Description2: string @localized
 }
 
 type BetrayalUpgrades {
   Id: string @unique
-  Name: string
-  Description: string
+  Name: string @localized
+  Description: string @localized
   ModsKey: [Mods]
   ArtFile: string
   BetrayalUpgradeSlotsKey: i32
@@ -135,10 +135,10 @@ type SafehouseBYOCrafting @tags(list: ["crafting"]) {
   BetrayalJobsKey: BetrayalJobs
   BetrayalTargetsKey: BetrayalTargets
   Rank: i32
-  Description: string
+  Description: string @localized
   ServerCommand: string
   _: [rid]
-  Description2: string
+  Description2: string @localized
   ServerCommand2: string
 }
 
@@ -148,7 +148,7 @@ type SafehouseCraftingSpreeType {
   CurrencyCount: [i32]
   _: [rid]
   Disabled: bool
-  ItemClassText: string
+  ItemClassText: string @localized
   _: i32
 }
 

@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Active_StatsKey",
     "offset": 8,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -21,13 +22,13 @@
         "name": "Stats"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   },
   {
     "name": "Inactive_StatsKey",
     "offset": 24,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -35,51 +36,50 @@
         "name": "Stats"
       }
     },
-    "size": 16,
-    "unique": true
+    "size": 16
   },
   {
     "name": "DDSFile",
     "offset": 40,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Inactive_ArtFile",
     "offset": 48,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Active_ArtFile",
     "offset": 56,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Frame_ArtFile",
     "offset": 64,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   }
 ]

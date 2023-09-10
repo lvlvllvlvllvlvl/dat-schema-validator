@@ -24,12 +24,12 @@ type BestiaryEncounters {
 
 type BestiaryFamilies {
   Id: string @unique
-  Name: string
+  Name: string @localized
   Icon: string
   IconSmall: string
   Illustration: string
   PageArt: string
-  FlavourText: string
+  FlavourText: string @localized
   _: bool
   TagsKey: Tags
   _: i32
@@ -39,17 +39,17 @@ type BestiaryFamilies {
 
 type BestiaryGenus {
   Id: string @unique
-  Name: string
+  Name: string @localized
   BestiaryGroupsKey: BestiaryGroups
-  Name2: string
+  Name2: string @localized
   Icon: string
 }
 
 type BestiaryGroups {
   Id: string @unique
-  Description: string
+  Description: string @localized
   Illustration: string
-  Name: string
+  Name: string @localized
   Icon: string
   IconSmall: string
   BestiaryFamiliesKey: BestiaryFamilies
@@ -80,14 +80,14 @@ type BestiaryRecipeComponent {
 
 type BestiaryRecipeCategories {
   Id: string
-  Text: string
+  Text: string @localized
 }
 
 type BestiaryRecipes @tags(list: ["item:recipe", "crafting"]) {
   Id: string @unique
-  Description: string
+  Description: string @localized
   BestiaryRecipeComponentKeys: [BestiaryRecipeComponent]
-  Notes: string
+  Notes: string @localized
   Category: BestiaryRecipeCategories
   _: bool
   Achievements: [AchievementItems]

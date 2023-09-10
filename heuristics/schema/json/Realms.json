@@ -3,28 +3,30 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "Name",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "Server",
     "offset": 16,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -35,17 +37,18 @@
     "name": "IsEnabled",
     "offset": 32,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "Server2",
     "offset": 33,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
@@ -56,17 +59,19 @@
     "name": "ShortName",
     "offset": 49,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8,
-    "unique": false
+    "localized": true
   },
   {
     "name": "",
     "offset": 57,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -80,6 +85,7 @@
     "name": "",
     "offset": 73,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -87,13 +93,13 @@
         "name": "Realms"
       }
     },
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
     "name": "",
     "offset": 81,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "integer": {
@@ -101,24 +107,24 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "IsGammaRealm",
     "offset": 85,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "name": "SpeedtestUrl",
     "offset": 86,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}

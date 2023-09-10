@@ -3,12 +3,12 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "type": {
@@ -16,6 +16,7 @@
       "string": {}
     },
     "offset": 8,
-    "size": 16
+    "size": 16,
+    "unique": false
   }
 ]

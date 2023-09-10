@@ -58,7 +58,7 @@ type StampChoice {
   Id: string @unique
   _: rid
   _: i32
-  Effect: string
+  Effect: string @localized
   Icon: string
   _: rid
   _: [_]

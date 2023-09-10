@@ -3,6 +3,7 @@
     "name": "Level",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "integer": {
@@ -10,26 +11,26 @@
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "StatValueMultiplier",
     "offset": 4,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
     "name": "ScalingStats",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
@@ -43,6 +44,7 @@
     "name": "ScalingValues",
     "offset": 24,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -56,6 +58,7 @@
     "name": "ScalingValues2",
     "offset": 40,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -69,6 +72,7 @@
     "name": "ScalingValuesHardmode",
     "offset": 56,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -82,6 +86,7 @@
     "name": "ScalingValuesHardmode2",
     "offset": 72,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {

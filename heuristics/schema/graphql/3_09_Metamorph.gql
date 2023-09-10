@@ -1,6 +1,6 @@
 type AlternateQualityTypes @tags(list: ["item:def"]) {
   StatsKey: Stats
-  Description: string
+  Description: string @localized
   BaseItemTypesKey: BaseItemTypes
   ModsKey: Mods
 }
@@ -35,7 +35,7 @@ type MetamorphosisMetaSkills {
   Script1: string
   Script2: string
   Mods: [Mods]
-  Name: string
+  Name: string @localized
   _: i32
   _: [rid]
   _: i32
@@ -66,14 +66,14 @@ type MetamorphosisMetaSkillTypes {
 type MetamorphosisRewardTypeItemsClient {
   MetamorphosisRewardTypesKey: MetamorphosisRewardTypes
   _: i32
-  Description: string
+  Description: string @localized
   _: i32
 }
 
 type MetamorphosisRewardTypes {
   Id: string @unique
   Art: string
-  Name: string
+  Name: string @localized
   AchievementItemsKeys: [AchievementItems]
 }
 

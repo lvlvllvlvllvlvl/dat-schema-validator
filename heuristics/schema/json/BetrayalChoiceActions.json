@@ -3,17 +3,18 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "unique": true
+    "size": 8
   },
   {
     "name": "BetrayalChoicesKey",
     "offset": 8,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -21,13 +22,13 @@
         "name": "BetrayalChoices"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "name": "ClientStringsKey",
     "offset": 24,
     "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -35,7 +36,6 @@
         "name": "ClientStrings"
       }
     },
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

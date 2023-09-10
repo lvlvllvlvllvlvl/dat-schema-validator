@@ -7,13 +7,13 @@ type HarvestCraftOptionIcons {
 
 type HarvestCraftOptions @tags(list: ["crafting"]) {
   Id: string @unique
-  Text: string
+  Text: string @localized
   _: rid
   Command: string
   Parameters: string
   _: [_] # All rows empty
   _: i32
-  Description: string
+  Description: string @localized
   _: bool
   LifeforceType: i32
   LifeforceCost: i32
@@ -32,7 +32,7 @@ type HarvestCraftTiers {
 type HarvestCraftFilters {
   Id: string
   BaseItem: BaseItemTypes
-  Name: string
+  Name: string @localized
 }
 
 type HarvestInfrastructure {

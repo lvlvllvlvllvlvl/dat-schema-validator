@@ -14,11 +14,11 @@ type DroneTypes {
   Id: string
   _: QuestFlags
   _: MonsterVarieties
-  DeployText: string
-  _: string
+  DeployText: string @localized
+  _: string @localized
   UnlockedStat: Stats
-  SocketableText: string
-  NotPoweredText: string
+  SocketableText: string @localized
+  NotPoweredText: string @localized
 }
 
 type SentinelCraftingCurrency {

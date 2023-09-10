@@ -12,12 +12,12 @@ type SanctumDefenceIcons {
   DefenceIcon: string
   DefenceBrokenIcon: string
   BrokenStat: Stats
-  Description: string
+  Description: string @localized
 }
 
 type SanctumDeferredRewardCategories {
   Item: BaseItemTypes
-  NamePlural: string
+  NamePlural: string @localized
   ScriptReward: string
 }
 
@@ -35,7 +35,7 @@ type SanctumFloors {
   Title: ClientStrings
   RoomIcon: string
   BossIcon: string
-  Description: string
+  Description: string @localized
   Summary: ClientStrings
   Itemised: BaseItemTypes
 }
@@ -58,7 +58,7 @@ type SanctumPersistentEffectCategories {
   Curse: bool
   Boon: bool
   Icon: string
-  Name: string
+  Name: string @localized
   Deferral: bool
 }
 
@@ -66,15 +66,15 @@ type SanctumPersistentEffects {
   Id: string
   Stats: [Stats]
   StatValues: [i32]
-  Name: string
+  Name: string @localized
   Icon: string
   _: i32
   _: bool
   EffectCategory: SanctumPersistentEffectCategories
   NextEffect: SanctumPersistentEffects
   _: string
-  BoonDesc: string
-  CurseDesc: string
+  BoonDesc: string @localized
+  CurseDesc: string @localized
   _: i32
   _: i32
   _: bool
@@ -106,8 +106,8 @@ type SanctumRoomTypes {
   _: bool
   Icon: string
   _: bool
-  Description: string
-  _: [string]
+  Description: string @localized
+  _: [string] @localized
   Rooms: [SanctumRooms]
   _: string
   _: bool
@@ -115,9 +115,9 @@ type SanctumRoomTypes {
 
 type SanctumSelectionDisplayOverride {
   Id: string
-  Reward: string
+  Reward: string @localized
   Icon: string
-  Downside: string
+  Downside: string @localized
   Item: BaseItemTypes
   Count: i32
   RewardCategory: SanctumDeferredRewardCategories

@@ -3,7 +3,7 @@ enum AccountQuestFlags @indexing(first: 0) { _ }
 type AchievementItemRewards @tags(list: ["mtx:reward"]) {
   AchievementItemsKey: AchievementItems
   BaseItemTypesKey: BaseItemTypes
-  Message: string
+  Message: string @localized
   Id: string
 }
 
@@ -11,7 +11,7 @@ type AchievementItems {
   Id: string @unique
   _: i32
   _: i32
-  Name: string
+  Name: string @localized
   CompletionsRequired: i32
   AchievementsKey: Achievements
   _: bool
@@ -22,9 +22,9 @@ type AchievementItems {
 
 type Achievements {
   Id: string @unique
-  Description: string
+  Description: string @localized
   SetId: AchievementSetsDisplay @ref(column: "Id")
-  Objective: string
+  Objective: string @localized
   _: i32 @unique
   _: bool
   HideAchievementItems: bool
@@ -44,9 +44,9 @@ type AchievementSetRewards @tags(list: ["mtx:reward"]) {
   AchievementsRequired: i32
   Rewards: [BaseItemTypes]
   TotemPieceEveryNAchievements: i32
-  Message: string
+  Message: string @localized
   NotificationIcon: string @file(ext: ".dds")
-  HideoutName: string
+  HideoutName: string @localized
   Id: string
 }
 
@@ -54,13 +54,13 @@ enum AchievementSets @indexing(first: 0) { _ }
 
 type AchievementSetsDisplay {
   Id: i32 @unique
-  Title: string
+  Title: string @localized
 }
 
 type ActiveSkills {
   Id: string @unique
-  DisplayedName: string
-  Description: string
+  DisplayedName: string @localized
+  Description: string @localized
   _: string
   Icon_DDSFile: string @file(ext: ".dds")
   ActiveSkillTargetTypes: [ActiveSkillTargetTypes]
@@ -111,7 +111,7 @@ type ActiveSkillType {
 type Acts {
   Id: string @unique
   Part: i32
-  _: string
+  _: string @localized
   ActNumber: i32
   _: i32
   WorldPanelImage: string
@@ -159,7 +159,7 @@ type AdvancedSkillsTutorial {
   Id: string @unique
   SkillGemInfoKey1: [SkillGemInfo]
   SkillGemInfoKey2: [SkillGemInfo]
-  Description: string
+  Description: string @localized
   International_BK2File: string @file(ext: ".bk2")
   SkillGemsKey: SkillGems
   China_BK2File: string @file(ext: ".bk2")
@@ -200,7 +200,7 @@ type AlternatePassiveAdditions {
 type AlternatePassiveSkills {
   Id: string @unique
   AlternateTreeVersionsKey: AlternateTreeVersions
-  Name: string
+  Name: string @localized
   PassiveType: [i32]
   StatsKeys: [Stats]
   Stat1Min: i32
@@ -219,7 +219,7 @@ type AlternatePassiveSkills {
   _: i32
   RandomMin: i32
   RandomMax: i32
-  FlavourText: string
+  FlavourText: string @localized
   DDSIcon: string @file(ext: ".dds")
   AchievementItemsKeys: [AchievementItems]
   _: i32
@@ -287,8 +287,8 @@ type Archetypes {
   Id: string
   CharactersKey: Characters
   PassiveSkillTreeURL: string
-  AscendancyClassName: string
-  Description: string
+  AscendancyClassName: string @localized
+  Description: string @localized
   UIImageFile: string
   TutorialVideo_BKFile: string @file(ext: ".bk")
   _: i32
@@ -367,8 +367,8 @@ type Ascendancy {
   "Coordinates in 'x1, y1, x2, y2' format"
   CoordinateRect: string
   RGBFlavourTextColour: string
-  Name: string
-  FlavourText: string
+  Name: string @localized
+  FlavourText: string @localized
   OGGFile: string @file(ext: ".ogg")
   PassiveTreeImage: string @file(ext: ".dds")
   _: i32
@@ -433,7 +433,7 @@ type AtlasMods {
 type AtlasFavouredMapSlots {
   _: i32
   _: i32
-  Requirement: string
+  Requirement: string @localized
 }
 
 enum AtlasModTiers @indexing(first: 0) { _ }
@@ -490,7 +490,7 @@ enum Attributes @indexing(first: 1) {
 
 type AwardDisplay {
   Id: string @unique
-  Text: string
+  Text: string @localized
   BackgroundImage: string
   _: i32
   _: f32
@@ -505,7 +505,7 @@ type AwardDisplay {
 
 type BackendErrors {
   Id: string @unique
-  Text: string
+  Text: string @localized
 }
 
 type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
@@ -527,7 +527,7 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   HASH32: i32 @unique
   VendorRecipe_AchievementItems: [AchievementItems]
   "the inflection identifier used for i18n in related fields"
-  Inflection: string
+  Inflection: string @localized
   Equip_AchievementItemsKey: AchievementItems
   IsCorrupted: bool
   Identify_AchievementItems: [AchievementItems]
@@ -545,8 +545,8 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
 
 type BindableVirtualKeys {
   KeyCode: i32
-  Name: string
-  Id: string
+  Name: string @localized
+  Id: string @localized
 }
 
 type BlightStashTabLayout {
@@ -587,10 +587,10 @@ enum BuffCategories @indexing(first: 0) { _ }
 
 type BuffDefinitions {
   Id: string @unique
-  Description: string
+  Description: string @localized
   Invisible: bool
   Removable: bool
-  Name: string
+  Name: string @localized
   StatsKeys: [Stats]
   _: bool
   _: i32
@@ -634,7 +634,7 @@ type BuffDefinitions {
   _: bool
   _: Stats
   _: [i32]
-  _: string
+  _: string @localized
   _: [Stats]
 }
 
@@ -707,10 +707,10 @@ type BuffVisuals {
   EPKFiles2: [string] @file(ext: ".epk")
   PreloadGroups: [PreloadGroups]
   _: bool
-  BuffName: string
+  BuffName: string @localized
   MiscAnimated1: MiscAnimated
   MiscAnimated2: MiscAnimated
-  BuffDescription: string
+  BuffDescription: string @localized
   EPKFile: string @file(ext: ".epk")
   HasExtraArt: bool
   ExtraArt: string
@@ -758,15 +758,15 @@ type CharacterEventTextAudio {
 type CharacterPanelDescriptionModes {
   Id: string @unique
   _: string
-  FormatString_Positive: string
-  FormatString_Negative: string
+  FormatString_Positive: string @localized
+  FormatString_Negative: string @localized
 }
 
 enum CharacterPanelStatContexts @indexing(first: 0) { _ }
 
 type CharacterPanelStats {
   Id: string @unique
-  Text: string
+  Text: string @localized
   StatsKeys1: [Stats]
   CharacterPanelDescriptionModesKey: CharacterPanelDescriptionModes
   StatsKeys2: [Stats]
@@ -780,7 +780,7 @@ type CharacterPanelStats {
 type CharacterPanelTabs {
   Id: string @unique
   _: i32
-  Text: string
+  Text: string @localized
   _: i32
 }
 
@@ -858,7 +858,7 @@ type CharacterStartQuestState {
 
 type CharacterStartStates {
   Id: string @unique
-  Description: string
+  Description: string @localized
   CharactersKey: Characters
   Level: i32
   PassiveSkillsKeys: [PassiveSkills]
@@ -876,7 +876,7 @@ type CharacterStartStateSet {
 
 type CharacterTextAudio {
   Id: string @unique
-  Text: string
+  Text: string @localized
   SoundFile: string @file(ext: ".ogg")
   ParrotSoundFile: string @file(ext: ".ogg")
   _: i32
@@ -916,7 +916,7 @@ type Chests {
   Id: string @unique
   _: bool
   _: i32
-  Name: string
+  Name: string @localized
   AOFiles: [string] @file(ext: ".ao")
   _: bool
   _: bool
@@ -931,7 +931,7 @@ type Chests {
   TagsKeys: [Tags]
   ChestEffectsKey: ChestEffects
   MinLevel: i32
-  _: string
+  _: string @localized
   MaxLevel: i32
   Corrupt_AchievementItemsKey: AchievementItems
   CurrencyUse_AchievementItemsKey: AchievementItems
@@ -956,11 +956,11 @@ type Chests {
 
 type ClientStrings {
   Id: string @unique
-  Text: string
-  XBoxText: string
-  XBoxText2: string
+  Text: string @localized
+  XBoxText: string @localized
+  XBoxText2: string @localized
   HASH32: i32
-  PlaystationText: string
+  PlaystationText: string @localized
 }
 
 type ClientLeagueAction {
@@ -990,10 +990,10 @@ type Colours {
 
 type Commands {
   Id: string @unique
-  Command: string
+  Command: string @localized
   _: bool
   EnglishCommand: string
-  Description: string
+  Description: string @localized
   _: bool
 }
 
@@ -1039,7 +1039,7 @@ type CoreLeagues {
 type CostTypes {
   Id: string @unique
   StatsKey: Stats
-  FormatText: string
+  FormatText: string @localized
   _: i32
 }
 
@@ -1055,7 +1055,7 @@ type CraftingBenchOptions @tags(list: ["crafting"]) {
   Cost_BaseItemTypes: [BaseItemTypes]
   Cost_Values: [i32]
   RequiredLevel: i32
-  Name: string
+  Name: string @localized
   CraftingBenchCustomAction: CraftingBenchCustomActions
   ItemClasses: [ItemClasses]
   Links: i32
@@ -1063,7 +1063,7 @@ type CraftingBenchOptions @tags(list: ["crafting"]) {
   Sockets: i32
   ItemQuantity: i32
   _: [i32]
-  Description: string
+  Description: string @localized
   IsDisabled: bool
   IsAreaOption: bool
   RecipeIds: [RecipeUnlockDisplay] @ref(column: "RecipeId")
@@ -1100,16 +1100,16 @@ type CraftingBenchUnlockCategories {
   Id: string @unique
   _: i32
   _: [i32]
-  UnlockType: string
+  UnlockType: string @localized
   CraftingItemClassCategories: [CraftingItemClassCategories]
-  ObtainingDescription: string
+  ObtainingDescription: string @localized
 }
 
 type CraftingItemClassCategories {
   Id: string @unique
   ItemClasses: [ItemClasses]
   _: string
-  Text: string
+  Text: string @localized
 }
 
 type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
@@ -1117,18 +1117,18 @@ type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
   Stacks: i32
   CurrencyUseType: i32
   Action: string
-  Directions: string
+  Directions: string @localized
   "Full stack transforms into this item"
   FullStack_BaseItemTypesKey: BaseItemTypes
-  Description: string
+  Description: string @localized
   Usage_AchievementItemsKeys: [AchievementItems]
   _: bool
-  CosmeticTypeName: string
+  CosmeticTypeName: string @localized
   Possession_AchievementItemsKey: AchievementItems
   _: [rid]
   _: [i32]
   CurrencyTab_StackSize: i32
-  XBoxDirections: string
+  XBoxDirections: string @localized
   _: i32
   _: rid
   _: rid
@@ -1139,7 +1139,7 @@ type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
   _: [i32]
   ShopTag: ShopTag
   IsHardmode: bool
-  DescriptionHardmode: string
+  DescriptionHardmode: string @localized
   IsGold: bool
 }
 
@@ -1565,7 +1565,7 @@ enum FlaskType @indexing(first: 0) { _ }
 type FlavourText {
   Id: string @unique
   _: i32
-  Text: string
+  Text: string @localized
 }
 
 enum FlavourTextImages @indexing(first: 0) { _ }
@@ -1622,10 +1622,10 @@ type GameObjectTasks {
 
 type GamepadButton {
   _: string
+  _: string @localized
   _: string
-  _: string
-  _: string
-  _: string
+  _: string @localized
+  _: string @localized
 }
 
 type GamepadType {
@@ -1641,7 +1641,7 @@ type GameStats {
 
 type GemTags {
   Id: string @unique
-  Tag: string
+  Tag: string @localized
   Stat1: Stats
   Stat2: Stats
   Stat3: Stats
@@ -1861,7 +1861,7 @@ type GrantedEffectQualityStats @tags(list: ["item:droptable"]) {
 
 type GrantedEffectQualityTypes @tags(list: ["item:def"]) {
   Id: i32 @unique
-  Text: string
+  Text: string @localized
   ClientStringsKey: ClientStrings
 }
 
@@ -2073,7 +2073,7 @@ type Hideouts {
   _: bool
   _: bool
   _: bool
-  ErrorMessage: string
+  ErrorMessage: string @localized
 }
 
 type ImpactSoundData {
@@ -2089,16 +2089,16 @@ type ImpactSoundData {
 type IndexableSkillGems {
   Index: i32
   SkillGem1: [SkillGems]
-  Name1: string
+  Name1: string @localized
   SkillGem2: [SkillGems]
-  Name2: string
+  Name2: string @localized
   _: IndexableSkillGems
 }
 
 type IndexableSupportGems @tags(list: ["crafting"]) {
   Index: i32 @unique
   SupportGem: SkillGems
-  Name: string
+  Name: string @localized
 }
 
 type InfluenceExalts @tags(list: ["item:def"]) {
@@ -2136,13 +2136,13 @@ enum InventoryType @indexing(first: 0) { _ }
 
 type ItemClassCategories {
   Id: string @unique
-  Text: string
+  Text: string @localized
   _: rid
 }
 
 type ItemClasses @tags(list: ["crafting"]) {
   Id: string @unique
-  Name: string
+  Name: string @localized
   TradeMarketCategory: TradeMarketCategory
   ItemClassCategory: ItemClassCategories
   RemovedIfLeavesArea: bool
@@ -2403,9 +2403,9 @@ type LeagueInfo {
   PanelImage: string
   HeaderImage: string
   Screenshots: [string]
-  Description: string
+  Description: string @localized
   _: bool
-  TrailerVideoLink: string
+  TrailerVideoLink: string @localized
   BackgroundImage: string
   _: bool
   _: bool
@@ -2468,7 +2468,7 @@ type MapConnections {
   MapPinsKey0: MapPins
   MapPinsKey1: MapPins
   _: rid
-  RestrictedAreaText: string
+  RestrictedAreaText: string @localized
   _: rid
   _: rid
   _: rid
@@ -2536,8 +2536,8 @@ type MapPins {
   PositionY: i32
   Waypoint_WorldAreasKey: WorldAreas
   WorldAreasKeys: [WorldAreas]
-  Name: string
-  FlavourText: string
+  Name: string @localized
+  FlavourText: string @localized
   _: [i32]
   Act: i32
   _: string
@@ -2579,7 +2579,7 @@ type Maps @tags(list: ["item:def", "item:recipe"]) {
 
 type MapSeries {
   Id: string @unique
-  Name: string
+  Name: string @localized
   BaseIcon_DDSFile: string @file(ext: ".dds")
   Infected_DDSFile: string @file(ext: ".dds")
   Shaper_DDSFile: string @file(ext: ".dds")
@@ -2703,7 +2703,7 @@ enum MicrotransactionCategoryId @indexing(first: 0) { _ }
 
 type MicrotransactionCategory {
   Id: MicrotransactionCategoryId
-  Name: string
+  Name: string @localized
 }
 
 type MicrotransactionCharacterPortraitVariations {
@@ -3000,7 +3000,7 @@ type Mods @tags(list: ["crafting"]) {
   StatsKey3: Stats
   StatsKey4: Stats
   Domain: ModDomains
-  Name: string
+  Name: string @localized
   GenerationType: ModGenerationType
   Families: [ModFamily]
   Stat1Min: i32
@@ -3430,7 +3430,7 @@ type MonsterVarieties {
   ModsKeys2: [Mods]
   Stance: string
   _: rid
-  Name: string
+  Name: string @localized
   "in percent"
   DamageMultiplier: i32
   "in percent"
@@ -3456,7 +3456,7 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: bool
-  _: string
+  _: string @localized
   KillWhileOnslaughtIsActive_AchievementItemsKey: AchievementItems
   MonsterSegmentsKey: MonsterSegments
   MonsterArmoursKey: MonsterArmours
@@ -3510,7 +3510,7 @@ type MonsterVarietiesArtVariations {
 
 type MouseCursorSizeSettings {
   Size: string
-  Description: string
+  Description: string @localized
   Ratio: f32
 }
 
@@ -3589,8 +3589,8 @@ type Music {
   BankFile: string @file(ext: ".bank")
   HASH16: i32
   IsAvailableInHideout: bool
-  Name: string
-  _: string
+  Name: string @localized
+  _: string @localized
   MusicCategories: [MusicCategories]
   _: bool
   _: i32
@@ -3598,7 +3598,7 @@ type Music {
 
 type MusicCategories {
   Id: string @unique
-  Name: string
+  Name: string @localized
   Order: i32
   _: bool
 }
@@ -3627,8 +3627,8 @@ type Notifications {
   Id: string @unique
   _: bool
   _: bool
-  Message: string
-  _: string
+  Message: string @localized
+  _: string @localized
   _: i32
   _: bool
   _: bool
@@ -3713,7 +3713,7 @@ type NPCMaster {
   _: [i32]
   _: rid
   _: i32
-  AreaDescription: string
+  AreaDescription: string @localized
   _: rid
   _: i32
   _: Stats
@@ -3732,11 +3732,11 @@ type NPCPortraits {
 
 type NPCs {
   Id: string @unique
-  Name: string
+  Name: string @localized
   Metadata: string @files(ext: [".ot", ".otc"])
   _: rid
   NPCMasterKey: NPCMaster
-  ShortName: string
+  ShortName: string @localized
   _: i32
   NPCAudios1: [NPCAudio]
   NPCAudios2: [NPCAudio]
@@ -3779,7 +3779,7 @@ type NPCShops {
 type NPCTalk {
   NPCKey: NPCs
   _: i32
-  DialogueOption: string
+  DialogueOption: string @localized
   _: [i32]
   _: [i32]
   _: [i32]
@@ -3801,7 +3801,7 @@ type NPCTalk {
   _: rid
   _: bool
   _: bool
-  DialogueOption2: string
+  DialogueOption2: string @localized
   _: rid
   _: rid
   _: i32
@@ -3824,7 +3824,7 @@ type NPCTalkConsoleQuickActions {
 type NPCTextAudio {
   Id: string @unique
   CharactersKey: Characters
-  Text: string
+  Text: string @localized
   Mono_AudioFile: string @file(ext: ".ogg")
   Stereo_AudioFile: string @file(ext: ".ogg")
   HasStereo: bool
@@ -3885,7 +3885,7 @@ type PassiveSkillFilterOptions {
 
 type PassiveSkillOverrides {
   Id: string
-  Name: string
+  Name: string @localized
   NodeIcon: string
   Stats: [Stats]
   StatValues: [i32]
@@ -3907,7 +3907,7 @@ type PassiveSkillOverrideTypes {
 
 type PassiveOverrideLimits {
   Id: string
-  Description: string
+  Description: string @localized
 }
 
 type PassiveSkillMasteryGroups {
@@ -3941,11 +3941,11 @@ type PassiveSkills {
   Stat4Value: i32
   "Id used by PassiveSkillGraph.psg"
   PassiveSkillGraphId: i32 @unique
-  Name: string
+  Name: string @localized
   Characters: [Characters]
   IsKeystone: bool
   IsNotable: bool
-  FlavourText: string
+  FlavourText: string @localized
   IsJustIcon: bool
   AchievementItem: AchievementItems
   IsJewelSocket: bool
@@ -3966,7 +3966,7 @@ type PassiveSkills {
   MasteryGroup: PassiveSkillMasteryGroups
   _: rid
   SoundEffect: SoundEffects
-  _: string
+  _: string @localized
   _: i32
   _: i32
   _: i32
@@ -3986,7 +3986,7 @@ enum PassiveSkillTypes @indexing(first: 0) {
 
 type PassiveSkillStatCategories {
   Id: string @unique
-  Name: string
+  Name: string @localized
 }
 
 type PassiveSkillTrees {
@@ -4015,8 +4015,8 @@ type PassiveSkillTreeTutorial {
   Id: string
   CharactersKey: Characters
   _: rid
-  ChoiceA_Description: string
-  ChoiceB_Description: string
+  ChoiceA_Description: string @localized
+  ChoiceB_Description: string @localized
   _: rid
   ChoiceA_PassiveTreeURL: string
   ChoiceB_PassiveTreeURL: string
@@ -4111,7 +4111,7 @@ type PlayerConditions {
 
 type PlayerTradeWhisperFormats {
   Id: string
-  Whisper: string
+  Whisper: string @localized
   InStash: bool
   IsPriced: bool
 }
@@ -4260,12 +4260,12 @@ type QuestStates {
   _: i32
   QuestStates: [i32]
   _: [i32]
-  Text: string
+  Text: string @localized
   _: bool
-  Message: string
+  Message: string @localized
   MapPinsKeys1: [MapPins]
   _: i32
-  MapPinsTexts: [string]
+  MapPinsTexts: [string] @localized
   MapPinsKeys2: [MapPins]
   _: [rid]
   _: bool
@@ -4273,7 +4273,7 @@ type QuestStates {
   _: [i32]
   _: i32
   SoundEffect: SoundEffects
-  _: QuestStates
+  _: QuestStates @localized
 }
 
 type QuestStaticRewards {
@@ -4303,7 +4303,7 @@ type QuestType {
 type Races {
   Id: string
   Mods: [Mods]
-  _: string
+  _: string @localized
   _: string
   _: i32
   _: i32
@@ -4339,11 +4339,11 @@ type Rarity {
 
 type Realms {
   Id: string @unique
-  Name: string
+  Name: string @localized
   Server: [string]
   IsEnabled: bool
   Server2: [string]
-  ShortName: string
+  ShortName: string @localized
   _: [Realms]
   _: Realms
   _: i32
@@ -4353,9 +4353,9 @@ type Realms {
 
 type RecipeUnlockDisplay {
   RecipeId: i32 @unique
-  Description: string
+  Description: string @localized
   CraftingItemClassCategoriesKeys: [CraftingItemClassCategories]
-  UnlockDescription: string
+  UnlockDescription: string @localized
   Rank: i32
   UnlockArea: WorldAreas
 }
@@ -4456,7 +4456,7 @@ type SkillArtVariations {
 
 type SkillGemInfo {
   Id: string @unique
-  Description: string
+  Description: string @localized
   VideoURL1: string
   SkillGemsKey: SkillGems
   VideoURL2: string
@@ -4472,11 +4472,11 @@ type SkillGems @tags(list: ["item:def"]) {
   GemTagsKeys: [GemTags]
   VaalVariant_BaseItemTypesKey: BaseItemTypes
   IsVaalVariant: bool
-  Description: string
+  Description: string @localized
   Consumed_ModsKey: Mods
   GrantedEffectsKey2: GrantedEffects
   MinionGlobalSkillLevelStat: Stats
-  SupportSkillName: string
+  SupportSkillName: string @localized
   IsSupport: bool
   _: bool
   _: bool
@@ -4547,7 +4547,7 @@ type SkillTrapVariations {
 
 type SocketNotches {
   Id: string
-  Description: string
+  Description: string @localized
   RedSocketImage: string
   BlueSocketImage: string
   GreenSocketImage: string
@@ -4647,7 +4647,7 @@ type Stats @tags(list: ["crafting"]) {
   IsLocal: bool
   IsWeaponLocal: bool
   Semantics: StatSemantics
-  Text: string
+  Text: string @localized
   _: bool
   IsVirtual: bool
   MainHandAlias_StatsKey: Stats
@@ -4817,8 +4817,8 @@ type TableMonsterSpawners {
 type Tags {
   Id: string @unique
   _: i32
-  DisplayString: string
-  Name: string
+  DisplayString: string @localized
+  Name: string @localized
 }
 
 type TalkingPetAudioEvents {
@@ -4863,8 +4863,8 @@ type TerrainPlugins {
 
 type Tips {
   Id: string @unique
-  Text: string
-  TextXBox: string
+  Text: string @localized
+  TextXBox: string @localized
 }
 
 type Topologies {
@@ -4948,7 +4948,7 @@ type UITalkText {
   Id: string @unique
   UITalkCategoriesKey: UITalkCategories
   OGGFile: string @file(ext: ".ogg")
-  Text: string
+  Text: string @localized
   _: bool
   NPCTextAudio: NPCTextAudio
 }
@@ -4981,7 +4981,7 @@ type UniqueMaps @tags(list: ["item:unique"]) {
   FlavourTextKey: FlavourText
   HasGuildCharacter: bool
   GuildCharacter: string
-  Name: string
+  Name: string @localized
   IsDropDisabled: bool
 }
 
@@ -5023,14 +5023,14 @@ type VirtualStatContextFlags {
 
 type VoteState {
   Id: string @unique
-  Text: string
+  Text: string @localized
 }
 
 type VoteType {
   Id: string @unique
-  Text: string
-  AcceptText: string
-  RejectText: string
+  Text: string @localized
+  AcceptText: string @localized
+  RejectText: string @localized
   _: i32
   _: i32
   _: i32
@@ -5075,7 +5075,7 @@ type WindowCursors {
   _: i32
   _: i32
   CursorHover: string @file(ext: ".bmp")
-  Description: string
+  Description: string @localized
   IsEnabled: bool
   _: i32
 }
@@ -5098,14 +5098,14 @@ type Words {
   SpawnWeight_Tags: [Tags]
   SpawnWeight_Values: [i32]
   _: i32
-  Text2: string
+  Text2: string @localized
   "the inflection identifier used for i18n in related fields"
-  Inflection: string
+  Inflection: string @localized
 }
 
 type WorldAreas {
   Id: string @unique
-  Name: string
+  Name: string @localized
   Act: i32
   IsTown: bool
   HasWaypoint: bool
@@ -5139,7 +5139,7 @@ type WorldAreas {
   AreaTypeTags: [Tags]
   _: i32
   IsHideout: bool
-  Inflection: string
+  Inflection: string @localized
   _: i32
   _: i32
   Tags: [Tags]
@@ -5220,7 +5220,7 @@ type WorldPopupIconTypes {
   _: f32
   _: f32
   _: f32
-  _: string
+  _: string @localized
 }
 
 # Added 3.21
@@ -5271,8 +5271,8 @@ type AtlasMemoryLine {
 type BattlePasses {
   Id: string @unique
   _: i32
-  International_BK2File: string
-  China_BK2File: string
+  International_BK2File: string @localized
+  China_BK2File: string @localized
   _: i32
   _: bool
   Id2: string @unique
@@ -5286,14 +5286,14 @@ type BattlePassRewards {
   _: i32
   _: i32
   Id: string
-  _: [string]
+  _: [_]
   _: i32
-  _: string
+  _: string @localized
   _: string
   _: i32
   _: i32
   _: bool
-  _: string
+  _: string @localized
   _: rid
   _: bool
   _: i32
@@ -5312,7 +5312,7 @@ type BattlePassRewards {
 # Added 3.21
 type BattlePassTracks {
   Id: string @unique
-  Description: string
+  Description: string @localized
 }
 
 # Added 3.20
@@ -5643,10 +5643,10 @@ type LegacyAtlasInfluenceOutcomes {
 # Added 3.22
 type MapStashSubstashGroup {
   Id: string @unique
-  Label: string
+  Label: string @localized
   Icon: string
   _: rid
-  Description: string
+  Description: string @localized
 }
 
 # Added 3.19
@@ -5660,7 +5660,7 @@ type MemoryLineType {
   _: i32
   _: rid
   _: i32
-  Suffix: string
+  Suffix: string @localized
   _: rid
 }
 
@@ -5849,13 +5849,13 @@ type RelicInventoryLayout {
   _: i32
   _: i32
   _: i32
-  Requirement: string
+  Requirement: string @localized
 }
 
 # Added 3.20
 type RelicItemEffectVariations {
   Id: string @unique
-  Description: string
+  Description: string @localized
   DDSFile: string @file(ext: ".dds")
 }
 
@@ -5911,7 +5911,7 @@ type TieredMicrotransactions {
 type TieredMicrotransactionsVisuals {
   _: rid
   _: i32
-  Description: string
+  Description: string @localized
   DDSFile: string @file(ext: ".dds")
   _: i32
 }
@@ -5925,7 +5925,7 @@ type TormentedSpiritLifeScalingPerLevel {
 # Added 3.19
 type TradeMarketImplicitModDisplay {
   _: rid @unique
-  _: string
+  _: string @localized
 }
 
 # Added 3.21

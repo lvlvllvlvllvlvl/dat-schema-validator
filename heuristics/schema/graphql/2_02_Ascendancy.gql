@@ -10,7 +10,7 @@ type LabyrinthAreas {
 type LabyrinthBonusItems {
   BaseItemType: BaseItemTypes
   AreaLevel: i32
-  LabyrinthName: string
+  LabyrinthName: string @localized
 }
 
 type LabyrinthExclusionGroups {
@@ -40,7 +40,7 @@ type LabyrinthRewardTypes {
 
 type Labyrinths @tags(list: ["item:droptable", "item:unique"]) {
   Tier: i32
-  Name: string
+  Name: string @localized
   OfferingItem: BaseItemTypes
   QuestFlag: QuestFlags
   RequiredTrials: [LabyrinthTrials]
@@ -83,7 +83,7 @@ type LabyrinthSecrets {
   _: bool
   _: bool
   _: bool
-  Name: string
+  Name: string @localized
   AchievementItemsKey: AchievementItems
   LabyrinthTierMinimum: i32
   LabyrinthTierMaximum: i32

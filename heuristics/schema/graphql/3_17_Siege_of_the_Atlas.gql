@@ -66,7 +66,7 @@ type AtlasUpgradesInventoryLayout {
   _: i32
   Voidstone: BaseItemTypes
   _: i32
-  Objective: string
+  Objective: string @localized
   GrantAtlasUpgrade: QuestFlags
   _: rid
 }
