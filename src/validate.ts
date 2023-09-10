@@ -5,12 +5,6 @@ import * as fs from "fs/promises";
 import path from "path";
 import { SCHEMA_URL, SchemaFile } from "pathofexile-dat-schema";
 import {
-  decompressSliceInBundle,
-  getDirContent,
-  getFileInfo,
-  readIndexBundle,
-} from "pathofexile-dat/bundles.js";
-import {
   analyzeDatFile,
   readDatFile,
   setWasmExports,
@@ -18,7 +12,13 @@ import {
 } from "pathofexile-dat/dat.js";
 import { argv, exit } from "process";
 import { ShapeChange } from "./changes.js";
-import { NamedHeader, exportAllRows, importHeaders } from "./datfile.js";
+import {
+  CdnBundleLoader,
+  FileLoader,
+  NamedHeader,
+  exportAllRows,
+  importHeaders,
+} from "./datfile.js";
 import { Enumeration, Table, exportGQL } from "./graphql.js";
 import { getPossibleHeaders, guessType } from "./heuristic.js";
 
@@ -40,7 +40,8 @@ const progress =
   args && !args.find((v) => v === "-q" || v === "--quiet")
     ? new SingleBar(
         {
-          format: "[{bar}] {percentage}% | ETA: {eta}s | {value}/{total} | {lang} | {table}",
+          format:
+            "[{bar}] {percentage}% | ETA: {eta}s | {value}/{total} | {step} | {lang} | {table}",
         },
         Presets.rect
       )
@@ -52,111 +53,7 @@ if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
   exit();
 }
-
-const BUNDLE_DIR = "Bundles2";
 const promises = [] as Promise<any>[];
-
-class FileLoader {
-  private bundleCache = new Map<string, ArrayBuffer>();
-
-  constructor(
-    private bundleLoader: IBundleLoader,
-    private index: {
-      bundlesInfo: Uint8Array;
-      filesInfo: Uint8Array;
-      pathReps: Uint8Array;
-      dirsInfo: Uint8Array;
-    }
-  ) {}
-
-  static async create(bundleLoader: IBundleLoader) {
-    console.log("Loading bundles index...");
-
-    const indexBin = await bundleLoader.fetchFile("_.index.bin");
-    const indexBundle = await decompressSliceInBundle(new Uint8Array(indexBin));
-    const _index = readIndexBundle(indexBundle);
-    const pathReps = await decompressSliceInBundle(_index.pathRepsBundle);
-
-    return new FileLoader(bundleLoader, {
-      bundlesInfo: _index.bundlesInfo,
-      filesInfo: _index.filesInfo,
-      pathReps: pathReps,
-      dirsInfo: _index.dirsInfo,
-    });
-  }
-
-  private async fetchBundle(name: string) {
-    let bundleBin = this.bundleCache.get(name);
-    if (!bundleBin) {
-      bundleBin = await this.bundleLoader.fetchFile(name);
-      this.bundleCache.set(name, bundleBin);
-    }
-    return bundleBin;
-  }
-
-  async getFileContents(fullPath: string) {
-    const location = getFileInfo(fullPath, this.index.bundlesInfo, this.index.filesInfo);
-    const bundleBin = await this.fetchBundle(location.bundle);
-    return await decompressSliceInBundle(new Uint8Array(bundleBin), location.offset, location.size);
-  }
-
-  listFiles(dir: string) {
-    return getDirContent("data", this.index.pathReps, this.index.dirsInfo).files;
-  }
-
-  clearBundleCache() {
-    this.bundleCache.clear();
-  }
-}
-
-interface IBundleLoader {
-  fetchFile: (name: string) => Promise<ArrayBuffer>;
-}
-
-class CdnBundleLoader {
-  private constructor(private cacheDir: string, private patchVer: string) {}
-
-  private filePromise = Promise.resolve();
-
-  static async create(cacheRoot: string, patchVer: string) {
-    const cacheDir = path.join(cacheRoot, patchVer);
-    try {
-      await fs.access(cacheDir);
-    } catch {
-      console.log("Creating new bundle cache...");
-      await fs.mkdir(cacheDir, { recursive: true });
-    }
-    return new CdnBundleLoader(cacheDir, patchVer);
-  }
-
-  async fetchFile(name: string): Promise<ArrayBuffer> {
-    const cachedFilePath = path.join(this.cacheDir, name.replace(/\//g, "@"));
-
-    //ensure previous file write has completed before reading
-    await this.filePromise;
-
-    try {
-      await fs.access(cachedFilePath);
-      const bundleBin = await fs.readFile(cachedFilePath);
-      return bundleBin;
-    } catch {}
-
-    console.log(`Loading from CDN: ${name} ...`);
-
-    const webpath = `${this.patchVer}/${BUNDLE_DIR}/${name}`;
-    const response = await fetch(`http://patchcdn.pathofexile.com/${webpath}`);
-    if (!response.ok) {
-      console.error(`Failed to fetch ${name} from CDN.`);
-      process.exit(1);
-    }
-    const bundleBin = await response.arrayBuffer();
-    this.filePromise = fs.writeFile(
-      cachedFilePath,
-      Buffer.from(bundleBin, 0, bundleBin.byteLength)
-    );
-    return bundleBin;
-  }
-}
 
 const errors = [] as string[];
 const tablesSeen = new Set<string>();
@@ -170,7 +67,6 @@ const metafiles = Object.fromEntries(
   ])
 );
 
-console.log("Loading schema for dat files");
 const version = await fetch(
   "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt"
 ).then((r) => r.text());
@@ -179,7 +75,6 @@ const schema: SchemaFile = await fetch(SCHEMA_URL).then((r) => r.json());
 promises.push(fs.writeFile("schema.json", JSON.stringify(schema, null, 2)));
 
 const loader = await FileLoader.create(await CdnBundleLoader.create(path.join(".cache"), version));
-
 const wasm = await fs.readFile("node_modules/pathofexile-dat/dist/analysis.wasm");
 const { instance } = await WebAssembly.instantiate(wasm);
 setWasmExports(instance.exports as any);
@@ -217,169 +112,185 @@ for (const tr of includeTranslations) {
       (f) => f.endsWith(".dat64") && (allTables || args?.includes(path.parse(f).name.toLowerCase()))
     )
     .sort();
-  progress?.start(files.length, 0, { lang: tr.name });
-  for (const file of files) {
-    try {
+  progress?.start(files.length, 0, { step: "loading files", lang: tr.name, table: "..." });
+  const dataFiles = await Promise.all(
+    files.map(async (file) => {
       const fileComponents = path.parse(file);
       const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
-      progress?.increment({ lang: tr.name, table: table.name });
       const buf = await loader.getFileContents(file).catch((e) => {
         console.error(e);
       });
-      if (!buf) {
-        continue;
-      }
-
-      const csvName = metafiles[table.name.toLowerCase()];
-      const csvFile = csvName && (await fs.readFile(csvName));
-      delete metafiles[table.name.toLowerCase()];
-      const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
-      table.added = meta?.[0]?.version;
-      if (csvName && csvName !== csvName.toLowerCase() && table.name === table.name.toLowerCase()) {
-        table.name = path.parse(csvName).name;
-      }
-
-      tablesSeen.add(table.name);
-
-      const datFile = readDatFile(".dat64", buf);
-      const columnStats = analyzeDatFile(datFile);
-      if (columnStats.length !== datFile.rowLength) {
-        console.log(table.name, columnStats.length, datFile.rowLength);
-      }
-
-      if (datFile.rowLength) {
-        let invalid = table.columns.length;
-        const headers = importHeaders(table, datFile, columnStats);
-        headers.forEach((header, i) => {
-          try {
-            if (
-              (Array.isArray(header) && !header.length) ||
-              (!Array.isArray(header) && !validateHeader(header, columnStats))
-            ) {
-              invalid = Math.min(invalid, i);
-              const changeVer = meta?.findLast((v) => v.version !== version)?.version;
-              const change = changeVer ? ` Last changed in version ${changeVer}` : "";
-              errors.push(
-                Array.isArray(header)
-                  ? `${table.name}.dat64 column ${i + 1} "<unknown>": array not valid.${change}`
-                  : `${table.name}.dat64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
-                      header
-                    )} not valid at offset ${header.offset}.${change}`
-              );
-            }
-          } catch (e) {
-            console.error("Validation error", header, e);
-          }
-        });
-
-        //Remove all columns after first invalid column
-        if (invalid < table.columns.length) {
-          table.columns = table.columns.slice(0, invalid);
+      progress?.increment({ table: table.name });
+      return { file, table, buf };
+    })
+  );
+  progress?.start(files.length, 0, { step: "processing", lang: tr.name, table: "Initializing..." });
+  await Promise.all(
+    dataFiles.map(async ({ file, table, buf }) => {
+      try {
+        if (!buf) {
+          return;
+        }
+        const csvName = metafiles[table.name.toLowerCase()];
+        const csvFile = csvName && (await fs.readFile(csvName));
+        delete metafiles[table.name.toLowerCase()];
+        const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
+        table.added = meta?.[0]?.version;
+        if (
+          csvName &&
+          csvName !== csvName.toLowerCase() &&
+          table.name === table.name.toLowerCase()
+        ) {
+          table.name = path.parse(csvName).name;
         }
 
-        const possible = (
-          await getPossibleHeaders(
-            headers.slice(0, invalid),
-            columnStats,
-            datFile,
-            datFile.rowLength
-          )
-        )[0];
+        tablesSeen.add(table.name);
 
-        if (possible.length) {
-          const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFile) : p));
-          promises.push(
-            fs.writeFile(
-              path.join("heuristics/csv", tr.path.replace("data", "."), `${table.name}.csv`),
-              csv.stringify(exportAllRows(hdr, datFile, table.name), {
-                cast: {
-                  string: (v) => JSON.stringify(v).slice(1, -1),
-                },
-                quoted_empty: true,
-                quoted_string: true,
-              })
+        const datFile = readDatFile(".dat64", buf);
+        const columnStats = analyzeDatFile(datFile);
+
+        if (datFile.rowLength) {
+          let invalid = table.columns.length;
+          const headers = importHeaders(table, datFile, columnStats);
+          headers.forEach((header, i) => {
+            try {
+              if (
+                (Array.isArray(header) && !header.length) ||
+                (!Array.isArray(header) && !validateHeader(header, columnStats))
+              ) {
+                invalid = Math.min(invalid, i);
+                const changeVer = meta?.findLast((v) => v.version !== version)?.version;
+                const change = changeVer ? ` Last changed in version ${changeVer}` : "";
+                errors.push(
+                  Array.isArray(header)
+                    ? `${table.name}.dat64 column ${i + 1} "<unknown>": array not valid.${change}`
+                    : `${table.name}.dat64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
+                        header
+                      )} not valid at offset ${header.offset}.${change}`
+                );
+              }
+            } catch (e) {
+              console.error("Validation error", header, e);
+            }
+          });
+
+          //Remove all columns after first invalid column
+          if (invalid < table.columns.length) {
+            table.columns = table.columns.slice(0, invalid);
+          }
+
+          const possible = (
+            await getPossibleHeaders(
+              headers.slice(0, invalid),
+              columnStats,
+              datFile,
+              datFile.rowLength
             )
-          );
-          promises.push(
-            fs.writeFile(
-              path.join("heuristics/schema/json", `${table.name}.json`),
-              JSON.stringify(hdr, undefined, 2)
-            )
-          );
-          promises.push(
-            fs.writeFile(
-              path.join(tr.path, `${table.name}.csv`),
-              csv.stringify(
-                exportAllRows(
-                  headers
-                    .slice(0, invalid)
-                    .map((p) => (Array.isArray(p) ? guessType(p, datFile) : p)),
-                  datFile,
-                  table.name
-                ),
-                {
+          )[0];
+
+          if (possible.length) {
+            const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFile) : p));
+            promises.push(
+              fs.writeFile(
+                path.join("heuristics/csv", tr.path.replace("data", "."), `${table.name}.csv`),
+                csv.stringify(exportAllRows(hdr, datFile, table.name), {
                   cast: {
                     string: (v) => JSON.stringify(v).slice(1, -1),
                   },
                   quoted_empty: true,
                   quoted_string: true,
-                }
+                })
               )
+            );
+            promises.push(
+              fs.writeFile(
+                path.join("heuristics/schema/json", `${table.name}.json`),
+                JSON.stringify(hdr, undefined, 2)
+              )
+            );
+            promises.push(
+              fs.writeFile(
+                path.join(tr.path, `${table.name}.csv`),
+                csv.stringify(
+                  exportAllRows(
+                    headers
+                      .slice(0, invalid)
+                      .map((p) => (Array.isArray(p) ? guessType(p, datFile) : p)),
+                    datFile,
+                    table.name
+                  ),
+                  {
+                    cast: {
+                      string: (v) => JSON.stringify(v).slice(1, -1),
+                    },
+                    quoted_empty: true,
+                    quoted_string: true,
+                  }
+                )
+              )
+            );
+            headerMap[table.name] = hdr;
+            tables.push(table);
+          } else {
+            enumerations.push(table);
+          }
+        } else {
+          promises.push(
+            fs.writeFile(
+              path.join(tr.path, `${table.name}.csv`),
+              table.enumerators?.length
+                ? `"values"\n${table.enumerators.map((v) => v || "").join("\n")}\n`
+                : `"rownum"\n${[...Array(datFile.rowCount)].map((_, i) => i).join("\n")}\n`
             )
           );
-          headerMap[table.name] = hdr;
-          tables.push(table);
-        } else {
           enumerations.push(table);
         }
-      } else {
-        promises.push(
-          fs.writeFile(
-            path.join(tr.path, `${table.name}.csv`),
-            table.enumerators?.length
-              ? `"values"\n${table.enumerators.map((v) => v || "").join("\n")}\n`
-              : `"rownum"\n${[...Array(datFile.rowCount)].map((_, i) => i).join("\n")}\n`
-          )
-        );
-        enumerations.push(table);
-      }
 
-      const shape: ShapeChange = {
-        version,
-        row_count: datFile.rowCount,
-        row_width: datFile.rowLength,
-        fixed_size: datFile.dataFixed.length,
-        var_offset: datFile.dataFixed.length + datFile.memsize / 2,
-        var_size: datFile.dataVariable.length,
-      };
-      var latest = meta.length === 0 ? null : meta[meta.length - 1];
-      const metaName = path.join("meta", table.name + ".csv");
-      if (
-        Object.keys(shape).find(
-          (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k])
-        )
-      ) {
-        meta.push(shape);
-        if (csvFile && csvName !== metaName) {
-          promises.push(fs.rm(csvName));
+        const shape: ShapeChange = {
+          version,
+          row_count: datFile.rowCount,
+          row_width: datFile.rowLength,
+          fixed_size: datFile.dataFixed.length,
+          var_offset: datFile.dataFixed.length + datFile.memsize / 2,
+          var_size: datFile.dataVariable.length,
+        };
+        var latest = meta.length === 0 ? null : meta[meta.length - 1];
+        const metaName = path.join("meta", table.name + ".csv");
+        if (
+          Object.keys(shape).find(
+            (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k])
+          )
+        ) {
+          meta.push(shape);
+          if (csvFile && csvName !== metaName) {
+            promises.push(fs.rm(csvName));
+          }
+          promises.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })));
         }
-        promises.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })));
+      } catch (e) {
+        console.error(file, e);
+      } finally {
+        progress?.increment({ table: table.name });
       }
-    } catch (e) {
-      console.error(file, e);
-    }
-  }
+    })
+  );
   progress?.stop();
 }
 
 promises.push(
-  exportGQL(tables, enumerations, (table) => headerMap[table.name], "heuristics/schema/graphql")
+  exportGQL(
+    tables.sort((a, b) => a.name.localeCompare(b.name)),
+    enumerations.sort((a, b) => a.name.localeCompare(b.name)),
+    (table) => headerMap[table.name],
+    "heuristics/schema/graphql"
+  )
 );
-errors.length && promises.push(fs.writeFile("errors.txt", errors.join("\n")));
+errors.length && promises.push(fs.writeFile("errors.txt", errors.sort().join("\n")));
 const missing = schema.tables
   .map((t) => t.name)
   .filter((t) => !tablesSeen.has(t))
-  .map((t) => `missing file ${t}.dat64`);
+  .map((t) => `missing file ${t}.dat64`)
+  .sort();
 missing.length && promises.push(fs.writeFile("missing.txt", missing.sort().join("\n")));
 promises.push(fs.writeFile("filtered-schema.json", JSON.stringify(schema, null, 2)));
 promises.push(fs.writeFile("version.txt", version));

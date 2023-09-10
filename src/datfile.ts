@@ -1,6 +1,105 @@
+import * as fs from "fs/promises";
+import path from "path";
 import { SchemaTable } from "pathofexile-dat-schema";
+import {
+  decompressSliceInBundle,
+  getDirContent,
+  getFileInfo,
+  readIndexBundle,
+} from "pathofexile-dat/bundles.js";
 import { ColumnStats, DatFile, Header, getHeaderLength, readColumn } from "pathofexile-dat/dat.js";
 import { PossibleHeaders, graphqlType, headerTypes, possibleColumnHeaders } from "./heuristic.js";
+
+const BUNDLE_DIR = "Bundles2";
+
+export class FileLoader {
+  private bundleCache = new Map<string, ArrayBuffer>();
+
+  constructor(
+    private bundleLoader: IBundleLoader,
+    private index: {
+      bundlesInfo: Uint8Array;
+      filesInfo: Uint8Array;
+      pathReps: Uint8Array;
+      dirsInfo: Uint8Array;
+    }
+  ) {}
+
+  static async create(bundleLoader: IBundleLoader) {
+    const indexBin = await bundleLoader.fetchFile("_.index.bin");
+    const indexBundle = await decompressSliceInBundle(new Uint8Array(indexBin));
+    const _index = readIndexBundle(indexBundle);
+    const pathReps = await decompressSliceInBundle(_index.pathRepsBundle);
+
+    return new FileLoader(bundleLoader, {
+      bundlesInfo: _index.bundlesInfo,
+      filesInfo: _index.filesInfo,
+      pathReps: pathReps,
+      dirsInfo: _index.dirsInfo,
+    });
+  }
+
+  async getFileContents(fullPath: string) {
+    const location = getFileInfo(fullPath, this.index.bundlesInfo, this.index.filesInfo);
+    const bundleBin = await this.bundleLoader.fetchFile(location.bundle);
+    return await decompressSliceInBundle(new Uint8Array(bundleBin), location.offset, location.size);
+  }
+
+  listFiles(dir: string) {
+    return getDirContent("data", this.index.pathReps, this.index.dirsInfo).files;
+  }
+
+  clearBundleCache() {
+    this.bundleCache.clear();
+  }
+}
+
+export interface IBundleLoader {
+  fetchFile: (name: string) => Promise<ArrayBuffer>;
+}
+
+export class CdnBundleLoader {
+  private constructor(private cacheDir: string, private patchVer: string) {}
+
+  private filePromise: { [name: string]: Promise<any> | undefined } = {};
+
+  static async create(cacheRoot: string, patchVer: string) {
+    const cacheDir = path.join(cacheRoot, patchVer);
+    try {
+      await fs.access(cacheDir);
+    } catch {
+      await fs.mkdir(cacheDir, { recursive: true });
+    }
+    return new CdnBundleLoader(cacheDir, patchVer);
+  }
+
+  async fetchFile(name: string): Promise<ArrayBuffer> {
+    // Ensure only one fetch is running at a time per file
+    return (this.filePromise[name] = (this.filePromise[name] || Promise.resolve()).then(() =>
+      this.doFetchFile(name)
+    ));
+  }
+
+  async doFetchFile(name: string): Promise<ArrayBuffer> {
+    const cachedFilePath = path.join(this.cacheDir, name.replace(/\//g, "@"));
+
+    try {
+      await fs.access(cachedFilePath);
+      return await fs.readFile(cachedFilePath);
+    } catch {}
+
+    const webpath = `${this.patchVer}/${BUNDLE_DIR}/${name}`;
+    const response = await fetch(`http://patchcdn.pathofexile.com/${webpath}`);
+    if (!response.ok) {
+      console.error(`Failed to fetch ${name} from CDN.`);
+      throw await response.text();
+    }
+    const bundleBin = await response.arrayBuffer();
+    await fs.writeFile(cachedFilePath, Buffer.from(bundleBin, 0, bundleBin.byteLength));
+
+    return bundleBin;
+  }
+}
 
 export function exportAllRows(headers: NamedHeader[], datFile: DatFile, name: string) {
   const columns = headers.map((header) => {

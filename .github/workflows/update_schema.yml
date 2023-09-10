@@ -25,6 +25,10 @@ jobs:
       - name: set version
         id: set-version
         run: echo "version=$(cat version.txt)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v3
+        with:
+          path: .cache
+          key: poecdn-${{ hashFiles('version.txt') }}
       - name: commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:

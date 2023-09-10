@@ -56,7 +56,7 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
         }
         if (col.unique) {
           if (header.unique === false) {
-            console.log(
+            console.warn(
               table.name,
               "column",
               i,

@@ -110,9 +110,6 @@ export async function getPossibleHeaders(
       return exact.sort((a, b) => a.length - b.length).slice(0, MAX_POSSIBLES);
     }
   }
-  if (!recursive) {
-    console.log("No exact match");
-  }
   return [];
 }
 
@@ -156,10 +153,11 @@ export function possibleColumnHeaders(
     !possibleHeaders.find((h) => h[0].type.array)
   ) {
     const bool = possibleHeaders.pop()!;
-    if (!bool[0].type.boolean) {
-      console.log("Expected last header to be boolean", bool);
-    } else {
+    if (bool[0].type.boolean) {
       possibleHeaders.unshift(bool);
+    } else {
+      console.warn("last header was not boolean");
+      possibleHeaders.push(bool);
     }
   }
   return possibleHeaders.map((arr) => (arr.length === 1 ? arr[0] : arr));
@@ -171,7 +169,7 @@ export function guess(possibles: PossibleHeaders, datFile: DatFile): NamedHeader
 
 function assertEq(l: number, r: number, msg: any) {
   if (l !== r) {
-    console.log(msg);
+    console.debug(msg);
     throw "offsets should be equal here";
   }
   return l;
