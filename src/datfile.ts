@@ -93,12 +93,17 @@ export class CdnBundleLoader {
     const webpath = `${this.patchVer}/${BUNDLE_DIR}/${name}`;
     let response: Response | null = null;
     for (let i = 0; i < 5; i++) {
-      response = await fetch(`http://patchcdn.pathofexile.com/${webpath}`);
-      if (response.ok) {
-        break;
-      } else {
-        await sleep(1000 * Math.pow(2, i));
+      try {
+        response = await fetch(`http://patchcdn.pathofexile.com/${webpath}`);
+        if (response.ok) {
+          break;
+        }
+        console.warn("error downloading", name, await response.text());
+      } catch (e) {
+        console.warn("error downloading", name, e);
       }
+
+      await sleep(1000 * Math.pow(2, i));
     }
     if (!response?.ok) {
       console.error(`Failed to fetch ${name} from CDN.`);
