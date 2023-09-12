@@ -47,7 +47,7 @@ const progress =
     : null;
 if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log(
-    "Usage: npx tsx src/validate.ts [-q|--quiet] [-t|--table <tables>] [-l|--lang <languages>]"
+    "Usage: npx tsx src/validate.ts [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>]"
   );
   console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
   exit();
@@ -66,10 +66,21 @@ const metafiles = Object.fromEntries(
   ])
 );
 
+let schema: SchemaFile;
+const schemaArg = (args?.findIndex((s) => s === "-s" || s === "--schema") ?? -1) + 1;
+if (args && schemaArg) {
+  if (args[schemaArg].startsWith("http://") || args[schemaArg].startsWith("https://")) {
+    schema = await fetch(args[schemaArg]).then((r) => r.json());
+  } else {
+    schema = JSON.parse(await fs.readFile(args[schemaArg], "utf8"));
+  }
+} else {
+  schema = await fetch(SCHEMA_URL).then((r) => r.json());
+}
+
 const version = await fetch(
   "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt"
 ).then((r) => r.text());
-const schema: SchemaFile = await fetch(SCHEMA_URL).then((r) => r.json());
 
 promises.push(fs.writeFile("schema.json", JSON.stringify(schema, null, 2)));
 
