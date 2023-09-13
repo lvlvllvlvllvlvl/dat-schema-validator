@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1694162638,
+  "createdAt": 1694529643,
   "tables": [
     {
       "name": "RogueExiles",
@@ -907,13 +907,15 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Influences",
           "description": null,
           "array": true,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "InfluenceTypes"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -65605,7 +65607,7 @@
           "unique": false,
           "localized": false,
           "references": {
-            "table": "ClientStrings"
+            "table": "ReminderText"
           },
           "until": null,
           "file": null,
