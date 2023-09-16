@@ -99,10 +99,11 @@ let includeTranslations = args?.find((v) => v === "-l" || v === "--lang" || v ==
   ? TRANSLATIONS.filter((t) => args?.includes(t.name.toLowerCase()))
   : TRANSLATIONS;
 
-await fs.rm("heuristics", { recursive: true, force: true });
-await fs.mkdir("heuristics/csv", { recursive: true });
-await fs.mkdir("heuristics/schema/json", { recursive: true });
-await fs.mkdir("heuristics/schema/graphql", { recursive: true });
+const heuristics = "tmp/heuristics";
+await fs.rm("tmp", { recursive: true, force: true });
+await fs.mkdir(`${heuristics}/csv`, { recursive: true });
+await fs.mkdir(`${heuristics}/schema/json`, { recursive: true });
+await fs.mkdir(`${heuristics}/schema/graphql`, { recursive: true });
 
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
   Object.fromEntries(schema.tables.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t])),
@@ -199,7 +200,7 @@ await Promise.all(
           const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFiles[0]) : p));
           promises.push(
             fs.writeFile(
-              path.join("heuristics/csv", `${table.name}.csv`),
+              path.join(`${heuristics}/csv`, `${table.name}.csv`),
               csv.stringify(
                 exportAllRows(
                   hdr,
@@ -218,7 +219,7 @@ await Promise.all(
           );
           promises.push(
             fs.writeFile(
-              path.join("heuristics/schema/json", `${table.name}.json`),
+              path.join(`${heuristics}/schema/json`, `${table.name}.json`),
               JSON.stringify(hdr, undefined, 2)
             )
           );
@@ -267,7 +268,7 @@ promises.push(
     tables.sort((a, b) => a.name.localeCompare(b.name)),
     enumerations.sort((a, b) => a.name.localeCompare(b.name)),
     (table) => headerMap[table.name],
-    "heuristics/schema/graphql"
+    `${heuristics}/schema/graphql`
   )
 );
 errors.length && promises.push(fs.writeFile("errors.txt", errors.sort().join("\n")));
@@ -290,3 +291,6 @@ await Promise.all(
     }
   })
 );
+
+await fs.rm("heuristics", { recursive: true });
+await fs.rename(heuristics, "heuristics");
