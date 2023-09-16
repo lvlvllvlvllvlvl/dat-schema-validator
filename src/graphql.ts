@@ -20,7 +20,7 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
   let fields = headers
     .map((header, i) => {
       const col = table.columns?.[i];
-
+      
       let type = "";
       if (col?.references?.table) {
         type = col.references.table;
@@ -51,7 +51,10 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
         if (col.references && "column" in col.references) {
           directives.push(`ref(column: "${col.references.column}")`);
         }
-        if (col.unique) {
+        if (
+          col.unique ||
+          (header.unique && (col.name?.includes("Id") || col.name?.includes("ID")))
+        ) {
           if (header.unique === false) {
             console.warn(
               table.name,
