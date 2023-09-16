@@ -1,24 +1,54 @@
+import { ZstdDec } from "@oneidentity/zstd-js/decompress";
 import * as fs from "fs/promises";
+import * as oldBundles from "old-dat/bundles.js";
 import path from "path";
 import { SchemaTable } from "pathofexile-dat-schema";
-import {
-  decompressSliceInBundle,
-  getDirContent,
-  getFileInfo,
-  readIndexBundle,
-} from "pathofexile-dat/bundles.js";
+import * as newBundles from "pathofexile-dat/bundles.js";
 import { ColumnStats, DatFile, Header, getHeaderLength, readColumn } from "pathofexile-dat/dat.js";
 import { PossibleHeaders, graphqlType, headerTypes, possibleColumnHeaders } from "./heuristic.js";
+import { compareVersion } from "./versions.js";
 
 const BUNDLE_DIR = "Bundles2";
 const sleep = (ms: number) =>
   new Promise((resolve) => (ms ? setTimeout(resolve, ms) : setImmediate(resolve)));
+
+interface ManifestLine {
+  path: string;
+  phash: string;
+  sha256: string;
+  size: number;
+  comp: boolean;
+}
+
+const inyaBuilds = "https://inya.zao.se/poe-meta/builds/public";
+const inyaManifest = (mfid: string) => `https://inya.zao.se/poe-index/${mfid}-loose.ndjson.zst`;
+const inyaFile = (sha256: string, suffix: string) =>
+  `https://inya.zao.se/poe-data/${sha256.slice(0, 2)}/${sha256}.bin${suffix}`;
+
+async function retryFetch(url: string) {
+  for (let i = 0; i < 5; i++) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        return response;
+      }
+      console.warn("error downloading", url, await response.text());
+    } catch (e) {
+      console.warn("error downloading", url, e);
+    }
+
+    await sleep(1000 * Math.pow(2, i));
+  }
+  throw url;
+}
 
 export class FileLoader {
   private bundleCache = new Map<string, ArrayBuffer>();
 
   constructor(
     private bundleLoader: IBundleLoader,
+    private bundles: typeof newBundles | typeof oldBundles,
+    private newVerson: boolean,
     private index: {
       bundlesInfo: Uint8Array;
       filesInfo: Uint8Array;
@@ -28,12 +58,14 @@ export class FileLoader {
   ) {}
 
   static async create(bundleLoader: IBundleLoader) {
+    const newVersion = compareVersion()("3.21.0", bundleLoader.patchVer) < 0;
+    const bundles = newVersion ? newBundles : oldBundles;
     const indexBin = await bundleLoader.fetchFile("_.index.bin");
-    const indexBundle = await decompressSliceInBundle(new Uint8Array(indexBin));
-    const _index = readIndexBundle(indexBundle);
-    const pathReps = await decompressSliceInBundle(_index.pathRepsBundle);
+    const indexBundle = await bundles.decompressSliceInBundle(new Uint8Array(indexBin));
+    const _index = bundles.readIndexBundle(indexBundle);
+    const pathReps = await bundles.decompressSliceInBundle(_index.pathRepsBundle);
 
-    return new FileLoader(bundleLoader, {
+    return new FileLoader(bundleLoader, bundles, newVersion, {
       bundlesInfo: _index.bundlesInfo,
       filesInfo: _index.filesInfo,
       pathReps: pathReps,
@@ -42,13 +74,25 @@ export class FileLoader {
   }
 
   async getFileContents(fullPath: string) {
-    const location = getFileInfo(fullPath, this.index.bundlesInfo, this.index.filesInfo);
+    const location = this.bundles.getFileInfo(
+      this.newVerson ? fullPath.toLowerCase() : fullPath,
+      this.index.bundlesInfo,
+      this.index.filesInfo
+    );
     const bundleBin = await this.bundleLoader.fetchFile(location.bundle);
-    return await decompressSliceInBundle(new Uint8Array(bundleBin), location.offset, location.size);
+    return await this.bundles.decompressSliceInBundle(
+      new Uint8Array(bundleBin),
+      location.offset,
+      location.size
+    );
   }
 
   listFiles(dir: string) {
-    return getDirContent(dir, this.index.pathReps, this.index.dirsInfo).files;
+    return this.bundles.getDirContent(
+      this.newVerson ? dir.toLowerCase() : dir,
+      this.index.pathReps,
+      this.index.dirsInfo
+    ).files;
   }
 
   clearBundleCache() {
@@ -58,21 +102,39 @@ export class FileLoader {
 
 export interface IBundleLoader {
   fetchFile: (name: string) => Promise<ArrayBuffer>;
+  patchVer: string;
 }
 
 export class CdnBundleLoader {
-  private constructor(private cacheDir: string, private patchVer: string) {}
+  private constructor(
+    private cacheDir: string,
+    public patchVer: string,
+    private manifest?: Record<string, string>,
+    private zstd?: ZstdDec
+  ) {}
 
   private filePromise: { [name: string]: Promise<any> | undefined } = {};
 
-  static async create(cacheRoot: string, patchVer: string) {
+  static async create(cacheRoot: string, patchVer: string, inya?: boolean) {
     const cacheDir = path.join(cacheRoot, patchVer);
     try {
       await fs.access(cacheDir);
     } catch {
       await fs.mkdir(cacheDir, { recursive: true });
     }
-    return new CdnBundleLoader(cacheDir, patchVer);
+    let manifest: any = undefined;
+    let zstd: any = undefined;
+    if (inya) {
+      zstd = import("@oneidentity/zstd-js/decompress").then(({ ZstdInit }) => ZstdInit());
+      const build = await retryFetch(inyaBuilds)
+        .then((r) => r.json())
+        .then((builds) => Object.values(builds))
+        .then((builds: any[]) => builds.find((build) => build.version.split(" ")[0] === patchVer));
+      manifest = await Object.entries(build.manifests)
+        .map(([k, v]) => `${k}/${v}`)
+        .reduce(async (mf, mfid) => await this.getManifest(mfid, await zstd, mf), {});
+    }
+    return new CdnBundleLoader(cacheDir, patchVer, manifest, await zstd);
   }
 
   async fetchFile(name: string): Promise<ArrayBuffer> {
@@ -90,29 +152,49 @@ export class CdnBundleLoader {
       return await fs.readFile(cachedFilePath);
     } catch {}
 
-    const webpath = `${this.patchVer}/${BUNDLE_DIR}/${name}`;
-    let response: Response | null = null;
-    for (let i = 0; i < 5; i++) {
-      try {
-        response = await fetch(`http://patchcdn.pathofexile.com/${webpath}`);
-        if (response.ok) {
-          break;
-        }
-        console.warn("error downloading", name, await response.text());
-      } catch (e) {
-        console.warn("error downloading", name, e);
-      }
+    const bundleBin = await (this.manifest ? this.fetchInya(name) : this.fetchCDN(name));
 
-      await sleep(1000 * Math.pow(2, i));
-    }
-    if (!response?.ok) {
-      console.error(`Failed to fetch ${name} from CDN.`);
-      throw await response?.text();
-    }
-    const bundleBin = await response.arrayBuffer();
     await fs.writeFile(cachedFilePath, Buffer.from(bundleBin, 0, bundleBin.byteLength));
 
     return bundleBin;
+  }
+
+  static async getManifest(mfid: string, { ZstdStream }: ZstdDec, manifest) {
+    const ndjson = await retryFetch(inyaManifest(mfid))
+      .then((r) => r.arrayBuffer())
+      .then((r) => Buffer.from(ZstdStream.decompress(new Uint8Array(r))).toString());
+
+    ndjson
+      .split("\n")
+      .filter((l) => l)
+      .map((l) => JSON.parse(l))
+      .forEach((l: ManifestLine) => {
+        const path = inyaFile(l.sha256, l.comp ? ".zst" : "");
+        manifest[l.path] = path;
+        manifest[l.phash] = path;
+      });
+    return manifest;
+  }
+
+  async fetchInya(name: string) {
+    const url = this.manifest?.[`${BUNDLE_DIR}/${name}`];
+    if (!url) {
+      throw name + " not found in the manifest";
+    }
+    const response = await retryFetch(url);
+    if (url.endsWith(".zst")) {
+      return await response
+        .arrayBuffer()
+        .then((r) => this.zstd!.ZstdStream.decompress(new Uint8Array(r)).buffer);
+    } else {
+      return await response.arrayBuffer();
+    }
+  }
+
+  async fetchCDN(name: string) {
+    const webpath = `${this.patchVer}/${BUNDLE_DIR}/${name}`;
+    const response = await retryFetch(`http://patchcdn.pathofexile.com/${webpath}`);
+    return await response.arrayBuffer();
   }
 }
 
@@ -272,9 +354,12 @@ export function importHeaders(
       if (Array.isArray(header)) {
         offset += header[0]?.size || 0;
       } else {
-        const size = getHeaderLength(header, datFiles?.[0]);
+        const size = getHeaderLength(header, datFiles[0]);
         header.size = size;
         offset += size;
+      }
+      if (offset >= datFiles[0].rowLength) {
+        break;
       }
     }
   }

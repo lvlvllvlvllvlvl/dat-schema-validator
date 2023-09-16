@@ -47,9 +47,12 @@ const progress =
     : null;
 if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log(
-    "Usage: npx tsx src/validate.ts [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>]"
+    "Usage: npx tsx src/validate.ts [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>]"
   );
   console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
+  console.log(
+    "If a version is specified, data will be read from inya.zao.se, otherwise the latest version from the poe cdn will be used"
+  );
   exit();
 }
 const promises = [] as Promise<any>[];
@@ -78,13 +81,21 @@ if (args && schemaArg) {
   schema = await fetch(SCHEMA_URL).then((r) => r.json());
 }
 
-const version = await fetch(
-  "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt"
-).then((r) => r.text());
+let version: string;
+const versionArg = (args?.findIndex((s) => s === "-v" || s === "--version") ?? -1) + 1;
+if (args && versionArg) {
+  version = args[versionArg];
+} else {
+  version = await fetch(
+    "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt"
+  ).then((r) => r.text());
+}
 
 promises.push(fs.writeFile("schema.json", JSON.stringify(schema, null, 2)));
 
-const loader = await FileLoader.create(await CdnBundleLoader.create(path.join(".cache"), version));
+const loader = await FileLoader.create(
+  await CdnBundleLoader.create(path.join(".cache"), version, !!versionArg)
+);
 const wasm = await fs.readFile("node_modules/pathofexile-dat/dist/analysis.wasm");
 const { instance } = await WebAssembly.instantiate(wasm);
 setWasmExports(instance.exports as any);
@@ -112,7 +123,7 @@ const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
 loader.clearBundleCache();
 const allTables = !args?.find((v) => v === "-t" || v === "--table" || v === "--tables");
 const files = loader
-  .listFiles("data")
+  .listFiles("Data")
   .filter(
     (f) => f.endsWith(".dat64") && (allTables || args?.includes(path.parse(f).name.toLowerCase()))
   )
@@ -126,12 +137,12 @@ const dataFiles = await Promise.all(
     const fileComponents = path.parse(file);
     const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
     const data = await Promise.all(
-      includeTranslations.map(async (tr) => ({
-        ...tr,
-        buf: await loader
-          .getFileContents(file.replace(/^data/, tr.path))
-          .then(progress?.increment({ table: file.replace(/^data/, tr.path) })),
-      }))
+      includeTranslations.map(async (tr) => {
+        progress?.increment(0.5, { table: file.replace(/^data/, tr.path) });
+        const buf = await loader.getFileContents(file.replace(/^data/, tr.path));
+        progress?.increment(0.5, { table: file.replace(/^data/, tr.path) });
+        return { ...tr, buf };
+      })
     );
     return { file, table, data };
   })
@@ -159,7 +170,13 @@ await Promise.all(
           (f) => f.rowLength === datFiles[0].rowLength || f.rowCount === datFiles[0].rowCount
         )
       ) {
-        console.warn("Not all data is equal");
+        console.warn("Not all data are equal");
+      }
+      if (!columnStats.every((f) => f.length === columnStats[0].length)) {
+        console.warn("Not all stats are equal");
+      }
+      if (columnStats[0].length !== datFiles[0].rowLength) {
+        console.warn("Not stats data are equal");
       }
 
       if (datFiles[0].rowLength) {
