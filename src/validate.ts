@@ -1,4 +1,4 @@
-import { MultiBar, Presets, SingleBar } from "cli-progress";
+import { MultiBar, Presets } from "cli-progress";
 import { parse as csvParse } from "csv-parse/sync";
 import * as csv from "csv-stringify";
 import { rmSync } from "fs";
@@ -55,24 +55,22 @@ const progressBars =
       )
     : null;
 let lastFrame = performance.now();
-const progress: {
-  promises: Promise<any>[];
-  requests?: SingleBar;
-  processing?: SingleBar;
-  output?: SingleBar;
-  push: (task: Promise<any>, table?: string) => void;
-  increment: (bar: "requests" | "processing" | "output", ...args) => void;
-} = {
-  promises: [],
-  push: (task, table = "") => {
-    if (progressBars && !progress.output) {
-      progress.output = progressBars.create(progress.promises.length + 1, 0, {
-        step: "writing files",
-        table: "...",
-      });
-    } else {
-      progress.output?.setTotal(progress.promises.length + 1);
-    }
+const progress = {
+  promises: [] as Promise<any>[],
+  requests: progressBars?.create(9999, 0, {
+    step: "loading files",
+    table: "...",
+  }),
+  processing: progressBars?.create(999, 0, {
+    step: "processing data",
+    table: "...",
+  }),
+  output: progressBars?.create(99, 0, {
+    step: "writing files",
+    table: "...",
+  }),
+  push: (task, table: string) => {
+    progress.output?.setTotal(progress.promises.length + 1);
     progress.promises.push(task.then(() => progress.increment("output", { table })));
   },
   increment: (bar, ...args) => {
@@ -114,6 +112,7 @@ if (args && versionArg) {
   version = await fetch(
     "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt"
   ).then((r) => r.text());
+  progress.push(fs.writeFile("version.txt", version), "version.txt");
 }
 
 let schema: SchemaFile;
@@ -135,7 +134,8 @@ if (args && schemaArg) {
     fs.writeFile(
       path.join(schemaDir, schemaPrefix + "schema.json"),
       JSON.stringify(schema, null, 2)
-    )
+    ),
+    "schema.json"
   );
 }
 
@@ -181,14 +181,8 @@ const files = loader
       (allTables || tablesToProcess?.includes(path.parse(f).name.toLowerCase()))
   )
   .sort();
-progress.requests = progressBars?.create(files.length * includeTranslations.length, 0, {
-  step: "loading files",
-  table: "...",
-});
-progress.processing = progressBars?.create(files.length, 0, {
-  step: "processing data",
-  table: "...",
-});
+progress.requests?.setTotal(files.length * includeTranslations.length);
+progress.processing?.setTotal(files.length);
 
 let concurrentLoads = 0;
 await Promise.all(
@@ -299,13 +293,15 @@ await Promise.all(
                   quoted_string: true,
                 }
               )
-            )
+            ),
+            `${table.name}.csv`
           );
           progress.push(
             fs.writeFile(
               path.join(`${heuristics}/schema/json`, `${table.name}.json`),
               JSON.stringify(hdr, undefined, 2)
-            )
+            ),
+            `${table.name}.json`
           );
           headerMap[table.name] = hdr;
           tables.push(table);
@@ -335,9 +331,9 @@ await Promise.all(
       ) {
         meta.push(shape);
         if (csvFile && csvName !== metaName) {
-          progress.push(fs.rm(csvName));
+          progress.push(fs.rm(csvName), `delete ${csvName}`);
         }
-        progress.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })));
+        progress.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })), metaName);
       }
     } catch (e) {
       console.error(file, e);
@@ -355,11 +351,13 @@ progress.push(
     (table) => headerMap[table.name],
     `${heuristics}/schema/graphql`,
     (...args) => errors.push(args.join(" "))
-  )
+  ),
+  "graphql"
 );
 errors.length &&
   progress.push(
-    fs.writeFile(path.join(schemaDir, schemaPrefix + "errors.txt"), errors.sort().join("\n"))
+    fs.writeFile(path.join(schemaDir, schemaPrefix + "errors.txt"), errors.sort().join("\n")),
+    "errors.txt"
   );
 const missing = schema.tables
   .map((t) => t.name)
@@ -368,15 +366,16 @@ const missing = schema.tables
   .sort();
 missing.length &&
   progress.push(
-    fs.writeFile(path.join(schemaDir, schemaPrefix + "missing.txt"), missing.sort().join("\n"))
+    fs.writeFile(path.join(schemaDir, schemaPrefix + "missing.txt"), missing.sort().join("\n")),
+    "missing.txt"
   );
 progress.push(
   fs.writeFile(
     path.join(schemaDir, schemaPrefix + "filtered.json"),
     JSON.stringify(schema, null, 2)
-  )
+  ),
+  "filtered.json"
 );
-progress.push(fs.writeFile(path.join(schemaDir, schemaPrefix + "version.txt"), version));
 await Promise.all(progress.promises);
 progressBars?.update();
 
