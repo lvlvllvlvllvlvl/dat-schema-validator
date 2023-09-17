@@ -1,5 +1,5 @@
 type WeaponPassiveSkillTypes {
-  Id: string
+  Id: string @unique
   _: i32
 }
 

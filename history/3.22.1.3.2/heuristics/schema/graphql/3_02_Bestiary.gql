@@ -79,7 +79,7 @@ type BestiaryRecipeComponent {
 }
 
 type BestiaryRecipeCategories {
-  Id: string
+  Id: string @unique
   Text: string @localized
 }
 

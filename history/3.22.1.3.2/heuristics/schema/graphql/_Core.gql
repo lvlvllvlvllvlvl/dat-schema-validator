@@ -4,7 +4,7 @@ type AchievementItemRewards @tags(list: ["mtx:reward"]) {
   AchievementItemsKey: AchievementItems
   BaseItemTypesKey: BaseItemTypes
   Message: string @localized
-  Id: string
+  Id: string @unique
 }
 
 type AchievementItems {
@@ -134,8 +134,8 @@ type AddBuffToTargetVarieties {
 }
 
 type AdditionalLifeScaling {
-  IntId: i32
-  ID: string
+  IntId: i32 @unique
+  ID: string @unique
   DatFile: string @file(ext: ".dat")
 }
 
@@ -284,7 +284,7 @@ type ArchetypeRewards @tags(list: ["item:reward"]) {
 }
 
 type Archetypes {
-  Id: string
+  Id: string @unique
   CharactersKey: Characters
   PassiveSkillTreeURL: string
   AscendancyClassName: string @localized
@@ -407,7 +407,7 @@ type AtlasInfluenceData {
 }
 
 type AtlasInfluenceOutcomes {
-  Id: string
+  Id: string @unique
   _: i32
   Type: AtlasInfluenceOutcomeTypes
 }
@@ -421,7 +421,7 @@ enum AtlasInfluenceOutcomeTypes @indexing(first: 0) {
 }
 
 type AtlasInfluenceSets {
-  Id: string
+  Id: string @unique
   InfluencePacks: [AtlasInfluenceOutcomes]
 }
 
@@ -440,7 +440,7 @@ enum AtlasModTiers @indexing(first: 0) { _ }
 
 type AtlasNode {
   WorldAreasKey: WorldAreas
-  ItemVisualIdentityKey: ItemVisualIdentity
+  ItemVisualIdentityKey: ItemVisualIdentity @unique
   _: bool
   MapsKey: Maps
   FlavourTextKey: FlavourText
@@ -466,7 +466,7 @@ type AtlasNode {
 
 type AtlasNodeDefinition {
   WorldAreasKey: WorldAreas
-  ItemVisualIdentityKey: ItemVisualIdentity
+  ItemVisualIdentityKey: ItemVisualIdentity @unique
   _: bool
   Tier: i32
   _: i32
@@ -565,7 +565,7 @@ type BlightStashTabLayout {
 }
 
 type BloodTypes {
-  Id: string
+  Id: string @unique
   _: rid
   _: rid
   _: [rid]
@@ -822,7 +822,7 @@ type Characters {
   _: i32
   _: i32
   TencentVideo: string @file(ext: ".bk2")
-  AttrsAsId: string
+  AttrsAsId: string @unique
   LoginScreen: string @file(ext: ".ao")
   PlayerCritter: string
   PlayerEffect: string
@@ -847,7 +847,7 @@ type Characters {
 }
 
 type CharacterStartQuestState {
-  Id: string
+  Id: string @unique
   QuestKeys: [Quest]
   QuestStates: [i32]
   _: [rid]
@@ -871,7 +871,7 @@ type CharacterStartStates {
 }
 
 type CharacterStartStateSet {
-  Id: string
+  Id: string @unique
 }
 
 type CharacterTextAudio {
@@ -964,7 +964,7 @@ type ClientStrings {
 }
 
 type ClientLeagueAction {
-  Id: string
+  Id: string @unique
   _: rid
   _: i32
   GamepadIcon: string
@@ -1017,7 +1017,7 @@ enum CooldownBypassTypes @indexing(first: 1) { _ }
 enum CooldownGroups @indexing(first: 0) { _ }
 
 type CoreLeagues {
-  Id: string
+  Id: string @unique
   _: bool
   _: bool
   _: Stats
@@ -1144,7 +1144,7 @@ type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
 }
 
 type CurrencyStashTabLayout {
-  Id: string
+  Id: string @unique
   BaseItemTypesKey: BaseItemTypes
   _: i32
   _: i32
@@ -1158,7 +1158,7 @@ type CurrencyStashTabLayout {
 enum CurrencyUseTypes @indexing(first: 0) { _ }
 
 type DaemonSpawningData {
-  Id: string
+  Id: string @unique
   MonsterVarieties: [MonsterVarieties]
   _: i32
   _: bool
@@ -1170,7 +1170,7 @@ type DaemonSpawningData {
 }
 
 type DamageHitEffects {
-  Id: i32
+  Id: i32 @unique
   _: i32
   _: i32
   _: [_]
@@ -1372,7 +1372,7 @@ type EffectivenessCostConstants {
 }
 
 type EinharMissions {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32
@@ -1406,7 +1406,7 @@ type Environments {
 }
 
 type EnvironmentTransitions {
-  Id: string
+  Id: string @unique
   OTFiles: [string] @file(ext: ".ot")
   _: [string]
 }
@@ -1524,7 +1524,7 @@ type ExtraTerrainFeatures {
 }
 
 type FixedHideoutDoodadTypes {
-  Id: string
+  Id: string @unique
   HideoutDoodadsKeys: [HideoutDoodads]
   BaseTypeHideoutDoodadsKey: HideoutDoodads
   _: i32
@@ -1571,7 +1571,7 @@ type FlavourText {
 enum FlavourTextImages @indexing(first: 0) { _ }
 
 type Footprints {
-  Id: string
+  Id: string @unique
   Active_AOFiles: [string] @file(ext: ".ao")
   Idle_AOFiles: [string] @file(ext: ".ao")
   _: [string] @file(ext: ".ao")
@@ -1581,12 +1581,12 @@ type Footprints {
 }
 
 type FootstepAudio {
-  Id: string
+  Id: string @unique
   Index: i32
 }
 
 type FragmentStashTabLayout {
-  Id: string
+  Id: string @unique
   PosX: i32
   PosY: i32
   Order: i32
@@ -1610,13 +1610,13 @@ type GameConstants {
 }
 
 type GameLogos {
-  Id: string
+  Id: string @unique
   LogoIntl: string
   LogoTW: string
 }
 
 type GameObjectTasks {
-  Id: string
+  Id: string @unique
   HASH16: i32
 }
 
@@ -1629,7 +1629,7 @@ type GamepadButton {
 }
 
 type GamepadType {
-  Id: string
+  Id: string @unique
   Console: string
   ImageFile: string
 }
@@ -1655,7 +1655,7 @@ type GenericBuffAuras {
 }
 
 type GenericLeagueRewardTypes @tags(list: ["item:droptable"]) {
-  Id: string
+  Id: string @unique
   MinLevel: i32
   MaxLevel: i32
 }
@@ -1839,7 +1839,7 @@ type GlobalAudioConfig {
 }
 
 type Grandmasters {
-  Id: string
+  Id: string @unique
   GMFile: string @file(ext: ".gm")
   AISFile: string @file(ext: ".ais")
   ModsKeys: [Mods]
@@ -2025,12 +2025,12 @@ type HideoutDoodads {
 }
 
 type HideoutDoodadCategory {
-  Id: string
+  Id: string @unique
   Name: string @localized
 }
 
 type HideoutDoodadTags {
-  Id: string
+  Id: string @unique
   _: [i32]
   _: [i32]
   Name: string @localized
@@ -2123,7 +2123,7 @@ enum InfluenceTypes @indexing(first: 0) {
 }
 
 type Inventories {
-  Id: string
+  Id: string @unique
   InventoryIdKey: InventoryId
   InventoryTypeKey: InventoryType
   _: bool
@@ -2194,7 +2194,7 @@ type ItemCostPerLevel {
 }
 
 type ItemCosts {
-  Id: string
+  Id: string @unique
   Cost1Currencies: [BaseItemTypes]
   Cost1Values: [i32]
   Cost2Currencies: [BaseItemTypes]
@@ -2209,7 +2209,7 @@ type ItemCosts {
 enum ItemCreationTemplateCustomAction @indexing(first: 0) { _ }
 
 type ItemFrameType {
-  Id: string
+  Id: string @unique
   _: bool
   DoubleLine: bool
   HeaderSingle: string
@@ -2290,7 +2290,7 @@ type ItemVisualEffect {
 }
 
 type ItemVisualHeldBodyModel {
-  ItemVisualIdentity: ItemVisualIdentity
+  ItemVisualIdentity: ItemVisualIdentity @unique
   MarauderAnimatedObject: string
   RangerAnimatedObject: string
   WitchAnimatedObject: string
@@ -2414,7 +2414,7 @@ type LeagueInfo {
 }
 
 type LeagueInfoPanelVersions {
-  Id: string
+  Id: string @unique
 }
 
 type LeagueProgressQuestFlags {
@@ -2481,7 +2481,7 @@ type MapCreationInformation {
 }
 
 type MapDeviceRecipes @tags(list: ["item:recipe"]) {
-  Id: string
+  Id: string @unique
   RecipeItems: [BaseItemTypes]
   WorldArea: WorldAreas
   MicrotransactionPortalVariation: MicrotransactionPortalVariations
@@ -2496,7 +2496,7 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
 }
 
 type MapDevices {
-  Id: string
+  Id: string @unique
   MiscObject: MiscObjects
   _: i32
   _: string
@@ -2612,7 +2612,7 @@ type MapSeriesTiers {
 }
 
 type MapStashSpecialTypeEntries {
-  Id: string
+  Id: string @unique
   _: i32
   MapItem: BaseItemTypes
   Name: string @localized
@@ -2702,7 +2702,7 @@ type MicroMigrationData {
 enum MicrotransactionCategoryId @indexing(first: 0) { _ }
 
 type MicrotransactionCategory {
-  Id: MicrotransactionCategoryId
+  Id: MicrotransactionCategoryId @unique
   Name: string @localized
 }
 
@@ -2711,7 +2711,7 @@ type MicrotransactionCharacterPortraitVariations {
 }
 
 type MicrotransactionCombineFormula {
-  Id: string
+  Id: string @unique
   Result_BaseItemTypesKey: BaseItemTypes
   Ingredients_BaseItemTypesKeys: [BaseItemTypes]
   BK2File: string @file(ext: ".bk2")
@@ -2776,7 +2776,7 @@ type MicrotransactionRecycleSalvageValues {
 enum MicrotransactionSlotId @indexing(first: 1) { _ }
 
 type MicrotransactionSlot {
-  Id: MicrotransactionSlotId
+  Id: MicrotransactionSlotId @unique
   _: rid
   Name: string @localized
   _: rid
@@ -2792,7 +2792,7 @@ type MicrotransactionSocialFrameVariations {
 }
 
 type MinimapIcons {
-  Id: string
+  Id: string @unique
   MinimapIconRadius: i32
   LargemapIconRadius: i32
   _: bool
@@ -2880,7 +2880,7 @@ type MiscObjectsArtVariations {
 enum MissionTileMap @indexing(first: 0) { _ }
 
 type MissionTimerTypes {
-  Id: string
+  Id: string @unique
   Image: string
   BackgroundImage: string
   _: [rid]
@@ -3083,7 +3083,7 @@ type ModType {
 }
 
 type MonsterArmours {
-  Id: string
+  Id: string @unique
   ArtString_SMFile: string @file(ext: ".sm")
 }
 
@@ -3108,7 +3108,7 @@ type MonsterConditionalEffectPacks {
 }
 
 type MonsterConditions {
-  Id: string
+  Id: string @unique
   _: rid
   _: rid
   _: rid
@@ -3180,7 +3180,7 @@ type MonsterGroupEntries {
 enum MonsterGroupNames @indexing(first: 0) { _ }
 
 type MonsterHeightBrackets {
-  Id: string
+  Id: string @unique
   _: i32
   BuffVisuals1: BuffVisuals
   BuffVisuals2: BuffVisuals
@@ -3228,7 +3228,7 @@ type MonsterMapDifficulty {
 }
 
 type MonsterMortar {
-  Id: i32
+  Id: i32 @unique
   _: rid
   _: rid
   _: rid
@@ -3335,7 +3335,7 @@ type MonsterResistances {
 enum MonsterScalingByLevel @indexing(first: 0) { _ }
 
 type MonsterSegments {
-  Id: string
+  Id: string @unique
   Shapes: string
 }
 
@@ -3364,7 +3364,7 @@ enum MonsterSkillsTargets @indexing(first: 0) { _ }
 enum MonsterSkillsWaveDirection @indexing(first: 0) { _ }
 
 type MonsterSpawnerGroups {
-  Id: string @files(ext: [".ot", ".otc"])
+  Id: string @unique @files(ext: [".ot", ".otc"])
 }
 
 type MonsterSpawnerGroupsPerLevel {
@@ -3649,7 +3649,7 @@ type NPCAudio {
 }
 
 type NPCConversations {
-  Id: string
+  Id: string @unique
   DialogueEvent: DialogueEvent
   NPCTextAudioKeys: [NPCTextAudio]
   _: [i32]
@@ -3702,7 +3702,7 @@ type NPCFollowerVariations {
 }
 
 type NPCMaster {
-  Id: string
+  Id: string @unique
   _: bool
   _: bool
   Signature_ModsKey: Mods
@@ -3769,7 +3769,7 @@ type NPCShop {
 }
 
 type NPCShops {
-  Id: string
+  Id: string @unique
   _: i32
   Shop: NPCShop
   ShopHardmode: NPCShop
@@ -3811,12 +3811,12 @@ type NPCTalk {
 }
 
 type NPCTalkCategory {
-  Id: string
+  Id: string @unique
   _: bool
 }
 
 type NPCTalkConsoleQuickActions {
-  Id: string
+  Id: string @unique
   Controller: string
   _: string
 }
@@ -3847,7 +3847,7 @@ type OnKillAchievements {
 enum Orientations @indexing(first: 0) { _ }
 
 type PackFormation {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32
@@ -3856,7 +3856,7 @@ type PackFormation {
 }
 
 type PassiveJewelRadii {
-  ID: string
+  ID: string @unique
   RingOuterRadius: i32
   RingInnerRadius: i32
   Radius: i32
@@ -3884,7 +3884,7 @@ type PassiveSkillFilterOptions {
 }
 
 type PassiveSkillOverrides {
-  Id: string
+  Id: string @unique
   Name: string @localized
   NodeIcon: string
   Stats: [Stats]
@@ -3900,18 +3900,18 @@ type PassiveSkillOverrides {
 }
 
 type PassiveSkillOverrideTypes {
-  Id: string
+  Id: string @unique
   CounterStat: Stats
   _: bool
 }
 
 type PassiveOverrideLimits {
-  Id: string
+  Id: string @unique
   Description: string @localized
 }
 
 type PassiveSkillMasteryGroups {
-  Id: string
+  Id: string @unique
   MasteryEffects: [PassiveSkillMasteryEffects]
   InactiveIcon: string @file(ext: ".dds")
   ActiveIcon: string @file(ext: ".dds")
@@ -3922,7 +3922,7 @@ type PassiveSkillMasteryGroups {
 }
 
 type PassiveSkillMasteryEffects {
-  Id: string
+  Id: string @unique
   HASH16: i32
   Stats: [Stats]
   Stat1Value: i32
@@ -3990,7 +3990,7 @@ type PassiveSkillStatCategories {
 }
 
 type PassiveSkillTrees {
-  Id: string
+  Id: string @unique
   PassiveSkillGraph: string
   _: i32
   _: f32
@@ -4012,7 +4012,7 @@ type PassiveSkillTrees {
 }
 
 type PassiveSkillTreeTutorial {
-  Id: string
+  Id: string @unique
   CharactersKey: Characters
   _: rid
   ChoiceA_Description: string @localized
@@ -4025,7 +4025,7 @@ type PassiveSkillTreeTutorial {
 }
 
 type PassiveSkillTreeUIArt {
-  Id: string
+  Id: string @unique
   GroupBackgroundSmall: string
   GroupBackgroundMedium: string
   GroupBackgroundLarge: string
@@ -4110,7 +4110,7 @@ type PlayerConditions {
 }
 
 type PlayerTradeWhisperFormats {
-  Id: string
+  Id: string @unique
   Whisper: string @localized
   InStash: bool
   IsPriced: bool
@@ -4166,7 +4166,7 @@ type ProjectilesArtVariations {
 }
 
 type PVPTypes {
-  Id: string
+  Id: string @unique
   _: rid
 }
 
@@ -4194,7 +4194,7 @@ type QuestAchievements {
 }
 
 type QuestFlags {
-  Id: string
+  Id: string @unique
   HASH32: i32
 }
 
@@ -4215,7 +4215,7 @@ type QuestItems {
 }
 
 type QuestRewardOffers {
-  Id: string
+  Id: string @unique
   QuestKey: Quest
   QuestFlag: QuestFlags
   _: i32
@@ -4301,7 +4301,7 @@ type QuestType {
 }
 
 type Races {
-  Id: string
+  Id: string @unique
   Mods: [Mods]
   _: string @localized
   _: string
@@ -4327,7 +4327,7 @@ type RareMonsterLifeScalingPerLevel {
 }
 
 type Rarity {
-  Id: string
+  Id: string @unique
   MinMods: i32
   MaxMods: i32
   _: i32
@@ -4402,7 +4402,7 @@ type ShieldTypes @tags(list: ["item:def"]) {
 }
 
 type ShopTag {
-  Id: string
+  Id: string @unique
   Name: string @localized
   IsCategory: bool
   Category: ShopTag
@@ -4420,7 +4420,7 @@ type SigilDisplay {
 }
 
 type SingleGroundLaser {
-  Id: i32
+  Id: i32 @unique
   _: rid
   _: rid
   _: i32
@@ -4439,7 +4439,7 @@ type SingleGroundLaser {
 }
 
 type SkillArtVariations {
-  Id: string
+  Id: string @unique
   _: [rid]
   _: [i32]
   _: [i32]
@@ -4540,13 +4540,13 @@ type SkillTotemVariations {
 }
 
 type SkillTrapVariations {
-  Id: i32
+  Id: i32 @unique
   Metadata: string
   MiscAnimated: MiscAnimated
 }
 
 type SocketNotches {
-  Id: string
+  Id: string @unique
   Description: string @localized
   RedSocketImage: string
   BlueSocketImage: string
@@ -4618,7 +4618,7 @@ type StashTabAffinities {
 type StashType {
   Id: string @unique
   IntId: i32 @unique
-  Id2: string
+  Id2: string @unique
   Width: i32
   Height: i32
   _: i32
@@ -4677,7 +4677,7 @@ enum StatSemantics @indexing(first: 1) {
 }
 
 type SuicideExplosion {
-  Id: i32
+  Id: i32 @unique
   _: rid
   _: rid
   _: bool
@@ -4689,7 +4689,7 @@ type SuicideExplosion {
 }
 
 type SummonedSpecificBarrels {
-  Id: string
+  Id: string @unique
   Chest: Chests
   _: rid
   _: rid
@@ -4730,7 +4730,7 @@ type SummonedSpecificMonstersOnDeath {
 enum SurgeCategory @indexing(first: 0) { _ }
 
 type SurgeEffects {
-  Id: string
+  Id: string @unique
   _: MiscAnimated
   _: [f32]
   _: [MiscAnimated]
@@ -4740,7 +4740,7 @@ type SurgeEffects {
 type SurgeTypes {
   Id: string @unique
   SurgeEffects: [SurgeEffects]
-  IntId: i32
+  IntId: i32 @unique
 }
 
 type TableCharge {
@@ -4876,7 +4876,7 @@ type Topologies {
 }
 
 type TradeMarketCategory {
-  Id: string
+  Id: string @unique
   Name: string @localized
   StyleFlag: TradeMarketCategoryStyleFlag
   Group: TradeMarketCategoryGroups
@@ -4886,7 +4886,7 @@ type TradeMarketCategory {
 }
 
 type TradeMarketCategoryGroups {
-  Id: string
+  Id: string @unique
   Name: string @localized
 }
 
@@ -5003,7 +5003,7 @@ type UniqueStashLayout @tags(list: ["item:unique"]) {
 }
 
 type UniqueStashTypes {
-  Id: string
+  Id: string @unique
   Order: i32
   Width: i32
   Height: i32
@@ -5069,7 +5069,7 @@ type WeaponTypes @tags(list: ["item:def"]) {
 }
 
 type WindowCursors {
-  Id: string
+  Id: string @unique
   CursorDefault: string @file(ext: ".bmp")
   CursorClick: string @file(ext: ".bmp")
   _: i32
@@ -5180,7 +5180,7 @@ type WorldAreas {
 }
 
 type WorldAreaLeagueChances {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32

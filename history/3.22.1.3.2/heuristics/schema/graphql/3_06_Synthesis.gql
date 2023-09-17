@@ -63,7 +63,7 @@ type SynthesisMonsterExperiencePerLevel {
 }
 
 type SynthesisRewardCategories {
-  Id: string
+  Id: string @unique
 }
 
 type SynthesisRewardTypes {

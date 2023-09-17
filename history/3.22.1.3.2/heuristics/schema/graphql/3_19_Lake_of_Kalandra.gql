@@ -1,5 +1,5 @@
 type ClientLakeDifficulty {
-  Id: i32
+  Id: i32 @unique
   Scaling: f32
   _: i32
   _: i32
@@ -11,12 +11,12 @@ type LakeBossLifeScalingPerLevel {
 }
 
 type LakeMetaOptions {
-  Id: string
+  Id: string @unique
   _: [i32]
 }
 
 type LakeMetaOptionsUnlockText {
-  Id: i32
+  Id: i32 @unique
   Text: string @localized
 }
 
@@ -31,7 +31,7 @@ type LakeRoomCompletion {
 }
 
 type LakeRooms @tags(list: ["item:itemized"]) {
-  Id: string
+  Id: string @unique
   ARMFiles: [string] @file(ext: ".arm")
   Script: string
   _: [_] # All rows empty

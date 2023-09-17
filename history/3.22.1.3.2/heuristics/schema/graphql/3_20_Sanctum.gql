@@ -7,7 +7,7 @@ type SanctumAirlocks {
 }
 
 type SanctumDefenceIcons {
-  Id: string
+  Id: string @unique
   Stat: Stats
   DefenceIcon: string
   DefenceBrokenIcon: string
@@ -22,7 +22,7 @@ type SanctumDeferredRewardCategories {
 }
 
 type SanctumDeferredRewards {
-  Id: string
+  Id: string @unique
   DeferralIcon: string
   DeferralCategory: SanctumPersistentEffectCategories
   RewardCategory: SanctumDeferredRewardCategories
@@ -30,7 +30,7 @@ type SanctumDeferredRewards {
 }
 
 type SanctumFloors {
-  Id: string
+  Id: string @unique
   Area: WorldAreas
   Title: ClientStrings
   RoomIcon: string
@@ -51,7 +51,7 @@ type SanctumLifeScalingPerLevel {
 }
 
 type SanctumPersistentEffectCategories {
-  Id: string
+  Id: string @unique
   Frame: string
   Popup: string
   Glow: string
@@ -63,7 +63,7 @@ type SanctumPersistentEffectCategories {
 }
 
 type SanctumPersistentEffects {
-  Id: string
+  Id: string @unique
   Stats: [Stats]
   StatValues: [i32]
   Name: string @localized
@@ -89,7 +89,7 @@ type SanctumPersistentEffects {
 }
 
 type SanctumRooms {
-  Id: string
+  Id: string @unique
   ArmFile: string
   RoomType: SanctumRoomTypes
   Script: string
@@ -98,7 +98,7 @@ type SanctumRooms {
 }
 
 type SanctumRoomTypes {
-  Id: string
+  Id: string @unique
   _: bool
   _: bool
   _: rid
@@ -114,7 +114,7 @@ type SanctumRoomTypes {
 }
 
 type SanctumSelectionDisplayOverride {
-  Id: string
+  Id: string @unique
   Reward: string @localized
   Icon: string
   Downside: string @localized

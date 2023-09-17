@@ -1,5 +1,5 @@
 type AncestralEmbraceVariations {
-  Id: string
+  Id: string @unique
   Minion: MonsterVarieties
   _: rid
 }
@@ -34,7 +34,7 @@ type AncestralTrialDialogue {
 }
 
 type AncestralTrialDialogueEvents {
-  Id: string
+  Id: string @unique
   _: i32
 }
 
@@ -49,7 +49,7 @@ type AncestralTrialFieldItems {
 }
 
 type AncestralTrialItems {
-  Id: string
+  Id: string @unique
   HASH16: i32
   Name: string @localized
   Image: string
@@ -76,7 +76,7 @@ type AncestralTrialMonsters {
 }
 
 type AncestralTrialPositionType {
-  Id: string
+  Id: string @unique
   PlayerTotemIcon: string
   Name: string @localized
   EnemyTotemIcon: string
@@ -101,7 +101,7 @@ type AncestralTrialTribeOpinions {
 }
 
 type AncestralTrialTribes {
-  Id: string
+  Id: string @unique
   _: rid
   Portrait: string
   TribeIcon: string
@@ -124,7 +124,7 @@ type AncestralTrialTribes {
 }
 
 type AncestralTrialUnitPositions {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32
@@ -132,7 +132,7 @@ type AncestralTrialUnitPositions {
 }
 
 type AncestralTrialUnits {
-  Id: string
+  Id: string @unique
   Name: string @localized
   Tribe: AncestralTrialTribes
   Image: string
@@ -159,7 +159,7 @@ type PassiveSkillTattoos {
 }
 
 type PassiveSkillTattooTargetSets {
-  Id: string
+  Id: string @unique
   Set: [i32]
   Name: string @localized
   Qualifier: string @localized

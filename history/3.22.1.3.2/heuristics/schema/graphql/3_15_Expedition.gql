@@ -89,7 +89,7 @@ type ExpeditionMarkersCommon {
 }
 
 type ExpeditionNPCs {
-  Id: string
+  Id: string @unique
   NPCs: [NPCs]
   RerollItem: BaseItemTypes
   _: i32
@@ -130,7 +130,7 @@ type ExpeditionRelics {
 }
 
 type ExpeditionStorageLayout {
-  Id: string
+  Id: string @unique
   BaseItemType: BaseItemTypes
   PosX: i32
   PosY: i32

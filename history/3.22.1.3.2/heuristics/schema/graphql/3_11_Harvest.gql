@@ -30,7 +30,7 @@ type HarvestCraftTiers {
 }
 
 type HarvestCraftFilters {
-  Id: string
+  Id: string @unique
   BaseItem: BaseItemTypes
   Name: string @localized
 }
@@ -62,7 +62,7 @@ type HarvestLifeScalingPerLevel {
 }
 
 type HarvestSeeds {
-  Id: string
+  Id: string @unique
   Monster: MonsterVarieties
   Tier: i32
   _: i32
@@ -75,7 +75,7 @@ type HarvestSeeds {
 }
 
 type HarvestSeedItems @tags(list: ["item:def"]) {
-  Id: i32
+  Id: i32 @unique
   BaseItem: BaseItemTypes
   DropStat: Stats
 }

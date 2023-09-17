@@ -11,7 +11,7 @@ type DroneBaseTypes {
 }
 
 type DroneTypes {
-  Id: string
+  Id: string @unique
   _: QuestFlags
   _: MonsterVarieties
   DeployText: string @localized
@@ -35,7 +35,7 @@ type SentinelDroneInventoryLayout {
 }
 
 type SentinelPassives {
-  Id: string
+  Id: string @unique
   HASH16: i32
   _: string
   _: [rid]
@@ -55,7 +55,7 @@ type SentinelPassiveStats {
 }
 
 type SentinelPassiveTypes {
-  Id: string
+  Id: string @unique
   DefaultIcon: string
   ActiveIcon: string
   DroneType: DroneTypes
@@ -68,7 +68,7 @@ type SentinelPowerExpLevels {
 }
 
 type SentinelStorageLayout {
-  Id: string
+  Id: string @unique
   _: BaseItemTypes
   DroneType: DroneTypes
   _: bool

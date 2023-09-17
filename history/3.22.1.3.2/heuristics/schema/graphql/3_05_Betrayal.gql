@@ -1,11 +1,11 @@
 type BetrayalChoiceActions {
-  Id: string
+  Id: string @unique
   BetrayalChoicesKey: BetrayalChoices
   ClientStringsKey: ClientStrings
 }
 
 type BetrayalChoices {
-  Id: string
+  Id: string @unique
   Text: string @localized
   _: i32
   Achievements: [AchievementItems]
@@ -43,7 +43,7 @@ type BetrayalForts {
 }
 
 type BetrayalJobs {
-  Id: string
+  Id: string @unique
   Text: string @localized
   ExtraTerrainFeaturesKey: ExtraTerrainFeatures
   Art: string
@@ -56,14 +56,14 @@ type BetrayalJobs {
 }
 
 type BetrayalRanks {
-  Id: string
+  Id: string @unique
   Text: string @localized
   Level: i32
   RankImage: string
 }
 
 type BetrayalRelationshipState {
-  Id: string
+  Id: string @unique
   Text: string @localized
 }
 
@@ -81,7 +81,7 @@ type BetrayalTargetLifeScalingPerLevel {
 }
 
 type BetrayalTargets {
-  Id: string
+  Id: string @unique
   BetrayalRanksKey: BetrayalRanks
   MonsterVarietiesKey: MonsterVarieties
   BetrayalJobsKey: BetrayalJobs
@@ -143,7 +143,7 @@ type SafehouseBYOCrafting @tags(list: ["crafting"]) {
 }
 
 type SafehouseCraftingSpreeType {
-  Id: string
+  Id: string @unique
   Currencies: [SafehouseCraftingSpreeCurrencies]
   CurrencyCount: [i32]
   _: [rid]
