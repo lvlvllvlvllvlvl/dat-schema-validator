@@ -9,7 +9,7 @@ TZ=UTC git log --pretty='%h %cd' --date='format-local:%y-%m-%dT%H%M' 3728a7b -- 
 do
     COMMIT_HASH="$(echo $line | cut -d ' ' -f1)"
     COMMIT_TIME="$(echo $line | cut -d ' ' -f2)"
-    OUTPUT="../dat-schema-validator/history/dat-schema/${COMMIT_TIME}.json"
+    OUTPUT="../dat-schema-validator/history/dat-schema/${COMMIT_TIME}-schema.json"
     [[ -f "$OUTPUT" ]] && continue
     echo $COMMIT_TIME $COMMIT_HASH
     git checkout "$COMMIT_HASH" --quiet

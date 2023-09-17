@@ -1,4 +1,4 @@
-import { Presets, SingleBar } from "cli-progress";
+import { MultiBar, Presets } from "cli-progress";
 import { parse as csvParse } from "csv-parse/sync";
 import * as csv from "csv-stringify";
 import * as fs from "fs/promises";
@@ -35,16 +35,33 @@ const TRANSLATIONS = [
   { name: "Traditional Chinese", path: "data/traditional chinese" },
 ];
 
-const args = argv[1].includes("validate.ts") ? argv.slice(2).map((v) => v.toLowerCase()) : null;
-const progress =
+const args = argv[1].includes("validate.ts") ? argv.slice(2) : null;
+const tablesToProcess = args?.map((a) => a.toLowerCase());
+const langsToProcess = tablesToProcess;
+const progressBars =
   args && !args.find((v) => v === "-q" || v === "--quiet")
-    ? new SingleBar(
+    ? new MultiBar(
         {
           format: "[{bar}] {percentage}% | {value}/{total} | {step} | {table}",
         },
         Presets.rect
       )
     : null;
+let lastFrame = performance.now();
+const progress: {
+  requests?: any;
+  receive?: any;
+  processing?: any;
+  increment: (bar: "requests" | "receive" | "processing", ...args) => void;
+} = {
+  increment: (bar, ...args) => {
+    progress[bar].increment(...args);
+    if (progressBars && performance.now() - lastFrame > 200) {
+      progressBars.update();
+      lastFrame = performance.now();
+    }
+  },
+};
 if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log(
     "Usage: npx tsx src/validate.ts [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>]"
@@ -69,18 +86,6 @@ const metafiles = Object.fromEntries(
   ])
 );
 
-let schema: SchemaFile;
-const schemaArg = (args?.findIndex((s) => s === "-s" || s === "--schema") ?? -1) + 1;
-if (args && schemaArg) {
-  if (args[schemaArg].startsWith("http://") || args[schemaArg].startsWith("https://")) {
-    schema = await fetch(args[schemaArg]).then((r) => r.json());
-  } else {
-    schema = JSON.parse(await fs.readFile(args[schemaArg], "utf8"));
-  }
-} else {
-  schema = await fetch(SCHEMA_URL).then((r) => r.json());
-}
-
 let version: string;
 const versionArg = (args?.findIndex((s) => s === "-v" || s === "--version") ?? -1) + 1;
 if (args && versionArg) {
@@ -91,7 +96,27 @@ if (args && versionArg) {
   ).then((r) => r.text());
 }
 
-promises.push(fs.writeFile("schema.json", JSON.stringify(schema, null, 2)));
+let schema: SchemaFile;
+let schemaDir = path.join("history", version);
+let schemaPrefix = "";
+const schemaArg = (args?.findIndex((s) => s === "-s" || s === "--schema") ?? -1) + 1;
+if (args && schemaArg) {
+  if (args[schemaArg].startsWith("http://") || args[schemaArg].startsWith("https://")) {
+    schema = await fetch(args[schemaArg]).then((r) => r.json());
+  } else {
+    schemaDir = path.parse(args[schemaArg]).dir;
+    schemaPrefix = path.parse(args[schemaArg]).name.replace("schema", "");
+    schema = JSON.parse(await fs.readFile(args[schemaArg], "utf8"));
+  }
+} else {
+  schema = await fetch(SCHEMA_URL).then((r) => r.json());
+  promises.push(
+    fs.writeFile(
+      path.join(schemaDir, schemaPrefix + "schema.json"),
+      JSON.stringify(schema, null, 2)
+    )
+  );
+}
 
 const loader = await FileLoader.create(
   await CdnBundleLoader.create(path.join(".cache"), version, !!versionArg)
@@ -107,7 +132,7 @@ const getType = ({ type }: NamedHeader) =>
     .join("/");
 
 let includeTranslations = args?.find((v) => v === "-l" || v === "--lang" || v === "--langs")
-  ? TRANSLATIONS.filter((t) => args?.includes(t.name.toLowerCase()))
+  ? TRANSLATIONS.filter((t) => langsToProcess?.includes(t.name.toLowerCase()))
   : TRANSLATIONS;
 
 const heuristics = "tmp/heuristics";
@@ -118,39 +143,43 @@ await fs.mkdir(`${heuristics}/schema/graphql`, { recursive: true });
 
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
   Object.fromEntries(schema.tables.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t])),
-  Object.fromEntries(schema.enumerations.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t]))
+  Object.fromEntries(schema.enumerations?.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t]) || [])
 );
 loader.clearBundleCache();
 const allTables = !args?.find((v) => v === "-t" || v === "--table" || v === "--tables");
 const files = loader
   .listFiles("Data")
   .filter(
-    (f) => f.endsWith(".dat64") && (allTables || args?.includes(path.parse(f).name.toLowerCase()))
+    (f) =>
+      f.endsWith(".dat64") &&
+      (allTables || tablesToProcess?.includes(path.parse(f).name.toLowerCase()))
   )
   .sort();
-progress?.start(files.length * includeTranslations.length, 0, {
+progress.requests = progressBars?.create(files.length * includeTranslations.length, 0, {
   step: "loading files",
   table: "...",
 });
-const dataFiles = await Promise.all(
+progress.receive = progressBars?.create(files.length, 0, {
+  step: "receiving data",
+  table: "...",
+});
+progress.processing = progressBars?.create(files.length, 0, {
+  step: "processing data",
+  table: "...",
+});
+
+await Promise.all(
   files.map(async (file) => {
     const fileComponents = path.parse(file);
     const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
     const data = await Promise.all(
       includeTranslations.map(async (tr) => {
-        progress?.increment(0.5, { table: file.replace(/^data/, tr.path) });
+        progress.increment("requests", { table: file.replace(/^data/, tr.path) });
         const buf = await loader.getFileContents(file.replace(/^data/, tr.path));
-        progress?.increment(0.5, { table: file.replace(/^data/, tr.path) });
         return { ...tr, buf };
       })
     );
-    return { file, table, data };
-  })
-);
-progress?.stop();
-progress?.start(files.length, 0, { step: "processing", table: "Initializing..." });
-await Promise.all(
-  dataFiles.map(async ({ file, table, data }) => {
+    progress.increment("receive", { table: table.name });
     try {
       const csvName = metafiles[table.name.toLowerCase()];
       const csvFile = csvName && (await fs.readFile(csvName));
@@ -274,11 +303,11 @@ await Promise.all(
     } catch (e) {
       console.error(file, e);
     } finally {
-      progress?.increment({ table: table.name });
+      progress.increment("processing", { table: table.name });
     }
   })
 );
-progress?.stop();
+progressBars?.stop();
 
 promises.push(
   exportGQL(
@@ -288,15 +317,26 @@ promises.push(
     `${heuristics}/schema/graphql`
   )
 );
-errors.length && promises.push(fs.writeFile("errors.txt", errors.sort().join("\n")));
+errors.length &&
+  promises.push(
+    fs.writeFile(path.join(schemaDir, schemaPrefix + "errors.txt"), errors.sort().join("\n"))
+  );
 const missing = schema.tables
   .map((t) => t.name)
   .filter((t) => !tablesSeen.has(t))
   .map((t) => `missing file ${t}.dat64`)
   .sort();
-missing.length && promises.push(fs.writeFile("missing.txt", missing.sort().join("\n")));
-promises.push(fs.writeFile("filtered-schema.json", JSON.stringify(schema, null, 2)));
-promises.push(fs.writeFile("version.txt", version));
+missing.length &&
+  promises.push(
+    fs.writeFile(path.join(schemaDir, schemaPrefix + "missing.txt"), missing.sort().join("\n"))
+  );
+promises.push(
+  fs.writeFile(
+    path.join(schemaDir, schemaPrefix + "filtered.json"),
+    JSON.stringify(schema, null, 2)
+  )
+);
+promises.push(fs.writeFile(path.join(schemaDir, schemaPrefix + "version.txt"), version));
 await promises;
 
 await Promise.all(
