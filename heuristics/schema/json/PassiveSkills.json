@@ -394,14 +394,15 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Group",
     "offset": 206,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AtlasPassiveSkillTreeGroupType"
       }
     },
     "size": 16

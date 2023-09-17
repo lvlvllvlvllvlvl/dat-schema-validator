@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1694529643,
+  "createdAt": 1694868523,
   "tables": [
     {
       "name": "RogueExiles",
@@ -12181,7 +12181,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
@@ -14790,13 +14790,15 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Tier",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "HarvestCraftTiers"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -14838,7 +14840,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "HASH16",
           "description": null,
           "array": false,
           "type": "i32",
@@ -14862,7 +14864,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "IsEnchant",
           "description": null,
           "array": false,
           "type": "bool",
@@ -28667,7 +28669,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Name",
           "description": null,
           "array": false,
           "type": "string",
@@ -28679,7 +28681,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Qualifier",
           "description": null,
           "array": false,
           "type": "string",
@@ -31820,7 +31822,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
@@ -34473,7 +34475,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "BinaryStats",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -34660,7 +34662,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Buff_StatValues",
           "description": null,
           "array": true,
           "type": "i32",
@@ -65051,7 +65053,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "RequiresAdjacent",
           "description": null,
           "array": false,
           "type": "i32",
@@ -65063,7 +65065,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "MaxAdjacent",
           "description": null,
           "array": false,
           "type": "i32",
@@ -65766,13 +65768,15 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Group",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AtlasPassiveSkillTreeGroupType"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -69602,7 +69606,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
