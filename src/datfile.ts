@@ -1,15 +1,15 @@
 import { ZstdDec } from "@oneidentity/zstd-js/decompress";
 import * as fs from "fs/promises";
-import * as oldBundles from "old-dat/bundles.js";
 import path from "path";
 import { SchemaTable } from "pathofexile-dat-schema";
 import * as newBundles from "pathofexile-dat/bundles.js";
 import { ColumnStats, DatFile, Header, getHeaderLength, readColumn } from "pathofexile-dat/dat.js";
+import * as oldBundles from "pathofexile-dat7/bundles.js";
 import { PossibleHeaders, graphqlType, headerTypes, possibleColumnHeaders } from "./heuristic.js";
-import { compareVersion } from "./versions.js";
+import { isBefore } from "./versions.js";
 
 const BUNDLE_DIR = "Bundles2";
-const sleep = (ms: number) =>
+export const sleep = (ms?: number) =>
   new Promise((resolve) => (ms ? setTimeout(resolve, ms) : setImmediate(resolve)));
 
 interface ManifestLine {
@@ -58,7 +58,7 @@ export class FileLoader {
   ) {}
 
   static async create(bundleLoader: IBundleLoader) {
-    const newVersion = compareVersion()("3.21.0", bundleLoader.patchVer) < 0;
+    const newVersion = isBefore("3.21.0", bundleLoader.patchVer);
     const bundles = newVersion ? newBundles : oldBundles;
     const indexBin = await bundleLoader.fetchFile("_.index.bin");
     const indexBundle = await bundles.decompressSliceInBundle(new Uint8Array(indexBin));
@@ -130,6 +130,10 @@ export class CdnBundleLoader {
         .then((r) => r.json())
         .then((builds) => Object.values(builds))
         .then((builds: any[]) => builds.find((build) => build.version.split(" ")[0] === patchVer));
+      if (!build) {
+        console.error("Version not found", patchVer);
+        process.exit(1);
+      }
       manifest = await Object.entries(build.manifests)
         .map(([k, v]) => `${k}/${v}`)
         .reduce(async (mf, mfid) => await this.getManifest(mfid, await zstd, mf), {});
@@ -284,14 +288,18 @@ export interface NamedHeader extends Header {
   };
 }
 
+const VALID_TYPES = ["bool", "string", "i32", "f32", "row", "foreignrow", "enumrow"];
+
 export function importHeaders(sch: SchemaTable): NamedHeader[];
 export function importHeaders(
   sch: SchemaTable,
+  err: (...args) => void,
   datFiles: DatFile[],
   stats: ColumnStats[][]
 ): PossibleHeaders;
 export function importHeaders(
   sch: SchemaTable,
+  err: (...args) => void = console.warn,
   datFiles?: DatFile[],
   stats?: ColumnStats[][]
 ): PossibleHeaders {
@@ -309,44 +317,60 @@ export function importHeaders(
         )[0] || []
       );
     } else {
+      let type: NamedHeader["type"];
+      if (!VALID_TYPES.includes(column.type)) {
+        if (column.type === "array" || column.array) {
+          type = headerTypes["[i32]"];
+        } else {
+          if (column.name) {
+            err(sch.name, column.name, "unknown type", column.type);
+          }
+          const size = column.type.match(/\d+/);
+          if (!size) {
+            err("Can't guess size for column type", column.type);
+          } else {
+            offset += parseInt(size[0]) / 8;
+          }
+          break;
+        }
+      } else {
+        type = {
+          array: column.array,
+          integer:
+            // column.type === 'u8' ? { unsigned: true, size: 1 }
+            // : column.type === 'u16' ? { unsigned: true, size: 2 }
+            // : column.type === 'u32' ? { unsigned: true, size: 4 }
+            // : column.type === 'u64' ? { unsigned: true, size: 8 }
+            // : column.type === 'i8' ? { unsigned: false, size: 1 }
+            // : column.type === 'i16' ? { unsigned: false, size: 2 }
+            column.type === "i32"
+              ? { unsigned: false, size: 4 }
+              : // : column.type === 'i64' ? { unsigned: false, size: 8 }
+              column.type === "enumrow"
+              ? { unsigned: false, size: 4 }
+              : undefined,
+          decimal:
+            column.type === "f32"
+              ? { size: 4 }
+              : // : column.type === 'f64' ? { size: 8 }
+                undefined,
+          string: column.type === "string" ? {} : undefined,
+          boolean: column.type === "bool" ? true : undefined,
+          key:
+            column.type === "row" || column.type === "foreignrow"
+              ? {
+                  foreign: column.type === "foreignrow",
+                  name: column.references?.table,
+                }
+              : undefined,
+        };
+      }
       headers.push({
         name: column.name || "",
         offset,
         unknownArray: column.type === "array",
         unique: column.unique,
-        type:
-          column.type === "array"
-            ? headerTypes["[i32]"]
-            : {
-                array: column.array,
-                integer:
-                  // column.type === 'u8' ? { unsigned: true, size: 1 }
-                  // : column.type === 'u16' ? { unsigned: true, size: 2 }
-                  // : column.type === 'u32' ? { unsigned: true, size: 4 }
-                  // : column.type === 'u64' ? { unsigned: true, size: 8 }
-                  // : column.type === 'i8' ? { unsigned: false, size: 1 }
-                  // : column.type === 'i16' ? { unsigned: false, size: 2 }
-                  column.type === "i32"
-                    ? { unsigned: false, size: 4 }
-                    : // : column.type === 'i64' ? { unsigned: false, size: 8 }
-                    column.type === "enumrow"
-                    ? { unsigned: false, size: 4 }
-                    : undefined,
-                decimal:
-                  column.type === "f32"
-                    ? { size: 4 }
-                    : // : column.type === 'f64' ? { size: 8 }
-                      undefined,
-                string: column.type === "string" ? {} : undefined,
-                boolean: column.type === "bool" ? true : undefined,
-                key:
-                  column.type === "row" || column.type === "foreignrow"
-                    ? {
-                        foreign: column.type === "foreignrow",
-                        name: column.references?.table,
-                      }
-                    : undefined,
-              },
+        type,
       });
     }
     if (datFiles?.[0]) {

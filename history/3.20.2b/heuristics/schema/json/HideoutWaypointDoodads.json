@@ -1,0 +1,26 @@
+[
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 0,
+    "size": 16,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 16,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  }
+]

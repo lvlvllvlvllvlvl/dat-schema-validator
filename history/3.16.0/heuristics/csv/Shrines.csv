@@ -1,0 +1,33 @@
+"rownum","Id","TimeoutInSeconds","Name","ChargesShared","Player_ShrineBuffsKey","i32","i32","Description","Monster_ShrineBuffsKey","SummonMonster_MonsterVarietiesKey","SummonPlayer_MonsterVarietiesKey","i32","i32","ShrineSoundsKey","bool","AchievementItemsKeys","IsPVPOnly","bool","IsLesserShrine"
+0,"Acceleration",0,"Acceleration Shrine","",0,30,1,"Death doesn't wait.",1,"","",50,45,3,"",[8031],"",1,""
+1,"Lightning",0,"Lightning Shrine","",12,80,4,"Open the eye of the storm.","",2679,2680,0,45,2,"",[8031],"","",""
+2,"Cold",0,"Freezing Shrine","",11,80,4,"Turn your world to ice.","",2681,2682,0,45,0,"",[8031],"","",""
+3,"Fire",0,"Burning Shrine","",10,0,10,"The sky falls. The land burns.","",2677,2678,0,45,1,"",[8031],"","",""
+4,"Arc",0,"Static Shrine","",13,0,10,"Reach out and touch hate.","",2685,2686,0,45,2,"","[516,8031]","","",""
+5,"Criticals",0,"Diamond Shrine","",8,30,1,"Deliver pain exquisite.",9,"","",50,45,7,"",[8031],"",1,""
+6,"Brutal",0,"Brutal Shrine","",4,30,1,"Hit hard. Hit once.",5,"","",50,45,5,"",[8031],"",1,""
+7,"Thorns",0,"Thorned Shrine","",6,0,40,"Share your pain.",7,"","",50,45,6,"","[519,8031]","",1,""
+8,"Regen",0,"Replenishing Shrine",1,2,30,1,"Restore that which was lost.",3,"","",50,45,4,"",[8031],"",1,""
+9,"Massive",0,"Massive Shrine","",20,60,10,"Courage stands tall.",21,"","",50,45,4,"",[8031],"",1,""
+10,"Defence",0,"Impenetrable Shrine","",22,80,25,"None shall stop you.",23,"","",50,45,6,"",[8031],"",1,""
+11,"Resistance",0,"Resistance Shrine","",24,80,40,"Fear not the elements.",25,"","",50,45,6,"",[8031],"",1,""
+12,"GodMode",0,"Divine Shrine","",26,10,60,"Become the nightmare.",27,"","",50,45,6,"",[8031],"",1,""
+13,"Multi",0,"Echoing Shrine","",17,10,60,"Let your rage flow freely.",16,"","",50,45,7,"",[8031],"",1,""
+14,"Curses",0,"Hexing Shrine","",19,0,25,"Stay not your vile tongue.",18,"",2962,50,45,5,"","[526,8031]","","",""
+15,"Skeletons",0,"Skeletal Shrine","",14,40,25,"The past shall serve the present.","",2687,2688,0,45,8,"",[8031],"","",""
+16,"Smoke",0,"Shrouded Shrine","",15,60,40,"Shroud your path in the fog of war.","",2683,2684,0,45,9,"",[8031],"","",""
+17,"PVPAcceleration",45,"Acceleration Shrine","",0,100,0,"Death doesn't wait.","","","",0,12,3,1,[],"","",""
+18,"PVPRegen",45,"Replenishing Shrine",1,2,100,0,"Restore that which was lost.","","","",0,12,4,1,[],"","",""
+19,"PVPBrutal",45,"Brutal Shrine","",4,100,0,"Hit hard. Hit once.","","","",0,20,5,1,[],"","",""
+20,"CTFBrutal",45,"Brutal Shrine","",4,100,0,"Hit hard. Hit once.","","","",0,20,5,1,[],1,"",""
+21,"CTFRegen",45,"Replenishing Shrine",1,2,100,0,"Restore that which was lost.","","","",0,20,4,1,[],1,"",""
+22,"CTFMassive",45,"Massive Shrine","",20,100,0,"Courage stands tall.","","","",0,20,4,1,[],1,"",""
+23,"CTFDefence",45,"Impenetrable Shrine","",22,100,0,"None shall stop you.","","","",0,20,6,1,[],1,"",""
+24,"AccelerationLesser",0,"Lesser Acceleration Shrine","",29,30,1,"Death doesn't wait.","","","",0,20,3,"",[],"",1,1
+25,"BrutalLesser",0,"Lesser Brutal Shrine","",30,30,1,"Hit hard. Hit once.","","","",0,20,5,"",[],"",1,1
+26,"RegenLesser",0,"Lesser Replenishing Shrine","",31,30,1,"Restore that which was lost.","","","",0,20,4,"",[],"",1,1
+27,"MassiveLesser",0,"Lesser Massive Shrine","",32,60,1,"Courage stands tall.","","","",0,20,4,"",[],"",1,1
+28,"ResistanceLesser",0,"Lesser Resistance Shrine","",33,80,1,"Fear not the elements.","","","",0,20,6,"",[],"",1,1
+29,"DefenceLesser",0,"Lesser Impenetrable Shrine","",34,80,1,"None shall stop you.","","","",0,20,6,"",[],"",1,1
+30,"Resonating",0,"Charged Shrine","",35,0,2,"Overpower, overrun, overcome. ",36,"","",50,45,10,"",[8031],"",1,""
+31,"Gloom",0,"Gloom Shrine","",37,0,2,"Wield your shadows.",38,"","",50,45,11,"",[8031],"",1,""

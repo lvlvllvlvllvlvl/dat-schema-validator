@@ -63,18 +63,19 @@ export type ValidFn = (header: Header) => boolean;
 export type LenFn = (header: Header) => number;
 
 export async function getPossibleHeaders(
-  headers: PossibleHeaders,
+  byOffset: PossibleHeaders,
   stats: ColumnStats[][],
-  datFiles: DatFile[]
-): Promise<PossibleHeaders[]> {
+  datFiles: DatFile[],
+  headers: Readonly<PossibleHeaders> = []
+): Promise<Readonly<PossibleHeaders>[]> {
   const maxOffset = datFiles[0].rowLength;
   const len = (header: NamedHeader) => header.size || getHeaderLength(header, datFiles[0]);
-  const last = headers[headers.length - 1];
-  const offset = last
-    ? Array.isArray(last)
-      ? last[0].offset + last.map(len).reduce((l, r) => (l && r ? assertEq(l, r, headers) : l || r))
-      : last.offset + len(last)
-    : 0;
+  let last = headers[headers.length - 1];
+  let offset: number;
+  while (byOffset[(offset = nextOffset(headers, last, len))]) {
+    last = byOffset[offset];
+    headers = headers.concat([last]);
+  }
 
   if (offset === maxOffset) {
     await sleep();
@@ -89,9 +90,9 @@ export async function getPossibleHeaders(
     return [];
   }
 
-  var exact = [] as PossibleHeaders[];
+  var exact = [] as Readonly<PossibleHeaders>[];
   for (const type of possibleHeaders) {
-    const possibles = await getPossibleHeaders(headers.concat([type]), stats, datFiles);
+    const possibles = await getPossibleHeaders(byOffset, stats, datFiles, headers.concat([type]));
     for (const possible of possibles) {
       let end = possible[possible.length - 1];
       end = Array.isArray(end) ? end[0] : end;
@@ -104,6 +105,18 @@ export async function getPossibleHeaders(
     }
   }
   return [];
+}
+
+function nextOffset(
+  headers: Readonly<PossibleHeaders>,
+  last: NamedHeader | NamedHeader[],
+  len: (header: NamedHeader) => number
+): number {
+  return headers.length && last
+    ? Array.isArray(last)
+      ? last[0].offset + last.map(len).reduce((l, r) => (l && r ? assertEq(l, r, headers) : l || r))
+      : last.offset + len(last)
+    : 0;
 }
 
 export function possibleColumnHeaders(

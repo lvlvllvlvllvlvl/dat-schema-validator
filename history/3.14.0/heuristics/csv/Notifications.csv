@@ -1,0 +1,37 @@
+"rownum","Id","bool","bool","Message","string","i32","bool","bool"
+0,"FriendRequest",1,1,"Friend Request","",0,1,""
+1,"FriendNowOnline","",1,"Friend Now Online","",1,1,""
+2,"FriendNowOffline","",1,"Friend Now Offline","",2,1,""
+3,"FriendAreaChanged","","","Friend Area Changed","",3,1,""
+4,"FriendLevelChanged","","","Friend Level Changed","",4,1,""
+5,"FriendStatusMessageChanged",1,1,"Friend Status Changed","",5,1,""
+6,"PartyInvite",1,1,"Party Invite","",6,1,""
+7,"PartyJoined","",1,"Party Joined","",7,1,1
+8,"PartyLeft","",1,"Party Left","",8,1,1
+9,"PartyMemberInvited","",1,"Party Member Invited","",9,1,""
+10,"PartyMemberJoined","",1,"Party Member Joined","",10,1,1
+11,"PartyMemberLeft","",1,"Party Member Left","",11,1,1
+12,"PartyMemberPromotedToLeader","",1,"Party Member Promoted","",12,1,""
+13,"GuildInvite",1,1,"Guild Invite","",13,1,1
+14,"GuildJoined","",1,"Guild Joined","",14,1,1
+15,"GuildLeft","",1,"Guild Left","",15,1,1
+16,"GuildRankChanged","",1,"Guild Rank Changed","",16,1,1
+17,"GuildMemberInvited",1,1,"Guild Member Invited","",17,1,1
+18,"GuildMemberJoined",1,1,"Guild Member Joined","",18,1,1
+19,"GuildMemberLeft",1,1,"Guild Member Left","",19,1,1
+20,"GuildMemberRankChanged",1,1,"Guild Member Rank Changed","",20,1,1
+21,"GiftReceived",1,1,"Gift Received","",21,1,""
+22,"TradeRequest",1,1,"Trade Request","",22,1,1
+23,"AchievementComplete","",1,"Achievement Complete","",23,1,1
+24,"AchievementItemComplete","",1,"Achievement Item Complete","Displays notification when part of an achievement is completed",24,1,1
+25,"AchievementItemFailed","",1,"Tracked Achievement Item Failed","",24,1,1
+26,"PVPDuelChallenge",1,1,"PvP Duel Challenge","",25,1,""
+27,"PVPEvent",1,1,"PvP Event","",26,1,""
+28,"LeagueEvent",1,1,"League Event","",27,1,1
+29,"MarketNotifications",1,1,"Market Notifications","Displays notification when you recieve offers, when they are accepted or when they are rejected.",28,1,1
+30,"BestiaryRecipeNotification",1,1,"Bestiary Recipe","",29,1,1
+31,"RewardNotifications",1,1,"Reward Notifications","Displays challenge reward notifications.",30,1,1
+32,"LeagueInGame",1,1,"Harvest In-game Notifications","Displays Harvest related in-game notifications",31,1,1
+33,"ConsoleServerMessages","","","Server Messages","Show server messages as popups as well as in the chatbox",32,1,1
+34,"ConsolePlayerLevelUp","","","Level Up","",33,1,1
+35,"ConsoleGemLevelUp","","","Skill Gem Level Up","",34,1,1

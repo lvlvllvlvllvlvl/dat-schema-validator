@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Text",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "StatsKeys1",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "CharacterPanelDescriptionModesKey",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CharacterPanelDescriptionModes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "StatsKeys2",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "StatsKeys3",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "CharacterPanelTabsKey",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CharacterPanelTabs"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 96,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 97,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 113,
+    "size": 4,
+    "unique": false
+  }
+]

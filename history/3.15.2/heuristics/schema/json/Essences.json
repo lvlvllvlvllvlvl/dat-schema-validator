@@ -1,0 +1,870 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 96,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 112,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 128,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 144,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 160,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 176,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Wand_ModsKey",
+    "offset": 192,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Bow_ModsKey",
+    "offset": 208,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Quiver_ModsKey",
+    "offset": 224,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Amulet_ModsKey",
+    "offset": 240,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Ring_ModsKey",
+    "offset": 256,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Belt_ModsKey",
+    "offset": 272,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Gloves_ModsKey",
+    "offset": 288,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Boots_ModsKey",
+    "offset": 304,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_BodyArmour_ModsKey",
+    "offset": 320,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Helmet_ModsKey",
+    "offset": 336,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Shield_ModsKey",
+    "offset": 352,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 368,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "DropLevelMinimum",
+    "offset": 372,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "DropLevelMaximum",
+    "offset": 376,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Monster_ModsKeys",
+    "offset": 380,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EssenceTypeKey",
+    "offset": 396,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "EssenceType"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Level",
+    "offset": 412,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 416,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Display_Weapon_ModsKey",
+    "offset": 420,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_MeleeWeapon_ModsKey",
+    "offset": 436,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_OneHandWeapon_ModsKey",
+    "offset": 452,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_TwoHandWeapon_ModsKey",
+    "offset": 468,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_TwoHandMeleeWeapon_ModsKey",
+    "offset": 484,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Armour_ModsKey",
+    "offset": 500,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_RangedWeapon_ModsKey",
+    "offset": 516,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Helmet_ModsKey",
+    "offset": 532,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BodyArmour_ModsKey",
+    "offset": 548,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Boots_ModsKey",
+    "offset": 564,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Gloves_ModsKey",
+    "offset": 580,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Bow_ModsKey",
+    "offset": 596,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Wand_ModsKey",
+    "offset": 612,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Staff_ModsKey",
+    "offset": 628,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TwoHandSword_ModsKey",
+    "offset": 644,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TwoHandAxe_ModsKey",
+    "offset": 660,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TwoHandMace_ModsKey",
+    "offset": 676,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Claw_ModsKey",
+    "offset": 692,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Dagger_ModsKey",
+    "offset": 708,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "OneHandSword_ModsKey",
+    "offset": 724,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "OneHandThrustingSword_ModsKey",
+    "offset": 740,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "OneHandAxe_ModsKey",
+    "offset": 756,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "OneHandMace_ModsKey",
+    "offset": 772,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Sceptre_ModsKey",
+    "offset": 788,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Monster_ModsKey",
+    "offset": 804,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ItemLevelRestriction",
+    "offset": 820,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Belt_ModsKey",
+    "offset": 824,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Amulet_ModsKey",
+    "offset": 840,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Ring_ModsKey",
+    "offset": 856,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Jewellery_ModsKey",
+    "offset": 872,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Shield_ModsKey",
+    "offset": 888,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Display_Items_ModsKey",
+    "offset": 904,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "IsScreamingEssence",
+    "offset": 920,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  }
+]

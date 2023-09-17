@@ -16,11 +16,11 @@ function stringify(strings: string[]) {
   return '["' + strings.join('", "') + '"]';
 }
 
-export function tableGQL(table: Table, headers: NamedHeader[]) {
+export function tableGQL(table: Table, headers: NamedHeader[], err: (...args) => void) {
   let fields = headers
     .map((header, i) => {
       const col = table.columns?.[i];
-      
+
       let type = "";
       if (col?.references?.table) {
         type = col.references.table;
@@ -56,14 +56,7 @@ export function tableGQL(table: Table, headers: NamedHeader[]) {
           (header.unique && (col.name?.includes("Id") || col.name?.includes("ID")))
         ) {
           if (header.unique === false) {
-            console.warn(
-              table.name,
-              "column",
-              i,
-              "-",
-              col.name,
-              "marked unique, but non-unique values were found"
-            );
+            err(table.name, col.name, "marked unique, but non-unique values were found");
           } else {
             directives.push("unique");
           }
@@ -122,7 +115,8 @@ export async function exportGQL(
   tables: Table[],
   enumerations: Enumeration[],
   getHeaders: (table: Table) => NamedHeader[],
-  dest: string
+  dest: string,
+  err: (...args) => void = console.warn
 ) {
   const files = {} as any;
   const sources = csvParse(await fs.readFile("gqlsources.csv"));
@@ -135,7 +129,7 @@ export async function exportGQL(
 
   for (const table of tables) {
     if (table.name in sourceMap) delete table.added;
-    const gql = tableGQL(table, getHeaders(table));
+    const gql = tableGQL(table, getHeaders(table), err);
     const mapping = sourceMap[table.name];
     delete sourceMap[table.name];
     if (mapping) {

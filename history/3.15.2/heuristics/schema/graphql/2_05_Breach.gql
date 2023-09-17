@@ -1,0 +1,11 @@
+type BreachBossLifeScalingPerLevel {
+  MonsterLevel: i32
+  LifeMultiplier: i32
+}
+
+type BreachElement {
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
+}

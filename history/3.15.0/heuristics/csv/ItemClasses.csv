@@ -1,0 +1,75 @@
+"rownum","Id","Name","Category","ItemClassCategory","RemovedIfLeavesArea","[rid]","[rid]","AllocateToMapOwner","AlwaysAllocate","CanHaveVeiledMods","i32","i32","AlwaysShow","CanBeCorrupted","CanHaveIncubators","CanHaveInfluence","CanBeDoubleCorrupted","CanHaveAspects","CanTransferSkin","ItemStance"
+0,"LifeFlask","Life Flasks","Flasks",0,"",[],[],"","","",2565,1155,"","","","","","",1,""
+1,"ManaFlask","Mana Flasks","Flasks",0,"",[],[],"","","",2565,1155,"","","","","","",1,""
+2,"HybridFlask","Hybrid Flasks","Flasks",0,"",[],[],"","","",2565,1155,"","","","","","",1,""
+3,"Currency","Currency","Other",5,"",[],[],"",1,"",2565,1155,"","","","","","","",""
+4,"Amulet","Amulets","Jewellery",6,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,""
+5,"Ring","Rings","Jewellery",7,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,""
+6,"Claw","Claws","One Handed Weapon",8,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,0
+7,"Dagger","Daggers","One Handed Weapon",3,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,1
+8,"Wand","Wands","One Handed Weapon",9,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,2
+9,"One Hand Sword","One Hand Swords","One Handed Weapon",2,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,3
+10,"Thrusting One Hand Sword","Thrusting One Hand Swords","One Handed Weapon",2,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,4
+11,"One Hand Axe","One Hand Axes","One Handed Weapon",10,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,3
+12,"One Hand Mace","One Hand Maces","One Handed Weapon",1,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,3
+13,"Bow","Bows","Two Handed Weapon",11,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,5
+14,"Staff","Staves","Two Handed Weapon",4,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,6
+15,"Two Hand Sword","Two Hand Swords","Two Handed Weapon",12,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,7
+16,"Two Hand Axe","Two Hand Axes","Two Handed Weapon",13,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,8
+17,"Two Hand Mace","Two Hand Maces","Two Handed Weapon",14,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,8
+18,"Active Skill Gem","Active Skill Gems","Gems",15,"",[],[],"",1,"",2565,1155,"",1,"","","","","",""
+19,"Support Skill Gem","Support Skill Gems","Gems",16,"",[],[],"",1,"",2565,1155,"",1,"","","","","",""
+20,"Quiver","Quivers","Off-hand",17,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,9
+21,"Belt","Belts","Jewellery",18,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,""
+22,"Gloves","Gloves","Armor",19,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,""
+23,"Boots","Boots","Armor",20,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,""
+24,"Body Armour","Body Armours","Armor",21,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,""
+25,"Helmet","Helmets","Armor",22,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,""
+26,"Shield","Shields","Off-hand",23,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,10
+27,"SmallRelic","Small Relics","","","",[],[],"","","",2565,1155,"","","","","","","",""
+28,"MediumRelic","Medium Relics","","","",[],[],"","","",2565,1155,"","","","","","","",""
+29,"LargeRelic","Large Relics","","","",[],[],"","","",2565,1155,"","","","","","","",""
+30,"StackableCurrency","Stackable Currency","",5,"",[],[],"",1,"",2565,1155,"","","","","","","",""
+31,"QuestItem","Quest Items","",24,"",[],[],"","","",2565,1155,1,"","","","","","",""
+32,"Sceptre","Sceptres","One Handed Weapon",1,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,3
+33,"UtilityFlask","Utility Flasks","Flasks",0,"",[],[],"","","",2565,1155,"","","","","","",1,""
+34,"UtilityFlaskCritical","Critical Utility Flasks","",0,"",[],[],"","","",2565,1155,"","","","","","",1,""
+35,"Map","Maps","Other",25,"",[],[],"",1,"",1783,1155,"",1,"","","","","",""
+36,"Unarmed","","","","",[],[],"","","",2565,1155,"","","","","","",1,""
+37,"FishingRod","Fishing Rods","",26,"",[],[],"","","",2565,1155,"",1,1,"",1,1,1,7
+38,"MapFragment","Map Fragments","Other",27,"",[],[],1,1,"",2565,1155,"","","","","","","",""
+39,"HideoutDoodad","Hideout Doodads","","","",[],[],"","","",2565,1155,"","","","","","","",""
+40,"Microtransaction","Microtransactions","Microtransactions","","",[],[],"","","",2565,1155,"","","","","","","",""
+41,"Jewel","Jewels","Other",28,"",[],[],"",1,"",1776,1155,"",1,"","",1,"","",""
+42,"DivinationCard","Divination Cards","Other",29,"",[],[],"",1,"",1777,1155,"","","","","","","",""
+43,"LabyrinthItem","Labyrinth Items","",30,1,[],[],"","","",2565,1155,1,"","","","","","",""
+44,"LabyrinthTrinket","Labyrinth Trinkets","",31,1,[],[],"","","",2565,1155,1,"","","","","","",""
+45,"LabyrinthMapItem","Labyrinth Map Items","",27,"",[],[],1,1,"",2565,1155,"","","","","","","",""
+46,"MiscMapItem","Misc Map Items","Other",32,"",[],[],"",1,"",2565,1155,"",1,"","","","","",""
+47,"Leaguestone","Leaguestones","Other",33,"",[],[],"",1,"",2565,1155,"","","","","","","",""
+48,"PantheonSoul","Pantheon Souls","",34,"",[],[],"","","",2565,1155,1,"","","","","","",""
+49,"UniqueFragment","Pieces","Other",35,"",[],[],1,1,"",2565,1155,"","","","","","","",""
+50,"AbyssJewel","Abyss Jewels","Other",36,"",[],[],"",1,"",2565,1155,"",1,"","",1,"","",""
+51,"IncursionItem","Incursion Items","",37,1,[],[],1,"","",2565,1155,1,"","","","","","",""
+52,"DelveSocketableCurrency","Delve Socketable Currency","",38,"",[],[],"",1,"",2565,1155,"","","","","","","",""
+53,"Incubator","Incubators","",39,"",[],[],"",1,"",2565,1155,"","","","","","","",""
+54,"UniqueShard","Shards","","","",[],[],"","","",2565,1155,"","","","","","","",""
+55,"UniqueShardBase","Shard Hearts","","","",[],[],"","","",2565,1155,"","","","","","","",""
+56,"Rune Dagger","Rune Daggers","One Handed Weapon",3,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,1
+57,"Warstaff","Warstaves","Two Handed Weapon",4,"",[],[],"","",1,2565,1155,"",1,1,1,1,1,1,6
+58,"DelveStackableSocketableCurrency","Delve Stackable Socketable Currency","",38,"",[],[],"",1,"",2565,1155,"","","","","","","",""
+59,"AtlasRegionUpgradeItem","Atlas Region Upgrade Items","",40,"",[],[],"","","",2565,607,"","","","","","","",""
+60,"MetamorphosisDNA","Metamorph Samples","",41,"",[],[],1,1,"",2565,1155,"","","","","","","",""
+61,"HiddenItem","Hidden Items","","","",[],[],"","","",2565,1155,"","","","","","","",""
+62,"DONOTUSE2","","","","",[],[],"","","",2565,1155,"","","","","","","",""
+63,"DONOTUSE3","","","","",[],[],"","","",2565,1155,"","","","","","","",""
+64,"DONOTUSE4","","","","",[],[],"","","",2565,1155,"","","","","","","",""
+65,"HeistContract","Contracts","",42,"",[],[],"","","",2565,1155,"",1,"","","","","",""
+66,"HeistEquipmentWeapon","Heist Gear","",43,"",[],[],"","","",2565,1155,"","","","","","",1,""
+67,"HeistEquipmentTool","Heist Tools","",44,"",[],[],"","","",2565,1155,"","","","","","",1,""
+68,"HeistEquipmentUtility","Heist Cloaks","",45,"",[],[],"","","",2565,1155,"","","","","","",1,""
+69,"HeistEquipmentReward","Heist Brooches","",46,"",[],[],"","","",2565,1155,"","","","","","",1,""
+70,"HeistBlueprint","Blueprints","",47,"",[],[],"","","",2565,1155,"",1,"","","","","",""
+71,"Trinket","Trinkets","Jewellery",48,"",[],[],"","","",2565,1155,"",1,1,"","","","",""
+72,"HeistObjective","Heist Targets","",49,"",[],[],"","","",2565,1155,1,"","","","","","",""
+73,"ExpeditionLogbook","Expedition Logbooks","",50,"",[],[],"","","",2565,1155,1,1,"","","","","",""

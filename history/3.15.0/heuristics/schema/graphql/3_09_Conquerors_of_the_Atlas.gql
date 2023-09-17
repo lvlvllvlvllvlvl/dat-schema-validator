@@ -1,0 +1,34 @@
+type AtlasExileBossArenas {
+  AtlasExilesKey: AtlasExiles
+  _: i32
+  WorldAreasKey: WorldAreas
+}
+
+type AtlasExileInfluence {
+  AtlasExilesKey: AtlasExiles
+  _: i32
+  AtlasExileInfluenceSetsKeys: [AtlasExileInfluenceSets]
+}
+
+type AtlasExiles {
+  Id: string @unique
+  MonsterVarietiesKey: MonsterVarieties
+  Art: string
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  QuestKey: Quest
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  StatsKey: Stats
+  InventoriesKey: Inventories
+}

@@ -1,0 +1,39 @@
+type InfluenceModUpgrades {
+  InfluenceMod: Mods
+  UpgradedMod: Mods
+  _: bool
+}
+
+type MavenDialog {
+  Id: string @unique
+  TextAudioT1: NPCTextAudio
+  TextAudioT2: NPCTextAudio
+  TextAudioT3: NPCTextAudio
+  TextAudioT4: NPCTextAudio
+  TextAudioT5: NPCTextAudio
+  _: bool
+  TextAudioT6: NPCTextAudio
+}
+
+type MavenFights {
+  Id: string @unique
+  WitnessesRequired: i32
+  AreaLevel: i32
+  _: i32
+  _: i32
+  BaseItemType: BaseItemTypes
+  _: i32
+  MinMapTier: i32
+  _: i32
+  _: i32
+  WitnessAreas: [WorldAreas]
+  _: i32
+  _: i32
+  _: bool
+  _: [_] # All rows empty
+  CompletionAchievements: [AchievementItems]
+}
+
+type MavenJewelRadiusKeystones {
+  Keystone: PassiveSkills
+}

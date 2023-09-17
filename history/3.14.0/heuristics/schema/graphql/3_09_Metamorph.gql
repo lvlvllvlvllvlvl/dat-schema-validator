@@ -1,0 +1,113 @@
+type AlternateQualityTypes {
+  StatsKey: Stats
+  Description: string
+  BaseItemTypesKey: BaseItemTypes
+  ModsKey: Mods
+}
+
+type MetamorphLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type MetamorphosisMetaMonsters {
+  MonsterVarietiesKey: MonsterVarieties
+  _: [i32]
+  _: [i32]
+  Name: string
+}
+
+type MetamorphosisMetaSkills {
+  _: rid
+  _: rid
+  _: rid
+  _: [_]
+  _: [_]
+  _: rid
+  _: rid
+  _: [_]
+  _: [_]
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: rid
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+}
+
+type MetamorphosisMetaSkillTypes {
+  Id: string @unique
+  Name: string
+  Description: string
+  UnavailableArt: string
+  _: string
+  AvailableArt: string
+  _: rid
+  _: string
+  _: i32
+  _: [AchievementItems] # All rows empty
+  _: string
+  _: i32
+}
+
+type MetamorphosisRewardTypeItemsClient {
+  MetamorphosisRewardTypesKey: MetamorphosisRewardTypes
+  _: i32
+  Description: string
+}
+
+type MetamorphosisRewardTypes {
+  Id: string @unique
+  Art: string
+  Name: string
+  AchievementItemsKeys: [AchievementItems]
+}
+
+type MetamorphosisScaling {
+  Level: i32
+  StatValueMultiplier: f32
+  Scaling_StatsKeys: [Stats]
+  Scaling_Values: [i32]
+  _: i32
+  _: [_]
+}

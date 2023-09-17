@@ -1,0 +1,58 @@
+"rownum","Id","Command","bool","EnglishCommand","Description","bool"
+0,"PerformDance","dance",1,"dance","",1
+1,"ShowTimePlayed","played",1,"played","/played displays how long you have played this character for",1
+2,"ShowCharacterAge","age",1,"age","/age displays how long ago you created this character",1
+3,"ShowMonstersRemaining","remaining",1,"remaining","/remaining displays the number of monsters remaining in the area",1
+4,"ShowDeaths","deaths",1,"deaths","/deaths displays how many deaths you have incurred",1
+5,"ShowPvPStats","pvp",1,"pvp","",""
+6,"ShowLadder","ladder",1,"ladder","/ladder shows the top ten characters on the current ladder",1
+7,"ForceResync","oos",1,"oos","",1
+8,"DestroyCursorItem","destroy",1,"destroy","/destroy destroys the item on your cursor (be careful!)",1
+9,"Whois","whois",1,"whois","/whois displays some information about a character by name",1
+10,"ShowHelp","help","","help","",1
+11,"ShowCursorItemLevel","itemlevel",1,"itemlevel","/itemlevel displays the level of an item on your cursor",1
+12,"FixMyHelmet","fixmyhelmet",1,"fixmyhelmet","",1
+13,"ReportBug","bug",1,"bug","/bug reports a bug and gives you the report reference number",1
+14,"Debug","debug",1,"debug","",1
+15,"Ignore1","ignore","","ignore","/ignore ignores an account by character name",1
+16,"Ignore2","squelch","","squelch","",1
+17,"Unignore1","unignore","","unignore","/unignore stops ignoring an account by character name",1
+18,"Unignore2","unsquelch","","unsquelch","",1
+19,"ClearIgnoreList","clear_ignore_list","","clear_ignore_list","/clear_ignore_list removes all accounts from your ignore list",1
+20,"SetStatus","status","","status","",1
+21,"ShowPassives","passives","","passives","/passives displays a breakdown of your Passive Skill points",1
+22,"ShowAtlasPassives","atlaspassives","","atlaspassives","/atlaspassives displays a breakdown of your Atlas Passive Skill points",1
+23,"InviteToParty","invite","","invite","/invite invites someone to your party by name",""
+24,"AddFriend","friend","","friend","/friend adds a friend to your list by name",""
+25,"RemoveFriend","unfriend","","unfriend","",""
+26,"AcceptFriend","accept","","accept","",""
+27,"KickPartyMember","kick","","kick","",1
+28,"SetPartyDescription","party_description","","party_description","",1
+29,"InitiateTrade","tradewith","","tradewith","",1
+30,"ClearMessage1","cls","","cls","",1
+31,"ClearMessage2","clear","","clear","",1
+32,"ToggleNoChat1","nochat","","nochat","",1
+33,"ToggleNoChat2","togglenochat","","togglenochat","",1
+34,"AutoReply","autoreply",1,"autoreply","/autoreply [message] Autoreply to whispers with a custom message.",1
+35,"SetAFK","afk",1,"afk","/afk [message] Autoreply to whispers that you are AFK. Performing any action, including chatting, will cancel AFK mode.",1
+36,"DoNotDisturb1","dnd",1,"dnd","/dnd [message] Autoreply to whispers that you are DND and ignore all incoming messages.",1
+37,"DoNotDisturb2","donotdisturb",1,"donotdisturb","",1
+38,"ExitToCharacterSelection","exit","","exit","",1
+39,"SpectatePvP","spectate",1,"spectate","",""
+40,"SpectatePvPReturn","town",1,"town","",1
+41,"SetGlobalChatChannel","global","","global","/global X changes to global chat channel X.",1
+42,"SetTradeChatChannel","trade","","trade","/trade X changes to trade chat channel X.",1
+43,"RecheckAchievements","recheck_achievements",1,"recheck_achievements","/recheck_achievements Forces a recheck of certain achievements",1
+44,"WarpToHideout","hideout",1,"hideout","",1
+45,"WarpToGuildHideout","guild",1,"guild","",1
+46,"ResetExperiencePerHour","reset_xp","","reset_xp","/reset_xp Resets your experience per hour calculation.",1
+47,"WarpToMenagerie","menagerie",1,"menagerie","",1
+48,"WarpToDelveMineHub","delve",1,"delve","",1
+49,"SaveHideout","save_hideout",1,"save_hideout","/save_hideout Saves the current Hideout layout to a file that can be later loaded or shared.",""
+50,"RecoverOldCraftingBenchItem","recoveroldcraftingbenchitem",1,"recoveroldcraftingbenchitem","",1
+51,"WarpToSynthesisHub","synthesis",1,"synthesis","",1
+52,"WarpToMetamorphosisLab","metamorph",1,"metamorph","",1
+53,"ForceResyncPlayer","oosme",1,"oosme","",1
+54,"SetItemFilter","itemfilter","","itemfilter","/itemfilter allows you to specify a filter by name to instantly switch to using it",1
+55,"WarpToKiracVault","",1,"","",1
+56,"ShowKills","kills",1,"kills","/kills displays how many experience granting kills you have accrued",1

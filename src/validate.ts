@@ -1,7 +1,9 @@
-import { MultiBar, Presets } from "cli-progress";
+import { MultiBar, Presets, SingleBar } from "cli-progress";
 import { parse as csvParse } from "csv-parse/sync";
 import * as csv from "csv-stringify";
+import { rmSync } from "fs";
 import * as fs from "fs/promises";
+import { tmpdir } from "os";
 import path from "path";
 import { SCHEMA_URL, SchemaFile } from "pathofexile-dat-schema";
 import {
@@ -11,6 +13,7 @@ import {
   validateHeader,
 } from "pathofexile-dat/dat.js";
 import { argv, exit } from "process";
+import { onExit } from "signal-exit";
 import { ShapeChange } from "./changes.js";
 import {
   CdnBundleLoader,
@@ -18,9 +21,10 @@ import {
   NamedHeader,
   exportAllRows,
   importHeaders,
+  sleep,
 } from "./datfile.js";
 import { Enumeration, Table, exportGQL } from "./graphql.js";
-import { getPossibleHeaders, guessType } from "./heuristic.js";
+import { PossibleHeaders, getPossibleHeaders, guessType } from "./heuristic.js";
 
 const TRANSLATIONS = [
   { name: "English", path: "data" },
@@ -34,6 +38,9 @@ const TRANSLATIONS = [
   { name: "Thai", path: "data/thai" },
   { name: "Traditional Chinese", path: "data/traditional chinese" },
 ];
+
+const R = { recursive: true };
+const RF = { recursive: true, force: true };
 
 const args = argv[1].includes("validate.ts") ? argv.slice(2) : null;
 const tablesToProcess = args?.map((a) => a.toLowerCase());
@@ -49,13 +56,27 @@ const progressBars =
     : null;
 let lastFrame = performance.now();
 const progress: {
-  requests?: any;
-  receive?: any;
-  processing?: any;
-  increment: (bar: "requests" | "receive" | "processing", ...args) => void;
+  promises: Promise<any>[];
+  requests?: SingleBar;
+  processing?: SingleBar;
+  output?: SingleBar;
+  push: (task: Promise<any>, table?: string) => void;
+  increment: (bar: "requests" | "processing" | "output", ...args) => void;
 } = {
+  promises: [],
+  push: (task, table = "") => {
+    if (progressBars && !progress.output) {
+      progress.output = progressBars.create(progress.promises.length + 1, 0, {
+        step: "writing files",
+        table: "...",
+      });
+    } else {
+      progress.output?.setTotal(progress.promises.length + 1);
+    }
+    progress.promises.push(task.then(() => progress.increment("output", { table })));
+  },
   increment: (bar, ...args) => {
-    progress[bar].increment(...args);
+    progress[bar]?.increment(...args);
     if (progressBars && performance.now() - lastFrame > 200) {
       progressBars.update();
       lastFrame = performance.now();
@@ -72,7 +93,6 @@ if (args?.find((v) => v === "-h" || v === "--help")) {
   );
   exit();
 }
-const promises = [] as Promise<any>[];
 
 const errors = [] as string[];
 const tablesSeen = new Set<string>();
@@ -110,7 +130,8 @@ if (args && schemaArg) {
   }
 } else {
   schema = await fetch(SCHEMA_URL).then((r) => r.json());
-  promises.push(
+  await fs.mkdir(schemaDir, R);
+  progress.push(
     fs.writeFile(
       path.join(schemaDir, schemaPrefix + "schema.json"),
       JSON.stringify(schema, null, 2)
@@ -135,15 +156,20 @@ let includeTranslations = args?.find((v) => v === "-l" || v === "--lang" || v ==
   ? TRANSLATIONS.filter((t) => langsToProcess?.includes(t.name.toLowerCase()))
   : TRANSLATIONS;
 
-const heuristics = "tmp/heuristics";
-await fs.rm("tmp", { recursive: true, force: true });
-await fs.mkdir(`${heuristics}/csv`, { recursive: true });
-await fs.mkdir(`${heuristics}/schema/json`, { recursive: true });
-await fs.mkdir(`${heuristics}/schema/graphql`, { recursive: true });
+const tmp = await fs.mkdtemp(path.join(tmpdir(), "dat-validator-"));
+onExit(() => {
+  rmSync(tmp, RF);
+});
+const heuristics = path.join(tmp, "heuristics");
+await fs.mkdir(`${heuristics}/csv`, R);
+await fs.mkdir(`${heuristics}/schema/json`, R);
+await fs.mkdir(`${heuristics}/schema/graphql`, R);
 
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
   Object.fromEntries(schema.tables.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t])),
-  Object.fromEntries(schema.enumerations?.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t]) || [])
+  Object.fromEntries(
+    schema.enumerations?.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t]) || []
+  )
 );
 loader.clearBundleCache();
 const allTables = !args?.find((v) => v === "-t" || v === "--table" || v === "--tables");
@@ -159,27 +185,26 @@ progress.requests = progressBars?.create(files.length * includeTranslations.leng
   step: "loading files",
   table: "...",
 });
-progress.receive = progressBars?.create(files.length, 0, {
-  step: "receiving data",
-  table: "...",
-});
 progress.processing = progressBars?.create(files.length, 0, {
   step: "processing data",
   table: "...",
 });
 
+let concurrentLoads = 0;
 await Promise.all(
   files.map(async (file) => {
     const fileComponents = path.parse(file);
     const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
     const data = await Promise.all(
       includeTranslations.map(async (tr) => {
+        while (concurrentLoads > 30) await sleep(100);
+        concurrentLoads++;
         progress.increment("requests", { table: file.replace(/^data/, tr.path) });
         const buf = await loader.getFileContents(file.replace(/^data/, tr.path));
+        concurrentLoads--;
         return { ...tr, buf };
       })
     );
-    progress.increment("receive", { table: table.name });
     try {
       const csvName = metafiles[table.name.toLowerCase()];
       const csvFile = csvName && (await fs.readFile(csvName));
@@ -207,10 +232,16 @@ await Promise.all(
       if (columnStats[0].length !== datFiles[0].rowLength) {
         console.warn("Not stats data are equal");
       }
+      table.columns = table.columns || [];
 
       if (datFiles[0].rowLength) {
         let invalid = table.columns.length;
-        const headers = importHeaders(table, datFiles, columnStats);
+        const headers = importHeaders(
+          table,
+          (...args) => errors.push(args.join(" ")),
+          datFiles,
+          columnStats
+        );
         headers.forEach((header, i) => {
           try {
             if (
@@ -239,12 +270,19 @@ await Promise.all(
         }
 
         const possible = (
-          await getPossibleHeaders(headers.slice(0, invalid), columnStats, datFiles)
+          await getPossibleHeaders(
+            headers.slice(0, invalid).reduce((arr, h) => {
+              arr[Array.isArray(h) ? h[0].offset : h.offset] = h;
+              return arr;
+            }, [] as PossibleHeaders),
+            columnStats,
+            datFiles
+          )
         )[0];
 
         if (possible.length) {
           const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFiles[0]) : p));
-          promises.push(
+          progress.push(
             fs.writeFile(
               path.join(`${heuristics}/csv`, `${table.name}.csv`),
               csv.stringify(
@@ -263,7 +301,7 @@ await Promise.all(
               )
             )
           );
-          promises.push(
+          progress.push(
             fs.writeFile(
               path.join(`${heuristics}/schema/json`, `${table.name}.json`),
               JSON.stringify(hdr, undefined, 2)
@@ -290,15 +328,16 @@ await Promise.all(
       var latest = meta.length === 0 ? null : meta[meta.length - 1];
       const metaName = path.join("meta", table.name + ".csv");
       if (
+        !args?.includes("--historical") &&
         Object.keys(shape).find(
           (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k])
         )
       ) {
         meta.push(shape);
         if (csvFile && csvName !== metaName) {
-          promises.push(fs.rm(csvName));
+          progress.push(fs.rm(csvName));
         }
-        promises.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })));
+        progress.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })));
       }
     } catch (e) {
       console.error(file, e);
@@ -309,16 +348,17 @@ await Promise.all(
 );
 progressBars?.stop();
 
-promises.push(
+progress.push(
   exportGQL(
     tables.sort((a, b) => a.name.localeCompare(b.name)),
     enumerations.sort((a, b) => a.name.localeCompare(b.name)),
     (table) => headerMap[table.name],
-    `${heuristics}/schema/graphql`
+    `${heuristics}/schema/graphql`,
+    (...args) => errors.push(args.join(" "))
   )
 );
 errors.length &&
-  promises.push(
+  progress.push(
     fs.writeFile(path.join(schemaDir, schemaPrefix + "errors.txt"), errors.sort().join("\n"))
   );
 const missing = schema.tables
@@ -327,27 +367,34 @@ const missing = schema.tables
   .map((t) => `missing file ${t}.dat64`)
   .sort();
 missing.length &&
-  promises.push(
+  progress.push(
     fs.writeFile(path.join(schemaDir, schemaPrefix + "missing.txt"), missing.sort().join("\n"))
   );
-promises.push(
+progress.push(
   fs.writeFile(
     path.join(schemaDir, schemaPrefix + "filtered.json"),
     JSON.stringify(schema, null, 2)
   )
 );
-promises.push(fs.writeFile(path.join(schemaDir, schemaPrefix + "version.txt"), version));
-await promises;
+progress.push(fs.writeFile(path.join(schemaDir, schemaPrefix + "version.txt"), version));
+await Promise.all(progress.promises);
+progressBars?.update();
 
-await Promise.all(
-  Object.values(metafiles).map(async (filename) => {
-    const rows = csvParse(await fs.readFile(filename));
-    if (rows[rows.length - 1].row_count) {
-      rows.push({ version });
-      await fs.writeFile(filename, csv.stringify(rows, { header: true }));
-    }
-  })
-);
+await fs.rm(path.join(schemaDir, "heuristics"), RF);
+await fs.rename(heuristics, path.join(schemaDir, "heuristics"));
 
-await fs.rm("heuristics", { recursive: true });
-await fs.rename(heuristics, "heuristics");
+if (!args?.includes("--historical")) {
+  await fs.rm("heuristics", RF);
+  await fs.symlink(path.join(schemaDir, "heuristics"), "heuristics");
+  await Promise.all(
+    Object.values(metafiles).map(async (filename) => {
+      const rows = csvParse(await fs.readFile(filename));
+      if (rows[rows.length - 1].row_count) {
+        rows.push({ version });
+        await fs.writeFile(filename, csv.stringify(rows, { header: true }));
+      }
+    })
+  );
+}
+
+process.exit();

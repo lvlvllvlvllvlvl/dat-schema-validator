@@ -1,0 +1,152 @@
+type BetrayalChoiceActions {
+  Id: string @unique
+  BetrayalChoicesKey: BetrayalChoices
+  ClientStringsKey: ClientStrings
+}
+
+type BetrayalChoices {
+  Id: string @unique
+  Text: string
+  _: i32
+}
+
+type BetrayalDialogue {
+  _: rid
+  _: i32
+  _: i32
+  _: [i32]
+  BetrayalTargetsKey: BetrayalTargets
+  _: i32
+  _: rid
+  _: [rid]
+  BetrayalUpgradesKey: BetrayalUpgrades
+  _: bool
+  _: [i32]
+  _: [rid]
+  _: bool
+  _: [i32]
+  NPCTextAudioKey: NPCTextAudio
+  _: [i32]
+}
+
+enum BetrayalDialogueCue @indexing(first: 0) { _ }
+
+enum BetrayalFlags @indexing(first: 0) { _ }
+
+type BetrayalForts {
+  Id: string @unique
+  _: i32
+  _: i32
+  _: i32
+  ExtraTerrainFeaturesKey: ExtraTerrainFeatures
+}
+
+type BetrayalJobs {
+  Id: string @unique
+  Text: string
+  ExtraTerrainFeaturesKey: ExtraTerrainFeatures
+  Art: string
+  _: i32
+  _: i32
+  WorldAreasKey: WorldAreas
+  _: [_]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+}
+
+type BetrayalRanks {
+  Id: string @unique
+  Text: string
+  Level: i32
+  RankImage: string
+}
+
+type BetrayalRelationshipState {
+  Id: string @unique
+  Text: string
+}
+
+enum BetrayalTargetFlags @indexing(first: 0) { _ }
+
+type BetrayalTargetJobAchievements {
+  BetrayalTargetsKey: BetrayalTargets
+  BetrayalJobsKey: BetrayalJobs
+  AchievementItemsKey: AchievementItems
+}
+
+type BetrayalTargetLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type BetrayalTargets {
+  Id: string @unique
+  BetrayalRanksKey: BetrayalRanks
+  MonsterVarietiesKey: MonsterVarieties
+  BetrayalJobsKey: BetrayalJobs
+  Art: string
+  _: bool
+  ItemClasses: ItemClasses
+  FullName: string
+  Safehouse_ARMFile: string @file(ext: ".arm")
+  ShortName: string
+  _: i32
+  SafehouseLeader_AcheivementItemsKey: AchievementItems
+  Level3_AchievementItemsKey: AchievementItems
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+}
+
+type BetrayalTraitorRewards {
+  BetrayalJobsKey: BetrayalJobs
+  BetrayalTargetsKey: BetrayalTargets
+  BetrayalRanksKey: BetrayalRanks
+  Description: string
+}
+
+type BetrayalUpgrades {
+  Id: string @unique
+  Name: string
+  Description: string
+  ModsKey: [Mods]
+  ArtFile: string
+  BetrayalUpgradeSlotsKey: i32
+  _: [i32]
+  ItemVisualIdentityKey0: ItemVisualIdentity
+  ItemVisualIdentityKey1: ItemVisualIdentity
+  GrantedEffectsKey: GrantedEffects
+  _: i32
+  ItemClassesKey: ItemClasses
+}
+
+enum BetrayalUpgradeSlots @indexing(first: 0) { _ }
+
+type BetrayalWallLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type SafehouseBYOCrafting {
+  BetrayalJobsKey: BetrayalJobs
+  BetrayalTargetsKey: BetrayalTargets
+  Rank: i32
+  Description: string
+  ServerCommand: string
+  _: [rid]
+}
+
+type SafehouseCraftingSpreeCurrencies {
+  Id: string @unique
+  BaseItemTypesKey: BaseItemTypes
+  HasSpecificBaseItem: bool
+}
+
+type Scarabs {
+  ScarabType: i32
+  Tier: i32
+  BaseItemTypesKey: BaseItemTypes
+}
+
+enum ScarabTypes @indexing(first: 0) { _ }

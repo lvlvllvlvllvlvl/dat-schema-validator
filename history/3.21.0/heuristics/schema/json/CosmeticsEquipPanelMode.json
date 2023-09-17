@@ -1,0 +1,24 @@
+[
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 0,
+    "size": 8,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 8,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  }
+]

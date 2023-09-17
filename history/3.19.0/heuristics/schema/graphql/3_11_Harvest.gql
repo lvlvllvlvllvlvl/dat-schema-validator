@@ -1,0 +1,80 @@
+enum HarvestColours @indexing(first: 0) { _ }
+
+type HarvestCraftOptionIcons {
+  Id: string @unique
+  DDSFile: string @file(ext: ".dds")
+}
+
+type HarvestCraftOptions {
+  Id: string @unique
+  Text: string
+  _: rid
+  Command: string
+  Parameters: string
+  AchievementItemsKeys: [AchievementItems]
+  _: i32 @unique
+  _: string @unique
+  _: bool
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: [string]
+}
+
+type HarvestCraftTiers {
+  Id: string @unique
+  FrameImage: string
+  FrameHighlight: string
+}
+
+type HarvestCraftFilters {
+  _: string @unique
+  _: rid @unique
+  _: string @unique
+}
+
+type HarvestInfrastructure {
+  Object: string
+  _: i32
+  ClientStringsKey: ClientStrings
+}
+
+type HarvestPerLevelValues {
+  Level: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: bool
+  _: bool
+  _: bool
+}
+
+type HarvestLifeScalingPerLevel {
+  _: i32 @unique
+  _: i32
+}
+
+type HarvestSeeds {
+  Id: string @unique
+  Monster: MonsterVarieties
+  Tier: i32
+  _: i32
+  _: [_]
+  _: [_]
+  _: string
+  _: i32
+  _: string
+  _: i32
+}
+
+type HarvestSeedItems {
+  _: rid @unique
+  _: rid
+  _: i32 # All rows empty
+}

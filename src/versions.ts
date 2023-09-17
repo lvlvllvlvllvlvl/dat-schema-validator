@@ -30,6 +30,10 @@ export function compareVersion<T = string>(invert?: boolean, fn: (t: T) => strin
   };
 }
 
+export function isBefore(v1: string, v2: string) {
+  return compareVersion()(v1, v2) < 0
+}
+
 if (process.argv[1].includes("versions.ts")) {
   const metafiles = Promise.all(
     (await fs.readdir("meta")).map(

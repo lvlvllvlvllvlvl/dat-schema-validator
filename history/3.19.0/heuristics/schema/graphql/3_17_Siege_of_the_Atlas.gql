@@ -1,0 +1,96 @@
+type AtlasPrimordialAltarChoices {
+  Mod: Mods
+  Type: AtlasPrimordialAltarChoiceTypes
+  _: bool
+}
+
+type AtlasPrimordialAltarChoiceTypes {
+  Id: string @unique
+  TopIconEater: string
+  BottomIconEater: string
+  TopIconExarch: string
+  BottomIconExarch: string
+  Text: string @localized
+}
+
+type AtlasPrimordialBosses {
+  Id: string @unique
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  InfluenceComplete: MiscAnimated
+  MiniBossInvitation: BaseItemTypes
+  BossInvitation: BaseItemTypes
+  _: i32
+  _: i32 # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: i32 # All rows empty
+  _: rid
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+}
+
+type AtlasPrimordialBossInfluence {
+  Boss: AtlasPrimordialBosses
+  Progress: i32
+  MinMapTier: i32
+  _: i32
+  _: i32
+  _: rid
+  _: f32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type AtlasPrimordialBossOptions {
+  _: i32
+  _: i32
+  DefaultIcon: string
+  HoverIcon: string
+  HighlightIcon: string
+  EmptyIcon: string
+  Description: ClientStrings
+  DescriptionActive: ClientStrings
+  ProgressTracker: string
+  ProgressTrackerFill: string
+  Name: string @localized
+  _: string @unique
+}
+
+type PrimordialBossLifeScalingPerLevel {
+  AreaLevel: i32
+  Scale: i32
+}
+
+type AtlasUpgradesInventoryLayout {
+  Id: string @unique
+  _: i32
+  Voidstone: BaseItemTypes
+  _: i32
+  Objective: string
+  _: i32
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: rid
+  _: i32 # All rows empty
+}
+
+type AtlasPassiveSkillTreeGroupType {
+  Id: string @unique
+}
+
+type KiracLevels {
+  AreaLevel: i32
+  _: i32
+}
+
+type ScoutingReports {
+  Id: string @unique
+  BaseItemType: BaseItemTypes
+  MinMapTier: i32
+}

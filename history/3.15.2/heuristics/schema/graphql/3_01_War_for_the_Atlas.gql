@@ -1,0 +1,11 @@
+type ElderBossArenas {
+  WorldAreasKey: WorldAreas @unique
+  _: i32
+  AchievementItemsKeys: [AchievementItems]
+}
+
+type ElderMapBossOverride {
+  WorldAreasKey: WorldAreas @unique
+  MonsterVarietiesKeys: [MonsterVarieties]
+  TerrainMetadata: string @files(ext: [".ot", ".otc"])
+}

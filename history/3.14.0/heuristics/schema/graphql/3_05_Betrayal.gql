@@ -1,0 +1,155 @@
+type BetrayalChoiceActions {
+  Id: string @unique
+  BetrayalChoicesKey: BetrayalChoices
+  ClientStringsKey: ClientStrings
+}
+
+type BetrayalChoices {
+  Id: string @unique
+  Text: string
+  _: i32
+}
+
+type BetrayalDialogue {
+  BetrayalDialogueCueKey: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: [_]
+  _: rid
+  _: i32
+  _: rid
+  _: [_]
+  _: rid
+  _: bool
+  _: [_]
+  _: [_]
+  _: bool
+  _: [_]
+  _: rid @unique
+  _: [_] # All rows empty
+}
+
+enum BetrayalDialogueCue @indexing(first: 0) { _ }
+
+enum BetrayalFlags @indexing(first: 0) { _ }
+
+type BetrayalForts {
+  Id: string @unique
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+}
+
+type BetrayalJobs {
+  Id: string @unique
+  Text: string
+  _: rid
+  Art: string
+  _: i32
+  _: i32
+  _: rid
+  _: [_]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+}
+
+type BetrayalRanks {
+  Id: string @unique
+  Text: string
+  Level: i32
+  RankImage: string
+}
+
+type BetrayalRelationshipState {
+  Id: string @unique
+  Text: string
+}
+
+enum BetrayalTargetFlags @indexing(first: 0) { _ }
+
+type BetrayalTargetJobAchievements {
+  BetrayalTargetsKey: BetrayalTargets
+  BetrayalJobsKey: BetrayalJobs
+  AchievementItemsKey: AchievementItems
+}
+
+type BetrayalTargetLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type BetrayalTargets {
+  Id: string @unique
+  BetrayalRelationshipStateKey: BetrayalRelationshipState
+  MonsterVarietiesKey: MonsterVarieties
+  BetrayalJobsKey: BetrayalJobs
+  Art: string
+  _: bool
+  _: rid
+  _: string
+  _: string
+  _: string
+  _: i32
+  _: AchievementItems
+  _: AchievementItems
+  _: i32
+  _: i32
+  _: i32
+  _: rid @unique
+}
+
+type BetrayalTraitorRewards {
+  BetrayalJobsKey: BetrayalJobs
+  BetrayalTargetsKey: BetrayalTargets
+  BetrayalRanksKey: BetrayalRanks
+  Description: string
+}
+
+type BetrayalUpgrades {
+  Id: string @unique
+  Name: string
+  Description: string
+  ModsKey: [Mods]
+  ArtFile: string
+  BetrayalUpgradeSlotsKey: i32
+  _: [i32]
+  ItemVisualIdentityKey0: ItemVisualIdentity
+  ItemVisualIdentityKey1: ItemVisualIdentity
+  _: rid
+  _: i32
+  _: rid
+}
+
+enum BetrayalUpgradeSlots @indexing(first: 0) { _ }
+
+type BetrayalWallLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type SafehouseBYOCrafting {
+  BetrayalJobsKey: BetrayalJobs
+  BetrayalTargetsKey: BetrayalTargets
+  _: i32
+  _: string
+  _: string
+  _: [_] # All rows empty
+}
+
+type SafehouseCraftingSpreeCurrencies {
+  Id: string @unique
+  BaseItemTypesKey: BaseItemTypes
+  HasSpecificBaseItem: bool
+}
+
+type Scarabs {
+  ScarabType: i32
+  Tier: i32
+  BaseItemTypesKey: BaseItemTypes
+}
+
+enum ScarabTypes @indexing(first: 0) { _ }

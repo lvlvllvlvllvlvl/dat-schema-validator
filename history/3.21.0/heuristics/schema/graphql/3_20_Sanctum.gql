@@ -1,0 +1,103 @@
+type SanctumAirlocks {
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+  _: [_]
+  _: rid @unique
+}
+
+type SanctumFloors {
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: rid @unique
+}
+
+type SanctumFodderLifeScalingPerLevel {
+  _: i32 @unique
+  _: i32
+}
+
+type SanctumLifeScalingPerLevel {
+  _: i32 @unique
+  _: i32
+}
+
+type SanctumPersistentEffectCategories {
+  _: string @unique
+  _: string @unique
+  _: string
+  _: string
+  _: bool
+  _: bool
+  _: string @unique
+  _: string @unique
+  _: bool
+}
+
+type SanctumPersistentEffects {
+  _: string @unique
+  _: [_]
+  _: [_]
+  _: string
+  _: string
+  _: rid
+  _: i32 # All rows empty
+  _: bool
+  _: i32
+  _: i32
+  _: string
+  _: string
+  _: string
+  _: rid
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: [_]
+  _: [string]
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type SanctumRooms {
+  _: string @unique
+  _: string @unique
+  _: rid
+  _: string
+  _: rid
+  _: rid
+}
+
+type SanctumRoomTypes {
+  _: string @unique
+  _: bool
+  _: bool
+  _: rid
+  _: rid
+  _: i32
+  _: bool
+  _: string
+  _: bool
+  _: string
+  _: [string]
+  _: [_]
+  _: string
+  _: bool
+}
+
+type SanctumSelectionDisplayOverride {
+  _: string @unique
+  _: string
+  _: string
+  _: string
+  _: rid
+  _: i32
+  _: rid
+}

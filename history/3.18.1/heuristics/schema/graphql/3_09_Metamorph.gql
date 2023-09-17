@@ -1,0 +1,86 @@
+type AlternateQualityTypes {
+  StatsKey: Stats
+  Description: string
+  BaseItemTypesKey: BaseItemTypes
+  ModsKey: Mods
+}
+
+type MetamorphLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type MetamorphosisMetaMonsters {
+  MonsterVarietiesKey: MonsterVarieties
+  _: [rid]
+  _: [i32]
+  Name: string
+}
+
+type MetamorphosisMetaSkills {
+  Monster: MonsterVarieties
+  SkillType: MetamorphosisMetaSkillTypes
+  _: rid
+  _: [rid]
+  _: [i32]
+  _: rid
+  Animation: Animation
+  Stats: [Stats]
+  StatsValues: [i32]
+  _: i32
+  _: rid
+  GrantedEffects: [GrantedEffects]
+  _: i32
+  _: rid
+  Script1: string
+  Script2: string
+  Mods: [Mods]
+  Name: string
+  _: i32
+  _: [rid]
+  _: i32
+  _: i32
+  _: [i32]
+  _: [rid]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  MiscAnimations: [MiscAnimated]
+  _: bool
+}
+
+type MetamorphosisMetaSkillTypes {
+  Id: string @unique
+  Name: string @localized
+  Description: string @localized
+  UnavailableArt: string
+  _: string
+  AvailableArt: string
+  ItemisedSample: BaseItemTypes
+  BodypartName: string @localized
+  _: i32
+  AchievementItemsKeys: [AchievementItems]
+  BodypartNamePlural: string @localized
+  _: i32
+}
+
+type MetamorphosisRewardTypeItemsClient {
+  MetamorphosisRewardTypesKey: MetamorphosisRewardTypes
+  _: i32
+  Description: string
+}
+
+type MetamorphosisRewardTypes {
+  Id: string @unique
+  Art: string
+  Name: string
+  AchievementItemsKeys: [AchievementItems]
+}
+
+type MetamorphosisScaling {
+  Level: i32
+  StatValueMultiplier: f32
+  Scaling_StatsKeys: [Stats]
+  Scaling_Values: [i32]
+  _: i32
+  _: [i32]
+}

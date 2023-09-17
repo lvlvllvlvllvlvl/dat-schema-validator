@@ -1,0 +1,53 @@
+type WeaponPassiveSkillTypes {
+  Id: string @unique
+  _: i32
+}
+
+type WeaponPassiveTreeBalancePerItemLevel {
+  Level: i32
+  Bar1: i32
+  Bar2: i32
+  Bar3: i32
+  Bar4: i32
+  Bar5: i32
+}
+
+type WeaponPassiveTreeUniqueBaseTypes {
+  UniqueBase: BaseItemTypes
+  _: i32
+}
+
+type WeaponPassiveSkills {
+  Id: string
+  Tier: i32
+  Mod: Mods
+  _: [_]
+  _: [_]
+  Icon: string
+  Type: WeaponPassiveSkillTypes
+  Achievements: [AchievementItems]
+}
+
+type CrucibleEndgameMonsterPacks {
+  _: string @unique
+  _: [_]
+  _: i32
+  _: i32
+  _: bool
+}
+
+type CrucibleLifeScalingPerLevel {
+  _: i32 @unique
+  _: i32
+}
+
+type CruciblePlayerClassOffsets {
+  _: rid @unique
+  _: i32
+  _: i32
+}
+
+type CrucibleTags {
+  _: string @unique
+  _: bool
+}

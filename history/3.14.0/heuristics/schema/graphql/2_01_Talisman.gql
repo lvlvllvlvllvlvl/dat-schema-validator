@@ -1,0 +1,32 @@
+type TalismanMonsterMods {
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: rid
+  _: i32 # All rows empty
+}
+
+type TalismanPacks {
+  Id: string @unique
+  MonsterPacksKeys: [MonsterPacks]
+  _: i32
+  _: i32
+  MonsterVarietiesKey: MonsterVarieties
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  MonsterPacksKey: MonsterPacks
+}
+
+type Talismans {
+  BaseItemTypesKey: BaseItemTypes @unique
+  SpawnWeight: i32
+  ModsKey: Mods
+  Tier: i32
+  _: bool
+  _: bool
+  _: rid
+  _: rid
+  _: i32
+}

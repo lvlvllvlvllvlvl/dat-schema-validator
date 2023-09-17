@@ -1,0 +1,201 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "QuestState",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 12,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Marauder_CharacterTextAudioKeys",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Ranger_CharacterTextAudioKeys",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Witch_CharacterTextAudioKeys",
+    "offset": 52,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Duelist_CharacterTextAudioKeys",
+    "offset": 68,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Shadow_CharacterTextAudioKeys",
+    "offset": 84,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Templar_CharacterTextAudioKeys",
+    "offset": 100,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Scion_CharacterTextAudioKeys",
+    "offset": 116,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Goddess_CharacterTextAudioKeys",
+    "offset": 132,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "JackTheAxe_CharacterTextAudioKeys",
+    "offset": 148,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 164,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 165,
+    "size": 1,
+    "unique": false
+  }
+]

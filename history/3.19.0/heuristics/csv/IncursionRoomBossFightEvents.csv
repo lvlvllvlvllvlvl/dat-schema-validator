@@ -1,0 +1,10 @@
+"rownum","Room","string","string","string","string","string","rid"
+0,32,"","StartMonsterSpawnersOfType( Metadata/Monsters/LeagueIncursion/VaalSaucerRoomSpiderSpawner1, 200, 1 );","","","",""
+1,54,"","incursion_golems.ModifyState( activated, 1 ); StartMonsterSpawnersOfType( Metadata/Monsters/LeagueIncursion/VaalSaucerRoomSpiderSpawner1, 200, 1 );","","","",""
+2,76,"","incursion_golems.ModifyState( activated, 1 ); StartMonsterSpawnersOfType( Metadata/Monsters/LeagueIncursion/VaalSaucerRoomSpiderSpawner2, 200, 1 );","","","",""
+3,33,"","room_turret1.ModifyState( fight, 1 );","","","",""
+4,55,"turrets.AddBuff( omnitect_turret_damage_buff, infinity, 0, 10 );","room_turret1.ModifyState( fight, 1 );","","","",6265
+5,77,"turrets.AddBuff( omnitect_turret_damage_buff, infinity, 0, 10 );","room_turret1.ModifyState( fight, 1 ); room_turret_upgrade1.ModifyState( fight, 1 );","","","",6265
+6,34,"initiator.Transition();","","","","",""
+7,56,"initiator.Transition(); turrets.AddBuff( omnitect_turret_damage_buff, infinity, 10, 0 );","","","","",6269
+8,78,"initiator.Transition(); initiator2.Transition(); turrets.AddBuff( omnitect_turret_damage_buff, infinity, 10, 0 );","","","","",6269

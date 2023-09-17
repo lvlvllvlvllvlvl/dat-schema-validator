@@ -1,0 +1,6 @@
+"rownum","Id","SpawnWeight","MinLevel","MaxLevel","TimeLimit","HasTimeBonusPerKill","HasTimeBonusPerObjectTagged","HasLimitedPortals","NPCTalkKey","TimeLimitBonusFromObjective","ObjectCount","[i32]","bool","[rid]"
+0,"Blank",0,0,100,0,"","","","",0,0,[],1,[]
+1,"TimeLimit",33,0,100,300000,"","","",666,0,0,[],"",[1577]
+2,"TimeLimitIncreaseOnKill",33,0,100,40000,1,"","",667,1000,0,[],"","[1577,1578]"
+3,"TimeLimitIncreaseFromObjects",33,0,100,100000,"",1,"",668,25000,9,[],"","[1577,1580]"
+4,"LimitedPortals",0,0,100,0,"","",1,665,0,0,[],"",[1587]

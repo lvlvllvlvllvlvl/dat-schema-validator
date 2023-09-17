@@ -1,0 +1,140 @@
+type BlightBalancePerLevel {
+  Level: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+}
+
+type BlightBossLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type BlightChestTypes {
+  ChestsKey: Chests
+}
+
+type BlightCraftingItems {
+  BaseItemTypesKey: BaseItemTypes @unique
+  Tier: i32
+  AchievementItemsKeys: [AchievementItems]
+  _: bool
+}
+
+type BlightCraftingRecipes {
+  Id: string @unique
+  BlightCraftingItemsKeys: [BlightCraftingItems]
+  BlightCraftingResultsKey: BlightCraftingResults
+  BlightCraftingTypesKey: BlightCraftingTypes
+}
+
+type BlightCraftingResults {
+  Id: string @unique
+  ModsKey: Mods
+  PassiveSkillsKey: PassiveSkills
+}
+
+type BlightCraftingTypes {
+  Id: string @unique
+  _: i32
+  _: bool
+}
+
+type BlightCraftingUniques {
+  _: rid
+}
+
+type BlightedSporeAuras {
+  _: rid
+  _: [i32]
+  _: i32
+  _: [i32]
+  _: i32
+}
+
+type BlightEncounterTypes {
+  Id: string @unique
+  Icon: string
+  _: bool
+  _: i32
+}
+
+type BlightEncounterWaves {
+  MonsterSpawnerId: string @unique
+  EncounterType: BlightEncounterTypes
+  _: i32
+  _: i32
+  _: i32
+  Wave: i32
+}
+
+type BlightRewardTypes {
+  Id: string @unique
+  Icon: string
+}
+
+type BlightTopologies {
+  Id: string @unique
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type BlightTopologyNodes {
+  Id: string @unique
+  _: [i32]
+  Size: i32
+  _: i32
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
+  _: i32
+}
+
+type BlightTowerAuras {
+  Id: i32 @unique
+  BuffDefinitionsKey: BuffDefinitions
+  _: i32
+  MiscAnimatedKey: MiscAnimated
+}
+
+type BlightTowers {
+  Id: string @unique
+  Name: string
+  Description: string
+  Icon: string
+  NextUpgradeOptions: [BlightTowers]
+  _: i32
+  _: string
+  _: i32
+  _: i32
+  _: AchievementItems
+  _: Stats
+  _: [Stats]
+  _: [_]
+  _: bool
+}
+
+type BlightTowersPerLevel {
+  BlightTowersKey: BlightTowers
+  _: i32
+  MonsterVarietiesKey: MonsterVarieties
+  Cost: i32
+  _: i32
+}

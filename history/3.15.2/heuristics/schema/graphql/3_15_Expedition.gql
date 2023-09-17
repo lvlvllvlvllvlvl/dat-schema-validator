@@ -1,0 +1,126 @@
+type ExpeditionAreas {
+  Area: WorldAreas
+  PosX: i32
+  PosY: i32
+  Tags: [Tags]
+  _: [i32]
+  _: bool
+  TextAudio: NPCTextAudio
+  CompletionAchievements: [AchievementItems]
+}
+
+type ExpeditionBalancePerLevel {
+  Level: i32
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type ExpeditionCurrency {
+  BaseItemType: BaseItemTypes
+  _: i32
+  NPC: ExpeditionNPCs
+}
+
+enum ExpeditionDealFamilies @indexing(first: 0) { _ }
+
+type ExpeditionDeals {
+  Id: i32 @unique
+  Function: string
+  Arguments: string
+  TextAudio: NPCTextAudio
+  Description: string @localized
+  BuyAchievements: [AchievementItems]
+  _: rid
+  DealFamily: i32
+}
+
+type ExpeditionFactions {
+  Id: string @unique
+  Name: string
+  FactionFlag: string
+  _: i32
+  FactionIcon: string
+  MonsterVarieties: MonsterVarieties
+  Progress1: NPCTextAudio
+  Progress2Vaal: NPCTextAudio
+  Progress3Final: NPCTextAudio
+  Tags: Tags
+}
+
+type ExpeditionMarkersCommon {
+  Id: string @unique
+  AOFile: string
+}
+
+type ExpeditionNPCs {
+  Id: string @unique
+  NPCs: [NPCs]
+  RerollItem: BaseItemTypes
+  _: i32
+  _: i32
+  _: i32
+  Faction: ExpeditionFactions
+  Reroll: NPCTextAudio
+  AllBombsPlaced: NPCTextAudio
+  BombPlacedRemnant: NPCTextAudio
+  BombPlacedTreasure: NPCTextAudio
+  BombPlacedMonsters: NPCTextAudio
+  BombPlacedGeneric: NPCTextAudio
+  EncounterComplete: NPCTextAudio
+}
+
+enum ExpeditionRelicModCategories @indexing(first: 0) { _ }
+
+type ExpeditionRelicMods {
+  Mod: Mods
+  Categories: [i32]
+  DestroyAchievements: [AchievementItems]
+}
+
+type ExpeditionRelics {
+  Id: string @unique
+  Name: string
+  ItemTag: Tags
+  AOFile: string
+  MinLevel: i32
+  MaxLevel: i32
+}
+
+type ExpeditionStorageLayout {
+  Id: string @unique
+  BaseItemType: BaseItemTypes
+  PosX: i32
+  PosY: i32
+  _: i32
+  _: i32
+  Width: i32
+  Height: i32
+  _: i32
+  _: bool
+}
+
+type ExpeditionTerrainFeatures {
+  Id: string @unique
+  ExtraFeature: ExtraTerrainFeatures
+  ExpeditionFaction: ExpeditionFactions
+  MinLevel: i32
+  MaxLevel: i32
+  _: i32
+  Area: WorldAreas
+  ExpeditionAreas: [ExpeditionAreas]
+  _: i32
+  _: bool
+  UnearthAchievements: [AchievementItems]
+}

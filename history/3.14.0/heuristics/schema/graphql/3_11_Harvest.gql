@@ -1,0 +1,59 @@
+enum HarvestColours @indexing(first: 0) { _ }
+
+type HarvestCraftOptionIcons {
+  Id: string @unique
+  DDSFile: string
+}
+
+type HarvestCraftOptions {
+  Id: string @unique
+  Text: string
+  _: i32
+  _: i32 # All rows empty
+  _: [_] # All rows empty
+  _: string
+  _: [_]
+  _: bool
+  _: i32 @unique
+  _: [_]
+  _: string
+  _: string
+  _: bool
+}
+
+type HarvestCraftTiers {
+  Id: string @unique
+  FrameImage: string
+  FrameHighlight: string
+}
+
+type HarvestInfrastructure {
+  _: string @unique
+  _: i32 @unique
+  _: rid
+}
+
+type HarvestPerLevelValues {
+  Level: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type HarvestSeeds {
+  _: string @unique
+  _: rid @unique
+  _: i32
+  _: string @unique
+  _: [_]
+  _: i32
+  _: [_]
+  _: [string]
+  _: i32
+  _: string
+  _: i32
+  _: string
+  _: i32
+}

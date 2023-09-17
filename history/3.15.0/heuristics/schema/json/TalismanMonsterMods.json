@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ModTypeKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ModType"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ModsKey",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  }
+]

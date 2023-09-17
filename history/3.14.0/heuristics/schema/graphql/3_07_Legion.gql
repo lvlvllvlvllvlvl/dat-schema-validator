@@ -1,0 +1,111 @@
+type Incubators {
+  BaseItemTypesKey: BaseItemTypes @unique
+  _: i32
+  Description: string
+  Hash: i32
+  AchievementItemsKeys: [AchievementItems]
+}
+
+type LegionBalancePerLevel {
+  MinLevel: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type LegionChestCounts {
+  LegionFactionsKey: LegionFactions
+  LegionRanksKey: LegionRanks
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  MinLevel: i32
+  _: i32
+}
+
+type LegionFactions {
+  Id: string @unique
+  _: i32
+  _: rid
+  _: f32
+  _: f32
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  AchievementItemsKeys1: [AchievementItems]
+  _: rid
+  _: rid
+  _: f32
+  _: f32
+  AchievementItemsKeys2: [AchievementItems]
+  _: rid @unique
+  _: string @unique
+}
+
+type LegionMonsterCounts {
+  LegionFactionsKey: LegionFactions
+  LegionRanksKey: LegionRanks
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+enum LegionMonsterTypes @indexing(first: 0) { _ }
+
+type LegionMonsterVarieties {
+  MonsterVarietiesKey: MonsterVarieties
+  LegionFactionsKey: LegionFactions
+  _: rid
+  _: i32
+  _: [rid]
+  _: i32
+  _: i32
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: i32
+  _: i32
+  _: [rid]
+  _: rid
+}
+
+type LegionRanks {
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  _: i32
+  _: i32
+}
+
+enum LegionRankTypes @indexing(first: 0) { _ }
+
+enum LegionRewardTypes @indexing(first: 0) { _ }
+
+type LegionRewardTypeVisuals {
+  IntId: i32 @unique
+  _: rid
+  _: string
+  MiscAnimatedKey: MiscAnimated
+  _: f32
+  Id: string
+}
