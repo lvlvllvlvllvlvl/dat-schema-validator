@@ -384,7 +384,7 @@ await fs.rename(heuristics, path.join(schemaDir, "heuristics"));
 
 if (!args?.includes("--historical")) {
   await fs.rm("heuristics", RF);
-  await fs.symlink(path.join(schemaDir, "heuristics"), "heuristics");
+  await fs.cp(path.join(schemaDir, "heuristics"), "heuristics", R);
   await Promise.all(
     Object.values(metafiles).map(async (filename) => {
       const rows = csvParse(await fs.readFile(filename));
