@@ -1,0 +1,166 @@
+type AncestralEmbraceVariations {
+  Id: string @unique
+  Minion: MonsterVarieties
+  _: rid
+}
+
+type AncestralLifeScalingPerLevel {
+  Level: i32
+  _: i32
+}
+
+type AncestralTrialChieftains {
+  _: rid
+  _: rid
+}
+
+type AncestralTrialDialogue {
+  _: rid
+  _: rid
+  _: i32
+  TextAudio: [NPCTextAudio]
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+  _: bool
+}
+
+type AncestralTrialDialogueEvents {
+  Id: string @unique
+  _: i32
+}
+
+type AncestralTrialFieldItems {
+  _: rid
+  _: rid
+  HASH32: i32
+  Description: string @localized
+  Achievement: [AchievementItems]
+  _: rid
+  _: rid
+}
+
+type AncestralTrialItems {
+  Id: string @unique
+  HASH16: i32
+  Name: string @localized
+  Image: string
+  _: rid
+  _: i32
+  Mods: [Mods]
+  FlavorText: string @localized
+  _: i32
+  _: [_] # All rows empty
+  _: rid
+  _: rid
+}
+
+type AncestralTrialMonsters {
+  _: rid
+  Monster: MonsterVarieties
+  _: rid
+  _: i32
+  Achievement: [AchievementItems]
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+}
+
+type AncestralTrialPositionType {
+  Id: string @unique
+  PlayerTotemIcon: string
+  Name: string @localized
+  EnemyTotemIcon: string
+  PlayerTotemSmallIcon: string
+  EnemyTotemSmallIcon: string
+}
+
+type AncestralTrialShopSlotEntries {
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+  _: i32
+  _: bool
+}
+
+type AncestralTrialTribeOpinions {
+  _: rid
+  _: rid
+  _: i32
+}
+
+type AncestralTrialTribes {
+  Id: string @unique
+  _: rid
+  Portrait: string
+  TribeIcon: string
+  TribeName: string @localized
+  FavourTracker: string
+  _: [rid]
+  Name: string @localized
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: [rid]
+  _: rid
+  _: [rid]
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+}
+
+type AncestralTrialUnitPositions {
+  Id: string @unique
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type AncestralTrialUnits {
+  Id: string @unique
+  Name: string @localized
+  Tribe: AncestralTrialTribes
+  Image: string
+  TotemImage: string
+  HASH16: i32
+  _: i32
+  Description: string @localized
+  _: i32
+  _: i32
+  Position: AncestralTrialUnitPositions
+}
+
+type ChieftainLifeScalingPerLevel {
+  Level: i32
+  _: i32
+}
+
+type PassiveSkillTattoos {
+  Tattoo: BaseItemTypes
+  Override: PassiveSkillOverrides
+  Set: PassiveSkillTattooTargetSets
+  Tribe: i32
+  OverrideType: PassiveSkillOverrideTypes
+}
+
+type PassiveSkillTattooTargetSets {
+  Id: string @unique
+  Set: [i32]
+  Name: string @localized
+  Qualifier: string @localized
+}
