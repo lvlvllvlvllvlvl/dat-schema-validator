@@ -1,6 +1,6 @@
 [
   {
-    "name": "BaseItemTypesKey",
+    "name": "EffectBaseType",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -14,7 +14,7 @@
     "size": 16
   },
   {
-    "name": "ItemVisualEffectKey",
+    "name": "VisualEffect",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -28,7 +28,7 @@
     "size": 16
   },
   {
-    "name": "ItemVisualIdentityKey1",
+    "name": "VisualIdentity",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -42,84 +42,95 @@
     "size": 16
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Stats",
     "offset": 48,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "ItemClasses",
     "offset": 64,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    },
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 80,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 96,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 97,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 113,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 97,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 113,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 129,
-    "size": 1,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   },
   {
     "type": {
@@ -134,13 +145,15 @@
     "unique": false
   },
   {
+    "name": "",
+    "offset": 146,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 146,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "type": {
@@ -192,34 +205,40 @@
     "unique": false
   },
   {
+    "name": "",
+    "offset": 211,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 211,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 227,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 227,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 228,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 228,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

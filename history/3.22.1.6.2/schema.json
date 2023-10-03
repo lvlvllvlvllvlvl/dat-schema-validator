@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1694868523,
+  "createdAt": 1696228957,
   "tables": [
     {
       "name": "RogueExiles",
@@ -49390,7 +49390,7 @@
       "name": "ItemisedVisualEffect",
       "columns": [
         {
-          "name": "BaseItemTypesKey",
+          "name": "EffectBaseType",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -49404,7 +49404,7 @@
           "files": null
         },
         {
-          "name": "ItemVisualEffectKey",
+          "name": "VisualEffect",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -49418,21 +49418,7 @@
           "files": null
         },
         {
-          "name": "ItemVisualIdentityKey1",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "ItemVisualIdentity"
-          },
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": "ItemVisualIdentityKey2",
+          "name": "VisualIdentity",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -49584,18 +49570,6 @@
         {
           "name": null,
           "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
           "array": true,
           "type": "array",
           "unique": false,
@@ -49634,6 +49608,18 @@
           "description": null,
           "array": false,
           "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": null,

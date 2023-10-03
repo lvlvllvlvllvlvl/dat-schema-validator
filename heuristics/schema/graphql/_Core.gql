@@ -2236,15 +2236,15 @@ type ItemExperiencePerLevel {
 }
 
 type ItemisedVisualEffect {
-  BaseItemTypesKey: BaseItemTypes
-  ItemVisualEffectKey: ItemVisualEffect
-  ItemVisualIdentityKey1: ItemVisualIdentity
-  _: [_]
-  _: [_]
-  _: [_]
+  EffectBaseType: BaseItemTypes
+  VisualEffect: ItemVisualEffect
+  VisualIdentity: ItemVisualIdentity
+  Stats: [Stats]
+  ItemClasses: [ItemClasses]
+  _: [rid]
   _: bool
-  _: [_]
-  _: [_]
+  _: [i32]
+  _: [i32]
   _: bool
   _: [_]
   _: bool
