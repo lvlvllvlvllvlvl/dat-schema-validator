@@ -324,15 +324,17 @@
     "size": 16
   },
   {
+    "name": "MtxSlotTypes",
+    "offset": 215,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "MicrotransactionSkillGemEffectSlotTypes"
       }
     },
-    "offset": 215,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

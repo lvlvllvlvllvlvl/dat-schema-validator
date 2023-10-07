@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1696228957,
+  "createdAt": 1696574531,
   "tables": [
     {
       "name": "RogueExiles",
@@ -54490,6 +54490,48 @@
       "tags": []
     },
     {
+      "name": "MicrotransactionSkillGemEffectSlotTypes",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "Type",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        }
+      ],
+      "tags": []
+    },
+    {
       "name": "MicrotransactionSocialFrameVariations",
       "columns": [
         {
@@ -70116,6 +70158,20 @@
           "localized": false,
           "references": {
             "table": "ItemExperienceTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "MtxSlotTypes",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "MicrotransactionSkillGemEffectSlotTypes"
           },
           "until": null,
           "file": null,

@@ -4491,7 +4491,7 @@ type SkillGems @tags(list: ["item:def"]) {
   _: rid
   _: i32
   ItemExperienceType: ItemExperienceTypes
-  _: [_]
+  MtxSlotTypes: [MicrotransactionSkillGemEffectSlotTypes]
 }
 
 enum SkillMines @indexing(first: 0) { _ }
@@ -5800,10 +5800,10 @@ type MicrotransactionOnKillEffects {
 }
 
 # Added 3.22
-type microtransactionskillgemeffectslottypes {
-  _: string @unique
-  _: string @unique @localized
-  _: i32 @unique
+type MicrotransactionSkillGemEffectSlotTypes {
+  Id: string @unique
+  Type: string @localized
+  _: i32
 }
 
 # Added 3.22
