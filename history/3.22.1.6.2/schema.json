@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1696574531,
+  "createdAt": 1697372360,
   "tables": [
     {
       "name": "RogueExiles",
@@ -67971,7 +67971,7 @@
       "name": "QuestStates",
       "columns": [
         {
-          "name": "QuestKey",
+          "name": "Quest",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -67985,7 +67985,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Order",
           "description": null,
           "array": false,
           "type": "i32",
@@ -67997,25 +67997,29 @@
           "files": null
         },
         {
-          "name": "QuestStates",
+          "name": "FlagsPresent",
           "description": null,
           "array": true,
-          "type": "i32",
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "FlagsMissing",
           "description": null,
           "array": true,
-          "type": "i32",
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -68186,12 +68190,10 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "row",
+          "type": "string",
           "unique": false,
           "localized": false,
-          "references": {
-            "table": "QuestStates"
-          },
+          "references": null,
           "until": null,
           "file": null,
           "files": null

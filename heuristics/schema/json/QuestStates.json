@@ -1,6 +1,6 @@
 [
   {
-    "name": "QuestKey",
+    "name": "Quest",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -14,7 +14,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Order",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -28,29 +28,29 @@
     "size": 4
   },
   {
-    "name": "QuestStates",
+    "name": "FlagsPresent",
     "offset": 20,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "FlagsMissing",
     "offset": 36,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
       }
     },
     "size": 16
@@ -231,12 +231,8 @@
     "unique": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": false,
-        "name": "QuestStates"
-      }
+      "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   }
 ]
