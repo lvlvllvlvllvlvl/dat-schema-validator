@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Event",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CharacterAudioEvents"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Character",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Characters"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TextAudio",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "CharacterTextAudio"
+      }
+    },
+    "size": 16
+  }
+]

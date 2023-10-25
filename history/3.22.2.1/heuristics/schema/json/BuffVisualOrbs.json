@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "BuffVisualOrbTypesKey",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BuffVisualOrbTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BuffVisualOrbArtKeys",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BuffVisualOrbArt"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Player_BuffVisualOrbArtKeys",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BuffVisualOrbArt"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BuffVisualOrbArtKeys2",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BuffVisualOrbArt"
+      }
+    },
+    "size": 16
+  }
+]
