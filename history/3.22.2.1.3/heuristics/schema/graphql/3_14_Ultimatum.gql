@@ -1,0 +1,81 @@
+type UltimatumEncounters {
+  Id: string @unique
+  Description: string @localized
+  ModTypes: [UltimatumModifierTypes]
+  BossARMFile: string
+  Type: UltimatumEncounterTypes
+  Icon: string
+  HASH16: i32
+  _: bool
+  _: i32
+}
+
+type UltimatumEncounterTypes {
+  Id: string @unique
+  Name: string @localized
+  ProgressBarText: string @localized
+  _: bool
+  _: bool
+  NormalAchievements: [AchievementItems]
+  InscribedAchievement: AchievementItems
+}
+
+type UltimatumItemisedRewards {
+  Id: string @unique
+  HASH16: i32
+  RewardText: string @localized
+  ItemVisualIdentityKey: ItemVisualIdentity
+  RewardType: i32
+  SacrificeItem: BaseItemTypes
+  SacrificeAmount: i32
+  SacrificeText: string @localized
+  _: bool
+  TrialMods: [Mods]
+}
+
+type UltimatumMapModifiers {
+  Stat: Stats
+  Mods: [UltimatumModifiers]
+}
+
+type UltimatumModifiers {
+  Id: string @unique
+  Types: [UltimatumModifierTypes]
+  ExtraMods: [Mods]
+  TypesFiltered: [UltimatumModifierTypes]
+  DaemonSpawningData: DaemonSpawningData
+  PreviousTiers: [UltimatumModifiers]
+  _: bool
+  Bosses: [MonsterVarieties]
+  Radius: i32
+  Name: string @localized
+  Icon: string
+  HASH16: i32
+  TypesExtra: [UltimatumModifierTypes]
+  MonsterTypesApplyingRuin: i32
+  MiscAnimated: MiscAnimated
+  BuffTemplates: [BuffTemplates]
+  Tier: i32
+  _: i32
+  Description: string @localized
+  MonsterSpawners: [string]
+  _: bool
+  Achievements: [AchievementItems]
+  TextAudio: NPCTextAudio
+  UniqueMapMod: Mods
+}
+
+type UltimatumModifierTypes {
+  Id: string @unique
+  _: bool
+}
+
+type UltimatumTrialMasterAudio {
+  Id: string
+  Variant: i32
+  _: i32
+  _: i32
+  TextAudio: NPCTextAudio
+  RoundsMin: i32
+  RoundsMax: i32
+}
