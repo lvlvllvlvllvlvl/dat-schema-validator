@@ -1,19 +1,20 @@
 [
   {
-    "name": "",
+    "name": "MTX",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "BaseItemTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Tier",
     "offset": 16,
     "unknownArray": false,
     "unique": true,

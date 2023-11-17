@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1697372360,
+  "createdAt": 1700119217,
   "tables": [
     {
       "name": "RogueExiles",
@@ -442,7 +442,7 @@
           "files": null
         },
         {
-          "name": "IsCartographerBox",
+          "name": null,
           "description": null,
           "array": false,
           "type": "bool",
@@ -6736,7 +6736,7 @@
           "files": null
         },
         {
-          "name": "IsEnabled",
+          "name": "IsResonator",
           "description": null,
           "array": false,
           "type": "bool",
@@ -13243,14 +13243,14 @@
       "name": "AlternateQualityTypes",
       "columns": [
         {
-          "name": "StatsKey",
+          "name": "QualityModifier",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "Stats"
+            "table": "Mods"
           },
           "until": null,
           "file": null,
@@ -13283,15 +13283,13 @@
           "files": null
         },
         {
-          "name": "ModsKey",
+          "name": null,
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": {
-            "table": "Mods"
-          },
+          "references": null,
           "until": null,
           "file": null,
           "files": null
@@ -21473,7 +21471,7 @@
           "files": null
         },
         {
-          "name": "BaseItemType",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -21487,7 +21485,7 @@
           "files": null
         },
         {
-          "name": "PosX",
+          "name": "XOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -21499,7 +21497,7 @@
           "files": null
         },
         {
-          "name": "PosY",
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -23749,7 +23747,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Charges",
           "description": null,
           "array": false,
           "type": "i32",
@@ -23761,7 +23759,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Duration",
           "description": null,
           "array": false,
           "type": "i32",
@@ -23773,7 +23771,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "EnemyLimit",
           "description": null,
           "array": false,
           "type": "i32",
@@ -23799,7 +23797,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Empowerment",
           "description": null,
           "array": false,
           "type": "i32",
@@ -23825,7 +23823,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "CreatedViaPowerCore",
           "description": null,
           "array": false,
           "type": "bool",
@@ -24345,7 +24343,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -24385,7 +24383,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "TabIcon",
           "description": null,
           "array": false,
           "type": "string",
@@ -24397,7 +24395,19 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "XOffset",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -24433,7 +24443,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Width",
           "description": null,
           "array": false,
           "type": "i32",
@@ -24445,7 +24455,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Height",
           "description": null,
           "array": false,
           "type": "i32",
@@ -24457,19 +24467,7 @@
           "files": null
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
+          "name": "SlotSize",
           "description": null,
           "array": false,
           "type": "i32",
@@ -27753,37 +27751,43 @@
       "name": "AncestralTrialTribeOpinions",
       "columns": [
         {
-          "name": null,
+          "name": "SourceTribe",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AncestralTrialTribes"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "TargetTribe",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AncestralTrialTribes"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "Opinion",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AncestralTrialOpinionTypes"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -27799,7 +27803,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -27847,7 +27851,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -29375,7 +29379,7 @@
           "files": null
         },
         {
-          "name": "ActNumber",
+          "name": null,
           "description": null,
           "array": false,
           "type": "i32",
@@ -29387,7 +29391,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "ActNumber",
           "description": null,
           "array": false,
           "type": "i32",
@@ -33335,7 +33339,7 @@
           "files": null
         },
         {
-          "name": "BaseItemTypesKey",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -33349,7 +33353,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "XOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -33361,7 +33365,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -33373,7 +33377,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "FirstSlotIndex",
           "description": null,
           "array": false,
           "type": "i32",
@@ -33385,7 +33389,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Width",
           "description": null,
           "array": false,
           "type": "i32",
@@ -33397,7 +33401,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Height",
           "description": null,
           "array": false,
           "type": "i32",
@@ -33409,7 +33413,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "SlotSize",
           "description": null,
           "array": false,
           "type": "i32",
@@ -38873,7 +38877,7 @@
           "files": null
         },
         {
-          "name": "Stacks",
+          "name": "StackSize",
           "description": null,
           "array": false,
           "type": "i32",
@@ -38961,7 +38965,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Scroll",
           "description": null,
           "array": false,
           "type": "bool",
@@ -39163,7 +39167,7 @@
           "files": null
         },
         {
-          "name": "IsHardmode",
+          "name": "ChangedForHardmode",
           "description": null,
           "array": false,
           "type": "bool",
@@ -39220,7 +39224,7 @@
           "files": null
         },
         {
-          "name": "BaseItemTypesKey",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -39234,7 +39238,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "XOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -39246,7 +39250,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -39258,7 +39262,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "FirstSlotIndex",
           "description": null,
           "array": false,
           "type": "i32",
@@ -39270,7 +39274,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Width",
           "description": null,
           "array": false,
           "type": "i32",
@@ -39282,7 +39286,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Height",
           "description": null,
           "array": false,
           "type": "i32",
@@ -39294,7 +39298,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "ShowIfEmpty",
           "description": null,
           "array": false,
           "type": "bool",
@@ -39306,7 +39310,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "SlotGroup",
           "description": null,
           "array": false,
           "type": "i32",
@@ -39960,7 +39964,7 @@
           "files": null
         },
         {
-          "name": "BaseItemType",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -39974,7 +39978,7 @@
           "files": null
         },
         {
-          "name": "X",
+          "name": "XOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -39986,7 +39990,7 @@
           "files": null
         },
         {
-          "name": "Y",
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -39998,7 +40002,7 @@
           "files": null
         },
         {
-          "name": "IntId",
+          "name": "FirstSlotIndex",
           "description": null,
           "array": false,
           "type": "i32",
@@ -40034,7 +40038,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "SlotSize",
           "description": null,
           "array": false,
           "type": "i32",
@@ -40076,7 +40080,7 @@
           "files": null
         },
         {
-          "name": "BaseItemTypesKey",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -40090,7 +40094,7 @@
           "files": null
         },
         {
-          "name": "X",
+          "name": "XOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -40102,7 +40106,7 @@
           "files": null
         },
         {
-          "name": "Y",
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -40114,7 +40118,7 @@
           "files": null
         },
         {
-          "name": "IntId",
+          "name": "FirstSlotIndex",
           "description": null,
           "array": false,
           "type": "i32",
@@ -40150,7 +40154,7 @@
           "files": null
         },
         {
-          "name": "StackSize",
+          "name": "SlotSize",
           "description": null,
           "array": false,
           "type": "i32",
@@ -40162,7 +40166,7 @@
           "files": null
         },
         {
-          "name": "HideIfNoneOwned",
+          "name": "HideIfEmpty",
           "description": null,
           "array": false,
           "type": "bool",
@@ -40626,7 +40630,7 @@
       "name": "DivinationCardStashTabLayout",
       "columns": [
         {
-          "name": "BaseItemTypesKey",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -40640,7 +40644,7 @@
           "files": null
         },
         {
-          "name": "IsEnabled",
+          "name": "IsInGame",
           "description": null,
           "array": false,
           "type": "bool",
@@ -40652,7 +40656,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "IsEnabled",
           "description": null,
           "array": false,
           "type": "bool",
@@ -41612,7 +41616,7 @@
           "files": null
         },
         {
-          "name": "BaseItemTypesKey",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -41626,7 +41630,7 @@
           "files": null
         },
         {
-          "name": "X",
+          "name": "XOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -41638,7 +41642,7 @@
           "files": null
         },
         {
-          "name": "Y",
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -41650,7 +41654,7 @@
           "files": null
         },
         {
-          "name": "IntId",
+          "name": "FirstSlotIndex",
           "description": null,
           "array": false,
           "type": "i32",
@@ -41662,7 +41666,7 @@
           "files": null
         },
         {
-          "name": "SlotWidth",
+          "name": "Width",
           "description": null,
           "array": false,
           "type": "i32",
@@ -41674,7 +41678,7 @@
           "files": null
         },
         {
-          "name": "SlotHeight",
+          "name": "Height",
           "description": null,
           "array": false,
           "type": "i32",
@@ -42983,13 +42987,15 @@
           "files": null
         },
         {
-          "name": "Group",
+          "name": "Type",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "FlaskType"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -43263,7 +43269,7 @@
           "files": null
         },
         {
-          "name": "PosX",
+          "name": "XOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -43275,7 +43281,7 @@
           "files": null
         },
         {
-          "name": "PosY",
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -43287,7 +43293,7 @@
           "files": null
         },
         {
-          "name": "Order",
+          "name": "FirstSlotIndex",
           "description": null,
           "array": false,
           "type": "i32",
@@ -43299,7 +43305,7 @@
           "files": null
         },
         {
-          "name": "SizeX",
+          "name": "Width",
           "description": null,
           "array": false,
           "type": "i32",
@@ -43311,7 +43317,7 @@
           "files": null
         },
         {
-          "name": "SizeY",
+          "name": "Height",
           "description": null,
           "array": false,
           "type": "i32",
@@ -43347,7 +43353,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "SlotSize",
           "description": null,
           "array": false,
           "type": "i32",
@@ -43359,7 +43365,7 @@
           "files": null
         },
         {
-          "name": "IsDisabled",
+          "name": "HideIfEmpty",
           "description": null,
           "array": false,
           "type": "bool",
@@ -43383,7 +43389,7 @@
           "files": null
         },
         {
-          "name": "FragmentItems",
+          "name": "StoredItems",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -45671,7 +45677,19 @@
       "name": "GiftWrapArtVariations",
       "columns": [
         {
-          "name": null,
+          "name": "Width",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "Height",
           "description": null,
           "array": false,
           "type": "i32",
@@ -45695,25 +45713,15 @@
           "files": null
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
+          "name": "Item",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "BaseItemTypes"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -47297,7 +47305,7 @@
           "files": null
         },
         {
-          "name": "BaseItemType",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -47335,7 +47343,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "SlotSize",
           "description": null,
           "array": false,
           "type": "i32",
@@ -47361,7 +47369,7 @@
           "files": null
         },
         {
-          "name": "Columns",
+          "name": "Width",
           "description": null,
           "array": false,
           "type": "i32",
@@ -47373,7 +47381,7 @@
           "files": null
         },
         {
-          "name": "Rows",
+          "name": "Height",
           "description": null,
           "array": false,
           "type": "i32",
@@ -48344,13 +48352,15 @@
       "name": "InfluenceExalts",
       "columns": [
         {
-          "name": "Id",
+          "name": "Influence",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": true,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "InfluenceTypes"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -48924,7 +48934,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "UsedInMapDevice",
           "description": null,
           "array": false,
           "type": "bool",
@@ -53669,7 +53679,7 @@
           "files": null
         },
         {
-          "name": "BaseItemTypesKey",
+          "name": "StoredItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -53683,7 +53693,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "XOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -53695,7 +53705,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "YOffset",
           "description": null,
           "array": false,
           "type": "i32",
@@ -53707,7 +53717,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "FirstSlotIndex",
           "description": null,
           "array": false,
           "type": "i32",
@@ -53719,7 +53729,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Width",
           "description": null,
           "array": false,
           "type": "i32",
@@ -53731,7 +53741,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "Height",
           "description": null,
           "array": false,
           "type": "i32",
@@ -53743,7 +53753,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "SlotSize",
           "description": null,
           "array": false,
           "type": "i32",
@@ -67397,13 +67407,15 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "TriggeredQuestFlag",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -67415,7 +67427,9 @@
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -67439,7 +67453,9 @@
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -69872,7 +69888,7 @@
           "files": null
         },
         {
-          "name": "Str",
+          "name": "StrengthRequirementPercent",
           "description": null,
           "array": false,
           "type": "i32",
@@ -69884,7 +69900,7 @@
           "files": null
         },
         {
-          "name": "Dex",
+          "name": "DexterityRequirementPercent",
           "description": null,
           "array": false,
           "type": "i32",
@@ -69896,7 +69912,7 @@
           "files": null
         },
         {
-          "name": "Int",
+          "name": "IntelligenceRequirementPercent",
           "description": null,
           "array": false,
           "type": "i32",
@@ -71176,13 +71192,15 @@
           "files": null
         },
         {
-          "name": "IntId",
+          "name": "StashId",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": true,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "StashId"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -71200,7 +71218,7 @@
           "files": null
         },
         {
-          "name": "Width",
+          "name": null,
           "description": null,
           "array": false,
           "type": "i32",
@@ -71212,7 +71230,7 @@
           "files": null
         },
         {
-          "name": "Height",
+          "name": null,
           "description": null,
           "array": false,
           "type": "i32",
@@ -74635,7 +74653,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "TotalCount",
           "description": null,
           "array": false,
           "type": "i32",
@@ -76888,25 +76906,29 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "ItemVisualIdentity",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "ItemVisualIdentity"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "ItemClass",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "ItemClasses"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -77020,13 +77042,15 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "LeagueCategory",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "LeagueCategory"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -77056,7 +77080,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "MapCompletionCount",
           "description": null,
           "array": false,
           "type": "i32",
@@ -77098,19 +77122,21 @@
       "name": "BattlePassRewards",
       "columns": [
         {
-          "name": null,
+          "name": "BattlePass",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "BattlePasses"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "RewardTier",
           "description": null,
           "array": false,
           "type": "i32",
@@ -77122,7 +77148,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "FreeReward",
           "description": null,
           "array": false,
           "type": "bool",
@@ -77170,13 +77196,15 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "RewardedMTX",
           "description": null,
           "array": true,
-          "type": "array",
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "BaseItemTypes"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -77194,7 +77222,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "RewardDescription",
           "description": null,
           "array": false,
           "type": "string",
@@ -77254,7 +77282,7 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "RewardTitle",
           "description": null,
           "array": false,
           "type": "string",
@@ -77584,19 +77612,21 @@
       "name": "Breachstones",
       "columns": [
         {
-          "name": null,
+          "name": "BaseType",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": true,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "BaseItemTypes"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "MapTierEquivalent",
           "description": null,
           "array": false,
           "type": "i32",
@@ -77620,25 +77650,29 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "UpgradesTo",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "BaseItemTypes"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "UpgradeCurrency",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "BaseItemTypes"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -78562,19 +78596,21 @@
       "name": "FlaskStashBaseTypeOrdering",
       "columns": [
         {
-          "name": null,
+          "name": "Flask",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": true,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Flasks"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "Order",
           "description": null,
           "array": false,
           "type": "i32",
@@ -82022,13 +82058,41 @@
       "name": "TieredMicrotransactions",
       "columns": [
         {
-          "name": null,
+          "name": "MTX",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": true,
           "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "TierThresholds",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
           "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -82052,37 +82116,15 @@
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Stats"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
-          "description": null,
-          "array": true,
-          "type": "array",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
+          "name": "TierCount",
           "description": null,
           "array": false,
           "type": "i32",
@@ -82097,10 +82139,12 @@
           "name": null,
           "description": null,
           "array": true,
-          "type": "array",
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Stats"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -82160,7 +82204,9 @@
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Stats"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -82172,19 +82218,21 @@
       "name": "TieredMicrotransactionsVisuals",
       "columns": [
         {
-          "name": null,
+          "name": "MTX",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "BaseItemTypes"
+          },
           "until": null,
           "file": null,
           "files": null
         },
         {
-          "name": null,
+          "name": "Tier",
           "description": null,
           "array": false,
           "type": "i32",
@@ -82354,7 +82402,18 @@
     {
       "name": "DelveUpgradeType",
       "indexing": 0,
-      "enumerators": []
+      "enumerators": [
+        "SULPHITE_CAPACITY",
+        "FLARE_CAPACITY",
+        "DYNAMITE_CAPACITY",
+        "CART_LIGHT_RADIUS",
+        "FLARE_LIGHT_RADIUS",
+        "DYNAMITE_RADIUS",
+        null,
+        "DYNAMITE_DAMAGE",
+        "DARKNESS_RESISTANCE",
+        "FLARE_DURATION"
+      ]
     },
     {
       "name": "BetrayalDialogueCue",
@@ -82379,7 +82438,24 @@
     {
       "name": "ScarabTypes",
       "indexing": 0,
-      "enumerators": []
+      "enumerators": [
+        "BESTIARY",
+        "BREACH",
+        "CARTOGRAPHY",
+        "RELIQUARY",
+        "SHAPER",
+        "ELDER",
+        "DIVINATION",
+        "TORMENT",
+        "AMBUSH",
+        "HARBINGER",
+        "EXPEDITION",
+        "LEGION",
+        "METAMORPH",
+        "SULPHITE",
+        "BLIGHT",
+        "ABYSS"
+      ]
     },
     {
       "name": "LegionMonsterTypes",
@@ -82637,8 +82713,13 @@
     },
     {
       "name": "FlaskType",
-      "indexing": 0,
-      "enumerators": []
+      "indexing": 1,
+      "enumerators": [
+        "LIFE",
+        "MANA",
+        "HYBRID",
+        "UTILITY"
+      ]
     },
     {
       "name": "FlavourTextImages",
@@ -82760,7 +82841,7 @@
         "SANCTUM_RELIC",
         null,
         "CRAFTED",
-        "MISC",
+        "BASE_JEWEL",
         "ATLAS",
         "LEAGUESTONE",
         "ABYSS_JEWEL",
@@ -82970,7 +83051,31 @@
     {
       "name": "StashId",
       "indexing": 0,
-      "enumerators": []
+      "enumerators": [
+        "NORMAL",
+        "PREMIUM",
+        "TRADE",
+        "CURRENCY",
+        "UNIQUE",
+        "MAP",
+        "DIVINATION_CARD",
+        "QUAD",
+        "ESSENCE",
+        "FRAGMENT",
+        "PC_BANG_PREMIUM",
+        "PC_BANG_ESSENCE",
+        "DELVE",
+        "BLIGHT",
+        "METAMORPH",
+        "DELIRIUM",
+        "FOLDER",
+        "FLASK",
+        "GEM",
+        null,
+        null,
+        null,
+        null
+      ]
     },
     {
       "name": "StatInterpolationTypes",
@@ -83052,7 +83157,11 @@
     {
       "name": "AncestralTrialOpinionTypes",
       "indexing": 0,
-      "enumerators": []
+      "enumerators": [
+        "NEUTRAL",
+        "LIKES",
+        "DISLIKES"
+      ]
     },
     {
       "name": "AncestralTrialShopSlots",

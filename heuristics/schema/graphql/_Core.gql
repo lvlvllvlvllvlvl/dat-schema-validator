@@ -112,8 +112,8 @@ type Acts {
   Id: string @unique
   Part: i32
   _: string @localized
-  ActNumber: i32
   _: i32
+  ActNumber: i32
   WorldPanelImage: string
   WorldPanelImageEpilogue: string
   _: i32
@@ -551,13 +551,13 @@ type BindableVirtualKeys {
 
 type BlightStashTabLayout {
   Id: string @unique
-  BaseItemTypesKey: BaseItemTypes
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  StoredItem: BaseItemTypes
+  XOffset: i32
+  YOffset: i32
+  FirstSlotIndex: i32
+  Width: i32
+  Height: i32
+  SlotSize: i32
   _: bool
   _: bool
   _: bool
@@ -1114,7 +1114,7 @@ type CraftingItemClassCategories {
 
 type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
   BaseItemTypesKey: BaseItemTypes @unique
-  Stacks: i32
+  StackSize: i32
   CurrencyUseType: i32
   Action: string
   Directions: string @localized
@@ -1122,7 +1122,7 @@ type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
   FullStack_BaseItemTypesKey: BaseItemTypes
   Description: string @localized
   Usage_AchievementItemsKeys: [AchievementItems]
-  _: bool
+  Scroll: bool
   CosmeticTypeName: string @localized
   Possession_AchievementItemsKey: AchievementItems
   _: [rid]
@@ -1138,21 +1138,21 @@ type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
   _: i32
   _: [i32]
   ShopTag: ShopTag
-  IsHardmode: bool
+  ChangedForHardmode: bool
   DescriptionHardmode: string @localized
   IsGold: bool
 }
 
 type CurrencyStashTabLayout {
   Id: string @unique
-  BaseItemTypesKey: BaseItemTypes
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: bool
-  _: i32
+  StoredItem: BaseItemTypes
+  XOffset: i32
+  YOffset: i32
+  FirstSlotIndex: i32
+  Width: i32
+  Height: i32
+  ShowIfEmpty: bool
+  SlotGroup: i32
 }
 
 enum CurrencyUseTypes @indexing(first: 0) { _ }
@@ -1229,26 +1229,26 @@ type DefaultMonsterStats {
 
 type DeliriumStashTabLayout {
   Id: string @unique
-  BaseItemType: BaseItemTypes
-  X: i32
-  Y: i32
-  IntId: i32 @unique
+  StoredItem: BaseItemTypes
+  XOffset: i32
+  YOffset: i32
+  FirstSlotIndex: i32 @unique
   Width: i32
   Height: i32
-  _: i32
+  SlotSize: i32
   _: bool
 }
 
 type DelveStashTabLayout {
   Id: string @unique
-  BaseItemTypesKey: BaseItemTypes
-  X: i32
-  Y: i32
-  IntId: i32 @unique
+  StoredItem: BaseItemTypes
+  XOffset: i32
+  YOffset: i32
+  FirstSlotIndex: i32 @unique
   Width: i32
   Height: i32
-  StackSize: i32
-  HideIfNoneOwned: bool
+  SlotSize: i32
+  HideIfEmpty: bool
   Image: string
 }
 
@@ -1300,9 +1300,9 @@ type DisplayMinionMonsterType {
 }
 
 type DivinationCardStashTabLayout {
-  BaseItemTypesKey: BaseItemTypes @unique
+  StoredItem: BaseItemTypes @unique
+  IsInGame: bool
   IsEnabled: bool
-  _: bool
 }
 
 type Doors {
@@ -1413,12 +1413,12 @@ type EnvironmentTransitions {
 
 type EssenceStashTabLayout {
   Id: string @unique
-  BaseItemTypesKey: BaseItemTypes
-  X: i32
-  Y: i32
-  IntId: i32 @unique
-  SlotWidth: i32
-  SlotHeight: i32
+  StoredItem: BaseItemTypes
+  XOffset: i32
+  YOffset: i32
+  FirstSlotIndex: i32 @unique
+  Width: i32
+  Height: i32
   IsUpgradableEssenceSlot: bool
 }
 
@@ -1549,7 +1549,7 @@ type FixedMissions {
 type Flasks @tags(list: ["item:def"]) {
   BaseItemTypesKey: BaseItemTypes @unique
   Name: string
-  Group: i32
+  Type: FlaskType
   LifePerUse: i32
   ManaPerUse: i32
   "in 1/10 s"
@@ -1560,7 +1560,12 @@ type Flasks @tags(list: ["item:def"]) {
   BuffStatValues2: [i32]
 }
 
-enum FlaskType @indexing(first: 0) { _ }
+enum FlaskType @indexing(first: 1) {
+  LIFE
+  MANA
+  HYBRID
+  UTILITY
+}
 
 type FlavourText {
   Id: string @unique
@@ -1587,17 +1592,17 @@ type FootstepAudio {
 
 type FragmentStashTabLayout {
   Id: string @unique
-  PosX: i32
-  PosY: i32
-  Order: i32
-  SizeX: i32
-  SizeY: i32
+  XOffset: i32
+  YOffset: i32
+  FirstSlotIndex: i32
+  Width: i32
+  Height: i32
   _: bool
   Tab: i32
-  _: i32
-  IsDisabled: bool
+  SlotSize: i32
+  HideIfEmpty: bool
   Subtab: i32
-  FragmentItems: [BaseItemTypes]
+  StoredItems: [BaseItemTypes]
   _: bool
   _: string
   _: i32
@@ -1826,10 +1831,10 @@ type GeometryTrigger {
 }
 
 type GiftWrapArtVariations {
+  Width: i32
+  Height: i32
   _: i32
-  _: i32
-  _: i32
-  _: rid
+  Item: BaseItemTypes
 }
 
 type GlobalAudioConfig {
@@ -1992,13 +1997,13 @@ type GroundEffectTypes {
 
 type HeistStorageLayout {
   Id: string @unique
-  BaseItemType: BaseItemTypes
+  StoredItem: BaseItemTypes
   _: bool
   ButtonFile: string
-  _: i32
+  SlotSize: i32
   HeistJobsKey: HeistJobs
-  Columns: i32
-  Rows: i32
+  Width: i32
+  Height: i32
   _: i32
   _: i32
   _: i32
@@ -2102,7 +2107,7 @@ type IndexableSupportGems @tags(list: ["crafting"]) {
 }
 
 type InfluenceExalts @tags(list: ["item:def"]) {
-  Id: i32 @unique
+  Influence: InfluenceTypes @unique
   BaseItemTypesKey: BaseItemTypes
 }
 
@@ -2171,7 +2176,7 @@ type ItemClasses @tags(list: ["crafting"]) {
   Unmodifiable: bool
   CanBeFractured: bool
   EquipAchievements: AchievementItems
-  _: bool
+  UsedInMapDevice: bool
   _: bool
   _: bool
 }
@@ -2681,13 +2686,13 @@ type MeleeTrails {
 
 type MetamorphosisStashTabLayout {
   Id: string @unique
-  BaseItemTypesKey: BaseItemTypes
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  StoredItem: BaseItemTypes
+  XOffset: i32
+  YOffset: i32
+  FirstSlotIndex: i32
+  Width: i32
+  Height: i32
+  SlotSize: i32
   BackgroundImage: string
   ButtonImage: string
 }
@@ -2911,7 +2916,7 @@ enum ModDomains @indexing(first: 1) {
   SANCTUM_RELIC
   _
   CRAFTED
-  MISC
+  BASE_JEWEL
   ATLAS
   LEAGUESTONE
   ABYSS_JEWEL
@@ -4202,10 +4207,10 @@ type QuestFlags {
 
 type QuestItems {
   Item: BaseItemTypes
-  _: rid
-  _: rid
+  TriggeredQuestFlag: QuestFlags
+  _: QuestFlags
   _: i32
-  _: rid
+  _: QuestFlags
   _: [_] # All rows empty
   _: bool
   _: bool
@@ -4468,9 +4473,9 @@ type SkillGemInfo {
 type SkillGems @tags(list: ["item:def"]) {
   BaseItemTypesKey: BaseItemTypes @unique
   GrantedEffectsKey: GrantedEffects
-  Str: i32
-  Dex: i32
-  Int: i32
+  StrengthRequirementPercent: i32
+  DexterityRequirementPercent: i32
+  IntelligenceRequirementPercent: i32
   GemTagsKeys: [GemTags]
   VaalVariant_BaseItemTypesKey: BaseItemTypes
   IsVaalVariant: bool
@@ -4610,7 +4615,31 @@ type StartingPassiveSkills {
   PassiveSkills: [PassiveSkills]
 }
 
-enum StashId @indexing(first: 0) { _ }
+enum StashId @indexing(first: 0) {
+  NORMAL
+  PREMIUM
+  TRADE
+  CURRENCY
+  UNIQUE
+  MAP
+  DIVINATION_CARD
+  QUAD
+  ESSENCE
+  FRAGMENT
+  PC_BANG_PREMIUM
+  PC_BANG_ESSENCE
+  DELVE
+  BLIGHT
+  METAMORPH
+  DELIRIUM
+  FOLDER
+  FLASK
+  GEM
+  _
+  _
+  _
+  _
+}
 
 type StashTabAffinities {
   SpecializedStash: StashId
@@ -4620,10 +4649,10 @@ type StashTabAffinities {
 
 type StashType {
   Id: string @unique
-  IntId: i32 @unique
+  StashId: StashId @unique
   Id2: string @unique
-  Width: i32
-  Height: i32
+  _: i32
+  _: i32
   _: i32
   Icon: string
 }
@@ -5010,7 +5039,7 @@ type UniqueStashTypes {
   Order: i32
   Width: i32
   Height: i32
-  _: i32
+  TotalCount: i32
   _: i32
   Name: string @localized
   StandardCount: i32
@@ -5257,8 +5286,8 @@ type AlternateTreeArt {
 # Added 3.21
 type AnimateWeaponUniques {
   Id: string @unique
-  _: rid
-  _: rid
+  ItemVisualIdentity: ItemVisualIdentity
+  ItemClass: ItemClasses
   _: i32
 }
 
@@ -5275,30 +5304,30 @@ type AtlasMemoryLine {
 # Added 3.17
 type BattlePasses {
   Id: string @unique
-  _: i32
+  LeagueCategory: LeagueCategory
   International_BK2File: string @localized
   China_BK2File: string @localized
-  _: i32
+  MapCompletionCount: i32
   _: bool
   Id2: string @unique
 }
 
 # Added 3.17
 type BattlePassRewards {
-  _: rid
-  _: i32
-  _: bool
+  BattlePass: BattlePasses
+  RewardTier: i32
+  FreeReward: bool
   _: i32
   _: i32
   Id: string
-  _: [_]
+  RewardedMTX: [BaseItemTypes]
   _: i32
-  _: string @localized
+  RewardDescription: string @localized
   _: string
   _: i32
   _: i32
   _: bool
-  _: string @localized
+  RewardTitle: string @localized
   _: rid
   _: bool
   _: i32
@@ -5336,11 +5365,11 @@ type BreachArtVariations {
 
 # Added 3.21
 type Breachstones {
-  _: rid @unique
-  _: i32
+  BaseType: BaseItemTypes @unique
+  MapTierEquivalent: i32
   _: i32 @unique
-  _: rid
-  _: rid
+  UpgradesTo: BaseItemTypes
+  UpgradeCurrency: BaseItemTypes
 }
 
 # Added 3.22
@@ -5456,8 +5485,8 @@ type EntityInfobarStyle {
 
 # Added 3.17
 type FlaskStashBaseTypeOrdering {
-  _: rid @unique
-  _: i32 @unique
+  Flask: Flasks @unique
+  Order: i32 @unique
 }
 
 # Added 3.20
@@ -5905,24 +5934,24 @@ type StatVisuals {
 
 # Added 3.19
 type TieredMicrotransactions {
-  _: rid @unique
+  MTX: BaseItemTypes @unique
+  TierThresholds: [i32]
+  _: Stats
   _: [_]
-  _: rid
-  _: [_]
-  _: rid
-  _: i32
-  _: [_]
+  _: Stats
+  TierCount: i32
+  _: [Stats]
   _: [_]
   _: [_]
   _: bool
   _: bool
-  _: rid
+  _: Stats
 }
 
 # Added 3.22
 type TieredMicrotransactionsVisuals {
-  _: rid
-  _: i32
+  MTX: BaseItemTypes
+  Tier: i32
   Description: string @localized
   DDSFile: string @file(ext: ".dds")
   _: i32
@@ -5948,7 +5977,11 @@ type TryTheNewLeagueVersions {
 
 enum AncestralTrialMonsterRanks @indexing(first: 0) { _ }
 
-enum AncestralTrialOpinionTypes @indexing(first: 0) { _ }
+enum AncestralTrialOpinionTypes @indexing(first: 0) {
+  NEUTRAL
+  LIKES
+  DISLIKES
+}
 
 enum AncestralTrialShopSlots @indexing(first: 0) { _ }
 

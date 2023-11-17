@@ -95,9 +95,9 @@ type AncestralTrialShopSlotEntries {
 }
 
 type AncestralTrialTribeOpinions {
-  _: rid
-  _: rid
-  _: i32
+  SourceTribe: AncestralTrialTribes
+  TargetTribe: AncestralTrialTribes
+  Opinion: AncestralTrialOpinionTypes
 }
 
 type AncestralTrialTribes {
@@ -105,7 +105,7 @@ type AncestralTrialTribes {
   _: rid
   Portrait: string
   TribeIcon: string
-  TribeName: string @localized
+  TribeName: string @unique @localized
   FavourTracker: string
   _: [rid]
   Name: string @localized

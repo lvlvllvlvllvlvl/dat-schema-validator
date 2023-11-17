@@ -1,32 +1,34 @@
 [
   {
-    "name": "",
+    "name": "SourceTribe",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AncestralTrialTribes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "TargetTribe",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AncestralTrialTribes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Opinion",
     "offset": 32,
     "unknownArray": false,
     "unique": false,

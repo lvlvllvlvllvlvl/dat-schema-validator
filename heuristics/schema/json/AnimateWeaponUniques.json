@@ -11,27 +11,29 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "ItemVisualIdentity",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemVisualIdentity"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ItemClass",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemClasses"
       }
     },
     "size": 16

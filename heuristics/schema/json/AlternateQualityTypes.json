@@ -1,6 +1,6 @@
 [
   {
-    "name": "StatsKey",
+    "name": "QualityModifier",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -8,7 +8,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "name": "Mods"
       }
     },
     "size": 16
@@ -40,15 +40,14 @@
     "size": 16
   },
   {
-    "name": "ModsKey",
+    "name": "",
     "offset": 40,
     "unknownArray": false,
     "unique": true,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "name": "Mods"
+        "foreign": true
       }
     },
     "size": 16

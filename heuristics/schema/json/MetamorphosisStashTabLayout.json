@@ -11,7 +11,7 @@
     "size": 8
   },
   {
-    "name": "BaseItemTypesKey",
+    "name": "StoredItem",
     "offset": 8,
     "unknownArray": false,
     "unique": true,
@@ -25,7 +25,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "XOffset",
     "offset": 24,
     "unknownArray": false,
     "unique": true,
@@ -39,7 +39,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "YOffset",
     "offset": 28,
     "unknownArray": false,
     "unique": false,
@@ -53,7 +53,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "FirstSlotIndex",
     "offset": 32,
     "unknownArray": false,
     "unique": true,
@@ -67,7 +67,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Width",
     "offset": 36,
     "unknownArray": false,
     "unique": false,
@@ -81,7 +81,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Height",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -95,7 +95,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "SlotSize",
     "offset": 44,
     "unknownArray": false,
     "unique": false,

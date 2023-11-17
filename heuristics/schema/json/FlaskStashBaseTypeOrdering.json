@@ -1,19 +1,20 @@
 [
   {
-    "name": "",
+    "name": "Flask",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Flasks"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Order",
     "offset": 16,
     "unknownArray": false,
     "unique": true,

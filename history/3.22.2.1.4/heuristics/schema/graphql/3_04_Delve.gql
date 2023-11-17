@@ -3,7 +3,7 @@ type DelveAzuriteShop {
   SpawnWeight: i32
   Cost: i32
   MinDepth: i32
-  IsEnabled: bool
+  IsResonator: bool
   _: i32
   _: i32
 }
@@ -188,4 +188,15 @@ type DelveUpgrades {
   _: i32
 }
 
-enum DelveUpgradeType @indexing(first: 0) { _ }
+enum DelveUpgradeType @indexing(first: 0) {
+  SULPHITE_CAPACITY
+  FLARE_CAPACITY
+  DYNAMITE_CAPACITY
+  CART_LIGHT_RADIUS
+  FLARE_LIGHT_RADIUS
+  DYNAMITE_RADIUS
+  _
+  DYNAMITE_DAMAGE
+  DARKNESS_RESISTANCE
+  FLARE_DURATION
+}

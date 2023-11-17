@@ -11,7 +11,7 @@
     "size": 8
   },
   {
-    "name": "PosX",
+    "name": "XOffset",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -25,7 +25,7 @@
     "size": 4
   },
   {
-    "name": "PosY",
+    "name": "YOffset",
     "offset": 12,
     "unknownArray": false,
     "unique": false,
@@ -39,7 +39,7 @@
     "size": 4
   },
   {
-    "name": "Order",
+    "name": "FirstSlotIndex",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -53,7 +53,7 @@
     "size": 4
   },
   {
-    "name": "SizeX",
+    "name": "Width",
     "offset": 20,
     "unknownArray": false,
     "unique": false,
@@ -67,7 +67,7 @@
     "size": 4
   },
   {
-    "name": "SizeY",
+    "name": "Height",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -106,7 +106,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "SlotSize",
     "offset": 33,
     "unknownArray": false,
     "unique": false,
@@ -120,7 +120,7 @@
     "size": 4
   },
   {
-    "name": "IsDisabled",
+    "name": "HideIfEmpty",
     "offset": 37,
     "unknownArray": false,
     "unique": false,
@@ -145,7 +145,7 @@
     "size": 4
   },
   {
-    "name": "FragmentItems",
+    "name": "StoredItems",
     "offset": 42,
     "unknownArray": false,
     "unique": false,
