@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Value",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  }
+]

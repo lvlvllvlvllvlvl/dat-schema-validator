@@ -1,0 +1,150 @@
+[
+  {
+    "name": "PanelVersion",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "LeagueInfoPanelVersions"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "PanelId",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "PanelImage",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "HeaderImage",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Screenshots",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "size": 16
+  },
+  {
+    "name": "Description",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "localized": true
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "TrailerVideoLink",
+    "offset": 65,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "localized": true
+  },
+  {
+    "name": "BackgroundImage",
+    "offset": 73,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 81,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 82,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "PanelItems",
+    "offset": 83,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 99,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  }
+]
