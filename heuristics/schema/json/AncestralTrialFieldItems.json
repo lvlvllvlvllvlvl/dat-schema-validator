@@ -3,7 +3,7 @@
     "name": "",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -16,7 +16,7 @@
     "name": "",
     "offset": 16,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -29,7 +29,7 @@
     "name": "HASH32",
     "offset": 32,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -43,13 +43,12 @@
     "name": "Description",
     "offset": 36,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   },
   {
     "name": "Achievement",

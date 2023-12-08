@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
@@ -14,7 +14,7 @@
     "name": "HASH16",
     "offset": 8,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -28,19 +28,18 @@
     "name": "Name",
     "offset": 12,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   },
   {
     "name": "Image",
     "offset": 20,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
@@ -97,8 +96,7 @@
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   },
   {
     "name": "",
@@ -124,8 +122,7 @@
     "offset": 76,
     "size": 16,
     "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": true
   },
   {
     "name": "",

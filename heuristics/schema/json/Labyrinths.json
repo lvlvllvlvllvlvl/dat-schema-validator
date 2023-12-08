@@ -3,7 +3,7 @@
     "name": "Tier",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -17,13 +17,12 @@
     "name": "Name",
     "offset": 4,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   },
   {
     "name": "OfferingItem",
@@ -43,7 +42,7 @@
     "name": "QuestFlag",
     "offset": 28,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -71,7 +70,7 @@
     "name": "AreaLevel",
     "offset": 60,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -99,7 +98,7 @@
     "name": "JewelReward",
     "offset": 68,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -141,7 +140,7 @@
     "name": "MinLevel",
     "offset": 116,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -155,7 +154,7 @@
     "name": "",
     "offset": 120,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -169,7 +168,7 @@
     "name": "",
     "offset": 124,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {

@@ -3,7 +3,7 @@
     "name": "WorldArea",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -17,7 +17,7 @@
     "name": "CapturedVessel",
     "offset": 16,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -31,7 +31,7 @@
     "name": "QuestFlag",
     "offset": 32,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -78,7 +78,6 @@
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   }
 ]

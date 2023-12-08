@@ -65,13 +65,13 @@ enum HeistBlueprintWindowTypes @indexing(first: 0) { _ }
 type HeistChestRewardTypes {
   Id: string @unique
   Art: string
-  RewardTypeName: string @localized
+  RewardTypeName: string
   _: HeistChestRewardTypes
-  RewardRoomName: string @localized
+  RewardRoomName: string
   MinLevel: i32
   MaxLevel: i32
   Weight: i32
-  RewardRoomName2: string @localized
+  RewardRoomName2: string
   HeistJobsKey: [HeistJobs]
   _: i32
   _: i32
@@ -183,7 +183,7 @@ type HeistIntroAreas {
 
 type HeistJobs {
   Id: string @unique
-  Name: string @localized
+  Name: string
   RequiredSkillIcon: string
   SkillIcon: string
   _: f32
@@ -195,7 +195,7 @@ type HeistJobs {
   Cost_StatsKey: Stats
   ExperienceGain_StatsKey: Stats
   ConsoleBlueprintLegend: string
-  Description: string @localized
+  Description: string
 }
 
 type HeistJobsExperiencePerLevel {
@@ -270,7 +270,7 @@ type HeistObjectives {
 type HeistObjectiveValueDescriptions {
   Tier: i32
   MarkersMultiply: f32
-  Description: string @localized
+  Description: string
 }
 
 type HeistPatrolPacks {

@@ -14,13 +14,12 @@
     "name": "Text",
     "offset": 8,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   },
   {
     "name": "Tier",
@@ -68,14 +67,13 @@
     "offset": 48,
     "size": 16,
     "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": true
   },
   {
     "name": "HASH16",
     "offset": 64,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -89,13 +87,12 @@
     "name": "Description",
     "offset": 68,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   },
   {
     "name": "IsEnchant",

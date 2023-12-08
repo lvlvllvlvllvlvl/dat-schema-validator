@@ -1,5 +1,5 @@
 type LabyrinthAreas {
-  Id: string @unique
+  Id: string
   Normal_WorldAreasKeys: [WorldAreas]
   Cruel_WorldAreasKeys: [WorldAreas]
   Merciless_WorldAreasKeys: [WorldAreas]
@@ -10,7 +10,7 @@ type LabyrinthAreas {
 type LabyrinthBonusItems {
   BaseItemType: BaseItemTypes
   AreaLevel: i32
-  LabyrinthName: string @localized
+  LabyrinthName: string
 }
 
 type LabyrinthExclusionGroups {
@@ -27,7 +27,7 @@ type LabyrinthIzaroChests {
 }
 
 type LabyrinthNodeOverrides {
-  Id1: string @unique
+  Id1: string
   Id2: string
   _: [i32]
   _: [i32]
@@ -40,7 +40,7 @@ type LabyrinthRewardTypes {
 
 type Labyrinths @tags(list: ["item:droptable", "item:unique"]) {
   Tier: i32
-  Name: string @localized
+  Name: string
   OfferingItem: BaseItemTypes
   QuestFlag: QuestFlags
   RequiredTrials: [LabyrinthTrials]
@@ -56,7 +56,7 @@ type Labyrinths @tags(list: ["item:droptable", "item:unique"]) {
 }
 
 type LabyrinthSecretEffects {
-  Id: string @unique
+  Id: string
   MonsterVarietiesKey: MonsterVarieties
   Buff_BuffDefinitionsKey: BuffDefinitions
   Buff_StatValues: [i32]
@@ -67,7 +67,7 @@ type LabyrinthSecretEffects {
 enum LabyrinthSecretLocations @indexing(first: 0) { _ }
 
 type LabyrinthSecrets {
-  Id: string @unique
+  Id: string
   Id2: string
   _: [i32]
   _: i32
@@ -83,7 +83,7 @@ type LabyrinthSecrets {
   _: bool
   _: bool
   _: bool
-  Name: string @localized
+  Name: string
   AchievementItemsKey: AchievementItems
   LabyrinthTierMinimum: i32
   LabyrinthTierMaximum: i32
@@ -91,7 +91,7 @@ type LabyrinthSecrets {
 }
 
 type LabyrinthSection {
-  Id: string @unique
+  Id: string
   ExclusionGroup: LabyrinthExclusionGroups
   _: i32
   _: i32

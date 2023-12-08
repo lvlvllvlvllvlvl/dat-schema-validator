@@ -7,22 +7,22 @@ type SanctumAirlocks {
 }
 
 type SanctumDefenceIcons {
-  Id: string @unique
+  Id: string
   Stat: Stats
   DefenceIcon: string
   DefenceBrokenIcon: string
   BrokenStat: Stats
-  Description: string @localized
+  Description: string
 }
 
 type SanctumDeferredRewardCategories {
   Item: BaseItemTypes
-  NamePlural: string @localized
+  NamePlural: string
   ScriptReward: string
 }
 
 type SanctumDeferredRewards {
-  Id: string @unique
+  Id: string
   DeferralIcon: string
   DeferralCategory: SanctumPersistentEffectCategories
   RewardCategory: SanctumDeferredRewardCategories
@@ -30,12 +30,12 @@ type SanctumDeferredRewards {
 }
 
 type SanctumFloors {
-  Id: string @unique
+  Id: string
   Area: WorldAreas
   Title: ClientStrings
   RoomIcon: string
   BossIcon: string
-  Description: string @localized
+  Description: string
   Summary: ClientStrings
   Itemised: BaseItemTypes
 }
@@ -51,30 +51,30 @@ type SanctumLifeScalingPerLevel {
 }
 
 type SanctumPersistentEffectCategories {
-  Id: string @unique
+  Id: string
   Frame: string
   Popup: string
   Glow: string
   Curse: bool
   Boon: bool
   Icon: string
-  Name: string @localized
+  Name: string
   Deferral: bool
 }
 
 type SanctumPersistentEffects {
-  Id: string @unique
+  Id: string
   Stats: [Stats]
   StatValues: [i32]
-  Name: string @localized
+  Name: string
   Icon: string
   _: i32
   _: bool
   EffectCategory: SanctumPersistentEffectCategories
   NextEffect: SanctumPersistentEffects
   _: string
-  BoonDesc: string @localized
-  CurseDesc: string @localized
+  BoonDesc: string
+  CurseDesc: string
   _: i32
   _: i32
   _: bool
@@ -89,7 +89,7 @@ type SanctumPersistentEffects {
 }
 
 type SanctumRooms {
-  Id: string @unique
+  Id: string
   ArmFile: string
   RoomType: SanctumRoomTypes
   Script: string
@@ -98,7 +98,7 @@ type SanctumRooms {
 }
 
 type SanctumRoomTypes {
-  Id: string @unique
+  Id: string
   _: bool
   _: bool
   _: rid
@@ -106,18 +106,18 @@ type SanctumRoomTypes {
   _: bool
   Icon: string
   _: bool
-  Description: string @localized
-  _: [string] @localized
+  Description: string
+  _: [string]
   Rooms: [SanctumRooms]
   _: string
   _: bool
 }
 
 type SanctumSelectionDisplayOverride {
-  Id: string @unique
-  Reward: string @localized
+  Id: string
+  Reward: string
   Icon: string
-  Downside: string @localized
+  Downside: string
   Item: BaseItemTypes
   Count: i32
   RewardCategory: SanctumDeferredRewardCategories

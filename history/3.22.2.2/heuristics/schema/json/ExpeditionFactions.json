@@ -14,19 +14,18 @@
     "name": "Name",
     "offset": 8,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   },
   {
     "name": "FactionFlag",
     "offset": 16,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
@@ -37,7 +36,7 @@
     "name": "",
     "offset": 24,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -51,7 +50,7 @@
     "name": "FactionIcon",
     "offset": 28,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
@@ -62,7 +61,7 @@
     "name": "MonsterVarieties",
     "offset": 36,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -76,7 +75,7 @@
     "name": "Progress1",
     "offset": 52,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -90,7 +89,7 @@
     "name": "Progress2Vaal",
     "offset": 68,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -104,7 +103,7 @@
     "name": "Progress3Final",
     "offset": 84,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -118,7 +117,7 @@
     "name": "Tags",
     "offset": 100,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {

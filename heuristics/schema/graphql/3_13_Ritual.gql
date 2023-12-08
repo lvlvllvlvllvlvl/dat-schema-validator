@@ -36,8 +36,8 @@ type RitualRuneTypes {
   EnvironmentsKey: Environments
   _: i32
   Achievements: [AchievementItems]
-  Type: string @localized
-  Description: string @localized
+  Type: string
+  Description: string
   DaemonSpawningDataKey: DaemonSpawningData
   _: bool
 }

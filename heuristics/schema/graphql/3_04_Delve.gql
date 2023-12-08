@@ -10,7 +10,7 @@ type DelveAzuriteShop {
 
 type DelveBiomes {
   Id: string @unique
-  Name: string @localized
+  Name: string
   WorldAreasKeys: [WorldAreas]
   UIImage: string
   SpawnWeight_Depth: [i32]
@@ -30,7 +30,7 @@ type DelveCatchupDepths {
 
 type DelveCraftingModifierDescriptions {
   Id: string @unique
-  Description: string @localized
+  Description: string
 }
 
 type DelveCraftingModifiers @tags(list: ["crafting"]) {
@@ -60,7 +60,7 @@ type DelveCraftingModifiers @tags(list: ["crafting"]) {
 
 type DelveCraftingTags {
   TagsKey: Tags
-  ItemClass: string @localized
+  ItemClass: string
 }
 
 type DelveDynamite {
@@ -81,14 +81,14 @@ type DelveDynamite {
 
 type DelveFeatures {
   Id: string @unique
-  Name: string @localized
+  Name: string
   SpawnWeight: [i32]
   WorldAreasKey: WorldAreas
   Image: string
   AchievementItemsKeys: [AchievementItems]
   _: [i32]
   MinDepth: [i32]
-  Description: string @localized
+  Description: string
   _: i32
   _: [i32]
   _: [i32]

@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
@@ -28,7 +28,7 @@
     "name": "RerollItem",
     "offset": 24,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -70,7 +70,7 @@
     "name": "",
     "offset": 48,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -84,7 +84,7 @@
     "name": "Faction",
     "offset": 64,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -98,7 +98,7 @@
     "name": "Reroll",
     "offset": 80,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -112,7 +112,7 @@
     "name": "AllBombsPlaced",
     "offset": 96,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -126,7 +126,7 @@
     "name": "BombPlacedRemnant",
     "offset": 112,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -140,7 +140,7 @@
     "name": "BombPlacedTreasure",
     "offset": 128,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -154,7 +154,7 @@
     "name": "BombPlacedMonsters",
     "offset": 144,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -168,7 +168,7 @@
     "name": "BombPlacedGeneric",
     "offset": 160,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -182,7 +182,7 @@
     "name": "EncounterComplete",
     "offset": 176,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -196,7 +196,7 @@
     "name": "",
     "offset": 192,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -210,7 +210,7 @@
     "name": "",
     "offset": 196,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {

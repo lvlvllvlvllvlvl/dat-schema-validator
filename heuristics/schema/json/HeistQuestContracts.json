@@ -3,7 +3,7 @@
     "name": "HeistContractsKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -59,7 +59,7 @@
     "name": "",
     "offset": 64,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -112,7 +112,7 @@
     "name": "HeistRoomsKey1",
     "offset": 77,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -162,7 +162,7 @@
     "name": "",
     "offset": 111,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -251,7 +251,7 @@
     "name": "HaveQuest",
     "offset": 154,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -306,8 +306,7 @@
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   },
   {
     "name": "",

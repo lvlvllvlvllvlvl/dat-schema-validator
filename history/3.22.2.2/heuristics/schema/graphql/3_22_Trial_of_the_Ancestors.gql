@@ -1,5 +1,5 @@
 type AncestralEmbraceVariations {
-  Id: string @unique
+  Id: string
   Minion: MonsterVarieties
   _: rid
 }
@@ -34,7 +34,7 @@ type AncestralTrialDialogue {
 }
 
 type AncestralTrialDialogueEvents {
-  Id: string @unique
+  Id: string
   _: i32
 }
 
@@ -42,21 +42,21 @@ type AncestralTrialFieldItems {
   _: rid
   _: rid
   HASH32: i32
-  Description: string @localized
+  Description: string
   Achievement: [AchievementItems]
   _: rid
   _: rid
 }
 
 type AncestralTrialItems {
-  Id: string @unique
+  Id: string
   HASH16: i32
-  Name: string @localized
+  Name: string
   Image: string
   _: rid
   _: i32
   Mods: [Mods]
-  FlavorText: string @localized
+  FlavorText: string
   _: i32
   _: [_] # All rows empty
   _: rid
@@ -76,9 +76,9 @@ type AncestralTrialMonsters {
 }
 
 type AncestralTrialPositionType {
-  Id: string @unique
+  Id: string
   PlayerTotemIcon: string
-  Name: string @localized
+  Name: string
   EnemyTotemIcon: string
   PlayerTotemSmallIcon: string
   EnemyTotemSmallIcon: string
@@ -105,10 +105,10 @@ type AncestralTrialTribes {
   _: rid
   Portrait: string
   TribeIcon: string
-  TribeName: string @unique @localized
+  TribeName: string @unique
   FavourTracker: string
   _: [rid]
-  Name: string @localized
+  Name: string
   _: rid
   _: rid
   _: rid
@@ -124,7 +124,7 @@ type AncestralTrialTribes {
 }
 
 type AncestralTrialUnitPositions {
-  Id: string @unique
+  Id: string
   _: i32
   _: i32
   _: i32
@@ -132,14 +132,14 @@ type AncestralTrialUnitPositions {
 }
 
 type AncestralTrialUnits {
-  Id: string @unique
-  Name: string @localized
+  Id: string
+  Name: string
   Tribe: AncestralTrialTribes
   Image: string
   TotemImage: string
   HASH16: i32
   _: i32
-  Description: string @localized
+  Description: string
   _: i32
   _: i32
   Position: AncestralTrialUnitPositions
@@ -159,8 +159,8 @@ type PassiveSkillTattoos {
 }
 
 type PassiveSkillTattooTargetSets {
-  Id: string @unique
+  Id: string
   Set: [i32]
-  Name: string @localized
-  Qualifier: string @localized
+  Name: string
+  Qualifier: string
 }

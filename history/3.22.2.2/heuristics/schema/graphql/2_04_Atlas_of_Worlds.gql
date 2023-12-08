@@ -1,4 +1,4 @@
 type ShaperGuardians {
-  Id: string @unique
+  Id: string
   WorldArea: WorldAreas
 }

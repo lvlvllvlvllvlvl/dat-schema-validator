@@ -9,7 +9,7 @@ type AtlasExileInfluence {
 }
 
 type AtlasExiles {
-  Id: string @unique
+  Id: string
   _: i32
   InfluencedItemIncrStat: Stats
   MapIcon: string @file(ext: ".dds")

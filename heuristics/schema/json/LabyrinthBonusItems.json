@@ -3,7 +3,7 @@
     "name": "BaseItemType",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -31,12 +31,11 @@
     "name": "LabyrinthName",
     "offset": 20,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8,
-    "localized": true
+    "size": 8
   }
 ]

@@ -69,7 +69,7 @@ type Essences @tags(list: ["item:def", "crafting"]) {
 }
 
 type EssenceType {
-  Id: string @unique
+  Id: string
   EssenceType: i32
   IsCorruptedEssence: bool
   WordsKey: Words

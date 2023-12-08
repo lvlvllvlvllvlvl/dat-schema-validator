@@ -1,12 +1,12 @@
 type BetrayalChoiceActions {
-  Id: string @unique
+  Id: string
   BetrayalChoicesKey: BetrayalChoices
   ClientStringsKey: ClientStrings
 }
 
 type BetrayalChoices {
-  Id: string @unique
-  Text: string @localized
+  Id: string
+  Text: string
   _: i32
   Achievements: [AchievementItems]
 }
@@ -43,8 +43,8 @@ type BetrayalForts {
 }
 
 type BetrayalJobs {
-  Id: string @unique
-  Text: string @localized
+  Id: string
+  Text: string
   ExtraTerrainFeaturesKey: ExtraTerrainFeatures
   Art: string
   _: i32
@@ -56,15 +56,15 @@ type BetrayalJobs {
 }
 
 type BetrayalRanks {
-  Id: string @unique
-  Text: string @localized
+  Id: string
+  Text: string
   Level: i32
   RankImage: string
 }
 
 type BetrayalRelationshipState {
-  Id: string @unique
-  Text: string @localized
+  Id: string
+  Text: string
 }
 
 enum BetrayalTargetFlags @indexing(first: 0) { _ }
@@ -81,16 +81,16 @@ type BetrayalTargetLifeScalingPerLevel {
 }
 
 type BetrayalTargets {
-  Id: string @unique
+  Id: string
   BetrayalRanksKey: BetrayalRanks
   MonsterVarietiesKey: MonsterVarieties
   BetrayalJobsKey: BetrayalJobs
   Art: string
   _: bool
   ItemClasses: ItemClasses
-  FullName: string @localized
+  FullName: string
   Safehouse_ARMFile: string @file(ext: ".arm")
-  ShortName: string @localized
+  ShortName: string
   _: i32
   SafehouseLeader_AcheivementItemsKey: AchievementItems
   Level3_AchievementItemsKey: AchievementItems
@@ -105,14 +105,14 @@ type BetrayalTraitorRewards @tags(list: ["item:droptable"]) {
   BetrayalJobsKey: BetrayalJobs
   BetrayalTargetsKey: BetrayalTargets
   BetrayalRanksKey: BetrayalRanks
-  Description: string @localized
-  Description2: string @localized
+  Description: string
+  Description2: string
 }
 
 type BetrayalUpgrades {
   Id: string @unique
-  Name: string @localized
-  Description: string @localized
+  Name: string
+  Description: string
   ModsKey: [Mods]
   ArtFile: string
   BetrayalUpgradeSlotsKey: i32
@@ -135,20 +135,20 @@ type SafehouseBYOCrafting @tags(list: ["crafting"]) {
   BetrayalJobsKey: BetrayalJobs
   BetrayalTargetsKey: BetrayalTargets
   Rank: i32
-  Description: string @localized
+  Description: string
   ServerCommand: string
   _: [rid]
-  Description2: string @localized
+  Description2: string
   ServerCommand2: string
 }
 
 type SafehouseCraftingSpreeType {
-  Id: string @unique
+  Id: string
   Currencies: [SafehouseCraftingSpreeCurrencies]
   CurrencyCount: [i32]
   _: [rid]
   Disabled: bool
-  ItemClassText: string @localized
+  ItemClassText: string
   _: i32
 }
 

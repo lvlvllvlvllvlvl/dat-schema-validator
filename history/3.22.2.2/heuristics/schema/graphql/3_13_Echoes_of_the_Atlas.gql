@@ -5,7 +5,7 @@ type InfluenceModUpgrades @tags(list: ["crafting"]) {
 }
 
 type MavenDialog {
-  Id: string @unique
+  Id: string
   TextAudioT1: NPCTextAudio
   TextAudioT2: NPCTextAudio
   TextAudioT3: NPCTextAudio
@@ -16,7 +16,7 @@ type MavenDialog {
 }
 
 type MavenFights {
-  Id: string @unique
+  Id: string
   WitnessesRequired: i32
   AreaLevel: i32
   _: i32

@@ -54,7 +54,7 @@ type IncursionRoomBossFightEvents {
 
 type IncursionRooms @tags(list: ["item:itemized"]) {
   Id: string @unique
-  Name: string @localized
+  Name: string
   Tier: i32
   MinLevel: i32
   RoomUpgrade_IncursionRoomsKey: IncursionRooms
@@ -65,14 +65,14 @@ type IncursionRooms @tags(list: ["item:itemized"]) {
   PastARMFile: string @file(ext: ".arm")
   TSIFile: string @file(ext: ".tsi")
   UIIcon: string
-  FlavourText: string @localized
-  Description: string @localized
+  FlavourText: string
+  Description: string
   AchievementItemsKeys: [AchievementItems]
   _: i32
   _: i32
   RoomUpgradeFrom_IncursionRoomsKey: IncursionRooms
   ItemisedFlavourText: FlavourText
-  _: string @localized
+  _: string
   _: [Mods]
 }
 

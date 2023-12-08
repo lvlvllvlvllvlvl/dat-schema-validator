@@ -3,7 +3,7 @@
     "name": "Item",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -17,7 +17,7 @@
     "name": "TriggeredQuestFlag",
     "offset": 16,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
@@ -45,7 +45,7 @@
     "name": "",
     "offset": 48,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -79,8 +79,7 @@
     "offset": 68,
     "size": 16,
     "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": true
   },
   {
     "name": "",

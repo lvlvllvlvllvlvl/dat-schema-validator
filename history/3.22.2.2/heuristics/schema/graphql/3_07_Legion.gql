@@ -1,7 +1,7 @@
 type Incubators @tags(list: ["item:def"]) {
   BaseItemTypesKey: BaseItemTypes @unique
   _: i32
-  Description: string @localized
+  Description: string
   Hash: i32
   AchievementItemsKeys: [AchievementItems]
 }

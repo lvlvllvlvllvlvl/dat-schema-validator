@@ -44,7 +44,7 @@ enum AfflictionRewardTypes @indexing(first: 0) { _ }
 type AfflictionRewardTypeVisuals {
   AfflictionRewardTypes: AfflictionRewardTypes
   Id: string
-  Name: string @localized
+  Name: string
 }
 
 type AfflictionSplitDemons {

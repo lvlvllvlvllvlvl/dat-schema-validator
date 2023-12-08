@@ -7,13 +7,13 @@ type HarvestCraftOptionIcons {
 
 type HarvestCraftOptions @tags(list: ["crafting"]) {
   Id: string @unique
-  Text: string @localized
+  Text: string
   Tier: HarvestCraftTiers
   Command: string
   Parameters: string
   _: [_] # All rows empty
   HASH16: i32
-  Description: string @localized
+  Description: string
   IsEnchant: bool
   LifeforceType: i32
   LifeforceCost: i32
@@ -30,9 +30,9 @@ type HarvestCraftTiers {
 }
 
 type HarvestCraftFilters {
-  Id: string @unique
+  Id: string
   BaseItem: BaseItemTypes
-  Name: string @localized
+  Name: string
 }
 
 type HarvestInfrastructure {
@@ -62,7 +62,7 @@ type HarvestLifeScalingPerLevel {
 }
 
 type HarvestSeeds {
-  Id: string @unique
+  Id: string
   Monster: MonsterVarieties
   Tier: i32
   _: i32
@@ -75,7 +75,7 @@ type HarvestSeeds {
 }
 
 type HarvestSeedItems @tags(list: ["item:def"]) {
-  Id: i32 @unique
+  Id: i32
   BaseItem: BaseItemTypes
   DropStat: Stats
 }
