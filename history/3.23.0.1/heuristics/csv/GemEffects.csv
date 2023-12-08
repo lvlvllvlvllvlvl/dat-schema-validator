@@ -1,0 +1,1191 @@
+"rownum","Id","Name","GrantedEffect","GrantedEffectHardMode","GrantedEffect2","GrantedEffect2HardMode","Description","SupportSkillName","GemTags","Consumed_ModsKey","i32"
+0,"Fireball","",0,"","","","","","[11,25,5,4,14,0]","",3
+1,"FireballAltX","[DNT] FireballAltX",1,"","","","","","[11,25,5,4,14]","",1
+2,"FireballAltY","[DNT] FireballAltY",2,"","","","","","[11,25,5,4,14,0]","",2
+3,"VaalFireball","",3164,"",0,"","","","[11,25,5,4,14,24,0]","",3
+4,"VaalFireballAltX","Vaal Fireball",3164,"",1,"","","","[11,25,5,4,14,24,0]","",1
+5,"VaalFireballAltY","Vaal Fireball",3164,"",2,"","","","[11,25,5,4,14,24,0]","",2
+6,"IceNova","",59,"","","","","","[11,25,4,14,1,38]","",3
+7,"IceNovaAltX","Ice Nova of Frostbolts",60,"","","","","","[11,25,4,14,1,38]","",1
+8,"IceNovaAltY","Ice Nova of Deep Freeze",61,"","","","","","[11,25,4,14,1,38]","",2
+9,"Icefire","",5464,"","","","","","[11,25,4,14,5]","",3
+10,"VaalIceNova","",71,"",59,"","","","[11,25,4,14,24,1,38]","",3
+11,"VaalIceNovaAltX","Vaal Ice Nova",71,"",60,"","","","[11,25,4,14,24,1,38]","",1
+12,"VaalIceNovaAltY","Vaal Ice Nova",71,"",61,"","","","[11,25,4,14,24,1,38]","",2
+13,"LeapSlam","",100,103,"","","","","[9,25,13,14,22,35,40,7]","",3
+14,"LeapSlamAltX","Leap Slam of Groundbreaking",101,"","","","","","[9,25,13,14,22,35,40,7]","",1
+15,"LeapSlamAltY","[DNT] LeapSlamAltY",102,"","","","","","[9,25,13,14,22,35,40,7]","",2
+16,"Riptide","",5429,"","","","","","[11,25,4,14,5,1]","",3
+17,"ChargedDash","",8675,"","","","","","[10,25,22,14,30,13,2,7]","",3
+18,"ChargedDashAltX","[DNT] ChargedDashAltX",8676,"","","","","","[10,25,22,14,30,13,2,7]","",1
+19,"ChargedDashAltY","[DNT] ChargedDashAltY",8677,"","","","","","[10,25,22,14,30,13,2,7]","",2
+20,"ChargedAttack","",5447,"","","","","","[10,25,13,14,30,33,7]","",3
+21,"ChargedAttackAltX","Blade Flurry of Incision",5448,"","","","","","[47,10,25,13,14,30,33,7]","",1
+22,"ChargedAttackAltY","[DNT] ChargedAttackAltY",5449,"","","","","","[10,25,13,14,30,33,7]","",2
+23,"Sweep","",107,"","","","","","[9,25,13,14,33,7]","",3
+24,"SweepAltX","[DNT] SweepAltX",108,"","","","","","[9,25,13,14,33,7]","",1
+25,"SweepAltY","[DNT] SweepAltY",109,"","","","","","[9,25,13,14,33,7]","",2
+26,"DiscorectangleSlam","",7986,"","","","","","[9,25,13,14,7]","",3
+27,"VaalSweep","",111,"","","","","","[9,25,13,14,24,33,7]","",3
+28,"WandTeleport","",5528,"","","","","","[25,4,5,22]","",3
+29,"GroundSlam","",8744,"","","","","","[9,25,13,14,40,7]","",3
+30,"GroundSlamAltX","Ground Slam of Earthshaking",8745,"","","","","","[9,25,13,14,40,7]","",1
+31,"GroundSlamAltY","[DNT] GroundSlamAltY",8746,"","","","","","[9,25,13,14,40,7]","",2
+32,"VaalGroundSlam","",8752,"",8744,"","","","[9,25,13,14,24,40,7]","",3
+33,"VaalGroundSlamAltX","Vaal Ground Slam",8752,"",8745,"","","","[9,25,13,14,24,40,7]","",1
+34,"VaalGroundSlamAltY","Vaal Ground Slam",8752,"",8746,"","","","[9,25,13,14,24,40,7]","",2
+35,"Cleave","",173,"","","","","","[9,25,13,14,33,7]","",3
+36,"CleaveAltX","Cleave of Rage",174,"","","","","","[9,25,13,14,7]","",1
+37,"CleaveAltY","[DNT] CleaveAltY",175,"","","","","","[9,25,13,14,33,7]","",2
+38,"ShieldCharge","",196,199,"","","","","[9,25,13,14,22,35,33,7]","",3
+39,"ShieldChargeAltX","[DNT] ShieldChargeAltX",197,199,"","","","","[9,25,13,14,22,35,33,7]","",1
+40,"ShieldChargeAltY","[DNT] ShieldChargeAltY",198,199,"","","","","[9,25,13,14,22,35,33,7]","",2
+41,"EnduringCry","",247,"","","","","","[27,9,25,14,15]","",3
+42,"DoubleStrike","",258,"","","","","","[10,25,13,7,36,33]","",3
+43,"DoubleStrikeAltX","Double Strike of Impaling",259,"","","","","","[10,25,13,7,36,33]","",1
+44,"DoubleStrikeAltY","Double Strike of Momentum",260,"","","","","","[10,25,13,7,36]","",2
+45,"VaalDoubleStrike","",8742,"",258,"","","","[10,25,13,7,36,15,24,33]","",3
+46,"VaalDoubleStrikeAltX","Vaal Double Strike",8742,"",259,"","","","[10,25,13,7,36,15,24,33]","",1
+47,"VaalDoubleStrikeAltY","Vaal Double Strike",8742,"",260,"","","","[10,25,13,7,36,15,24,33]","",2
+48,"Lacerate","",5502,"","","","","","[10,25,13,14,33,7]","",3
+49,"LacerateAltX","Lacerate of Butchering",5503,"","","","","","[10,25,13,14,7]","",1
+50,"LacerateAltY","Lacerate of Haemorrhage",5504,"","","","","","[10,25,13,14,33,7]","",2
+51,"ElementalHit","",268,"","","","","","[10,25,13,5,7,36,0,1,2,14,45,6]","",3
+52,"ElementalHitAltX","[DNT] Elemental Hit of the Spectrum",269,"","","","","","[10,25,13,5,0,1,2,14,6]","",1
+53,"ElementalHitAltY","[DNT] ElementalHitAltY",270,"","","","","","[10,25,13,5,7,36,0,1,2,14,45,6]","",2
+54,"ImmortalCall","",283,"","","","","","[9,25,4,15,34]","",3
+55,"VaalImmortalCall","",285,"",283,"","","","[9,25,4,15,24,34]","",3
+56,"DualStrike","",290,"","","","","","[47,10,25,13,7,36]","",3
+57,"DualStrikeAltX","Dual Strike of Ambidexterity",291,"","","","","","[10,25,13,7,36]","",1
+58,"DualStrikeAltY","[DNT] DualStrikeAltY",292,"","","","","","[47,10,25,13,7,36]","",2
+59,"WhirlingBlades","",304,307,"","","","","[10,25,13,22,35,7]","",3
+60,"WhirlingBladesAltX","[DNT] WhirlingBladesAltX",305,307,"","","","","[10,25,13,22,35,7]","",1
+61,"WhirlingBladesAltY","[DNT] WhirlingBladesAltY",306,307,"","","","","[10,25,13,22,35,7]","",2
+62,"Frenzy","",341,"","","","","","[10,25,13,5,7,36,6]","",3
+63,"FrenzyAltX","Frenzy of Onslaught",342,"","","","","","[10,25,13,5,7,36,6]","",1
+64,"FrenzyAltY","[DNT] FrenzyAltY",343,"","","","","","[10,25,13,5,7,36,6]","",2
+65,"DetonateDead","",349,"","","","","","[10,25,4,14,0]","",3
+66,"DetonateDeadAltX","Detonate Dead of Scavenging",350,"","","","","","[10,25,4,14,0]","",1
+67,"DetonateDeadAltY","Detonate Dead of Chain Reaction",351,"","","","","","[10,25,4,14,0]","",2
+68,"VaalDetonateDead","",8743,"",349,"","","","[10,25,4,14,24,0]","",3
+69,"VaalDetonateDeadAltX","Vaal Detonate Dead",8743,"",350,"","","","[10,25,4,14,24,0]","",1
+70,"VaalDetonateDeadAltY","Vaal Detonate Dead",8743,"",351,"","","","[10,25,4,14,24,0]","",2
+71,"VolatileDead","",7976,"","","","","","[10,25,4,14,0]","",3
+72,"VolatileDeadAltX","Volatile Dead of Confinement",7977,"","","","","","[10,25,4,14,0,15]","",1
+73,"VolatileDeadAltY","Volatile Dead of Seething",7978,"","","","","","[10,25,4,14,0]","",2
+74,"BoneLance","",7987,"","","","","","[10,25,4,5,14,33]","",3
+75,"SplitArrow","",369,"","","","","","[10,25,13,5,33,6]","",3
+76,"SplitArrowAltX","Split Arrow of Splitting",370,"","","","","","[10,25,13,5,6]","",1
+77,"SplitArrowAltY","[DNT] SplitArrowAltY",371,"","","","","","[10,25,13,5,33,6]","",2
+78,"AddedFireDamageSupport","",580,"","","","Supports any skill that hits enemies.","","[0,33,9,16]",13755,3
+79,"FasterAttackSupport","",581,"","","","Supports attack skills.","","[13,10,16]",13850,3
+80,"GreaterMultipleProjectilesSupport","",583,"","","","Supports projectile skills.","","[10,16,5]",13794,3
+81,"LesserMultipleProjectilesSupport","",585,"","","","Supports projectile skills.","","[10,16,5]",13782,3
+82,"FasterProjectilesSupport","",587,"","","","Supports projectile skills.","","[10,16,5]",13770,3
+83,"AddedColdDamageSupport","",589,"","","","Supports any skill that hits enemies.","","[1,10,16]",13759,3
+84,"AdditionalAccuracySupport","",591,"","","","Supports attack skills.","","[13,10,16]",13761,3
+85,"IncreasedAreaOfEffectSupport","",592,"","","","Supports any skill with an area of effect.","","[11,16,14]",13778,3
+86,"AddedLightningDamageSupport","",594,"","","","Supports any skill that hits enemies.","","[2,11,16]",13858,3
+87,"ColdSnap","",8664,"","","","","","[11,25,4,14,1,15]","",3
+88,"ColdSnapAltX","Cold Snap of Power",8665,"","","","","","[47,11,25,4,14,1]","",1
+89,"ColdSnapAltY","[DNT] ColdSnapAltY",8666,"","","","","","[11,25,4,14,1,15]","",2
+90,"VaalColdSnap","",8673,"",8664,"","","","[11,25,4,14,15,24,1]","",3
+91,"VaalColdSnapAltX","Vaal Cold Snap",8673,"",8665,"","","","[47,11,25,4,14,15,24,1]","",1
+92,"VaalColdSnapAltY","Vaal Cold Snap",8673,"",8666,"","","","[11,25,4,14,15,24,1]","",2
+93,"RaiseZombie","",614,"","","","","","[11,25,4,8]","",3
+94,"RaiseZombieAltX","Raise Zombie of Slamming",615,"","","","","","[11,25,4,8]","",1
+95,"RaiseZombieAltY","Raise Zombie of Falling",616,"","","","","","[11,25,4,8]","",2
+96,"PoisonArrow","",628,"","","","","","[10,25,13,5,14,15,3,6]","",3
+97,"PoisonArrowAltX","Caustic Arrow of Poison",629,"","","","","","[10,25,13,5,14,3,6]","",1
+98,"PoisonArrowAltY","[DNT] PoisonArrowAltY",630,"","","","","","[10,25,13,5,14,15,3,6]","",2
+99,"DamageInfusion","",643,"","","","","","[11,25,4,14]","",3
+100,"BloodRage","",644,"","","","","","[10,25,4,15,33]","",3
+101,"Ignite","",648,"","","","","","[11,25,4,15,0]","",3
+102,"RighteousFire","",649,"","","","","","[11,25,4,14,0]","",3
+103,"RighteousFireAltX","Righteous Fire of Arcane Devotion",650,"","","","","","[11,25,4,14,0]","",1
+104,"RighteousFireAltY","[DNT] RighteousFireAltY",651,"","","","","","[11,25,4,14,0]","",2
+105,"VaalRighteousFire","",8760,"",649,"","","","[11,25,4,14,0,24,15]","",3
+106,"VaalRighteousFireAltX","Vaal Righteous Fire",8760,"",650,"","","","[11,25,4,14,0,24,15]","",1
+107,"VaalRighteousFireAltY","Vaal Righteous Fire",8760,"",651,"","","","[11,25,4,14,0,24,15]","",2
+108,"FireWeapon","",695,"","","","","","[11,25,4,15,0]","",3
+109,"Discharge","",696,"","","","","","[11,25,4,14,0,1,2,38]","",3
+110,"DischargeAltX","Discharge of Misery",697,"","","","","","[11,25,4,14,0,1,2,38]","",1
+111,"DischargeAltY","[DNT] DischargeAltY",698,"","","","","","[11,25,4,14,0,1,2,38]","",2
+112,"Portal","",703,"","","","","","[29,25,4]","",3
+113,"VaalPortal","",704,"",703,"","","","[29,25,4,24]","",3
+114,"ReducedManaSupport","",705,"","","","Supports any skill. Minions, Totems, Traps and Mines cannot gain Inspiration Charges.","","[47,9,16]",13760,3
+115,"IncreasedCriticalStrikesSupport","",710,"","","","Supports any skill that hits enemies.","","[47,11,16]",13795,3
+116,"IncreasedCriticalDamageSupport","",712,"","","","Supports any skill that hits enemies.","","[47,11,16]",13784,3
+117,"KnockbackSupport","",713,"","","","Supports any skill that hits enemies.","","[9,16]",13779,3
+118,"LifeLeechSupport","",715,"","","","Supports any skill that hits enemies, causing those hits to leech life based on damage dealt.","","[9,16]",13767,3
+119,"ManaLeechSupport","",717,"","","","Supports attack skills that hit enemies, causing those hits to leech mana based on damage dealt.","","[10,16]",13758,3
+120,"AddedChaosDamageSupport","",718,"","","","Supports any skill that hits enemies.","","[3,11,16]",13859,3
+121,"Backstab","",719,"","","","","","[10,25,13,7,36]","",3
+122,"FlickerStrike","",720,"","","","","","[10,25,13,7,36,22,15]","",3
+123,"FlickerStrikeAltX","Flicker Strike of Power",721,"","","","","","[47,10,25,13,7,36,22,15]","",1
+124,"FlickerStrikeAltY","[DNT] FlickerStrikeAltY",722,"","","","","","[10,25,13,7,36,22,15]","",2
+125,"VaalFlickerStrike","",730,"",720,"","","","[10,25,13,7,36,22,24,15]","",3
+126,"VaalFlickerStrikeAltX","Vaal Flicker Strike",730,"",721,"","","","[47,10,25,13,7,36,22,24,15]","",1
+127,"VaalFlickerStrikeAltY","Vaal Flicker Strike",730,"",722,"","","","[10,25,13,7,36,22,24,15]","",2
+128,"Spark","",872,"","","","","","[11,25,4,5,15,2]","",3
+129,"SparkAltX","Spark of the Nova",873,"","","","","","[11,25,4,5,15,2]","",1
+130,"SparkAltY","Spark of Unpredictability",874,"","","","","","[11,25,4,5,15,2]","",2
+131,"VaalSpark","",3168,"",872,"","","","[11,25,4,5,15,24,2]","",3
+132,"VaalSparkAltX","Vaal Spark",3168,"",873,"","","","[11,25,4,5,15,24,2]","",1
+133,"VaalSparkAltY","Vaal Spark",3168,"",874,"","","","[11,25,4,5,15,24,2]","",2
+134,"CastLinkedCursesOnCurseSupport","",5419,"","","","","","[16,26]","",3
+135,"StunSupport","",888,"","","","Supports any skill that hits enemies, making it easier to stun enemies with those skills.","","[9,16]",13773,3
+136,"IceSpear","",890,"","","","","","[47,11,25,4,5,1]","",3
+137,"IceSpearAltX","Ice Spear of Splitting",891,"","","","","","[11,25,4,5,1]","",1
+138,"IceSpearAltY","[DNT] IceSpearAltY",892,"","","","","","[47,11,25,4,5,1]","",2
+139,"PierceSupport","",908,"","","","Supports projectile skills.","","[10,16,5]",13849,3
+140,"TrapSupport","",909,"","","","Supports spells, or attacks that use bows or wands. Instead of using that skill, you will throw a trap that will use the skill for you when an enemy walks near it. Traps cannot use channelling skills.","","[10,16,20]",13788,3
+141,"RaiseSpectre","",911,"","","","","","[11,25,4,8]","",3
+142,"RaiseSpectreAltX","Raise Spectre of Transience",912,"","","","","","[11,25,4,8,15]","",1
+143,"RaiseSpectreAltY","[DNT] RaiseSpectreAltY",913,"","","","","","[11,25,4,8]","",2
+144,"InfernalBlow","",8748,"","","","","","[9,25,13,14,7,36,0,15]","",3
+145,"InfernalBlowAltX","Infernal Blow of Immolation",8749,"","","","","","[9,25,13,14,7,36,0,15]","",1
+146,"InfernalBlowAltY","[DNT] InfernalBlowAltY",8750,"","","","","","[9,25,13,14,7,36,0,15]","",2
+147,"GlacialHammer","",922,"","","","","","[9,25,13,7,36,1]","",3
+148,"GlacialHammerAltX","Glacial Hammer of Shattering",923,"","","","","","[47,9,25,13,7,36,1]","",1
+149,"GlacialHammerAltY","[DNT] GlacialHammerAltY",924,"","","","","","[9,25,13,7,36,1]","",2
+150,"VaalGlacialHammer","",931,"",922,"","","","[9,25,13,7,36,15,14,24,1]","",3
+151,"VaalGlacialHammerAltX","Vaal Glacial Hammer",931,"",923,"","","","[9,25,13,7,36,15,14,24,1]","",1
+152,"VaalGlacialHammerAltY","Vaal Glacial Hammer",931,"",924,"","","","[9,25,13,7,36,15,14,24,1]","",2
+153,"FrostWall","",941,"","","","","","[11,25,4,15,1]","",3
+154,"FrostWallAltX","[DNT] FrostWallAltX",942,"","","","","","[11,25,4,15,1]","",1
+155,"FrostWallAltY","[DNT] FrostWallAltY",943,"","","","","","[11,25,4,15,1]","",2
+156,"FreezingPulse","",953,"","","","","","[11,25,4,5,1]","",3
+157,"FreezingPulseAltX","[DNT] FreezingPulseAltX",954,"","","","","","[11,25,4,5,1]","",1
+158,"FreezingPulseAltY","[DNT] FreezingPulseAltY",955,"","","","","","[11,25,4,5,1]","",2
+159,"ShockNova","",969,"","","","","","[11,25,4,14,2,38]","",3
+160,"ShockNovaAltX","[DNT] ShockNovaAltX",970,"","","","","","[11,25,4,14,2,38]","",1
+161,"ShockNovaAltY","[DNT] ShockNovaAltY",971,"","","","","","[11,25,4,14,2,38]","",2
+162,"NewShockNova","",4528,"","","","","","[11,25,4,14,2,38]","",3
+163,"ViperStrike","",1007,"","","","","","[10,25,13,15,7,36,3]","",3
+164,"ViperStrikeAltX","Viper Strike of the Mamba",1008,"","","","","","[10,25,13,15,7,36,3]","",1
+165,"ViperStrikeAltY","[DNT] ViperStrikeAltY",1009,"","","","","","[10,25,13,15,7,36,3]","",2
+166,"NewPhaseRun","",4883,"","","","","","[10,25,4,15,22,33,35]","",3
+167,"PhaseRun","",4883,"","","","","","[10,25,4,15,22,33,35]","",3
+168,"MeleePhysicalDamageSupport","",1018,"","","","Supports melee attack skills.","","[7,33,9,16,13]",13851,3
+169,"ItemQuantitySupport","",1019,"","","","Supports any skill that can kill enemies.","","[9,16]",13796,3
+170,"ItemRaritySupport","",1021,"","","","Supports any skill that can kill enemies.","","[11,16]",13797,3
+171,"FasterCastSupport","",1022,"","","","Supports non-instant spell skills.","","[11,16,4]",13790,3
+172,"ExplosiveArrow","",1024,"","","","","","[10,25,13,5,14,15,0,6]","",3
+173,"ExplosiveArrowAltX","[DNT] ExplosiveArrowAltX",1025,"","","","","","[10,25,13,5,14,15,0,6]","",1
+174,"ExplosiveArrowAltY","[DNT] ExplosiveArrowAltY",1026,"","","","","","[10,25,13,5,14,15,0,6]","",2
+175,"TemporalChains","",1057,"","","","","","[10,25,4,14,15,17,42]","",3
+176,"ElementalWeakness","",1079,"","","","","","[11,25,4,14,15,17,42]","",3
+177,"WarlordsMark","",1089,"","","","","","[9,25,4,17,43]","",3
+178,"Punishment","",1096,"","","","","","[9,25,4,14,15,17,42]","",3
+179,"NewPunishment","",4773,"","","","","","[9,25,4,14,15,17,42]","",3
+180,"Enfeeble","",1101,"","","","","","[11,25,4,14,15,17,42]","",3
+181,"CriticalWeakness","",1115,"","","","","","[47,11,25,4,17,43]","",3
+182,"ProjectileWeakness","",1123,"","","","","","[10,25,4,17,43]","",3
+183,"Vulnerability","",8523,"","","","","","[11,25,4,14,15,3,17,42]","",3
+184,"LightningWarp","",1158,1161,"","","","","[11,25,4,14,15,22,2,35]","",3
+185,"LightningWarpAltX","[DNT] LightningWarpAltX",1159,1161,"","","","","[11,25,4,14,15,22,2,35]","",1
+186,"LightningWarpAltY","[DNT] LightningWarpAltY",1160,1161,"","","","","[11,25,4,14,15,22,2,35]","",2
+187,"VaalLightningWarp","",1163,"",1158,"","","","[11,25,4,14,15,24,2,22,35]","",3
+188,"SummonSkeletons","",1194,"","","","","","[11,25,4,8,15]","",3
+189,"SummonSkeletonsAltX","Summon Skeletons of Archers",1195,"","","","","","[11,25,4,8,15]","",1
+190,"SummonSkeletonsAltY","Summon Skeletons of Mages",1196,"","","","","","[11,25,4,8,15,45]","",2
+191,"VaalSummonSkeletons","",1198,"",1194,"","","","[11,25,4,8,15,24]","",3
+192,"VaalSummonSkeletonsAltX","Vaal Summon Skeletons",1198,"",1195,"","","","[11,25,4,8,15,24]","",1
+193,"VaalSummonSkeletonsAltY","Vaal Summon Skeletons",1198,"",1196,"","","","[11,25,4,8,15,24,45]","",2
+194,"HeavyStrike","",1226,"","","","","","[9,25,13,7,36]","",3
+195,"HeavyStrikeAltX","[DNT] Heavy Strike of Clobbering",1227,"","","","","","[9,25,13,7,36]","",1
+196,"HeavyStrikeAltY","[DNT] HeavyStrikeAltY",1228,"","","","","","[9,25,13,7,36]","",2
+197,"VaalHeavyStrike","",1230,"","","","","","[9,25,13,7,36,24]","",3
+198,"DominatingBlow","",1241,"","","","","","[9,25,13,8,15,7,36]","",3
+199,"DominatingBlowAltX","Dominating Blow of Inspiring",1242,"","","","","","[9,25,13,8,15,7,36]","",1
+200,"DominatingBlowAltY","[DNT] DominatingBlowAltY",1243,"","","","","","[9,25,13,8,15,7,36]","",2
+201,"RainOfArrows","",8692,"","","","","","[10,25,13,14,5,6]","",3
+202,"RainOfArrowsAltX","Rain of Arrows of Artillery",8693,"","","","","","[10,25,13,14,5,6]","",1
+203,"RainOfArrowsAltY","Rain of Arrows of Saturation",8694,"","","","","","[10,25,13,14,5,6]","",2
+204,"VaalRainOfArrows","",8697,"",8692,"","","","[10,25,13,14,5,24,6]","",3
+205,"VaalRainOfArrowsAltX","Vaal Rain of Arrows",8697,"",8693,"","","","[10,25,13,14,5,24,6]","",1
+206,"VaalRainOfArrowsAltY","Vaal Rain of Arrows",8697,"",8694,"","","","[10,25,13,14,5,24,6]","",2
+207,"ConcentratedEffectSupport","",1256,"","","","Supports any skill with an area of effect, regardless of whether that skill deals damage.","","[11,16,14]",13856,3
+208,"MinionDamageSupport","",1258,"","","","Supports skills which create Minions.","","[11,16,8]",13783,3
+209,"IncreasedDurationSupport","",1259,"","","","Supports any skill with a duration.","","[9,16,15]",13798,3
+210,"ColdToFireSupport","",1261,"","","","Supports any skill that hits enemies.","","[1,0,9,16]",13792,3
+211,"ChanceToIgniteSupport","",1262,"","","","Supports any skill that hits enemies.","","[0,11,16]",13799,3
+212,"MinionSpeedSupport","",1264,"","","","Supports skills which create Minions.","","[22,11,16,8]",13781,3
+213,"MinionLifeSupport","",1265,"","","","Supports skills which create Minions.","","[11,16,8]",13780,3
+214,"WeaponElementalDamageSupport","",1266,"","","","Supports attack skills.","","[13,9,16]",13777,3
+215,"BloodlustSupport","",4467,"","","","Supports melee attack skills, causing them to deal more damage against bleeding enemies, but preventing those skills from inflicting bleeding on enemies in any way.","","[13,33,9,16,7]",13800,3
+216,"LifeGainOnHitSupport","",1267,"","","","Supports attack skills.","","[13,9,16]",13801,3
+217,"Firestorm","",1268,"","","","","","[11,25,4,14,15,0]","",3
+218,"FirestormAltX","Firestorm of Meteors",1269,"","","","","","[11,25,4,14,0]","",1
+219,"FirestormAltY","Firestorm of Pelting",1270,"","","","","","[11,25,4,14,15,0]","",2
+220,"LightningStrike","",1409,"","","","","","[10,25,13,5,7,36,2]","",3
+221,"LightningStrikeAltX","Lightning Strike of Arcing",1410,"","","","","","[10,25,13,5,7,36,2,18]","",1
+222,"LightningStrikeAltY","[DNT] LightningStrikeAltY",1411,"","","","","","[10,25,13,5,7,36,2]","",2
+223,"VaalLightningStrike","",8680,"",1409,"","","","[10,25,13,7,36,15,24,2,5]","",3
+224,"VaalLightningStrikeAltX","Vaal Lightning Strike",8680,"",1410,"","","","[10,25,13,7,36,15,24,2,5,18]","",1
+225,"VaalLightningStrikeAltY","Vaal Lightning Strike",8680,"",1411,"","","","[10,25,13,7,36,15,24,2,5]","",2
+226,"TempestShield","",1468,"","","","","","[11,25,4,2,18]","",3
+227,"MoltenShell","",1472,"","","","","","[9,25,4,14,15,0,33,34]","",3
+228,"VaalMoltenShell","",1473,"",1472,"","","","[9,25,4,14,15,0,33,24,34]","",3
+229,"PowerSiphon","",1485,"","","","","","[47,11,25,13,5]","",3
+230,"PowerSiphonAltX","Power Siphon of the Archmage",1486,"","","","","","[47,11,25,13,5]","",1
+231,"PowerSiphonAltY","[DNT] PowerSiphonAltY",1487,"","","","","","[47,11,25,13,5]","",2
+232,"VaalPowerSiphon","",1488,"",1485,"","","","[47,11,25,13,5,24]","",3
+233,"VaalPowerSiphonAltX","Vaal Power Siphon",1488,"",1486,"","","","[47,11,25,13,5,24]","",1
+234,"VaalPowerSiphonAltY","Vaal Power Siphon",1488,"",1487,"","","","[47,11,25,13,5,24]","",2
+235,"Puncture","",1803,"","","","","","[10,25,13,5,15,7,36,33,6]","",3
+236,"PunctureAltX","[DNT] PunctureAltX",1804,"","","","","","[10,25,13,5,15,7,36,33,6]","",1
+237,"PunctureAltY","[DNT] PunctureAltY",1805,"","","","","","[10,25,13,5,15,7,36,33,6]","",2
+238,"LightningArrow","",1821,"","","","","","[10,25,13,14,5,2,6]","",3
+239,"LightningArrowAltX","Lightning Arrow of Electrocution",1822,"","","","","","[10,25,13,5,2,6]","",1
+240,"LightningArrowAltY","[DNT] LightningArrowAltY",1823,"","","","","","[10,25,13,14,5,2,6]","",2
+241,"Haste","",1832,"","","","","","[12,10,25,4,14]","",3
+242,"VaalHaste","",1838,"",1832,"","","","[12,10,25,4,14,15,24]","",3
+243,"Purity","",1842,"","","","","","[12,11,25,4,14]","",3
+244,"Vitality","",1844,"","","","","","[12,9,25,4,14]","",3
+245,"Discipline","",1851,"","","","","","[12,11,25,4,14]","",3
+246,"VaalDiscipline","",1852,"",1851,"","","","[12,11,25,4,14,15,24]","",3
+247,"Grace","",1857,1858,"","","","","[12,10,25,4,14]","",3
+248,"VaalGrace","",1864,"",1857,1858,"","","[12,10,25,4,14,15,24]","",3
+249,"Determination","",1867,1868,"","","","","[12,9,25,4,14,33]","",3
+250,"Anger","",1873,"","","","","","[12,9,25,4,14,0]","",3
+251,"Hatred","",1880,"","","","","","[12,10,25,4,14,1]","",3
+252,"Wrath","",1889,"","","","","","[12,11,25,4,14,2]","",3
+253,"BurningArrow","",1899,"","","","","","[10,25,13,5,0,6]","",3
+254,"BurningArrowAltX","Burning Arrow of Vigour",1900,"","","","","","[10,25,13,5,0,6]","",1
+255,"BurningArrowAltY","[DNT] BurningArrowAltY",1901,"","","","","","[10,25,13,5,0,6]","",2
+256,"VaalBurningArrow","",3174,"",1899,"","","","[10,25,13,5,14,24,0,6]","",3
+257,"VaalBurningArrowAltX","Vaal Burning Arrow",3174,"",1900,"","","","[10,25,13,5,14,24,0,6]","",1
+258,"VaalBurningArrowAltY","Vaal Burning Arrow",3174,"",1901,"","","","[10,25,13,5,14,24,0,6]","",2
+259,"ElementalProliferationSupport","",1907,"","","","Supports any skill that hits enemies, or could otherwise apply elemental ailments.","","[1,0,2,11,16,14]",13854,3
+260,"BloodMagicSupport","",1908,"","","","Supports any non-blessing skill with a reservation.","","[12,9,16]",13762,3
+261,"Clarity","",1914,"","","","","","[12,11,25,4,14]","",3
+262,"VaalClarity","",1917,"",1914,"","","","[12,11,25,4,14,15,24]","",3
+263,"CullingStrikeSupport","",1918,"","","","Supports any skill that hits enemies. If enemies are left below 10% of maximum life after being hit by these skills, they will be killed.","","[10,16]",13802,3
+264,"PointBlankSupport","",1919,"","","","Supports projectile skills.","","[5,13,10,16]",13803,3
+265,"IronGripSupport","",1921,"","","","Supports attack skills that fire projectiles, making the increase to physical melee damage from strength also increase their physical projectile damage.","","[5,33,9,16]",13804,3
+266,"IronWillSupport","",1922,"","","","Supports spell skills, making the increase to physical melee damage from strength also increase their spell damage.","","[4,9,16]",13789,3
+267,"MeleeDamageOnFullLifeSupport","",1923,"","","","Supports attack skills, providing a bonus to all damage dealt by those skills while your life is full.","","[13,9,16]",13805,3
+268,"SpellTotemSupport","",1924,"","","","Supports spell skills that are not triggered. Instead of casting that spell, you will summon a totem that casts the spell for you.","","[9,16,4,19]",13793,3
+269,"RemoteMineSupport","",1934,"","","","Supports spells, or attacks that use bows or wands. Instead of using that skill, you will throw a mine that will use the skill for you when you detonate it. Mines cannot use channelling skills.","","[11,16,21]",13771,3
+270,"DetonateMines","",1937,"","","","","","[29,21,25,4]","",3
+271,"ShockwaveTotem","",1938,"","","","","","[19,9,25,4,14,33,38]","",3
+272,"ShockwaveTotemAltX","[DNT] ShockwaveTotemAltX",1939,"","","","","","[19,9,25,4,14,33,38]","",1
+273,"ShockwaveTotemAltY","[DNT] ShockwaveTotemAltY",1940,"","","","","","[19,9,25,4,14,33,38]","",2
+274,"RejuvenationTotem","",1950,"","","","","","[19,12,9,25,4,14]","",3
+275,"FreezeMine","",9855,"","","","","","[21,47,11,25,4,5,1,12,14]","",3
+276,"FreezeMineAltX","Icicle Mine of Fanning",9856,"","","","","","[21,47,11,25,4,5,1,12,14]","",1
+277,"FreezeMineAltY","Icicle Mine of Sabotage",9857,"","","","","","[21,47,11,25,4,5,1,12,14]","",2
+278,"ConversionTrap","",1956,"","","","","","[20,11,25,4,15]","",3
+279,"BearTrap","",1957,"","","","","","[20,10,25,4,15,33]","",3
+280,"BearTrapAltX","Bear Trap of Skewers",1958,"","","","","","[20,10,25,4,15,33]","",1
+281,"BearTrapAltY","[DNT] BearTrapAltY",1959,"","","","","","[20,10,25,4,15,33]","",2
+282,"ChanceToFleeSupport","",1970,"","","","Supports any skill that hits enemies.","","[10,16]",13791,3
+283,"FireTrap","",1971,"","","","","","[20,10,25,4,15,14,0]","",3
+284,"FireTrapAltX","Fire Trap of Blasting",1972,"","","","","","[20,10,25,4,15,14,0]","",1
+285,"FireTrapAltY","[DNT] FireTrapAltY",1973,"","","","","","[20,10,25,4,15,14,0]","",2
+286,"VaalFireTrap","",1975,"","","","","","[20,10,25,4,15,14,24,0]","",3
+287,"DecoyTotem","",2031,"","","","","","[19,9,25,4,14]","",3
+288,"DevouringTotem","",2032,"","","","","","[19,9,25,4]","",3
+289,"EtherealKnives","",2079,"","","","","","[10,25,4,5,33]","",3
+290,"EtherealKnivesAltX","Ethereal Knives of Lingering Blades",2080,"","","","","","[10,25,4,5,33,15]","",1
+291,"EtherealKnivesAltY","Ethereal Knives of the Massacre",2081,"","","","","","[10,25,4,5,33]","",2
+292,"BlindSupport","",2112,"","","","Supports any skill that hits enemies.","","[10,16]",13785,3
+293,"IceShot","",2114,"","","","","","[10,25,13,5,14,1,6]","",3
+294,"IceShotAltX","[DNT] IceShotAltX",2115,"","","","","","[10,25,13,5,14,1,6]","",1
+295,"IceShotAltY","[DNT] IceShotAltY",2116,"","","","","","[10,25,13,5,14,1,6]","",2
+296,"ArcticBreath","",2128,"","","","","","[11,25,4,5,15,14,1]","",3
+297,"ArcticBreathAltX","[DNT] ArcticBreathAltX",2129,"","","","","","[11,25,4,5,15,14,1]","",1
+298,"ArcticBreathAltY","[DNT] ArcticBreathAltY",2130,"","","","","","[11,25,4,5,15,14,1]","",2
+299,"Arc","",2154,"","","","","","[11,25,4,18,2]","",3
+300,"ArcAltX","Arc of Surging",2155,"","","","","","[11,25,4,2]","",1
+301,"ArcAltY","Arc of Oscillating",2156,"","","","","","[11,25,4,18,2]","",2
+302,"VaalArc","",3167,"",2154,"","","","[11,25,4,18,24,2,15]","",3
+303,"VaalArcAltX","Vaal Arc",3167,"",2155,"","","","[11,25,4,18,24,2,15]","",1
+304,"VaalArcAltY","Vaal Arc",3167,"",2156,"","","","[11,25,4,18,24,2,15]","",2
+305,"NewArcticArmour","",2181,"","","","","","[10,25,4,15,1]","",3
+306,"ArcticArmour","",2181,"","","","","","[10,25,4,15,1]","",3
+307,"VaalArcticArmour","",11203,"",2181,"","","","[10,25,4,15,1,24]","",3
+308,"FlameTotem","",2193,"","","","","","[19,9,25,4,5,0,30,33]","",3
+309,"FlameTotemAltX","Holy Flame Totem of Ire",2194,"","","","","","[19,9,25,4,5,0,30,33]","",1
+310,"FlameTotemAltY","[DNT] FlameTotemAltY",2195,"","","","","","[19,9,25,4,5,0,30,33]","",2
+311,"RangedAttackTotemSupport","",2236,"","","","Supports any bow or wand attack skill, causing it to summon a ballista totem that uses the skill for you.","","[6,5,9,16,19]",13806,3
+312,"FirePenetrationSupport","",2239,"","","","Supports any skill that hits enemies, making those hits penetrate enemy fire resistance.","","[0,9,16]",13807,3
+313,"ColdPenetrationSupport","",2240,"","","","Supports any skill that hits enemies, making those hits penetrate enemy cold resistance.","","[1,10,16]",13756,3
+314,"LightningPenetrationSupport","",2241,"","","","Supports any skill that hits enemies, making those hits penetrate enemy lightning resistance.","","[2,11,16]",13808,3
+315,"ElementalPenetrationSupport","",2242,"","","","Supports any skill that hits enemies, making those hits penetrate enemy elemental resistances.","","[11,16]",13930,3
+316,"ChainSupport","",2243,"","","","Supports projectile skills, and any other skills that chain.","","[10,16,18,5]",13809,3
+317,"SplitSupport","",2245,"","","","","","[10,16,5]","",3
+318,"ForkSupport","",2246,"","","","Supports projectile skills, making their projectiles fork into two projectiles the first time they hit an enemy and don't pierce it.","","[10,16,5]",13763,3
+319,"ReturningProjectilesSupport","",2247,"","","","Supports projectile skills.","","[10,16,5]",13946,3
+320,"Flammability","",2248,"","","","","","[11,25,4,14,15,0,17,42]","",3
+321,"Frostbite","",2261,"","","","","","[11,25,4,14,15,1,17,42]","",3
+322,"Conductivity","",2269,"","","","","","[11,25,4,14,15,2,17,42]","",3
+323,"StormBurst","",9544,"","","","","","[14,11,25,4,2,30,15,33]","",3
+324,"StormBurstAltX","[DNT] StormBurstAltX",9545,"","","","","","[14,11,25,4,2,30,15,33]","",1
+325,"StormBurstAltY","[DNT] StormBurstAltY",9546,"","","","","","[14,11,25,4,2,30,15,33]","",2
+326,"Incinerate","",8687,"","","","","","[11,25,4,0,30,14]","",3
+327,"IncinerateAltX","[DNT] Incinerate of Expanse",8688,"","","","","","[11,25,4,0,30,14]","",1
+328,"IncinerateAltY","[DNT] Incinerate of Venting",8689,"","","","","","[11,25,4,0,30,14]","",2
+329,"Cyclone","",2364,"","","","","","[10,25,13,14,22,30,33,7]","",3
+330,"CycloneAltX","Cyclone of Tumult",2365,"","","","","","[10,25,13,14,22,30,33,7]","",1
+331,"CycloneAltY","[DNT] CycloneAltY",2366,"","","","","","[10,25,13,14,22,30,33,7]","",2
+332,"VaalCyclone","",2376,"",2364,"","","","[10,25,13,14,15,24,7,22,30,33]","",3
+333,"VaalCycloneAltX","Vaal Cyclone",2376,"",2365,"","","","[10,25,13,14,15,24,7,22,30,33]","",1
+334,"VaalCycloneAltY","Vaal Cyclone",2376,"",2366,"","","","[10,25,13,14,15,24,7,22,30,33]","",2
+335,"MultistrikeSupport","",2422,"","","","Supports melee attack skills, making them repeat twice when used, targeting a random enemy each time. Cannot support Vaal skills, channelling skills or triggered skills.","","[13,7,9,16]",13769,3
+336,"MulticastSupport","",2424,"","","","Supports spell skills, making them repeat when cast. Cannot support Vaal skills, totem skills, channelling skills, triggered skills, instant skills, blink skills, or skills with a reservation.","","[4,11,16]",13810,3
+337,"MeleeSplashSupport","",2427,"","","","Supports melee strike skills, causing their melee strike to deal splash damage around each target hit.","","[9,16,7,13,36,14]",13768,3
+338,"PowerChargeOnCritSupport","",2429,"","","","Supports any skill that hits enemies.","","[47,11,16]",13811,3
+339,"SearingBond","",2430,"","","","","","[9,25,4,19,0]","",3
+340,"SearingBondAltX","[DNT] SearingBondAltX",2431,"","","","","","[9,25,4,19,0]","",1
+341,"SearingBondAltY","[DNT] SearingBondAltY",2432,"","","","","","[9,25,4,19,0]","",2
+342,"IncreasedBurningDamageSupport","",2443,"","","","Supports any skill that hits enemies, or can deal burning damage directly.","","[0,9,16]",13812,3
+343,"SummonElementalResistanceSupport","",2444,"","","","Supports skills which create Minions.","","[11,16,8]",13813,3
+344,"CurseOnHitSupport","",2452,"",2453,"","Must support both a skill that hits enemies, and a hex curse skill to work. The hex will be applied when enemies are hit by the other skill. Cannot support totems, traps, or mines. Minions cannot apply hexes this way.","","[11,16,42,26]",13814,3
+345,"Reave","",2489,"","","","","","[10,25,13,14,7]","",3
+346,"ReaveAltX","Reave of Refraction",2490,"","","","","","[10,25,13,14,7]","",1
+347,"ReaveAltY","[DNT] ReaveAltY",2491,"","","","","","[10,25,13,14,7]","",2
+348,"VaalReave","",2492,"",2489,"","","","[10,25,13,14,24,7]","",3
+349,"VaalReaveAltX","Vaal Reave",2492,"",2490,"","","","[10,25,13,14,24,7]","",1
+350,"VaalReaveAltY","Vaal Reave",2492,"",2491,"","","","[10,25,13,14,24,7]","",2
+351,"CastOnCritSupport","",2564,"",2565,"","Must support both an attack skill and a spell skill to work. The attack skill will trigger a spell when it critically strikes an enemy. Cannot support totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","","[47,10,16,4,26]",13774,3
+352,"CastOnKillSupport","",2566,"",2567,"","Must support both a melee attack skill and a spell skill to work. The attack skill will trigger a spell when it kills an enemy. Cannot support totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","","[9,16,7,13,4,26]",13815,3
+353,"MultiTrapSupport","",2568,"","","","Supports traps skills, making them throw extra traps in a line.","","[10,16,20]",13816,3
+354,"AdditionalLevelSupport","",2569,"","","","Supports any skill gem. Once this gem reaches level 2 or above, will raise the level of supported gems. Cannot support skills that don't come from gems.","","[29,48,9,16]",13817,3
+355,"LightningTrap","",2584,"","","","","","[20,47,11,25,4,5,2]","",3
+356,"LightningTrapAltX","Lightning Trap of Sparking",2585,"","","","","","[20,47,11,25,4,5,2]","",1
+357,"LightningTrapAltY","[DNT] LightningTrapAltY",2586,"","","","","","[20,47,11,25,4,5,2]","",2
+358,"VaalLightningTrap","",2588,"",2584,"","","","[20,47,11,25,4,5,15,24,2]","",3
+359,"VaalLightningTrapAltX","Vaal Lightning Trap",2588,"",2585,"","","","[20,47,11,25,4,5,15,24,2]","",1
+360,"VaalLightningTrapAltY","Vaal Lightning Trap",2588,"",2586,"","","","[20,47,11,25,4,5,15,24,2]","",2
+361,"SmokeMine","",2628,2629,"","","","","[21,10,25,4,14,15,22,35,37]","",3
+362,"EnduranceChargeOnMeleeStunSupport","",2651,"","","","Supports melee attack skills.","","[9,16,7,13]",13786,3
+363,"AnimateArmour","",2679,"","","","","","[9,25,4,8]","",3
+364,"AnimateArmourAltX","Animate Guardian of Smiting",2680,"","","","","","[9,25,4,8,2]","",1
+365,"AnimateArmourAltY","[DNT] AnimateArmourAltY",2681,"","","","","","[9,25,4,8]","",2
+366,"ThrownShieldProjectile","",5825,"","","","","","[10,25,13,5,33]","",3
+367,"ThrownShieldProjectileAltX","Spectral Shield Throw of Shattering",5826,"","","","","","[10,25,13,5,1]","",1
+368,"ThrownShieldProjectileAltY","[DNT] ThrownShieldProjectileAltY",5827,"","","","","","[10,25,13,5,33]","",2
+369,"ThrownWeapon","",2683,"","","","","","[10,25,13,5]","",3
+370,"ThrownWeaponAltX","Spectral Throw of Materialising",2684,"","","","","","[10,25,13,5]","",1
+371,"ThrownWeaponAltY","[DNT] ThrownWeaponAltY",2685,"","","","","","[10,25,13,5]","",2
+372,"VaalThrownWeapon","",2692,"",2683,"","","","[10,25,13,5,24]","",3
+373,"VaalThrownWeaponAltX","Vaal Spectral Throw",2692,"",2684,"","","","[10,25,13,5,24]","",1
+374,"VaalThrownWeaponAltY","Vaal Spectral Throw",2692,"",2685,"","","","[10,25,13,5,24]","",2
+375,"SlowerProjectilesSupport","",2756,"","","","Supports projectile skills.","","[10,16,5]",13818,3
+376,"ReducedDurationSupport","",2757,"","","","Supports any skill that has a duration.","","[9,16,15]",13819,3
+377,"CastOnDeathSupport","",2760,"","","","Each supported spell skill will be triggered when you die. Cannot support skills used by totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","","[10,16,4,26]",13857,3
+378,"CastOnDamageTakenSupport","",2762,"","","","Each supported spell skill will track damage you take, and be triggered when the total damage taken reaches a threshold. Cannot support skills used by totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","","[9,16,4,26]",13820,3
+379,"CastOnStunnedSupport","",2763,"","","","Each supported spell skill will have a chance to be triggered when you are stunned. Cannot support skills used by totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","","[11,16,4,26]",13775,3
+380,"AnimateWeapon","",2770,"","","","","","[10,25,15,8,4,33]","",3
+381,"AnimateWeaponAltX","Animate Weapon of Self Reflection",2771,"","","","","","[10,25,15,8,4]","",1
+382,"AnimateWeaponAltY","Animate Weapon of Ranged Arms",2772,"","","","","","[10,25,15,8,4,33]","",2
+383,"AdditionalQualitySupport","",2830,"","","","Supports any skill gem. Once this gem reaches level 2 or above, will raise the quality of supported gems. Cannot support skills that don't come from gems.","","[29,48,10,16]",13821,3
+384,"FireResistAura","",2832,"","","","","","[12,9,25,4,14,0]","",3
+385,"VaalFireResistAura","",8172,"",2832,"","","","[12,9,25,4,14,15,24,0]","",3
+386,"ColdResistAura","",2836,"","","","","","[12,10,25,4,14,1]","",3
+387,"VaalColdResistAura","",8173,"",2836,"","","","[12,10,25,4,14,15,24,1]","",3
+388,"LightningResistAura","",2840,"","","","","","[12,11,25,4,14,2]","",3
+389,"VaalLightningResistAura","",8174,"",2840,"","","","[12,11,25,4,14,15,24,2]","",3
+390,"StormCall","",2844,"","","","","","[11,25,4,14,15,2]","",3
+391,"StormCallAltX","[DNT] StormCallAltX",2845,"","","","","","[11,25,4,14,15,2]","",1
+392,"StormCallAltY","[DNT] StormCallAltY",2846,"","","","","","[11,25,4,14,15,2]","",2
+393,"VaalStormCall","",2857,"",2844,"","","","[11,25,4,14,15,24,2]","",3
+394,"VaalStormCallAltX","Vaal Storm Call",2857,"",2845,"","","","[11,25,4,14,15,24,2]","",1
+395,"VaalStormCallAltY","Vaal Storm Call",2857,"",2846,"","","","[11,25,4,14,15,24,2]","",2
+396,"Flameblast","",2917,"","","","","","[11,25,4,14,0,30]","",3
+397,"FlameblastAltX","Flameblast of Celerity",2918,"","","","","","[11,25,4,14,0,30]","",1
+398,"FlameblastAltY","Flameblast of Contraction",2919,"","","","","","[11,25,4,14,0,30]","",2
+399,"VaalFlameblast","",2920,"",2917,"","","","[11,25,4,14,24,0,30]","",3
+400,"VaalFlameblastAltX","Vaal Flameblast",2920,"",2918,"","","","[11,25,4,14,24,0,30]","",1
+401,"VaalFlameblastAltY","Vaal Flameblast",2920,"",2919,"","","","[11,25,4,14,24,0,30]","",2
+402,"Barrage","",2969,"","","","","","[10,25,13,5,6]","",3
+403,"BarrageAltX","Barrage of Volley Fire",2970,"","","","","","[10,25,13,5,6]","",1
+404,"BarrageAltY","[DNT] BarrageAltY",2971,"","","","","","[10,25,13,5,6]","",2
+405,"BallLightning","",2295,"","","","","","[11,25,4,5,14,2]","",3
+406,"BallLightningAltX","Ball Lightning of Orbiting",2296,"","","","","","[11,25,4,5,14,2]","",1
+407,"BallLightningAltY","Ball Lightning of Static",2297,"","","","","","[11,25,4,14,2,44]","",2
+408,"VortexMine","",2991,"","","","","","[21,10,25,4,14,15]","",3
+409,"InfernalSwarm","",2992,"","","","","","[11,25,4,18,14,0]","",3
+410,"PhysicalProjectileAttackDamageSupport","",2993,"","","","Supports projectile attack skills.","","[5,13,33,3,10,16]",13822,3
+411,"SummonRagingSpirit","",2994,"","","","","","[11,25,4,8,15,0]","",3
+412,"SummonRagingSpiritAltX","Summon Raging Spirit of Enormity",2995,"","","","","","[11,25,4,8,15,0]","",1
+413,"SummonRagingSpiritAltY","[DNT] SummonRagingSpiritAltY",2996,"","","","","","[11,25,4,8,15,0]","",2
+414,"FlameWhip","",3029,"","","","","","[11,25,4,14,0,15]","",3
+415,"FlameWhipAltX","Flame Surge of Combusting",3030,"","","","","","[11,25,4,14,0,15]","",1
+416,"FlameWhipAltY","[DNT] FlameWhipAltY",3031,"","","","","","[11,25,4,14,0,15]","",2
+417,"AdditionalXPSupport","",3051,"","","","Supports any skill gem. Once this gem reaches level 2 or above, will apply a cost & reservation multiplier to supported gems. Cannot support skills that don't come from gems.","","[29,48,11,16]",13823,3
+418,"Desecrate","",3059,"","","","","","[10,25,4,14,15,3]","",3
+419,"FleshOffering","",3092,"","","","","","[8,11,25,4,15]","",3
+420,"BoneOffering","",3101,"","","","","","[8,11,25,4,15]","",3
+421,"SpiritOffering","",5455,"","","","","","[8,11,25,4,15]","",3
+422,"GlacialCascade","",3106,"","","","","","[11,25,4,14,1,33]","",3
+423,"GlacialCascadeAltX","Glacial Cascade of the Fissure",3107,"","","","","","[11,25,4,14,1,33]","",1
+424,"GlacialCascadeAltY","[DNT] GlacialCascadeAltY",3108,"","","","","","[11,25,4,14,1,33]","",2
+425,"BlockChanceReductionSupport","",3481,"","","","Supports any skill that hits enemies.","","[10,16,15]",13860,3
+426,"MoltenStrike","",3482,"","","","","","[9,25,13,5,14,7,36,0]","",3
+427,"MoltenStrikeAltX","Molten Strike of the Zenith",3483,"","","","","","[9,25,13,5,14,7,36,0]","",1
+428,"MoltenStrikeAltY","[DNT] MoltenStrikeAltY",3484,"","","","","","[9,25,13,5,14,7,36,0]","",2
+429,"Convocation","",3512,"","","","","","[8,11,25,4,15]","",3
+430,"ComboStrike","",3516,"","","","","","[9,25,13,7,36]","",3
+431,"FireNovaMine","",9849,"","","","","","[21,11,25,4,5,0,14,12,38]","",3
+432,"FireNovaMineAltX","Pyroclast Mine of Sabotage",9850,"","","","","","[21,11,25,4,5,0,14,12,38]","",1
+433,"FireNovaMineAltY","[DNT] FireNovaMineAltY",9851,"","","","","","[21,11,25,4,5,0,14,12,38]","",2
+434,"TornadoShot","",3681,"","","","","","[10,25,13,5,6]","",3
+435,"TornadoShotAltX","Tornado Shot of Cloudburst",3682,"","","","","","[10,25,13,5,6]","",1
+436,"TornadoShotAltY","[DNT] TornadoShotAltY",3683,"","","","","","[10,25,13,5,6]","",2
+437,"GenerositySupport","",3716,"","","","Supports aura skills that affect you and allies, increasing the aura's effect on allies, but preventing it from affecting you at all. Cannot support curse auras, or other auras that only affect enemies. Cannot support skills used by totems.","","[9,16,12]",13852,3
+438,"HeraldOfAsh","",3717,"","","","","","[9,25,4,14,0,31,15]","",3
+439,"HeraldOfIce","",3718,"","","","","","[10,25,4,14,1,31]","",3
+440,"HeraldOfThunder","",3719,"","","","","","[11,25,4,14,15,2,31]","",3
+441,"HeraldOfAgony","",3720,"","","","","","[10,25,4,31,8,3,33]","",3
+442,"HeraldOfPurity","",3721,"","","","","","[9,25,4,31,8,15,33]","",3
+443,"PoachersMark","",3729,"","","","","","[33,10,25,4,17,43]","",3
+444,"LightningTendrils","",3933,"","","","","","[47,11,25,4,14,2,30]","",3
+445,"LightningTendrilsAltX","Lightning Tendrils of Eccentricity",3934,"","","","","","[47,11,25,4,14,2,30]","",1
+446,"LightningTendrilsAltY","Lightning Tendrils of Escalation",3935,"","","","","","[11,25,4,14,2,30]","",2
+447,"LightningTendrilsChannelled","",3933,"","","","","","[11,25,4,14,2,30]","",3
+448,"LightningCircle","",3984,"","","","","","[11,25,4,14,2]","",3
+449,"LightningChannel","",4031,"","","","","","[11,25,4,14,2]","",3
+450,"KineticBlast","",4254,"","","","","","[11,25,13,5,14]","",3
+451,"KineticBlastAltX","[DNT] KineticBlastAltX",4255,"","","","","","[11,25,13,5,14]","",1
+452,"KineticBlastAltY","[DNT] KineticBlastAltY",4256,"","","","","","[11,25,13,5,14]","",2
+453,"TouchOfGod","",2512,"","","","","","[9,25,13,14,2,40,7]","",3
+454,"BlinkArrow","",4266,4270,"","","","","[10,25,13,8,15,22,35,6]","",3
+455,"BlinkArrowAltX","Blink Arrow of Bombarding Clones",4267,"","","","","","[10,25,13,8,15,22,35,6]","",1
+456,"BlinkArrowAltY","Blink Arrow of Prismatic Clones",4268,"","","","","","[10,25,13,8,15,22,35,45,6]","",2
+457,"MirrorArrow","",4272,"","","","","","[10,25,13,8,15,22,35,6]","",3
+458,"MirrorArrowAltX","Mirror Arrow of Bombarding Clones",4273,"","","","","","[10,25,13,8,15,22,35,6]","",1
+459,"MirrorArrowAltY","Mirror Arrow of Prismatic Clones",4274,"","","","","","[10,25,13,8,15,22,35,45,6]","",2
+460,"Riposte","",4365,"","","","","","[26,10,25,13,7,36,33]","",3
+461,"Reckoning","",4367,"","","","","","[26,9,25,13,14,33,7]","",3
+462,"StaticStrike","",4369,"","","","","","[9,25,13,7,36,14,15,2,18]","",3
+463,"StaticStrikeAltX","[DNT] StaticStrikeAltX",4370,"","","","","","[9,25,13,7,36,14,15,2,18]","",1
+464,"StaticStrikeAltY","[DNT] StaticStrikeAltY",4371,"","","","","","[9,25,13,7,36,14,15,2,18]","",2
+465,"PhysicalToLightningSupport","",4381,"","","","Supports any skill that hits enemies.","","[2,33,11,16]",13824,3
+466,"Vengeance","",4390,"","","","","","[26,9,25,13,14,33,7]","",3
+467,"SummonChaosGolem","",4398,"","","","","","[11,25,3,8,4,28]","",3
+468,"SummonChaosGolemAltX","Summon Chaos Golem of Hordes",4399,"","","","","","[11,25,3,8,4,28]","",1
+469,"SummonChaosGolemAltY","Summon Chaos Golem of the Maelström",4400,"","","","","","[11,25,3,8,4,28]","",2
+470,"SummonIceGolem","",4403,"","","","","","[47,10,25,1,8,4,28]","",3
+471,"SummonIceGolemAltX","Summon Ice Golem of Hordes",4404,"","","","","","[10,25,1,8,4,28]","",1
+472,"SummonIceGolemAltY","Summon Ice Golem of Shattering",4405,"","","","","","[10,25,1,8,4,28]","",2
+473,"SummonFlameGolem","",4408,"","","","","","[9,25,0,8,4,28]","",3
+474,"SummonFlameGolemAltX","Summon Flame Golem of Hordes",4409,"","","","","","[9,25,0,8,4,28]","",1
+475,"SummonFlameGolemAltY","Summon Flame Golem of the Meteor",4410,"","","","","","[9,25,0,8,4,28]","",2
+476,"SummonLightningGolem","",5479,"","","","","","[11,25,2,8,4,28]","",3
+477,"SummonLightningGolemAltX","Summon Lightning Golem of Hordes",5480,"","","","","","[11,25,2,8,4,28]","",1
+478,"SummonLightningGolemAltY","[DNT] SummonLightningGolemAltY",5481,"","","","","","[11,25,2,8,4,28]","",2
+479,"BlasphemySupport","",4449,"","","","Supports hex curse skills, turning them into auras that will apply their effect to all enemies in an area around you.","","[11,16,42,12]",13787,3
+480,"IceCrash","",4451,"","","","","","[9,25,13,14,1,40,7]","",3
+481,"IceCrashAltX","Ice Crash of Cadence",4452,"","","","","","[9,25,13,14,1,40,7]","",1
+482,"IceCrashAltY","[DNT] IceCrashAltY",4453,"","","","","","[9,25,13,14,1,40,7]","",2
+483,"RallyingCry","",4470,"","","","","","[27,9,25,14,15]","",3
+484,"AbyssalCry","",4521,"",10258,"","","","[27,9,25,14,15,0,13,26,7]","",3
+485,"FlameDash","",4608,4611,"","","","","[11,25,4,22,15,0,35,37]","",3
+486,"FlameDashAltX","[DNT] Flame Dash of Incinerating",4609,4611,"","","","","[11,25,4,22,15,0,35,37]","",1
+487,"FlameDashAltY","Flame Dash of Return",4610,"","","","","","[11,25,4,22,15,0]","",2
+488,"VigilantStrike","",4655,"","","","","","[13,9,25,7,36]","",3
+489,"VigilantStrikeAltX","[DNT] VigilantStrikeAltX",4656,"","","","","","[13,9,25,7,36]","",1
+490,"VigilantStrikeAltY","[DNT] VigilantStrikeAltY",4657,"","","","","","[13,9,25,7,36]","",2
+491,"FortifySupport","",4658,"","","","Supports melee attack skills that are not triggered.","","[13,9,16,7]",13853,3
+492,"FrostBlades","",4677,"","","","","","[10,25,13,5,7,36,1]","",3
+493,"FrostBladesAltX","Frost Blades of Katabasis",4678,"","","","","","[10,25,13,7,36,1,14,15]","",1
+494,"FrostBladesAltY","[DNT] FrostBladesAltY",4679,"","","","","","[10,25,13,5,7,36,1]","",2
+495,"FrenzyChargeOnSlayingFrozenEnemySupport","",4727,"","","","Supports any skill you use to hit enemies yourself. Cannot support skills used by totems, traps, or mines.","","[1,10,16]",13757,3
+496,"DamageAgainstChilledSupport","",4728,"","","","Supports any skill that deals damage.","","[1,10,16]",13766,3
+497,"OnslaughtOnSlayingShockedEnemySupport","",4729,"","","","Supports any skill you use to hit enemies yourself. Cannot support skills used by totems, traps, or mines.","","[2,11,16,15]",13764,3
+498,"MagmaOrb","",4731,"","","","","","[11,25,4,14,0,5,18]","",3
+499,"MagmaOrbAltX","[DNT] MagmaOrbAltX",4732,"","","","","","[11,25,4,14,0,5,18]","",1
+500,"MagmaOrbAltY","[DNT] MagmaOrbAltY",4733,"","","","","","[11,25,4,14,0,5,18]","",2
+501,"TrapAndMineDamageSupport","",4772,"","","","Supports skills which throw Traps or Mines.","","[10,16,20,21]",13825,3
+502,"WildStrike","",4795,"","","","","","[10,25,13,7,36,2,1,0,5,14,18,45]","",3
+503,"WildStrikeAltX","Wild Strike of Extremes",4796,"","","","","","[10,25,13,7,36,2,1,0,5,14,18,45]","",1
+504,"WildStrikeAltY","[DNT] WildStrikeAltY",4797,"","","","","","[10,25,13,7,36,2,1,0,5,14,18,45]","",2
+505,"IceTrap","",4804,"","","","","","[20,10,25,4,14,1]","",3
+506,"IceTrapAltX","Ice Trap of Hollowness",4805,"","","","","","[20,10,25,4,14,1]","",1
+507,"IceTrapAltY","[DNT] IceTrapAltY",4806,"","","","","","[20,10,25,4,14,1]","",2
+508,"BlastRain","",4893,"","","","","","[0,10,25,13,14,5,6]","",3
+509,"BlastRainAltX","[DNT] BlastRainAltX",4894,"","","","","","[0,10,25,13,14,5,6]","",1
+510,"BlastRainAltY","[DNT] BlastRainAltY",4895,"","","","","","[0,10,25,13,14,5,6]","",2
+511,"ShrapnelShot","",4915,"","","","","","[2,10,25,13,5,14,6]","",3
+512,"ShrapnelShotAltX","Galvanic Arrow of Energy",4916,"","","","","","[2,10,25,13,14,6]","",1
+513,"ShrapnelShotAltY","Galvanic Arrow of Surging",4917,"","","","","","[2,10,25,13,5,14,6]","",2
+514,"StaticTether","",4923,"","","","","","[11,25,4,5,14,15]","",3
+515,"Bladefall","",4925,"","","","","","[10,25,4,14,33,15]","",3
+516,"BladefallAltX","Bladefall of Volleys",4926,"","","","","","[47,10,25,4,14,33]","",1
+517,"BladefallAltY","Bladefall of Impaling",4927,"","","","","","[47,10,25,4,14,33]","",2
+518,"BladeVortex","",4939,"","","","","","[10,25,4,14,15,33]","",3
+519,"BladeVortexAltX","Blade Vortex of the Scythe",4940,"","","","","","[10,25,4,14,15,33]","",1
+520,"BladeVortexAltY","[DNT] BladeVortexAltY",4941,"","","","","","[10,25,4,14,15,33]","",2
+521,"VaalBladeVortex","",8682,"",4939,"","","","[47,10,25,4,14,15,24,33]","",3
+522,"VaalBladeVortexAltX","Vaal Blade Vortex",8682,"",4940,"","","","[47,10,25,4,14,15,24,33]","",1
+523,"VaalBladeVortexAltY","Vaal Blade Vortex",8682,"",4941,"","","","[47,10,25,4,14,15,24,33]","",2
+524,"NewBladeVortex","",5824,"","","","","","[47,10,25,4,14,15,33]","",3
+525,"FrostBomb","",4963,"","","","","","[11,25,4,14,15,1,44]","",3
+526,"FrostBombAltX","Frost Bomb of Instability",4964,"","","","","","[11,25,4,14,15,1]","",1
+527,"FrostBombAltY","Frost Bomb of Forthcoming",4965,"","","","","","[11,25,4,14,15,1]","",2
+528,"SiegeBallista","",4788,"","","","","","[10,25,13,5,19,6]","",3
+529,"SiegeBallistaAltX","Siege Ballista of Splintering",4789,"","","","","","[10,25,13,5,19,6]","",1
+530,"SiegeBallistaAltY","[DNT] SiegeBallistaAltY",4790,"","","","","","[10,25,13,5,19,6]","",2
+531,"OrbOfStorms","",4993,"","","","","","[2,11,25,4,14,18,44]","",3
+532,"OrbOfStormsAltX","[DNT] OrbOfStormsAltX",4994,"","","","","","[2,11,25,4,14,18,44]","",1
+533,"OrbOfStormsAltY","[DNT] OrbOfStormsAltY",4995,"","","","","","[2,11,25,4,14,18,44]","",2
+534,"SummonRockGolem","",5037,"","","","","","[9,25,8,4,28,33]","",3
+535,"SummonRockGolemAltX","Summon Stone Golem of Hordes",5038,"","","","","","[9,25,8,4,28,33]","",1
+536,"SummonRockGolemAltY","Summon Stone Golem of Safeguarding",5039,"","","","","","[9,25,8,4,28,33]","",2
+537,"RighteousLightning","",5070,"","","","","","[11,25,4,14,2]","",3
+538,"Earthquake","",5073,"","","","","","[9,25,13,14,15,40,7]","",3
+539,"EarthquakeAltX","Earthquake of Amplification",5074,"","","","","","[9,25,13,14,15,40,7]","",1
+540,"EarthquakeAltY","[DNT] EarthquakeAltY",5075,"","","","","","[9,25,13,14,15,40,7]","",2
+541,"PoisonSupport","",5104,"","","","Supports any skill that hits enemies.","","[47,10,16]",13826,3
+542,"Contagion","",5106,"","","","","","[11,25,4,14,15,3]","",3
+543,"ContagionAltX","Contagion of Subsiding",5107,"","","","","","[11,25,4,14,15,3]","",1
+544,"ContagionAltY","Contagion of Transference",5108,"","","","","","[11,25,4,14,15,3]","",2
+545,"Wither","",5111,"","","","","","[11,25,4,14,15,3,30]","",3
+546,"Blight","",5422,"","","","","","[11,25,4,3,14,30,15]","",3
+547,"BlightAltX","Blight of Contagion",5423,"","","","","","[11,25,4,3,14,30,15]","",1
+548,"BlightAltY","Blight of Atrophy",5424,"","","","","","[11,25,4,3,14,30,15]","",2
+549,"EssenceDrain","",5119,"","","","","","[11,25,4,5,15,3,14]","",3
+550,"EssenceDrainAltX","Essence Drain of Desperation",5120,"","","","","","[11,25,4,5,15,3,14]","",1
+551,"EssenceDrainAltY","Essence Drain of Wickedness",5121,"","","","","","[11,25,4,5,15,3,14]","",2
+552,"ShadowBlades","",5133,"","","","","","[10,25,4,5]","",3
+553,"VoidManipulationSupport","",5142,"","","","Supports any skill that deals damage.","","[3,10,16]",13827,3
+554,"ControlledDestructionSupport","",5143,"","","","Supports attack skills, or spell skills that deal damage.","","[4,47,11,16]",13855,3
+555,"RapidDecaySupport","",5144,"","","","Supports any skill that has a duration, or can hit enemies to inflict ailments on them.","","[10,16,15]",13828,3
+556,"ClusterTrapSupport","",5153,"","","","Supports traps skills, making them throw extra traps randomly around the targeted location.","","[20,10,16]",13829,3
+557,"MeleeTotem","",5154,"","","","","","[9,25,13,19,7,36]","",3
+558,"MeleeTotemAltX","[DNT] MeleeTotemAltX",5155,"","","","","","[9,25,13,19,7,36]","",1
+559,"MeleeTotemAltY","[DNT] MeleeTotemAltY",5156,"","","","","","[9,25,13,19,7,36]","",2
+560,"SlashTotem","",5496,"","","","","","[9,25,13,19,14,7]","",3
+561,"AncestralWarchief","",5497,"","","","","","[9,25,13,19,14,40,7]","",3
+562,"AncestralWarchiefAltX","[DNT] AncestralWarchiefAltX",5498,"","","","","","[9,25,13,19,14,40,7]","",1
+563,"AncestralWarchiefAltY","[DNT] AncestralWarchiefAltY",5499,"","","","","","[9,25,13,19,14,40,7]","",2
+564,"Sunder","",10274,"","","","","","[9,25,13,14,40,7]","",3
+565,"SunderAltX","Sunder of Earthbreaking",10275,"","","","","","[9,25,13,14,40,7]","",1
+566,"SunderAltY","[DNT] SunderAltY",10276,"","","","","","[9,25,13,14,40,7]","",2
+567,"FrostBolt","",5363,"","","","","","[11,25,4,5,1]","",3
+568,"FrostBoltAltX","[DNT] FrostBoltAltX",5364,"","","","","","[11,25,4,5,1]","",1
+569,"FrostBoltAltY","[DNT] FrostBoltAltY",5365,"","","","","","[11,25,4,5,1]","",2
+570,"FrostBoltNova","",5390,"","","","","","[11,25,4,14,1,15,38]","",3
+571,"FrostBoltNovaAltX","Vortex of Projection",5391,"","","","","","[11,25,4,14,1,15,38]","",1
+572,"FrostBoltNovaAltY","[DNT] FrostBoltNovaAltY",5392,"","","","","","[11,25,4,14,1,15,38]","",2
+573,"ElementalFocusSupport","",5420,"","","","Supports any skill that hits or burns enemies, or inflicts elemental ailments.","","[11,16]",13830,3
+574,"MinefieldSupport","",5421,"","","","Supports skills which throw mines.","","[11,16,21]",13831,3
+575,"TrapCooldownSupport","",5435,"","","","Supports skills which throw traps.","","[20,10,16]",13832,3
+576,"DoomArrow","",5460,"","","","","","[10,25,13,14,6]","",3
+577,"ElementalProjectiles","",5511,"","","","","","[11,25,4,14]","",3
+578,"DarkPact","",5514,"","","","","","[8,11,25,4,14,18,3,38]","",3
+579,"DarkPactAltX","[DNT] DarkPactAltX",5515,"","","","","","[8,11,25,4,14,18,3,38]","",1
+580,"DarkPactAltY","[DNT] DarkPactAltY",5516,"","","","","","[8,11,25,4,14,18,3,38]","",2
+581,"FireBeam","",5613,"","","","","","[11,25,4,0,15,30]","",3
+582,"FireBeamAltX","Scorching Ray of Immolation",5614,"","","","","","[11,25,4,0,15,30]","",1
+583,"FireBeamAltY","[DNT] FireBeamAltY",5615,"","","","","","[11,25,4,0,15,30]","",2
+584,"CastWhileChannellingSupport","",5995,"",5997,"","Must support both a channelling skill and a non-channelling spell skill to work. The channelling skill will trigger a spell periodically while channelling. Cannot support skills used by totems, traps, or mines. Vaal skills and skills with a reservation cannot be triggered.","","[11,16,30,4,26]",13833,3
+585,"VaalSoulHarvestingSupport","",6118,"","","","","",[16],"",3
+586,"SummonSkeletonsChannelled","",6122,"","","","","","[11,25,4,8,15,30]","",3
+587,"IgniteProliferationSupport","",6413,"","","","Supports any skill that hits enemies.","","[0,11,16,14]",13834,3
+588,"ChanceToBleedSupport","",6414,"","","","Supports attack skills. Cannot support skills that create minions.","","[13,33,9,16]",13835,3
+589,"LesserPoisonSupport","",6416,"","","","Supports any skill that hits enemies.","","[3,10,16]",13765,3
+590,"DeadlyAilmentsSupport","",6417,"","","","Supports any skill that hits enemies.","","[10,16]",13836,3
+591,"TemporaryForTutorialSupport","",7129,"","","","","","[9,16]","",3
+592,"DecaySupport","",7174,"","","","Supports any skill that hits enemies.","","[3,11,16]",13837,3
+593,"EfficacySupport","",7175,"","","","Supports any skill that deals damage or has a duration.","","[11,16,15]",13838,3
+594,"VileToxinsSupport","",7176,"","","","Supports any skill that hits enemies.","","[10,16]",13776,3
+595,"MaimSupport","",7177,"","","","Supports attack skills, or other skills that can maim enemies.","","[13,33,9,16]",13839,3
+596,"ImmolateSupport","",7179,"","","","Supports any skill that hits enemies.","","[0,11,16]",13840,3
+597,"UnboundAilmentsSupport","",7180,"","","","Supports any skill that hits enemies or inflicts ailments","","[11,16]",13841,3
+598,"BrutalitySupport","",7181,"","","","Supports any skill that deals damage.","","[33,9,16]",13842,3
+599,"RuthlessSupport","",7701,"","","","Supports melee strike or slam skills. Every third time you use a supported attack, that use of the skill will be more powerful.","","[40,9,16,7,13,36]",13843,3
+600,"OnslaughtSupport","",7702,"","","","Supports attack skills that aren't triggered.","","[13,10,16,15]",13844,3
+601,"ArcaneSurgeSupport","",7703,"","","","Each supported spell will track how much mana you spend on it, granting a buff when the total mana spent reaches a threshold. Cannot support skills used by totems, traps, mines or skills with a reservation.","","[46,11,16,4,15]",13845,3
+602,"InfernalSweep","",8026,"","","","","","[9,25,13,14,0,7]","",3
+603,"CorpseEruption","",8028,"","","","","","[10,25,4,14,0,15,5,44]","",3
+604,"CorpseEruptionAltX","Cremation of Exhuming",8029,"","","","","","[10,25,4,14,0,15,5,44]","",1
+605,"CorpseEruptionAltY","Cremation of the Volcano",8030,"","","","","","[10,25,4,14,0,15,5,44]","",2
+606,"CorpseWarp","",8087,"","","","","","[11,25,22,4,14,0,35]","",3
+607,"CorpseWarpAltX","Bodyswap of Sacrifice",8088,"","","","","","[11,25,22,4,14,0,35,8]","",1
+608,"CorpseWarpAltY","[DNT] CorpseWarpAltY",8089,"","","","","","[11,25,22,4,14,0,35]","",2
+609,"SpectralSpinningWeapon","",8125,"","","","","","[10,25,4,5,30,14]","",3
+610,"TectonicSlam","",8184,"","","","","","[0,9,25,13,14,40,7]","",3
+611,"TectonicSlamAltX","Tectonic Slam of Cataclysm",8185,"","","","","","[0,9,25,13,14,40,7]","",1
+612,"TectonicSlamAltY","[DNT] TectonicSlamAltY",8186,"","","","","","[0,9,25,13,14,40,7]","",2
+613,"StormBarrierSupport","",8242,"","","","Supports any channelling skill, protecting you from damage while you channel it. Cannot support skills used by totems. Cannot modify the skills of minions.","","[11,16,30,15]",13861,3
+614,"ParallelProjectilesSupport","",8243,"","","","Supports skills that fire projectiles from the user. Does not affect projectiles fired from other locations as secondary effects.","","[10,16,5]",13862,3
+615,"SpellCascadeSupport","",8245,"","","","Supports spell skills that apply an effect to an area around a targeted location. Cannot support Vaal skills or skills used by totems, traps, or mines. Cannot modify the skills of minions.","","[14,4,11,16]",13864,3
+616,"SpiritStrikeSupport","",8247,"","","","Supports melee strike skills, causing them to also strike at extra targets simultaneously. The extra targets must be a minimum distance from the user. If supporting a minion attack skill, the minion's skills will not also strike extra targets. Cannot support Vaal skills or triggered skills.","","[9,16,7,13,36]",13865,3
+617,"SummonGhostOnKillSupport","",8249,"","","","Supports skills that can hit enemies, or create minions. When those skills or minions kill enemies, or hit rare or unique enemies they will have a chance to summon a Phantasm minion, which uses a piercing projectile spell that deals physical damage.","","[11,16,8]",13866,3
+618,"MirageArcherSupport","",8280,"","","","Supports attack skills that can be used with bows. Supported skills can only be used with bows. Cannot support Vaal skills, minion skills, movement skills, or skills used by totems, traps, or mines.","","[6,13,10,16,15]",13867,3
+619,"NewVulnerability","",1128,"","","","","","[9,25,4,14,15,17,33,42]","",3
+620,"CaptureMonster","",8632,"","","","","","[29,25]","",3
+621,"ShrapnelTrap","",8644,"","","","","","[20,10,25,4,14,0,33]","",3
+622,"ShrapnelTrapAltX","Explosive Trap of Shrapnel",8645,"","","","","","[20,10,25,4,14,0,33]","",1
+623,"ShrapnelTrapAltY","Explosive Trap of Magnitude",8646,"","","","","","[20,10,25,4,14,33]","",2
+624,"IceSiphonTrap","",8657,"","","","","","[20,11,25,4,15,14,1]","",3
+625,"IceSiphonTrapAltX","[DNT] IceSiphonTrapAltX",8658,"","","","","","[20,11,25,4,15,14,1]","",1
+626,"IceSiphonTrapAltY","[DNT] IceSiphonTrapAltY",8659,"","","","","","[20,11,25,4,15,14,1]","",2
+627,"FlamethrowerTrap","",8647,"","","","","","[20,10,25,4,15,14,0]","",3
+628,"FlamethrowerTrapAltX","[DNT] FlamethrowerTrapAltX",8648,"","","","","","[20,10,25,4,15,14,0]","",1
+629,"FlamethrowerTrapAltY","[DNT] FlamethrowerTrapAltY",8649,"","","","","","[20,10,25,4,15,14,0]","",2
+630,"LightningTowerTrap","",8652,"","","","","","[20,47,11,25,4,15,14,2]","",3
+631,"LightningTowerTrapAltX","Lightning Spire Trap of Zapping",8653,"","","","","","[20,11,25,4,15,14,2]","",1
+632,"LightningTowerTrapAltY","Lightning Spire Trap of Overloading",8654,"","","","","","[20,11,25,4,15,14,2]","",2
+633,"PhysCascadeTrap","",8661,"","","","","","[20,10,25,4,15,14,33]","",3
+634,"PhysCascadeTrapAltX","Seismic Trap of Swells",8662,"","","","","","[20,10,25,4,14,33]","",1
+635,"PhysCascadeTrapAltY","[DNT] PhysCascadeTrapAltY",8663,"","","","","","[20,10,25,4,15,14,33]","",2
+636,"VaalFleshOffering","",8674,"",3092,"","","","[11,25,4,15,8,24]","",3
+637,"VaalEarthquake","",8795,"",5073,"","","","[9,25,13,14,15,24,40,7]","",3
+638,"VaalEarthquakeAltX","Vaal Earthquake",8795,"",5074,"","","","[9,25,13,14,15,24,40,7]","",1
+639,"VaalEarthquakeAltY","Vaal Earthquake",8795,"",5075,"","","","[9,25,13,14,15,24,40,7]","",2
+640,"VaalBlight","",8681,"",5422,"","","","[11,25,4,3,14,15,24,38,30]","",3
+641,"VaalBlightAltX","Vaal Blight",8681,"",5423,"","","","[11,25,4,3,14,15,24,38,30]","",1
+642,"VaalBlightAltY","Vaal Blight",8681,"",5424,"","","","[11,25,4,3,14,15,24,38,30]","",2
+643,"FrenzyPowerOnTrapTriggerSupport","",8699,"","","","Supports skills which throw traps.","","[47,10,16,20]",13868,3
+644,"ChargedMinesSupport","",9886,"","","","Supports skills which throw mines.","","[47,11,16,21]",13886,3
+645,"VaalAncestralWarchief","",8755,"",5497,"","","","[9,25,13,19,14,24,7,40]","",3
+646,"VaalAncestralWarchiefAltX","Vaal Ancestral Warchief",8755,"",5498,"","","","[9,25,13,19,14,24,7,40]","",1
+647,"VaalAncestralWarchiefAltY","Vaal Ancestral Warchief",8755,"",5499,"","","","[9,25,13,19,14,24,7,40]","",2
+648,"ConsecratedPath","",8796,"","","","","","[0,9,25,13,14,22,15,40,7]","",3
+649,"ConsecratedPathAltX","Consecrated Path of Endurance",8797,"","","","","","[0,9,25,13,14,22,15,40,7]","",1
+650,"ConsecratedPathAltY","[DNT] ConsecratedPathAltY",8798,"","","","","","[0,9,25,13,14,22,15,40,7]","",2
+651,"Smite","",8801,"","","","","","[2,9,25,13,14,15,7,36,12]","",3
+652,"SmiteAltX","Smite of Divine Judgement",8802,"","","","","","[2,9,25,13,14,7,36]","",1
+653,"SmiteAltY","[DNT] SmiteAltY",8803,"","","","","","[2,9,25,13,14,15,7,36,12]","",2
+654,"ScourgeArrow","",8931,"","","","","","[10,25,13,5,30,3,6]","",3
+655,"ScourgeArrowAltX","Scourge Arrow of Menace",8932,"","","","","","[10,25,13,5,3,6]","",1
+656,"ScourgeArrowAltY","[DNT] ScourgeArrowAltY",8933,"","","","","","[10,25,13,5,30,3,6]","",2
+657,"ToxicRain","",8940,"","","","","","[10,25,13,14,3,15,5,6]","",3
+658,"ToxicRainAltX","Toxic Rain of Sporeburst",8941,"","","","","","[10,25,13,14,3,15,5,6]","",1
+659,"ToxicRainAltY","Toxic Rain of Withering",8942,"","","","","","[10,25,13,14,3,15,5,6]","",2
+660,"SummonRelic","",8949,"","","","","","[11,25,8,4]","",3
+661,"SummonRelicAltX","[DNT] SummonRelicAltX",8950,"","","","","","[11,25,8,4]","",1
+662,"SummonRelicAltY","[DNT] SummonRelicAltY",8951,"","","","","","[11,25,8,4]","",2
+663,"ChaosAttacksSupport","",9068,"","","","Supports attack skills.","","[3,33,13,10,16,15]",13869,3
+664,"BonechillSupport","",9098,"","","","Supports any skill that can chill enemies or create chilling areas.","","[1,11,16]",13870,3
+665,"WinterOrb","",9127,"","","","","","[1,11,25,4,30,14,15,5,44]","",3
+666,"WinterOrbAltX","[DNT] WinterOrbAltX",9128,"","","","","","[1,11,25,4,30,14,15,5,44]","",1
+667,"WinterOrbAltY","[DNT] WinterOrbAltY",9129,"","","","","","[1,11,25,4,30,14,15,5,44]","",2
+668,"RendingSteel","",9139,"","","","","","[9,25,13,14,33,7]","",3
+669,"LancingSteel","",9140,"","","","","","[10,25,13,5,33]","",3
+670,"LancingSteelAltX","Lancing Steel of Spraying",9141,"","","","","","[10,25,13,5,33]","",1
+671,"LancingSteelAltY","[DNT] LancingSteelAltY",9142,"","","","","","[10,25,13,5,33]","",2
+672,"StormBrand","",9143,"","","","","","[2,11,25,4,14,18,15,32]","",3
+673,"StormBrandAltX","Storm Brand of Indecision",9144,"","","","","","[2,11,25,4,14,18,15,32]","",1
+674,"StormBrandAltY","[DNT] StormBrandAltY",9145,"","","","","","[2,11,25,4,14,18,15,32]","",2
+675,"WarBanner","",9149,"","","","","","[9,25,14,4,15,12,33,39]","",3
+676,"DreadBanner","",9150,"","","","","","[9,25,14,4,15,12,33,39]","",3
+677,"ShatteringSteel","",9161,"","","","","","[10,25,13,5,14,33]","",3
+678,"ShatteringSteelAltX","Shattering Steel of Ammunition",9162,"","","","","","[10,25,13,5,14,33,15]","",1
+679,"ShatteringSteelAltY","[DNT] ShatteringSteelAltY",9163,"","","","","","[10,25,13,5,14,33]","",2
+680,"MultiTotemSupport","",9165,"","","","Supports skills which summon totems.","","[19,9,16]",13871,3
+681,"ArmageddonBrand","",9192,"","","","","","[11,25,4,14,0,15,32]","",3
+682,"ArmageddonBrandAltX","Armageddon Brand of Volatility",9193,"","","","","","[11,25,4,14,0,15,32]","",1
+683,"ArmageddonBrandAltY","Armageddon Brand of Recall",9194,"","","","","","[11,25,4,14,0,15,32]","",2
+684,"RecallBrands","",9196,"","","","","","[32,11,25,4]","",3
+685,"Sanctify","",9472,"","","","","","[0,11,25,4,14,15,33]","",3
+686,"SanctifyAltX","Purifying Flame of Revelations",9473,"","","","","","[0,11,25,4,14,15,33]","",1
+687,"SanctifyAltY","[DNT] SanctifyAltY",9474,"","","","","","[0,11,25,4,14,15,33]","",2
+688,"Soulrend","",9480,"","","","","","[3,11,25,4,14,15,5]","",3
+689,"SoulrendAltX","Soulrend of Reaping",9481,"","","","","","[3,11,25,4,5]","",1
+690,"SoulrendAltY","Soulrend of the Spiral",9482,"","","","","","[3,11,25,4,14,15,5]","",2
+691,"DarkRitual","",9531,"",9534,"","","","[3,26,11,25,4,14,15,42]","",3
+692,"DarkRitualAltX","Bane of Condemnation",9532,"",9535,"","","","[3,26,11,25,4,14,15,42]","",1
+693,"DarkRitualAltY","[DNT] DarkRitualAltY",9533,"",9534,"","","","[3,26,11,25,4,14,15,42]","",2
+694,"EnergyShieldLeechSupport","",9541,"","","","Supports any skill that hits enemies, causing those hits to leech energy shield based on damage dealt.","","[11,16]",13872,3
+695,"Purge","",9536,"","","","","","[0,2,11,25,4,14,15,33]","",3
+696,"PurgeAltX","[DNT] PurgeAltX",9537,"","","","","","[0,2,11,25,4,14,15,33]","",1
+697,"PurgeAltY","[DNT] PurgeAltY",9538,"","","","","","[0,2,11,25,4,14,15,33]","",2
+698,"SpellDamageAura","",9542,"","","","","","[12,47,11,25,4,14]","",3
+699,"DivineTempest","",9547,"","","","","","[2,11,25,4,14,30,33]","",3
+700,"DivineTempestAltX","Divine Ire of Holy Lightning",9548,"","","","","","[2,11,25,4,14,30,33]","",1
+701,"DivineTempestAltY","Divine Ire of Disintegration",9549,"","","","","","[2,11,25,4,14,30,33]","",2
+702,"DamageOverTimeAura","",9551,"","","","","","[12,11,25,4,14]","",3
+703,"HandcastRapidFireSupport","",9553,"","","","","","[11,16]","",3
+704,"HandcastSpellBoostSupport","",9634,"","","","Supports spell skills that you cast yourself. Cannot support triggered skills, Vaal skills, instant skills, channelling skills, skills with a reservation or which create minions, or skills used by totems, traps, or mines.","","[14,4,11,16]",13873,3
+705,"HandcastAnticipationSupport","",9635,"","","","Supports spell skills, making their effect reoccur when cast. Cannot support skills with cooldowns, triggered skills, Brand skills, Vaal skills, channelling skills, skills with a reservation, or skills used by totems, traps, or mines. Cannot modify the skills of minions.","","[4,11,16]",13874,3
+706,"Steelskin","",9658,"","","","","","[9,25,4,15,34]","",3
+707,"BoneArmour","",9840,"","","","","","[11,25,4,15,34,8]","",3
+708,"Dash","",9661,9662,"","","","","[10,25,4,22,35,37]","",3
+709,"QuickBlock","",9667,"","","","","","[9,25,13,15,14,7,6]","",3
+710,"Replicate","",9668,"",9669,"","","","[26,10,25,8,4,15]","",3
+711,"Bladestorm","",9670,"","","","","","[9,25,13,14,15,7]","",3
+712,"BladestormAltX","Bladestorm of Uncertainty",9671,"","","","","","[9,25,13,14,15,7]","",1
+713,"BladestormAltY","[DNT] BladestormAltY",9672,"","","","","","[9,25,13,14,15,7]","",2
+714,"BloodAndSand","",9674,"","","","","","[29,9,25,4,41]","",3
+715,"Berserk","",9676,"","","","","","[9,25,4]","",3
+716,"Perforate","",9677,"","","","","","[33,9,25,13,14,40,7]","",3
+717,"PerforateAltX","Perforate of Duality",9678,"","","","","","[33,9,25,13,14,40,7]","",1
+718,"PerforateAltY","Perforate of Bloodshed",9679,"","","","","","[33,9,25,13,14,40,7]","",2
+719,"ChainHook","",9681,"","","","","","[9,25,13,14,22,7]","",3
+720,"ChainHookAltX","[DNT] Chain Hook of Pulling",9682,"","","","","","[9,25,13,14,7]","",1
+721,"ChainHookAltY","[DNT] ChainHookAltY",9683,"","","","","","[9,25,13,14,22,7]","",2
+722,"Blitz","",9686,"","","","","","[9,25,13,7,36,33]","",3
+723,"CloseCombatSupport","",9688,"","","","Supports melee attack skills. Cannot support skills which create minions.","","[10,16,7,13,15]",13878,3
+724,"ShockwaveSupport","",9689,"",9690,"","Supports melee attack skills. Cannot support triggered attacks, attacks used by things other than you, or skills which create minions.","","[9,16,7,13,25,14]",13879,3
+725,"Frostblink","",9693,9696,"","","","","[11,25,4,22,15,1,35,37,14]","",3
+726,"FrostblinkAltX","Frostblink of Wintry Blast",9694,"","","","","","[11,25,4,22,1,35,14]","",1
+727,"FrostblinkAltY","[DNT] FrostblinkAltY",9695,9696,"","","","","[11,25,4,22,15,1,35,37,14]","",2
+728,"Precision","",9638,"","","","","","[12,47,10,25,4,14]","",3
+729,"FleshAndStone","",9718,"","","","","","[9,25,4,12,14,41]","",3
+730,"ImpaleSupport","",9719,"","","","Supports attack skills.","","[13,33,10,16]",13875,3
+731,"SliceAndDice","",9720,"","","","","","[9,25,13,7,36,33]","",3
+732,"Pride","",9721,"","","","","","[9,25,4,14,12,33]","",3
+733,"PulveriseSupport","",9751,"","","","Supports melee attack skills.","","[14,9,16,7,13]",13876,3
+734,"RageSupport","",9786,"","","","Supports melee attack skills. Minions cannot gain rage.","","[9,16,7,13]",13877,3
+735,"CobraLash","",9827,"","","","","","[10,25,13,5,3]","",3
+736,"CobraLashAltX","[DNT] CobraLashAltX",9828,"","","","","","[10,25,13,5,3]","",1
+737,"CobraLashAltY","[DNT] CobraLashAltY",9829,"","","","","","[10,25,13,5,3]","",2
+738,"SummonCarrionGolem","",9831,"","","","","","[11,25,33,8,4,28]","",3
+739,"SummonCarrionGolemAltX","Summon Carrion Golem of Hordes",9832,"","","","","","[11,25,33,8,4,28]","",1
+740,"SummonCarrionGolemAltY","Summon Carrion Golem of Scavenging",9833,"","","","","","[11,25,33,8,4,28]","",2
+741,"WitheringStep","",9838,"","","","","","[10,25,35,14,3,22,37,4,15]","",3
+742,"PlagueBearer","",9839,"","","","","","[10,25,4,3,14]","",3
+743,"FeedingFrenzySupport","",9841,"","","","Supports skills which create Minions.","","[11,16,8,15]",13880,3
+744,"DeathmarkSupport","",9842,"",9843,"","Supports skills which create Minions.","","[11,16,8,25,4,15]",13882,3
+745,"SerpentStrike","",9844,"","","","","","[10,25,13,7,36,22]","",3
+746,"NightbladeSupport","",9846,"","","","Supports attack skills. Cannot support skills which create minions.","","[13,47,10,16]",13883,3
+747,"MeatShieldSupport","",9847,"","","","Supports skills which create Minions.","","[11,16,8]",13881,3
+748,"CoilingAssault","",9848,"","","","","","[10,25,13,22,5]","",3
+749,"StormblastMine","",9852,"","","","","","[21,11,25,4,14,2,12,38]","",3
+750,"StormblastMineAltX","[DNT] StormblastMineAltX",9853,"","","","","","[21,11,25,4,14,2,12,38]","",1
+751,"StormblastMineAltY","[DNT] StormblastMineAltY",9854,"","","","","","[21,11,25,4,14,2,12,38]","",2
+752,"SummonSkitterbots","",9858,"","","","","","[20,21,11,25,4,8,1,2,14,12]","",3
+753,"HighImpactMineSupportSupport","",9875,"","","","Supports spells, or attacks that use bows or wands. Instead of using that skill, you will throw a mine that will use the skill for you when you detonate it. Mines cannot use channelling skills.","","[21,11,16,14,12]",13772,3
+754,"InfernalLegionSupport","",9876,"","","","Supports skills which create Minions.","","[0,14,11,16,8]",13884,3
+755,"PestilentStrike","",9878,"","","","","","[10,25,13,7,36,14,15,3]","",3
+756,"PestilentStrikeAltX","[DNT] PestilentStrikeAltX",9879,"","","","","","[10,25,13,7,36,14,15,3]","",1
+757,"PestilentStrikeAltY","[DNT] PestilentStrikeAltY",9880,"","","","","","[10,25,13,7,36,14,15,3]","",2
+758,"VenomGyre","",9881,"","","","","","[10,25,13,5,3,15]","",3
+759,"VenomGyreAltX","[DNT] VenomGyreAltX",9882,"","","","","","[10,25,13,5,3,15]","",1
+760,"VenomGyreAltY","[DNT] VenomGyreAltY",9883,"","","","","","[10,25,13,5,3,15]","",2
+761,"SwiftAssemblySupport","",9887,"","","","Supports skills which throw Traps or Mines.","","[10,16,20,21]",13885,3
+762,"ShrapnelBallista","",9896,"","","","","","[10,25,13,5,19,33,6]","",3
+763,"ShrapnelBallistaAltX","Shrapnel Ballista of Steel",9897,"","","","","","[10,25,13,5,19,33,6]","",1
+764,"ShrapnelBallistaAltY","[DNT] ShrapnelBallistaAltY",9898,"","","","","","[10,25,13,5,19,33,6]","",2
+765,"ArrowNovaSupport","",9899,"","","","Supports bow attack skills that fire arrows forwards as projectiles. These skills will instead fire a payload arrow into the air to land at a targeted location. The supported skills' arrows will then fire out in a circle from where it lands. Cannot support skills that already fire arrows into the air, channelled skills, or skills that create Minions.","","[6,13,10,16,5]",13847,3
+766,"BarrageSupport","",9901,"","","","Supports projectile attack skills that use bows or wands. Cannot support triggered skills, channelled skills, or skills that create Minions.","","[6,13,10,16,5]",13846,3
+767,"EnsnaringArrow","",9902,"","","","","","[10,25,13,5,14,6]","",3
+768,"EnsnaringArrowAltX","[DNT] EnsnaringArrowAltX",9903,"","","","","","[10,25,13,5,14,6]","",1
+769,"EnsnaringArrowAltY","[DNT] EnsnaringArrowAltY",9904,"","","","","","[10,25,13,5,14,6]","",2
+770,"ArtilleryBallista","",9911,"","","","","","[10,25,13,19,14,0,5,6]","",3
+771,"ArtilleryBallistaAltX","[DNT] Artillery Ballista of Cross Strafe",9912,"","","","","","[10,25,13,19,14,0,5,6]","",1
+772,"ArtilleryBallistaAltY","[DNT] Artillery Ballista of Focus Fire",9913,"","","","","","[10,25,13,19,14,0,5,6]","",2
+773,"GreaterVolleySupport","",9147,"","","","Supports skills that fire projectiles from the user. Does not affect projectiles fired from other locations as secondary effects.","","[10,16,5]",13863,3
+774,"AddedFireDamagePlusSupport","",9915,"","","","Supports any skill that hits enemies.","","[0,33,51,9,16]",13887,3
+775,"AncestralCallPlusSupport","",9916,"","","","Supports melee strike skills, causing them to also strike at extra targets simultaneously. The extra targets must be a minimum distance from the user. If supporting a minion attack skill, the minion's skills will not also strike extra targets. Cannot support Vaal skills or triggered skills.","","[51,9,16,7,13,36]",13888,3
+776,"BrutalityPlusSupport","",9917,"","","","Supports any skill that deals damage.","","[33,51,9,16]",13889,3
+777,"BurningDamagePlusSupport","",9918,"","","","Supports any skill that hits enemies, or can deal burning damage directly.","","[0,51,9,16]",13890,3
+778,"WeaponElementalDamagePlusSupport","",9919,"","","","Supports attack skills.","","[13,51,9,16]",13891,3
+779,"FirePenetrationPlusSupport","",9920,"","","","Supports any skill that hits enemies, making those hits penetrate enemy fire resistance.","","[0,51,9,16]",13892,3
+780,"GenerosityPlusSupport","",9921,"","","","Supports aura skills that affect you and allies, increasing the aura's effect on allies, but preventing it from affecting you at all. Cannot support curse auras, or other auras that only affect enemies. Cannot support skills used by totems.","","[51,9,16,12]",13893,3
+781,"MeleePhysicalDamagePlusSupport","",9922,"","","","Supports melee attack skills.","","[7,33,51,9,16,13]",13894,3
+782,"MeleeSplashPlusSupport","",9923,"","","","Supports melee strike skills, causing their melee strike to deal splash damage around each target hit.","","[51,9,16,7,13,36,14]",13895,3
+783,"MultistrikePlusSupport","",9924,"","","","Supports melee attack skills, making them repeat three times when used, targeting a random enemy each time. Cannot support Vaal skills, channelling skills or triggered skills.","","[13,7,51,9,16]",13896,3
+784,"AddedColdDamagePlusSupport","",9925,"","","","Supports any skill that hits enemies.","","[1,51,10,16]",13897,3
+785,"ArrowNovaPlusSupport","",9926,"","","","Supports bow attack skills that fire arrows forwards as projectiles. These skills will instead fire a payload arrow into the air to land at a targeted location. The supported skills' arrows will then fire out in a circle from where it lands. Cannot support skills that already fire arrows into the air, channelled skills, or skills that create Minions.","","[6,13,51,10,16,5]",13898,3
+786,"CastOnCritPlusSupport","",9927,"",9928,"","Must support both an attack skill and a spell skill to work. The attack skill will trigger a spell when it critically strikes an enemy. Cannot support totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","","[47,51,10,16,4,26]",13899,3
+787,"ChainPlusSupport","",9929,"","","","Supports projectile skills, and any other skills that chain.","","[51,10,16,18,5]",13900,3
+788,"ColdPenetrationPlusSupport","",9930,"","","","Supports any skill that hits enemies, making those hits penetrate enemy cold resistance.","","[1,51,10,16]",13901,3
+789,"DeadlyAilmentsPlusSupport","",9931,"","","","Supports any skill that hits enemies.","","[51,10,16]",13902,3
+790,"ForkPlusSupport","",9932,"","","","Supports projectile skills, making their projectiles fork into two projectiles the first two times they hit an enemy and don't pierce it.","","[51,10,16,5]",13903,3
+791,"GreaterMultipleProjectilesPlusSupport","",9933,"","","","Supports projectile skills.","","[51,10,16,5]",13904,3
+792,"SwiftAfflictionPlusSupport","",9934,"","","","Supports any skill that has a duration, or can hit enemies to inflict ailments on them.","","[51,10,16,15]",13905,3
+793,"VoidManipulationPlusSupport","",9935,"","","","Supports any skill that deals damage.","","[3,51,10,16]",13906,3
+794,"ViciousProjectilesPlusSupport","",9936,"","","","Supports projectile attack skills.","","[5,13,33,3,51,10,16]",13907,3
+795,"AddedChaosDamagePlusSupport","",9937,"","","","Supports any skill that hits enemies.","","[3,51,11,16]",13908,3
+796,"AddedLightningDamagePlusSupport","",9938,"","","","Supports any skill that hits enemies.","","[2,51,11,16]",13909,3
+797,"BlasphemyPlusSupport","",9939,"","","","Supports hex curse skills, turning them into auras that will apply their effect to all enemies in an area around you.","","[51,11,16,42,12]",13910,3
+798,"CastWhileChannellingPlusSupport","",9940,"",9941,"","Must support both a channelling skill and a non-channelling spell skill to work. The channelling skill will trigger a spell periodically while channelling. Cannot support skills used by totems, traps, or mines. Vaal skills and skills with a reservation cannot be triggered.","","[51,11,16,30,4,26]",13911,3
+799,"ControlledDestructionPlusSupport","",9942,"","","","Supports attack skills, or spell skills that deal damage.","","[4,47,51,11,16]",13912,3
+800,"CurseOnHitPlusSupport","",9943,"",9944,"","Must support both a skill that hits enemies, and a hex curse skill to work. The hex will be applied when enemies are hit by the other skill. Cannot support totems, traps, or mines. Minions cannot apply hexes this way.","","[51,11,16,42,26]",13913,3
+801,"ElementalFocusPlusSupport","",9945,"","","","Supports any skill that hits or burns enemies, or inflicts elemental ailments.","","[51,11,16]",13914,3
+802,"IncreasedAreaOfEffectPlusSupport","",9946,"","","","Supports any skill with an area of effect.","","[51,11,16,14]",13915,3
+803,"LightningPenetrationPlusSupport","",9947,"","","","Supports any skill that hits enemies, making those hits penetrate enemy lightning resistance.","","[2,51,11,16]",13916,3
+804,"MinionDamagePlusSupport","",9948,"","","","Supports skills which create Minions.","","[51,11,16,8]",13917,3
+805,"SpellCascadePlusSupport","",9949,"","","","Supports spell skills that apply an effect to an area around a targeted location. Cannot support Vaal skills or skills used by totems, traps, or mines. Cannot modify the skills of minions.","","[14,4,51,11,16]",13918,3
+806,"SpellEchoPlusSupport","",9950,"","","","Supports spell skills, making them repeat when cast. Cannot support Vaal skills, totem skills, channelling skills, triggered skills, instant skills, blink skills, or skills with a reservation.","","[4,51,11,16]",13919,3
+807,"UnboundAilmentsPlusSupport","",9951,"","","","Supports any skill that hits enemies or inflicts ailments","","[51,11,16]",13920,3
+808,"UnleashPlusSupport","",9952,"","","","Supports spell skills, making their effect reoccur when cast. Cannot support skills with cooldowns, triggered skills, Brand skills, Vaal skills, channelling skills, skills with a reservation, or skills used by totems, traps, or mines. Cannot modify the skills of minions.","","[4,51,11,16]",13921,3
+809,"EmpowerPlusSupport","",2570,"","","","Supports any skill gem. Once this gem reaches level 2 or above, will raise the level of supported gems. Cannot support skills that don't come from gems.","","[29,48,51,9,16]",13922,3
+810,"EnlightenPlusSupport","",3052,"","","","Supports any skill gem. Once this gem reaches level 2 or above, will apply a cost & reservation multiplier to supported gems. Cannot support skills that don't come from gems.","","[29,48,51,11,16]",13923,3
+811,"EnhancePlusSupport","",2831,"","","","Supports any skill gem. Once this gem reaches level 2 or above, will raise the quality of supported gems. Cannot support skills that don't come from gems.","","[29,48,51,10,16]",13924,3
+812,"ArcaneCloak","",10019,"","","","","","[11,25,4,15,34,2,46]","",3
+813,"ProjectilePortal","",10020,"","","","","","[10,25,4,15]","",3
+814,"StormBind","",10021,"",10024,"","","","[11,25,4,14,30,2,15,46]","",3
+815,"StormBindAltX","Stormbind of Teleportation",10022,"",10025,"","","","[11,25,4,14,30,2,15,46,22,35,37]","",1
+816,"StormBindAltY","[DNT] StormBindAltY",10023,"",10024,"","","","[11,25,4,14,30,2,15,46]","",2
+817,"KineticBolt","",10026,"","","","","","[11,25,13,5]","",3
+818,"KineticBoltAltX","Kinetic Bolt of Fragmentation",10027,"","","","","","[11,25,13,5]","",1
+819,"KineticBoltAltY","[DNT] KineticBoltAltY",10028,"","","","","","[11,25,13,5]","",2
+820,"BladeBlast","",10029,"","","","","","[10,25,4,14,33]","",3
+821,"BladeBlastAltX","Blade Blast of Unloading",10030,"","","","","","[10,25,4,14,33,38]","",1
+822,"BladeBlastAltY","Blade Blast of Dagger Detonation",10031,"","","","","","[10,25,4,14,33,38]","",2
+823,"BloodWhirl","",10033,"","","","","","[10,25,13,14,22,30,33,7]","",3
+824,"Spellslinger","",10035,"",10034,"","Supports spell skills that have no reservation. Cannot support skills used by totems, traps or mines. Cannot modify the skills of minions.","Spellslinger Support","[26,11,25,4]","",3
+825,"ArchmageSupport","",10036,"","","","Supports spell skills that deal damage with hits and have no reservation. Cannot support arcane skills, Vaal skills, or skills used by totems, traps or mines. Cannot modify the skills of minions.","","[2,46,11,16,4]",13926,3
+826,"SecondWindSupport","",10176,"","","","Supports skills with cooldowns.\nCannot support triggered skills.","","[10,16]",13925,3
+827,"ArcanistBrand","",10254,"",10253,"","Supports spell skills that have no reservation. Cannot support skills used by totems, traps or mines. Cannot modify the skills of minions.","Arcanist Brand Support","[26,11,25,4,15,32]","",3
+828,"IntimidatingCry","",8576,"","","","","","[27,9,25,14,15,33]","",3
+829,"SeismicCry","",10256,"","","","","","[27,9,25,14,15]","",3
+830,"AncestralCry","",10257,"","","","","","[27,9,25,14,15]","",3
+831,"PenanceBrand","",10259,"","","","","","[11,25,4,14,33,2,15,32]","",3
+832,"PenanceBrandAltX","Penance Brand of Dissipation",10260,"","","","","","[11,25,4,14,33,2,15,32]","",1
+833,"PenanceBrandAltY","Penance Brand of Conduction",10261,"","","","","","[11,25,4,14,33,2,15,32]","",2
+834,"WintertideBrand","",10262,"","","","","","[11,25,4,14,1,15,32]","",3
+835,"WintertideBrandAltX","[DNT] WintertideBrandAltX",10263,"","","","","","[11,25,4,14,1,15,32]","",1
+836,"WintertideBrandAltY","[DNT] WintertideBrandAltY",10264,"","","","","","[11,25,4,14,1,15,32]","",2
+837,"Earthshatter","",10265,"","","","","","[9,25,13,14,40,15,7]","",3
+838,"EarthshatterAltX","Earthshatter of Fragility",10266,"","","","","","[9,25,13,14,40,15,7]","",1
+839,"EarthshatterAltY","Earthshatter of Prominence",10267,"","","","","","[9,25,13,14,40,15,7]","",2
+840,"GeneralsCry","",10268,"",10271,"","Supports melee attack skills. Those skills will be used by Mirage Warriors summoned by General's Cry. Supported skills cannot be supported by Multistrike.","General's Cry Support","[27,9,25,14,15]","",3
+841,"GeneralsCryAltX","[DNT] GeneralsCryAltX",10269,"",10271,"","Supports melee attack skills. Those skills will be used by Mirage Warriors summoned by General's Cry. Supported skills cannot be supported by Multistrike.","General's Cry Support","[27,9,25,14,15]","",1
+842,"GeneralsCryAltY","[DNT] GeneralsCryAltY",10270,"",10271,"","Supports melee attack skills. Those skills will be used by Mirage Warriors summoned by General's Cry. Supported skills cannot be supported by Multistrike.","General's Cry Support","[27,9,25,14,15]","",2
+843,"FistOfWarSupport","",10278,"","","","Supports slam skills, providing a powerful boost when they're used, with a delay before they can be boosted again. Cannot support Vaal skills or triggered skills. Cannot modify the skills of minions. Only skills you use yourself can receive the boost.","","[40,13,7,14,9,16]",13928,3
+844,"SwiftbrandSupport","",10284,"","","","Supports skills which create brands.","","[32,11,16]",13929,3
+845,"UrgentOrdersSupport","",10295,"","","","Supports warcry skills.","","[27,9,16]",13927,3
+846,"BlazingSalvo","",10432,"","","","","","[11,25,4,14,0,5]","",3
+847,"BlazingSalvoAltX","[DNT] Blazing Salvo of Wildfire",10433,"","","","","","[11,25,4,14,0,5]","",1
+848,"BlazingSalvoAltY","[DNT] BlazingSalvoAltY",10434,"","","","","","[11,25,4,14,0,5]","",2
+849,"VoidSphere","",10438,"","","","","","[11,25,4,14,15,33,3,44]","",3
+850,"VoidSphereAltX","Void Sphere of Rending",10439,"","","","","","[11,25,4,14,15,33,3,44]","",1
+851,"VoidSphereAltY","[DNT] VoidSphereAltY",10440,"","","","","","[11,25,4,14,15,33,3,44]","",2
+852,"CracklingLance","",10443,"","","","","","[11,25,4,14,2]","",3
+853,"CracklingLanceAltX","Crackling Lance of Branching",10444,"","","","","","[11,25,4,14,2]","",1
+854,"CracklingLanceAltY","Crackling Lance of Disintegration",10445,"","","","","","[11,25,4,14,2]","",2
+855,"FrostShield","",10447,"","","","","","[47,11,25,4,14,15,1]","",3
+856,"SplittingSteel","",10449,"","","","","","[10,25,13,5,14,33]","",3
+857,"SplittingSteelAltX","Splitting Steel of Ammunition",10450,"","","","","","[10,25,13,5,14,33]","",1
+858,"SplittingSteelAltY","[DNT] SplittingSteelAltY",10451,"","","","","","[10,25,13,5,14,33]","",2
+859,"SigilOfPower","",10452,"","","","","","[11,25,4,14,15,2,46]","",3
+860,"FlameWall","",10453,"","","","","","[11,25,4,14,15,0]","",3
+861,"FlameWallAltX","[DNT] Flame Wall of Forking",10454,"","","","","","[11,25,4,14,15,0]","",1
+862,"FlameWallAltY","[DNT] Flame Wall of Surging",10455,"","","","","","[11,25,4,14,15,0]","",2
+863,"ImpendingDoomSupport","",10464,"",10466,"","Supports hex curse skills, causing them to trigger Doom Blast when the hex ends. Cannot support curse skills which are triggered or applied as an aura.","","[11,16,42,25,4,14,3,26]",13931,3
+864,"Hexblast","",10477,"","","","","","[11,25,4,14,3,42]","",3
+865,"HexblastAltX","Hexblast of Contradiction",10478,"","","","","","[11,25,4,14,3,42]","",1
+866,"HexblastAltY","Hexblast of Havoc",10479,"","","","","","[11,25,4,14,3,42]","",2
+867,"PinpointSupport","",10480,"","","","Supports projectile spells you cast yourself. Cannot support triggered skills, Vaal skills, instant skills, channelling skills, skills with a reservation or which create minions, or skills used by totems, traps, or mines.","","[11,16,5,4]",23736,3
+868,"FlammableShot","",10665,"","","","","","[10,25,13,5,14,15,0,6]","",3
+869,"Hydrosphere","",10666,"","","","","","[11,25,4,14,15,1,44,2,33]","",3
+870,"HydrosphereAltX","[DNT] HydrosphereAltX",10667,"","","","","","[11,25,4,14,15,1,44,2,33]","",1
+871,"HydrosphereAltY","[DNT] HydrosphereAltY",10668,"","","","","","[11,25,4,14,15,1,44,2,33]","",2
+872,"TrinitySupport","",10671,"","","","Supports skills that hit enemies, causing them to gain bonuses while you have resonance of all three elements, and to grant resonance of elements other than the highest one in a hit. There is a maximum of 50 Resonance for each Element. Cannot support triggered skills, instant skills, orb skills, brands, skills with a reservation, or skills used by totems, traps, or mines. Cannot modify the skills of minions.","","[11,16]",23883,3
+873,"DeathAura","",6291,"","","","","","[25,4,14,12,3,26]","",3
+874,"Envy","",5941,"","","","","","[11,25,4,14,12,3]","",3
+875,"GluttonyOfElements","",4643,"","","","","","[25,4,14,15,24,12]","",3
+876,"BlindingAura","",8640,"","","","","","[25,4,14,12,26]","",3
+877,"Exsanguinate","",10791,"","","","","","[9,25,4,18,33,15]","",3
+878,"ExsanguinateAltX","Exsanguinate of Transmission",10792,"","","","","","[9,25,4,18,33,15]","",1
+879,"ExsanguinateAltY","[DNT] ExsanguinateAltY",10793,"","","","","","[9,25,4,18,33,15]","",2
+880,"CorruptingFever","",10799,"","","","","","[9,25,4,15,33]","",3
+881,"BloodthirstSupport","",10804,"","","","Supports attack skills. Cannot support triggered skills, skills which create minions, or skills used by totems, traps or mines.","","[13,33,9,16]",13932,3
+882,"Bloodreap","",10818,"","","","","","[9,25,4,33,14,15]","",3
+883,"BloodreapAltX","[DNT] BloodreapAltX",10819,"","","","","","[9,25,4,33,14,15]","",1
+884,"BloodreapAltY","[DNT] BloodreapAltY",10820,"","","","","","[9,25,4,33,14,15]","",2
+885,"PetrifiedBlood","",10858,"","","","","","[9,25,4]","",3
+886,"CrueltySupport","",10859,"","","","Supports any skill that hits enemies. Minions cannot gain Cruelty.","","[9,16,15]",13933,3
+887,"LifetapSupport","",10875,"","","","Supports any non-blessing skill. Minions cannot gain the Lifetap buff.","","[9,16,15]",13934,3
+888,"ChargedAttackRoyale","",5450,"","","","","","[10,25,13,14,30,33,7]","",3
+889,"CycloneRoyale","",2367,"","","","","","[10,25,13,14,22,30,33,7]","",3
+890,"DualStrikeRoyale","",293,"","","","","","[47,10,25,13,7,36]","",3
+891,"LacerateRoyale","",5505,"","","","","","[10,25,13,14,33,7]","",3
+892,"BladestormRoyale","",9673,"","","","","","[9,25,13,14,15,7]","",3
+893,"ChainHookRoyale","",9684,"","","","","","[9,25,13,14,22,7]","",3
+894,"EarthquakeRoyale","",5076,"","","","","","[9,25,13,14,15,40,7]","",3
+895,"MeleeTotemRoyale","",5157,"","","","","","[9,25,13,19,7,36]","",3
+896,"AncestralWarchiefRoyale","",5500,"","","","","","[9,25,13,19,14,40,7]","",3
+897,"GeneralsCryRoyale","",10272,"",10273,"","Supports melee attack skills. Those skills will be used by Mirage Warriors summoned by General's Cry. Supported skills cannot be supported by Multistrike.","General's Cry Support","[27,9,25,14,15]","",3
+898,"LeapSlamRoyale","",104,"","","","","","[9,25,13,14,22,35,40,7]","",3
+899,"ShieldChargeRoyale","",200,"","","","","","[9,25,13,14,22,35,33,7]","",3
+900,"ChargedDashRoyale","",8678,"","","","","","[10,25,22,14,30,13,2,7]","",3
+901,"GlacialHammerRoyale","",925,"","","","","","[9,25,13,7,36,1]","",3
+902,"IceCrashRoyale","",4454,"","","","","","[9,25,13,14,1,40,7]","",3
+903,"MoltenStrikeRoyale","",3485,"","","","","","[9,25,13,5,14,7,36,0]","",3
+904,"SmiteRoyale","",8804,"","","","","","[2,9,25,13,14,15,7,36,12]","",3
+905,"ThrownShieldProjectileRoyale","",5828,"","","","","","[10,25,13,5,33]","",3
+906,"ThrownWeaponRoyale","",2686,"","","","","","[10,25,13,5]","",3
+907,"VenomGyreRoyale","",9884,"","","","","","[10,25,13,5,3,15]","",3
+908,"WhirlingBladesRoyale","",308,"","","","","","[10,25,13,22,35,7]","",3
+909,"PunctureRoyale","",1806,"","","","","","[10,25,13,5,15,7,36,33,6]","",3
+910,"RainOfArrowsRoyale","",8695,"","","","","","[10,25,13,14,5,6]","",3
+911,"ScourgeArrowRoyale","",8934,"","","","","","[10,25,13,5,30,3,6]","",3
+912,"ToxicRainRoyale","",8943,"","","","","","[10,25,13,14,3,15,5,6]","",3
+913,"BlinkArrowRoyale","",4271,"","","","","","[10,25,13,8,15,22,35,6]","",3
+914,"EnsnaringArrowRoyale","",9905,"","","","","","[10,25,13,5,14,6]","",3
+915,"BlastRainRoyale","",4896,"","","","","","[0,10,25,13,14,5,6]","",3
+916,"ElementalHitRoyale","",271,"","","","","","[10,25,13,5,7,36,0,1,2,14,45,6]","",3
+917,"BladeBlastRoyale","",10032,"","","","","","[10,25,4,14,33]","",3
+918,"BladeVortexRoyale","",4942,"","","","","","[47,10,25,4,14,15,33]","",3
+919,"BladefallRoyale","",4928,"","","","","","[47,10,25,4,14,33,15]","",3
+920,"BloodreapRoyale","",10821,"","","","","","[9,25,4,33,14,15]","",3
+921,"VoidSphereRoyale","",10441,"","","","","","[11,25,4,14,15,33,3,44]","",3
+922,"DivineTempestRoyale","",9550,"","","","","","[2,11,25,4,14,30,33]","",3
+923,"FirestormRoyale","",1271,"","","","","","[11,25,4,14,15,0]","",3
+924,"FrostBoltRoyale","",5366,"","","","","","[11,25,4,5,1]","",3
+925,"IceNovaRoyale","",63,"","","","","","[11,25,4,14,1,38]","",3
+926,"LightningTendrilsRoyale","",3936,"","","","","","[11,25,4,14,2,30]","",3
+927,"SanctifyRoyale","",9475,"","","","","","[0,11,25,4,14,15,33]","",3
+928,"MagmaOrbRoyale","",4734,"","","","","","[11,25,4,14,0,5,18]","",3
+929,"StormCallRoyale","",2847,"","","","","","[11,25,4,14,15,2]","",3
+930,"CorpseEruptionRoyale","",8031,"","","","","","[10,25,4,14,0,15,5,44]","",3
+931,"FrostBombRoyale","",4966,"","","","","","[11,25,4,14,15,1,44]","",3
+932,"HydrosphereRoyale","",10670,"","","","","","[11,25,4,14,15,1,44,2,33]","",3
+933,"PurgeRoyale","",9539,"","","","","","[0,2,11,25,4,14,15,33]","",3
+934,"BlightRoyale","",5425,"","","","","","[11,25,4,3,14,30,15]","",3
+935,"EssenceDrainRoyale","",5122,"","","","","","[11,25,4,5,15,3,14]","",3
+936,"ArcticBreathRoyale","",2131,"","","","","","[11,25,4,5,15,14,1]","",3
+937,"FrostBoltNovaRoyale","",5393,"","","","","","[11,25,4,14,1,15,38]","",3
+938,"FlameTotemRoyale","",2196,"","","","","","[19,9,25,4,5,0,30,33]","",3
+939,"ArtilleryBallistaRoyale","",9914,"","","","","","[10,25,13,19,14,0,5,6]","",3
+940,"SiegeBallistaRoyale","",4791,"","","","","","[10,25,13,5,19,6]","",3
+941,"FireTrapRoyale","",1974,"","","","","","[20,10,25,4,15,14,0]","",3
+942,"IceTrapRoyale","",4807,"","","","","","[20,10,25,4,14,1]","",3
+943,"LightningTrapRoyale","",2587,"","","","","","[20,47,11,25,4,5,2]","",3
+944,"IceSiphonTrapRoyale","",8660,"","","","","","[20,11,25,4,15,14,1]","",3
+945,"FlamethrowerTrapRoyale","",8650,"","","","","","[20,10,25,4,15,14,0]","",3
+946,"LightningTowerTrapRoyale","",8655,"","","","","","[20,47,11,25,4,15,14,2]","",3
+947,"PrecisionRoyale","",9639,"","","","","","[12,47,10,25,4,14]","",3
+948,"VitalityRoyale","",1845,"","","","","","[12,9,25,4,14]","",3
+949,"ClarityRoyale","",1915,"","","","","","[12,11,25,4,14]","",3
+950,"BloodAndSandRoyale","",9675,"","","","","","[29,9,25,4,41]","",3
+951,"DashRoyale","",9663,"","","","","","[10,25,4,22,35,37]","",3
+952,"DesecrateRoyale","",3060,"","","","","","[10,25,4,14,15,3]","",3
+953,"PhaseRunRoyale","",4884,"","","","","","[10,25,4,15,22,33,35]","",3
+954,"PoachersMarkRoyale","",3730,"","","","","","[10,25,4,17,43]","",3
+955,"CriticalWeaknessRoyale","",1116,"","","","","","[47,11,25,4,17,43]","",3
+956,"WarlordsMarkRoyale","",1090,"","","","","","[9,25,4,17,43]","",3
+957,"ElementalWeaknessRoyale","",1080,"","","","","","[11,25,4,14,15,17,42]","",3
+958,"NewVulnerabilityRoyale","",1129,"","","","","","[9,25,4,14,15,17,33,42]","",3
+959,"VulnerabilityRoyale","",8524,"","","","","","[11,25,4,14,15,3,17,42]","",3
+960,"EnduringCryRoyale","",248,"","","","","","[27,9,25,14,15]","",3
+961,"RejuvenationTotemRoyale","",1951,"","","","","","[19,12,9,25,4,14]","",3
+962,"LightningWarpRoyale","",1162,"","","","","","[11,25,4,14,15,22,2,35]","",3
+963,"FlameDashRoyale","",4612,"","","","","","[11,25,4,22,15,0,35,37]","",3
+964,"FrostblinkRoyale","",9697,"","","","","","[11,25,4,22,15,1,35,37,14]","",3
+965,"SmokeMineRoyale","",2630,"","","","","","[21,10,25,4,14,15,22,35,37]","",3
+966,"MultistrikeRoyaleSupport","",2423,"","","","Supports melee attack skills, making them repeat twice when used, targeting a random enemy each time. Cannot support Vaal skills, channelling skills or triggered skills.","","[13,7,9,16]","",3
+967,"SpellCascadeRoyaleSupport","",8246,"","","","Supports spell skills that apply an effect to an area around a targeted location. Cannot support Vaal skills or skills used by totems, traps, or mines. Cannot modify the skills of minions.","","[14,4,11,16]","",3
+968,"HandcastAnticipationRoyaleSupport","",9636,"","","","Supports spell skills, making their effect reoccur when cast. Cannot support skills with cooldowns, triggered skills, Brand skills, Vaal skills, channelling skills, skills with a reservation, or skills used by totems, traps, or mines. Cannot modify the skills of minions.","","[4,11,16]","",3
+969,"MultiTotemRoyaleSupport","",9166,"","","","Supports skills which summon totems.","","[19,9,16]","",3
+970,"AddedColdDamageRoyaleSupport","",590,"","","","Supports any skill that hits enemies.","","[1,10,16]","",3
+971,"AddedLightningDamageRoyaleSupport","",595,"","","","Supports any skill that hits enemies.","","[2,11,16]","",3
+972,"RageRoyaleSupport","",9787,"","","","Supports melee attack skills. Minions cannot gain rage.","","[9,16,7,13]","",3
+973,"FasterAttackRoyaleSupport","",582,"","","","Supports attack skills.","","[13,10,16]","",3
+974,"FasterCastRoyaleSupport","",1023,"","","","Supports non-instant spell skills.","","[11,16,4]","",3
+975,"RangedAttackTotemRoyaleSupport","",2237,"","","","Supports any bow or wand attack skill, causing it to summon a ballista totem that uses the skill for you.","","[6,5,9,16,19]","",3
+976,"SpellTotemRoyaleSupport","",1925,"","","","Supports spell skills that are not triggered. Instead of casting that spell, you will summon a totem that casts the spell for you.","","[9,16,4,19]","",3
+977,"TrapRoyaleSupport","",910,"","","","Supports spells, or attacks that use bows or wands. Instead of using that skill, you will throw a trap that will use the skill for you when an enemy walks near it. Traps cannot use channelling skills.","","[10,16,20]","",3
+978,"TrapCooldownRoyaleSupport","",5436,"","","","Supports skills which throw traps.","","[20,10,16]","",3
+979,"LesserMultipleProjectilesRoyaleSupport","",586,"","","","Supports projectile skills.","","[10,16,5]","",3
+980,"ParallelProjectilesRoyaleSupport","",8244,"","","","Supports skills that fire projectiles from the user. Does not affect projectiles fired from other locations as secondary effects.","","[10,16,5]","",3
+981,"IncreasedAreaOfEffectRoyaleSupport","",593,"","","","Supports any skill with an area of effect.","","[11,16,14]","",3
+982,"BlindRoyaleSupport","",2113,"","","","Supports any skill that hits enemies.","","[10,16]","",3
+983,"LifetapRoyaleSupport","",10876,"","","","Supports any non-blessing skill. Minions cannot gain the Lifetap buff.","","[9,16,15]","",3
+984,"IncreasedDurationRoyaleSupport","",1260,"","","","Supports any skill with a duration.","","[9,16,15]","",3
+985,"ReducedDurationRoyaleSupport","",2758,"","","","Supports any skill that has a duration.","","[9,16,15]","",3
+986,"CastWhileChannellingRoyaleSupport","",5996,"",5998,"","Must support both a channelling skill and a non-channelling spell skill to work. The channelling skill will trigger a spell periodically while channelling. Cannot support skills used by totems, traps, or mines. Vaal skills and skills with a reservation cannot be triggered.","","[11,16,30,4,26]","",3
+987,"ImpendingDoomRoyaleSupport","",10465,"",10467,"","Supports hex curse skills, causing them to trigger Doom Blast when the hex ends. Cannot support curse skills which are triggered or applied as an aura.","","[11,16,42,25,4,14,3,26]","",3
+988,"SpiritStrikeRoyaleSupport","",8248,"","","","Supports melee strike skills, causing them to also strike at extra targets simultaneously. The extra targets must be a minimum distance from the user. If supporting a minion attack skill, the minion's skills will not also strike extra targets. Cannot support Vaal skills or triggered skills.","","[9,16,7,13,36]","",3
+989,"DefianceBanner","",10940,"","","","","","[9,25,14,4,15,12,33,39]","",3
+990,"VoltaxicBurst","",10941,"","","","","","[11,25,4,14,3,2,38,15]","",3
+991,"VoltaxicBurstAltX","[DNT] VoltaxicBurstAltX",10942,"","","","","","[11,25,4,14,3,2,38,15]","",1
+992,"VoltaxicBurstAltY","[DNT] VoltaxicBurstAltY",10943,"","","","","","[11,25,4,14,3,2,38,15]","",2
+993,"RageVortex","",10944,"","","","","","[9,25,13,14,15,7]","",3
+994,"RageVortexAltX","Rage Vortex of Berserking",10945,"","","","","","[9,25,13,14,7]","",1
+995,"RageVortexAltY","[DNT] RageVortexAltY",10946,"","","","","","[9,25,13,14,15,7]","",2
+996,"SpectralHelix","",10973,"","","","","","[10,25,13,5]","",3
+997,"SpectralHelixAltX","[DNT] SpectralHelixAltX",10974,"","","","","","[10,25,13,5]","",1
+998,"SpectralHelixAltY","[DNT] SpectralHelixAltY",10975,"","","","","","[10,25,13,5]","",2
+999,"BattlemagesCry","",10947,"",10948,"","Supports spell skills, causing them to be triggered. Cannot support skills used by totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","Battlemage's Cry Support","[27,47,26,9,25,14,15]","",3
+1000,"EarthbreakerSupport","",10949,"","","","Supports slam skills, causing them to summon an ancestor totem that uses the skill for you while you're near it. Being near it grants you increased area of effect for melee skills.","","[13,7,40,14,9,16,19]",13936,3
+1001,"Absolution","",10950,"","","","","","[9,25,4,8,15,33,2,14]","",3
+1002,"AbsolutionAltX","Absolution of Inspiring",10951,"","","","","","[9,25,4,8,15,33,2,14]","",1
+1003,"AbsolutionAltY","[DNT] AbsolutionAltY",10952,"","","","","","[9,25,4,8,15,33,2,14]","",2
+1004,"ArrowNovaRoyaleSupport","",9900,"","","","Supports bow attack skills that fire arrows forwards as projectiles. These skills will instead fire a payload arrow into the air to land at a targeted location. The supported skills' arrows will then fire out in a circle from where it lands. Cannot support skills that already fire arrows into the air, channelled skills, or skills that create Minions.","","[6,13,10,16,5]","",3
+1005,"BlasphemyRoyaleSupport","",4450,"","","","Supports hex curse skills, turning them into auras that will apply their effect to all enemies in an area around you.","","[11,16,42,12]","",3
+1006,"CastOnDeathRoyaleSupport","",2761,"","","","Each supported spell skill will be triggered when you die. Cannot support skills used by totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","","[10,16,4,26]","",3
+1007,"FistOfWarRoyaleSupport","",10279,"","","","Supports slam skills, providing a powerful boost when they're used, with a delay before they can be boosted again. Cannot support Vaal skills or triggered skills. Cannot modify the skills of minions. Only skills you use yourself can receive the boost.","","[40,13,7,14,9,16]","",3
+1008,"FortifyRoyaleSupport","",4659,"","","","Supports melee attack skills that are not triggered.","","[13,9,16,7]","",3
+1009,"SecondWindRoyaleSupport","",10177,"","","","Supports skills with cooldowns.\nCannot support triggered skills.","","[10,16]","",3
+1010,"MulticastRoyaleSupport","",2425,"","","","Supports spell skills, making them repeat when cast. Cannot support Vaal skills, totem skills, channelling skills, triggered skills, instant skills, blink skills, or skills with a reservation.","","[4,11,16]","",3
+1011,"SummonGhostOnKillRoyaleSupport","",8250,"","","","Supports skills that can hit enemies, or create minions. When those skills or minions kill enemies, or hit rare or unique enemies they will have a chance to summon a Phantasm minion, which uses a piercing projectile spell that deals physical damage.","","[11,16,8]","",3
+1012,"SearingBondRoyale","",2433,"","","","","","[9,25,4,19,0]","",3
+1013,"ShockwaveTotemRoyale","",1941,"","","","","","[19,9,25,4,14,33,38]","",3
+1014,"BurningArrowRoyale","",1902,"","","","","","[10,25,13,5,0,6]","",3
+1015,"PoisonArrowRoyale","",631,"","","","","","[10,25,13,5,14,15,3,6]","",3
+1016,"ShrapnelShotRoyale","",4918,"","","","","","[2,10,25,13,5,14,6]","",3
+1017,"SummonSkeletonsRoyale","",1197,"","","","","","[11,25,4,8,15]","",3
+1018,"SummonRagingSpiritRoyale","",2997,"","","","","","[11,25,4,8,15,0]","",3
+1019,"DetonateDeadRoyale","",352,"","","","","","[10,25,4,14,0]","",3
+1020,"EtherealKnivesRoyale","",2082,"","","","","","[10,25,4,5,33]","",3
+1021,"BoneLanceRoyale","",7988,"","","","","","[10,25,4,5,14,33]","",3
+1022,"BallLightningRoyale","",2298,"","","","","","[11,25,4,5,14,2]","",3
+1023,"BlazingSalvoRoyale","",10435,"","","","","","[11,25,4,14,0,5]","",3
+1024,"ColdSnapRoyale","",8667,"","","","","","[11,25,4,14,1,15]","",3
+1025,"DarkPactRoyale","",5517,"","","","","","[8,11,25,4,14,18,3,38]","",3
+1026,"FireballRoyale","",3,"","","","","","[11,25,5,4,14,0]","",3
+1027,"GlacialCascadeRoyale","",3109,"","","","","","[11,25,4,14,1,33]","",3
+1028,"FrostBladesRoyale","",4680,"","","","","","[10,25,13,5,7,36,1]","",3
+1029,"ShatteringSteelRoyale","",9164,"","","","","","[10,25,13,5,14,33]","",3
+1030,"WildStrikeRoyale","",4798,"","","","","","[10,25,13,7,36,2,1,0,5,14,18,45]","",3
+1031,"CleaveRoyale","",176,"","","","","","[9,25,13,14,33,7]","",3
+1032,"DominatingBlowRoyale","",1244,"","","","","","[9,25,13,8,15,7,36]","",3
+1033,"InfernalBlowRoyale","",8751,"","","","","","[9,25,13,14,7,36,0,15]","",3
+1034,"SunderRoyale","",10277,"","","","","","[9,25,13,14,40,7]","",3
+1035,"FasterProjectilesRoyaleSupport","",588,"","","","Supports projectile skills.","","[10,16,5]","",3
+1036,"PointBlankRoyaleSupport","",1920,"","","","Supports projectile skills.","","[5,13,10,16]","",3
+1037,"ChanceToBleedRoyaleSupport","",6415,"","","","Supports attack skills. Cannot support skills that create minions.","","[13,33,9,16]","",3
+1038,"KnockbackRoyaleSupport","",714,"","","","Supports any skill that hits enemies.","","[9,16]","",3
+1039,"MaimRoyaleSupport","",7178,"","","","Supports attack skills, or other skills that can maim enemies.","","[13,33,9,16]","",3
+1040,"StunRoyaleSupport","",889,"","","","Supports any skill that hits enemies, making it easier to stun enemies with those skills.","","[9,16]","",3
+1041,"ConcentratedEffectRoyaleSupport","",1257,"","","","Supports any skill with an area of effect, regardless of whether that skill deals damage.","","[11,16,14]","",3
+1042,"IncreasedCriticalStrikesRoyaleSupport","",711,"","","","Supports any skill that hits enemies.","","[47,11,16]","",3
+1043,"LightningArrowRoyale","",1824,"","","","","","[10,25,13,14,5,2,6]","",3
+1044,"ExplosiveArrowRoyale","",1027,"","","","","","[10,25,13,5,14,15,0,6]","",3
+1045,"ViperStrikeRoyale","",1010,"","","","","","[10,25,13,15,7,36,3]","",3
+1046,"SweepRoyale","",110,"","","","","","[9,25,13,14,33,7]","",3
+1047,"IncinerateRoyale","",8690,"","","","","","[11,25,4,0,30,14]","",3
+1048,"ShockNovaRoyale","",972,"","","","","","[11,25,4,14,2,38]","",3
+1049,"IceShotRoyale","",2117,"","","","","","[10,25,13,5,14,1,6]","",3
+1050,"FreezingPulseRoyale","",956,"","","","","","[11,25,4,5,1]","",3
+1051,"GroundSlamRoyale","",8747,"","","","","","[9,25,13,14,40,7]","",3
+1052,"BearTrapRoyale","",1960,"","","","","","[20,10,25,4,15,33]","",3
+1053,"HeavyStrikeRoyale","",1229,"","","","","","[9,25,13,7,36]","",3
+1054,"CobraLashRoyale","",9830,"","","","","","[47,10,25,13,5,3]","",3
+1055,"IceSpearRoyale","",893,"","","","","","[47,11,25,4,5,1]","",3
+1056,"MeleeSplashRoyaleSupport","",2428,"","","","Supports melee strike skills, causing their melee strike to deal splash damage around each target hit.","","[9,16,7,13,36,14]","",3
+1057,"ForbiddenRite","",10958,"","","","","","[11,25,4,14,3,5]","",3
+1058,"ForbiddenRiteAltX","Forbidden Rite of Soul Sacrifice",10959,"","","","","","[11,25,4,14,3,5]","",1
+1059,"ForbiddenRiteAltY","[DNT] ForbiddenRiteAltY",10960,"","","","","","[11,25,4,14,3,5]","",2
+1060,"Ambush","",10957,"","","","","","[47,10,25,4,22,15,35]","",3
+1061,"Manabond","",10961,"","","","","","[11,25,4,14,2,46]","",3
+1062,"ManabondAltX","[DNT] ManabondAltX",10962,"","","","","","[11,25,4,14,2,46]","",1
+1063,"ManabondAltY","[DNT] ManabondAltY",10963,"","","","","","[11,25,4,14,2,46]","",2
+1064,"BladeTrap","",10964,"","","","","","[20,10,25,13,14]","",3
+1065,"BladeTrapAltX","Blade Trap of Greatswords",10965,"","","","","","[20,10,25,13,14,15]","",1
+1066,"BladeTrapAltY","Blade Trap of Laceration",10966,"","","","","","[20,10,25,13,14,33]","",2
+1067,"StormRain","",10967,"","","","","","[10,25,13,14,2,5,6]","",3
+1068,"StormRainAltX","Storm Rain of the Conduit",10968,"","","","","","[10,25,13,14,2,5,6]","",1
+1069,"StormRainAltY","Storm Rain of the Fence",10969,"","","","","","[10,25,13,14,2,5,6]","",2
+1070,"ShieldCrush","",10970,"","","","","","[9,25,13,14,33,7]","",3
+1071,"ShieldCrushAltX","Shield Crush of the Chieftain",10971,"","","","","","[9,25,13,14,0,7]","",1
+1072,"ShieldCrushAltY","[DNT] ShieldCrushAltY",10972,"","","","","","[9,25,13,14,33,7]","",2
+1073,"BloodOffering","",6225,"","","","","","[11,25,4,15,8]","",3
+1074,"FocusedBallistaSupport","",10976,"","","","Supports skills that summon ballista totems. Cannot modify the skills of minions.","","[5,10,16,19]",13935,3
+1075,"SummonReaper","",10977,"","","","","","[11,25,33,8,4]","",3
+1076,"SummonReaperAltX","Summon Reaper of Revenants",10978,"","","","","","[11,25,8,4]","",1
+1077,"SummonReaperAltY","Summon Reaper of Eviscerating",10979,"","","","","","[11,25,33,8,4]","",2
+1078,"BeheadSupport","",10982,"","","","Supports strike skills.","","[9,16,7,13,36]",13937,3
+1079,"Boneshatter","",10983,"","","","","","[9,25,13,7,36,14,15,33]","",3
+1080,"BoneshatterAltX","Boneshatter of Complex Trauma",10984,"","","","","","[9,25,13,7,36,14,15,33]","",1
+1081,"BoneshatterAltY","Boneshatter of Carnage",10985,"","","","","","[9,25,13,7,36,14,33]","",2
+1082,"ExplosiveConcoction","",10996,"","","","","","[10,25,13,14,0,1,2,5]","",3
+1083,"ExplosiveConcoctionAltX","Explosive Concoction of Destruction",10997,"","","","","","[47,10,25,13,14,0,1,2,5]","",1
+1084,"ExplosiveConcoctionAltY","[DNT] ExplosiveConcoctionAltY",10998,"","","","","","[10,25,13,14,0,1,2,5]","",2
+1085,"EyeOfWinter","",11029,"","","","","","[11,25,4,5,1]","",3
+1086,"EyeOfWinterAltX","Eye of Winter of Finality",11030,"","","","","","[11,25,4,5,1]","",1
+1087,"EyeOfWinterAltY","Eye of Winter of Transience",11031,"","","","","","[11,25,4,5,1]","",2
+1088,"PoisonousConcoction","",11066,"","","","","","[10,25,13,14,3,5]","",3
+1089,"PoisonousConcoctionAltX","[DNT] PoisonousConcoctionAltX",11067,"","","","","","[10,25,13,14,3,5]","",1
+1090,"PoisonousConcoctionAltY","[DNT] PoisonousConcoctionAltY",11068,"","","","","","[10,25,13,14,3,5]","",2
+1091,"CallOfTheWild","",11069,"","","","","","[10,25,4,8]","",3
+1092,"TemporalRift","",11070,"","","","","","[10,25,4]","",3
+1093,"Tornado","",11072,"","","","","","[10,25,4,15,33,14,44]","",3
+1094,"TornadoAltX","[DNT] TornadoAltX",11073,"","","","","","[10,25,4,15,33,14,44]","",1
+1095,"TornadoAltY","[DNT] TornadoAltY",11074,"","","","","","[10,25,4,15,33,14,44]","",2
+1096,"EnergyBlade","",11077,"","","","","","[11,25,4,2]","",3
+1097,"SoulLink","",11079,"","","","","","[11,25,4,15,49]","",3
+1098,"FlameLink","",11080,"","","","","","[9,25,4,15,49,0]","",3
+1099,"VampiricLink","",11081,"","","","","","[10,25,4,15,49]","",3
+1100,"ProtectiveLink","",11082,"","","","","","[9,25,4,15,49]","",3
+1101,"IntuitiveLink","",11083,"",11084,"","Supports spell skills, causing them to be triggered by Intuitive Link. Cannot support skills used by totems, traps, or mines. Vaal skills, channelling skills, and skills with a reservation cannot be triggered.","Intuitive Link Support","[26,10,25,4,15,49]","",3
+1102,"DestructiveLink","",11085,"","","","","","[47,11,25,4,15,49]","",3
+1103,"DivineBlessingSupport","",9641,"","","","Supports aura skills that create permanent auras around you, changing their reservation to a cost and making them temporary. Cannot support banner or stance skills.","","[9,16,12,15,50]",13939,3
+1104,"MarkOnHitSupport","",11086,"","","","Supports mark curse skills.","","[10,16,43,26]",13938,3
+1105,"EternalBlessingSupport","",11087,"","","","Supports aura skills that reserve life or mana to create auras around you.","","[9,16,12,50]",13940,3
+1106,"OverchargeSupport","",11146,"","","","Supports any skill that hits enemies.","","[2,11,16]",13941,3
+1107,"LightningConduit","",11147,"","","","","","[11,25,4,14,2]","",3
+1108,"LightningConduitAltX","Lightning Conduit of the Heavens",11148,"","","","","","[11,25,4,14,2]","",1
+1109,"LightningConduitAltY","[DNT] LightningConduitAltY",11149,"","","","","","[11,25,4,14,2]","",2
+1110,"GalvanicField","",11151,"","","","","","[11,25,4,14,15,2,18,44]","",3
+1111,"GalvanicFieldAltX","Galvanic Field of Intensity",11152,"","","","","","[11,25,4,14,15,2,18,44]","",1
+1112,"GalvanicFieldAltY","[DNT] GalvanicFieldAltY",11153,"","","","","","[11,25,4,14,15,2,18,44]","",2
+1113,"AlchemistsMark","",11154,"","","","","","[10,25,4,17,43,14,15,0,3]","",3
+1114,"VolcanicFissure","",11174,"","","","","","[7,9,25,13,5,14,40,0]","",3
+1115,"VolcanicFissureAltX","Volcanic Fissure of Snaking",11175,"","","","","","[7,9,25,13,14,40,0]","",1
+1116,"VolcanicFissureAltY","[DNT] VolcanicFissureAltY",11176,"","","","","","[7,9,25,13,5,14,40,0]","",2
+1117,"VaalVolcanicFissure","",11177,"",11174,"","","","[7,9,25,13,5,14,40,0,24]","",3
+1118,"VaalVolcanicFissureAltX","Vaal Volcanic Fissure",11177,"",11175,"","","","[7,9,25,13,5,14,40,0,24]","",1
+1119,"VaalVolcanicFissureAltY","Vaal Volcanic Fissure",11177,"",11176,"","","","[7,9,25,13,5,14,40,0,24]","",2
+1120,"FrozenLegion","",11169,"",11172,"","","","[9,25,4,1,13,14,7]","",3
+1121,"FrozenLegionAltX","Frozen Legion of Rallying",11170,"",11173,"","","","[9,25,4,1,13,14,7]","",1
+1122,"FrozenLegionAltY","[DNT] FrozenLegionAltY",11171,"",11172,"","","","[9,25,4,1,13,14,7]","",2
+1123,"VaalCleave","",11168,"",173,"","","","[9,25,13,14,33,24,15,7]","",3
+1124,"VaalCleaveAltX","Vaal Cleave",11168,"",174,"","","","[9,25,13,14,33,24,15,7]","",1
+1125,"VaalCleaveAltY","Vaal Cleave",11168,"",175,"","","","[9,25,13,14,33,24,15,7]","",2
+1126,"VaalCausticArrow","",11179,"",628,"","","","[10,25,13,5,14,15,3,24,6]","",3
+1127,"VaalCausticArrowAltX","Vaal Caustic Arrow",11179,"",629,"","","","[10,25,13,5,14,15,3,24,6]","",1
+1128,"VaalCausticArrowAltY","Vaal Caustic Arrow",11179,"",630,"","","","[10,25,13,5,14,15,3,24,6]","",2
+1129,"VaalMoltenStrike","",3486,"",3482,"","","","[9,25,13,5,14,7,36,0,18,24]","",3
+1130,"VaalMoltenStrikeAltX","Vaal Molten Strike",3486,"",3483,"","","","[9,25,13,5,14,7,36,0,18,24]","",1
+1131,"VaalMoltenStrikeAltY","Vaal Molten Strike",3486,"",3484,"","","","[9,25,13,5,14,7,36,0,18,24]","",2
+1132,"CursedGroundSupport","",11181,"","","","Supports non-aura hex curse skills.","","[14,15,11,16,42]",13942,3
+1133,"HexBloomSupport","",11182,"","","","Supports hex curse skills. Hexes from auras or cursed ground cannot transfer.","","[11,16,42]",13943,3
+1134,"VaalVenomGyre","",11198,"",9881,"","","","[10,25,13,5,3,15,24]","",3
+1135,"VaalVenomGyreAltX","Vaal Venom Gyre",11198,"",9882,"","","","[10,25,13,5,3,15,24]","",1
+1136,"VaalVenomGyreAltY","Vaal Venom Gyre",11198,"",9883,"","","","[10,25,13,5,3,15,24]","",2
+1137,"VaalSmite","",11199,"",8801,"","","","[2,9,25,13,14,15,7,36,12,24]","",3
+1138,"VaalSmiteAltX","Vaal Smite",11199,"",8802,"","","","[2,9,25,13,14,15,7,36,12,24]","",1
+1139,"VaalSmiteAltY","Vaal Smite",11199,"",8803,"","","","[2,9,25,13,14,15,7,36,12,24]","",2
+1140,"VaalChargedAttack","",11200,"",5447,"","","","[10,25,13,14,30,33,24,7]","",3
+1141,"VaalChargedAttackAltX","Vaal Blade Flurry",11200,"",5448,"","","","[47,10,25,13,14,30,33,24,7]","",1
+1142,"VaalChargedAttackAltY","Vaal Blade Flurry",11200,"",5449,"","","","[10,25,13,14,30,33,24,7]","",2
+1143,"VaalReap","",11202,"",10818,"","","","[9,25,4,33,14,15,24]","",3
+1144,"VaalReapAltX","Vaal Reap",11202,"",10819,"","","","[9,25,4,33,14,15,24]","",1
+1145,"VaalReapAltY","Vaal Reap",11202,"",10820,"","","","[9,25,4,33,14,15,24]","",2
+1146,"VaalAnimateWeapon","",11205,"",2770,"","","","[10,25,15,8,4,24,33]","",3
+1147,"VaalAnimateWeaponAltX","Vaal Animate Weapon",11205,"",2771,"","","","[10,25,15,8,4,24]","",1
+1148,"VaalAnimateWeaponAltY","Vaal Animate Weapon",11205,"",2772,"","","","[10,25,15,8,4,24,33]","",2
+1149,"VaalLightningArrow","",11206,"",1821,"","","","[10,25,13,14,5,2,24,6]","",3
+1150,"VaalLightningArrowAltX","Vaal Lightning Arrow",11206,"",1822,"","","","[10,25,13,14,5,2,24,6]","",1
+1151,"VaalLightningArrowAltY","Vaal Lightning Arrow",11206,"",1823,"","","","[10,25,13,14,5,2,24,6]","",2
+1152,"VaalAbsolution","",11207,"",10950,"","","","[9,25,4,8,15,33,2,24,14]","",3
+1153,"VaalAbsolutionAltX","Vaal Absolution",11207,"",10951,"","","","[9,25,4,8,15,33,2,24,14]","",1
+1154,"VaalAbsolutionAltY","Vaal Absolution",11207,"",10952,"","","","[9,25,4,8,15,33,2,24,14]","",2
+1155,"VaalDomination","",11208,"",1241,"","","","[9,25,4,8,15,24,13,7,36]","",3
+1156,"VaalDominationAltX","Vaal Domination",11208,"",1242,"","","","[9,25,4,8,15,24,13,7,36]","",1
+1157,"VaalDominationAltY","Vaal Domination",11208,"",1243,"","","","[9,25,4,8,15,24,13,7,36]","",2
+1158,"VaalIceShot","",11209,"",2114,"","","","[10,25,13,5,14,1,24,15,6]","",3
+1159,"VaalIceShotAltX","Vaal Ice Shot",11209,"",2115,"","","","[10,25,13,5,14,1,24,15,6]","",1
+1160,"VaalIceShotAltY","Vaal Ice Shot",11209,"",2116,"","","","[10,25,13,5,14,1,24,15,6]","",2
+1161,"VaalFirestorm","",11210,"",1268,"","","","[11,25,4,14,15,0,24]","",3
+1162,"VaalFirestormAltX","Vaal Firestorm",11210,"",1269,"","","","[11,25,4,14,15,0,24]","",1
+1163,"VaalFirestormAltY","Vaal Firestorm",11210,"",1270,"","","","[11,25,4,14,15,0,24]","",2
+1164,"VaalRejuvenationTotem","",11219,"",1950,"","","","[19,12,9,25,4,14,24]","",3
+1165,"VaalSplitArrow","",11220,"",369,"","","","[10,25,13,5,33,24,6]","",3
+1166,"VaalSplitArrowAltX","Vaal Split Arrow",11220,"",370,"","","","[10,25,13,5,33,24,6]","",1
+1167,"VaalSplitArrowAltY","Vaal Split Arrow",11220,"",371,"","","","[10,25,13,5,33,24,6]","",2
+1168,"ManaforgedArrowsSupport","",11225,"","","","Supports bow attack skills, causing them to trigger when you've spent enough mana in total on other bow attacks. Cannot modify the skills of minions. Cannot support totems, traps, mines, Vaal skills, or channelling skills","","[6,10,16,26]",13944,3
+1169,"PrismaticBurstSupport","",11226,"",11227,"","Supports attacks, causing them to trigger the Prismatic Burst spell. Cannot support triggered attacks or attacks used by things other than you. Cannot modify the skills of minions.","","[11,16,25,4,14,0,1,2,45,26]",13945,3
+1170,"ChannelledSnipe","",10086,"",10087,"","Supports bow attack skills. Cannot support channelled skills, instant skills, Vaal skills, or skills used by totems, traps, or mines.","Snipe Support","[10,25,13,5,30,33,6]","",3
+1171,"Quickstep","",11228,"","","","","","[25,4,22,35,37]","",3
+1172,"TraumaSupport","",11183,"","","","Supports melee strike skills that do not inherently apply Trauma. Cannot support triggered skills, Vaal skills, or skills used by things other than you. Cannot modify the skills of minions.","","[33,9,16,7,13,36,15]",13947,3
+1173,"SpellbladeSupport","",11184,"","","","Supports spells that hit enemies. Cannot modify the skills of minions.","","[11,16,4]",13948,3
+1174,"DevourSupport","",11185,"","","","Supports any skill that hits enemies.","","[11,16]",13949,3
+1175,"FreshMeatSupport","",11186,"","","","Supports skills that create minions.","","[47,11,16,8]",13950,3
+1176,"FlamewoodSupport","",11187,"",11235,"","Supports skills which summon totems. Cannot modify the skills of minions.","","[9,16,19,25,4,14,0,5,26]",13951,3
+1177,"CorruptingCrySupport","",11188,"","","","Supports warcry skills. Cannot modify the skills of minions.","","[14,33,9,16,27,15]",13952,3
+1178,"ConflagrationSupport","",11189,"","","","[DNT] Supports melee attack skills.","","[47,0,9,16,7,13]","",3
+1179,"GuardiansBlessingSupport","",11190,"",11191,"","Must support both a skill that creates minions which can be damaged, and\n an aura skill that creates permanent auras around you.\nCannot support triggered skills, banner skills or stance skills.","","[9,16,12,50,8]",13954,3
+1180,"SacrificeSupport","",11192,"","","","Supports spell skills that hit enemies and have no reservation. Cannot support brand skills, orb skills, channelling skills, Vaal skills or skills used by traps or mines. Cannot modify the skills of minions.","","[3,11,16,4]",13955,3
+1181,"FrigidBondSupport","",11193,"","","","Supports link skills.","","[1,11,16,49,15]",13956,3
+1182,"LocusMineSupport","",11194,"","","","Supports attack skills that use bows or wands and fire projectiles ahead. Instead of using that skill, you will throw mines that will use the skill for you when you detonate them, targeting your location. Mines cannot use channelling skills.","","[6,13,10,16,5,21]",13957,3
+1183,"SadismSupport","",11195,"","","","Supports any skill that hits enemies.","","[10,16]",13958,3
+1184,"ControlledBlazeSupport","",11196,"","","","Supports melee attack skills.","","[0,9,16,7,13]",13959,3
+1185,"VolatilitySupport","",11197,"","","","Supports attack skills.","","[13,9,16]",13953,3
+1186,"PlaytestAttack","",11236,"","","","","","[25,13,5,7,36,6]","",3
+1187,"PlaytestSpell","",11237,"","","","","","[25,5,4,14]","",3
+1188,"PlaytestSlam","",11238,"","","","","","[25,13,14,40,7]","",3
+1189,"SummonVoodooDoll","",11273,"","","","","","[11,25,4,8]","",3
