@@ -2643,7 +2643,7 @@ type MapSeriesTiers {
   SanctumTier: i32
   CrucibleTier: i32
   AncestorTier: i32
-  _: i32
+  AzmeriTier: i32
 }
 
 type MapStashSpecialTypeEntries {
@@ -4521,7 +4521,7 @@ type SkillGemInfo {
 }
 
 type SkillGems @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes
+  BaseItemTypesKey: BaseItemTypes @unique
   StrengthRequirementPercent: i32
   DexterityRequirementPercent: i32
   IntelligenceRequirementPercent: i32
@@ -4539,7 +4539,7 @@ type SkillGems @tags(list: ["item:def"]) {
   _: i32
   ItemExperienceType: ItemExperienceTypes
   MtxSlotTypes: [MicrotransactionSkillGemEffectSlotTypes]
-  _: [_]
+  GemEffects: [GemEffects]
 }
 
 enum SkillMines @indexing(first: 0) { _ }

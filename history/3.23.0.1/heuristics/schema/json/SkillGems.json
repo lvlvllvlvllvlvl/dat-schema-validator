@@ -3,7 +3,7 @@
     "name": "BaseItemTypesKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "type": {
       "array": false,
       "key": {
@@ -231,14 +231,17 @@
     "size": 16
   },
   {
+    "name": "GemEffects",
+    "offset": 119,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "GemEffects"
       }
     },
-    "offset": 119,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   }
 ]

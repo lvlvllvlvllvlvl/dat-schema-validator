@@ -53180,6 +53180,18 @@
           "until": null,
           "file": null,
           "files": null
+        },
+        {
+          "name": "AzmeriTier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
         }
       ],
       "tags": [],
@@ -70045,7 +70057,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
@@ -70265,6 +70277,20 @@
           "localized": false,
           "references": {
             "table": "MicrotransactionSkillGemEffectSlotTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "GemEffects",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "GemEffects"
           },
           "until": null,
           "file": null,
