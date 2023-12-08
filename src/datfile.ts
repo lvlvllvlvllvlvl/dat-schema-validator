@@ -205,24 +205,27 @@ export class CdnBundleLoader {
 export function exportAllRows(
   headers: NamedHeader[],
   datFiles: { name: string; datFile: DatFile }[],
-  name: string
+  name: string,
+  annotate = false
 ) {
   const columns = headers.flatMap((header) => {
     const data = datFiles.map(({ name, datFile }) => ({ name, rows: readColumn(header, datFile) }));
 
     const seen = datFiles.map((d) => new Set());
-    header.unique = header.unique || (data[0].rows.length > 1 && !header.type.array);
+    if (annotate) {
+      header.unique = header.unique || (data[0].rows.length > 1 && !header.type.array);
+    }
     data.find(({ rows }, i) => {
       rows.find((row, j) => {
         if (Array.isArray(row)) {
-          if (row.find((cell, k) => cell !== data[0].rows[j]![k])) {
+          if (annotate && row.find((cell, k) => cell !== data[0].rows[j]![k])) {
             header.localized = true;
           }
         } else {
           if (seen[i].has(row)) {
             header.unique = false;
           }
-          if (row !== data[0].rows[j]) {
+          if (annotate && row !== data[0].rows[j]) {
             header.localized = true;
           }
         }

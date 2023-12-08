@@ -83,7 +83,7 @@ const progress = {
 };
 if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log(
-    "Usage: npx tsx src/validate.ts [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>]"
+    "Usage: npx tsx src/validate.ts [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--annotate]"
   );
   console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
   console.log(
@@ -283,7 +283,8 @@ await Promise.all(
                 exportAllRows(
                   hdr,
                   data.map(({ name }, i) => ({ name, datFile: datFiles[i] })),
-                  table.name
+                  table.name,
+                  args?.includes("--validate")
                 ),
                 {
                   cast: {
