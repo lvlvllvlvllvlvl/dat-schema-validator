@@ -1,0 +1,44 @@
+[
+  {
+    "name": "BetrayalTargetsKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalTargets"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BetrayalJobsKey",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BetrayalJobs"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "AchievementItemsKey",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    },
+    "size": 16
+  }
+]
