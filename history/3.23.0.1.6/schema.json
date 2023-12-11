@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1702107802,
+  "createdAt": 1702205076,
   "tables": [
     {
       "name": "RogueExiles",
@@ -29311,25 +29311,15 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "TransfigureBase",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "row",
           "unique": false,
           "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
+          "references": {
+            "table": "ActiveSkills"
+          },
           "until": null,
           "file": null,
           "files": null
@@ -79626,8 +79616,8 @@
           "files": null
         },
         {
-          "name": null,
-          "description": null,
+          "name": "ItemColor",
+          "description": "Used by gem icon shader https://gist.github.com/zao/08878df57aba605e5fa1e6373f2dce02",
           "array": false,
           "type": "i32",
           "unique": false,
