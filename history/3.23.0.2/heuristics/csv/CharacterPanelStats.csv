@@ -1,0 +1,381 @@
+"rownum","Id","Text","StatsKeys1","CharacterPanelDescriptionModesKey","StatsKeys2","StatsKeys3","CharacterPanelTabsKey","bool","[i32]","i32"
+0,"Life","Life",[244],0,[],[],4,"",[],0
+1,"Mana","Mana",[245],0,[],[],4,"",[],0
+2,"EnergyShield","Maximum Energy Shield",[246],0,[],[],4,"",[],4
+3,"GamepadEnergyShield","Energy Shield",[246],0,[],[],4,"",[],2
+4,"GamepadArmour","Armour",[240],0,[],[],4,1,[],2
+5,"GamepadEvasion","Evasion",[281],0,[],[],4,1,[],2
+6,"GamepadFireResist","Fire","[306,2045]",5,[],[],5,"",[],2
+7,"GamepadColdResist","Cold","[305,2046]",5,[],[],5,"",[],2
+8,"GamepadLightningResist","Lightning","[307,2047]",5,[],[],5,"",[],2
+9,"GamepadChaosResist","Chaos","[308,2048]",5,[],[],5,"",[],2
+10,"DPS","Damage per Second",[675],0,[],[2095],0,1,[14],0
+11,"DamagePerUse","Damage per Use",[1995],0,[],[],0,1,[14],0
+12,"MH_HitChance","Main Hand Chance to Hit",[672],1,[7647],"[434,1634]",0,1,[],0
+13,"MH_HitChanceEvasive","Main Hand Chance to Hit Evasive Monsters",[9373],1,[7647],"[434,1634]",0,1,[],0
+14,"OH_HitChance","Off Hand Chance to Hit",[673],1,[7648],"[434,1634]",0,1,[],0
+15,"OH_HitChanceEvasive","Off Hand Chance to Hit Evasive Monsters",[9374],1,[7648],"[434,1634]",0,1,[],0
+16,"APS","Attacks per Second",[674],0,[],"[434,1634,8137]",0,1,[14],0
+17,"CPS","Casts per Second",[678],0,[434],"[1634,8137]",0,1,[14],0
+18,"MH_TotalDamage","Main Hand Total Combined Damage","[666,667]",2,[7647],"[434,1634]",0,1,[],0
+19,"MH_PhysicalDamage","Main Hand Physical Damage","[276,277]",2,[7647],"[434,1634]",0,1,[],0
+20,"MH_FireDamage","Main Hand Fire Damage","[264,265]",2,[7647],"[434,1634]",0,1,[],0
+21,"MH_ColdDamage","Main Hand Cold Damage","[260,261]",2,[7647],"[434,1634]",0,1,[],0
+22,"MH_LightningDamage","Main Hand Lightning Damage","[268,269]",2,[7647],"[434,1634]",0,1,[],0
+23,"MH_ChaosDamage","Main Hand Chaos Damage","[272,273]",2,[7647],"[434,1634]",0,1,[],0
+24,"MH_Accuracy","Main Hand Accuracy Rating",[289],0,[7647],"[434,1634]",0,1,[],0
+25,"MH_AttackSpeedIncr","Main Hand Attack Speed modifier",[291],7,[7647],"[434,1634]",0,1,[],0
+26,"MH_CritChance","Main Hand Critical Strike Chance",[548],1,[7647],"[434,1634]",0,1,[14],0
+27,"MH_CritMulti","Main Hand Critical Strike Multiplier",[606],1,"[7647,548]","[434,1634]",0,1,[],0
+28,"MH_Stun","Main Hand Stun Threshold reduction",[299],1,[7647],"[434,1634]",0,1,[],0
+29,"MH_Knockback","Main Hand chance to Knockback",[479],1,[7647],"[434,1634,2643]",0,1,[],0
+30,"MH_CritKnockback","Main Hand Knockback on Critical Strike",[464],4,[7647],"[434,1634,2643]",0,1,[],0
+31,"MH_Blind","Main Hand chance to Blind",[973],1,[7647],"[434,1634]",0,1,[],0
+32,"MH_Flee","Main Hand chance to cause Flee",[681],1,[7647],"[434,1634]",0,1,[],0
+33,"MH_BlockReduce","Main Hand Enemy Block reduction",[282],1,[7647],"[434,1634]",0,1,[],0
+34,"OH_TotalDamage","Off Hand Total Combined Damage","[668,669]",2,[7648],"[434,1634]",0,1,[],0
+35,"OH_PhysicalDamage","Off Hand Physical Damage","[278,279]",2,[7648],"[434,1634]",0,1,[],0
+36,"OH_FireDamage","Off Hand Fire Damage","[266,267]",2,[7648],"[434,1634]",0,1,[],0
+37,"OH_ColdDamage","Off Hand Cold Damage","[262,263]",2,[7648],"[434,1634]",0,1,[],0
+38,"OH_LightningDamage","Off Hand Lightning Damage","[270,271]",2,[7648],"[434,1634]",0,1,[],0
+39,"OH_ChaosDamage","Off Hand Chaos Damage","[274,275]",2,[7648],"[434,1634]",0,1,[],0
+40,"OH_Accuracy","Off Hand Accuracy Rating",[290],0,[7648],"[434,1634]",0,1,[],0
+41,"OH_AttackSpeedIncr","Off Hand Attack Speed modifier",[292],7,[7648],"[434,1634]",0,1,[],0
+42,"OH_CritChance","Off Hand Critical Strike Chance",[549],1,[7648],"[434,1634]",0,1,[14],0
+43,"OH_CritMulti","Off Hand Critical Strike Multiplier",[607],1,"[7648,549]","[434,1634]",0,1,[],0
+44,"OH_Stun","Off Hand Stun Threshold reduction",[300],1,[7648],"[434,1634]",0,1,[],0
+45,"OH_Knockback","Off Hand chance to Knockback",[480],1,[7648],"[434,1634,2643]",0,1,[],0
+46,"OH_CritKnockback","Off Hand Knockback on Critical Strike",[465],4,[7648],"[434,1634,2643]",0,1,[],0
+47,"OH_Blind","Off Hand chance to Blind",[974],1,[7648],"[434,1634]",0,1,[],0
+48,"OH_Flee","Off Hand chance to cause Flee",[682],1,[7648],"[434,1634]",0,1,[],0
+49,"OH_BlockReduce","Off Hand Enemy Block reduction",[283],1,[7648],"[434,1634]",0,1,[],0
+50,"Spell_TotalDamage","Spell Total Combined Damage","[670,671]",2,[434],[1634],0,1,[],0
+51,"Spell_PhysicalDamage","Spell Physical Damage","[258,259]",2,[434],[1634],0,1,[],0
+52,"Spell_FireDamage","Spell Fire Damage","[252,253]",2,[434],[1634],0,1,[],0
+53,"Spell_ColdDamage","Spell Cold Damage","[250,251]",2,[434],[1634],0,1,[],0
+54,"Spell_LightningDamage","Spell Lightning Damage","[254,256]",2,[434],[1634],0,1,[],0
+55,"Spell_ChaosDamage","Spell Chaos Damage","[255,257]",2,[434],[1634],0,1,[],0
+56,"CastSpeedIncr","Cast Speed modifier",[293],7,[434],[8137],0,1,[],0
+57,"Spell_CritChance","Spell Critical Strike Chance",[550],1,[434],[1634],0,1,[14],0
+58,"Spell_CritMulti","Spell Critical Strike Multiplier",[608],1,"[434,550]",[1634],0,1,[],0
+59,"Spell_BlockReduce","Enemy Block reduction",[2270],1,[434],[],0,1,[],0
+60,"Secondary_TotalDamage","Total Combined Damage","[1635,1636]",2,[1634],[],0,1,[],0
+61,"Secondary_PhysicalDamage","Physical Damage","[703,704]",2,[1634],[],0,1,[],0
+62,"Secondary_FireDamage","Fire Damage","[707,708]",2,[1634],[],0,1,[],0
+63,"Secondary_ColdDamage","Cold Damage","[705,706]",2,[1634],[],0,1,[],0
+64,"Secondary_LightningDamage","Lightning Damage","[709,710]",2,[1634],[],0,1,[],0
+65,"Secondary_ChaosDamage","Chaos Damage","[711,712]",2,[1634],[],0,1,[],0
+66,"CritChance","Critical Strike Chance",[714],1,[1634],[],0,1,[14],0
+67,"CritMulti","Critical Strike Multiplier",[713],1,"[1634,714]",[],0,1,[],0
+68,"Stun","Stun Threshold reduction",[108],1,[434],[],0,1,[],0
+69,"Knockback","Chance to Knockback",[2318],1,[434],[2643],0,1,[],0
+70,"KnockbackOnCrit","Knockback on Critical Strike",[460],1,[434],[2643],0,1,[],0
+71,"KnockbackDistance","Knockback distance modifier",[12120],7,[],[2643],0,1,[],0
+72,"Blind","Chance to Blind",[972],1,[434],[],0,1,[],0
+73,"Flee","Chance to cause Flee",[679],1,[434],[],0,1,[],0
+74,"AttackStunDuration","Stun Duration modifier",[203],7,[],[434],0,1,[],0
+75,"SpellstunDuration","Stun Duration modifier",[340],7,[434],[],0,1,[],0
+76,"MH_BleedingChance","Chance to inflict Bleeding from Main Hand hits",[6478],1,[7647],"[434,2683,1634]",0,1,[],0
+77,"OH_BleedingChance","Chance to inflict Bleeding from Off Hand hits",[6479],1,[7648],"[434,2683,1634]",0,1,[],0
+78,"MH_BleedingDamage","Bleeding Damage per second from Main Hand hits","[10190,10191]",2,[7647],"[434,1634]",0,1,"[2,0]",0
+79,"MH_BleedingCritDamage","Bleeding Damage per second from Main Hand Critical Strikes","[10186,10187]",2,[7647],"[434,1634]",0,1,"[2,0]",0
+80,"OH_BleedingDamage","Bleeding Damage per second from Off Hand hits","[10192,10193]",2,[7648],"[434,1634]",0,1,"[2,0]",0
+81,"OH_BleedingCritDamage","Bleeding Damage per second from Off Hand Critical Strikes","[10188,10189]",2,[7648],"[434,1634]",0,1,"[2,0]",0
+82,"MH_ChanceToIgnite","Chance to Ignite from Main Hand hits",[6480],1,[7647],"[434,2754,10896,1634]",0,1,[],0
+83,"OH_ChanceToIgnite","Chance to Ignite from Off Hand hits",[6481],1,[7648],"[434,2754,10896,1634]",0,1,[],0
+84,"Spell_ChanceToIgnite","Chance to Ignite",[6482],1,[434],"[1634,2754,10896]",0,1,[],0
+85,"Secondary_ChanceToIgnite","Chance to Ignite",[6483],1,[1634],"[2754,10896]",0,1,[],0
+86,"MH_IgniteDamage","Ignite Damage per second from Main Hand hits","[5935,5936]",2,[7647],"[434,1634]",0,1,"[2,0]",0
+87,"MH_IgniteCritDamage","Ignite Damage per second from Main Hand Critical Strikes","[10194,10195]",2,[7647],"[434,1634]",0,1,"[2,0]",0
+88,"OH_IgniteDamage","Ignite Damage per second from Off Hand hits","[5937,5938]",2,[7648],"[434,1634]",0,1,"[2,0]",0
+89,"OH_IgniteCritDamage","Ignite Damage per second from Off Hand Critical Strikes","[10196,10197]",2,[7648],"[434,1634]",0,1,"[2,0]",0
+90,"Spell_IgniteDamage","Ignite Damage per second","[5939,5940]",2,[434],[1634],0,1,"[2,0]",0
+91,"Spell_IgniteCritDamage","Ignite Damage per second from Critical Strikes","[10198,10199]",2,[434],[1634],0,1,"[2,0]",0
+92,"Secondary_IgniteDamage","Ignite Damage per second","[5941,5942]",2,[1634],[],0,1,"[2,0]",0
+93,"Secondary_IgniteCritDamage","Ignite Damage per second from Critical Strikes","[10200,10201]",2,[1634],[],0,1,"[2,0]",0
+94,"IgniteDuration","Ignite Duration modifier",[2652],7,[],[],0,1,[],0
+95,"ScorchChance","Chance to Scorch",[8659],1,[],[2754],0,1,[],0
+96,"ScorchDuration","Scorch Duration modifier",[8763],7,[8659],[],0,1,[],0
+97,"ScorchEffectiveness","Scorch Effectiveness",[8764],7,[8659],[],0,1,[],0
+98,"ChillDuration","Chill Duration modifier",[2655],7,[],[],0,1,[],0
+99,"ChillEffectiveness","Chill Effectiveness",[6546],7,[],[],0,1,[],0
+100,"ChanceToFreeze","Chance to Freeze",[1881],1,[],"[2754,8663]",0,1,[],0
+101,"FreezeDuration","Freeze Duration modifier",[2654],7,[],[],0,1,[],0
+102,"BrittleChance","Chance to inflict Brittle",[8660],1,[],[2754],0,1,[],0
+103,"BrittleDuration","Brittle Duration modifier",[8765],7,[8660],[],0,1,[],0
+104,"BrittleEffectiveness","Brittle Effectiveness",[8766],7,[8660],[],0,1,[],0
+105,"ChanceToShock","Chance to Shock",[1880],1,[],"[2754,1324]",0,1,[],0
+106,"ShockDuration","Shock Duration modifier",[2653],7,[],[],0,1,[],0
+107,"ShockEffectiveness","Shock Effectiveness",[6545],7,[],[],0,1,[],0
+108,"SappedChance","Chance to Sap",[8661],1,[],[2754],0,1,[],0
+109,"SappedDuration","Sapped Duration",[8767],7,[8661],[],0,1,[],0
+110,"SappedEffectiveness","Sapped Effectiveness",[8768],7,[8661],[],0,1,[],0
+111,"MH_ChanceToPoison","Chance to Poison from Main Hand hits",[6484],1,[7647],[434],0,1,[],0
+112,"OH_ChanceToPoison","Chance to Poison from Off Hand hits",[6485],1,[7648],[434],0,1,[],0
+113,"Spell_ChanceToPoison","Chance to Poison",[6486],1,[434],[1634],0,1,[],0
+114,"Secondary_ChanceToPoison","Chance to Poison",[6487],1,[1634],[],0,1,[],0
+115,"OnlyChaosChanceToPoison","Chance to Poison from only Chaos Damage",[6259],1,[],[],0,1,[],0
+116,"MH_PoisonDamage","Poison Damage per second from Main Hand hits","[5999,6000]",2,[7647],"[434,1634]",0,1,"[2,0]",0
+117,"MH_PoisonCritDamage","Poison Damage per second from Main Hand Critical Strikes","[10202,10203]",2,[7647],"[434,1634]",0,1,"[2,0]",0
+118,"OH_PoisonDamage","Poison Damage per second from Off Hand hits","[6001,6002]",2,[7648],"[434,1634]",0,1,"[2,0]",0
+119,"OH_PoisonCritDamage","Poison Damage per second from Off Hand Critical Strikes","[10204,10205]",2,[7648],"[434,1634]",0,1,"[2,0]",0
+120,"Spell_PoisonDamage","Poison Damage per second","[6003,6004]",2,[434],[1634],0,1,"[2,0]",0
+121,"Spell_PoisonCritDamage","Poison Damage per second from Critical Strikes","[10206,10207]",2,[434],[1634],0,1,"[2,0]",0
+122,"Secondary_PoisonDamage","Poison Damage per second","[6005,6006]",2,[1634],[],0,1,"[2,0]",0
+123,"Secondary_PoisonCritDamage","Poison Damage per second from Critical Strikes","[10208,10209]",2,[1634],[],0,1,"[2,0]",0
+124,"MH_PoisonDamageAlways","Poison Damage per second from Main Hand only Chaos Damage","[6007,6008]",2,[7647],"[434,1634]",0,1,"[2,0]",0
+125,"MH_PoisonCritDamageAlways","Poison Damage per second from Main Hand only Critical Chaos Damage","[10210,10211]",2,[7647],"[434,1634]",0,1,"[2,0]",0
+126,"OH_PoisonDamageAlways","Poison Damage per second from Off Hand only Chaos Damage","[6009,6010]",2,[7648],"[434,1634]",0,1,"[2,0]",0
+127,"OH_PoisonCritDamageAlways","Poison Damage per second from Off Hand only Critical Chaos Damage","[10212,10213]",2,[7648],"[434,1634]",0,1,"[2,0]",0
+128,"Spell_PoisonDamageAlways","Poison Damage per second from only Chaos Damage","[6011,6012]",2,[434],[1634],0,1,"[2,0]",0
+129,"Spell_PoisonCritDamageAlways","Poison Damage per second from only Critical Chaos Damage","[10214,10215]",2,[434],[1634],0,1,"[2,0]",0
+130,"Secondary_PoisonDamageAlways","Poison Damage per second from only Chaos Damage","[6013,6014]",2,[1634],[],0,1,"[2,0]",0
+131,"Secondary_PoisonCritDamageAlways","Poison Damage per second from only Critical Chaos Damage","[10216,10217]",2,[1634],[],0,1,"[2,0]",0
+132,"NumArrows","Number of Arrows to fire",[722],0,[],[],0,1,[],0
+133,"ArrowPierce","Number of targets to Pierce with Arrows",[6232],0,[722],[],0,1,[],0
+134,"NumProjectiles","Number of Projectiles to fire",[721],0,[],[],0,1,[],0
+135,"Pierce","Number of targets to Pierce with Projectiles",[6231],0,[721],[],0,1,[],0
+136,"MH_FirePenetration","Main Hand Fire Resistance Penetration",[14249],1,[7647],[434],0,1,[],0
+137,"MH_ColdPenetration","Main Hand Cold Resistance Penetration",[14250],1,[7647],[434],0,1,[],0
+138,"MH_LightningPenetration","Main Hand Lightning Resistance Penetration",[14251],1,[7647],[434],0,1,[],0
+139,"MH_ChaosPenetration","Main Hand Chaos Resistance Penetration",[14259],1,[7647],[434],0,1,[],0
+140,"OH_FirePenetration","Off Hand Fire Resistance Penetration",[14252],1,[7648],[434],0,1,[],0
+141,"OH_ColdPenetration","Off Hand Cold Resistance Penetration",[14253],1,[7648],[434],0,1,[],0
+142,"OH_LightningPenetration","Off Hand Lightning Resistance Penetration",[14254],1,[7648],[434],0,1,[],0
+143,"OH_ChaosPenetration","Off Hand Chaos Resistance Penetration",[14260],1,[7648],[434],0,1,[],0
+144,"FirePenetration","Fire Resistance Penetration",[590],1,[434],[],0,1,[],0
+145,"ColdPenetration","Cold Resistance Penetration",[589],1,[434],[],0,1,[],0
+146,"LightningPenetration","Lightning Resistance Penetration",[591],1,[434],[],0,1,[],0
+147,"ChaosPenetration","Chaos Resistance Penetration",[596],1,[434],[],0,1,[],0
+148,"MainhandDoubleDamageChilled","Main Hand Attacks double Damage to Chilled Enemies",[4101],4,[7647],[434],0,1,[],0
+149,"OffhandDoubleDamageChilled","Off Hand Attacks double Damage to Chilled Enemies",[4102],4,[7648],[434],0,1,[],0
+150,"MH_ChanceToImpale","Chance to Impale with Main Hand hits",[8791],1,[7647],[434],0,1,[],0
+151,"OH_ChanceToImpale","Chance to Impale with Off Hand hits",[8792],1,[7648],[434],0,1,[],0
+152,"Spell_ChanceToImpale","Chance to Impale",[15373],1,[434],"[1634,1197]",0,1,[],0
+153,"Secondary_ChanceToImpale","Chance to Impale",[12977],1,[1634],[1197],0,1,[],0
+154,"Ward","Ward",[14322],0,[],[],1,1,[],0
+155,"WardDelay","Ward Restoration time",[14327],9,[14322],[],1,"",[9],0
+156,"Armour","Armour",[240],0,[],[],1,1,[],4
+157,"ArmourVsProjectiles","Armour against Projectiles",[1066],0,[5171],[],1,"",[],0
+158,"PhysicalImmunity","Immune to Physical Damage",[715],4,[],[],1,1,[],0
+159,"ArmourEstimateReduction","Estimated Physical Damage reduction",[717],1,[],[],1,1,[],0
+160,"ArmourVsProjEstimateReduction","Estimated Physical Damage reduction against Projectiles",[1071],1,[5171],[],1,"",[],0
+161,"ArmourVsHitsEstimateReduction","Estimated Physical Damage reduction against Hits",[7328],1,[7327],[],1,"",[],0
+162,"Evasion","Evasion Rating",[281],0,[],[],1,1,[],4
+163,"EvadeChance","Estimated chance to Evade Attacks",[676],1,[],[],1,1,[],0
+164,"SpellDodgeChance","Chance to Dodge Spells",[834],1,[],[],1,1,[],0
+165,"LifeRecharge","Life Recharge per second",[9392],0,[],[],1,1,[2],0
+166,"ES","Maximum Energy Shield",[246],0,[],[],1,1,[],4
+167,"ESRecharge","Energy Shield Recharge per second",[249],0,[],[],1,1,[2],0
+168,"ESDelay","Energy Shield Recharge Occurrence modifier",[3857],7,[],[],1,1,[],0
+169,"LifeRegen","Life Regeneration per Second",[247],0,[],[],1,1,[2],0
+170,"ManaRegen","Mana Regeneration per Second",[248],0,[],[],1,1,[2],0
+171,"ESRegen","Energy Shield Regeneration per Second",[1053],0,[],[],1,1,[2],0
+172,"SpellSupressChance","Spell Damage Suppression Chance",[14741],1,[],[],1,1,[],0
+173,"SpelSuppressAmount","Suppressed Spell Damage Prevention",[14745],1,[],[],1,1,[],0
+174,"FireImmunity","Immune to Fire Damage",[4448],4,[],[],1,1,[],0
+175,"FireResist","Fire Resistance","[306,2045]",5,[],[],1,"",[],4
+176,"ColdImmunity","Immune to Cold Damage",[4449],4,[],[],1,1,[],0
+177,"ColdResist","Cold Resistance","[305,2046]",5,[],[],1,"",[],4
+178,"LightningImmunity","Immune to Lightning Damage",[4450],4,[],[],1,1,[],0
+179,"LightningResist","Lightning Resistance","[307,2047]",5,[],[],1,"",[],4
+180,"ChaosImmunity","Immune to Chaos Damage",[4451],4,[],[],1,1,[],0
+181,"ChaosResist","Chaos Resistance","[308,2048]",5,[],[],1,"",[],4
+182,"ChaosResistAgainstDegen","Chaos Resistance against Damage over time","[5834,6091]",5,[6088],[695],1,"",[],0
+183,"BlockChance","Chance to Block Attack Damage","[939,14786]",5,[7242],[],1,1,[],0
+184,"ProjBlockChance","Chance to Block Projectile Attack Damage",[1070],1,"[1067,7242]",[],1,1,[],0
+185,"SpellBlockChance","Chance to Block Spell Damage",[241],1,[7243],[],1,1,[],0
+186,"SpellProjBlockChance","Chance to Block Projectile Spell Damage",[1069],1,[18977],[],1,1,[],0
+187,"BlockRec","Block Recovery modifier",[17743],7,[],[],1,1,[],0
+188,"StunRec","Stun Recovery modifier",[280],7,[],[],1,1,[],0
+189,"StunAvoid","Stun Avoidance",[194],1,[],[1186],1,1,[],0
+190,"StunImmune","Cannot be Stunned",[1186],4,[],[],1,1,[],0
+191,"StunImmuneSpells","Cannot be Stunned by Spells",[7350],4,[],[1186],1,1,[],0
+192,"StunImmuneAttacks","Cannot be Stunned by Attacks",[7351],4,[],[1186],1,1,[],0
+193,"EnemyCritReduce","Enemy Crit Extra Damage reduction",[4946],1,[],[],1,1,[],0
+194,"BleedingAvoid","Bleeding Avoidance",[4428],1,[],[8110],1,1,[],0
+195,"BleedingCannotBe","Cannot gain Bleeding",[8110],4,[],[4686],1,1,[],0
+196,"BleedingImmune","Immune to Bleeding",[4686],4,[],[],1,1,[],0
+197,"BleedingDurationRed","Bleeding Duration on self reduction",[16927],1,[],[8110],1,1,[1],0
+198,"IgniteAvoid","Ignite Avoidance",[627],1,[],[6870],1,1,[],0
+199,"IgniteCannotBe","Cannot be Ignited",[6870],4,[],[4911],1,1,[],0
+200,"IgniteImmune","Immune to Ignite",[4911],4,[],[],1,1,[],0
+201,"IgniteDurationRed","Ignite Duration on self reduction",[632],1,[],[6870],1,1,[],0
+202,"ChillAvoid","Chill Avoidance",[625],1,[],[7405],1,1,[],0
+203,"ChillCannotBe","Cannot be Chilled",[7405],4,[],[4912],1,1,[],0
+204,"ChillImmune","Immune to Chill",[4912],4,[],[],1,1,[],0
+205,"ChillDurationRed","Chill Duration on self reduction",[629],1,[],[7405],1,1,[],0
+206,"FreezeAvoid","Freeze Avoidance",[626],1,[],[6795],1,1,[],0
+207,"FreezeCannotBe","Cannot be Frozen",[6795],4,[],[4910],1,1,[],0
+208,"FreezeImmune","Immune to Freeze",[4910],4,[],[],1,1,[],0
+209,"FreezeDurationRed","Freeze Duration on self reduction",[631],1,[],[6795],1,1,[],0
+210,"ShockAvoid","Shock Avoidance",[628],1,[],[4930],1,1,[],0
+211,"ShockCannotBe","Cannot be Shocked",[4930],4,[],[4770],1,1,[],0
+212,"ShockImmune","Immune to Shock",[4770],4,[],[],1,1,[],0
+213,"ShockDurationRed","Shock Duration on self reduction",[630],1,[],[4930],1,1,[],0
+214,"PoisonAvoid","Poison Avoidance",[6794],1,[],[11806],1,1,[],0
+215,"PoisonCannotBe","Cannot gain Poison",[11806],4,[],[8710],1,1,[],0
+216,"PoisonImmune","Immune to Poison",[8710],4,[],[],1,1,[],0
+217,"PoisonDurationRed","Poison Duration on self reduction",[16928],1,[],[11806],1,1,[1],0
+218,"PhysicalReflect","Physical Damage Reflected to Melee Attackers","[762,757]",6,[],[],1,1,[],0
+219,"FireReflect","Fire Damage Reflected to Melee Attackers","[763,758]",6,[],[],1,1,[],0
+220,"ColdReflect","Cold Damage Reflected to Melee Attackers","[764,759]",6,[],[],1,1,[],0
+221,"LightningReflect","Lightning Damage Reflected to Melee Attackers","[765,760]",6,[],[],1,1,[],0
+222,"ChaosReflect","Chaos Damage Reflected to Melee Attackers","[766,761]",6,[],[],1,1,[],0
+223,"MoveSpeed","Movement Speed modifier",[242],7,[],[],1,1,[],0
+224,"ActionSpeed","Action Speed modifier",[9275],7,[],[],1,1,[],0
+225,"Omniscience","Omniscience",[15399],0,[],[],2,1,[],0
+226,"OmniscienceForRequirements","Attribute Requirements met by Omniscience",[15771],0,[],[],2,1,[],0
+227,"AoE","Skill Area of Effect modifier",[212],7,[],[],2,1,[],0
+228,"SkillDuration","Skill Duration modifier",[215],7,[],[],2,1,[],0
+229,"BuffDuration","Buff Duration modifier",[168],7,[],[],2,1,[],0
+230,"CurseEffect","Curse Effect modifier",[4292],7,[],[],2,1,[],0
+231,"FlaskDuraiton","Flask Duration modifier",[738],7,[],[],2,1,[],0
+232,"FlaskRate","Flask Recovery rate modifier",[400],7,[],[],2,1,[],0
+233,"FlaskLifeAmount","Flask Life amount modifier",[398],7,[],[],2,1,[],0
+234,"FlaskLifeSpeed","Flask Life Recovery rate modifier",[739],7,[],[],2,1,[],0
+235,"FlaskManaAmount","Flask Mana amount modifier",[399],7,[],[],2,1,[],0
+236,"FlaskManaSpeed","Flask Mana Recovery rate modifier",[740],7,[],[],2,1,[],0
+237,"FlaskChargesUsed","Flask Charges Used modifier",[737],7,[],[],2,1,[],0
+238,"FlaskChargesGained","Flask Charges Gained modifier",[459],7,[],[],2,1,[],0
+239,"MH_LifeLeech","Main Hand Life Leech from Physical Attacks",[301],1,[7647],"[434,1634,1335]",2,1,[14],0
+240,"OH_LifeLeech","Off Hand Life Leech from Physical Attack Damage",[302],1,[7648],"[434,1634,1335]",2,1,[14],0
+241,"Spell_LifeLeech","Life Leech from Spell Damage",[3093],1,[434],"[1337,1634]",2,1,[14],0
+242,"LifeLeechFromAttacks","Life Leech from any Attack Damage",[5497],1,[],"[1337,434]",2,1,[14],0
+243,"LifeLeechPhysicalDamage","Life Leech from Physical Damage",[2195],1,[],[1337],2,1,[14],0
+244,"LifeLeechFireDamage","Life Leech from Fire Damage",[2196],1,[],[1337],2,1,[14],0
+245,"LifeLeechColdDamage","Life Leech from Cold Damage",[2197],1,[],[1337],2,1,[14],0
+246,"LifeLeechLightningDamage","Life Leech from Lightning Damage",[2198],1,[],[1337],2,1,[14],0
+247,"LifeLeechChaosDamage","Life Leech from Chaos Damage",[2199],1,[],[1337],2,1,[14],0
+248,"MaxLifeLeechAmount","Base Maximum Recovery per Life Leech","[9187,9261]",10,[],[1337],2,"","[0,0]",0
+249,"LifeLeechSpeed","Life Leech total Recovery per second modifier",[2927],7,[],[1337],2,1,[],0
+250,"MaxLifeLeechRecoveryRate","Maximum total Life Recovery per second from Leech","[9190,6831]",10,[],[1337],2,"","[6,0]",0
+251,"MH_ManaLeech","Main Hand Mana Leech from Physical Attacks",[303],1,[7647],"[434,1634,1336]",2,1,[14],0
+252,"OH_ManaLeech","Off Hand Mana Leech from Physical Attack Damage",[304],1,[7648],"[434,1634,1336]",2,1,[14],0
+253,"Spell_ManaLeech","Mana Leech from Spell Damage",[3094],1,[434],"[1338,1634]",2,1,[14],0
+254,"ManaLeechFromAttacks","Mana Leech from any Attack Damage",[5498],1,[],"[1338,434]",2,1,[14],0
+255,"ManaLeechPhysicalDamage","Mana Leech from Physical Damage",[2200],1,[],[1338],2,1,[14],0
+256,"ManaLeechFireDamage","Mana Leech from Fire Damage",[2201],1,[],[1338],2,1,[14],0
+257,"ManaLeechColdDamage","Mana Leech from Cold Damage",[2202],1,[],[1338],2,1,[14],0
+258,"ManaLeechLightningDamage","Mana Leech from Lightning Damage",[2203],1,[],[1338],2,1,[14],0
+259,"ManaLeechChaosDamage","Mana Leech from Chaos Damage",[2204],1,[],[1338],2,1,[14],0
+260,"MaxManaLeechAmount","Base Maximum Recovery per Mana Leech","[9188,9262]",10,[],[1338],2,"","[0,0]",0
+261,"ManaLeechSpeed","Mana Leech total Recovery per second modifier",[2929],7,[],[1338],2,1,[],0
+262,"MaxManaLeechRecoveryRate","Maximum total Mana Recovery per second from Leech","[9191,9257]",10,[],[1338],2,"","[6,0]",0
+263,"Spell_EnergyShieldLeech","Energy Shield Leech from Spell Damage",[8820],1,[434],"[8823,1634]",2,1,[14],0
+264,"EnergyShieldLeechPhysicalDamage","Energy Shield Leech from Physical Damage",[8858],1,[],[8823],2,1,[14],0
+265,"EnergyShieldLeechFireDamage","Energy Shield Leech from Fire Damage",[8818],1,[],[8823],2,1,[14],0
+266,"EnergyShieldLeechColdDamage","Energy Shield Leech from Cold Damage",[8814],1,[],[8823],2,1,[14],0
+267,"EnergyShieldLeechLightningDamage","Energy Shield Leech from Lightning Damage",[8816],1,[],[8823],2,1,[14],0
+268,"EnergyShieldLeechChaosDamage","Energy Shield Leech from Chaos Damage",[8859],1,[],[8823],2,1,[14],0
+269,"MaxEnergyShieldLeechAmount","Base Maximum Recovery per Energy Shield Leech","[9189,9263]",10,[],[8823],2,"","[0,0]",0
+270,"EnergyShieldLeechSpeed","Energy Shield Leech total Recovery per second modifier",[8828],7,[],[],2,1,[],0
+271,"MaxEnergyShieldLeechRecoveryRate","Maximum total Energy Shield Recovery per second from Leech","[9192,8811]",10,[],[8823],2,"","[6,0]",0
+272,"MH_LifeOnHit","Life gained on Main Hand Hit",[3074],0,[7647],[434],2,1,[],0
+273,"OH_LifeOnHit","Life gained on Off Hand Hit",[3075],0,[7648],[434],2,1,[],0
+274,"LifeOnSpellHit","Life gained on Hit",[1917],0,[434],[],2,1,[],0
+275,"MH_ManaOnHit","Mana gained on Main Hand Hit",[3079],0,[7647],[434],2,1,[],0
+276,"OH_ManaOnHit","Mana gained on Off Hand Hit",[3080],0,[7648],[434],2,1,[],0
+277,"ManaOnSpellHit","Mana gained on Hit",[7033],0,[434],[],2,1,[],0
+278,"ESOnSpellHit","Energy Shield gained on Hit",[7247],0,[434],[],2,1,[],0
+279,"ESOnHit","Energy Shield gained on Hit",[2788],0,[],[434],2,1,[],0
+280,"LifeOnKill","Life gained on Kill",[2290],0,[],[],2,1,[],0
+281,"ManaOnKill","Mana gained on Kill",[2405],0,[],[],2,1,[],0
+282,"ESonKill","Energy Shield gained on Kill",[2406],0,[],[],2,1,[],0
+283,"MinionDamage","Minion Damage modifier",[2446],7,[],[],2,1,[],0
+284,"MinionLife","Minion Life modifier",[159],7,[],[],2,1,[],0
+285,"MinionMana","Minion Mana modifier",[3220],7,[],[],2,1,[],0
+286,"MinionEnergyShield","Minion Energy Shield modifier",[3221],7,[],[],2,1,[],0
+287,"ProjectileSpeed","Projectile Speed modifier",[1398],7,[],[],2,1,[],0
+288,"IIQ","Increased Quantity of items dropped by slain monsters",[661],7,[],[],2,1,[],0
+289,"IIR","Increased Rarity of items dropped by slain monsters",[662],7,[],[],2,1,[],0
+290,"Experience","Experience Gain modifier",[157],7,[],[],2,1,[],0
+291,"TotemDuration","Totem Duration modifier",[429],7,[],[],2,1,[],0
+292,"TotemRange","Totem Range modifier",[167],7,[],[],2,1,[],0
+293,"TotemLife","Totem Life modifier",[166],7,[],[],2,1,[],0
+294,"TotemMana","Totem Mana modifier",[3218],7,[],[],2,1,[],0
+295,"TotemEnergyShield","Totem Energy Shield modifier",[3219],7,[],[],2,1,[],0
+296,"TrapDuration","Trap Duration modifier",[310],7,[],[],2,1,[],0
+297,"TrapTriggerRadius","Trap Trigger Radius modifier",[311],7,[],[],2,1,[],0
+298,"TrapThrowSpeed","Trap Throwing Speed modifier",[7767],7,[],[],2,1,[],0
+299,"MineDuration","Mine Duration modifier",[1820],7,[],[],2,1,[],0
+300,"MineDetonationRadius","Mine Detonation Radius modifier",[1834],7,[],[],2,1,[],0
+301,"MinePlaceSpeed","Mine Throwing Speed modifier",[9901],7,[],[],2,1,[],0
+302,"FishingRange","Fishing Range modifier",[1734],7,[],[],2,1,[],0
+303,"FishingLineStrength","Fishing Line Strength modifier",[1735],7,[],[],2,1,[],0
+304,"IFQ","Quantity of Fish caught",[1736],7,[],[],2,1,[],0
+305,"IFR","Rarity of Fish caught",[1737],7,[],[],2,1,[],0
+306,"FishingPoolConsumption","Fishing Pool Consumption modifier",[1738],7,[],[],2,1,[],0
+307,"ExoticFish","Can catch Exotic Fish",[2061],4,[],[],2,1,[],0
+308,"CorruptedFish","Can catch Corrupted Fish",[2228],4,[],[],2,1,[],0
+309,"CooldownRecovery","Cooldown Recovery Speed modifier",[3335],7,[],[],2,1,[],0
+310,"BrandNum","Brand Limit",[8428],0,[8584],[],2,1,[],0
+311,"BrandNumPerTarget","Attached Brand Limit per Target",[8789],0,[8584],[],2,1,[],0
+312,"Devotion","Devotion",[9606],0,[],[],2,1,[],0
+313,"Presence","Presence Range",[15879],11,[15571],[],2,1,[58],0
+314,"LightningDamageChargeEnd","Lightning Damage when a Charge expires or is consumed","[1316,1317]",6,[],[],3,1,[],0
+315,"EnduranceCharges","Endurance Charges","[4,2647]",3,[],[],3,"",[],0
+316,"EnduranceDuration","Endurance Charge Duration modifier",[2687],7,[],[],3,1,[],0
+317,"PhysDamageRedPerEndurance","Physical Damage Reduction per Endurance Charge",[445],1,[],[],3,1,[],0
+318,"ElementalResistPerEndurance","Additional Elemental Resistance per Endurance Charge",[142],1,[],[],3,1,[],0
+319,"BuffDurationPerEndurance","Buff/Debuff Duration modifier per Endurance Charge",[359],7,[],[],3,1,[],0
+320,"CritRedPerEndurance","Enemy Crit. Multiplier modifier per Endurance Charge",[98],7,[],[],3,1,[1],0
+321,"LifeRegenPerEndurance","Life Regeneration per second per Endurance Charge",[126],1,[],[],3,1,[2],0
+322,"MeleeDamagePerEnduranceCharge","Melee Damage modifier per Endurance Charge",[4598],7,[],[],3,1,[],0
+323,"PhysicalDamagePerEnduranceCharge","Physical Damage modifier per Endurance Charge",[2624],7,[],[],3,1,[],0
+324,"FrenzyCharges","Frenzy Charges","[5,2648]",3,[],[],3,"",[],0
+325,"FrenzyDuration","Frenzy Charge Duration modifier",[1790],7,[],[],3,1,[],0
+326,"AttackSpeedPerFrenzy","Attack Speed modifier per Frenzy Charge",[1647],7,[],[],3,1,[],0
+327,"CastSpeedPerFrenzy","Cast Speed modifier per Frenzy Charge",[1648],7,[],[],3,1,[],0
+328,"MoreDamagePerFrenzyCharge","Damage modifier per Frenzy Charge",[6450],8,[],[],3,1,[],0
+329,"DamageOverTimePerFrenzyCharge","Damage over Time modifier per Frenzy Charge",[6313],7,[],[],3,1,[],0
+330,"MovementSpeedPerFrenzy","Movement Speed modifier per Frenzy Charge",[178],7,[],[],3,1,[],0
+331,"StunRecoveryPerFrenzy","Stun Recovery modifier per Frenzy Charge",[222],7,[],[],3,1,[],0
+332,"PhysicalDamagePerFrenzy","Physical Damage modifier per Frenzy Charge",[364],7,[],[],3,1,[],0
+333,"EvasionPerFrenzyCharge","Evasion Rating modifier per Frenzy Charge",[122],7,[],[],3,1,[],0
+334,"DodgePerFrenzy","Dodge chance per Frenzy Charge",[1266],1,[],[],3,1,[],0
+335,"ProjectileSpeedPerFrenzy","Projectile Speed modifier per Frenzy Charge",[1399],7,[],[],3,1,[],0
+336,"LifeRegenPerFrenzy","Life Regeneration per second per Frenzy Charge",[1391],1,[],[],3,1,[2],0
+337,"AccuracyPerFrenzy","Accuracy Rating modifier per Frenzy Charge",[1781],7,[],[],3,1,[],0
+338,"LightningDamagePerFrenzy","Lightning Damage modifier per Frenzy Charge",[2289],7,[],[],3,1,[],0
+339,"DamageTakenPerFrenzy","Damage Taken modifier per Frenzy Charge",[2288],7,[],[],3,1,[],0
+340,"LifeOnKillPerFrenzy","Life gained on Kill per Frenzy Charge",[2291],0,[],[],3,1,[],0
+341,"ElementalDamagePerFrenzyCharge","Elemental Damage modifier per Frenzy Charge",[2711],7,[],[],3,1,[],0
+342,"AttackDamagePerFrenzyCharge","Attack Damage modifier per Frenzy Charge",[3482],7,[],[],3,1,[],0
+343,"DamageNoFrenzyCharges","Damage modifier with no Frenzy Charges",[4111],7,[],[],3,1,[],0
+344,"PowerCharges","Power Charges","[6,2649]",3,[],[],3,"",[],0
+345,"PowerDuration","Power Charge Duration modifier",[2686],7,[],[],3,1,[],0
+346,"CritPerPower","Critical Strike Chance modifier per Power Charge",[554],7,[],[],3,1,[],0
+347,"MoreSpellDamagePerPower","Spell damage modifier per Power Charge",[6312],8,[],[],3,1,[],0
+348,"KeystoneMoreSpellDamagePerPower","Spell damage modifier per Power Charge",[9384],8,[],[],3,1,[],0
+349,"CastSpeedPerPower","Cast Speed modifier per Power Charge",[217],7,[],[],3,1,[],0
+350,"AoEPerPower","Area of Effect Radius modifier per Power Charge",[423],7,[],[],3,1,[],0
+351,"SpellDamagePerPower","Spell Damage modifier per Power Charge",[424],7,[],[],3,1,[],0
+352,"WandDamagePerPower","Wand Damage modifier per Power Charge",[425],7,[],[],3,1,[],0
+353,"ProjectileDamagePerPower","Projectile Damage modifier per Power Charge",[1400],7,[],[],3,1,[],0
+354,"DamageOverTimePerPowerCharge","Damage over Time modifier per Power Charge",[6314],7,[],[],3,1,[],0
+355,"ManaRegenPerPower","Mana Regeneration per second per Power Charge",[132],1,[],[],3,1,[2],0
+356,"ManaRegenIncrPerPower","Mana Regeneration rate modifier per Power Charge",[486],7,[],[],3,1,[],0
+357,"SpiritCharges","Spirit Charges","[6526,7256]",3,[],[],3,1,[],0
+358,"SiphoningCharges","Siphoning Charges","[7317,7318]",3,[],[],3,1,[],0
+359,"PhysicalDamagePerSiphoning","Physical Damage to Attacks per Siphoning Charge","[7321,7322]",2,[],[],3,1,[],0
+360,"LifeLeechPerSiphoning","Life Leech from any Damage per Siphoning Charge",[7323],1,[],[],3,1,[14],0
+361,"ExtraChoasDamagePerSiphoning","Non-Chaos Damage as extra Chaos Damage per Siphoning Charge",[7324],1,[],[],3,1,[],0
+362,"PhysDamageReductionPerSiphoning","Physical Damage reduction from Hits per Siphoning Charge",[7325],1,[],[],3,1,[],0
+363,"PhysDamageTakenPerSiphoning","Physical Damage per Second per Siphoning Charge",[7333],0,[],[],3,1,[2],0
+364,"BlitzCharges","Blitz Charges","[9677,9676]",3,[],[],3,1,[],0
+365,"AttackSpeedPerBlitz","Attack Speed modifier per Blitz Charge",[9674],8,[],[],3,1,[],0
+366,"CritChancePerBlitz","Critical Strike Chance modifier per Blitz Charge",[9675],7,[],[],3,1,[],0
+367,"ChallengerCharges","Challenger Charges","[9773,9772]",3,[],[],3,1,[],0
+368,"AttackMoveSpeedPerChallenger","Attack and Movement Speed modifier per Challenger Charge",[9776],8,[],[],3,1,[],0
+369,"BrutalCharges","Brutal Charges","[13421,13423]",3,[],[],3,1,[],0
+370,"TripleDamageChancePerBrutalCharge","Chance to deal Triple Damage per Brutal Charge",[13445],1,[13423],[],3,1,[],0
+371,"StunThresholdPerBrutalCharge","Stun Threshold modifier per Brutal Charge",[13446],7,[13423],[],3,1,[],0
+372,"AfflictionCharges","Affliction Charges","[13425,13427]",3,[],[],3,1,[],0
+373,"AilmentDamagePerAfflictionCharge","Ailment Damage modifier per Affliction Charge",[13447],8,[13427],[],3,1,[],0
+374,"NonDamagingAilmentEffectPerAfflictionCharge","Non-Damaging Ailment Effect modifier per Affliction Charge",[13448],8,[13427],[],3,1,[],0
+375,"AbsorptionCharges","Absorption Charges","[13429,13431]",3,[],[],3,1,[],0
+376,"ElementalDamageGoesToESPerAbsorptionCharge","Elemental Damage taken Recouped as ES per Absorption Charge",[13449],1,[13431],[],3,1,[],0
+377,"BloodCharges","Blood Charges","[13942,14086]",3,[14158],[],3,"",[],0
+378,"ReapDamagePerBloodCharge","Damage modifier per Blood Charge",[13943],8,[14158],[],3,1,[],0
+379,"ReapCostPerBloodCharge","Life Cost modifier per Blood Charge",[13944],8,[14158],[],3,1,[],0
