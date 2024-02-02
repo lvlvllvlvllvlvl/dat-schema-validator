@@ -1,0 +1,156 @@
+[
+  {
+    "name": "MonsterVarietiesKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Spirit_ModsKeys",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Touched_ModsKeys",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Possessed_ModsKeys",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MinZoneLevel",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "MaxZoneLevel",
+    "offset": 68,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "SpawnWeight",
+    "offset": 72,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "SummonedMonster_MonsterVarietiesKey",
+    "offset": 76,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 92,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "ModsKeys0",
+    "offset": 96,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ModsKeys1",
+    "offset": 112,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  }
+]

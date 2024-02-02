@@ -1,0 +1,220 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "BuffDDSFile",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "EPKFiles1",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "size": 16
+  },
+  {
+    "name": "EPKFiles2",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "size": 16
+  },
+  {
+    "name": "PreloadGroups",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "PreloadGroups"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "BuffName",
+    "offset": 65,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "MiscAnimated1",
+    "offset": 73,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MiscAnimated2",
+    "offset": 89,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BuffDescription",
+    "offset": 105,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "EPKFile",
+    "offset": 113,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "HasExtraArt",
+    "offset": 121,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "ExtraArt",
+    "offset": 122,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 130,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EPKFiles",
+    "offset": 146,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "size": 16
+  },
+  {
+    "name": "BuffVisualOrbs",
+    "offset": 162,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "BuffVisualOrbs"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MiscAnimated3",
+    "offset": 178,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MiscAnimated"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 194,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  }
+]

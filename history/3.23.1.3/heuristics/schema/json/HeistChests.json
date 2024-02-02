@@ -1,0 +1,58 @@
+[
+  {
+    "name": "ChestsKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Chests"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Weight",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "HeistAreasKey",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "HeistAreas"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "HeistChestTypesKey",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  }
+]
