@@ -1,0 +1,72 @@
+[
+  {
+    "name": "BlightTowersKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BlightTowers"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "MonsterVarietiesKey",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Cost",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  }
+]

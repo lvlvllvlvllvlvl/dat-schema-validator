@@ -1,0 +1,283 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "TimeoutInSeconds",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "ChargesShared",
+    "offset": 12,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "Player_ShrineBuffsKey",
+    "offset": 13,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 29,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 33,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Monster_ShrineBuffsKey",
+    "offset": 37,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "SummonMonster_MonsterVarietiesKey",
+    "offset": 53,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "SummonPlayer_MonsterVarietiesKey",
+    "offset": 69,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 85,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 89,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "ShrineSoundsKey",
+    "offset": 93,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ShrineSounds"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 109,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "AchievementItemsKeys",
+    "offset": 110,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "IsPVPOnly",
+    "offset": 126,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 127,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "IsLesserShrine",
+    "offset": 128,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "Description",
+    "offset": 129,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Name",
+    "offset": 145,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ClientStrings"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 161,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 162,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 178,
+    "size": 16,
+    "unknownArray": true
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "name": "MonsterVariety",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "MonsterHeightBracket",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterHeightBrackets"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  }
+]
