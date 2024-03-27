@@ -1,0 +1,56 @@
+type UltimatumEncounters {
+  Id: string @unique
+  Description: string
+  ModTypes: [UltimatumModifierTypes]
+  BossARMFile: string
+  Type: UltimatumEncounterTypes
+  Icon: string
+  HASH16: i32
+  _: bool
+  _: i32
+  _: bool
+}
+
+type UltimatumEncounterTypes {
+  Id: string @unique
+  Name: string
+  ProgressBarText: string
+  _: bool
+  _: bool
+  NormalAchievements: [AchievementItems]
+  InscribedAchievement: AchievementItems
+  _: rid
+}
+
+type UltimatumItemisedRewards {
+  Id: string @unique
+  HASH16: i32
+  RewardText: string
+  ItemVisualIdentityKey: ItemVisualIdentity
+  RewardType: i32
+  SacrificeItem: BaseItemTypes
+  SacrificeAmount: i32
+  SacrificeText: string
+  _: bool
+  TrialMods: [Mods]
+}
+
+type UltimatumMapModifiers {
+  Stat: Stats
+  Mods: [UltimatumModifiers]
+}
+
+type UltimatumModifierTypes {
+  Id: string @unique
+  _: bool
+}
+
+type UltimatumTrialMasterAudio {
+  Id: string
+  Variant: i32
+  _: i32
+  _: i32
+  TextAudio: NPCTextAudio
+  RoundsMin: i32
+  RoundsMax: i32
+}

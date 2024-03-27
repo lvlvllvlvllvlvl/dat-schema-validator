@@ -1,0 +1,33 @@
+type RitualBalancePerLevel {
+  MinLevel: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: f32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}
+
+type RitualConstants {
+  Id: string @unique
+  Value: f32
+}
+
+type RitualSetKillAchievements {
+  Achievement: AchievementItems
+  KillBosses: [MonsterVarieties]
+}
+
+type RitualSpawnPatterns {
+  Id: string @unique
+  _: i32
+  SpawnOrder: [string]
+  _: bool
+}
