@@ -17,15 +17,15 @@ type PantheonPanelLayout {
   Effect4_Values: [i32]
   GodName1: string
   Effect2_Values: [i32]
-  QuestState1: QuestStates
-  _: bool
-  _: [_]
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: rid
+  QuestFlag: QuestFlags
+  IsDisabled: bool
+  AchievementItems: [AchievementItems]
+  LeagueQuestFlag1: i32
+  LeagueQuestFlag2: i32
+  LeagueQuestFlag3: i32
+  DowngradeFlag1: QuestFlags
+  DowngradeFlag2: QuestFlags
+  DowngradeFlag3: QuestFlags
 }
 
 type PantheonSouls @tags(list: ["item:itemized"]) {

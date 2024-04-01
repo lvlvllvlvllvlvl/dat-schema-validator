@@ -2668,7 +2668,7 @@ type MapSeriesTiers {
   CrucibleTier: i32
   AncestorTier: i32
   AzmeriTier: i32
-  _: i32
+  NecropolisTier: i32
 }
 
 type MapStashSpecialTypeEntries {
@@ -5895,7 +5895,7 @@ type ItemisedCorpse {
 
 # Added 3.24
 type ItemisedNecropolisPacks {
-  Item: BaseItemTypes
+  Item: BaseItemTypes @unique
   Pack: NecropolisPacks
   Description: string
 }

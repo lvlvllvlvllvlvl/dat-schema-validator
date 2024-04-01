@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1711737704,
+  "createdAt": 1711860978,
   "tables": [
     {
       "name": "RogueExiles",
@@ -4512,14 +4512,118 @@
           "files": null
         },
         {
-          "name": "QuestState1",
+          "name": "QuestFlag",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "QuestStates"
+            "table": "QuestFlags"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "IsDisabled",
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "AchievementItems",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "AchievementItems"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "LeagueQuestFlag1",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "LeagueQuestFlag2",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "LeagueQuestFlag3",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "DowngradeFlag1",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "QuestFlags"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "DowngradeFlag2",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "QuestFlags"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "DowngradeFlag3",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "QuestFlags"
           },
           "until": null,
           "file": null,
@@ -28513,7 +28617,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
@@ -54560,6 +54664,18 @@
         },
         {
           "name": "AzmeriTier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": "NecropolisTier",
           "description": null,
           "array": false,
           "type": "i32",

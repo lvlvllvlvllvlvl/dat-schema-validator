@@ -228,7 +228,7 @@
     "size": 16
   },
   {
-    "name": "QuestState1",
+    "name": "QuestFlag",
     "offset": 193,
     "unknownArray": false,
     "unique": false,
@@ -236,44 +236,41 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestStates"
+        "name": "QuestFlags"
       }
     },
     "size": 16
   },
   {
+    "name": "IsDisabled",
+    "offset": 209,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 209,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "AchievementItems",
+    "offset": 210,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AchievementItems"
       }
     },
-    "offset": 210,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "LeagueQuestFlag1",
     "offset": 226,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -281,11 +278,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "LeagueQuestFlag2",
     "offset": 230,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -293,41 +292,62 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "LeagueQuestFlag3",
     "offset": 234,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "DowngradeFlag1",
     "offset": 238,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "QuestFlags"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "DowngradeFlag2",
     "offset": 254,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "QuestFlags"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "DowngradeFlag3",
     "offset": 270,
-    "size": 16,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
+      }
+    },
+    "size": 16
   }
 ]
