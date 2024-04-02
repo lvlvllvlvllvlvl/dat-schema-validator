@@ -2999,6 +2999,7 @@ enum ModDomains @indexing(first: 1) {
   CRUCIBLE_MAP
   TINCTURE
   ANIMAL_CHARM
+  NECROPOLIS_MONSTER
 }
 
 type ModEffectStats {
@@ -3056,6 +3057,9 @@ enum ModGenerationType @indexing(first: 1) {
   _
   WEAPON_TREE
   WEAPON_TREE_RECOMBINED
+  _
+  NECROPOLIS_HAUNTED
+  NECROPOLIS_DEVOTED
 }
 
 type Mods @tags(list: ["crafting"]) {
