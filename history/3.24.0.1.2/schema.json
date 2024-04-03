@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1711954123,
+  "createdAt": 1712079366,
   "tables": [
     {
       "name": "RogueExiles",
@@ -31832,12 +31832,11 @@
           "name": "Mainhand_AnimationKey",
           "description": null,
           "array": false,
-          "type": "string",
+          "type": "row",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "Animation",
-            "column": "Id"
+            "table": "Animation"
           },
           "until": null,
           "file": null,
@@ -31847,12 +31846,11 @@
           "name": "Offhand_AnimationKey",
           "description": null,
           "array": false,
-          "type": "string",
+          "type": "row",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "Animation",
-            "column": "Id"
+            "table": "Animation"
           },
           "until": null,
           "file": null,
@@ -31875,6 +31873,58 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "row",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Animation"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "row",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Animation"
+          },
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
@@ -36239,6 +36289,18 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
@@ -50203,6 +50265,18 @@
         },
         {
           "name": "UsedInMapDevice",
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null
+        },
+        {
+          "name": null,
           "description": null,
           "array": false,
           "type": "bool",

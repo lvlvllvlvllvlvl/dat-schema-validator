@@ -266,18 +266,14 @@ type Animation {
   _: bool
   _: bool
   _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  Mainhand_AnimationKey: Animation
+  Offhand_AnimationKey: Animation
   _: bool
   _: rid
-  _: i32
-  _: i32
+  _: Animation
   _: bool
-  _: i32
-  _: i32
-  _: [_] # All rows empty
+  _: Animation
+  _: [string]
 }
 
 type ApplyDamageFunctions {
