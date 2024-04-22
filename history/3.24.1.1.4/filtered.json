@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1712277582,
+  "createdAt": 1713701502,
   "tables": [
     {
       "name": "RogueExiles",
@@ -66189,13 +66189,15 @@
           "files": null
         },
         {
-          "name": null,
+          "name": "NPCs",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "NPCs"
+          },
           "until": null,
           "file": null,
           "files": null

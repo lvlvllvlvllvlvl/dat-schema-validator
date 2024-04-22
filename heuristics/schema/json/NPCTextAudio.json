@@ -133,14 +133,15 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "NPCs",
     "offset": 70,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "NPCs"
       }
     },
     "size": 16
