@@ -1,0 +1,44 @@
+[
+  {
+    "name": "BaseItemType",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  }
+]

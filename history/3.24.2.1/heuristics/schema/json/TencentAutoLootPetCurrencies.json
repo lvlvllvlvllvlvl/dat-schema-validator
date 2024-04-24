@@ -1,0 +1,38 @@
+[
+  {
+    "name": "BaseItemTypesKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 17,
+    "size": 16,
+    "unknownArray": true
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "WorldAreasKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MonsterVarietiesKeys",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TerrainMetadata",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  }
+]
