@@ -1,0 +1,73 @@
+[
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 0,
+    "size": 8
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 8,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 24,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 40,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 56,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 72,
+    "size": 16,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 88,
+    "size": 8,
+    "unique": false
+  }
+]
