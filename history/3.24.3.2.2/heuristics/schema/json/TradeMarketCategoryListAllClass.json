@@ -1,0 +1,30 @@
+[
+  {
+    "name": "TradeCategory",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "TradeMarketCategory"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ItemClass",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
+    },
+    "size": 16
+  }
+]
