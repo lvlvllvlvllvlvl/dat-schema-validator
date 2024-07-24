@@ -1,0 +1,153 @@
+[
+  {
+    "name": "MonsterVarietiesKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BestiaryGroupsKey",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "BestiaryGroups"
+      }
+    },
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 32,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 48,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 49,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 57,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 65,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 81,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 97,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 98,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 102,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 106,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 107,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 111,
+    "size": 1,
+    "unique": false
+  }
+]
