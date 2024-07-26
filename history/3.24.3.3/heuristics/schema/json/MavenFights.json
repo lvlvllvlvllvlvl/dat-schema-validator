@@ -157,60 +157,23 @@
     "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "name": "QuestFlags"
       }
     },
-    "size": 4
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 88,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 92,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 96,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "name": "",
+    "offset": 100,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 100,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "type": {
@@ -225,25 +188,31 @@
     "unknownArray": true
   },
   {
+    "name": "Achievements1",
+    "offset": 117,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AchievementItems"
       }
     },
-    "offset": 117,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "Achievements2",
+    "offset": 133,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AchievementItems"
       }
     },
-    "offset": 133,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   }
 ]

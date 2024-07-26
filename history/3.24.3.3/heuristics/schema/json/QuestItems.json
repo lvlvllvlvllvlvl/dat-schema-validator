@@ -68,64 +68,76 @@
     "unknownArray": true
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 68,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 69,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 70,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 86,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 86,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Script",
+    "offset": 102,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 102,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "",
+    "offset": 110,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 110,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "type": {

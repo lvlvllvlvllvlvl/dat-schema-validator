@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1721411216,
+  "createdAt": 1721912476,
   "tables": [
     {
       "name": "RogueExiles",
@@ -5113,18 +5113,6 @@
           "references": {
             "table": "BestiaryGroups"
           },
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": "Name",
-          "description": null,
-          "array": false,
-          "type": "string",
-          "unique": false,
-          "localized": false,
-          "references": null,
           "until": null,
           "file": null,
           "files": null
@@ -14158,7 +14146,7 @@
           "name": null,
           "description": null,
           "array": true,
-          "type": "string",
+          "type": "array",
           "unique": false,
           "localized": false,
           "references": null,
@@ -18486,18 +18474,6 @@
           "references": {
             "table": "WorldAreas"
           },
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
           "until": null,
           "file": null,
           "files": null
@@ -42844,9 +42820,9 @@
           "files": null
         },
         {
-          "name": "Corrupted_ENVFile",
+          "name": "Corrupted_ENVFiles",
           "description": null,
-          "array": false,
+          "array": true,
           "type": "string",
           "unique": false,
           "localized": false,
@@ -42858,7 +42834,7 @@
         {
           "name": null,
           "description": null,
-          "array": false,
+          "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
@@ -42870,7 +42846,7 @@
         {
           "name": null,
           "description": null,
-          "array": false,
+          "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
@@ -51324,7 +51300,7 @@
         {
           "name": "Shield",
           "description": null,
-          "array": false,
+          "array": true,
           "type": "string",
           "unique": false,
           "localized": false,
@@ -69397,20 +69373,6 @@
         {
           "name": null,
           "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "QuestFlags"
-          },
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
           "array": true,
           "type": "array",
           "unique": false,
@@ -69449,18 +69411,6 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,

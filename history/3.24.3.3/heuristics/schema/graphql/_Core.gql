@@ -1425,12 +1425,12 @@ type EndlessLedgeChests {
 type Environments {
   Id: string @unique
   Base_ENVFile: string @file(ext: ".env")
-  _: [string]
-  _: [string]
+  Corrupted_ENVFiles: [string] @file(ext: ".env")
+  _: [rid]
+  _: [rid]
   _: [_]
-  _: [_]
-  _: rid
-  _: rid
+  EnvironmentTransitionsKey: EnvironmentTransitions
+  PreloadGroup: PreloadGroups
   _: bool
 }
 
@@ -2328,7 +2328,7 @@ type ItemVisualEffect {
   TwoHandedAxeEPKFile: string @file(ext: ".epk")
   ClawEPKFile: string @file(ext: ".epk")
   PETFile: string @file(ext: ".pet")
-  _: [string]
+  Shield: [string] @file(ext: ".epk")
   _: bool
 }
 
@@ -4315,7 +4315,7 @@ type QuestItems {
   _: bool
   _: rid
   _: rid
-  _: string
+  Script: string
   _: rid
   _: rid
   _: i32

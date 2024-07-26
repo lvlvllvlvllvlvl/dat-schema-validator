@@ -27,14 +27,11 @@ type MavenFights {
   _: QuestFlags
   _: i32
   WitnessAreas: [WorldAreas]
-  _: i32
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: QuestFlags
   _: bool
   _: [_] # All rows empty
-  _: [_]
-  _: [_]
+  Achievements1: [AchievementItems]
+  Achievements2: [AchievementItems]
 }
 
 type MavenJewelRadiusKeystones {

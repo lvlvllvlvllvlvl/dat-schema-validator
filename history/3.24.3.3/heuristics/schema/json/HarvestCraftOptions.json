@@ -69,6 +69,10 @@
     "unknownArray": true
   },
   {
+    "name": "HASH16",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -76,60 +80,35 @@
         "size": 4
       }
     },
-    "offset": 64,
     "size": 4
   },
   {
+    "name": "Description",
+    "offset": 68,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 68,
     "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "IsEnchant",
     "offset": 76,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 77,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 81,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 85,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "LifeforceType",
+    "offset": 77,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -137,55 +116,73 @@
         "size": 4
       }
     },
-    "offset": 86,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "LifeforceCost",
+    "offset": 81,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "SacredCost",
+    "offset": 85,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 89,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "Achievements",
+    "offset": 90,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AchievementItems"
       }
     },
-    "offset": 90,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 106,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "offset": 107,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 108,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 109,
-    "size": 1,
-    "unique": false
+    "size": 4
   }
 ]
