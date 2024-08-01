@@ -5629,20 +5629,20 @@ type craftingspreetype {
 }
 
 # Added 3.25
-type currencyexchange {
-  _: rid
-  _: rid
-  _: rid
+type CurrencyExchange {
+  Item: BaseItemTypes
+  Category: CurrencyExchangeCategories
+  SubCategory: CurrencyExchangeCategories
   _: bool
-  _: bool
-  _: i32
+  EnabledInChallengeLeague: bool
+  GoldPurchaseFee: i32
   _: bool
 }
 
 # Added 3.25
-type currencyexchangecategories {
-  _: string
-  _: string
+type CurrencyExchangeCategories {
+  Id: string
+  Name: string
 }
 
 # Added 3.21
