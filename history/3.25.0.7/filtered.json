@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "createdAt": 1722419861,
+  "createdAt": 1723180065,
   "tables": [
     {
       "name": "RogueExiles",
@@ -23444,7 +23444,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
