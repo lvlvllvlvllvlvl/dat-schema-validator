@@ -6149,6 +6149,7 @@ type MonsterStatueOverrides {
   _: i32
 }
 
+# Added 3.25
 type mtxtypegamespecific {
   _: rid
   _: i32
@@ -6157,6 +6158,7 @@ type mtxtypegamespecific {
   _: [_]
 }
 
+# Added 3.25
 type mtxtypes {
   _: string
   _: i32
