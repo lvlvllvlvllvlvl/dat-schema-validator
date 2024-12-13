@@ -16,5 +16,8 @@
   "prettier": {
     "printWidth": 100,
     "bracketSameLine": true
+  },
+  "scripts": {
+    "postinstall": "node build/patch-wasm.js"
   }
 }

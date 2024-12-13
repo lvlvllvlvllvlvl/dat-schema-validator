@@ -6,12 +6,7 @@ import * as fs from "fs/promises";
 import { tmpdir } from "os";
 import path from "path";
 import { SCHEMA_URL, SchemaFile } from "pathofexile-dat-schema";
-import {
-  analyzeDatFile,
-  readDatFile,
-  setWasmExports,
-  validateHeader,
-} from "pathofexile-dat/dat.js";
+import { analyzeDatFile, readDatFile, validateHeader } from "pathofexile-dat/dat.js";
 import { argv, exit } from "process";
 import { onExit } from "signal-exit";
 import { ShapeChange } from "./changes.js";
@@ -142,9 +137,6 @@ if (args && schemaArg) {
 const loader = await FileLoader.create(
   await CdnBundleLoader.create(path.join(".cache"), version, !!versionArg)
 );
-const wasm = await fs.readFile("node_modules/pathofexile-dat/dist/analysis.wasm");
-const { instance } = await WebAssembly.instantiate(wasm);
-setWasmExports(instance.exports as any);
 
 const getType = ({ type }: NamedHeader) =>
   Object.keys(type)
@@ -166,9 +158,9 @@ await fs.mkdir(`${heuristics}/schema/json`, R);
 await fs.mkdir(`${heuristics}/schema/graphql`, R);
 
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
-  Object.fromEntries(schema.tables.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t])),
+  Object.fromEntries(schema.tables.map((t) => [`data/${t.name}.datc64`.toLowerCase(), t])),
   Object.fromEntries(
-    schema.enumerations?.map((t) => [`data/${t.name}.dat64`.toLowerCase(), t]) || []
+    schema.enumerations?.map((t) => [`data/${t.name}.datc64`.toLowerCase(), t]) || []
   )
 );
 loader.clearBundleCache();
@@ -177,7 +169,7 @@ const files = loader
   .listFiles("Data")
   .filter(
     (f) =>
-      f.endsWith(".dat64") &&
+      f.endsWith(".datc64") &&
       (allTables || tablesToProcess?.includes(path.parse(f).name.toLowerCase()))
   )
   .sort();
@@ -211,7 +203,7 @@ await Promise.all(
 
       tablesSeen.add(table.name);
 
-      const datFiles = data.map((d) => readDatFile(".dat64", d.buf));
+      const datFiles = data.map((d) => readDatFile(".datc64", d.buf));
       const columnStats = datFiles.map(analyzeDatFile);
       if (
         !datFiles.every(
@@ -247,8 +239,8 @@ await Promise.all(
               const change = changeVer ? ` Last changed in version ${changeVer}` : "";
               errors.push(
                 Array.isArray(header)
-                  ? `${table.name}.dat64 column ${i + 1} "<unknown>": array not valid.${change}`
-                  : `${table.name}.dat64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
+                  ? `${table.name}.datc64 column ${i + 1} "<unknown>": array not valid.${change}`
+                  : `${table.name}.datc64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
                       header
                     )} not valid at offset ${header.offset}.${change}`
               );
@@ -274,7 +266,7 @@ await Promise.all(
           )
         )[0];
 
-        if (possible.length) {
+        if (possible?.length) {
           const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFiles[0]) : p));
           progress.push(
             fs.writeFile(
@@ -363,7 +355,7 @@ errors.length &&
 const missing = schema.tables
   .map((t) => t.name)
   .filter((t) => !tablesSeen.has(t))
-  .map((t) => `missing file ${t}.dat64`)
+  .map((t) => `missing file ${t}.datc64`)
   .sort();
 missing.length &&
   progress.push(
