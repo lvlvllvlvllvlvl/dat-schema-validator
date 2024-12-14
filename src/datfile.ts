@@ -291,7 +291,7 @@ export interface NamedHeader extends Header {
   };
 }
 
-const VALID_TYPES = ["bool", "string", "i32", "f32", "row", "foreignrow", "enumrow"];
+const VALID_TYPES = ["bool", "string", "i32", "i16", "f32", "row", "foreignrow", "enumrow"];
 
 export function importHeaders(sch: SchemaTable): NamedHeader[];
 export function importHeaders(
@@ -348,8 +348,9 @@ export function importHeaders(
             // : column.type === 'i16' ? { unsigned: false, size: 2 }
             column.type === "i32"
               ? { unsigned: false, size: 4 }
-              : // : column.type === 'i64' ? { unsigned: false, size: 8 }
-              column.type === "enumrow"
+              : column.type === "i16"
+              ? { unsigned: false, size: 2 }
+              : column.type === "enumrow"
               ? { unsigned: false, size: 4 }
               : undefined,
           decimal:
