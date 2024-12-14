@@ -109,7 +109,7 @@ if (args && versionArg) {
 } else {
   version = (
     await fetch(
-      `https://lvlvllvlvllvlvl.github.io/poecdn-bundle-index/poe${poe2 ? 2 : ""}/urls.json`
+      `https://lvlvllvlvllvlvl.github.io/poecdn-bundle-index/poe${poe2 ? 2 : 1}/urls.json`
     ).then((r) => r.json())
   ).urls[0]
     .split("/")
