@@ -163,6 +163,7 @@ const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
     schema.enumerations?.map((t) => [`data/${t.name}.datc64`.toLowerCase(), t]) || []
   )
 );
+loader.clearBundleCache();
 const allTables = !args?.find((v) => v === "-t" || v === "--table" || v === "--tables");
 const files = loader
   .listFiles("Data")
@@ -176,162 +177,164 @@ progress.requests?.setTotal(files.length * includeTranslations.length);
 progress.processing?.setTotal(files.length);
 
 let concurrentLoads = 0;
-for (const file of files) {
-  const fileComponents = path.parse(file);
-  const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
-  const data = await Promise.all(
-    includeTranslations.map(async (tr) => {
-      while (concurrentLoads > 30) await sleep(100);
-      concurrentLoads++;
-      progress.increment("requests", { table: file.replace(/^data/, tr.path) });
-      const buf = await loader.getFileContents(file.replace(/^data/, tr.path));
-      concurrentLoads--;
-      return { ...tr, buf };
-    })
-  );
-  try {
-    const csvName = metafiles[table.name.toLowerCase()];
-    const csvFile = csvName && (await fs.readFile(csvName));
-    delete metafiles[table.name.toLowerCase()];
-    const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
-    table.added = meta?.[0]?.version;
-    if (csvName && csvName !== csvName.toLowerCase() && table.name === table.name.toLowerCase()) {
-      table.name = path.parse(csvName).name;
-    }
-
-    tablesSeen.add(table.name);
-
-    const datFiles = data.map((d) => readDatFile(".datc64", d.buf));
-    const columnStats = datFiles.map(analyzeDatFile);
-    if (
-      !datFiles.every(
-        (f) => f.rowLength === datFiles[0].rowLength || f.rowCount === datFiles[0].rowCount
-      )
-    ) {
-      console.warn("Not all data are equal");
-    }
-    if (!columnStats.every((f) => f.length === columnStats[0].length)) {
-      console.warn("Not all stats are equal");
-    }
-    if (columnStats[0].length !== datFiles[0].rowLength) {
-      console.warn("Not stats data are equal");
-    }
-    table.columns = table.columns || [];
-
-    if (datFiles[0].rowLength) {
-      let invalid = table.columns.length;
-      const headers = importHeaders(
-        table,
-        (...args) => errors.push(args.join(" ")),
-        datFiles,
-        columnStats
-      );
-      headers.forEach((header, i) => {
-        try {
-          if (
-            (Array.isArray(header) && !header.length) ||
-            (!Array.isArray(header) && !columnStats.every((s) => validateHeader(header, s)))
-          ) {
-            invalid = Math.min(invalid, i);
-            const changeVer = meta?.findLast((v) => v.version !== version)?.version;
-            const change = changeVer ? ` Last changed in version ${changeVer}` : "";
-            errors.push(
-              Array.isArray(header)
-                ? `${table.name}.datc64 column ${i + 1} "<unknown>": array not valid.${change}`
-                : `${table.name}.datc64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
-                    header
-                  )} not valid at offset ${header.offset}.${change}`
-            );
-          }
-        } catch (e) {
-          console.error("Validation error", header, e);
-        }
-      });
-
-      //Remove all columns after first invalid column
-      if (invalid < table.columns.length) {
-        table.columns = table.columns.slice(0, invalid);
+await Promise.all(
+  files.map(async (file) => {
+    const fileComponents = path.parse(file);
+    const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
+    const data = await Promise.all(
+      includeTranslations.map(async (tr) => {
+        while (concurrentLoads > 30) await sleep(100);
+        concurrentLoads++;
+        progress.increment("requests", { table: file.replace(/^data/, tr.path) });
+        const buf = await loader.getFileContents(file.replace(/^data/, tr.path));
+        concurrentLoads--;
+        return { ...tr, buf };
+      })
+    );
+    try {
+      const csvName = metafiles[table.name.toLowerCase()];
+      const csvFile = csvName && (await fs.readFile(csvName));
+      delete metafiles[table.name.toLowerCase()];
+      const meta: ShapeChange[] = csvFile ? csvParse(csvFile, { columns: true }) : [];
+      table.added = meta?.[0]?.version;
+      if (csvName && csvName !== csvName.toLowerCase() && table.name === table.name.toLowerCase()) {
+        table.name = path.parse(csvName).name;
       }
 
-      const possible = (
-        await getPossibleHeaders(
-          headers.slice(0, invalid).reduce((arr, h) => {
-            arr[Array.isArray(h) ? h[0].offset : h.offset] = h;
-            return arr;
-          }, [] as PossibleHeaders),
-          columnStats,
-          datFiles
-        )
-      )[0];
+      tablesSeen.add(table.name);
 
-      if (possible?.length) {
-        const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFiles[0]) : p));
-        progress.push(
-          fs.writeFile(
-            path.join(`${heuristics}/csv`, `${table.name}.csv`),
-            csv.stringify(
-              exportAllRows(
-                hdr,
-                data.map(({ name }, i) => ({ name, datFile: datFiles[i] })),
-                table.name,
-                args?.includes("--validate")
-              ),
-              {
-                cast: {
-                  string: (v) => JSON.stringify(v).slice(1, -1),
-                },
-                quoted_empty: true,
-                quoted_string: true,
-              }
-            )
-          ),
-          `${table.name}.csv`
+      const datFiles = data.map((d) => readDatFile(".datc64", d.buf));
+      const columnStats = datFiles.map(analyzeDatFile);
+      if (
+        !datFiles.every(
+          (f) => f.rowLength === datFiles[0].rowLength || f.rowCount === datFiles[0].rowCount
+        )
+      ) {
+        console.warn("Not all data are equal");
+      }
+      if (!columnStats.every((f) => f.length === columnStats[0].length)) {
+        console.warn("Not all stats are equal");
+      }
+      if (columnStats[0].length !== datFiles[0].rowLength) {
+        console.warn("Not stats data are equal");
+      }
+      table.columns = table.columns || [];
+
+      if (datFiles[0].rowLength) {
+        let invalid = table.columns.length;
+        const headers = importHeaders(
+          table,
+          (...args) => errors.push(args.join(" ")),
+          datFiles,
+          columnStats
         );
-        progress.push(
-          fs.writeFile(
-            path.join(`${heuristics}/schema/json`, `${table.name}.json`),
-            JSON.stringify(hdr, undefined, 2)
-          ),
-          `${table.name}.json`
-        );
-        headerMap[table.name] = hdr;
-        tables.push(table);
+        headers.forEach((header, i) => {
+          try {
+            if (
+              (Array.isArray(header) && !header.length) ||
+              (!Array.isArray(header) && !columnStats.every((s) => validateHeader(header, s)))
+            ) {
+              invalid = Math.min(invalid, i);
+              const changeVer = meta?.findLast((v) => v.version !== version)?.version;
+              const change = changeVer ? ` Last changed in version ${changeVer}` : "";
+              errors.push(
+                Array.isArray(header)
+                  ? `${table.name}.datc64 column ${i + 1} "<unknown>": array not valid.${change}`
+                  : `${table.name}.datc64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
+                      header
+                    )} not valid at offset ${header.offset}.${change}`
+              );
+            }
+          } catch (e) {
+            console.error("Validation error", header, e);
+          }
+        });
+
+        //Remove all columns after first invalid column
+        if (invalid < table.columns.length) {
+          table.columns = table.columns.slice(0, invalid);
+        }
+
+        const possible = (
+          await getPossibleHeaders(
+            headers.slice(0, invalid).reduce((arr, h) => {
+              arr[Array.isArray(h) ? h[0].offset : h.offset] = h;
+              return arr;
+            }, [] as PossibleHeaders),
+            columnStats,
+            datFiles
+          )
+        )[0];
+
+        if (possible?.length) {
+          const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFiles[0]) : p));
+          progress.push(
+            fs.writeFile(
+              path.join(`${heuristics}/csv`, `${table.name}.csv`),
+              csv.stringify(
+                exportAllRows(
+                  hdr,
+                  data.map(({ name }, i) => ({ name, datFile: datFiles[i] })),
+                  table.name,
+                  args?.includes("--validate")
+                ),
+                {
+                  cast: {
+                    string: (v) => JSON.stringify(v).slice(1, -1),
+                  },
+                  quoted_empty: true,
+                  quoted_string: true,
+                }
+              )
+            ),
+            `${table.name}.csv`
+          );
+          progress.push(
+            fs.writeFile(
+              path.join(`${heuristics}/schema/json`, `${table.name}.json`),
+              JSON.stringify(hdr, undefined, 2)
+            ),
+            `${table.name}.json`
+          );
+          headerMap[table.name] = hdr;
+          tables.push(table);
+        } else {
+          enumerations.push(table);
+        }
       } else {
         enumerations.push(table);
       }
-    } else {
-      enumerations.push(table);
-    }
 
-    const datFile = datFiles[0];
-    const shape: ShapeChange = {
-      version,
-      row_count: datFile.rowCount,
-      row_width: datFile.rowLength,
-      fixed_size: datFile.dataFixed.length,
-      var_offset: datFile.dataFixed.length + datFile.memsize / 2,
-      var_size: datFile.dataVariable.length,
-    };
-    var latest = meta.length === 0 ? null : meta[meta.length - 1];
-    const metaName = path.join("meta", table.name + ".csv");
-    if (
-      !args?.includes("--historical") &&
-      Object.keys(shape).find(
-        (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k])
-      )
-    ) {
-      meta.push(shape);
-      if (csvFile && csvName !== metaName) {
-        progress.push(fs.rm(csvName), `delete ${csvName}`);
+      const datFile = datFiles[0];
+      const shape: ShapeChange = {
+        version,
+        row_count: datFile.rowCount,
+        row_width: datFile.rowLength,
+        fixed_size: datFile.dataFixed.length,
+        var_offset: datFile.dataFixed.length + datFile.memsize / 2,
+        var_size: datFile.dataVariable.length,
+      };
+      var latest = meta.length === 0 ? null : meta[meta.length - 1];
+      const metaName = path.join("meta", table.name + ".csv");
+      if (
+        !args?.includes("--historical") &&
+        Object.keys(shape).find(
+          (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k])
+        )
+      ) {
+        meta.push(shape);
+        if (csvFile && csvName !== metaName) {
+          progress.push(fs.rm(csvName), `delete ${csvName}`);
+        }
+        progress.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })), metaName);
       }
-      progress.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })), metaName);
+    } catch (e) {
+      console.error(file, e);
+    } finally {
+      progress.increment("processing", { table: table.name });
     }
-  } catch (e) {
-    console.error(file, e);
-  } finally {
-    progress.increment("processing", { table: table.name });
-  }
-}
+  })
+);
 progressBars?.stop();
 
 progress.push(
