@@ -197,7 +197,9 @@ export class CdnBundleLoader {
 
   async fetchCDN(name: string) {
     const webpath = `${this.patchVer}/${BUNDLE_DIR}/${name}`;
-    const response = await retryFetch(`https://patch.poecdn.com/${webpath}`);
+    const response = await retryFetch(
+      `https://patch${this.patchVer.startsWith("4") ? "-poe2" : ""}.poecdn.com/${webpath}`
+    );
     return await response.arrayBuffer();
   }
 }

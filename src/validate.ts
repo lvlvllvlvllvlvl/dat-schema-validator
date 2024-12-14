@@ -40,8 +40,9 @@ const RF = { recursive: true, force: true };
 const args = argv[1].includes("validate.ts") ? argv.slice(2) : null;
 const tablesToProcess = args?.map((a) => a.toLowerCase());
 const langsToProcess = tablesToProcess;
+const quiet = Boolean(args.find((v) => v === "-q" || v === "--quiet"));
 const progressBars =
-  args && !args.find((v) => v === "-q" || v === "--quiet")
+  args && !quiet
     ? new MultiBar(
         {
           format: "[{bar}] {percentage}% | {value}/{total} | {step} | {table}",
@@ -78,7 +79,7 @@ const progress = {
 };
 if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log(
-    "Usage: npx tsx src/validate.ts [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--annotate]"
+    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--annotate]"
   );
   console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
   console.log(
@@ -87,15 +88,17 @@ if (args?.find((v) => v === "-h" || v === "--help")) {
   exit();
 }
 
+const poe2 = args?.indexOf("-2")! >= 0 || args?.indexOf("--poe2")! >= 0;
 const errors = [] as string[];
 const tablesSeen = new Set<string>();
 const tables = [] as Table[];
 const enumerations = [] as Enumeration[];
 const headerMap = {} as { [name: string]: NamedHeader[] };
+const metafileDir = poe2 ? "meta2" : "meta";
 const metafiles = Object.fromEntries(
-  (await fs.readdir("meta")).map((f) => [
+  (await fs.readdir(metafileDir)).map((f) => [
     f.toLowerCase().replaceAll(".csv", ""),
-    path.join("meta", f),
+    path.join(metafileDir, f),
   ])
 );
 
@@ -104,10 +107,15 @@ const versionArg = (args?.findIndex((s) => s === "-v" || s === "--version") ?? -
 if (args && versionArg) {
   version = args[versionArg];
 } else {
-  version = await fetch(
-    "https://raw.githubusercontent.com/poe-tool-dev/latest-patch-version/main/latest.txt"
-  ).then((r) => r.text());
-  progress.push(fs.writeFile("version.txt", version), "version.txt");
+  version = (
+    await fetch(
+      `https://lvlvllvlvllvlvl.github.io/poecdn-bundle-index/poe${poe2 ? 2 : ""}/urls.json`
+    ).then((r) => r.json())
+  ).urls[0]
+    .split("/")
+    .filter((v) => v)
+    .pop();
+  progress.push(fs.writeFile(`version${poe2 ? 2 : ""}.txt`, version), "version.txt");
 }
 
 let schema: SchemaFile;
@@ -157,10 +165,14 @@ await fs.mkdir(`${heuristics}/csv`, R);
 await fs.mkdir(`${heuristics}/schema/json`, R);
 await fs.mkdir(`${heuristics}/schema/graphql`, R);
 
+const validFor = poe2 ? (t: any) => t.validFor & 2 : (t: any) => t.validFor & 1;
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
-  Object.fromEntries(schema.tables.map((t) => [`data/${t.name}.datc64`.toLowerCase(), t])),
   Object.fromEntries(
-    schema.enumerations?.map((t) => [`data/${t.name}.datc64`.toLowerCase(), t]) || []
+    schema.tables.filter(validFor).map((t) => [`data/${t.name}.datc64`.toLowerCase(), t])
+  ),
+  Object.fromEntries(
+    schema.enumerations?.filter(validFor)?.map((t) => [`data/${t.name}.datc64`.toLowerCase(), t]) ||
+      []
   )
 );
 loader.clearBundleCache();
@@ -181,16 +193,25 @@ await Promise.all(
   files.map(async (file) => {
     const fileComponents = path.parse(file);
     const table = tableMap[file.toLowerCase()] || { name: fileComponents.name, columns: [] };
-    const data = await Promise.all(
-      includeTranslations.map(async (tr) => {
-        while (concurrentLoads > 30) await sleep(100);
-        concurrentLoads++;
-        progress.increment("requests", { table: file.replace(/^data/, tr.path) });
-        const buf = await loader.getFileContents(file.replace(/^data/, tr.path));
-        concurrentLoads--;
-        return { ...tr, buf };
-      })
-    );
+    const data = (
+      await Promise.all(
+        includeTranslations.map(async (tr) => {
+          while (concurrentLoads > 30) await sleep(100);
+          const table = file.replace(/^data/, tr.path);
+          concurrentLoads++;
+          try {
+            progress.increment("requests", { table });
+            const buf = await loader.getFileContents(table);
+            return { ...tr, buf };
+          } catch (e) {
+            errors.push("File not found: " + table);
+            return null!;
+          } finally {
+            concurrentLoads--;
+          }
+        })
+      )
+    ).filter((v) => v);
     try {
       const csvName = metafiles[table.name.toLowerCase()];
       const csvFile = csvName && (await fs.readFile(csvName));
@@ -315,7 +336,7 @@ await Promise.all(
         var_size: datFile.dataVariable.length,
       };
       var latest = meta.length === 0 ? null : meta[meta.length - 1];
-      const metaName = path.join("meta", table.name + ".csv");
+      const metaName = path.join(metafileDir, table.name + ".csv");
       if (
         !args?.includes("--historical") &&
         Object.keys(shape).find(
@@ -376,8 +397,10 @@ await fs.rm(path.join(schemaDir, "heuristics"), RF);
 await fs.rename(heuristics, path.join(schemaDir, "heuristics"));
 
 if (!args?.includes("--historical")) {
-  await fs.rm("heuristics", RF);
-  await fs.cp(path.join(schemaDir, "heuristics"), "heuristics", R);
+  if (!poe2) {
+    await fs.rm("heuristics", RF);
+    await fs.cp(path.join(schemaDir, "heuristics"), "heuristics", R);
+  }
   await Promise.all(
     Object.values(metafiles).map(async (filename) => {
       const rows = csvParse(await fs.readFile(filename));
