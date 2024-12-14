@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "TextAudioT1",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TextAudioT2",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TextAudioT3",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TextAudioT4",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "TextAudioT5",
+    "offset": 72,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 88,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "TextAudioT6",
+    "offset": 89,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  }
+]

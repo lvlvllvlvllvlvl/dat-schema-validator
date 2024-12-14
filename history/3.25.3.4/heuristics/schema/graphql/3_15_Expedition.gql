@@ -27,11 +27,11 @@ type ExpeditionBalancePerLevel {
   _: i32
 }
 
-type ExpeditionCurrency {
+type ExpeditionCurrency @tags(list: ["item:def"]) {
   BaseItemType: BaseItemTypes
-  _: rid
-  _: rid
-  _: i32 # All rows empty
+  Tier: i32
+  NPC: ExpeditionNPCs
+  LootSound: SoundEffects
 }
 
 type ExpeditionDeals {

@@ -14,28 +14,10 @@
     "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Tier",
     "offset": 16,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 32,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -43,9 +25,34 @@
         "size": 4
       }
     },
-    "offset": 48,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
+  },
+  {
+    "name": "NPC",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ExpeditionNPCs"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "LootSound",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "SoundEffects"
+      }
+    },
+    "size": 16
   }
 ]

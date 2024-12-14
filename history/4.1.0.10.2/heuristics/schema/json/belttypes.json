@@ -1,0 +1,42 @@
+[
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 0,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 16,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 2
+      }
+    },
+    "offset": 17,
+    "size": 2,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 19,
+    "size": 1,
+    "unique": false
+  }
+]
