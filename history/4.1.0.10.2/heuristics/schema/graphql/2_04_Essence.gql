@@ -1,18 +1,16 @@
-type Essences @tags(list: ["item:def", "crafting"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
+type Essences {
+  BaseItemType: BaseItemTypes
+  HASH32: i32
   _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  MonsterMod: Mods
   _: bool
-  _: i32
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: bool
-  _: rid
-  _: rid
-  _: i16
-  _: bool
+  CraftTag: Tags
 }
 
 type EssenceType {

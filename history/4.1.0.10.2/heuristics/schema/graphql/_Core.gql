@@ -5856,6 +5856,13 @@ type ItemVisualReplacement {
   _: rid
 }
 
+type KeywordPopups {
+  Id: string @unique
+  Term: string
+  Definition: string
+  _: string
+}
+
 # Added 4.1
 type kioskmodecharactertutorials {
   _: string
