@@ -5856,6 +5856,7 @@ type ItemVisualReplacement {
   _: rid
 }
 
+# Added 4.1
 type KeywordPopups {
   Id: string @unique
   Term: string
