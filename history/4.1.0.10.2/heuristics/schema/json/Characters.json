@@ -288,28 +288,24 @@
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 148,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 152,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -317,83 +313,13 @@
         "size": 4
       }
     },
-    "offset": 153,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 157,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 161,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 165,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 169,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 173,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 177,
     "size": 4
   },
   {
+    "name": "",
+    "offset": 156,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -401,563 +327,125 @@
         "size": 4
       }
     },
-    "offset": 181,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 185,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 189,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 193,
     "size": 4
   },
   {
+    "name": "IntroSoundFile",
+    "offset": 160,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "offset": 197,
-    "size": 4,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "StartWeapons",
+    "offset": 168,
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": false,
+      "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "BaseItemTypes"
       }
     },
-    "offset": 201,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 217,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 221,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 225,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 229,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 233,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 237,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 241,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 245,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 261,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 265,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 269,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 273,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 277,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 281,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 285,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 289,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 293,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 297,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 301,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 305,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 309,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 313,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 317,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 321,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 325,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 329,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 333,
     "size": 16
   },
   {
+    "name": "Gender",
+    "offset": 184,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "offset": 349,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "TraitDescription",
+    "offset": 192,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 200,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 353,
     "size": 16
   },
   {
+    "name": "",
+    "offset": 216,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 369,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 385,
     "size": 16
   },
   {
+    "name": "",
+    "offset": 232,
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 401,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 405,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 409,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
+      "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 413,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 429,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 433,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 437,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 441,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 445,
     "size": 16
   },
   {
+    "name": "",
+    "offset": 248,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 461,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 264,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 477,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 280,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -965,272 +453,24 @@
         "size": 4
       }
     },
-    "offset": 493,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 497,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 501,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 505,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 509,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 513,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 517,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 521,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 537,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 541,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 545,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 546,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 550,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 554,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 558,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 562,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 566,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 570,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 574,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 578,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 582,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 586,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 602,
     "size": 4
   },
   {
+    "name": "PassiveTreeImage",
+    "offset": 284,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 292,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1238,21 +478,454 @@
         "size": 4
       }
     },
-    "offset": 606,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 296,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
         "unsigned": false,
-        "size": 2
+        "size": 4
       }
     },
-    "offset": 610,
-    "size": 2,
-    "unique": false
+    "size": 4
+  },
+  {
+    "name": "AttrsAsId",
+    "offset": 300,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "LoginScreen",
+    "offset": 308,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "PlayerCritter",
+    "offset": 316,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "PlayerEffect",
+    "offset": 324,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "AfterImage",
+    "offset": 332,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Mirage",
+    "offset": 340,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "CloneImmobile",
+    "offset": 356,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ReplicateClone",
+    "offset": 372,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "LightningClone",
+    "offset": 388,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 404,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 408,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "SkillTreeBackground",
+    "offset": 412,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Clone",
+    "offset": 420,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 436,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 440,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 444,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 448,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "MirageWarrior",
+    "offset": 452,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "DoubleTwo",
+    "offset": 468,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "DarkExile",
+    "offset": 484,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Attr",
+    "offset": 500,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "AttrLowercase",
+    "offset": 508,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Script",
+    "offset": 516,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 524,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 540,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 544,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 548,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 552,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 556,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 564,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 568,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 584,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 600,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 604,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   }
 ]

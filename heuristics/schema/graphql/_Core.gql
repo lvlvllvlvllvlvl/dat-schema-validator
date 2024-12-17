@@ -3776,42 +3776,54 @@ type PassiveSkills {
   Stat3Value: i32
   Stat4Value: i32
   "Id used by PassiveSkillGraph.psg"
-  PassiveSkillGraphId: i16 @unique
-  Name: string
-  Characters: [Characters]
-  IsKeystone: bool
-  IsNotable: bool
-  FlavourText: string
-  IsJustIcon: bool
-  AchievementItem: AchievementItems
-  IsJewelSocket: bool
-  AscendancyKey: Ascendancy
-  IsAscendancyStartingNode: bool
-  ReminderStrings: [ReminderText]
-  SkillPointsGranted: i32
-  IsMultipleChoice: bool
-  IsMultipleChoiceOption: bool
-  Stat5Value: i32
-  PassiveSkillBuffs: [BuffTemplates]
-  GrantedEffectsPerLevel: GrantedEffectsPerLevel
-  IsAnointmentOnly: bool
+  _: i32 @unique
   _: i32
-  IsExpansion: bool
-  IsProxyPassive: bool
-  SkillType: PassiveSkillTypes
-  MasteryGroup: PassiveSkillMasteryGroups
-  Group: AtlasPassiveSkillTreeGroupType
-  SoundEffect: SoundEffects
-  _: string
+  _: Characters
+  _: i32 # All rows empty
   _: i32
   _: i32
   _: i32
-  _: i32
+  _: AchievementItems
+  _: bool
+  _: Ascendancy
+  _: bool
+  _: ReminderText
+  _: bool
+  _: [_]
   _: i32
   _: bool
-  _: [rid]
+  _: BuffTemplates
+  _: GrantedEffectsPerLevel
+  _: [_]
+  _: rid
+  _: bool
+  _: bool
+  _: PassiveSkillTypes
+  _: PassiveSkillMasteryGroups
+  _: AtlasPassiveSkillTreeGroupType
+  _: SoundEffects
   _: i32
-  _: [rid]
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: [_]
+  _: i32
+  _: [_]
   _: bool
   _: rid
   _: rid

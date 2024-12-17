@@ -3,7 +3,6 @@ AegisVariations.datc64 column 10 <unknown>: key not valid at offset 61.
 AegisVariations.datc64 column 11 "<unknown>": array not valid.
 AlternateQualityTypes.datc64 column 5 MapStats: array/key not valid at offset 48.
 Animation.datc64 column 12 <unknown>: array/string not valid at offset 61.
-Ascendancy.datc64 column 12 BackgroundImage: string not valid at offset 84.
 BaseItemTypes.datc64 column 31 <unknown>: array/string not valid at offset 296.
 BaseItemTypes.datc64 column 32 IgnoreQuantBonus: boolean not valid at offset 312.
 BaseItemTypes.datc64 column 33 <unknown>: boolean not valid at offset 313.
@@ -23,28 +22,6 @@ BuffDefinitions.datc64 column 50 <unknown>: array/key not valid at offset 297.
 BuffVisualOrbArt.datc64 column 10 <unknown>: key not valid at offset 92.
 BuffVisualOrbTypes.datc64 column 16 <unknown>: integer not valid at offset 82.
 BuffVisuals.datc64 column 19 <unknown>: string not valid at offset 210.
-Characters.datc64 column 23 IntroSoundFile: string not valid at offset 148.
-Characters.datc64 column 24 StartWeapons: array/key not valid at offset 156.
-Characters.datc64 column 25 Gender: string not valid at offset 172.
-Characters.datc64 column 26 TraitDescription: string not valid at offset 180.
-Characters.datc64 column 27 <unknown>: key not valid at offset 188.
-Characters.datc64 column 29 <unknown>: key not valid at offset 220.
-Characters.datc64 column 30 <unknown>: key not valid at offset 236.
-Characters.datc64 column 32 <unknown>: array/key not valid at offset 256.
-Characters.datc64 column 33 PassiveTreeImage: string not valid at offset 272.
-Characters.datc64 column 36 TencentVideo: string not valid at offset 288.
-Characters.datc64 column 37 AttrsAsId: string not valid at offset 296.
-Characters.datc64 column 38 LoginScreen: string not valid at offset 304.
-Characters.datc64 column 39 PlayerCritter: string not valid at offset 312.
-Characters.datc64 column 40 PlayerEffect: string not valid at offset 320.
-Characters.datc64 column 41 AfterImage: string not valid at offset 328.
-Characters.datc64 column 48 SkillTreeBackground: string not valid at offset 408.
-Characters.datc64 column 50 Double: key not valid at offset 432.
-Characters.datc64 column 54 Attr: string not valid at offset 496.
-Characters.datc64 column 55 AttrLowercase: string not valid at offset 504.
-Characters.datc64 column 56 Script: string not valid at offset 512.
-Characters.datc64 column 59 <unknown>: key not valid at offset 540.
-Characters.datc64 column 60 <unknown>: key not valid at offset 556.
 Chests.datc64 column 10 <unknown>: boolean not valid at offset 44.
 Chests.datc64 column 12 <unknown>: array/key not valid at offset 49.
 Chests.datc64 column 13 BaseItemTypesKey: key not valid at offset 65.
@@ -6090,16 +6067,7 @@ PantheonPanelLayout.datc64 column 21 AchievementItems: array/key not valid at of
 PantheonPanelLayout.datc64 column 26 DowngradeFlag2: key not valid at offset 254.
 PantheonPanelLayout.datc64 column 27 DowngradeFlag3: key not valid at offset 270.
 PassiveSkillFilterOptions.datc64 column 2 <unknown>: key not valid at offset 8.
-PassiveSkills.datc64 column 25 GrantedEffectsPerLevel: key not valid at offset 161.
-PassiveSkills.datc64 column 26 IsAnointmentOnly: boolean not valid at offset 177.
-PassiveSkills.datc64 column 28 IsExpansion: boolean not valid at offset 182.
-PassiveSkills.datc64 column 29 IsProxyPassive: boolean not valid at offset 183.
-PassiveSkills.datc64 column 34 <unknown>: string not valid at offset 236.
-PassiveSkills.datc64 column 41 <unknown>: array/key not valid at offset 265.
-PassiveSkills.datc64 column 43 <unknown>: array/key not valid at offset 285.
-PassiveSkills.datc64 column 44 <unknown>: boolean not valid at offset 301.
-PassiveSkills.datc64 column 45 <unknown>: key not valid at offset 302.
-PassiveSkills.datc64 column 46 <unknown>: key not valid at offset 318.
+PassiveSkills PassiveSkillGraphId unknown type u16
 Pet.datc64 column 10 Skills: array/key not valid at offset 54.
 Pet.datc64 column 13 <unknown>: key not valid at offset 75.
 Pet.datc64 column 14 <unknown>: boolean not valid at offset 91.

@@ -331,15 +331,15 @@ type Ascendancy {
   "Coordinates in 'x1, y1, x2, y2' format"
   CoordinateRect: string
   RGBFlavourTextColour: string
-  Name: string
-  FlavourText: string
+  Name: string @localized
+  FlavourText: string @localized
   OGGFile: string @file(ext: ".ogg")
   PassiveTreeImage: string @file(ext: ".dds")
   _: i32
   _: i32
+  _: i32
+  _: i32
   _: bool
-  _: i32
-  _: i32
 }
 
 type AtlasFog {
@@ -721,88 +721,56 @@ type Characters {
   _: i32
   _: i32
   CharacterSize: i32
-  _: i32 # All rows empty
-  _: bool
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: rid
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: i32 # All rows empty
+  IntroSoundFile: string @file(ext: ".ogg")
+  StartWeapons: [BaseItemTypes]
+  Gender: string
+  TraitDescription: string @localized
   _: rid
   _: rid
-  _: rid
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: rid
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32
+  _: [rid]
   _: rid
   _: rid
+  _: i32
+  PassiveTreeImage: string @file(ext: ".dds")
+  _: i32
+  _: i32
+  AttrsAsId: string
+  LoginScreen: string @file(ext: ".ao")
+  PlayerCritter: string
+  PlayerEffect: string
+  AfterImage: string
+  Mirage: MonsterVarieties
+  CloneImmobile: MonsterVarieties
+  ReplicateClone: MonsterVarieties
+  LightningClone: MonsterVarieties
+  _: f32
+  _: f32
+  SkillTreeBackground: string
+  Clone: MonsterVarieties
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  MirageWarrior: MonsterVarieties
+  DoubleTwo: MonsterVarieties
+  DarkExile: MonsterVarieties
+  Attr: string
+  AttrLowercase: string
+  Script: string
   _: rid
-  _: i32 # All rows empty
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: i32
-  _: i32 # All rows empty
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: f32
+  _: f32
+  _: f32
+  _: string
   _: i32
   _: rid
-  _: i32
-  _: i32 # All rows empty
-  _: i16
+  _: [rid]
+  _: f32
+  _: string
 }
 
 type CharacterStartQuestState {
@@ -3594,32 +3562,31 @@ type PassiveSkills {
   Stat3Value: i32
   Stat4Value: i32
   "Id used by PassiveSkillGraph.psg"
-  PassiveSkillGraphId: i16 @unique
-  Name: string
-  Characters: [Characters]
-  IsKeystone: bool
-  IsNotable: bool
-  FlavourText: string
-  IsJustIcon: bool
-  AchievementItem: AchievementItems
-  IsJewelSocket: bool
-  AscendancyKey: Ascendancy
-  IsAscendancyStartingNode: bool
-  ReminderStrings: [ReminderText]
-  SkillPointsGranted: i32
-  IsMultipleChoice: bool
-  IsMultipleChoiceOption: bool
-  Stat5Value: i32
-  PassiveSkillBuffs: [BuffTemplates]
+  _: i32 @unique
+  _: i32
+  _: Characters
   _: i32 # All rows empty
-  _: bool
-  _: bool
-  _: bool
-  _: bool
   _: i32
   _: i32
   _: i32
+  _: AchievementItems
+  _: bool
+  _: Ascendancy
+  _: bool
+  _: ReminderText
+  _: bool
+  _: [_] # All rows empty
+  _: rid
   _: i32
+  _: BuffTemplates
+  _: i32 # All rows empty
+  _: i32
+  _: bool
+  _: bool
+  _: PassiveSkillTypes
+  _: PassiveSkillMasteryGroups
+  _: AtlasPassiveSkillTreeGroupType
+  _: SoundEffects
   _: i32
   _: i32
   _: i32
@@ -3636,7 +3603,7 @@ type PassiveSkills {
   _: bool
   _: rid
   _: bool
-  _: bool
+  _: SkillGems
   _: rid
   _: bool
   _: rid
@@ -5174,15 +5141,10 @@ type chargevariations {
 }
 
 # Added 4.1
-type classpassiveskilloverrides {
-  _: bool
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: rid
-  _: rid
-  _: i16
-  _: bool
+type ClassPassiveSkillOverrides {
+  CharacterToOverrideFor: Characters
+  SkillToOverride: PassiveSkills
+  Override: PassiveSkills
 }
 
 # Added 4.1
