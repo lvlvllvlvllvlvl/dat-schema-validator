@@ -1,9 +1,9 @@
 [
   {
-    "name": "Name",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
@@ -105,23 +105,25 @@
     "size": 16
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "",
     "offset": 61,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 77,
-    "size": 1,
+    "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 62,
+    "size": 16,
     "unique": false
   },
   {

@@ -28,21 +28,8 @@
     "size": 4
   },
   {
-    "name": "PlayerLevelReq",
-    "offset": 20,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "decimal": {
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
     "name": "CostMultiplier",
-    "offset": 24,
+    "offset": 20,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -56,7 +43,7 @@
   },
   {
     "name": "StoredUses",
-    "offset": 28,
+    "offset": 24,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -70,7 +57,7 @@
   },
   {
     "name": "Cooldown",
-    "offset": 32,
+    "offset": 28,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -84,7 +71,7 @@
   },
   {
     "name": "CooldownBypassType",
-    "offset": 36,
+    "offset": 32,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -98,7 +85,7 @@
   },
   {
     "name": "VaalSouls",
-    "offset": 40,
+    "offset": 36,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -112,7 +99,7 @@
   },
   {
     "name": "VaalStoredUses",
-    "offset": 44,
+    "offset": 40,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -126,7 +113,7 @@
   },
   {
     "name": "CooldownGroup",
-    "offset": 48,
+    "offset": 44,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -140,7 +127,7 @@
   },
   {
     "name": "",
-    "offset": 52,
+    "offset": 48,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -154,7 +141,7 @@
   },
   {
     "name": "SoulGainPreventionDuration",
-    "offset": 56,
+    "offset": 52,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -168,6 +155,20 @@
   },
   {
     "name": "AttackSpeedMultiplier",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 60,
     "unknownArray": false,
     "unique": false,
@@ -195,19 +196,10 @@
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 68,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -215,12 +207,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 72,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -228,12 +221,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 76,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -241,11 +235,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 80,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -253,11 +249,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "Reservation",
     "offset": 84,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -265,12 +263,27 @@
         "size": 4
       }
     },
-    "offset": 88,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 88,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "CostAmounts",
+    "offset": 92,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -278,23 +291,26 @@
         "size": 4
       }
     },
-    "offset": 92,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 108,
-    "size": 4,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 112,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -302,8 +318,6 @@
         "size": 4
       }
     },
-    "offset": 112,
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

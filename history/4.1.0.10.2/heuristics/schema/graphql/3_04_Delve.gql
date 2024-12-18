@@ -33,16 +33,16 @@ type DelveCraftingModifiers @tags(list: ["crafting"]) {
   CanImproveQuality: bool
   HasLuckyRolls: bool
   _: bool
-  _: [_] # All rows empty
+  SellPrice_ModsKeys: [Mods]
+  CanRollWhiteSockets: bool
+  Weight_TagsKeys: [Tags]
+  Weight_Values: [i32]
+  DelveCraftingModifierDescriptionsKeys: [DelveCraftingModifierDescriptions]
+  BlockedDelveCraftingModifierDescriptionsKeys: [DelveCraftingModifierDescriptions]
   _: bool
-  _: [_]
-  _: [_]
-  _: [_]
-  _: [_]
   _: bool
-  _: bool
-  _: [_]
-  _: [_]
+  _: [i32]
+  _: [i32]
 }
 
 type DelveCraftingTags {

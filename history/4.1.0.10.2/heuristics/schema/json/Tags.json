@@ -11,7 +11,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "HASH32",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -36,23 +36,27 @@
     "size": 8
   },
   {
+    "name": "",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 20,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "UiHints",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 36,
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]

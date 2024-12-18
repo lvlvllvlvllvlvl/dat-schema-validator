@@ -1,11 +1,14 @@
+ActiveSkills.datc64 column 31 VideoClip: string not valid at offset 249.
+ActiveSkills.datc64 column 32 <unknown>: key not valid at offset 257.
+ActiveSkills.datc64 column 33 AiScript: string not valid at offset 273.
+ActiveSkills.datc64 column 34 <unknown>: key not valid at offset 281.
+ActiveSkills.datc64 column 35 <unknown>: key not valid at offset 297.
+ActiveSkills.datc64 column 36 <unknown>: boolean not valid at offset 313.
+ActiveSkills.datc64 column 37 <unknown>: string not valid at offset 314.
+ActiveSkills.datc64 column 39 StatDescription: string not valid at offset 326.
 AddBuffToTargetVarieties.datc64 column 5 <unknown>: array/integer not valid at offset 52.
-AegisVariations.datc64 column 10 <unknown>: key not valid at offset 61.
-AegisVariations.datc64 column 11 "<unknown>": array not valid.
-AlternateQualityTypes.datc64 column 5 MapStats: array/key not valid at offset 48.
+AegisVariations.datc64 column 11 <unknown>: array/string not valid at offset 62.
 Animation.datc64 column 12 <unknown>: array/string not valid at offset 61.
-BaseItemTypes.datc64 column 31 <unknown>: array/string not valid at offset 296.
-BaseItemTypes.datc64 column 32 IgnoreQuantBonus: boolean not valid at offset 312.
-BaseItemTypes.datc64 column 33 <unknown>: boolean not valid at offset 313.
 BlightCraftingRecipes.datc64 column 2 BlightCraftingItemsKeys: array/key not valid at offset 8.
 BlightCraftingRecipes.datc64 column 3 BlightCraftingResultsKey: key not valid at offset 24.
 BloodTypes.datc64 column 2 <unknown>: key not valid at offset 8.
@@ -14,11 +17,6 @@ BloodTypes.datc64 column 5 <unknown>: key not valid at offset 56.
 BloodTypes.datc64 column 6 <unknown>: key not valid at offset 72.
 BloodTypes.datc64 column 7 <unknown>: key not valid at offset 88.
 BloodTypes.datc64 column 8 <unknown>: key not valid at offset 104.
-BuffDefinitions.datc64 column 46 <unknown>: boolean not valid at offset 256.
-BuffDefinitions.datc64 column 47 <unknown>: key not valid at offset 257.
-BuffDefinitions.datc64 column 48 <unknown>: array/integer not valid at offset 273.
-BuffDefinitions.datc64 column 49 <unknown>: string not valid at offset 289.
-BuffDefinitions.datc64 column 50 <unknown>: array/key not valid at offset 297.
 BuffVisualOrbArt.datc64 column 10 <unknown>: key not valid at offset 92.
 BuffVisualOrbTypes.datc64 column 16 <unknown>: integer not valid at offset 82.
 BuffVisuals.datc64 column 19 <unknown>: string not valid at offset 210.
@@ -44,21 +42,15 @@ Chests.datc64 column 34 <unknown>: key not valid at offset 284.
 Chests.datc64 column 37 <unknown>: array/key not valid at offset 302.
 Chests.datc64 column 39 StatsHardmode: array/key not valid at offset 319.
 Chests.datc64 column 7 <unknown>: boolean not valid at offset 38.
-CurrencyItems.datc64 column 22 <unknown>: boolean not valid at offset 203.
+CraftableModTypes HASH16 unknown type u16
 DamageParticleEffects.datc64 column 3 PETFile: string not valid at offset 8.
 DamageParticleEffects.datc64 column 4 ImpactSoundData1: key not valid at offset 16.
 DamageParticleEffects.datc64 column 5 ImpactSoundData2: key not valid at offset 32.
-DelveCraftingModifiers.datc64 column 12 SellPrice_ModsKeys: array/key not valid at offset 119.
-DelveCraftingModifiers.datc64 column 14 Weight_TagsKeys: array/key not valid at offset 136.
-DelveCraftingModifiers.datc64 column 15 Weight_Values: array/integer not valid at offset 152.
-DelveCraftingModifiers.datc64 column 16 DelveCraftingModifierDescriptionsKeys: array/key not valid at offset 168.
-DelveCraftingModifiers.datc64 column 17 BlockedDelveCraftingModifierDescriptionsKeys: array/key not valid at offset 184.
-DelveCraftingModifiers.datc64 column 20 <unknown>: array/integer not valid at offset 202.
-DelveCraftingModifiers.datc64 column 21 <unknown>: array/integer not valid at offset 218.
 ExecuteGEAL.datc64 column 17 <unknown>: key not valid at offset 79.
 ExpeditionDeals.datc64 column 5 Description: string not valid at offset 36.
 ExpeditionDeals.datc64 column 6 BuyAchievements: array/key not valid at offset 44.
 ExpeditionDeals.datc64 column 7 <unknown>: key not valid at offset 60.
+ExperienceLevels Experience unknown type u32
 File not found: data/french/abyssbosslifescalingperlevel.datc64
 File not found: data/french/abyssobjects.datc64
 File not found: data/french/actiontypes.datc64
@@ -4398,6 +4390,7 @@ File not found: data/spanish/npcshops.datc64
 File not found: data/spanish/npctalkcategory.datc64
 File not found: data/spanish/npctalkconsolequickactions.datc64
 File not found: data/spanish/npctalkmobilegroup.datc64
+File not found: data/spanish/npctextaudio.datc64
 File not found: data/spanish/npctype.datc64
 File not found: data/spanish/npcvendordialogue.datc64
 File not found: data/spanish/npcvendordialogueconditions.datc64
@@ -5856,48 +5849,10 @@ File not found: data/traditional chinese/wieldableclasses.datc64
 File not found: data/traditional chinese/worldarealeaguechances.datc64
 File not found: data/traditional chinese/worldscreenmappindialogue.datc64
 FixedHideoutDoodadTypes.datc64 column 9 <unknown>: key not valid at offset 69.
-Flasks.datc64 column 10 BuffStatValues2: array/integer not valid at offset 76.
-Flasks.datc64 column 7 BuffDefinitionsKey: key not valid at offset 40.
-Flasks.datc64 column 8 BuffStatValues: array/integer not valid at offset 56.
-FlavourText.datc64 column 3 Text: string not valid at offset 12.
 GameObjectTasksFromStats.datc64 column 3 <unknown>: boolean not valid at offset 32.
-GemEffects.datc64 column 10 Consumed_ModsKey: key not valid at offset 112.
-GemEffects.datc64 column 4 GrantedEffectHardmode: key not valid at offset 32.
-GemEffects.datc64 column 5 GrantedEffect2: key not valid at offset 48.
-GemEffects.datc64 column 7 SupportText: string not valid at offset 80.
-GemEffects.datc64 column 8 SupportName: string not valid at offset 88.
-GemEffects.datc64 column 9 GemTags: array/key not valid at offset 96.
 GeometryAttack.datc64 column 55 <unknown>: key not valid at offset 273.
 GeometryTrigger.datc64 column 43 <unknown>: boolean not valid at offset 183.
 GeometryTrigger.datc64 column 46 <unknown>: key not valid at offset 192.
-GrantedEffectStatSets.datc64 column 2 ImplicitStats: array/key not valid at offset 8.
-GrantedEffectStatSetsPerLevel.datc64 column 10 GrantedEffects: array/key not valid at offset 72.
-GrantedEffectStatSetsPerLevel.datc64 column 11 AdditionalFlags: array/key not valid at offset 88.
-GrantedEffectStatSetsPerLevel.datc64 column 12 FloatStats: array/key not valid at offset 104.
-GrantedEffectStatSetsPerLevel.datc64 column 13 InterpolationBases: array/key not valid at offset 120.
-GrantedEffectStatSetsPerLevel.datc64 column 14 AdditionalStats: array/key not valid at offset 136.
-GrantedEffectStatSetsPerLevel.datc64 column 15 StatInterpolations: array/integer not valid at offset 152.
-GrantedEffectStatSetsPerLevel.datc64 column 16 FloatStatsValues: array/decimal not valid at offset 168.
-GrantedEffectStatSetsPerLevel.datc64 column 8 BaseResolvedValues: array/integer not valid at offset 40.
-GrantedEffectStatSetsPerLevel.datc64 column 9 AdditionalStatsValues: array/integer not valid at offset 56.
-GrantedEffects.datc64 column 10 <unknown>: array/integer not valid at offset 74.
-GrantedEffects.datc64 column 11 CannotBeSupported: boolean not valid at offset 90.
-GrantedEffects.datc64 column 14 ActiveSkill: key not valid at offset 99.
-GrantedEffects.datc64 column 15 IgnoreMinionTypes: boolean not valid at offset 115.
-GrantedEffects.datc64 column 16 <unknown>: boolean not valid at offset 116.
-GrantedEffects.datc64 column 17 AddedMinionActiveSkillTypes: array/key not valid at offset 117.
-GrantedEffects.datc64 column 18 Animation: key not valid at offset 133.
-GrantedEffects.datc64 column 19 MultiPartAchievement: key not valid at offset 149.
-GrantedEffects.datc64 column 20 <unknown>: boolean not valid at offset 165.
-GrantedEffects.datc64 column 21 SupportWeaponRestrictions: array/key not valid at offset 166.
-GrantedEffects.datc64 column 22 RegularVariant: self not valid at offset 182.
-GrantedEffects.datc64 column 27 StatSet: key not valid at offset 203.
-GrantedEffects.datc64 column 28 <unknown>: array/key not valid at offset 219.
-GrantedEffects.datc64 column 6 AddedActiveSkillTypes: array/key not valid at offset 37.
-GrantedEffects.datc64 column 7 ExcludedActiveSkillTypes: array/key not valid at offset 53.
-GrantedEffects.datc64 column 8 SupportsGemsOnly: boolean not valid at offset 69.
-GrantedEffectsPerLevel.datc64 column 15 CostAmounts: array/integer not valid at offset 68.
-GrantedEffectsPerLevel.datc64 column 16 CostTypes: array/key not valid at offset 84.
 HardModeExtraContentChances.datc64 column 10 <unknown>: integer not valid at offset 37.
 HideoutNPCs.datc64 column 2 Regular_NPCsKeys: array/key not valid at offset 16.
 HideoutNPCs.datc64 column 5 <unknown>: key not valid at offset 52.
@@ -5908,45 +5863,12 @@ Hideouts.datc64 column 4 SpawnAreas: array/key not valid at offset 26.
 Hideouts.datc64 column 5 ClaimSideArea: key not valid at offset 42.
 Hideouts.datc64 column 6 HideoutImage: string not valid at offset 58.
 Hideouts.datc64 column 9 Rarity: key not valid at offset 71.
-ItemClasses.datc64 column 24 <unknown>: boolean not valid at offset 130.
-ItemClasses.datc64 column 25 MaxInventoryDimensions: array/integer not valid at offset 131.
-ItemClasses.datc64 column 26 Flags: array/integer not valid at offset 147.
-ItemClasses.datc64 column 28 CanBeFractured: boolean not valid at offset 164.
-ItemClasses.datc64 column 29 EquipAchievements: key not valid at offset 165.
 ItemVisualEffect.datc64 column 10 TwoHandedMaceEPKFile: string not valid at offset 66.
 ItemVisualEffect.datc64 column 11 OneHandedAxeEPKFile: string not valid at offset 74.
 ItemVisualEffect.datc64 column 12 TwoHandedAxeEPKFile: string not valid at offset 82.
 ItemVisualEffect.datc64 column 13 ClawEPKFile: string not valid at offset 90.
 ItemVisualEffect.datc64 column 14 PETFile: string not valid at offset 98.
 ItemVisualEffect.datc64 column 15 Shield: array/string not valid at offset 106.
-ItemVisualIdentity.datc64 column 23 Pickup_AchievementItemsKeys: array/key not valid at offset 226.
-ItemVisualIdentity.datc64 column 24 SMFiles: array/string not valid at offset 242.
-ItemVisualIdentity.datc64 column 25 Identify_AchievementItemsKeys: array/key not valid at offset 258.
-ItemVisualIdentity.datc64 column 26 EPKFile: string not valid at offset 274.
-ItemVisualIdentity.datc64 column 27 Corrupt_AchievementItemsKeys: array/key not valid at offset 282.
-ItemVisualIdentity.datc64 column 30 CreateCorruptedJewelAchievementItemsKey: key not valid at offset 300.
-ItemVisualIdentity.datc64 column 31 AnimationLocation: string not valid at offset 316.
-ItemVisualIdentity.datc64 column 32 <unknown>: string not valid at offset 324.
-ItemVisualIdentity.datc64 column 33 <unknown>: string not valid at offset 332.
-ItemVisualIdentity.datc64 column 34 <unknown>: string not valid at offset 340.
-ItemVisualIdentity.datc64 column 35 <unknown>: string not valid at offset 348.
-ItemVisualIdentity.datc64 column 36 <unknown>: string not valid at offset 356.
-ItemVisualIdentity.datc64 column 37 <unknown>: string not valid at offset 364.
-ItemVisualIdentity.datc64 column 38 <unknown>: string not valid at offset 372.
-ItemVisualIdentity.datc64 column 39 <unknown>: string not valid at offset 380.
-ItemVisualIdentity.datc64 column 40 <unknown>: string not valid at offset 388.
-ItemVisualIdentity.datc64 column 41 <unknown>: string not valid at offset 396.
-ItemVisualIdentity.datc64 column 42 <unknown>: string not valid at offset 404.
-ItemVisualIdentity.datc64 column 43 <unknown>: string not valid at offset 412.
-ItemVisualIdentity.datc64 column 46 <unknown>: array/integer not valid at offset 422.
-ItemVisualIdentity.datc64 column 48 <unknown>: array/key not valid at offset 439.
-ItemVisualIdentity.datc64 column 49 <unknown>: string not valid at offset 455.
-ItemVisualIdentity.datc64 column 51 <unknown>: key not valid at offset 467.
-ItemVisualIdentity.datc64 column 52 <unknown>: key not valid at offset 483.
-ItemVisualIdentity.datc64 column 53 <unknown>: key not valid at offset 499.
-ItemVisualIdentity.datc64 column 54 <unknown>: key not valid at offset 515.
-ItemVisualIdentity.datc64 column 55 <unknown>: array/key not valid at offset 531.
-ItemVisualIdentity.datc64 column 56 <unknown>: array/key not valid at offset 547.
 LeagueStaticRewards.datc64 column 4 <unknown>: key not valid at offset 12.
 LeagueStaticRewards.datc64 column 5 <unknown>: key not valid at offset 28.
 MapConnections.datc64 column 8 "<unknown>": array not valid.
@@ -5960,9 +5882,6 @@ MapPins.datc64 column 8 <unknown>: array/integer not valid at offset 64.
 MapStashSpecialTypeEntries.datc64 column 6 IsShaperGuardian: boolean not valid at offset 40.
 MapStashSpecialTypeEntries.datc64 column 7 IsElderGuardian: boolean not valid at offset 41.
 MapStashSpecialTypeEntries.datc64 column 8 <unknown>: key not valid at offset 42.
-Maps.datc64 column 3 Unique_WorldAreasKey: key not valid at offset 32.
-Maps.datc64 column 5 MonsterPacksKeys: array/key not valid at offset 64.
-Maps.datc64 column 6 AchievementItem: key not valid at offset 80.
 MicrotransactionCursorVariations.datc64 column 3 <unknown>: integer not valid at offset 32.
 MicrotransactionOnKillConditions.datc64 column 13 <unknown>: array/string not valid at offset 98.
 MicrotransactionPortalVariations.datc64 column 10 PortalEffectLarge: string not valid at offset 76.
@@ -5973,6 +5892,7 @@ MicrotransactionPortalVariations.datc64 column 6 MiscObject: key not valid at of
 MicrotransactionPortalVariations.datc64 column 7 PortalEffect: string not valid at offset 56.
 MicrotransactionPortalVariations.datc64 column 9 <unknown>: string not valid at offset 68.
 MicrotransactionSocialFrameVariations.datc64 column 3 BK2File: string not valid at offset 20.
+Mods HASH16 unknown type u16
 MonsterDeathAchievements.datc64 column 12 "<unknown>": array not valid.
 MonsterDeathAchievements.datc64 column 13 "<unknown>": array not valid.
 MonsterDeathAchievements.datc64 column 14 <unknown>: array/string not valid at offset 99.
@@ -6062,12 +5982,9 @@ NPCs.datc64 column 14 <unknown>: boolean not valid at offset 142.
 NPCs.datc64 column 15 <unknown>: key not valid at offset 143.
 NPCs.datc64 column 16 Gender: string not valid at offset 159.
 NPCs.datc64 column 17 <unknown>: boolean not valid at offset 167.
-PantheonPanelLayout.datc64 column 20 IsDisabled: boolean not valid at offset 209.
-PantheonPanelLayout.datc64 column 21 AchievementItems: array/key not valid at offset 210.
-PantheonPanelLayout.datc64 column 26 DowngradeFlag2: key not valid at offset 254.
-PantheonPanelLayout.datc64 column 27 DowngradeFlag3: key not valid at offset 270.
+PantheonPanelLayout.datc64 column 20 AchievementItems: array/key not valid at offset 209.
 PassiveSkillFilterOptions.datc64 column 2 <unknown>: key not valid at offset 8.
-PassiveSkills PassiveSkillGraphId unknown type u16
+Passiveskills PassiveSkillGraphId unknown type u16
 Pet.datc64 column 10 Skills: array/key not valid at offset 54.
 Pet.datc64 column 13 <unknown>: key not valid at offset 75.
 Pet.datc64 column 14 <unknown>: boolean not valid at offset 91.
@@ -6107,9 +6024,6 @@ Races.datc64 column 8 <unknown>: boolean not valid at offset 64.
 Scarabs.datc64 column 1 Type: key not valid at offset 0.
 Scarabs.datc64 column 2 Items: array/key not valid at offset 16.
 ShopTag.datc64 column 5 SkillGem: array/key not valid at offset 25.
-SkillGems.datc64 column 18 MtxSlotTypes: array/key not valid at offset 103.
-SkillGems.datc64 column 19 GemEffects: array/key not valid at offset 119.
-SkillGems.datc64 column 8 IsSupport: boolean not valid at offset 61.
 SkillSurgeEffects.datc64 column 1 GrantedEffectsKey: key not valid at offset 0.
 SkillSurgeEffects.datc64 column 10 <unknown>: boolean not valid at offset 49.
 SkillSurgeEffects.datc64 column 11 <unknown>: boolean not valid at offset 50.
@@ -6118,7 +6032,6 @@ SkillSurgeEffects.datc64 column 13 <unknown>: boolean not valid at offset 52.
 SkillSurgeEffects.datc64 column 2 <unknown>: string not valid at offset 16.
 SkillSurgeEffects.datc64 column 6 MiscAnimated: key not valid at offset 27.
 StashType.datc64 column 7 Icon: string not valid at offset 32.
-Tags.datc64 column 4 Name: string not valid at offset 20.
 UltimatumEncounterTypes.datc64 column 3 ProgressBarText: string not valid at offset 16.
 UltimatumEncounterTypes.datc64 column 6 NormalAchievements: array/key not valid at offset 26.
 UltimatumEncounterTypes.datc64 column 7 InscribedAchievement: key not valid at offset 42.

@@ -1,19 +1,20 @@
 [
   {
-    "name": "",
+    "name": "BaseItemTypesKey",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "BaseItemTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "SocketedImage",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -24,7 +25,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "SocketedImageLarge",
     "offset": 24,
     "unknownArray": false,
     "unique": false,

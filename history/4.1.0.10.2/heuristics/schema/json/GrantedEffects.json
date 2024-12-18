@@ -47,8 +47,47 @@
     "size": 8
   },
   {
-    "name": "Attribute",
+    "name": "AddedActiveSkillTypes",
     "offset": 33,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkillType"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ExcludedActiveSkillTypes",
+    "offset": 49,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkillType"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "SupportsGemsOnly",
+    "offset": 65,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "HASH32",
+    "offset": 66,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -61,19 +100,21 @@
     "size": 4
   },
   {
+    "name": "CannotBeSupported",
+    "offset": 70,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
-    "offset": 37,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 71,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -81,300 +122,272 @@
         "size": 4
       }
     },
-    "offset": 41,
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 45,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 49,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 65,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 66,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 70,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 71,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "CastTime",
     "offset": 75,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "ActiveSkill",
     "offset": 79,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "boolean": true
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkills"
+      }
     },
+    "size": 16
+  },
+  {
+    "name": "IgnoreMinionTypes",
     "offset": 95,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 96,
-    "size": 1,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "AddedMinionActiveSkillTypes",
     "offset": 97,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": false,
+      "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ActiveSkillType"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "Animation",
     "offset": 113,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Animation"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "MultiPartAchievement",
     "offset": 129,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "boolean": true
+      "key": {
+        "foreign": true,
+        "name": "MultiPartAchievements"
+      }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 145,
-    "size": 1,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "SupportWeaponRestrictions",
     "offset": 146,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 162,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 166,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 170,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 171,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 175,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 179,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 195,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 199,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemClasses"
       }
     },
-    "offset": 200,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "RegularVariant",
+    "offset": 162,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "GrantedEffects"
+      }
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 170,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 171,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 175,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 179,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 183,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "StatSet",
+    "offset": 184,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffectStatSets"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "AdditionalStatSets",
+    "offset": 200,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffectStatSets"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 216,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 216,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "CostTypes",
+    "offset": 224,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "CostTypes"
       }
     },
-    "offset": 224,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 240,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 240,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 241,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -382,11 +395,13 @@
         "size": 4
       }
     },
-    "offset": 241,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 257,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -394,8 +409,6 @@
         "size": 4
       }
     },
-    "offset": 257,
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

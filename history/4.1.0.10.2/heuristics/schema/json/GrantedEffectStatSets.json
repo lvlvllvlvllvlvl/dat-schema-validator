@@ -11,39 +11,52 @@
     "size": 8
   },
   {
+    "name": "Label",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "GrantedEffectLabels"
       }
     },
-    "offset": 8,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "ImplicitStats",
     "offset": 24,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
-    "offset": 40,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "ConstantStats",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ConstantStatsValues",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -51,63 +64,69 @@
         "size": 4
       }
     },
-    "offset": 56,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "BaseEffectiveness",
+    "offset": 72,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "offset": 72,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "IncrementalEffectiveness",
     "offset": 76,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
+      "decimal": {
         "size": 4
       }
     },
-    "offset": 80,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 84,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 84,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 100,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 100,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

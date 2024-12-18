@@ -272,18 +272,10 @@
     "size": 1
   },
   {
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "InventoryDimensions",
     "offset": 130,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -291,46 +283,66 @@
         "size": 4
       }
     },
+    "size": 16
+  },
+  {
+    "name": "ItemClassFlags",
     "offset": 146,
-    "size": 16,
-    "unknownArray": true
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "Unmodfiable",
     "offset": 162,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 163,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "CanBeFractured",
+    "offset": 163,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 164,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 164,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "UsableInMapDevice",
+    "offset": 180,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 180,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

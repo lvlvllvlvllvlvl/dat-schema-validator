@@ -81,6 +81,10 @@
     "size": 4
   },
   {
+    "name": "RecoveryTime2",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -88,22 +92,27 @@
         "size": 4
       }
     },
-    "offset": 40,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "BuffDefinitionsKey",
+    "offset": 44,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "BuffDefinitions"
       }
     },
-    "offset": 44,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 60,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -111,20 +120,20 @@
         "size": 4
       }
     },
-    "offset": 60,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "UtilityBuff",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "UtilityFlaskBuffs"
       }
     },
-    "offset": 64,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   }
 ]
