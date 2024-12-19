@@ -1,0 +1,18 @@
+type Essences {
+  BaseItemType: BaseItemTypes
+  HASH32: i32
+  _: i32
+  _: i32
+  _: [i32]
+  _: i32
+  MonsterMod: Mods
+  _: bool
+  CraftTag: Tags
+}
+
+type EssenceType {
+  Id: string
+  EssenceType: i32
+  IsCorruptedEssence: bool
+  WordsKey: Words
+}
