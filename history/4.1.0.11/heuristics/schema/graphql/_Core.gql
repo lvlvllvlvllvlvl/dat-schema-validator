@@ -3682,6 +3682,63 @@ type PassiveSkillMasteryEffects {
   AchievementItem: AchievementItems
 }
 
+type PassiveSkills {
+  Id: string @unique
+  Icon_DDSFile: string @file(ext: ".dds")
+  Stats: [Stats]
+  Stat1Value: i32
+  Stat2Value: i32
+  Stat3Value: i32
+  Stat4Value: i32
+  "Id used by PassiveSkillGraph.psg"
+  _: i32 @unique
+  _: i32
+  _: Characters
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: AchievementItems
+  _: bool
+  _: Ascendancy
+  _: bool
+  _: ReminderText
+  _: bool
+  _: [_] # All rows empty
+  _: rid
+  _: i32
+  _: BuffTemplates
+  _: i32 # All rows empty
+  _: i32
+  _: bool
+  _: bool
+  _: PassiveSkillTypes
+  _: PassiveSkillMasteryGroups
+  _: AtlasPassiveSkillTreeGroupType
+  _: SoundEffects
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+  _: [_] # All rows empty
+  _: i32 # All rows empty
+  _: [_] # All rows empty
+  _: bool
+  _: AtlasPassiveSkillSubTrees
+  _: bool
+  _: SkillGems
+  _: rid
+  _: bool
+  _: rid
+  _: i32
+}
+
 type PassiveSkillStatCategories {
   Id: string @unique
   Name: string
@@ -6425,64 +6482,6 @@ type passivejeweluniqueart {
   _: rid
   _: string
   _: rid
-}
-
-# Added 4.1
-type Passiveskills {
-  Id: string @unique
-  Icon_DDSFile: string @file(ext: ".dds")
-  Stats: [Stats]
-  Stat1Value: i32
-  Stat2Value: i32
-  Stat3Value: i32
-  Stat4Value: i32
-  "Id used by PassiveSkillGraph.psg"
-  _: i32 @unique
-  _: i32
-  _: Characters
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: AchievementItems
-  _: bool
-  _: Ascendancy
-  _: bool
-  _: ReminderText
-  _: bool
-  _: [_] # All rows empty
-  _: rid
-  _: i32
-  _: BuffTemplates
-  _: i32 # All rows empty
-  _: i32
-  _: bool
-  _: bool
-  _: PassiveSkillTypes
-  _: PassiveSkillMasteryGroups
-  _: AtlasPassiveSkillTreeGroupType
-  _: SoundEffects
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: i32 # All rows empty
-  _: [_] # All rows empty
-  _: i32 # All rows empty
-  _: [_] # All rows empty
-  _: bool
-  _: AtlasPassiveSkillSubTrees
-  _: bool
-  _: SkillGems
-  _: rid
-  _: bool
-  _: rid
-  _: i32
 }
 
 # Added 4.1
