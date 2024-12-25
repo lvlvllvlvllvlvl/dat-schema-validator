@@ -40,7 +40,7 @@ const RF = { recursive: true, force: true };
 const args = argv[1].includes("validate.ts") ? argv.slice(2) : null;
 const tablesToProcess = args?.map((a) => a.toLowerCase());
 const langsToProcess = tablesToProcess;
-const quiet = Boolean(args.find((v) => v === "-q" || v === "--quiet"));
+const quiet = Boolean(args?.find((v) => v === "-q" || v === "--quiet"));
 const progressBars =
   args && !quiet
     ? new MultiBar(
@@ -156,7 +156,8 @@ let includeTranslations = args?.find((v) => v === "-l" || v === "--lang" || v ==
   ? TRANSLATIONS.filter((t) => langsToProcess?.includes(t.name.toLowerCase()))
   : TRANSLATIONS;
 
-const tmp = await fs.mkdtemp(path.join(tmpdir(), "dat-validator-"));
+fs.mkdir("tmp", R);
+const tmp = await fs.mkdtemp(path.join("tmp", "dat-validator-"));
 onExit(() => {
   rmSync(tmp, RF);
 });
@@ -224,7 +225,7 @@ await Promise.all(
 
       tablesSeen.add(table.name);
 
-      const datFiles = data.map((d) => readDatFile(".datc64", d.buf));
+      const datFiles = data.map((d) => readDatFile(".datc64", d.buf as any));
       const columnStats = datFiles.map(analyzeDatFile);
       if (
         !datFiles.every(
@@ -375,6 +376,7 @@ errors.length &&
   );
 const missing = schema.tables
   .map((t) => t.name)
+  .filter(validFor)
   .filter((t) => !tablesSeen.has(t))
   .map((t) => `missing file ${t}.datc64`)
   .sort();

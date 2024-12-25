@@ -5,7 +5,6 @@ import { NamedHeader, importHeaders } from "./datfile.js";
 import * as fs from "fs/promises";
 import path from "path";
 export interface Table extends SchemaTable {
-  tags?: string[];
   added?: string;
 }
 export interface Enumeration extends SchemaEnumeration {
@@ -129,7 +128,7 @@ export async function exportGQL(
 
   for (const table of tables) {
     if (table.name in sourceMap) delete table.added;
-    const gql = tableGQL(table, getHeaders(table), err);
+    const gql = tableGQL(table, getHeaders(table as SchemaTable), err);
     const mapping = sourceMap[table.name];
     delete sourceMap[table.name];
     if (mapping) {

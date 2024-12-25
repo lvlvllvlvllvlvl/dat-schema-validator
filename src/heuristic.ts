@@ -15,7 +15,6 @@ export const headerTypes = {
   "[rid]": { array: true, key: { foreign: true } },
   "[i32]": { array: true, integer: { unsigned: false, size: 4 } },
   "[f32]": { array: true, decimal: { size: 4 } },
-  "[i16]": { array: true, integer: { unsigned: false, size: 2 } },
   "[row]": { array: true, key: { foreign: false } },
   "[string]": { array: true, string: {} },
   string: { array: false, string: {} },

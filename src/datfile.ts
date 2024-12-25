@@ -79,6 +79,9 @@ export class FileLoader {
       this.index.bundlesInfo,
       this.index.filesInfo
     );
+    if (!location) {
+      throw "no location found for " + fullPath;
+    }
     const bundleBin = await this.bundleLoader.fetchFile(location.bundle);
     return await this.bundles.decompressSliceInBundle(
       new Uint8Array(bundleBin),
@@ -148,12 +151,12 @@ export class CdnBundleLoader {
     ));
   }
 
-  async doFetchFile(name: string): Promise<ArrayBuffer> {
+  async doFetchFile(name: string): Promise<ArrayBufferLike> {
     const cachedFilePath = path.join(this.cacheDir, name.replace(/\//g, "@"));
 
     try {
       await fs.access(cachedFilePath);
-      return await fs.readFile(cachedFilePath);
+      return (await fs.readFile(cachedFilePath)).buffer;
     } catch {}
 
     const bundleBin = await (this.manifest ? this.fetchInya(name) : this.fetchCDN(name));
@@ -293,7 +296,25 @@ export interface NamedHeader extends Header {
   };
 }
 
-const VALID_TYPES = ["bool", "string", "i32", "i16", "f32", "row", "foreignrow", "enumrow"];
+const INT_TYPES = {
+  u8: { unsigned: true, size: 1 },
+  u16: { unsigned: true, size: 2 },
+  u32: { unsigned: true, size: 4 },
+  u64: { unsigned: true, size: 8 },
+  i8: { unsigned: false, size: 1 },
+  i16: { unsigned: false, size: 2 },
+  i32: { unsigned: false, size: 4 },
+  i64: { unsigned: false, size: 8 },
+  enumrow: { unsigned: false, size: 4 },
+} as const;
+const VALID_TYPES = Object.keys(INT_TYPES).concat(
+  "bool",
+  "string",
+  "f32",
+  "f64",
+  "row",
+  "foreignrow"
+);
 
 export function importHeaders(sch: SchemaTable): NamedHeader[];
 export function importHeaders(
@@ -339,27 +360,16 @@ export function importHeaders(
           break;
         }
       } else {
+        // https://github.com/SnosMe/poe-dat-viewer/blob/master/viewer/src/app/dat-viewer/db.ts#L165
         type = {
           array: column.array,
-          integer:
-            // column.type === 'u8' ? { unsigned: true, size: 1 }
-            // : column.type === 'u16' ? { unsigned: true, size: 2 }
-            // : column.type === 'u32' ? { unsigned: true, size: 4 }
-            // : column.type === 'u64' ? { unsigned: true, size: 8 }
-            // : column.type === 'i8' ? { unsigned: false, size: 1 }
-            // : column.type === 'i16' ? { unsigned: false, size: 2 }
-            column.type === "i32"
-              ? { unsigned: false, size: 4 }
-              : column.type === "i16"
-              ? { unsigned: false, size: 2 }
-              : column.type === "enumrow"
-              ? { unsigned: false, size: 4 }
-              : undefined,
+          integer: INT_TYPES[column.type],
           decimal:
             column.type === "f32"
               ? { size: 4 }
-              : // : column.type === 'f64' ? { size: 8 }
-                undefined,
+              : (column.type as any) === "f64"
+              ? { size: 8 }
+              : undefined,
           string: column.type === "string" ? {} : undefined,
           boolean: column.type === "bool" ? true : undefined,
           key:
@@ -379,18 +389,29 @@ export function importHeaders(
         type,
       });
     }
-    if (datFiles?.[0]) {
-      const header = headers[headers.length - 1];
-      if (Array.isArray(header)) {
-        offset += header[0]?.size || 0;
-      } else {
-        const size = getHeaderLength(header, datFiles[0]);
-        header.size = size;
-        offset += size;
-      }
-      if (offset >= datFiles[0].rowLength) {
-        break;
-      }
+    const header = headers[headers.length - 1];
+    if (Array.isArray(header)) {
+      offset += header[0]?.size || 0;
+    } else {
+      const size = getHeaderLength(header, {
+        // defined in pathofexile-dat/dat/reader but not exported (returned as a prop of each dat file)
+        fieldSize: {
+          BOOL: 1,
+          BYTE: 1,
+          SHORT: 2,
+          LONG: 4,
+          LONGLONG: 8,
+          STRING: 8,
+          KEY: 8,
+          KEY_FOREIGN: 8 + 8,
+          ARRAY: 8 + 8,
+        },
+      } as DatFile);
+      header.size = size;
+      offset += size;
+    }
+    if (datFiles?.[0] && offset >= datFiles[0].rowLength) {
+      break;
     }
   }
   return headers;
