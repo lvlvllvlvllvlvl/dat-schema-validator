@@ -715,18 +715,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -4244,18 +4232,6 @@
           "references": {
             "table": "Words"
           },
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
           "until": null,
           "file": null,
           "files": null
@@ -12016,42 +11992,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "f32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -12889,18 +12829,6 @@
           "references": {
             "table": "LegionBalancePerLevel"
           },
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
           "until": null,
           "file": null,
           "files": null
@@ -15506,42 +15434,6 @@
       "columns": [
         {
           "name": "Level",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
           "description": null,
           "array": false,
           "type": "i32",
@@ -26789,32 +26681,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": "Count",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": "RewardCategory",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "SanctumDeferredRewardCategories"
-          },
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -33286,18 +33152,6 @@
           "until": null,
           "file": ".dat",
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -37023,30 +36877,6 @@
           "description": null,
           "array": false,
           "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "string",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,
@@ -45271,20 +45101,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": "Type",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "CraftingBenchTypes"
-          },
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -49090,7 +48906,8 @@
           "files": null
         }
       ],
-      "tags": []
+      "tags": [],
+      "added": "4.1.0.11"
     },
     {
       "validFor": 3,
@@ -57766,18 +57583,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -60711,18 +60516,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "string",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -61616,54 +61409,6 @@
           "description": null,
           "array": false,
           "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": "MinAreaLevel",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": "MapFragmentLimit",
-          "description": null,
-          "array": false,
-          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -65080,30 +64825,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -67363,54 +67084,6 @@
           "description": null,
           "array": true,
           "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,
@@ -71863,30 +71536,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": true,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -75219,18 +74868,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -77559,18 +77196,6 @@
           "type": "string",
           "unique": false,
           "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": "Text",
-          "description": null,
-          "array": false,
-          "type": "string",
-          "unique": false,
-          "localized": true,
           "references": null,
           "until": null,
           "file": null,
@@ -82537,18 +82162,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -85011,102 +84624,6 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -88848,18 +88365,6 @@
           "until": null,
           "file": null,
           "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
         }
       ],
       "tags": [],
@@ -89214,54 +88719,6 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,
@@ -91263,18 +90720,6 @@
           "references": null,
           "until": null,
           "file": ".dds",
-          "files": null
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
           "files": null
         }
       ],

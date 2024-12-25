@@ -5281,6 +5281,7 @@ type combatuiprompts {
   _: rid
 }
 
+# Added 4.1
 type completionnotifications {
   _: string
   _: string
@@ -6230,6 +6231,7 @@ type misccooldowns {
   _: bool
 }
 
+# Added 4.1
 type miscprojectilemod {
   _: [_]
   _: string
@@ -6402,6 +6404,7 @@ type npcdialoguecutscenesequences {
   _: bool
 }
 
+# Added 4.1
 type npcportraitaooverrides {
   _: string
   _: string
