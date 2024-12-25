@@ -243,13 +243,13 @@ await Promise.all(
       table.columns = table.columns || [];
 
       if (datFiles[0].rowLength) {
-        let invalid = table.columns.length;
         const headers = importHeaders(
           table,
           (...args) => errors.push(args.join(" ")),
           datFiles,
           columnStats
         );
+        let invalid = Math.min(table.columns.length, headers.length);
         headers.forEach((header, i) => {
           try {
             if (
@@ -375,8 +375,8 @@ errors.length &&
     "errors.txt"
   );
 const missing = schema.tables
-  .map((t) => t.name)
   .filter(validFor)
+  .map((t) => t.name)
   .filter((t) => !tablesSeen.has(t))
   .map((t) => `missing file ${t}.datc64`)
   .sort();
@@ -385,6 +385,7 @@ missing.length &&
     fs.writeFile(path.join(schemaDir, schemaPrefix + "missing.txt"), missing.sort().join("\n")),
     "missing.txt"
   );
+schema.tables = schema.tables.filter((t) => !(missing.includes(t.name) && validFor(t)));
 progress.push(
   fs.writeFile(
     path.join(schemaDir, schemaPrefix + "filtered.json"),
