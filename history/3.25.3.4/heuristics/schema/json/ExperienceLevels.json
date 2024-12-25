@@ -25,14 +25,17 @@
     "size": 4
   },
   {
+    "name": "Experience",
+    "offset": 12,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
-    "offset": 12,
     "size": 4
   }
 ]

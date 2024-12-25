@@ -14,14 +14,17 @@
     "size": 16
   },
   {
+    "name": "HASH16",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 2
       }
     },
-    "offset": 16,
     "size": 2
   }
 ]

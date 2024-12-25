@@ -1306,6 +1306,51 @@ type EvergreenAchievements {
   _: [rid]
 }
 
+type ExecuteGEAL {
+  _: i32
+  _: i32
+  MiscAnimated: [MiscAnimated]
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: [_] # All rows empty
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 # All rows empty
+  _: bool
+  _: string
+  _: bool
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: [string]
+  _: string
+  _: [_]
+  _: string
+  _: string
+  _: i32
+  _: bool
+  _: [_]
+  _: bool
+  _: i32
+  _: bool
+  _: rid
+  _: bool
+}
+
 type ExpandingPulse {
   IntId: i32 @unique
   StringId: string @unique
@@ -1320,7 +1365,7 @@ type ExpandingPulse {
 type ExperienceLevels {
   Id: string
   Level: i32
-  _: i32
+  Experience: u32
 }
 
 enum ExplodingStormBuffs @indexing(first: 0) { _ }
@@ -2670,101 +2715,59 @@ type ModFamily {
 
 type Mods @tags(list: ["crafting"]) {
   Id: string @unique
-  _: rid
-  _: ModType
+  HASH16: u16
+  ModTypeKey: ModType
+  Level: i32
+  StatsKey1: Stats
+  StatsKey2: Stats
+  StatsKey3: Stats
+  StatsKey4: Stats
+  Domain: ModDomains
+  Name: string
+  GenerationType: ModGenerationType
+  Families: [ModFamily]
+  Stat1Min: i32
+  Stat1Max: i32
+  Stat2Min: i32
+  Stat2Max: i32
+  Stat3Min: i32
+  Stat3Max: i32
+  Stat4Min: i32
+  Stat4Max: i32
+  SpawnWeight_TagsKeys: [Tags]
+  SpawnWeight_Values: [i32]
+  TagsKeys: [Tags]
+  GrantedEffectsPerLevelKeys: [GrantedEffectsPerLevel]
+  _: [i32]
+  MonsterMetadata: string
+  MonsterKillAchievements: [AchievementItems]
+  ChestModType: [ModType]
+  Stat5Min: i32
+  Stat5Max: i32
+  StatsKey5: Stats
+  FullAreaClear_AchievementItemsKey: [AchievementItems]
+  AchievementItemsKey: [AchievementItems]
+  GenerationWeight_TagsKeys: [Tags]
+  GenerationWeight_Values: [i32]
+  ModifyMapsAchievements: [AchievementItems]
+  IsEssenceOnlyModifier: bool
+  Stat6Min: i32
+  Stat6Max: i32
+  StatsKey6: Stats
+  MaxLevel: i32
+  _: bool
+  CraftingItemClassRestrictions: [ItemClasses]
+  MonsterOnDeath: string
   _: i32
-  _: Stats
-  _: Stats
-  _: Stats
-  _: Stats
-  _: ModDomains
-  _: i32
-  _: ModGenerationType
-  _: ModFamily
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: Tags
-  _: i32
-  _: Tags
-  _: GrantedEffectsPerLevel
-  _: i32 # All rows empty
-  _: i32
-  _: AchievementItems
-  _: ModType
-  _: i32
-  _: i32
-  _: Stats
-  _: AchievementItems
-  _: AchievementItems
-  _: Tags
-  _: i32
-  _: AchievementItems
-  _: i32 # All rows empty
-  _: rid
-  _: i32
-  _: Stats # All rows empty
-  _: i32
-  _: i32 # All rows empty
-  _: ItemClasses
-  _: i32
-  _: i32
-  _: GrantedEffectsPerLevel # All rows empty
-  _: rid
-  _: i32
-  _: Stats
-  _: Stats
-  _: i32
-  _: i32
-  _: InfluenceTypes # All rows empty
-  _: Tags
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: rid
-  _: rid
-  _: rid
-  _: i32
-  _: BuffTemplates # All rows empty
-  _: Mods
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: GrantedEffectsPerLevel
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: [_]
-  _: string
-  _: i32
-  _: [_] # All rows empty
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: i32
-  _: i32
-  _: i32
-  _: [_]
+  _: [GrantedEffectsPerLevel]
+  Heist_SubStatValue1: i32
+  Heist_SubStatValue2: i32
+  Heist_StatsKey0: Stats
+  Heist_StatsKey1: Stats
+  Heist_AddStatValue1: i32
+  Heist_AddStatValue2: i32
+  InfluenceTypes: InfluenceTypes
+  ImplicitTagsKeys: [Tags]
   _: bool
   _: i32
   _: i32
@@ -2782,19 +2785,13 @@ type Mods @tags(list: ["crafting"]) {
   _: i32
   _: i32
   _: i32
-  _: rid
+  BuffTemplate: BuffTemplates
+  ArchnemesisMinionMod: Mods
+  HASH32: i32
+  _: [rid]
   _: i32
-  _: i32
-  _: i32
-  _: [string]
-  _: bool
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i16
-  _: bool
+  _: [GrantedEffectsPerLevel]
+  RadiusJewelType: i32
 }
 
 type ModSellPriceTypes {
@@ -3691,52 +3688,49 @@ type PassiveSkills {
   Stat3Value: i32
   Stat4Value: i32
   "Id used by PassiveSkillGraph.psg"
-  _: i32 @unique
+  PassiveSkillGraphId: u16 @unique
+  Name: string
+  Characters: [Characters]
+  IsKeystone: bool
+  IsNotable: bool
+  FlavourText: string
+  IsJustIcon: bool
+  AchievementItem: AchievementItems
+  IsJewelSocket: bool
+  AscendancyKey: Ascendancy
+  IsAscendancyStartingNode: bool
+  ReminderStrings: [ReminderText]
+  SkillPointsGranted: i32
+  IsMultipleChoice: bool
+  IsMultipleChoiceOption: bool
+  Stat5Value: i32
+  PassiveSkillBuffs: [BuffTemplates]
+  IsAnointmentOnly: bool
   _: i32
-  _: Characters
-  _: i32 # All rows empty
+  IsExpansion: bool
+  IsProxyPassive: bool
+  SkillType: PassiveSkillTypes
+  MasteryGroup: PassiveSkillMasteryGroups
+  Group: AtlasPassiveSkillTreeGroupType
+  SoundEffect: SoundEffects
+  _: string
   _: i32
   _: i32
   _: i32
-  _: AchievementItems
+  _: i32
+  _: i32
   _: bool
-  _: Ascendancy
+  _: [rid]
+  _: i32
+  _: [rid]
   _: bool
-  _: ReminderText
+  KeystoneId: rid
   _: bool
-  _: [_] # All rows empty
-  _: rid
-  _: i32
-  _: BuffTemplates
-  _: i32 # All rows empty
-  _: i32
-  _: bool
-  _: bool
-  _: PassiveSkillTypes
-  _: PassiveSkillMasteryGroups
-  _: AtlasPassiveSkillTreeGroupType
-  _: SoundEffects
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: i32 # All rows empty
-  _: [_] # All rows empty
-  _: i32 # All rows empty
-  _: [_] # All rows empty
-  _: bool
-  _: AtlasPassiveSkillSubTrees
-  _: bool
-  _: SkillGems
-  _: rid
-  _: bool
-  _: rid
-  _: i32
+  IsAttribute: bool
+  AtlasSubTree: AtlasPassiveSkillSubTrees
+  IsRootOfAtlasTree: bool
+  GrantedSkill: SkillGems
+  WeaponPointsGranted: i32
 }
 
 type PassiveSkillStatCategories {
@@ -5198,8 +5192,8 @@ type caravanstops {
   _: i32
   _: i32
   _: rid
-  _: [i16]
   _: string
+  _: [_]
   _: i32 # All rows empty
   _: i32 # All rows empty
   _: rid
@@ -5287,6 +5281,16 @@ type combatuiprompts {
   _: rid
 }
 
+type completionnotifications {
+  _: string
+  _: string
+  _: string
+  _: f32
+  _: string
+  _: rid
+  _: string
+}
+
 # Added 4.1
 type ConditionalAchievements {
   _: rid @unique
@@ -5322,7 +5326,7 @@ type CosmeticsEquipPanelMode {
 # Added 4.1
 type CraftableModTypes {
   ModType: ModType
-  _: i16
+  HASH16: u16
 }
 
 # Added 4.1
@@ -5733,7 +5737,8 @@ type grantedskillsocketnumbers {
 
 # Added 4.1
 type graphicalitemreceptacle {
-  _: [i16]
+  _: string
+  _: string
   _: rid
   _: bool
   _: bool
@@ -5870,7 +5875,8 @@ type HudLifeVisuals {
   _: string
   _: i32
   _: string
-  _: [i16]
+  _: string
+  _: string
   _: string
 }
 
@@ -6093,29 +6099,25 @@ type microtransactionlevelupeffects {
   _: rid
   _: rid
   _: rid
-  _: [i16]
+  _: string
+  _: string
   _: string
 }
 
 # Added 4.1
 type MicrotransactionObjectEffects {
   Id: string @unique
-  _: [i16]
-  Script: string
+  _: string
+  _: string
+  _: string
   _: [_]
   _: [_]
   _: rid
   _: [_]
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: rid
+  _: rid
+  _: i32 # All rows empty
 }
 
 # Added 4.1
@@ -6226,6 +6228,15 @@ type misccooldowns {
   _: i32
   _: i32
   _: bool
+}
+
+type miscprojectilemod {
+  _: [_]
+  _: string
+  _: string
+  _: rid
+  _: rid
+  _: string
 }
 
 # Added 4.1
@@ -6389,6 +6400,13 @@ type npcdialoguecutscenesequences {
   _: bool
   _: string
   _: bool
+}
+
+type npcportraitaooverrides {
+  _: string
+  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
 }
 
 # Added 4.1

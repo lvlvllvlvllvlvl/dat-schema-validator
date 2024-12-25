@@ -80,23 +80,24 @@
   },
   {
     "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 2
-      }
-    },
-    "offset": 56,
-    "size": 16
-  },
-  {
-    "type": {
       "array": false,
       "string": {}
     },
-    "offset": 72,
+    "offset": 56,
     "size": 8,
     "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 64,
+    "size": 16,
+    "unknownArray": true
   },
   {
     "type": {

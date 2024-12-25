@@ -158,14 +158,21 @@
   },
   {
     "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 2
-      }
+      "array": false,
+      "string": {}
     },
     "offset": 108,
-    "size": 16
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 116,
+    "size": 8,
+    "unique": false
   },
   {
     "type": {

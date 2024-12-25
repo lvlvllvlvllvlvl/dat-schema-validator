@@ -1431,7 +1431,7 @@ type ExpandingPulse {
 type ExperienceLevels {
   Id: string
   Level: i32
-  _: i32
+  Experience: u32
 }
 
 type ExplodingStormBuffs {
@@ -3776,54 +3776,42 @@ type PassiveSkills {
   Stat3Value: i32
   Stat4Value: i32
   "Id used by PassiveSkillGraph.psg"
-  _: i32 @unique
+  PassiveSkillGraphId: u16 @unique
+  Name: string
+  Characters: [Characters]
+  IsKeystone: bool
+  IsNotable: bool
+  FlavourText: string
+  IsJustIcon: bool
+  AchievementItem: AchievementItems
+  IsJewelSocket: bool
+  AscendancyKey: Ascendancy
+  IsAscendancyStartingNode: bool
+  ReminderStrings: [ReminderText]
+  SkillPointsGranted: i32
+  IsMultipleChoice: bool
+  IsMultipleChoiceOption: bool
+  Stat5Value: i32
+  PassiveSkillBuffs: [BuffTemplates]
+  GrantedEffectsPerLevel: GrantedEffectsPerLevel
+  IsAnointmentOnly: bool
   _: i32
-  _: Characters
-  _: i32 # All rows empty
+  IsExpansion: bool
+  IsProxyPassive: bool
+  SkillType: PassiveSkillTypes
+  MasteryGroup: PassiveSkillMasteryGroups
+  Group: AtlasPassiveSkillTreeGroupType
+  SoundEffect: SoundEffects
+  _: string
   _: i32
   _: i32
   _: i32
-  _: AchievementItems
+  _: i32
+  _: i32
   _: bool
-  _: Ascendancy
-  _: bool
-  _: ReminderText
-  _: bool
-  _: [_]
+  _: [rid]
   _: i32
-  _: bool
-  _: BuffTemplates
-  _: GrantedEffectsPerLevel
-  _: [_]
-  _: rid
-  _: bool
-  _: bool
-  _: PassiveSkillTypes
-  _: PassiveSkillMasteryGroups
-  _: AtlasPassiveSkillTreeGroupType
-  _: SoundEffects
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: [_]
-  _: i32
-  _: [_]
+  _: [rid]
   _: bool
   _: rid
   _: rid
@@ -5578,6 +5566,17 @@ type HudLifeVisuals {
   _: string
 }
 
+# Added 3.24
+type hudmanavisuals {
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: i32 # All rows empty
+}
+
 # Added 3.21
 type HudVisualsFromStat {
   _: rid @unique
@@ -5649,6 +5648,16 @@ type ItemPickupEffect {
   _: rid
   _: rid
   _: i32
+}
+
+type itemvisualheldbodymodeloverridebyitemaffiliatedattributes {
+  _: rid
+  _: [_]
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
 }
 
 # Added 3.20

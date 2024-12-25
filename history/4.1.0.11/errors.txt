@@ -42,15 +42,15 @@ Chests.datc64 column 34 <unknown>: key not valid at offset 284. Last changed in 
 Chests.datc64 column 37 <unknown>: array/key not valid at offset 302. Last changed in version 4.1.0.10.2
 Chests.datc64 column 39 StatsHardmode: array/key not valid at offset 319. Last changed in version 4.1.0.10.2
 Chests.datc64 column 7 <unknown>: boolean not valid at offset 38. Last changed in version 4.1.0.10.2
-CraftableModTypes HASH16 unknown type u16
 DamageParticleEffects.datc64 column 3 PETFile: string not valid at offset 8. Last changed in version 4.1.0.10.2
 DamageParticleEffects.datc64 column 4 ImpactSoundData1: key not valid at offset 16. Last changed in version 4.1.0.10.2
 DamageParticleEffects.datc64 column 5 ImpactSoundData2: key not valid at offset 32. Last changed in version 4.1.0.10.2
 ExecuteGEAL.datc64 column 17 <unknown>: key not valid at offset 79.
+ExecuteGEAL.datc64 column 30 "<unknown>": array not valid.
+ExecuteGEAL.datc64 column 33 "<unknown>": array not valid.
 ExpeditionDeals.datc64 column 5 Description: string not valid at offset 36. Last changed in version 4.1.0.10.2
 ExpeditionDeals.datc64 column 6 BuyAchievements: array/key not valid at offset 44. Last changed in version 4.1.0.10.2
 ExpeditionDeals.datc64 column 7 <unknown>: key not valid at offset 60. Last changed in version 4.1.0.10.2
-ExperienceLevels Experience unknown type u32
 File not found: data/french/abyssbosslifescalingperlevel.datc64
 File not found: data/french/abyssobjects.datc64
 File not found: data/french/actiontypes.datc64
@@ -5882,6 +5882,10 @@ MapStashSpecialTypeEntries.datc64 column 6 IsShaperGuardian: boolean not valid a
 MapStashSpecialTypeEntries.datc64 column 7 IsElderGuardian: boolean not valid at offset 41. Last changed in version 4.1.0.10.2
 MapStashSpecialTypeEntries.datc64 column 8 <unknown>: key not valid at offset 42. Last changed in version 4.1.0.10.2
 MicrotransactionCursorVariations.datc64 column 3 <unknown>: integer not valid at offset 32. Last changed in version 4.1.0.10.2
+MicrotransactionObjectEffects.datc64 column 2 "<unknown>": array not valid. Last changed in version 4.1.0.10.2
+MicrotransactionObjectEffects.datc64 column 4 "<unknown>": array not valid. Last changed in version 4.1.0.10.2
+MicrotransactionObjectEffects.datc64 column 5 "<unknown>": array not valid. Last changed in version 4.1.0.10.2
+MicrotransactionObjectEffects.datc64 column 6 <unknown>: key not valid at offset 16. Last changed in version 4.1.0.10.2
 MicrotransactionOnKillConditions.datc64 column 13 <unknown>: array/string not valid at offset 98. Last changed in version 4.1.0.10.2
 MicrotransactionPortalVariations.datc64 column 10 PortalEffectLarge: string not valid at offset 76. Last changed in version 4.1.0.10.2
 MicrotransactionPortalVariations.datc64 column 13 Script: string not valid at offset 92. Last changed in version 4.1.0.10.2
@@ -5891,7 +5895,6 @@ MicrotransactionPortalVariations.datc64 column 6 MiscObject: key not valid at of
 MicrotransactionPortalVariations.datc64 column 7 PortalEffect: string not valid at offset 56. Last changed in version 4.1.0.10.2
 MicrotransactionPortalVariations.datc64 column 9 <unknown>: string not valid at offset 68. Last changed in version 4.1.0.10.2
 MicrotransactionSocialFrameVariations.datc64 column 3 BK2File: string not valid at offset 20. Last changed in version 4.1.0.10.2
-Mods HASH16 unknown type u16
 MonsterDeathAchievements.datc64 column 12 "<unknown>": array not valid. Last changed in version 4.1.0.10.2
 MonsterDeathAchievements.datc64 column 13 "<unknown>": array not valid. Last changed in version 4.1.0.10.2
 MonsterDeathAchievements.datc64 column 14 <unknown>: array/string not valid at offset 99. Last changed in version 4.1.0.10.2
@@ -5983,7 +5986,6 @@ NPCs.datc64 column 16 Gender: string not valid at offset 159. Last changed in ve
 NPCs.datc64 column 17 <unknown>: boolean not valid at offset 167. Last changed in version 4.1.0.10.2
 PantheonPanelLayout.datc64 column 20 AchievementItems: array/key not valid at offset 209. Last changed in version 4.1.0.10.2
 PassiveSkillFilterOptions.datc64 column 2 <unknown>: key not valid at offset 8. Last changed in version 4.1.0.10.2
-PassiveSkills PassiveSkillGraphId unknown type u16
 Pet.datc64 column 10 Skills: array/key not valid at offset 54. Last changed in version 4.1.0.10.2
 Pet.datc64 column 13 <unknown>: key not valid at offset 75. Last changed in version 4.1.0.10.2
 Pet.datc64 column 14 <unknown>: boolean not valid at offset 91. Last changed in version 4.1.0.10.2
