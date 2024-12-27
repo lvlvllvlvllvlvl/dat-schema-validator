@@ -11,7 +11,7 @@
     "size": 8
   },
   {
-    "name": "ItemClassesKey",
+    "name": "ItemClass",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -89,7 +89,7 @@
     "size": 4
   },
   {
-    "name": "FlavourTextKey",
+    "name": "FlavourText",
     "offset": 52,
     "unknownArray": false,
     "unique": false,
@@ -103,7 +103,7 @@
     "size": 16
   },
   {
-    "name": "Implicit_ModsKeys",
+    "name": "Implicit_Mods",
     "offset": 68,
     "unknownArray": false,
     "unique": false,
@@ -145,7 +145,7 @@
     "size": 16
   },
   {
-    "name": "TagsKeys",
+    "name": "Tags",
     "offset": 104,
     "unknownArray": false,
     "unique": false,
@@ -208,7 +208,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
@@ -240,7 +240,7 @@
     "size": 8
   },
   {
-    "name": "Equip_AchievementItemsKey",
+    "name": "Equip_AchievementItem",
     "offset": 172,
     "unknownArray": false,
     "unique": false,
@@ -293,7 +293,7 @@
     "size": 16
   },
   {
-    "name": "FragmentBaseItemTypesKey",
+    "name": "FragmentBaseItemType",
     "offset": 221,
     "unknownArray": false,
     "unique": false,

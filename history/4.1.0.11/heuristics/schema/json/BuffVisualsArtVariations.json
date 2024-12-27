@@ -11,15 +11,18 @@
     "size": 8
   },
   {
+    "name": "Visuals",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "BuffVisuals"
       }
     },
-    "offset": 8,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
     "name": "",

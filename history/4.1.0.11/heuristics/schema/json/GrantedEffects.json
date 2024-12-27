@@ -93,7 +93,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
@@ -111,7 +111,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "LifeLeech",
     "offset": 71,
     "unknownArray": false,
     "unique": false,
@@ -164,7 +164,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "CooldownNotRecoverDuringActive",
     "offset": 96,
     "unknownArray": false,
     "unique": false,
@@ -348,7 +348,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Audio",
     "offset": 216,
     "unknownArray": false,
     "unique": false,

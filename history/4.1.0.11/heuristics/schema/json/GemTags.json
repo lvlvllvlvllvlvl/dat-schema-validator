@@ -11,7 +11,7 @@
     "size": 8
   },
   {
-    "name": "Tag",
+    "name": "Name",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -22,7 +22,7 @@
     "size": 8
   },
   {
-    "name": "Stat1",
+    "name": "LocalLevelStat",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -36,7 +36,7 @@
     "size": 16
   },
   {
-    "name": "Stat2",
+    "name": "LocalQualityStat",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -50,7 +50,7 @@
     "size": 16
   },
   {
-    "name": "Stat3",
+    "name": "GlobalSpellLevelStat",
     "offset": 48,
     "unknownArray": false,
     "unique": false,

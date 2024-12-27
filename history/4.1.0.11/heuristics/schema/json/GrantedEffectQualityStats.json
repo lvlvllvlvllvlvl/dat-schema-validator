@@ -1,6 +1,6 @@
 [
   {
-    "name": "GrantedEffectsKey",
+    "name": "GrantedEffect",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -14,7 +14,7 @@
     "size": 16
   },
   {
-    "name": "StatsKeys",
+    "name": "Stats",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -42,28 +42,32 @@
     "size": 16
   },
   {
+    "name": "AddTypes",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ActiveSkillType"
       }
     },
-    "offset": 48,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "AddMinionTypes",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ActiveSkillType"
       }
     },
-    "offset": 64,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true
+    "size": 16
   },
   {
     "name": "",

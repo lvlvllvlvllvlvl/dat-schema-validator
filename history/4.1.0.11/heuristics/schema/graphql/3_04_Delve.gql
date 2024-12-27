@@ -21,24 +21,24 @@ type DelveCraftingModifierDescriptions {
 }
 
 type DelveCraftingModifiers @tags(list: ["crafting"]) {
-  BaseItemTypesKey: BaseItemTypes
-  AddedModsKeys: [Mods]
-  NegativeWeight_TagsKeys: [Tags]
+  BaseItemType: BaseItemTypes
+  AddedMods: [Mods]
+  NegativeWeight_Tags: [Tags]
   NegativeWeight_Values: [i32]
-  ForcedAddModsKeys: [Mods]
-  ForbiddenDelveCraftingTagsKeys: [DelveCraftingTags]
-  AllowedDelveCraftingTagsKeys: [DelveCraftingTags]
+  ForcedAddMods: [Mods]
+  ForbiddenDelveCraftingTags: [DelveCraftingTags]
+  AllowedDelveCraftingTags: [DelveCraftingTags]
   CanMirrorItem: bool
   CorruptedEssenceChance: i32
   CanImproveQuality: bool
   HasLuckyRolls: bool
   _: bool
-  SellPrice_ModsKeys: [Mods]
+  SellPrice_Mods: [Mods]
   CanRollWhiteSockets: bool
-  Weight_TagsKeys: [Tags]
+  Weight_Tags: [Tags]
   Weight_Values: [i32]
-  DelveCraftingModifierDescriptionsKeys: [DelveCraftingModifierDescriptions]
-  BlockedDelveCraftingModifierDescriptionsKeys: [DelveCraftingModifierDescriptions]
+  DelveCraftingModifierDescriptions: [DelveCraftingModifierDescriptions]
+  BlockedDelveCraftingModifierDescriptions: [DelveCraftingModifierDescriptions]
   _: bool
   _: bool
   _: [i32]

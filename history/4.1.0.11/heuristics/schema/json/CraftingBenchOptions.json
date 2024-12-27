@@ -1,13 +1,14 @@
 [
   {
-    "name": "",
+    "name": "HideoutNPC",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "HideoutNPCs"
       }
     },
     "size": 16
@@ -333,14 +334,15 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "KalandraAchievement",
     "offset": 226,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AchievementItems"
       }
     },
     "size": 16
@@ -374,14 +376,15 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "VeiledMod",
     "offset": 250,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Mods"
       }
     },
     "size": 16
@@ -415,14 +418,15 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ModType",
     "offset": 298,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ModType"
       }
     },
     "size": 16
@@ -453,7 +457,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat1",
     "offset": 319,
     "unknownArray": false,
     "unique": false,
@@ -467,7 +471,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Stat2",
     "offset": 335,
     "unknownArray": false,
     "unique": false,
@@ -481,7 +485,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Stat3",
     "offset": 351,
     "unknownArray": false,
     "unique": false,

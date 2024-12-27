@@ -44,7 +44,7 @@
     "size": 1
   },
   {
-    "name": "Semantics",
+    "name": "Semantic",
     "offset": 11,
     "unknownArray": false,
     "unique": false,
@@ -91,7 +91,7 @@
     "size": 1
   },
   {
-    "name": "MainHandAlias_StatsKey",
+    "name": "MainHandAlias_Stat",
     "offset": 25,
     "unknownArray": false,
     "unique": false,
@@ -105,7 +105,7 @@
     "size": 8
   },
   {
-    "name": "OffHandAlias_StatsKey",
+    "name": "OffHandAlias_Stat",
     "offset": 33,
     "unknownArray": false,
     "unique": false,
@@ -137,14 +137,14 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
     "size": 4
   },
   {
-    "name": "BelongsActiveSkillsKey",
+    "name": "BelongsActiveSkills",
     "offset": 46,
     "unknownArray": false,
     "unique": false,
@@ -216,20 +216,21 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "DotFlag",
     "offset": 97,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "VirtualStatContextFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "WeaponHandCheck",
     "offset": 113,
     "unknownArray": false,
     "unique": false,

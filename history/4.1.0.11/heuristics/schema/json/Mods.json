@@ -25,7 +25,7 @@
     "size": 2
   },
   {
-    "name": "ModTypeKey",
+    "name": "ModType",
     "offset": 10,
     "unknownArray": false,
     "unique": false,
@@ -53,7 +53,7 @@
     "size": 4
   },
   {
-    "name": "StatsKey1",
+    "name": "Stat1",
     "offset": 30,
     "unknownArray": false,
     "unique": false,
@@ -67,7 +67,7 @@
     "size": 16
   },
   {
-    "name": "StatsKey2",
+    "name": "Stat2",
     "offset": 46,
     "unknownArray": false,
     "unique": false,
@@ -81,7 +81,7 @@
     "size": 16
   },
   {
-    "name": "StatsKey3",
+    "name": "Stat3",
     "offset": 62,
     "unknownArray": false,
     "unique": false,
@@ -95,7 +95,7 @@
     "size": 16
   },
   {
-    "name": "StatsKey4",
+    "name": "Stat4",
     "offset": 78,
     "unknownArray": false,
     "unique": false,
@@ -162,7 +162,7 @@
     "size": 16
   },
   {
-    "name": "Stat1Min",
+    "name": "Stat1Value",
     "offset": 126,
     "unknownArray": false,
     "unique": false,
@@ -176,7 +176,7 @@
     "size": 4
   },
   {
-    "name": "Stat1Max",
+    "name": "Stat2Value",
     "offset": 130,
     "unknownArray": false,
     "unique": false,
@@ -190,7 +190,7 @@
     "size": 4
   },
   {
-    "name": "Stat2Min",
+    "name": "Stat3Value",
     "offset": 134,
     "unknownArray": false,
     "unique": false,
@@ -204,7 +204,7 @@
     "size": 4
   },
   {
-    "name": "Stat2Max",
+    "name": "Stat4Value",
     "offset": 138,
     "unknownArray": false,
     "unique": false,
@@ -218,10 +218,18 @@
     "size": 4
   },
   {
-    "name": "Stat3Min",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 142,
-    "unknownArray": false,
-    "unique": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -229,837 +237,108 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "Stat3Max",
     "offset": 146,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "Stat4Min",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 150,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "Stat4Max",
-    "offset": 154,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "SpawnWeight_TagsKeys",
-    "offset": 158,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "Tags"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "SpawnWeight_Values",
-    "offset": 174,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "TagsKeys",
-    "offset": 190,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "Tags"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "GrantedEffectsPerLevelKeys",
-    "offset": 206,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "GrantedEffectsPerLevel"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 222,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "MonsterMetadata",
-    "offset": 238,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "MonsterKillAchievements",
-    "offset": 246,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "AchievementItems"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "ChestModType",
-    "offset": 262,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "ModType"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "Stat5Min",
-    "offset": 278,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Stat5Max",
-    "offset": 282,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "StatsKey5",
-    "offset": 286,
-    "unknownArray": false,
-    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "name": "Stats"
+        "foreign": true
       }
     },
+    "offset": 166,
     "size": 16
   },
   {
-    "name": "FullAreaClear_AchievementItemsKey",
-    "offset": 302,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "AchievementItems"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "AchievementItemsKey",
-    "offset": 318,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "AchievementItems"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "GenerationWeight_TagsKeys",
-    "offset": 334,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "Tags"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "GenerationWeight_Values",
-    "offset": 350,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "ModifyMapsAchievements",
-    "offset": 366,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "AchievementItems"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "IsEssenceOnlyModifier",
-    "offset": 382,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "Stat6Min",
-    "offset": 383,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Stat6Max",
-    "offset": 387,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "StatsKey6",
-    "offset": 391,
-    "unknownArray": false,
-    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "name": "Stats"
+        "foreign": false
       }
     },
-    "size": 16
+    "offset": 182,
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "MaxLevel",
-    "offset": 407,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 411,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "CraftingItemClassRestrictions",
-    "offset": 412,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "ItemClasses"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "MonsterOnDeath",
-    "offset": 428,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "",
-    "offset": 436,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 440,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "GrantedEffectsPerLevel"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "Heist_SubStatValue1",
-    "offset": 456,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Heist_SubStatValue2",
-    "offset": 460,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Heist_StatsKey0",
-    "offset": 464,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "name": "Stats"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "Heist_StatsKey1",
-    "offset": 480,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "name": "Stats"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "Heist_AddStatValue1",
-    "offset": 496,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Heist_AddStatValue2",
-    "offset": 500,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "InfluenceTypes",
-    "offset": 504,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "ImplicitTagsKeys",
-    "offset": 508,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "Tags"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 524,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 525,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 529,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 533,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 537,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 541,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 545,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 549,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 553,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 557,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 561,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 565,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 569,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 573,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 577,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 581,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 585,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "BuffTemplate",
-    "offset": 589,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "name": "BuffTemplates"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "ArchnemesisMinionMod",
-    "offset": 605,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": false,
-        "name": "Mods"
-      }
-    },
-    "size": 8
-  },
-  {
-    "name": "HASH32",
-    "offset": 613,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 617,
-    "unknownArray": false,
-    "unique": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "offset": 190,
+    "size": 16,
+    "unknownArray": true
   },
   {
-    "name": "",
-    "offset": 633,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 637,
-    "unknownArray": false,
-    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "name": "GrantedEffectsPerLevel"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 206,
+    "size": 16,
+    "unknownArray": true
   },
   {
-    "name": "RadiusJewelType",
-    "offset": 653,
-    "unknownArray": false,
-    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 222,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 238,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 246,
+    "size": 16,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 262,
+    "size": 16,
+    "unknownArray": true
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -1067,6 +346,636 @@
         "size": 4
       }
     },
+    "offset": 278,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 282,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 286,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 302,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 318,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 334,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 350,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 366,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 382,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 383,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 387,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 391,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 407,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 411,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 412,
+    "size": 16,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 428,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 436,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 440,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 456,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 460,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 464,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 480,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 496,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 500,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 504,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 508,
+    "size": 16,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 524,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 525,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 529,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 533,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 537,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 541,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 545,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 549,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 553,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 557,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 561,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 565,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 569,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 573,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 577,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 581,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 585,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 589,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 605,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 609,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 613,
     "size": 4
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 617,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 633,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 634,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 638,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 642,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 646,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 650,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 2
+      }
+    },
+    "offset": 654,
+    "size": 2,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 656,
+    "size": 1,
+    "unique": false
   }
 ]

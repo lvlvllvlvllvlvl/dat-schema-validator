@@ -86,7 +86,7 @@
     "size": 16
   },
   {
-    "name": "WeaponRestriction_ItemClassesKeys",
+    "name": "WeaponRestriction_ItemClasses",
     "offset": 80,
     "unknownArray": false,
     "unique": false,
@@ -122,7 +122,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "HideOnWebsite",
     "offset": 112,
     "unknownArray": false,
     "unique": false,
@@ -133,7 +133,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "GrantedEffect",
     "offset": 113,
     "unknownArray": false,
     "unique": false,
@@ -180,7 +180,7 @@
     "size": 1
   },
   {
-    "name": "Input_StatKeys",
+    "name": "Input_Stats",
     "offset": 127,
     "unknownArray": false,
     "unique": false,
@@ -194,7 +194,7 @@
     "size": 16
   },
   {
-    "name": "Output_StatKeys",
+    "name": "Output_Stats",
     "offset": 143,
     "unknownArray": false,
     "unique": false,
@@ -233,7 +233,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "isGem",
     "offset": 176,
     "unknownArray": false,
     "unique": false,
@@ -244,7 +244,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "SecondarySkillSpecificStats",
     "offset": 177,
     "unknownArray": false,
     "unique": false,
@@ -258,7 +258,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "SkillMine",
     "offset": 193,
     "unknownArray": false,
     "unique": false,
@@ -272,7 +272,7 @@
     "size": 4
   },
   {
-    "name": "AlternateSkillTargetingBehavioursKey",
+    "name": "AlternateSkillTargetingBehaviour",
     "offset": 197,
     "unknownArray": false,
     "unique": false,
@@ -308,14 +308,15 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "StatContextFlags",
     "offset": 222,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "VirtualStatContextFlags"
       }
     },
     "size": 16

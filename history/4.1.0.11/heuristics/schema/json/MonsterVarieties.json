@@ -11,7 +11,7 @@
     "size": 8
   },
   {
-    "name": "MonsterTypesKey",
+    "name": "MonsterType",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -25,7 +25,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MovementSpeed",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -114,7 +114,7 @@
     "size": 8
   },
   {
-    "name": "ModsKeys",
+    "name": "Mods",
     "offset": 80,
     "unknownArray": false,
     "unique": false,
@@ -212,66 +212,17 @@
     "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
-    "size": 4
+    "size": 16
   },
   {
     "name": "",
-    "offset": 132,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 136,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 140,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
     "offset": 144,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -279,57 +230,69 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 148,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": true,
-      "key": {
-        "foreign": true
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "Tags",
     "offset": 152,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "ExperienceMultiplier",
     "offset": 168,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": true,
-      "key": {
-        "foreign": true
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 172,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": false,
+      "array": true,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
+    "size": 16
+  },
+  {
+    "name": "MinAgroRange",
     "offset": 188,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -337,11 +300,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "MaxAgroRange",
     "offset": 192,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -349,11 +314,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "SpotlightColour1",
     "offset": 196,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -361,11 +328,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "SpotlightColour2",
     "offset": 200,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -373,83 +342,101 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "SpotlightColour3",
     "offset": 204,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": true,
-      "key": {
-        "foreign": true
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "GrantedEffects",
     "offset": 208,
-    "size": 16,
-    "unknownArray": true
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffects"
+      }
+    },
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "AISFile",
     "offset": 224,
-    "size": 8,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Mods2",
     "offset": 232,
-    "size": 16,
-    "unknownArray": true
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "Stance",
     "offset": 248,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "string": {}
     },
+    "size": 8
+  },
+  {
+    "name": "",
     "offset": 256,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
+    "size": 16
+  },
+  {
+    "name": "Name",
     "offset": 272,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
+    "size": 8
+  },
+  {
+    "name": "DamageMultiplier",
     "offset": 280,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -457,11 +444,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "LifeMultiplier",
     "offset": 284,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -469,144 +458,178 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "AttackSpeed",
     "offset": 288,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": true,
-      "key": {
-        "foreign": true
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "Weapon1_ItemVisualIdentity",
     "offset": 292,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemVisualIdentity"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "Weapon2_ItemVisualIdentity",
     "offset": 308,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": false,
+      "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemVisualIdentity"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "Back_ItemVisualIdentity",
     "offset": 324,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemVisualIdentity"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "MainHand_ItemClass",
     "offset": 340,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemClasses"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "OffHand_ItemClass",
     "offset": 356,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemClasses"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "Helmet_ItemVisualIdentity",
     "offset": 372,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "name": "ItemVisualIdentity"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 388,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
-      "array": true,
-      "key": {
-        "foreign": true
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "KillSpecificMonsterCount_AchievementItems",
     "offset": 392,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "AchievementItems"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "Special_Mods",
     "offset": 408,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Mods"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "KillRare_AchievementItems",
     "offset": 424,
-    "size": 16,
-    "unknownArray": true
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    },
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 440,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 441,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -614,11 +637,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 445,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -626,11 +651,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 449,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -638,11 +665,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 453,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -650,11 +679,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 457,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -662,11 +693,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 461,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -674,442 +707,297 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "HASH16",
     "offset": 465,
-    "size": 4
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
-        "size": 4
+        "unsigned": true,
+        "size": 2
       }
     },
-    "offset": 469,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 2
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 473,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 477,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 481,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 485,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 501,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 505,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 509,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 513,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 517,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 521,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 525,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 529,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 533,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 537,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 541,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 545,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 561,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 577,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 581,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 585,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 589,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 593,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 597,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 601,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 617,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 633,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 637,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 641,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 645,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 661,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 665,
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 669,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "name": "",
+    "offset": 467,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 468,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "KillWhileOnslaughtIsActive_AchievementItem",
+    "offset": 476,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MonsterSegment",
+    "offset": 492,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterSegments"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MonsterArmour",
+    "offset": 508,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MonsterArmours"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "KillWhileTalismanIsActive_AchievementItem",
+    "offset": 524,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AchievementItems"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Part1_Mods",
+    "offset": 540,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Part2_Mods",
+    "offset": 556,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Endgame_Mods",
+    "offset": 572,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 588,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 604,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 608,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 612,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MultiPartAchievements",
+    "offset": 628,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "MultiPartAchievements"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 644,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "SinkAnimation_AOFile",
+    "offset": 648,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 656,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 657,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 673,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 674,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 675,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 676,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1117,31 +1005,40 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 680,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "decimal": {
+      "integer": {
+        "unsigned": false,
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 684,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "string": {}
+      "decimal": {
+        "size": 4
+      }
     },
+    "size": 4
+  },
+  {
+    "name": "AilmentThreshold",
     "offset": 688,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1149,73 +1046,102 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "SinkEffect",
+    "offset": 692,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 696,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "MonsterConditionalEffectPack",
     "offset": 700,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "boolean": true
+      "key": {
+        "foreign": true,
+        "name": "MonsterConditionalEffectPacks"
+      }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 716,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 717,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 718,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 722,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 723,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1223,11 +1149,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 727,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1235,11 +1163,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 731,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1247,11 +1177,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 735,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1259,11 +1191,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 739,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1271,19 +1205,27 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 743,
-    "size": 4,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   },
   {
-    "type": {
-      "array": true,
-      "string": {}
-    },
+    "name": "",
     "offset": 747,
-    "size": 16
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1291,11 +1233,55 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 751,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 755,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 759,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 763,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -1303,171 +1289,255 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 767,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
+    "size": 4
+  },
+  {
+    "name": "BossHealthBar",
     "offset": 771,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 772,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 788,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 792,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 793,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 797,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 801,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 805,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 809,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 810,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 814,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 788,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
-      "decimal": {
+      "integer": {
+        "unsigned": false,
         "size": 4
       }
     },
-    "offset": 830,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "decimal": {
-        "size": 4
-      }
-    },
-    "offset": 834,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "name": "",
+    "offset": 792,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 793,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 797,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 801,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 805,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 809,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 810,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 814,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 830,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 834,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 838,
-    "size": 1,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 842,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 843,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   },
   {
     "type": {
-      "array": true,
-      "string": {}
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "offset": 839,
-    "size": 16
+    "offset": 847,
+    "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 851,
+    "size": 4,
+    "noData": true,
+    "unique": false
   },
   {
     "type": {

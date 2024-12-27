@@ -11,92 +11,8 @@
     "size": 8
   },
   {
-    "name": "BuffDefinition",
+    "name": "",
     "offset": 8,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "name": "BuffDefinitions"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "Buff_StatValues",
-    "offset": 24,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "AuraRadius",
-    "offset": 40,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 44,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 60,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "BuffVisual",
-    "offset": 76,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "name": "BuffVisuals"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 92,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -109,32 +25,46 @@
   },
   {
     "name": "",
-    "offset": 96,
+    "offset": 12,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "Stats",
-    "offset": 97,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "name": "Stats"
+      "decimal": {
+        "size": 4
       }
     },
-    "size": 16
+    "size": 4
   },
   {
     "name": "",
-    "offset": 113,
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 24,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -148,21 +78,7 @@
   },
   {
     "name": "",
-    "offset": 117,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 121,
+    "offset": 28,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -172,8 +88,22 @@
     "size": 1
   },
   {
-    "name": "",
-    "offset": 122,
+    "name": "RadiusStat",
+    "offset": 29,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "HeightStat",
+    "offset": 45,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -187,7 +117,21 @@
   },
   {
     "name": "",
-    "offset": 138,
+    "offset": 61,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 65,
     "unknownArray": false,
     "unique": false,
     "type": {
@@ -195,5 +139,69 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "name": "",
+    "offset": 66,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 70,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 74,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 78,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 79,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
   }
 ]

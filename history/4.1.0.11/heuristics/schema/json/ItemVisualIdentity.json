@@ -54,7 +54,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 2
       }
     },
@@ -253,7 +253,7 @@
     "size": 4
   },
   {
-    "name": "Pickup_AchievementItemsKeys",
+    "name": "Pickup_AchievementItems",
     "offset": 238,
     "unknownArray": false,
     "unique": false,
@@ -278,7 +278,7 @@
     "size": 16
   },
   {
-    "name": "Identify_AchievementItemsKeys",
+    "name": "Identify_AchievementItems",
     "offset": 270,
     "unknownArray": false,
     "unique": false,
@@ -303,7 +303,7 @@
     "size": 8
   },
   {
-    "name": "Corrupt_AchievementItemsKeys",
+    "name": "Corrupt_AchievementItems",
     "offset": 294,
     "unknownArray": false,
     "unique": false,
@@ -339,7 +339,7 @@
     "size": 1
   },
   {
-    "name": "CreateCorruptedJewelAchievementItemsKey",
+    "name": "CreateCorruptedJewelAchievementItem",
     "offset": 312,
     "unknownArray": false,
     "unique": false,

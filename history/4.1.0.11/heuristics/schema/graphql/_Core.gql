@@ -63,25 +63,25 @@ type ActiveSkills {
   Icon_DDSFile: string @file(ext: ".dds")
   ActiveSkillTargetTypes: [ActiveSkillTargetTypes]
   ActiveSkillTypes: [ActiveSkillType]
-  WeaponRestriction_ItemClassesKeys: [ItemClasses]
+  WeaponRestriction_ItemClasses: [ItemClasses]
   WebsiteDescription: string
   WebsiteImage: string
-  _: bool
-  _: string
+  HideOnWebsite: bool
+  GrantedEffect: string
   _: bool
   SkillTotemId: SkillTotems
   IsManuallyCasted: bool
-  Input_StatKeys: [Stats]
-  Output_StatKeys: [Stats]
+  Input_Stats: [Stats]
+  Output_Stats: [Stats]
   MinionActiveSkillTypes: [ActiveSkillType]
   _: bool
-  _: bool
-  _: [Stats]
-  _: i32
-  AlternateSkillTargetingBehavioursKey: AlternateSkillTargetingBehaviours
+  isGem: bool
+  SecondarySkillSpecificStats: [Stats]
+  SkillMine: i32
+  AlternateSkillTargetingBehaviour: AlternateSkillTargetingBehaviours
   _: bool
   AIFile: string @file(ext: ".ai")
-  _: [rid]
+  StatContextFlags: [VirtualStatContextFlags]
   _: bool
   _: bool
   _: bool
@@ -182,46 +182,48 @@ type AegisVariations {
 
 type AlternatePassiveAdditions {
   Id: string @unique
-  AlternateTreeVersionsKey: AlternateTreeVersions
+  AlternateTreeVersion: AlternateTreeVersions
   SpawnWeight: i32
-  StatsKeys: [Stats]
-  Stat1Min: i32
-  Stat1Max: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  PassiveType: [i32]
-  _: i32
+  Stats: [Stats]
+  Stat1: i32
+  Stat2: i32
+  Stat3: i32
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: [_]
+  _: i32 # All rows empty
 }
 
 type AlternatePassiveSkills {
   Id: string @unique
-  AlternateTreeVersionsKey: AlternateTreeVersions
+  AlternateTreeVersion: AlternateTreeVersions
   Name: string
   PassiveType: [i32]
-  StatsKeys: [Stats]
-  Stat1Min: i32
-  Stat1Max: i32
-  Stat2Min: i32
-  Stat2Max: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  Stats: [Stats]
+  Stat1: i32
+  Stat2: i32
+  Stat3: i32
+  Stat4: i32
+  Stat5: i32
+  Stat6: i32
   SpawnWeight: i32
+  ConquerorIndex: i32
+  Random: i32
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32 # All rows empty
   _: i32
-  RandomMin: i32
-  RandomMax: i32
-  FlavourText: string
-  DDSIcon: string @file(ext: ".dds")
-  AchievementItemsKeys: [AchievementItems]
   _: i32
   _: i32
+  _: i32
+  _: string
+  _: string
+  _: [_] # All rows empty
+  _: bool
+  _: i32
+  _: i16
+  _: bool
 }
 
 type AlternateSkillTargetingBehaviours {
@@ -235,16 +237,18 @@ type AlternateSkillTargetingBehaviours {
 }
 
 type AlternateTreeVersions {
-  Id: string @unique
+  ConquerorType: string @unique
+  SmallAttributeReplaced: bool
+  SmallNormalPassiveReplaced: bool
+  SmallAttributePassiveSkillAdditions: i32
+  NotableAdditions: i32
+  SmallNormalPassiveSkillAdditions: i32
+  NotableReplacementSpawnWeight: i32
   _: bool
+  _: i32
+  _: i32
+  _: i16
   _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
 }
 
 type AnimatedObjectFlags {
@@ -316,7 +320,7 @@ type AreaTransitionAnimationTypes {
 enum AreaTransitionInfo @indexing(first: 0) { _ }
 
 type ArmourTypes @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
+  BaseItemType: BaseItemTypes @unique
   Armour: i32
   Evasion: i32
   EnergyShield: i32
@@ -338,7 +342,7 @@ type Ascendancy {
   PassiveTreeImage: string @file(ext: ".dds")
   _: i32
   _: i32
-  _: i32
+  BackgroundImage: i32
   _: i32
   Disabled: bool
 }
@@ -428,30 +432,30 @@ type BackendErrors {
 
 type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   Id: string @unique
-  ItemClassesKey: ItemClasses
+  ItemClass: ItemClasses
   Width: i32
   Height: i32
   Name: string @localized
   InheritsFrom: string @files(ext: [".ot", ".otc"])
   DropLevel: i32
-  FlavourTextKey: FlavourText
-  Implicit_ModsKeys: [Mods]
+  FlavourText: FlavourText
+  Implicit_Mods: [Mods]
   SizeOnGround: i32
   SoundEffect: SoundEffects
-  TagsKeys: [Tags]
+  Tags: [Tags]
   ModDomain: ModDomains
   SiteVisibility: i32
   ItemVisualIdentity: ItemVisualIdentity
-  HASH32: i32 @unique
+  HASH32: u32 @unique
   VendorRecipe_AchievementItems: [AchievementItems]
   "the inflection identifier used for i18n in related fields"
   Inflection: string
-  Equip_AchievementItemsKey: AchievementItems
+  Equip_AchievementItem: AchievementItems
   IsCorrupted: bool
   Identify_AchievementItems: [AchievementItems]
   IdentifyMagic_AchievementItems: [AchievementItems]
   "the item which represents this item in the fragment stash tab"
-  FragmentBaseItemTypesKey: BaseItemTypes
+  FragmentBaseItemType: BaseItemTypes
   _: bool
   _: rid
   _: rid
@@ -503,15 +507,15 @@ type BuffDefinitions {
   Invisible: bool
   Removable: bool
   Name: string
-  StatsKeys: [Stats]
+  Stats: [Stats]
+  CancelOnDeath: bool
+  MergeMode: BuffMergeModes
+  ShowCount: bool
+  Maximum_Stat: Stats
+  Current_Stat: Stats
   _: bool
   _: i32
-  _: bool
-  Maximum_StatsKey: Stats
-  Current_StatsKey: Stats
-  _: bool
-  _: i32
-  BuffVisualsKey: BuffVisuals
+  BuffVisual: BuffVisuals
   _: bool
   _: bool
   BuffCategory: i32
@@ -521,24 +525,24 @@ type BuffDefinitions {
   _: bool
   BuffLimit: i32
   _: bool
-  Id2: string
+  Implementation: string
   IsRecovery: bool
   _: bool
-  _: rid
+  MinStat: Stats
   _: bool
-  _: i32
+  UIStackMode: i32
   _: bool
-  _: bool
+  IsSkillBuff: bool
   _: i32
   _: [i32]
   _: bool
   _: bool
   _: [rid]
   _: bool
-  _: [Stats]
-  BinaryStats: [Stats]
-  _: [Stats]
-  _: [Stats]
+  Stats2: [Stats]
+  GrantedFlags: [Stats]
+  GrantedStats: [Stats]
+  ConditionStats: [Stats]
   _: bool
   _: bool
   _: bool
@@ -554,15 +558,15 @@ type BuffDefinitions {
 
 type BuffTemplates {
   Id: string @unique
-  BuffDefinitionsKey: BuffDefinitions
+  BuffDefinition: BuffDefinitions
   Buff_StatValues: [i32]
   AuraRadius: i32
   _: [i32]
   _: [i32]
-  BuffVisualsKey: BuffVisuals
+  BuffVisual: BuffVisuals
   _: f32
   _: bool
-  StatsKey: [Stats]
+  Stats: [Stats]
   _: i32
   _: i32
   _: bool
@@ -593,7 +597,24 @@ type BuffVisualOrbs {
   BuffVisualOrbArtKeys2: [BuffVisualOrbArt]
 }
 
-enum BuffVisualOrbTypes @indexing(first: 0) { _ }
+type BuffVisualOrbTypes {
+  Id: string @unique
+  _: f32
+  _: f32
+  _: f32
+  _: f32
+  _: i32
+  _: bool
+  RadiusStat: Stats
+  HeightStat: Stats
+  _: i32
+  _: bool
+  _: f32
+  _: i32
+  _: f32
+  _: bool
+  _: f32
+}
 
 type BuffVisuals {
   Id: string @unique
@@ -626,7 +647,7 @@ type BuffVisuals {
 
 type BuffVisualsArtVariations {
   Buff: string
-  _: [_]
+  Visuals: [BuffVisuals]
   _: i32
 }
 
@@ -763,7 +784,7 @@ type Characters {
   _: f32
   _: f32
   _: f32
-  _: string
+  BaseClass: string
   _: i32
   _: rid
   _: [rid]
@@ -924,7 +945,7 @@ type ClientStrings {
   Text: string
   XBoxText: string
   XBoxText2: string
-  HASH32: i32
+  HASH32: u32
   PlaystationText: string
   _: string
 }
@@ -991,14 +1012,14 @@ type CoreLeagues {
 
 type CostTypes {
   Id: string @unique
-  StatsKey: Stats
+  Stat: Stats
   FormatText: string
-  _: i32
-  _: bool
+  Divisor: i32
+  PerMinute: bool
 }
 
 type CraftingBenchOptions @tags(list: ["crafting"]) {
-  _: rid
+  HideoutNPC: HideoutNPCs
   Order: i32
   AddMod: Mods
   Cost_BaseItemTypes: [BaseItemTypes]
@@ -1023,18 +1044,18 @@ type CraftingBenchOptions @tags(list: ["crafting"]) {
   UnveilsRequired: i32
   UnveilsRequired2: i32
   _: [rid]
-  _: [rid]
+  KalandraAchievement: [AchievementItems]
   _: i32
   _: i32
-  _: rid
+  VeiledMod: Mods
   AddEnchantment: Mods
   SortCategory: CraftingBenchSortCategories
-  _: rid
+  ModType: ModType
   _: bool
   _: i32
-  _: Stats
-  _: Stats
-  _: Stats
+  Stat1: Stats
+  Stat2: Stats
+  Stat3: Stats
 }
 
 type CraftingBenchSortCategories {
@@ -1060,17 +1081,17 @@ type CraftingItemClassCategories {
 }
 
 type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
+  BaseItemType: BaseItemTypes @unique
   StackSize: i32
   CurrencyUseType: i32
   Action: string
   Directions: string
   "Full stack transforms into this item"
-  FullStack_BaseItemTypesKey: BaseItemTypes
+  FullStack_BaseItemType: BaseItemTypes
   Description: string
-  Usage_AchievementItemsKeys: [AchievementItems]
+  Usage_AchievementItems: [AchievementItems]
   Scroll: bool
-  Possession_AchievementItemsKey: AchievementItems
+  Possession_AchievementItem: AchievementItems
   _: [rid]
   _: [i32]
   CurrencyTab_StackSize: i32
@@ -1143,16 +1164,16 @@ type DefaultMonsterStats {
   Life: i32
   Experience: i32
   AllyLife: i32
-  _: i32
-  Difficulty: i32
-  Damage2: f32
-  _: i32
-  _: f32
-  _: f32
-  _: i32
-  _: i32
   Armour: i32
-  _: i32
+  Difficulty: i32
+  MinionDamage: f32
+  AltLife1: i32
+  AltDamage1: f32
+  AltDamage2: f32
+  AltLife2: i32
+  EvasiveEvasion: i32
+  AilmentThreshold: i32
+  StunThreshold: i32
   _: i32
 }
 
@@ -1400,7 +1421,7 @@ type FixedHideoutDoodadTypes {
 enum FixedMissions @indexing(first: 0) { _ }
 
 type Flasks @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
+  BaseItemType: BaseItemTypes @unique
   Name: string
   Type: FlaskType
   LifePerUse: i32
@@ -1408,14 +1429,14 @@ type Flasks @tags(list: ["item:def"]) {
   "in 1/10 s"
   RecoveryTime: i32
   RecoveryTime2: i32
-  BuffDefinitionsKey: BuffDefinitions
+  BuffDefinition: BuffDefinitions
   _: i32
   UtilityBuff: [UtilityFlaskBuffs]
 }
 
 type FlavourText {
   Id: string @unique
-  HASH16: i16
+  HASH16: u16
   Text: string
 }
 
@@ -1455,7 +1476,7 @@ type FragmentStashTabLayout {
 type GameConstants {
   Id: string @unique
   Value: i32
-  _: i32
+  Divisor: i32
 }
 
 type GameLogos {
@@ -1491,10 +1512,10 @@ type GameStats {
 
 type GemTags {
   Id: string @unique
-  Tag: string
-  Stat1: Stats
-  Stat2: Stats
-  Stat3: Stats
+  Name: string
+  LocalLevelStat: Stats
+  LocalQualityStat: Stats
+  GlobalSpellLevelStat: Stats
 }
 
 type GenericBuffAuras {
@@ -1699,11 +1720,11 @@ type GlobalAudioConfig {
 }
 
 type GrantedEffectQualityStats @tags(list: ["item:droptable"]) {
-  GrantedEffectsKey: GrantedEffects
-  StatsKeys: [Stats]
+  GrantedEffect: GrantedEffects
+  Stats: [Stats]
   StatsValuesPermille: [i32]
-  _: [_] # All rows empty
-  _: [_] # All rows empty
+  AddTypes: [ActiveSkillType]
+  AddMinionTypes: [ActiveSkillType]
   _: [i32]
 }
 
@@ -1719,13 +1740,13 @@ type GrantedEffects {
   ExcludedActiveSkillTypes: [ActiveSkillType]
   "This support gem only supports active skills that come from gem items"
   SupportsGemsOnly: bool
-  HASH32: i32
+  HASH32: u32
   CannotBeSupported: bool
-  _: i32
+  LifeLeech: i32
   CastTime: i32
   ActiveSkill: ActiveSkills
   IgnoreMinionTypes: bool
-  _: bool
+  CooldownNotRecoverDuringActive: bool
   AddedMinionActiveSkillTypes: [ActiveSkillType]
   Animation: Animation
   MultiPartAchievement: MultiPartAchievements
@@ -1739,7 +1760,7 @@ type GrantedEffects {
   _: bool
   StatSet: GrantedEffectStatSets
   AdditionalStatSets: [GrantedEffectStatSets]
-  _: string
+  Audio: string
   CostTypes: [CostTypes]
   _: bool
   _: [i32]
@@ -1756,7 +1777,7 @@ type GrantedEffectsPerLevel {
   VaalSouls: i32
   VaalStoredUses: i32
   CooldownGroup: i32
-  _: i32
+  PvPDamageMultiplier: i32
   SoulGainPreventionDuration: i32
   AttackSpeedMultiplier: i32
   _: i32
@@ -1764,12 +1785,12 @@ type GrantedEffectsPerLevel {
   _: i32
   _: i32
   _: i32
-  _: i32
+  AttackTime: i32
   Reservation: i32
   _: i32
   CostAmounts: [i32]
   _: f32
-  _: i32
+  EffectOnPlayer: i32
 }
 
 type GrantedEffectStatSets {
@@ -1780,7 +1801,7 @@ type GrantedEffectStatSets {
   ConstantStatsValues: [i32]
   BaseEffectiveness: f32
   IncrementalEffectiveness: f32
-  _: f32
+  DamageIncrementalEffectiveness: f32
   _: [rid]
   _: bool
 }
@@ -1801,7 +1822,7 @@ type GrantedEffectStatSetsPerLevel {
   AdditionalStats: [Stats]
   StatInterpolations: [StatInterpolationTypes]
   FloatStatsValues: [f32]
-  _: f32
+  ActorLevel: f32
   BaseMultiplier: i32
 }
 
@@ -1879,7 +1900,7 @@ type HideoutDoodadTags {
 }
 
 type HideoutNPCs {
-  Hideout_NPCsKey: NPCs
+  Hideout_NPC: NPCs
   _: rid
   _: rid
   _: rid
@@ -1977,7 +1998,7 @@ type ItemClasses @tags(list: ["crafting"]) {
   ItemClassFlags: [i32]
   Unmodfiable: bool
   CanBeFractured: bool
-  _: rid
+  EquipAchievement: AchievementItems
   UsableInMapDevice: bool
 }
 
@@ -2114,7 +2135,7 @@ type ItemVisualIdentity {
   DDSFile: string @file(ext: ".dds")
   AOFile: string @file(ext: ".ao")
   InventorySoundEffect: SoundEffects
-  HASH16: i16 @unique
+  HASH16: u16 @unique
   AOFile2: string @file(ext: ".ao")
   MarauderSMFiles: [string] @file(ext: ".sm")
   RangerSMFiles: [string] @file(ext: ".sm")
@@ -2132,14 +2153,14 @@ type ItemVisualIdentity {
   ScionShape: string
   _: rid
   _: i32
-  Pickup_AchievementItemsKeys: [AchievementItems]
+  Pickup_AchievementItems: [AchievementItems]
   SMFiles: [string] @file(ext: ".sm")
-  Identify_AchievementItemsKeys: [AchievementItems]
+  Identify_AchievementItems: [AchievementItems]
   EPKFile: string @file(ext: ".epk")
-  Corrupt_AchievementItemsKeys: [AchievementItems]
+  Corrupt_AchievementItems: [AchievementItems]
   IsAlternateArt: bool
   _: bool
-  CreateCorruptedJewelAchievementItemsKey: AchievementItems
+  CreateCorruptedJewelAchievementItem: AchievementItems
   AnimationLocation: string
   _: string
   _: string
@@ -2379,13 +2400,13 @@ type MapPins {
 }
 
 type Maps @tags(list: ["item:def", "item:recipe"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
-  Regular_WorldAreasKey: WorldAreas
-  MonsterPacksKeys: [MonsterPacks]
+  BaseItemType: BaseItemTypes @unique
+  Regular_WorldArea: WorldAreas
+  MonsterPacks: [MonsterPacks]
   AchievementItem: AchievementItems
   _: string
   Tier: i32
-  MapSeriesKey: i32
+  MapSeries: i32
   _: bool
   _: bool
   _: bool
@@ -2716,61 +2737,58 @@ type ModFamily {
 type Mods @tags(list: ["crafting"]) {
   Id: string @unique
   HASH16: u16
-  ModTypeKey: ModType
+  ModType: ModType
   Level: i32
-  StatsKey1: Stats
-  StatsKey2: Stats
-  StatsKey3: Stats
-  StatsKey4: Stats
+  Stat1: Stats
+  Stat2: Stats
+  Stat3: Stats
+  Stat4: Stats
   Domain: ModDomains
   Name: string
   GenerationType: ModGenerationType
   Families: [ModFamily]
-  Stat1Min: i32
-  Stat1Max: i32
-  Stat2Min: i32
-  Stat2Max: i32
-  Stat3Min: i32
-  Stat3Max: i32
-  Stat4Min: i32
-  Stat4Max: i32
-  SpawnWeight_TagsKeys: [Tags]
-  SpawnWeight_Values: [i32]
-  TagsKeys: [Tags]
-  GrantedEffectsPerLevelKeys: [GrantedEffectsPerLevel]
-  _: [i32]
-  MonsterMetadata: string
-  MonsterKillAchievements: [AchievementItems]
-  ChestModType: [ModType]
-  Stat5Min: i32
-  Stat5Max: i32
-  StatsKey5: Stats
-  FullAreaClear_AchievementItemsKey: [AchievementItems]
-  AchievementItemsKey: [AchievementItems]
-  GenerationWeight_TagsKeys: [Tags]
-  GenerationWeight_Values: [i32]
-  ModifyMapsAchievements: [AchievementItems]
-  IsEssenceOnlyModifier: bool
-  Stat6Min: i32
-  Stat6Max: i32
-  StatsKey6: Stats
-  MaxLevel: i32
-  _: bool
-  CraftingItemClassRestrictions: [ItemClasses]
-  MonsterOnDeath: string
+  Stat1Value: i32
+  Stat2Value: i32
+  Stat3Value: i32
+  Stat4Value: i32
   _: i32
-  _: [GrantedEffectsPerLevel]
-  Heist_SubStatValue1: i32
-  Heist_SubStatValue2: i32
-  Heist_StatsKey0: Stats
-  Heist_StatsKey1: Stats
-  Heist_AddStatValue1: i32
-  Heist_AddStatValue2: i32
-  InfluenceTypes: InfluenceTypes
-  ImplicitTagsKeys: [Tags]
+  _: i32
+  _: rid
+  _: rid
+  _: Mods
+  _: [_]
+  _: [_]
+  _: [_] # All rows empty
+  _: string
+  _: [_]
+  _: [_]
+  _: i32
+  _: i32
+  _: rid
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [string]
   _: bool
   _: i32
   _: i32
+  _: rid
+  _: i32
+  _: bool
+  _: [_]
+  _: string
+  _: i32
+  _: [_] # All rows empty
+  _: i32
+  _: i32
+  _: rid
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: [_]
+  _: bool
   _: i32
   _: i32
   _: i32
@@ -2785,13 +2803,21 @@ type Mods @tags(list: ["crafting"]) {
   _: i32
   _: i32
   _: i32
-  BuffTemplate: BuffTemplates
-  ArchnemesisMinionMod: Mods
-  HASH32: i32
-  _: [rid]
   _: i32
-  _: [GrantedEffectsPerLevel]
-  RadiusJewelType: i32
+  _: i32
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: [string]
+  _: bool
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: i16
+  _: bool
 }
 
 type ModSellPriceTypes {
@@ -2829,18 +2855,18 @@ type MonsterConditionalEffectPacks {
 
 type MonsterConditions {
   Id: string
-  _: rid
-  _: rid
-  _: rid
-  _: [rid]
-  _: bool
-  _: bool
+  Rarity: Rarity
+  Stat: Stats
+  NotRarity: Rarity
+  NotStat: [Stats]
+  MapBoss: bool
+  NotMapBoss: bool
   _: [rid]
   _: [string]
   _: i32
   _: i32
   _: i32
-  _: i32
+  HASH32: i32
 }
 
 type MonsterDeathAchievements {
@@ -2922,27 +2948,27 @@ type MonsterHeights {
 
 type MonsterMapBossDifficulty {
   MapLevel: i32
-  Stat1Value: i32
-  Stat2Value: i32
-  StatsKey1: Stats
-  StatsKey2: Stats
-  StatsKey3: Stats
-  Stat3Value: i32
-  StatsKey4: Stats
-  Stat4Value: i32
-  StatsKey5: Stats
-  Stat5Value: i32
+  BossLifePercentIncrease: i32
+  BossDamagePercentIncrease: i32
+  Stat1: Stats
+  Stat2: Stats
+  Stat3: Stats
+  BossIncItemQuantity: i32
+  Stat4: Stats
+  BossIncItemRarity: i32
+  Stat5: Stats
+  BossAilmentPercentDecrease: i32
 }
 
 type MonsterMapDifficulty {
   MapLevel: i32
-  Stat1Value: i32
-  Stat2Value: i32
-  StatsKey1: Stats
-  StatsKey2: Stats
-  StatsKey3: Stats
+  LifePercentIncrease: i32
+  DamagePercentIncrease: i32
+  Stat1: Stats
+  Stat2: Stats
+  Stat3: Stats
   Stat3Value: i32
-  StatsKey4: Stats
+  Stat4: Stats
   Stat4Value: i32
 }
 
@@ -3115,15 +3141,15 @@ type MonsterTypes {
 
 type MonsterVarieties {
   Id: string @unique
-  MonsterTypesKey: MonsterTypes
-  _: i32
+  MonsterType: MonsterTypes
+  MovementSpeed: i32
   ObjectSize: i32
   MinimumAttackDistance: i32
   MaximumAttackDistance: i32
   ACTFiles: [string] @file(ext: ".act")
   AOFiles: [string] @file(ext: ".ao")
   BaseMonsterTypeIndex: string @files(ext: [".ot", ".otc"])
-  ModsKeys: [Mods]
+  Mods: [Mods]
   _: i32
   _: string
   _: string
@@ -3131,39 +3157,40 @@ type MonsterVarieties {
   ModelSizeMultiplier: i32
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: [_]
-  _: i32
-  _: [_]
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: [_]
-  _: string
-  _: [_]
-  _: string
   _: rid
-  _: string
   _: i32
   _: i32
+  Tags: [Tags]
+  "in percent"
+  ExperienceMultiplier: i32
+  _: [i32]
+  MinAgroRange: i32
+  MaxAgroRange: i32
+  SpotlightColour1: i32
+  SpotlightColour2: i32
+  SpotlightColour3: i32
+  GrantedEffects: [GrantedEffects]
+  AISFile: string @file(ext: ".ais")
+  Mods2: [Mods]
+  Stance: string
+  _: rid
+  Name: string
+  "in percent"
+  DamageMultiplier: i32
+  "in percent"
+  LifeMultiplier: i32
+  "in ms"
+  AttackSpeed: i32
+  Weapon1_ItemVisualIdentity: [ItemVisualIdentity]
+  Weapon2_ItemVisualIdentity: [ItemVisualIdentity]
+  Back_ItemVisualIdentity: ItemVisualIdentity
+  MainHand_ItemClass: ItemClasses
+  OffHand_ItemClass: ItemClasses
+  Helmet_ItemVisualIdentity: ItemVisualIdentity
   _: i32
-  _: [_]
-  _: [_]
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: i32 # All rows empty
-  _: [_]
-  _: [_]
-  _: [_]
+  KillSpecificMonsterCount_AchievementItems: [AchievementItems]
+  Special_Mods: [Mods]
+  KillRare_AchievementItems: [AchievementItems]
   _: bool
   _: i32
   _: i32
@@ -3171,77 +3198,69 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
+  HASH16: u16
+  _: bool
+  _: string
+  KillWhileOnslaughtIsActive_AchievementItem: AchievementItems
+  MonsterSegment: MonsterSegments
+  MonsterArmour: MonsterArmours
+  KillWhileTalismanIsActive_AchievementItem: AchievementItems
+  Part1_Mods: [Mods]
+  Part2_Mods: [Mods]
+  Endgame_Mods: [Mods]
   _: rid
   _: i32
   _: i32
+  _: [rid]
+  MultiPartAchievements: [MultiPartAchievements]
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: rid
-  _: rid
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
+  SinkAnimation_AOFile: string @file(ext: ".ao")
+  _: bool
+  _: [rid]
   _: bool
   _: bool
   _: bool
   _: i32
   _: i32
   _: f32
-  _: string
+  AilmentThreshold: i32
+  SinkEffect: i32
+  _: i32
+  MonsterConditionalEffectPack: MonsterConditionalEffectPacks
+  _: bool
+  _: bool
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  BossHealthBar: bool
+  _: rid
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
   _: i32
   _: rid
-  _: bool
-  _: bool
   _: i32
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: [string]
   _: i32
   _: i32
   _: bool
-  _: rid
   _: i32
-  _: bool
+  _: i32
   _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: bool
-  _: i32 # All rows empty
-  _: rid
-  _: f32
-  _: f32
-  _: bool
-  _: [string]
   _: rid
   _: i32
   _: i32
@@ -3324,7 +3343,7 @@ type MultiPartAchievements {
   Id: string @unique
   _: i32
   AchievementItemsKey: AchievementItems
-  _: i32
+  Threshold: i32
   _: bool
   _: bool
   _: i32
@@ -3634,7 +3653,7 @@ type PassiveJewelRadii {
 type PassiveJewelSlots {
   Slot: PassiveSkills
   ClusterJewelSize: PassiveTreeExpansionJewelSizes
-  _: i32
+  ClusterIndex: i32
   ReplacesSlot: PassiveJewelSlots
   ProxySlot: PassiveSkills
   StartIndices: [i32]
@@ -3671,7 +3690,7 @@ type PassiveSkillMasteryGroups {
 
 type PassiveSkillMasteryEffects {
   Id: string
-  HASH16: i16
+  HASH16: u16
   Stats: [Stats]
   Stat1Value: i32
   Stat2Value: i32
@@ -3697,7 +3716,7 @@ type PassiveSkills {
   IsJustIcon: bool
   AchievementItem: AchievementItems
   IsJewelSocket: bool
-  AscendancyKey: Ascendancy
+  Ascendancy: Ascendancy
   IsAscendancyStartingNode: bool
   ReminderStrings: [ReminderText]
   SkillPointsGranted: i32
@@ -3713,7 +3732,7 @@ type PassiveSkills {
   MasteryGroup: PassiveSkillMasteryGroups
   Group: AtlasPassiveSkillTreeGroupType
   SoundEffect: SoundEffects
-  _: string
+  AtlasnodeGroup: string
   _: i32
   _: i32
   _: i32
@@ -4138,7 +4157,7 @@ type SessionQuestFlags {
 }
 
 type ShieldTypes @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
+  BaseItemType: BaseItemTypes @unique
   Block: i32
   _: i32
 }
@@ -4216,22 +4235,22 @@ type SkillGemInfo {
 }
 
 type SkillGems @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
+  BaseItemType: BaseItemTypes @unique
   StrengthRequirementPercent: i32
   DexterityRequirementPercent: i32
   IntelligenceRequirementPercent: i32
-  VaalVariant_BaseItemTypesKey: BaseItemTypes
+  VaalVariant_BaseItemType: BaseItemTypes
   IsVaalVariant: bool
   MinionGlobalSkillLevelStat: Stats
   GemType: i32
   _: bool
   _: bool
-  _: rid
-  _: i32
-  _: i32
+  Awakened: rid
+  GemColour: i32
+  MinLevelReq: i32
   ItemExperienceType: ItemExperienceTypes
   CraftingTypes: [SkillCraftingData]
-  _: [rid]
+  MtxSlotTypes: [MicrotransactionSkillGemEffectSlotTypes]
   _: bool
   GemEffects: [GemEffects]
   _: bool
@@ -4395,15 +4414,15 @@ type Stats @tags(list: ["crafting"]) {
   _: bool
   IsLocal: bool
   IsWeaponLocal: bool
-  Semantics: StatSemantics
+  Semantic: StatSemantics
   Text: string
   _: bool
   IsVirtual: bool
-  MainHandAlias_StatsKey: Stats
-  OffHandAlias_StatsKey: Stats
+  MainHandAlias_Stat: Stats
+  OffHandAlias_Stat: Stats
   _: bool
-  HASH32: i32
-  BelongsActiveSkillsKey: [ActiveSkills] @ref(column: "Id")
+  HASH32: u32
+  BelongsActiveSkills: [ActiveSkills] @ref(column: "Id")
   Category: PassiveSkillStatCategories
   _: bool
   _: bool
@@ -4412,8 +4431,8 @@ type Stats @tags(list: ["crafting"]) {
   """
   IsScalable: bool
   ContextFlags: [VirtualStatContextFlags]
-  _: [rid]
-  _: bool
+  DotFlag: [VirtualStatContextFlags]
+  WeaponHandCheck: bool
 }
 
 type SuicideExplosion {
@@ -4553,7 +4572,7 @@ type TableMonsterSpawners {
 
 type Tags {
   Id: string @unique
-  HASH32: i32
+  HASH32: u32
   DisplayString: string
   _: [rid]
   UiHints: string
@@ -4771,7 +4790,7 @@ type WeaponSoundTypes {
 }
 
 type WeaponTypes @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
+  BaseItemType: BaseItemTypes @unique
   Critical: i32
   _: rid
   "1000 / speed -> attacks per second"
@@ -4942,7 +4961,9 @@ type AbyssBossLifeScalingPerLevel {
 # Added 4.1
 type ActionTypes {
   Id: string @unique
-  _: i32
+  _: u16
+  _: bool
+  _: bool
   _: bool
   _: bool
 }
@@ -5051,7 +5072,7 @@ type AtlasPassiveSkillSubTrees {
 
 # Added 4.1
 type AttributeRequirements {
-  BaseItemTypesKey: BaseItemTypes
+  BaseItemType: BaseItemTypes
   ReqStr: i32
   ReqInt: i32
   ReqDex: i32
@@ -5240,7 +5261,7 @@ type charactercreationicons {
 type CharacterMeleeSkills {
   _: rid
   _: rid
-  SkillGemsKey: SkillGems
+  SkillGem: SkillGems
 }
 
 # Added 4.1
@@ -5655,7 +5676,7 @@ type GemEffects {
   SupportText: string
   SupportName: string
   GemTags: [GemTags]
-  Consumed_ModsKey: Mods
+  Consumed_Mod: Mods
   "Used by gem icon shader https://gist.github.com/zao/08878df57aba605e5fa1e6373f2dce02"
   ItemColor: i32
   _: [rid]
@@ -5913,7 +5934,7 @@ type itemdisenchantvalues {
 
 # Added 4.1
 type ItemInherentSkills {
-  BaseItemTypes: BaseItemTypes
+  BaseItemType: BaseItemTypes
   SkillsGranted: [SkillGems]
   IsWeapon: bool
 }
@@ -5925,7 +5946,7 @@ type itemisedvisualeffectexclusivetypes {
 
 # Added 4.1
 type ItemSpirit {
-  BaseItemTypes: BaseItemTypes
+  BaseItemType: BaseItemTypes
   SpiritGranted: i32
 }
 
@@ -6204,8 +6225,8 @@ type minionstats {
 # Added 4.1
 type MinionType {
   Id: string @unique
-  _: rid
-  _: rid
+  LimitStat: Stats
+  ActiveCountStat: Stats
   _: bool
   _: bool
   _: i32
@@ -6658,7 +6679,7 @@ type ShrineVisualArtVariations {
 # Added 4.1
 type SkillCraftingData {
   Id: string
-  CharactersKey: Characters
+  Character: Characters
   ListBackground: string
   Icon: string
   ConsoleIcon: string
@@ -6692,7 +6713,7 @@ type skillgemsforuniquestat {
 
 # Added 4.1
 type SkillGemSupports {
-  SkillGemsKey: SkillGems
+  SkillGem: SkillGems
   Supports: [SkillGems]
 }
 
@@ -6713,10 +6734,10 @@ type socketaudioevents {
 
 # Added 4.1
 type SoulCores {
-  BaseItemTypesKey: BaseItemTypes
-  StatsKeysWeapon: [Stats]
+  BaseItemType: BaseItemTypes
+  StatsWeapon: [Stats]
   StatsValuesWeapon: [i32]
-  StatsKeysArmour: [Stats]
+  StatsArmour: [Stats]
   StatsValuesArmour: [i32]
 }
 
@@ -6729,9 +6750,9 @@ type statconvertaltattackcontainer {
 
 # Added 4.1
 type StatsFromSkillStats {
-  _: rid
-  _: rid
-  _: bool
+  SkillCondition: Stats
+  GrantedFlag: Stats
+  FlagValue: bool
 }
 
 # Added 4.1
@@ -6743,7 +6764,7 @@ type StatVisuals {
 
 # Added 4.1
 type SupportGems {
-  SkillGemsKey: SkillGems
+  SkillGem: SkillGems
   _: i32
   Icon: string @file(ext: ".dds")
 }
@@ -6899,7 +6920,7 @@ type UncutGemTiers {
 
 # Added 4.1
 type UtilityFlaskBuffs {
-  BuffDefinitionsKey: BuffDefinitions
+  BuffDefinition: BuffDefinitions
   StatValues: [i32]
   StatValues2: [i32]
   _: rid

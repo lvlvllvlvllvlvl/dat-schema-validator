@@ -11,7 +11,7 @@
     "size": 8
   },
   {
-    "name": "AlternateTreeVersionsKey",
+    "name": "AlternateTreeVersion",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -39,7 +39,7 @@
     "size": 4
   },
   {
-    "name": "StatsKeys",
+    "name": "Stats",
     "offset": 28,
     "unknownArray": false,
     "unique": false,
@@ -53,7 +53,7 @@
     "size": 16
   },
   {
-    "name": "Stat1Min",
+    "name": "Stat1",
     "offset": 44,
     "unknownArray": false,
     "unique": false,
@@ -67,7 +67,7 @@
     "size": 4
   },
   {
-    "name": "Stat1Max",
+    "name": "Stat2",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -81,7 +81,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat3",
     "offset": 52,
     "unknownArray": false,
     "unique": false,
@@ -95,10 +95,19 @@
     "size": 4
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 56,
-    "unknownArray": false,
-    "unique": false,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -106,13 +115,12 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 60,
-    "unknownArray": false,
-    "unique": false,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -120,27 +128,12 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 64,
-    "unknownArray": false,
-    "unique": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "noData": true,
+    "unique": false
   },
   {
-    "name": "PassiveType",
-    "offset": 68,
-    "unknownArray": false,
-    "unique": false,
     "type": {
       "array": true,
       "integer": {
@@ -148,13 +141,11 @@
         "size": 4
       }
     },
-    "size": 16
+    "offset": 68,
+    "size": 16,
+    "unknownArray": true
   },
   {
-    "name": "",
-    "offset": 84,
-    "unknownArray": false,
-    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -162,6 +153,9 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 84,
+    "size": 4,
+    "noData": true,
+    "unique": false
   }
 ]

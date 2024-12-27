@@ -55,7 +55,7 @@
     "size": 8
   },
   {
-    "name": "StatsKeys",
+    "name": "Stats",
     "offset": 26,
     "unknownArray": false,
     "unique": false,
@@ -69,7 +69,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "CancelOnDeath",
     "offset": 42,
     "unknownArray": false,
     "unique": false,
@@ -80,7 +80,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MergeMode",
     "offset": 43,
     "unknownArray": false,
     "unique": false,
@@ -94,7 +94,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "ShowCount",
     "offset": 47,
     "unknownArray": false,
     "unique": false,
@@ -105,7 +105,7 @@
     "size": 1
   },
   {
-    "name": "Maximum_StatsKey",
+    "name": "Maximum_Stat",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -119,7 +119,7 @@
     "size": 16
   },
   {
-    "name": "Current_StatsKey",
+    "name": "Current_Stat",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
@@ -158,7 +158,7 @@
     "size": 4
   },
   {
-    "name": "BuffVisualsKey",
+    "name": "BuffVisual",
     "offset": 85,
     "unknownArray": false,
     "unique": false,
@@ -277,7 +277,7 @@
     "size": 1
   },
   {
-    "name": "Id2",
+    "name": "Implementation",
     "offset": 116,
     "unknownArray": false,
     "unique": false,
@@ -310,14 +310,15 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MinStat",
     "offset": 126,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
     "size": 16
@@ -334,7 +335,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "UIStackMode",
     "offset": 143,
     "unknownArray": false,
     "unique": false,
@@ -359,7 +360,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "IsSkillBuff",
     "offset": 148,
     "unknownArray": false,
     "unique": false,
@@ -444,7 +445,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Stats2",
     "offset": 188,
     "unknownArray": false,
     "unique": false,
@@ -458,7 +459,7 @@
     "size": 16
   },
   {
-    "name": "BinaryStats",
+    "name": "GrantedFlags",
     "offset": 204,
     "unknownArray": false,
     "unique": false,
@@ -472,7 +473,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "GrantedStats",
     "offset": 220,
     "unknownArray": false,
     "unique": false,
@@ -486,7 +487,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ConditionStats",
     "offset": 236,
     "unknownArray": false,
     "unique": false,
