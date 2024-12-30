@@ -1,42 +1,42 @@
 [
   {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 0,
     "size": 8
   },
   {
+    "name": "AnimatedObject",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 8,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "AdditionalAnimatedObjects",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 16,
     "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 32,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -44,11 +44,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 36,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -56,11 +58,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 40,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -68,11 +72,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 44,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -80,12 +86,13 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 48,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "integer": {
@@ -93,17 +100,31 @@
         "size": 4
       }
     },
-    "offset": 52,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 52,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 56,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

@@ -1,10 +1,10 @@
-"rownum","i32","[rid]","[rid]","rid","rid","[i32]","[rid]","string","i32","rid","i32","rid","rid","rid","i32"
-0,0,[],[],"",156,[0],[],"The last light at the end of the world.",0,0,0,"",1,2,2
+"rownum","i32","Biomes","AdjacentBiomes","WorldAreaBoss","WorldArea","NaturalSpawnWeight","NativePacks","FlavourText","MinWatchstoneTier","i32","MapPin","MapDecoration","rid","CorruptedMapPin","i32"
+0,0,[],[],"",156,[0],[],"The last light at the end of the world.",0,0,2,"",1,2,2
 1,1,"[2,3]",[],231,232,[200],[541],"Bright colours hide the rot beneath.",0,0,0,4,0,3,0
 2,2,"[2,5]",[],238,239,[200],[421],"Wild lands spurn those who claim to rule them.",0,0,0,5,0,3,0
 3,3,[5],[],240,241,[200],[551],"Time overwhelms even the sturdiest walls.",0,0,0,6,0,3,0
 4,4,[6],[],243,244,[200],[446],"Restless prisoners yearn for freedom.",0,0,0,7,0,3,0
-5,5,[],[],"",245,[0],[500],"The grandest of monuments, standing proudly before an audience of none.",0,0,0,"",2,4,0
+5,5,[],[],"",245,[0],[500],"The grandest of monuments, standing proudly before an audience of none.",0,0,1,"",2,4,0
 6,6,[0],"[2,3]","",249,[200],[394],"A haven for seabirds. A hazard for sailors.",0,0,0,8,0,3,0
 7,7,"[1,5]",[],250,251,[200],[458],"No living hands ever stoked these flames.",0,0,0,9,0,3,0
 8,8,"[1,4,5]",[],252,253,[200],[533],"Beasts of many kinds sought shelter one final time.",0,0,0,10,0,3,0
@@ -47,9 +47,9 @@
 45,45,[6],[],358,358,[0],[406],"A heart of corruption, borne of steel.",15,0,0,29,0,3,5
 46,46,[8],[],360,360,[0],[526],"A heart of corruption, borne of stone.",15,0,0,30,0,3,5
 47,47,[7],[],359,359,[0],[470],"A heart of corruption, borne of copper.",15,0,0,31,3,3,5
-48,48,[0],"[2,3]","",346,[0],[],"Hulls crash and splinter upon the shores.",0,0,0,50,1,6,1
-49,49,[0],"[2,5]","",344,[10],[],"Life grows strong in this realm of plenty.",0,0,0,51,1,6,1
-50,50,[8],[],"",345,[50],[],"By that era, Kamasa was just a name. Gold was their true god.",0,0,0,52,1,6,1
+48,48,[0],"[2,3]","",346,[0],[],"Hulls crash and splinter upon the shores.",0,0,5,50,1,6,1
+49,49,[0],"[2,5]","",344,[10],[],"Life grows strong in this realm of plenty.",0,0,5,51,1,6,1
+50,50,[8],[],"",345,[50],[],"By that era, Kamasa was just a name. Gold was their true god.",0,0,5,52,1,6,1
 51,51,"[3,4]",[],"",348,[0],[],"A travelling merchant offers wares in perilous times.",0,0,0,53,1,0,4
 52,52,[5],[],"",349,[0],[],"A travelling merchant offers wares in perilous times.",0,0,0,53,1,0,4
 53,53,[4],[],"",350,[0],[],"A travelling merchant offers wares in perilous times.",0,0,0,53,1,0,4

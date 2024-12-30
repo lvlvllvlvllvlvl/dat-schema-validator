@@ -961,12 +961,13 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 2
       }
     },
     "offset": 654,
     "size": 2,
+    "noData": true,
     "unique": false
   },
   {

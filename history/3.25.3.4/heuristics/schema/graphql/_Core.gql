@@ -1345,9 +1345,9 @@ type Environments {
   _: [_]
   EnvironmentTransitionsKey: EnvironmentTransitions
   PreloadGroup: PreloadGroups
-  _: i16
+  _: u16 # All rows empty
   _: bool
-  _: i16
+  _: u16
 }
 
 type EnvironmentTransitions {
@@ -1766,7 +1766,7 @@ type GeometryTrigger {
   _: i32
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -2172,7 +2172,7 @@ type ItemisedVisualEffect {
   _: rid
   _: rid
   _: bool
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -2661,7 +2661,7 @@ type MicrotransactionCombineFormula {
 type MicrotransactionCursorVariations {
   _: BaseItemTypes
   _: rid
-  _: i16
+  _: u16
 }
 
 type MicrotransactionFireworksVariations {
@@ -2730,7 +2730,7 @@ type MicrotransactionSocialFrameVariations {
   BaseItemTypesKey: BaseItemTypes
   Id: i32 @unique
   _: i32 # All rows empty
-  _: i16
+  _: u16 # All rows empty
 }
 
 type MinimapIcons {
@@ -6324,7 +6324,7 @@ type StatisticTrackingMicrotransactionsStatistics {
   _: bool
   _: rid
   _: bool
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -6566,7 +6566,7 @@ type villageshippingfailures {
   _: i32
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 

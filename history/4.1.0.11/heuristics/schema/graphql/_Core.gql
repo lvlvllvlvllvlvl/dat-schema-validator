@@ -222,7 +222,7 @@ type AlternatePassiveSkills {
   _: [_] # All rows empty
   _: bool
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -247,7 +247,7 @@ type AlternateTreeVersions {
   _: bool
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -1188,7 +1188,7 @@ type DeliriumStashTabLayout {
   SlotSize: i32
   _: bool
   _: rid
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -2102,7 +2102,7 @@ type ItemVisualEffect {
   _: i32
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
 }
 
 type ItemVisualHeldBodyModel {
@@ -2331,7 +2331,7 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   _: i32
   _: bool
   _: i32 # All rows empty
-  _: i16
+  _: u16 # All rows empty
 }
 
 type MapDevices {
@@ -2538,7 +2538,7 @@ type MicrotransactionCombineFormula {
 type MicrotransactionCursorVariations {
   _: BaseItemTypes
   _: rid
-  _: i16
+  _: u16
 }
 
 type MicrotransactionFireworksVariations {
@@ -2605,7 +2605,7 @@ type MicrotransactionSocialFrameVariations {
   BaseItemTypesKey: BaseItemTypes
   Id: i32 @unique
   _: i32 # All rows empty
-  _: i16
+  _: u16 # All rows empty
 }
 
 type MinimapIcons {
@@ -2816,7 +2816,7 @@ type Mods @tags(list: ["crafting"]) {
   _: i32
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -3497,7 +3497,7 @@ type NPCPortraits {
   _: i32
   _: i32
   _: bool
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -4395,7 +4395,7 @@ type StashType {
   _: i32 # All rows empty
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -4526,7 +4526,7 @@ type TableCharge {
   _: bool
   _: i32
   _: bool
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -4626,7 +4626,7 @@ type Tips {
   _: i32 # All rows empty
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -4907,7 +4907,7 @@ type WorldAreas {
   _: i32
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -5200,7 +5200,7 @@ type buffvisualshapeshiftoverride {
   _: i32 # All rows empty
   _: i32
   _: i32 # All rows empty
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -5497,108 +5497,104 @@ type dynamicstashslots {
 
 # Added 4.1
 type EndgameCorruptionMods {
-  _: rid
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  CorruptionMod: Mods
+  SpawnWeight: [i32]
 }
 
 # Added 4.1
-type endgamemapbiomes {
-  _: string
+type EndgameMapBiomes {
+  Id: string @unique
   _: f32
-  _: i32
-  _: string
   _: f32
-  _: i32
+  GroundType1: string @file(ext: ".gt")
   _: f32
-  _: i32
-  _: string
-  _: [_]
+  _: f32
+  _: f32
+  _: f32
+  GroundType2: string @file(ext: ".gt")
+  _: [i32]
   _: f32
   _: i32
   _: i32
-  _: bool
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i16
-  _: bool
+  GroundTypeCorrupted1: string @file(ext: ".gt")
+  GroundTypeCorrupted2: string @file(ext: ".gt")
 }
 
 # Added 4.1
-type endgamemapcompletionquests {
-  _: string
-  _: i32
-  _: i32
+type EndgameMapCompletionQuests {
+  Id: string @unique
+  RequiredTier: i32
+  RequiredCount: i32
   _: i32
   _: i32
 }
 
 # Added 4.1
-type endgamemapcontent {
-  _: string
-  _: [_]
-  _: [_] # All rows empty
-  _: [_]
-  _: [_]
-  _: string
-  _: rid
-  _: [_]
-  _: [_]
-  _: string
-  _: string
+type EndgameMapContent {
+  Id: string @unique
+  SpawnChance: [i32]
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  InherentStat: [Stats]
+  _: [i32]
+  Icon: string @file(ext: ".dds")
+  PrecursorTabletStat: Stats
+  Stats: [Stats]
+  StatsValues: [i32]
+  Description: string
+  Name: string
 }
 
 # Added 4.1
-type endgamemapcontentset {
-  _: string
-  _: [_]
+type EndgameMapContentSet {
+  Id: string @unique
+  Content: [EndgameMapContent]
 }
 
 # Added 4.1
-type endgamemapdecorations {
-  _: string
-  _: string
-  _: [string]
+type EndgameMapDecorations {
+  Id: string @unique
+  AnimatedObject: string @file(ext: ".ao")
+  AdditionalAnimatedObjects: [string] @file(ext: ".ao")
   _: i32
   _: i32
   _: i32
   _: i32
-  _: i32 # All rows empty
+  _: i32
   _: i32
   _: bool
 }
 
 # Added 4.1
-type endgamemappins {
-  _: string
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+type EndgameMapPins {
+  Id: string @unique
+  UnavailablePin: MiscAnimated
+  AvailablePin: MiscAnimated
+  ActivePin: MiscAnimated
+  FailedPin: MiscAnimated
+  CompletePin: MiscAnimated
 }
 
 # Added 4.1
-type endgamemaps {
+type EndgameMaps {
   _: i32
-  _: [_]
-  _: [_]
-  _: rid
-  _: rid
-  _: [_]
-  _: [_]
-  _: string
+  Biomes: [EndgameMapBiomes]
+  AdjacentBiomes: [EndgameMapBiomes]
+  WorldAreaBoss: WorldAreas
+  WorldArea: WorldAreas
+  NaturalSpawnWeight: [i32]
+  NativePacks: [MonsterPacks]
+  FlavourText: string
+  MinWatchstoneTier: i32
   _: i32
+  MapPin: EndgameMapPins
+  MapDecoration: EndgameMapDecorations
   _: rid
-  _: i32 # All rows empty
-  _: rid
-  _: rid
-  _: rid
+  CorruptedMapPin: EndgameMapPins
   _: i32
 }
 
@@ -5790,7 +5786,7 @@ type graphicalitemreceptacleslot {
   _: rid
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -5818,7 +5814,7 @@ type HardModeExtraContentChances {
   _: i32
   _: i32
   _: i32
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -5928,7 +5924,7 @@ type itemdisenchantvalues {
   _: rid
   _: rid
   _: bool
-  _: i16
+  _: u16 # All rows empty
   _: bool
 }
 
@@ -6311,7 +6307,7 @@ type mobileskillgemlayout {
   _: i32 # All rows empty
   _: i32
   _: i32 # All rows empty
-  _: i16
+  _: u16 # All rows empty
 }
 
 # Added 4.1
@@ -6705,9 +6701,9 @@ type SkillGemLevelUpEffects {
 }
 
 # Added 4.1
-type skillgemsforuniquestat {
-  _: i32
-  _: [_]
+type SkillGemsForUniqueStat {
+  Index: i32
+  SkillGems: [SkillGems]
   _: bool
 }
 
@@ -6894,13 +6890,12 @@ type ultimatumtriallength {
 }
 
 # Added 4.1
-type ultimatumwagertypes {
-  _: string
-  _: rid
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i16
+type UltimatumWagerTypes {
+  Id: string @unique
+  HASH16: u16
+  CurrencyItem: CurrencyItems
+  Count: i32
+  DisplayText: string @localized
 }
 
 # Added 4.1
