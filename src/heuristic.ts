@@ -20,8 +20,10 @@ export const headerTypes = {
   string: { array: false, string: {} },
   rid: { array: false, key: { foreign: true } },
   i32: { array: false, integer: { unsigned: false, size: 4 } },
+  u32: { array: false, integer: { unsigned: true, size: 4 } },
   f32: { array: false, decimal: { size: 4 } },
   row: { array: false, key: { foreign: false } },
+  u16: { array: false, integer: { unsigned: true, size: 2 } },
   i16: { array: false, integer: { unsigned: false, size: 2 } },
   bool: { array: false, boolean: true },
 } as const;

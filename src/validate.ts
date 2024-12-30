@@ -156,7 +156,7 @@ let includeTranslations = args?.find((v) => v === "-l" || v === "--lang" || v ==
   ? TRANSLATIONS.filter((t) => langsToProcess?.includes(t.name.toLowerCase()))
   : TRANSLATIONS;
 
-fs.mkdir("tmp", R);
+await fs.mkdir("tmp", R);
 const tmp = await fs.mkdtemp(path.join("tmp", "dat-validator-"));
 onExit(() => {
   rmSync(tmp, RF);
