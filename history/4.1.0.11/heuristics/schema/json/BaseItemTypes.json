@@ -318,14 +318,15 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "UncutGemSoundEffect",
     "offset": 230,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "SoundEffects"
       }
     },
     "size": 16
@@ -394,14 +395,15 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ShopTag",
     "offset": 296,
     "unknownArray": false,
     "unique": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ShopTag"
       }
     },
     "size": 16

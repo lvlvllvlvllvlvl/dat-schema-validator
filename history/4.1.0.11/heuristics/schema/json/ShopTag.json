@@ -47,63 +47,61 @@
     "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 25,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "offset": 26,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 34,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 35,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 39,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "name": "SubFlagArt",
+    "offset": 26,
+    "unknownArray": false,
+    "unique": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8
+  },
+  {
+    "name": "IsGuild",
+    "offset": 34,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "Parent",
+    "offset": 35,
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false,
+        "name": "ShopTag"
+      }
+    },
+    "size": 8
+  },
+  {
+    "name": "CategoryArt",
     "offset": 43,
-    "size": 8,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   }
 ]

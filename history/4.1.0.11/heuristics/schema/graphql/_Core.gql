@@ -85,18 +85,16 @@ type ActiveSkills {
   _: bool
   _: bool
   _: bool
-  TransfigureBase: ActiveSkills
-  _: i32
-  _: i32
-  _: string
+  ShapeShiftForm: ShapeShiftForms
+  VideoClip: string @file(ext: ".bk2")
+  CharacterAudioEvent: CharacterAudioEvents
+  AiScript: string @file(ext: ".ais")
+  MinionType: MinionType
   _: rid
   _: string
-  _: rid
-  _: rid
   _: bool
-  _: string
-  _: i32
-  _: string
+  StatDescriptionType: StatDescriptionTypes
+  StatDescription: string
 }
 
 type ActiveSkillType {
@@ -457,13 +455,13 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   "the item which represents this item in the fragment stash tab"
   FragmentBaseItemType: BaseItemTypes
   _: bool
-  _: rid
+  UncutGemSoundEffect: SoundEffects
   _: rid
   _: bool
   TradeMarketCategory: TradeMarketCategory
   Unmodifiable: bool
   Achievement: [AchievementItems]
-  _: rid
+  ShopTag: ShopTag
   _: rid
 }
 
@@ -4168,11 +4166,10 @@ type ShopTag {
   IsCategory: bool
   Category: ShopTag
   _: bool
-  _: string
-  _: bool
-  _: i32
-  _: i32
-  _: string
+  SubFlagArt: string
+  IsGuild: bool
+  Parent: ShopTag
+  CategoryArt: string
 }
 
 type SigilDisplay {
@@ -6625,27 +6622,25 @@ type shapeshiftformclones {
 }
 
 # Added 4.1
-type shapeshiftforms {
-  _: string
-  _: string
-  _: string
+type ShapeShiftForms {
+  Id: string @unique
+  AOFile: string @file(ext: ".ao")
+  ACTFile: string @file(ext: ".act")
+  Source: MiscEffectPacks
+  Destination: MiscEffectPacks
+  StatsKeys: [Stats]
+  StatsValues: [i32]
   _: rid
-  _: rid
-  _: [_]
-  _: [_]
-  _: string
-  _: i32 # All rows empty
-  _: i32 # All rows empty
   _: i32
   _: string
   _: i32
   _: f32
   _: f32
   _: f32
-  _: rid
+  SkillStat: Stats
   _: i32
   _: bool
-  _: string
+  Status: string
 }
 
 # Added 4.1
