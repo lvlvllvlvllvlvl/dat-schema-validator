@@ -198,14 +198,19 @@ await Promise.all(
       await Promise.all(
         includeTranslations.map(async (tr) => {
           while (concurrentLoads > 30) await sleep(100);
-          const table = file.replace(/^data/, tr.path);
+          const fileName = file.replace(/^data/, tr.path);
           concurrentLoads++;
           try {
-            progress.increment("requests", { table });
-            const buf = await loader.getFileContents(table);
+            progress.increment("requests", { table: fileName });
+            const buf = await loader.getFileContents(fileName);
             return { ...tr, buf };
           } catch (e) {
-            errors.push("File not found: " + table);
+            if (
+              tr.name === "English" ||
+              ("columns" in table && table.columns?.find((c) => c.localized))
+            ) {
+              errors.push("File not found: " + fileName);
+            }
             return null!;
           } finally {
             concurrentLoads--;
@@ -254,7 +259,13 @@ await Promise.all(
           try {
             if (
               (Array.isArray(header) && !header.length) ||
-              (!Array.isArray(header) && !columnStats.every((s) => validateHeader(header, s)))
+              (!Array.isArray(header) &&
+                !columnStats.every(
+                  (s) =>
+                    validateHeader(header, s) &&
+                    (!header.interval ||
+                      validateHeader({ ...header, offset: header.offset + header.size! }, s))
+                ))
             ) {
               invalid = Math.min(invalid, i);
               const changeVer = meta?.findLast((v) => v.version !== version)?.version;

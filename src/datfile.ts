@@ -288,6 +288,7 @@ export interface NamedHeader extends Header {
   noData?: boolean;
   unique?: boolean;
   localized?: boolean;
+  interval?: boolean;
   size?: number;
   type: Header["type"] & {
     key?: {
@@ -386,6 +387,7 @@ export function importHeaders(
         offset,
         unknownArray: column.type === "array",
         unique: column.unique,
+        interval: column.interval,
         type,
       });
     }
@@ -408,7 +410,7 @@ export function importHeaders(
         },
       } as DatFile);
       header.size = size;
-      offset += size;
+      offset += header.interval ? size * 2 : size;
     }
     if (datFiles?.[0] && offset >= datFiles[0].rowLength) {
       break;
