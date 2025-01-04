@@ -75,7 +75,7 @@ type ActiveSkills {
   Output_Stats: [Stats]
   MinionActiveSkillTypes: [ActiveSkillType]
   _: bool
-  isGem: bool
+  IsGem: bool
   SecondarySkillSpecificStats: [Stats]
   SkillMine: i32
   AlternateSkillTargetingBehaviour: AlternateSkillTargetingBehaviours
@@ -2073,27 +2073,18 @@ type ItemVisualEffect {
   TwoHandedSwordEPKFile: string @file(ext: ".epk")
   TwoHandedStaffEPKFile: string @file(ext: ".epk")
   HASH16: i16 @unique
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: u16 # All rows empty
+  _: bool
+  _: bool
+  TwoHandedMaceEPKFile: string @file(ext: ".epk")
+  OneHandedAxeEPKFile: string @file(ext: ".epk")
+  TwoHandedAxeEPKFile: string @file(ext: ".epk")
+  ClawEPKFile: string @file(ext: ".epk")
+  PETFile: string @file(ext: ".pet")
+  Shield: string @file(ext: ".epk")
+  OnHitEffect: string @file(ext: ".epk")
+  _: string @file(ext: ".epk")
+  _: string @file(ext: ".epk")
+  _: string @file(ext: ".epk")
 }
 
 type ItemVisualHeldBodyModel {
