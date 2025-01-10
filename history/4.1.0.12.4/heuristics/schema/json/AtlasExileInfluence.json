@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Conqueror",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AtlasExiles"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Sets",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "AtlasInfluenceSets"
+      }
+    },
+    "size": 16
+  }
+]

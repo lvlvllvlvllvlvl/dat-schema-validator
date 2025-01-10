@@ -1,0 +1,138 @@
+[
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 0,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 16,
+    "size": 8
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 24,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 28,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 32,
+    "size": 16,
+    "unknownArray": true
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 48,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 64,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 80,
+    "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 96,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 104,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 108,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 124,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 128,
+    "size": 16,
+    "unknownArray": true
+  }
+]

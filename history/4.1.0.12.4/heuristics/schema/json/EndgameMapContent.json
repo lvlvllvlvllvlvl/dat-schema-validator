@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "SpawnChance",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "InherentStat",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Icon",
+    "offset": 72,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "PrecursorTabletStat",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Stats",
+    "offset": 96,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "StatsValues",
+    "offset": 112,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Description",
+    "offset": 128,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Name",
+    "offset": 136,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  }
+]

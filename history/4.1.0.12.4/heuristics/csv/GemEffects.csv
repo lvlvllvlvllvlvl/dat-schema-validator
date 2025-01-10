@@ -1,0 +1,583 @@
+"rownum","Id","Name","GrantedEffect","SupportText","SupportName","GemTags","Consumed_Mod","ItemColor","[rid]","AdditionalGrantedEffects","bool","bool","[i32]","i32"
+0,"Firebolt","",26,"","","[25,4,14,5,0]","",3,[],[],"","",[],-1
+1,"IceNova","",27,"","","[25,4,14,1,38]","",3,[],[],"","",[],-1
+2,"LeapSlam","",28,"","","[25,13,14,7,40,35,62]","",3,[],[],"","",[],-1
+3,"ShieldCharge","",29,"","","[25,13,14,7,33,30,35]","",3,[],[],"","",[],-1
+4,"DetonateDead","",30,"","","[25,4,14,33,0,57]","",3,[],[],"","",[],-1
+5,"VolatileDead","",88,"","","[25,4,14,0]","",3,[],[],"","",[],-1
+6,"AddedFireDamageSupport","",368,"Supports [Attack|Attacks], causing them to [Gain] [Fire] Damage but deal less [Cold] and [Lightning] Damage.","","[16,13,0]","",3,[],[],"","",[],-1
+7,"FasterAttackSupport","",369,"Supports [Attack|Attacks], causing them to [Attack] faster.","","[16,13]","",3,[],[],"","",[],-1
+8,"MultipleProjectilesSupport","",370,"Supports [Projectile|Projectile] skills, making them fire extra [Projectile|Projectiles]. Also lowers [Attack] and Cast speed of supported skills, as well as lessening their damage.","","[16,5]","",3,[],[],"","",[],-1
+9,"FasterProjectilesSupport","",371,"Supports [Projectile|Projectile] skills, making those [Projectile|Projectiles] travel faster.","","[16,5]","",3,[],[],"","",[],-1
+10,"AddedColdDamageSupport","",372,"Supports [Attack|Attacks], causing them to [Gain] [Cold] Damage but deal less [Fire] and [Lightning] Damage.","","[16,13,1]","",3,[],[],"","",[],-1
+11,"AdditionalAccuracySupport","",373,"Supports [Attack|Attacks], causing them to gain [Accuracy].","","[16,13]","",3,[],[],"","",[],-1
+12,"IncreasedAreaOfEffectSupport","",374,"Supports any skill with an area of effect, making it larger.","","[16,14]","",3,[],[],"","",[],-1
+13,"AddedLightningDamageSupport","",375,"Supports [Attack|Attacks], causing them to [Gain] [Lightning] Damage but deal less [Cold] and [Fire] Damage.","","[16,13,2]","",3,[],[],"","",[],-1
+14,"RaiseZombie","",31,"","","[25,8,33,15]","",3,[],[],"","",[],-1
+15,"InspirationSupport","",376,"Supports any skill, making it cost less to use. Cannot support skills which reserve [Spirit].","",[16],"",3,[],[],"","",[],-1
+16,"IncreasedCriticalDamageSupport","",377,"Supports any skill that [HitDamage|Hits] enemies, causing it to deal more damage with [Critical|Critical Hits] but have less [Critical|Critical Hit] chance.","","[16,47]","",3,[],[],"","",[],-1
+17,"KnockbackSupport","",378,"Supports any skill that [HitDamage|Hits] enemies, causing it to [Knockback|Knock Back] enemies.","",[16],"",3,[],[],"","",[],-1
+18,"LifeLeechSupport","",379,"Supports [Attack|Attacks], causing their [Physical] damage to [LifeLeech|Leech] Life.","","[16,13,33]","",3,[],[],"","",[],-1
+19,"ManaLeechSupport","",380,"Supports [Attack|Attacks], causing their [Physical] damage to [ManaLeech|Leech] Mana.","","[16,13,33]","",3,[],[],"","",[],-1
+20,"AddedChaosDamageSupport","",381,"Supports [Attack|Attacks], causing them to [Gain] [Chaos] Damage but deal less Damage of other [DamageTypes|Types].","","[16,13,3]","",3,[],[],"","",[],-1
+21,"FlickerStrike","",32,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+22,"Spark","",33,"","","[25,4,5,2,15]","",3,[],[],"","",[],-1
+23,"UniqueEarthboundTriggeredSpark","",34,"","","[25,4,5,2,15]","",3,[],[],"","",[],-1
+24,"IceSpear","",35,"","","[25,13,14,5,1]","",3,[],[],"","",[],-1
+25,"PierceSupport","",382,"Supports [Projectile|Projectile] skills, making their [Projectile|Projectiles] [Pierce|Pierce] an enemy but deal less damage after doing so.","","[16,5]","",3,[],[],"","",[],-1
+26,"SummonSpectre","",36,"","","[25,8,59]","",3,[],[],"","",[],-1
+27,"FrostWall","",37,"","","[25,4,14,1,15]","",3,[],[],"","",[],-1
+28,"ShockNova","",38,"","","[25,4,14,2,38]","",3,[],[],"","",[],-1
+29,"MeleePhysicalDamageSupport","",383,"Supports [Melee] [Attack|Attacks], boosting their [Physical] damage at the cost of [Attack] Speed.","","[16,13,7,33]","",3,[],[],"","",[],-1
+30,"FasterCastSupport","",384,"Supports [Spell|Spells], causing them to cast faster.","","[16,4]","",3,[],[],"","",[],-1
+31,"TemporalChains","",39,"","","[25,4,14,15,17]","",3,[],[],"","",[],-1
+32,"Enfeeble","",40,"","","[25,4,14,15,17]","",3,[],[],"","",[],-1
+33,"SnipersMark","",41,"","","[25,4,43,15]","",3,[],[],"","",[],-1
+34,"Despair","",89,"","","[25,4,14,3,15,17]","",3,[],[],"","",[],-1
+35,"LightningWarp","",43,"","","[25,4,14,2,15]","",3,[],[],"","",[],-1
+36,"ArmourBreaker","",44,"","","[25,13,14,7,36,33]","",3,[],[],"","",[],-1
+37,"RainOfArrows","",91,"","","[25,13,14,5,61]","",3,[],[],"","",[],-1
+38,"ConcentratedEffectSupport","",385,"Supports any skill with an area of effect, causing that area to be smaller but any area damage it deals to be higher.","","[16,14]","",3,[],[],"","",[],-1
+39,"BloodlustSupport","",397,"Supports [Melee] [Attack|Attacks], causing them to deal more damage against [Bleeding] enemies, but preventing them from inflicting [Bleeding].","","[16,13,7,33]","",3,[],[],"","",[],-1
+40,"Firestorm","",45,"","","[25,4,14,61,0,15,62]","",3,[],[],"","",[],-1
+41,"FallingThunder","",46,"","","[25,13,14,7,40,5,2]","",3,[],[],"","",[],-1
+42,"PowerSiphon","",47,"","","[25,4,33]","",3,[],[],"","",[],-1
+43,"LightningArrow","",48,"","","[25,13,14,5,2,18]","",3,[],[],"","",[],-1
+44,"Discipline","",49,"","","[25,58,59,12]","",3,[],[],1,"",[],-1
+45,"ShockwaveTotem","",50,"","","[25,13,19,14,7,40,33,15,38]","",3,[],[51],"","",[],1
+46,"BlindSupport","",386,"Supports any skill that [HitDamage|Hits] enemies, causing them to [Blind|Blind] on [HitDamage|Hit].","",[16],"",3,[],[],"","",[],-1
+47,"Arc","",53,"","","[25,4,2,18]","",3,[],[],"","",[],-1
+48,"ArcticArmour","",54,"","","[58,25,4,59,61,1]","",3,[],[],1,"",[],-1
+49,"FirePenetrationSupport","",387,"Supports any skill that [HitDamage|Hits] enemies, making those [HitDamage|Hits] [Penetration|Penetrate] enemy [Fire|Fire] resistance.","","[16,0]","",3,[],[],"","",[],-1
+50,"ColdPenetrationSupport","",388,"Supports any skill that [HitDamage|Hits] enemies, making those [HitDamage|Hits] [Penetration|Penetrate] enemy [Cold|Cold] resistance.","","[16,1]","",3,[],[],"","",[],-1
+51,"LightningPenetrationSupport","",389,"Supports any skill that [HitDamage|Hits] enemies, making those [HitDamage|Hits] [Penetration|Penetrate] enemy [Lightning|Lightning] resistance.","","[16,2]","",3,[],[],"","",[],-1
+52,"ChainSupport","",390,"Supports [Projectile|Projectile] skills and any other skills that [Chain|Chain], causing them to [Chain|Chain] additional times.","","[16,5,18]","",3,[],[],"","",[],-1
+53,"ForkSupport","",391,"Supports [Projectile] skills, making their [Projectile|Projectiles] [Fork].","","[16,5]","",3,[],[],"","",[],-1
+54,"Flammability","",55,"","","[25,4,14,0,15,17]","",3,[],[],"","",[],-1
+55,"Hypothermia","",56,"","","[25,4,14,1,15,17]","",3,[],[],"","",[],-1
+56,"Conductivity","",57,"","","[25,4,14,2,15,17]","",3,[],[],"","",[],-1
+57,"Incinerate","",90,"","","[25,4,14,61,0,15,30]","",3,[],[],"","",[],-1
+58,"SpellEchoSupport","",392,"Supports [Spell|Spells] that affect an area around you or a target location. Supported [Spell|Spells] echo, causing their effects to happen again after a short delay. Cannot support [Channelling] skills or [Remote] skills.","","[16,4,14]","",3,[],[],"","",[],-1
+59,"ElementalArmySupport","",393,"Supports skills which create [Minion|Minions], bolstering the Elemental [Resistances] of those [Minion|Minions].","","[16,8]","",3,[],[],"","",[],-1
+60,"SlowerProjectilesSupport","",394,"Supports [Projectile|Projectile] skills, making those [Projectile|Projectiles] travel more slowly.","","[16,5]","",3,[],[],"","",[],-1
+61,"PurityOfFire","",59,"","","[25,58,59,12,0]","",3,[],[],1,"",[],-1
+62,"PurityOfIce","",60,"","","[25,58,59,12,1]","",3,[],[],1,"",[],-1
+63,"PurityOfLightning","",61,"","","[25,58,59,12,2]","",3,[],[],1,"",[],-1
+64,"Flameblast","",62,"","","[25,4,14,0,30,38]","",3,[],[],"","",[],-1
+65,"Barrage","",63,"","","[25,4,58,15]","",3,[],[],"","",[],-1
+66,"BallLightning","",58,"","","[25,4,14,5,61,2]","",3,[],[],"","",[],-1
+67,"BoneOffering","",64,"","","[25,8,58,14,33,15]","",3,[],[],"","",[],-1
+68,"HeraldOfAsh","",66,"","","[25,58,59,14,0,15,31]","",3,[],[],1,"",[],-1
+69,"HeraldOfIce","",67,"","","[58,25,13,59,14,1,31,62]","",3,[],[],1,"",[],-1
+70,"HeraldOfThunder","",68,"","","[58,25,13,59,14,2,31,62]","",3,[],[],1,"",[],-1
+71,"Blasphemy","",5277,"","","[25,58,59,14,12,52]","",3,[],[396],1,"",[],-1
+72,"InfernallCry","",69,"","","[25,27,14,26,0,15]","",3,[],[70],"","",[],-1
+73,"IceBiteSupport","",398,"Supports [Attack|Attacks] you use yourself. [Freeze|Freezing] an enemy with supported skills infuses all of your [Attack|Attacks] with [Cold] damage for a short time.","","[16,13,1,15]","",3,[],[],"","",[],-1
+74,"GlaciationSupport","",399,"Supports any skill that [HitDamage|Hits] enemies, making it more effective at [Freeze|Freezing] enemies.","","[16,1]","",3,[],[],"","",[],-1
+75,"ChanceToShockSupport","",400,"Supports any skill that [HitDamage|Hits] enemies, making it more likely to [Shock].","","[16,2]","",3,[],[],"","",[],-1
+76,"RollingMagma","",72,"","","[25,4,14,5,0]","",3,[],[],"","",[],-1
+77,"FrostBomb","",73,"","","[25,4,14,1,15,44]","",3,[],[],"","",[],-1
+78,"OrbOfStorms","",74,"","","[25,4,14,61,2,15,18,44]","",3,[],[],"","",[],-1
+79,"Earthquake","",75,"","","[25,13,14,7,40,15]","",3,[],[],"","",[],-1
+80,"Contagion","",76,"","","[25,4,14,3,15]","",3,[],[],"","",[],-1
+81,"Wither","",77,"","","[25,4,14,3,15,30]","",3,[],[],"","",[],-1
+82,"EssenceDrain","",78,"","","[25,4,5,3,15]","",3,[],[],"","",[],-1
+83,"ControlledDestructionSupport","",401,"Supports [Spell|Spells] that [HitDamage|Hit] enemies, boosting their damage but preventing them from dealing [Critical|Critical Hits].","","[16,4,47]","",3,[],[],"","",[],-1
+84,"Sunder","",99,"","","[25,13,14,7,40,62]","",3,[],[],"","",[],-1
+85,"FrostBolt","",5220,"","","[25,4,14,5,1,15]","",3,[],[],"","",[],-1
+86,"ElementalFocusSupport","",402,"Supports any skill that [HitDamage|Hits] enemies, causing it to deal more [ElementalDamage|Elemental Damage] but be unable to inflict [ElementalAilments|Elemental Ailments].","",[16],"",3,[],[],"","",[],-1
+87,"DarkPact","",79,"","","[25,4,8,14,3,38]","",3,[],[],"","",[],-1
+88,"SkeletalWarrior","",80,"","","[25,8,59,33]","",3,[],[],"","",[],-1
+89,"SkeletalReaver","",81,"","","[25,8,59,33]","",3,[],[269],"","",[],-1
+90,"SkeletalBrute","",82,"","","[25,8,59,33]","",3,[],[],"","",[],-1
+91,"SkeletalSniper","",83,"","","[25,8,59,33,0,3]","",3,[],[270],"","",[],-1
+92,"SkeletalFrostMage","",84,"","","[25,8,59,1]","",3,[],[271],"","",[],-1
+93,"SkeletalStormMage","",85,"","","[25,8,59,2]","",3,[],[272],"","",[],-1
+94,"SkeletalArsonist","",86,"","","[25,8,59,0,57]","",3,[],[273],"","",[],-1
+95,"SkeletalCleric","",87,"","","[25,8,59]","",3,[],[],"","",[],-1
+96,"WildfireSupport","",403,"Supports any skill that [HitDamage|Hits] enemies, [AilmentSpread|Spreading] [Ignite|Ignites] it inflicts to nearby enemies after a delay.","","[16,14,0]","",3,[],[],"","",[],-1
+97,"ChanceToBleedSupport","",404,"Supports any skill that [HitDamage|Hits] enemies, giving it a chance to inflict [Bleeding].","","[16,33]","",3,[],[],"","",[],-1
+98,"ChanceToPoisonSupport","",405,"Supports any skill that [HitDamage|Hits] enemies, giving it a chance to [Poison|Poison] enemies.","","[16,3]","",3,[],[],"","",[],-1
+99,"MaimSupport","",406,"Supports [Attack|Attacks], causing them to [Maim|Maim] enemies.","","[16,13]","",3,[],[],"","",[],-1
+100,"ImmolateSupport","",407,"Supports [Attack|Attacks], granting them extra [Fire] damage against [Ignite|Ignited] enemies but making them unable to [Ignite] enemies themselves.","","[16,0,62]","",3,[],[],"","",[],-1
+101,"LastingShockSupport","",408,"Supports any skill that [HitDamage|Hits] enemies or inflicts [Shock], causing its [Shock|Shocks] to be inflicted less often but last longer.","","[16,2]","",3,[],[],"","",[],-1
+102,"BrutalitySupport","",409,"Supports any skill that deals damage, boosting its [Physical] damage at the expense of all other [DamageTypes|Damage Types].","","[16,33]","",3,[],[],"","",[],-1
+103,"MomentumSupport","",446,"Supports any damaging skill that you use yourself, causing it to deal more damage if you move a sufficient distance while using the skill. Teleportation does not count towards the distance travelled.","",[16],"",3,[],[],"","",[],-1
+104,"ArcaneSurgeSupport","",411,"Supports [Spell|Spells] you cast yourself, tracking the mana you spend to cast them. Spending enough mana grants a burst of Mana Regeneration and Cast Speed.","","[16,4,15]","",3,[],[],"","",[],-1
+105,"Vulnerability","",42,"","","[25,4,14,33,15,17]","",3,[],[],"","",[],-1
+106,"WitheringTouchSupport","",412,"Supports any skill that [HitDamage|Hits] enemies, giving it a chance to [Withered|Wither] enemies on [HitDamage|Hit].","","[16,3,15]","",3,[],[],"","",[],-1
+107,"Soulrend","",92,"","","[25,4,5,3,15]","",3,[],[],"","",[],-1
+108,"UnleashSupport","",413,"Supports [Spell|Spells] you cast yourself, making their effect reoccur when cast. Cannot support [Channelling] Skills or Skills with a Cooldown.","","[16,4]","",3,[],[],"","",[],-1
+109,"CloseCombatSupport","",414,"Supports [Attack|Attacks], causing them to deal more damage to enemies based on how close they are to you.","","[16,13]","",3,[],[],"","",[],-1
+110,"RageSupport","",415,"Supports [Melee|Melee] [Attack|Attacks], causing them to grant [Rage|Rage] on [HitDamage|Hit].","","[16,13,7]","",3,[],[],"","",[],-1
+111,"PlagueBearer","",93,"","","[25,58,59,14,33,3,38]","",3,[],[293],1,"",[],-1
+112,"FeedingFrenzySupport","",416,"Supports skills which create [Minion|Minions], making them deal and take more damage.","","[16,8]","",3,[],[],"","",[],-1
+113,"MeatShieldSupport","",417,"Supports skills which create [Minion|Minions], granting them more life but making them deal less damage.","","[16,8]","",3,[],[],"","",[],-1
+114,"InfernalLegionSupport","",418,"Supports skills which create [Minion|Minions], causing them and enemies near them to [Burning|Burn]. Damage dealt by the [Burning] is based off the Life of the supported [Minion].","","[16,8,14,0]","",3,[],[],"","",[],-1
+115,"ArtilleryBallista","",94,"","","[25,13,19,14,5,0,15]","",3,[],[95],"","",[],-1
+116,"SecondWindSupport","",419,"Supports skills with cooldowns, giving them extra uses of that cooldown.\nCannot support instant or triggered skills.","",[16],"",3,[],[],"","",[],-1
+117,"SeismicCry","",97,"","","[25,27,14,33,15]","",3,[],[],"","",[],-1
+118,"Earthshatter","",98,"","","[25,13,14,7,40,15]","",3,[],[],"","",[],-1
+119,"SigilOfPower","",100,"","","[25,4,14,15]","",3,[],[],"","",[],-1
+120,"FlameWall","",101,"","","[25,4,14,0,15]","",3,[],[],"","",[],-1
+121,"ImpendingDoomSupport","",421,"Supports [Curse] skills you cast yourself, causing them to trigger Doom Blast on [Curse|Cursed] enemies when the [Curse] expires.","","[16,25,4,14,26,3]","",3,[],[102],"","",[],-1
+122,"Hexblast","",103,"","","[25,4,14,3,62]","",3,[],[],"","",[],-1
+123,"Exsanguinate","",113,"","","[25,4,33,15,18]","",3,[],[],"","",[],-1
+124,"Reap","",114,"","","[25,4,14,33,15,47]","",3,[],[],"","",[],-1
+125,"BloodMagicSupport","",422,"Supports any Skill, turning a portion of its Mana cost into a Life cost. Does not support Skills which reserve [Spirit].","",[16],"",3,[],[],"","",[],-1
+126,"BeheadSupport","",423,"Supports [Strike] skills, causing them to steal [MonsterModifiers|Modifiers] from [Rarity|Rare] monsters they kill.","","[16,13,7,36]","",3,[],[],"","",[],-1
+127,"ExecuteSupport","",424,"Supports any skill that [HitDamage|Hits] enemies, causing it to deal more damage against enemies on [LowLife|Low Life].","",[16],"",3,[],[],"","",[],-1
+128,"Boneshatter","",115,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+129,"EyeOfWinter","",116,"","","[25,4,5,1]","",3,[],[],"","",[],-1
+130,"Tornado","",119,"","","[25,4,14,33,15,44]","",3,[],[],"","",[],-1
+131,"OverchargeSupport","",425,"Supports any skill that [HitDamage|Hits] enemies, making its [Shock|Shocks] more effective but last for a shorter duration.","","[16,2]","",3,[],[],"","",[],-1
+132,"LightningConduit","",120,"","","[25,4,14,2,62]","",3,[],[],"","",[],-1
+133,"GalvanicField","",121,"","","[25,4,58,14,2,15,18,44]","",3,[],[],"","",[],-1
+134,"VolcanicFissure","",167,"","","[25,13,14,7,40,61,0,15]","",3,[],[],"","",[],-1
+135,"RapidAssault","",110,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+136,"SpearImpale","",112,"","","[22,25,13,14,7,36,35]","",3,[],[],"","",[],-1
+137,"SpearPuncture","",111,"","","[22,25,13,14,7,36,33,35]","",3,[],[],"","",[],-1
+138,"WhirlingSlash","",117,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+139,"Spearfield","",118,"","","[25,13,14,7,61,33]","",3,[],[],"","",[],-1
+140,"DemonMagus","",129,"","","[25,4,8,59,52]","",3,[],[426],"","",[],-1
+141,"StormSpear","",130,"","","[25,13,14,5,2]","",3,[],[],"","",[],-1
+142,"BlazingLance","",131,"","","[25,13,5,0]","",3,[],[],"","",[],-1
+143,"AxeChop","",155,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+144,"AxeSlash","",156,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+145,"WhirlingAssault","",158,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+146,"RollingSlam","",157,"","","[25,13,14,7,40]","",3,[],[],"","",[],-1
+147,"EscapeShot","",160,"","","[25,13,14,5,1]","",3,[],[],"","",[],-1
+148,"SuperchargedSlam","",161,"","","[25,13,14,7,40,30]","",3,[],[],"","",[],-1
+149,"EvasiveStrike","",162,"","","[25,13,7,36,40]","",3,[],[],"","",[],-1
+150,"WindBlast","",163,"","","[25,13,14,7]","",3,[],[],"","",[],-1
+151,"BladeDance","",164,"","","[25,13,7,36,40]","",3,[],[],"","",[],-1
+152,"ClawRake","",165,"","","[25,13,7,36,40]","",3,[],[],"","",[],-1
+153,"SpinningFlail","",166,"","","[25,13,7,36,30]","",3,[],[],"","",[],-1
+154,"AxeExecute","",168,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+155,"AxeLeapingChop","",169,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+156,"AxeWhirlingSlash","",170,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+157,"AxeRaisedChop","",171,"","","[25,13,7,36,40]","",3,[],[],"","",[],-1
+158,"AxeHeavyCleave","",172,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+159,"KnifeFlip","",52,"","","[25,4,5,33,15]","",3,[],[],"","",[],-1
+160,"WaveOfFrost","",177,"","","[22,25,13,14,7,1]","",3,[],[],"","",[],-1
+161,"SwordLunge","",178,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+162,"SwordLeapSlash","",187,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+163,"IceStrike","",188,"","","[25,13,14,7,36,1]","",3,[],[],"","",[],-1
+164,"JaggedGroundSupport","",427,"Supports [Slam|Slam] skills, granting them a chance to create patches of [JaggedGround|Jagged Ground].","","[16,13,14,7,40,15]","",3,[],[],"","",[],-1
+165,"InevitableCriticalsSupport","",428,"Supports any skill you use yourself that [HitDamage|Hits] enemies, causing it to accumulate [Critical|Critical Hit] chance over time. ","","[16,47]","",3,[],[],"","",[],-1
+166,"RuthlessSupport","",410,"Supports [Attack|Attacks], causing repeated uses to be more effective at [Stun|Stunning] enemies.","",[16],"",3,[],[],"","",[],-1
+167,"LessDurationSupport","",395,"Supports any skill that has a duration, making that duration shorter.","","[16,15]","",3,[],[],"","",[],-1
+168,"FistOfWarSupport","",420,"Supports [Slam|Slams] you use yourself, providing a powerful [AncestralBoost|Ancestral Boost] every few seconds.","","[16,13,7,40]","",3,[],[],"","",[],-1
+169,"UnbreakableSupport","",429,"Supports any skill that you can use, making you harder to [Stun] while using it.","",[16],"",3,[],[],"","",[],-1
+170,"MoreDurationSupport","",430,"Supports any skill that has a duration, making that duration longer.","","[16,15]","",3,[],[],"","",[],-1
+171,"ImpactShockwaveSupport","",431,"Supports [Melee|Melee] [Strike|Strike] skills, causing them to create an [Aftershock] that damages enemies around the target when they [HeavyStun|Heavy Stun] an enemy.","","[16,13,7,36]","",3,[],[],"","",[],-1
+172,"HexBloomSupport","",432,"Supports [Curse|Curses], spreading their effects when a [Curse|Cursed] enemy dies.","","[16,14,17]","",3,[],[],"","",[],-1
+173,"GlacialCascade","",173,"","","[25,13,14,7,1,62]","",3,[],[],"","",[],-1
+174,"Comet","",189,"","","[25,4,14,1]","",3,[],[],"","",[],-1
+175,"BladeNova","",190,"","","[25,4,5,33,15]","",3,[],[],"","",[],-1
+176,"FlameSlice","",191,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+177,"RingOfBlades","",192,"","","[25,4,5]","",3,[],[],"","",[],-1
+178,"ComboKnifeThrow","",193,"","","[25,4,5,33,15]","",3,[],[],"","",[],-1
+179,"TripleSlash","",194,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+180,"HyperSlash","",195,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+181,"ShadowDash","",196,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+182,"ShadowAmbush","",197,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+183,"StaffConsecrate","",174,"","","[25,4,14,15,38]","",3,[],[],"","",[],-1
+184,"RipwireBallista","",198,"","","[25,13,19,5,15]","",3,[],[290],"","",[],-1
+185,"ManaTempest","",199,"","","[25,4,58,2]","",3,[],[],"","",[],-1
+186,"KillingPalm","",200,"","","[25,13,14,7,36,33]","",3,[],[],"","",[],-1
+187,"ShatteringPalm","",201,"","","[25,13,14,7,36,1,38]","",3,[],[332],"","",[],-1
+188,"Volcano","",202,"","","[25,4,14,5,0,15,30]","",3,[],[],"","",[],-1
+189,"SummonWolfCompanion","",203,"","","[25,4,8]","",3,[],[],"","",[],-1
+190,"ChillingIceSupport","",433,"Supports any skill that [HitDamage|Hits] enemies, causing it to create patches of [ChilledGround|Chilled Ground] around [Frozen|Frozen] enemies.","","[16,14,1]","",3,[],[],"","",[],-1
+191,"FrozenVortexSupport","",434,"Supports any skill that [HitDamage|Hits] enemies, causing it to create a chilling vortex on [Shatter|Shattering] an enemy.","","[16,14,1,15]","",3,[],[],"","",[],-1
+192,"SpinningThrow","",204,"","","[25,13,5]","",3,[],[],"","",[],-1
+193,"SpiralVolley","",205,"","","[25,13,5,61]","",3,[],[],"","",[],-1
+194,"BearMaul","",206,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+195,"DodgeRoll","",23,"","",[25],"",3,[],[],"","",[],-1
+196,"ShadowThiefSlash","",207,"","","[25,13,7]","",3,[],[],"","",[],-1
+197,"LeapingAxeCatch","",208,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+198,"StormBlade","",209,"","","[25,13,14,7,1]","",3,[],[],"","",[],-1
+199,"PlungingBlade","",210,"","","[25,13,7]","",3,[],[],"","",[],-1
+200,"WolfHowl","",211,"","","[25,4]","",3,[],[],"","",[],-1
+201,"SpiralThrow","",212,"","","[25,13,5]","",3,[],[],"","",[],-1
+202,"WolfLeapAttack","",213,"","","[25,13,7,36]","",3,[],[],"","",[],-1
+203,"LightningBolt","",214,"","","[25,4,14,2]","",3,[],[],"","",[],-1
+204,"BearRampage","",216,"","","[25,13,14,7,40,15,30,35]","",3,[],[],"","",[],-1
+205,"ShockManaRegenerationSupport","",435,"Supports any skill that [HitDamage|Hits] enemies, causing you to regenerate mana on [Shock|shocking] an enemy. Cannot support skills which create [Minion|Minions], or skills used by [Totem|Totems] or [Trap|Traps].","",[16],"",3,[],[],"","",[],-1
+206,"EnergyShieldOnShockKillSupport","",436,"Supports any skill that [HitDamage|Hits] enemies, causing you to recover [EnergyShield|Energy Shield] when it kills a [Shock|Shocked] enemy.","","[16,2]","",3,[],[],"","",[],-1
+207,"StaffUnleash","",176,"","","[25,4,58,15]","",3,[],[],"","",[],-1
+208,"CoursingCurrentSupport","",437,"Supports any skill that [HitDamage|Hits] enemies, giving it a chance to also [Shock|Shock] nearby enemies when you [Shock|Shock] an enemy.","","[16,14,2]","",3,[],[],"","",[],-1
+209,"LastingFrostSupport","",438,"Supports any skill that [HitDamage|Hits] enemies, causing [Freeze] it inflicts to last longer.","","[16,1]","",3,[],[],"","",[],-1
+210,"LightningStorm","",217,"","","[25,4,14,2,15]","",3,[],[],"","",[],-1
+211,"ChanceToFreezeSupport","",439,"","",[16],"",3,[],[],"","",[],-1
+212,"ChanceToIgniteSupport","",440,"Supports any skill that [HitDamage|Hits] enemies, making it more likely to [Ignite].","","[16,0]","",3,[],[],"","",[],-1
+213,"DeadlyIgnitesSupport","",441,"Supports any skill that [HitDamage|Hits] enemies, causing inflicted [Ignite|Ignites] to deal more damage but its [HitDamage|Hits] to deal less damage.","","[16,0]","",3,[],[],"","",[],-1
+214,"IgniteDurationSupport","",442,"Supports any skill that [HitDamage|Hits] enemies, causing its [Ignite|Ignites] to be inflicted less often but last longer.","","[16,0]","",3,[],[],"","",[],-1
+215,"MinionHarvestSupport","",443,"","","[16,8]","",3,[],[],"","",[],-1
+216,"FuriousSlam","",218,"","","[25,13,14,7,40]","",3,[],[],"","",[],-1
+217,"FerociousRoarSupport","",219,"","","[25,27,14,52]","",3,[],[220],"",1,[],-1
+218,"CastOnShock","",221,"","","[25,58,59,26,2,52]","",3,[],[231],1,1,[],-1
+219,"InvocationSupport","",444,"Supports [Spell] skills, causing them to reduce the cast time of other skills when used. Cannot support [Totem] skills, [Channelling] skills, [Trigger|Triggering] skills, instant skills, or skills with a [Reservation].","","[16,4,26]","",3,[],[],"","",[],-1
+220,"CastOnFreeze","",222,"","","[25,58,59,26,1,52]","",3,[],[232],1,1,[],-1
+221,"CastOnIgnite","",223,"","","[25,58,59,26,0,52]","",3,[],[233],1,1,[],-1
+222,"CastOnMeleeKill","",224,"","","[25,58,59,26,52]","",3,[],[234],1,1,[],-1
+223,"CastOnDeath","",225,"","","[25,58,59,26,52]","",3,[],[235],1,1,[],-1
+224,"CastOnCriticalStrike","",226,"","","[25,58,59,26,52]","",3,[],[236],1,1,[],-1
+225,"CastWhenStunned","",228,"","","[25,58,59,26,52]","",3,[],[238],1,1,[],-1
+226,"CastWhenDamageTaken","",227,"","","[25,58,59,26,52]","",3,[],[237],1,1,[],-1
+227,"ExploitWeaknessSupport","",229,"Supports any skill that [HitDamage|Hits] enemies, causing them to deal more Damage against enemies with [ArmourBreak|Broken Armour] but preventing them from [ArmourBreak|Breaking Armour] themselves. Cannot support skills that [Consume|Consume] [ArmourBreak|Broken Armour].","","[16,62]","",3,[],[],"","",[],-1
+228,"DevastateSupport","",230,"Supports any skill that [HitDamage|Hits] enemies, causing them to apply [ArmourBreak|Broken Armour] to enemies when causing a [HeavyStun|Heavy Stun] to enemies.","",[16],"",3,[],[],"","",[],-1
+229,"Unknown1","",4516,"","",[25],"",3,[],[],"","",[],-1
+230,"Unknown2","",4516,"","",[25],"",3,[],[],"","",[],-1
+231,"Unknown3","",4516,"","",[25],"",3,[],[],"","",[],-1
+232,"Unknown4","",4516,"","",[25],"",3,[],[],"","",[],-1
+233,"Unknown5","",4516,"","",[25],"",3,[],[],"","",[],-1
+234,"Unknown6","",4516,"","",[25],"",3,[],[],"","",[],-1
+235,"Unknown7","",4516,"","",[25],"",3,[],[],"","",[],-1
+236,"Unknown8","",4516,"","",[25],"",3,[],[],"","",[],-1
+237,"Unknown9","",4516,"","",[25],"",3,[],[],"","",[],-1
+238,"Unknown10","",4516,"","",[25],"",3,[],[],"","",[],-1
+239,"Unknown11","",4516,"","",[25],"",3,[],[],"","",[],-1
+240,"Unknown12","",4516,"","",[25],"",3,[],[],"","",[],-1
+241,"Unknown13","",4516,"","",[25],"",3,[],[],"","",[],-1
+242,"Unknown14","",4516,"","",[25],"",3,[],[],"","",[],-1
+243,"Unknown15","",4516,"","",[25],"",3,[],[],"","",[],-1
+244,"Unknown16","",4516,"","",[25],"",3,[],[],"","",[],-1
+245,"Unknown17","",4516,"","",[25],"",3,[],[],"","",[],-1
+246,"Unknown18","",4516,"","",[25],"",3,[],[],"","",[],-1
+247,"Unknown19","",4516,"","",[25],"",3,[],[],"","",[],-1
+248,"Unknown20","",4516,"","",[25],"",3,[],[],"","",[],-1
+249,"Unknown21","",4516,"","",[25],"",3,[],[],"","",[],-1
+250,"Unknown22","",4516,"","",[25],"",3,[],[],"","",[],-1
+251,"Unknown23","",4516,"","",[25],"",3,[],[],"","",[],-1
+252,"Unknown24","",4516,"","",[25],"",3,[],[],"","",[],-1
+253,"Unknown25","",4516,"","",[25],"",3,[],[],"","",[],-1
+254,"Unknown26","",4516,"","",[25],"",3,[],[],"","",[],-1
+255,"Unknown27","",4516,"","",[25],"",3,[],[],"","",[],-1
+256,"ReservationUnknown1","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+257,"ReservationUnknown2","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+258,"ReservationUnknown3","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+259,"ReservationUnknown4","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+260,"ReservationUnknown5","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+261,"ReservationUnknown6","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+262,"ReservationUnknown7","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+263,"ReservationUnknown8","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+264,"ReservationUnknown9","",4516,"","","[25,58,59]","",3,[],[],1,"",[],-1
+265,"SupportUnknown1","",4516,"","",[25],"",3,[],[],"","",[],-1
+266,"SupportUnknown2","",4516,"","",[25],"",3,[],[],"","",[],-1
+267,"SupportUnknown3","",4516,"","",[25],"",3,[],[],"","",[],-1
+268,"SupportUnknown4","",4516,"","",[25],"",3,[],[],"","",[],-1
+269,"SupportUnknown5","",4516,"","",[25],"",3,[],[],"","",[],-1
+270,"SupportUnknown6","",4516,"","",[25],"",3,[],[],"","",[],-1
+271,"SupportUnknown7","",4516,"","",[25],"",3,[],[],"","",[],-1
+272,"SupportUnknown8","",4516,"","",[25],"",3,[],[],"","",[],-1
+273,"SupportUnknown9","",4516,"","",[25],"",3,[],[],"","",[],-1
+274,"BarrierInvocation","",239,"","","[25,58,59,26,52]","",3,[],[240],1,1,[],-1
+275,"CastOnDodge","",243,"","","[25,58,59,26,52]","",3,[],[244],1,1,[],-1
+276,"CastWhileChannelling","",245,"","","[25,58,59,26,52]","",3,[],[246],1,1,[],-1
+277,"CastOnMeleeStun","",247,"","","[25,58,59,26,52]","",3,[],[248],1,1,[],-1
+278,"EnragedWarcrySupport","",445,"Supports [Warcry|Warcries], causing them to consume [Rage] to further boost [Empowered] [Attack|Attacks].","","[16,27]","",3,[],[],"","",[],-1
+279,"LingeringIllusion","",256,"","","[25,58,59,15]","",3,[],[257],1,"",[],-1
+280,"GhostDance","",258,"","","[25,58,59,15]","",3,[],[],1,"",[],-1
+281,"BindSpectre","",259,"","","[25,8]","",3,[],[],"","",[],-1
+282,"DominatingAura","",260,"","","[25,4,8,59,14,12,15]","",3,[],[],"","",[],-1
+283,"Shroud","",261,"","","[25,4,58,59]","",3,[],[],1,"",[],-1
+284,"SummonMercenaryCompanion","",5193,"","","[25,4,8,59,52]","",3,[],"[5194,25]","","",[],-1
+285,"AncestralWarriorTotem","",104,"","","[25,13,19,14,7,33,15,52]","",3,[],[105],"",1,[],-1
+286,"MetaSpellTotem","",106,"","","[25,19,15,52]","",3,[],[107],"",1,[],-1
+287,"MetaBowTotem","",108,"","","[25,19,15,52]","",3,[],[109],"",1,[],-1
+288,"ExplosiveGrenade","",263,"","","[25,13,14,5,63,0,15,57]","",3,[],[],"","",[],-1
+289,"FlashGrenade","",264,"","","[25,13,14,5,63,15]","",3,[],[],"","",[],-1
+290,"ToxicGrenade","",265,"","","[25,13,14,5,63,0,3,15]","",3,[],[],"","",[],-1
+291,"OilGrenade","",266,"","","[25,13,14,5,63,0,15]","",3,[],[],"","",[],-1
+292,"ShockGrenade","",267,"","","[25,13,14,5,63,2,15]","",3,[],[],"","",[],-1
+293,"PainOffering","",268,"","","[25,8,58,14,12,15]","",3,[],[],"","",[],-1
+294,"TempestFlurry","",274,"","","[25,13,14,7,36,2]","",3,[],[],"","",[],-1
+295,"StaggeringPalm","",275,"","","[25,13,14,7,36,5,33,15]","",3,[],"[276,277]","","",[],-1
+296,"ChargedStaff","",278,"","","[25,4,13,58,14,15]","",3,[],[279],"","",[],-1
+297,"SiphoningStrike","",280,"","","[25,13,14,7,36,2,62]","",3,[],[],"","",[],-1
+298,"TempestBell","",281,"","","[25,13,14,7,61,15,38]","",3,[],[],"","",[],-1
+299,"Chaosbolt","",159,"","","[25,4,5,3]","",3,[],[],"","",[],-1
+300,"FrozenLocus","",283,"","","[25,13,14,7,1,15,38]","",3,[],[284],"","","[1,0]",1
+301,"Bonestorm","",285,"","","[25,4,14,5,61,33,15,30]","",3,[],[],"","",[],-1
+302,"BoneCage","",286,"","","[25,4,14,33,15,38]","",3,[],[],"","",[],-1
+303,"SpreadingFrost","",447,"Supports any skill that hits enemies, causing them to [Chill] enemies near enemies they [Freeze].","","[16,1]","",3,[],[],"","",[],-1
+304,"NeuralOverload","",448,"Supports any skill that [HitDamage|Hits] enemies. Nearby enemies are marked when they are [PrimedElectrocution|Primed for Electrocution], and hitting a marked enemy with a supported skill will [Electrocute] them.","","[16,2]","",3,[],[],"","",[],-1
+305,"PinpointCritical","",449,"Supports any skill that hits enemies, causing it to [Critical|Critically Hit] less often but deal more damage with Critical Hits.","","[16,47]","",3,[],[],"","",[],-1
+306,"PerpetualCharge","",450,"Supports skills that consume [Charges|Power, Frenzy or Endurance Charges] on use, giving them a chance not to remove each [Charges|Charge] while still gaining the benefits of consuming them.","",[16],"",3,[],[],"","",[],-1
+307,"Corrosion","",451,"Supports any skill that [HitDamage|Hits] enemies, causing [Poison] it applies to also [ArmourBreak|Break] enemy [Armour|Armour]. Cannot support skills that [Consume] [ArmourBreak|Fully Broken] [Armour].","","[16,33,3]","",3,[],[],"","",[],-1
+308,"Unearth","",287,"","","[25,4,8,14,33,15]","",3,[],[],"","",[],-1
+309,"DetonatingArrow","",5211,"","","[25,13,14,5,0,30,57]","",3,[],[],"","",[],-1
+310,"PoisonBurstArrow","",288,"","","[25,13,14,5,3,15]","",3,[],[],"","",[],-1
+311,"ToxicGrowth","",5212,"","","[25,13,14,5,3,15]","",3,[],[],"","",[],-1
+312,"StormcallerArrow","",289,"","","[25,13,14,5,2,15]","",3,[],[],"","",[],-1
+313,"RipwireArrow","",290,"","","[25,13,5]","",3,[],[],"","",[],-1
+314,"LightningRod","",291,"","","[25,13,14,5,61,2,15]","",3,[],[],"","",[],-1
+315,"Snipe","",96,"","","[25,13,14,5,30]","",3,[],[],"","",[],-1
+316,"GasArrow","",292,"","","[25,13,14,5,0,3,15]","",3,[],[],"","",[],-1
+317,"SolarOrb","",5218,"","","[25,4,14,61,0,15,44]","",3,[],[],"","",[],-1
+318,"Fireball","",5219,"","","[25,4,14,5,0]","",3,[],[],"","",[],-1
+319,"ElectrocutingArrow","",294,"","","[25,13,5,2,15]","",3,[],[],"","",[],-1
+320,"ColdSnap","",5221,"","","[25,4,14,1,62]","",3,[],[],"","",[],-1
+321,"PerfectStrike","",295,"","","[25,13,14,7,36,0,15,30]","",3,[],[],"","",[],-1
+322,"ShieldBlock","",296,"","","[25,30]","",3,[],[],"","",[],-1
+323,"ResonatingShield","",297,"","","[25,13,14,7,61,33,30]","",3,[],[],"","",[],-1
+324,"ManaRemnants","",5223,"","","[25,58,59,2]","",3,[],[],1,"",[],-1
+325,"MagmaBarrier","",298,"","","[58,25,13,59,14,7,26,0,15]","",3,[],[299],1,"",[],-1
+326,"FreezingShards","",5224,"","","[25,4,5,1]","",3,[],[],"","",[],-1
+327,"VineArrow","",300,"","","[25,13,14,5,3,15]","",3,[],[],"","",[],-1
+328,"SummonRhoaMount","",301,"","","[25,4,8,58,59]","",3,[],[],1,"",[],-1
+329,"SupportBurstingPlague","",452,"Supports skills that can [Poison|Poison] enemies, causing [Poison|Poisoned] enemies to gain Plague over time and explode in a Plague Burst on death. Cannot support the skills of [Minion|Minions].","","[16,25,14,26,33,3]","",3,[],[453],"","",[],-1
+330,"CorpseCloud","",5225,"","","[25,4,14,0,3,15]","",3,[],[],"","",[],-1
+331,"WallFortress","",454,"Supports skills that create walls in a line, causing them to be created in a circle instead but deal less [HitDamage|Hit] damage.","",[16],"",3,[],[],"","",[],-1
+332,"FrostfireSupport","",5226,"Supports any skill that [HitDamage|Hits] enemies, causing it to [Consume|Consume] [Freeze] on [Ignite|Igniting] a [Frozen] enemy to boost the effect of the [Ignite].","","[16,1,0,62]","",3,[],[],"","",[],-1
+333,"StormfireSupport","",5227,"Supports any skill that [HitDamage|Hits] enemies, prolonging [Shock|Shocks] they inflict on [Ignite|Ignited] enemies.","","[16,2,0]","",3,[],[],"","",[],-1
+334,"IncreaseLimitSupport","",5228,"Supports skills which can have a [Limit|Limited] number of effects active at once, increasing that [Limit] at the cost of their duration. Only applies to restrictions that use the word \""[Limit]\"".","",[16],"",3,[],[],"","",[],-1
+335,"ElectrocuteSupport","",5229,"Supports any Skill which can deal Damage. [Lightning] Damage from Supported Skills can inflict [Electrocute], but Supported Skills cannot inflict [Shock].","","[16,2]","",3,[],[],"","",[],-1
+336,"RagingSpirits","",302,"","","[58,25,8,59,0,15]","",3,[],[],1,"",[],-1
+337,"EnergyBarrierSupport","",5251,"Supports any skill that you can use, causing [EnergyShield|Energy Shield] recharge to begin immediately if you are [Stun|Stunned] while using it.","",[16],"",3,[],[],"","",[],-1
+338,"KnockbackWaveSupport","",5252,"Supports any skill that you can use, triggering a blast of wind that [Knockback|Knocks Back] enemies if you are [Stun|Stunned] while using it.","","[16,25,14,26]","",3,[],[5256],"","",[],-1
+339,"BitingFrostSupport","",5253,"Supports any skill that [HitDamage|Hits] enemies, causing them to deal more damage to [Frozen] enemies but consume their [Freeze]. Cannot support skills that [Consume|Consume] [Freeze|Freeze].","","[16,1,62]","",3,[],[],"","",[],-1
+340,"ElementalDischarge","",455,"Supports any [Spell] that [HitDamage|Hits] enemies, causing it to consume [ElementalAilments|Elemental Ailments] on hit to trigger an Elemental Discharge. Cannot support the skills of [Minion|Minions].","","[16,25,4,2,1,0,62]","",3,[],[456],"","",[],-1
+341,"HourglassSupport","",457,"Supports any damaging skill that you use yourself, causing it to deal significantly more damage but gain a long cooldown. Cannot support Skills which already have a cooldown.","",[16],"",3,[],[],"","",[],-1
+342,"FieryDeathSupport","",458,"Supports any skill that [HitDamage|Hits] enemies, causing enemies it [Ignite|Ignites] to have a chance to explode on death.","","[16,25,4,0]","",3,[],[459],"","",[],-1
+343,"SandstormSwipe","",304,"","","[25,13,14,15]","",3,[],[],"","",[],-1
+344,"DetonateMinion","",5204,"","","[25,4,14,0]","",3,[],[],"","",[],-1
+345,"RemoteSpearMine","",305,"","","[25,13,14]","",3,[],[],"","",[],-1
+346,"SpearWindVortex","",306,"","","[25,13,14,7]","",3,[],[],"","",[],-1
+347,"SpearInfusingStrike","",307,"","","[25,13,14,7,36,2,1,0]","",3,[],[309],"","",[],-1
+348,"SpearLightningWarp","",308,"","","[25,13,14,35]","",3,[],[],"","",[],-1
+349,"WindDancer","",310,"","","[58,25,13,59,14,7]","",3,[],[311],1,"",[],-1
+350,"DeadlyHeraldsSupport","",460,"Supports Herald Skills, making their triggered effects deal more damage at the expense of their [Persistent] buffs.","","[16,31]","",3,[],[],"","",[],-1
+351,"BuffedHeraldSupport","",461,"Supports [Persistent] [Buff] Skills, making the [Buff] they grant more powerful.","","[16,58]","",3,[],[],"","",[],-1
+352,"ManaFlareSupport","",462,"Supports any [Spell] that [HitDamage|Hits] enemies, causing it to trigger a Mana Flare on [Critical|Critical Hit]. The Mana Flare consumes your Mana to deal [Fire] damage. Cannot support the skills of [Minion|Minions].","","[16,25,4,0,47]","",3,[],[463],"","",[],-1
+353,"LockdownSupport","",464,"Supports any skill that [HitDamage|Hits] enemies, causing any [Pinned|Pin] buildup it inflicts to be stronger the closer the enemy is to you.","","[16,33]","",3,[],[],"","",[],-1
+354,"OverpowerSupport","",5257,"Supports any skill that hits enemies, causing it to build up [Stun|Stun] more quickly.","",[16],"",3,[],[],"","",[],-1
+355,"MobilitySupport","",5258,"Supports skills that can be used while moving, allowing you to move faster while using them.","",[16],"",3,[],[],"","",[],-1
+356,"PinSupport","",465,"Supports any skill that [HitDamage|Hits] enemies, allowing its [Physical] damage to [Pinned|Pin] enemies but making it unable to [Stun].","","[16,33]","",3,[],[],"","",[],-1
+357,"AmbushSupport","",466,"Supports any skill that [HitDamage|Hits] enemies, making it more likely to [Critical|Critically Hit] enemies on full life.","","[16,47]","",3,[],[],"","",[],-1
+358,"ProfaneRitual","",312,"","","[25,4,14,3,15]","",3,[],[],"","",[],-1
+359,"SoulOffering","",313,"","","[25,8,58,15]","",3,[],[],"","",[],-1
+360,"DarkEffigy","",314,"","","[25,4,19,14,5,3,15]","",3,[],[315],"","",[],-1
+361,"ManaFlaskSupport","",5260,"Supports any skill that [HitDamage|Hits] enemies, causing enemies it kills to grant more Mana Flask charges.","",[16],"",3,[],[],"","",[],-1
+362,"LifeFlaskSupport","",5261,"Supports any skill that [HitDamage|Hits] enemies, causing enemies it kills to grant more Life Flask charges.","",[16],"",3,[],[],"","",[],-1
+363,"SkeletalWarriorWeaponSkill","",316,"","","[25,8,59,33]","",3,[],[],"","",[],-1
+364,"MinionInstabilitySupport","",317,"Supports skills which create [Minion|Minions], causing them to violently explode when reduced to [LowLife|Low Life].","","[16,8,0]","",3,[],[],"","",[],-1
+365,"EnduranceChargeOnArmourBreakSupport","",5267,"Supports any skill that [HitDamage|Hits] enemies, giving it a chance to gain an [Charges|Endurance Charge] when it [ArmourBreak|Fully Breaks] an enemy's [Armour].","",[16],"",3,[],[],"","",[],-1
+366,"CurseEffectSupport","",5269,"Supports [Curse] Skills, magnifying their power.","","[16,17]","",3,[],[],"","",[],-1
+367,"CorpseConservationSupport","",5270,"Supports skills that consume [Corpse|Corpses], giving them a chance to take effect without destroying the [Corpse].","",[16],"",3,[],[],"","",[],-1
+368,"DecayingHexSupport","",5274,"Supports [Curse] skills. Cursed enemies' bodies decay, taking [Chaos] damage over time.","","[16,3,17]","",3,[],[],"","",[],-1
+369,"FocusedCurseSupport","",318,"Supports [Curse] skills, causing them to [Curse] enemies more quickly after being cast.","","[16,17]","",3,[],[],"","",[],-1
+370,"RitualisticCurseSupport","",319,"Supports [Curse] skills, causing them to cover a larger area but take longer to [Curse] enemies.","","[16,17]","",3,[],[],"","",[],-1
+371,"MinionPactSupport","",467,"Supports damaging skills you use yourself, draining the life from one of your [Minion|Minions] on use in order to boost the skill's damage. Only takes effect if you have a [Minion] with enough life to drain the full amount.","","[16,8]","",3,[],[],"","",[],-1
+372,"LastGaspSupport","",468,"Supports skills that create [Persistent] [Minion|Minions], causing those [Minion|Minions] to fight on for a short duration before dying when they are fatally wounded.","","[16,8,59,15]","",3,[],[],"","",[],-1
+373,"LifeOnCullSupport","",469,"Supports any skill that [HitDamage|Hits] enemies, causing you to recover Life when it [CullingStrike|Culls] an enemy.","",[16],"",3,[],[],"","",[],-1
+374,"ManaOnCullSupport","",470,"Supports any skill that [HitDamage|Hits] enemies, causing you to recover Mana when it [CullingStrike|Culls] an enemy.","",[16],"",3,[],[],"","",[],-1
+375,"GrimFeast","",5276,"","","[58,25,8,59]","",3,[],[],1,"",[],-1
+376,"InnervateSupport","",471,"Supports [Attack|Attacks] you use yourself. Killing a [Shock|Shocked] enemy with supported skills infuses all of your [Attack|Attacks] with [Lightning] damage for a short time.","","[16,13,2,15]","",3,[],[],"","",[],-1
+377,"CastOnMinionDeath","",5278,"","","[58,25,8,59,26,52]","",3,[],[5279],1,1,[],-1
+378,"MultiplePoisonSupport","",472,"Supports any skill that [HitDamage|Hits] enemies, allowing it to inflict an extra [Poison] on enemies but shortening the duration of those [Poison|Poisons].","","[16,3]","",3,[],[],"","",[],-1
+379,"MultipleChargesSupport","",473,"Supports skills that can generate [Charges], giving them a chance to generate an additional [Charges|Charge] when they do so.","",[16],"",3,[],[],"","",[],-1
+380,"EmpoweredDamageSupport","",474,"Supports skills that can [Empowered|Empower] skills other than themselves, causing skills they [Empowered|Empower] to deal more damage.","",[16],"",3,[],[],"","",[],-1
+381,"EmpoweredCullSupport","",475,"Supports skills that can [Empowered|Empower] skills other than themselves, causing skills they [Empowered|Empower] to [CullingStrike|Cull] enemies.","",[16],"",3,[],[],"","",[],-1
+382,"ScavengedPlating","",5281,"","","[25,58,59,33,15]","",3,[],[],1,"",[],-1
+383,"SpinningInferno","",320,"","","[25,13,14,7,36,0]","",3,[],[],"","",[],-1
+384,"ManaDrain","",5282,"","","[25,4]","",3,[],[],"","",[],-1
+385,"BoneBlast","",5283,"","","[25,4,14,33,15]","",3,[],[],"","",[],-1
+386,"BlinkReservation","",5284,"","","[58,25,4,59]","",3,[],[344],1,1,[],-1
+387,"MoltenBlast","",5285,"","","[25,13,14,5,0]","",3,[],[],"","",[],-1
+388,"Malice","",5286,"","","[25,58,59,12,15,47]","",3,[],[],1,"",[],-1
+389,"Hydra","",5287,"","","[25,8,58,59,26,52]","",3,[],[476],1,"",[],-1
+390,"HammerOfTheGods","",5288,"","","[25,13,14,7,40,15]","",3,[],[],"","",[],-1
+391,"LivingBombPlayer","",5289,"","","[25,4,14,0,15]","",3,[],[],"","",[],-1
+392,"Stampede","",5290,"","","[25,13,14,7,40,15,35]","",3,[],[],"","",[],-1
+393,"ShieldWall","",5291,"","","[25,13,14,33,15]","",3,[],[],"","",[],-1
+394,"ShieldingCry","",5292,"","","[25,13,27,14,7,26,33,15]","",3,[],[5293],"","",[],-1
+395,"BlazingCluster","",5294,"","","[25,4,14,5,0,15]","",3,[],[],"","",[],-1
+396,"HighVelocityRounds","",144,"","","[25,13,60,5,33,62]","",3,[],[143],"","","[1,0]",-1
+397,"FragmentationRounds","",146,"","","[25,13,60,5,62]","",3,[],[145],"","","[1,0]",-1
+398,"SiegeCascade","",134,"","","[25,13,14,60,5,61,0,62]","",3,[],[133],"","","[1,0]",-1
+399,"ArmourPiercingRounds","",182,"","","[25,13,60,5,33]","",3,[],[181],"","","[1,0]",-1
+400,"ExplosiveShot","",140,"","","[25,13,14,60,5,0,57]","",3,[],[139],"","","[1,0]",-1
+401,"IncendiaryShot","",142,"","","[25,13,14,60,5,0]","",3,[],[141],"","","[1,0]",-1
+402,"RapidShot","",180,"","","[25,13,60,5,0]","",3,[],[179],"","","[1,0]",-1
+403,"GlacialBolt","",148,"","","[25,13,14,60,5,1,15]","",3,[],[147],"","","[1,0]",-1
+404,"PermafrostBolts","",150,"","","[25,13,14,60,5,1]","",3,[],[149],"","","[1,0]",-1
+405,"HailstormRounds","",136,"","","[25,13,14,60,5,61,1]","",3,[],[135],"","","[1,0]",-1
+406,"IceShards","",184,"","","[25,13,14,60,5,61,1]","",3,[],[183],"","","[1,0]",-1
+407,"PlasmaBlast","",152,"","","[25,13,14,60,5,2,30]","",3,[],[151],"","","[1,0]",-1
+408,"GalvanicShards","",154,"","","[25,13,60,5,2,18]","",3,[],[153],"","","[1,0]",-1
+409,"StormblastBolts","",138,"","","[25,13,14,60,5,2,15]","",3,[],[137],"","","[1,0]",-1
+410,"ShockburstRounds","",186,"","","[25,13,14,60,5,2,62]","",3,[],[185],"","","[1,0]",-1
+411,"RagingCrySupport","",477,"Supports [Warcry] skills, causing them to grant you [Rage] on use depending on counted monster [Power].","","[16,27]","",3,[],[],"","",[],-1
+412,"IncreasedArmourBreakSupport","",478,"Supports any skill, causing [ArmourBreak|Armour Break] it inflicts to be stronger.","","[16,4]","",3,[],[],"","",[],-1
+413,"RageforgedSupport","",479,"Supports any damaging skill that you use or trigger yourself, causing it to consume [Rage] to deal more damage. If you don't have enough [Rage] to consume, the damage bonus will not apply.","",[16],"",3,[],[],"","",[],-1
+414,"PlayerDefaultUnarmed","",1,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+415,"PlayerDefaultQuarterstaff","",2,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+416,"PlayerDefaultFlail","",3,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+417,"PlayerDefault1HSword","",4,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+418,"PlayerDefaultSwordSword","",5,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+419,"PlayerDefault2HSword","",6,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+420,"PlayerDefault1HAxe","",7,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+421,"PlayerDefaultAxeAxe","",8,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+422,"PlayerDefault2HAxe","",9,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+423,"PlayerDefault1HMace","",10,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+424,"PlayerDefaultMaceMace","",11,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+425,"PlayerDefault2HMace","",12,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+426,"PlayerDefaultClaw","",13,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+427,"PlayerDefaultClawClaw","",14,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+428,"PlayerDefaultDagger","",15,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+429,"PlayerDefaultDaggerDagger","",16,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+430,"PlayerDefaultSpear","",17,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+431,"PlayerDefaultBow","",18,"","","[25,13,5]","",3,[],[],"","",[],-1
+432,"PlayerDefaultCrossbow","",19,"","","[25,13,14,5]","",3,[],[],"","",[],-1
+433,"PlaytestAttack","",20,"","","[25,13,14,7,36]","",3,[],[],"","",[],-1
+434,"PlaytestSlam","",21,"","","[25,13,14,7,40,35]","",3,[],[],"","",[],-1
+435,"PlaytestSpell","",22,"","","[25,4,14,5,0]","",3,[],[],"","",[],-1
+436,"AscendancyLifeRemnants","",5316,"","","[25,58,59]","",3,[],[],1,"",[],-1
+437,"AscendancyExplosiveConcoction","",5325,"","","[25,13,14,5,0,15]","",3,[],[],"","",[],-1
+438,"AscendancyFulminatingConcoction","",5326,"","","[25,13,14,5,2,15]","",3,[],[],"","",[],-1
+439,"AscendancyShatteringConcoction","",5327,"","","[25,13,14,5,1,15]","",3,[],[],"","",[],-1
+440,"AscendancyPoisonousConcoction","",5328,"","","[25,13,14,5,3]","",3,[],[],"","",[],-1
+441,"AscendancyBleedingConcoction","",5329,"","","[25,13,14,5,33]","",3,[],[],"","",[],-1
+442,"AscendancyMeditate","",5323,"","","[25,4,30]","",3,[],[],"","",[],-1
+443,"AscendancyElementalStorm","",325,"","","[25,4,14,26,33,2,1,0,15,44]","",3,[],[],"","",[],-1
+444,"ArmourExplosionSupport","",480,"Supports [Attack|Attacks], causing them to trigger a [Fire|Fiery] explosion when they [ArmourBreak|Fully Break] an enemy's [Armour].","","[16,25,13,14,26,0,62]","",3,[],[5298],"","",[],-1
+445,"StompingGroundSupport","",481,"Supports [Travel] skills, causing your footsteps to crack the earth and emit damaging shockwaves while using the skill.","","[16,25,13,14,33]","",3,[],[5300],"","",[],-1
+446,"CrescendoSupport","",5301,"Supports [Strike|Strikes] that perform a [FinalStrike|Final Strike] at the end of a combination of attacks, allowing you to use the [FinalStrike|Final Strike] twice in succession.","","[16,13,7,36]","",3,[],[],"","",[],-1
+447,"FireExposureSupport","",5302,"Supports any skill that [HitDamage|Hits] enemies, causing it to inflict [Exposure|Fire Exposure] when it [Ignite|Ignites] an enemy.","","[16,0,15]","",3,[],[],"","",[],-1
+448,"LightningExposureSupport","",5303,"Supports any skill that [HitDamage|Hits] enemies, causing it to inflict [Exposure|Lightning Exposure] when it [Shock|Shocks] an enemy.","","[16,2,15]","",3,[],[],"","",[],-1
+449,"ColdExposureSupport","",5304,"Supports any skill that [HitDamage|Hits] enemies, causing it to inflict [Exposure|Cold Exposure] when it [Critical|Critically Hits] an enemy.","","[16,1,15,47]","",3,[],[],"","",[],-1
+450,"DeadlyPoisonSupport","",5306,"Supports any skill that [HitDamage|Hits] enemies, causing it to deal less damage but inflict more potent [Poison].","","[16,3]","",3,[],[],"","",[],-1
+451,"DeepCutsSupport","",5307,"Supports any skill that [HitDamage|Hits] enemies, causing it to deal less damage but inflict more potent [Bleeding].","","[16,33]","",3,[],[],"","",[],-1
+452,"CorruptingCrySupport","",5308,"Supports [Warcry|Warcries], causing them to inflict [CorruptedBlood|Corrupted Blood] on enemies in their area of effect.","","[16,27,33,15]","",3,[],[],"","",[],-1
+453,"WindowOfOpportunitySupport","",5309,"Supports [Channelling] skills that have special effects if released with [PerfectTiming|Perfect Timing], causing them to deal much more damage if released with [PerfectTiming|Perfect Timing] but reducing the [PerfectTiming|Perfect Timing] window.","","[16,30]","",3,[],[],"","",[],-1
+454,"FireMasterySupport","",5310,"Supports [Fire] skills, granting them an additional level.","","[16,0]","",3,[],[],"","",[],-1
+455,"ColdMasterySupport","",5311,"Supports [Cold] skills, granting them an additional level.","","[16,1]","",3,[],[],"","",[],-1
+456,"LightningMasterySupport","",5312,"Supports [Lightning] skills, granting them an additional level.","","[16,2]","",3,[],[],"","",[],-1
+457,"ChaosMasterySupport","",5313,"Supports [Chaos] skills, granting them an additional level.","","[16,3]","",3,[],[],"","",[],-1
+458,"PhysicalMasterySupport","",5314,"Supports [Physical] skills, granting them an additional level.","","[16,33]","",3,[],[],"","",[],-1
+459,"MinionMasterySupport","",5315,"Supports [Minion] skills, granting them an additional level.","","[16,8]","",3,[],[],"","",[],-1
+460,"ShockchainArrow","",321,"","","[25,13,14,5,2,18,62]","",3,[],[],"","",[],-1
+461,"VaultingImpact","",322,"","","[25,13,14,7,40,35]","",3,[],[],"","",[],-1
+462,"StormWave","",323,"","","[25,13,14,7,2]","",3,[],[],"","",[],-1
+463,"MantraOfDestruction","",324,"","","[25,58,3,15]","",3,[],[],"","",[],-1
+464,"SwiftAfflictionSupport","",482,"Supports any skill that deals damage, causing it to deal more damage over time but have a shorter duration.","","[16,15]","",3,[],[],"","",[],-1
+465,"ChaoticAssassinationSupport","",483,"Supports [Spell|Spells] that deal non-[Ailments|Ailment] damage over time, causing them to have a shorter duration but deal substantially more damage over time with [Debuff|Debuffs] inflicted against enemies on full life.","","[16,4,15]","",3,[],[],"","",[],-1
+466,"DrainedAilmentSupport","",484,"Supports [Spell|Spells] that deal non-[Ailments|Ailment] damage over time, causing them to consume [Ailments] on enemies it applies damage over time [Debuff|Debuffs] to in order to deal substantially more damage over time.","","[16,4]","",3,[],[],"","",[],-1
+467,"ChaoticFreezeSupport","",485,"Supports [Spell|Spells] that deal non-[Ailments|Ailment] [Chaos] damage over time. Enemies taking damage over time from [Debuff|Debuffs] caused by supported skills will suffer [Freeze] build up from [Chaos] damage [HitDamage|Hits] from any source.","","[16,4,3]","",3,[],[],"","",[],-1
+468,"HinderSupport","",486,"Supports [Spell|Spells] that deal non-[Ailments|Ailment] [Chaos] damage over time, causing damage over time they inflict to also [Hinder] enemies.","","[16,4,3]","",3,[],[],"","",[],-1
+469,"FusilladeSupport","",487,"","","[16,5]","",3,[],[],"","",[],-1
+470,"ComboFinisherSupport","",488,"Supports [Melee|Melee] [Attack|Attacks] you use yourself. Supported Skills cannot be used until enough [Combo|Combo] has been built up, but deal massively more damage. Cannot support skills which already [Combo|Combo], or [Trigger|Triggered] Skills.","","[16,13,36]","",3,[],[],"","",[],-1
+471,"EncumberanceSupport","",489,"Supports any skill, causing inflicted [Slow|Slows] to be more powerful.","","[16,4,8]","",3,[],[],"","",[],-1
+472,"PrecisionSupport","",490,"Supports [Persistent|Persistent] [Buff|Buff] Skills, causing you to gain increased [Accuracy|Accuracy] while the Skill is active.","","[16,58,59]","",3,[],[],1,"",[],-1
+473,"ClaritySupport","",491,"Supports [Persistent|Persistent] [Buff|Buff] Skills, causing you to gain increased Mana Regeneration while the Skill is active.","","[16,58,59]","",3,[],[],1,"",[],-1
+474,"VitalitySupport","",492,"Supports [Persistent|Persistent] [Buff|Buff] Skills, causing you to gain Life Regeneration while the Skill is active.","","[16,58,59]","",3,[],[],1,"",[],-1
+475,"HerbalismSupport","",493,"Supports [Persistent|Persistent] [Buff|Buff] Skills, causing you to gain increased Life recovery from [Flask|Flasks] while the Skill is active.","","[16,58,59]","",3,[],[],1,"",[],-1
+476,"CannibalismSupport","",494,"Supports [Persistent|Persistent] [Buff|Buff] Skills, causing you to recover Life on kill while the Skill is active.","","[16,58,59]","",3,[],[],1,"",[],-1
+477,"CorpsewadeCorpseCloud","",5322,"","","[25,4,14,0,3,15]","",3,[],[],"","",[],-1
+478,"SoulbreakerSupport","",495,"Supports skills you use yourself, causing them to trigger a [Chaos|Chaos] Damage nova when breaking Enemy [EnergyShield|Energy Shield].","","[16,25,14,3]","",3,[],[5324],"","",[],-1
+479,"RuptureSupport","",496,"Supports skills that [HitDamage|Hit] Enemies. Supported skills [Aggravate|Aggravate] [Bleeding|Bleeding] on [HitDamage|Hitting] [HeavyStun|Heavily Stunned] Enemies.","","[16,33]","",3,[],[],"","",[],-1
+480,"CullingStrikeSupport","",497,"Supports [Attack|Attack] Skills, causing them to [CullingStrike|Cull] [Rarity|Rare and Unique] Enemies on [HitDamage|Hit].","","[16,13]","",3,[],[],"","",[],-1
+481,"SpellCascadeSupport","",498,"Supports [Spell|Spells] that affect an area around you or a target location, causing those [Spell|Spells] to also target additional areas on either side of the target area, along a randomly chosen axis. Cannot support [Channelling] skills or [Remote] skills.","",[16],"",3,[],[],"","",[],-1
+482,"ArmourBreakSupport","",499,"Supports Skills that [HitDamage|Hit] Enemies, causing those [HitDamage|Hits] to [ArmourBreak|Break Armour] based on a portion of [Physical|Physical Damage] dealt.","",[16],"",3,[],[],"","",[],-1
+483,"FarCombatSupport","",500,"Supports [Attack|Attacks], causing them to deal more damage from farther away.","","[16,13]","",3,[],[],"","",[],-1
+484,"DazingSupport","",501,"Supports [Attack|Attacks], causing them to build up [Daze|Daze] based on a portion of [Physical|Physical] Damage dealt.","","[16,13,33]","",3,[],[],"","",[],-1
+485,"DazedBreakSupport","",502,"Supports [Attack|Attacks], causing them to [Daze|Daze] Enemies when they fully [ArmourBreak|Break Armour].","","[16,13]","",3,[],[],"","",[],-1
+486,"DazingCrySupport","",503,"Supports [Warcry|Warcries], causing them to [Daze|Daze] Enemies on use.","","[16,27]","",3,[],[],"","",[],-1
+487,"CursedGroundSupport","",504,"Supports [Curse] Skills. Supported [Curse] Skills no longer have an activation delay, instead creating areas which [Curse] Enemies so long as they are within them.","",[16],"",3,[],[],"","",[],-1
+488,"WeaponElementalDamageSupport","",505,"Supports [Attack|Attacks] that use a weapon, causing them to deal more weapon [ElementalDamage|Elemental damage].","","[16,13]","",3,[],[],"","",[],-1
+489,"CooldownReductionSupport","",506,"Supports skills with Cooldowns, increasing the rate at which those [CooldownRecovery|Cooldowns Recover].","",[16],"",3,[],[],"","",[],-1
+490,"AscendancyElementalExpression","",5330,"","","[25,4,14,5,26,2,1,0,18]","",3,[],[],"","",[],-1
+491,"IceShot","",5332,"","","[25,13,5,1]","",3,[],[],"","",[],-1
+492,"WarBanner","",333,"","","[25,39,58,59,14,15]","",3,[],[326],1,1,"[1,0]",-1
+493,"DefianceBanner","",334,"","","[25,39,58,59,14,15]","",3,[],[327],1,1,"[1,0]",-1
+494,"DreadBanner","",335,"","","[25,39,58,59,14,15]","",3,[],[328],1,1,"[1,0]",-1
+495,"FreezingMark","",5333,"","","[25,4,13,14,43,1,15,38]","",3,[],[5334],"","",[],1
+496,"VoltaicMark","",5335,"","","[25,4,13,14,43,2,15,38]","",3,[],[5336],"","",[],-1
+497,"AscendancyUnboundAvatar","",5337,"","","[25,58,2,1,0,15]","",3,[],[],"","",[],-1
+498,"HandOfChayula","",329,"","","[25,13,14,7,36,3,52]","",3,[],[330],"",1,[],-1
+499,"FreezingWord","",331,"","","[25,13,14,1,38]","",3,[],[332],"","",[],-1
+500,"AscendancySummonInfernalHound","",132,"","","[25,8,59,0]","",3,[],[],"","",[],-1
+501,"AscendancyEncasedInJade","",5344,"","","[25,34,4,58,33,15]","",3,[],[],"","",[],-1
+502,"TemporalRift","",5339,"","","[25,4,58,59]","",3,[],[],1,"",[],-1
+503,"TimeFreeze","",5340,"","","[25,4,14,15]","",3,[],[],"","",[],-1
+504,"TimeSnap","",5338,"","","[25,4]","",3,[],[],"","",[],-1
+505,"DemonForm","",5342,"","","[25,54,58,59]","",3,[],[],1,"",[],-1
+506,"SorceryWard","",5299,"","","[25,4,58,59,2,1,0]","",3,[],[],1,"",[],-1
+507,"TimeOfNeed","",336,"","","[25,58,59,15]","",3,[],[],1,"",[],-1
+508,"ElementalInvocation","",241,"","","[25,58,59,26,2,1,0,52]","",3,[],[242],1,1,[],-1
+509,"Attrition","",337,"","","[25,58,59]","",3,[],[],1,"",[],-1
+510,"ElementalConflux","",338,"","","[25,58,59,2,1,0,15]","",3,[],[],1,"",[],-1
+511,"IntoTheBreach","",5346,"","","[25,58,59]","",3,[],[],1,"",[],-1
+512,"AncestralSpriits","",5345,"","","[25,8,26,15]","",3,[],[],"","",[],-1
+513,"EmergencyReload","",339,"","","[25,58,15]","",3,[],[],"","",[],-1
+514,"BloodFountainSupport","",507,"Supports Skills which create stationary objects. Objects created by supported Skills generate a Font of Blood, creating an [Aura] which grants Life regeneration.","","[16,19]","",3,[],[],"","",[],-1
+515,"ManaFountainSupport","",508,"Supports Skills which create stationary objects. Objects created by supported Skills generate a Font of Mana, creating an [Aura] which grants Mana regeneration.","","[16,19]","",3,[],[],"","",[],-1
+516,"RageFountainSupport","",509,"Supports Skills which create stationary objects. Objects created by supported Skills generate a Font of Rage, creating an [Aura] which grants [Rage] over time, as well as preventing [Rage] loss.","","[16,19]","",3,[],[],"","",[],-1
+517,"AftershockChanceSupport","",519,"Supports [Slam|Slams] you use yourself, giving them a chance to create an [Aftershock].","","[16,13,7,40]","",3,[],[],"","",[],-1
+518,"ClusterGrenade","",340,"","","[25,13,14,5,63,0,15]","",3,[],[341],"","",[],-1
+519,"LightningCloneRetaliation","",342,"","","[25,4,5]","",3,[],[],"","",[],-1
+520,"TornadoShot","",343,"","","[25,13,14,5,33,15]","",3,[],[],"","",[],-1
+521,"BlinkSandPlayer","",345,"","","[25,4]","",3,[],[],"",1,[],-1
+522,"ChargeInfusion","",346,"","","[25,58,59]","",3,[],[],1,"",[],-1
+523,"HolyDescentSupport","",510,"Supports Skills that leap into the air, causing them to create [ConsecratedGround|Consecrated Ground] when you land","",[16],"",3,[],[],"","",[],-1
+524,"BurningRunesSupport","",511,"Supports any Skill which creates [RunicInscription|Runic Inscriptions] when Cast, causing those [RunicInscription|Runic Inscriptions] to trigger Burning Inscription when they expire. Burning Inscription is a [Spell] which creates [IgnitedGround|Ignited Ground] based off of your Maximum Mana.","Burning Inscription","[16,25,14,0]","",3,[],[354],"","",[],-1
+525,"ShardScavenger","",347,"","","[25,58,59,33,2,1,0]","",3,[],[],1,"",[],-1
+526,"DoubleBarrelSupport","",512,"Supports [Crossbow] [Ammunition] Skills, causing them to load an extra bolt at the cost of reload speed.","",[16],"",3,[],[],"","",[],-1
+527,"AutoReloadSupport","",513,"Supports [Crossbow] [Ammunition] Skills, causing them to automatically reload when they [HeavyStun|Heavy Stun] an enemy.","",[16],"",3,[],[],"","",[],-1
+528,"AmmoConservationSupport","",514,"Supports [Crossbow] [Ammunition] Skills, granting a chance to not consume a Bolt when firing.","",[16],"",3,[],[],"","",[],-1
+529,"NimbleReloadSupport","",515,"Supports [Crossbow] [Ammunition] Skills, causing them to Reload bolts significantly faster.","",[16],"",3,[],[],"","",[],-1
+530,"FreshClipSupport","",516,"Supports [Crossbow] Skills, granting them more damage for each bolt reloaded by that Skill in the last 6 seconds.","",[16],"",3,[],[],"","",[],-1
+531,"SacrificialLambSupport","",517,"Supports skills which create [Minion|Minions], causing your skills which can target [Minion|Minions] to prioritise targeting [Minion|Minions] from the Supported Skill.","","[16,8]","",3,[],[],"","",[],-1
+532,"OverwhelmingPresence","",348,"","","[25,58,59]","",3,[],[],1,"",[],-1
+533,"AlchemistsBoon","",349,"","","[25,58,59,12]","",3,[],[],1,"",[],-1
+534,"ReapersInvocation","",350,"","","[25,58,59,26,52]","",3,[],[351],1,1,[],-1
+535,"Sacrifice","",352,"","","[25,8,58,59]","",3,[],[],1,"",[],-1
+536,"Archmage","",353,"","","[25,58,59,2]","",3,[],[],1,"",[],-1
+537,"MagneticSalvo","",355,"","","[25,13,14,5,2]","",3,[],[],"","",[],-1
+538,"FreezingSalvo","",356,"","","[25,13,14,5,1]","",3,[],[],"","",[],-1
+539,"TriggeredGasCloud","",357,"","","[25,14,15]","",3,[],[],"","",[],-1
+540,"TriggeredDetonation","",358,"","","[25,14]","",3,[],[],"","",[],-1
+541,"Berserk","",359,"","","[25,58,59]","",3,[],[],1,"",[],-1
+542,"HeraldOfPlague","",360,"","","[25,58,59,3,31]","",3,[],[],1,"",[],-1
+543,"HeraldOfBlood","",361,"","","[25,58,59,31]","",3,[],[],1,"",[],-1
+544,"WitheringPresence","",362,"","","[25,58,59,3,15]","",3,[],[],1,"",[],-1
+545,"CombatFrenzy","",363,"","","[25,58,59]","",3,[],[],1,"",[],-1
+546,"CastOnBlock","",364,"","","[58,25,59,26,52]","",3,[],[365],1,1,[],-1
+547,"GatheringStorm","",366,"","","[25,13,14,7,36,2,30,35]","",3,[],[],"","",[],-1
+548,"UpheavalSupport","",518,"Supports [Melee] [Attack|Attacks] which create fissures in the ground, causing them to create additional fissures at the cost of damage and attack speed.","","[16,13,7]","",3,[],[],"","",[],-1
+549,"GroundEffectDurationSupport","",520,"Supports Skills that create Ground Surfaces, causing those surfaces to last longer.","",[16],"",3,[],[],"","",[],-1
+550,"TerrainChainSupport","",521,"Supports any Skill which creates [Projectile|Projectiles], giving those [Projectile|Projectiles] a chance to [Chain] when impacting terrain.","","[16,5]","",3,[],[],"","",[],-1
+551,"TotemPlacementSpeedSupport","",522,"Supports Skills which place [Totem|Totems], causing those skills to place [Totem|Totems] much more quickly.","","[16,19]","",3,[],[],"","",[],-1
+552,"LongFuseSupport","",523,"Supports Skills which fire [Grenade|Grenades], causing those [Grenade|Grenades] to have much higher duration and damage.","","[16,63]","",3,[],[],"","",[],-1
+553,"PayloadSupport","",524,"Supports Skills which fire [Grenade|Grenades], giving fired [Grenade|Grenades] a chance to activate again, but lengthening their cooldowns.","","[16,63]","",3,[],[],"","",[],-1
+554,"StripAwaySupport","",525,"Supports Skills which apply [Exposure] to Enemies, increasing the effect of applied [Exposure].","","[16,4]","",3,[],[],"","",[],-1
+555,"IronwoodSupport","",526,"Supports Skills which create [Totem|Totems]. [Totem|Totems] created by Supported Skills have additional [ElementalDamage|Elemental] [Resistances].","","[16,19]","",3,[],[],"","",[],-1
+556,"ConsideredCastingSupport","",527,"Supports [Spell] Skills that [HitDamage|Hit] Enemies and you cast yourself, boosting Damage at the cost of Cast Speed.","","[16,4]","",3,[],[],"","",[],-1
+557,"WildshardsSupport","",528,"Supports [Spell] Skills that fire [Projectile|Projectiles]. Supported Skills have a chance to fire many additional [Projectile|Projectiles] in a circle.","","[16,4,5]","",3,[],[],"","",[],-1
+558,"IcicleSupport","",529,"Supports any Skill which creates [IceCrystals|Ice Crystals], causing them to be created with lower Life.","",[16],"",3,[],[],"","",[],-1
+559,"GlacierSupport","",530,"Supports any Skill which creates [IceCrystals|Ice Crystals], causing them to be created with higher Life.","",[16],"",3,[],[],"","",[],-1
+560,"HeftSupport","",531,"Supports Skills which deal Damage, increasing the maximum [Physical] Damage of their [HitDamage|Hits].","",[16],"",3,[],[],"","",[],-1
+561,"TempestuousTempoSupport","",532,"Supports Skills which deal Damage, raising [ElementalDamage|Elemental Damage] dealt for each Skill used [Recently] of a different [ElementalDamage|Elemental] type. Cannot support [Minion] Skills.","",[16],"",3,[],[],"","",[],-1
+562,"ExtractionSupport","",533,"Supports [Spell] Skills. Using supported [Spell|Spells] will cause you to [Sacrifice] a portion of your Life on use, gaining extra [Chaos] Damage in exchange. Does not support [Persistent] Skills, [Minion] Skills, or [Trigger|Triggered] Skills.","",[16],"",3,[],[],"","",[],-1
+563,"AstralProjectionSupport","",534,"Supports [Nova] Skills, causing those Skills to take place at the targeted location when used instead of around you.","",[16],"",3,[],[],"","",[],-1
+564,"PracticedComboSupport","",535,"Supports [Strike] Skills. Supported Skills have a chance to build additional [Combo] on [HitDamage|Hit]. Cannot support Skills used by [Minion|Minions].","","[16,13,7,36]","",3,[],[],"","",[],-1
+565,"LeverageSupport","",536,"Supports Skills which [HitDamage|Hit] Enemies. Supported Skills gain increased [Critical|chance to Critically Hit] against [Immobilised] Enemies.","",[16],"",3,[],[],"","",[],-1
+566,"CulminationSupport","",537,"Supports [Melee] [Attack] Skills. Supported Skills gain [Combo] when you successfully [Strike] Enemies with other [Melee] [Attack|Attacks]. Supported Skills reset their [Combo] on use, dealing more Damage the higher [Combo] you had on use. Cannot support skills which already gain [Combo]. Cannot Support Skills used by [Minion|Minions].","","[16,13,7]","",3,[],[],"","",[],-1
+567,"PotentialSupport","",538,"Supports Skills that you use yourself. Supported Skills will consume a [Charges|Power Charge] on use if possible, and will be much more likely to [Critical|Critically Hit] if they do. Supported Skills cannot generate [Charges|Power Charges].","",[16],"",3,[],[],"","",[],-1
+568,"ExpanseSupport","",539,"Supports any Skill that you use yourself, granting it significantly higher Area of Effect but causing it to gain a long cooldown. Cannot support Skills which already have a cooldown.","","[16,14]","",3,[],[],"","",[],-1
+569,"ExciseSupport","",540,"Supports any damaging Skill that you use yourself, granting it significantly higher chance to [Critical|Critically Hit], but causing it to gain a long cooldown. Cannot support Skills which already have a cooldown.","",[16],"",3,[],[],"","",[],-1
+570,"ExecrateSupport","",541,"Supports any damaging Skill that you use yourself, granting it significantly higher chance to inflict [Ailments] on hit, but causing it to gain a long cooldown. Cannot support Skills which already have a cooldown.","",[16],"",3,[],[],"","",[],-1
+571,"EnergyRetentionSupport","",542,"Supports [Meta] Skills. Supported Skills gain a chance to partially Refund a portion of [Energy] cost when [Trigger|Triggering] or [Invoke|Invoking] other Skills.","",[16],"",3,[],[],"","",[],-1
+572,"FerocitySupport","",543,"Supports Skills that you use yourself. Supported Skills will consume a [Charges|Frenzy Charge] on use if possible, and will gain significant [SkillSpeed|Skill Speed] if they do. Supported Skills cannot generate [Charges|Frenzy Charges].","",[16],"",3,[],[],"","",[],-1
+573,"AblationSupport","",544,"Supports [Offering] Skills. Supported Skills [Sacrifice] a portion of your life on use, but deal much more damage and have more powerful [Buff|Buffs] in return.","",[16],"",3,[],[],"","",[],-1
+574,"DanseMacabreSupport","",545,"Supports [Offering] Skills. Supported Skills have increased [Buff] effect and deal more damage, but will target an additional skeletal [Minion] when cast. If there is not an additional skeletal [Minion] to target, no damage or [Buff] effect will be granted.","",[16],"",3,[],[],"","",[],-1
+575,"CapacitorSupport","",546,"Supports Invocation Skills which [Trigger] other Skills. Supported Skills have significantly higher Maximum [Energy].","",[16],"",3,[],[],"","",[],-1
+576,"ImpetusSupport","",547,"Supports [Meta] Skills. Supported Skills generate [Energy] significantly faster.","",[16],"",3,[],[],"","",[],-1
+577,"BiddingSupport","",548,"Supports [Minion] Skills. Supported [Minion|Minions] deal significantly more damage with their Command Skills.","",[16],"",3,[],[],"","",[],-1
+578,"TremorsSupport","",549,"Supports [Slam] Skills you use yourself. Supported Skills gain multiple independent chances to cause [Aftershock|Aftershocks], but deal less Damage.","","[16,13,7,40]","",3,[],[],"","",[],-1
+579,"UniqueDuskVigilTriggeredBlazingCluster","",5295,"","","[25,4,14,5,0,15]","",3,[],[],"","",[],-1
+580,"ExpandingGroundSupport","",550,"","",[16],"",3,[],[],"","",[],-1
+581,"UniqueBreachLightningBolt","",215,"","","[25,4,14,2]","",3,[],[],"","",[],-1
