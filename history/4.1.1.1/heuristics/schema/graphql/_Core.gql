@@ -3655,7 +3655,7 @@ type PassiveOverrideLimits {
 }
 
 type PassiveSkillMasteryGroups {
-  Id: string
+  Id: string @unique
   MasteryEffects: [PassiveSkillMasteryEffects]
   InactiveIcon: string @file(ext: ".dds")
   ActiveIcon: string @file(ext: ".dds")
@@ -3666,8 +3666,8 @@ type PassiveSkillMasteryGroups {
 }
 
 type PassiveSkillMasteryEffects {
-  Id: string
-  HASH16: u16
+  Id: string @unique
+  HASH16: u16 @unique
   Stats: [Stats]
   Stat1Value: i32
   Stat2Value: i32
@@ -6918,6 +6918,7 @@ type visualpinproperties {
   _: bool
 }
 
+# Added 4.1
 type waystonestashtablayout {
   _: string
   _: rid

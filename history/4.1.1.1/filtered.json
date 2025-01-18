@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1735942024,
+  "createdAt": 1737146145,
   "tables": [
     {
       "validFor": 3,
@@ -14218,7 +14218,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -14246,7 +14246,7 @@
       "added": "4.1.0.10.2"
     },
     {
-      "validFor": 3,
+      "validFor": 1,
       "name": "BlightCraftingRecipes",
       "columns": [
         {
@@ -14257,6 +14257,103 @@
           "unique": true,
           "localized": false,
           "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BlightCraftingItemsKeys",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BlightCraftingItems"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BlightCraftingResultsKey",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BlightCraftingResults"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BlightCraftingTypesKey",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BlightCraftingTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [
+        "crafting"
+      ]
+    },
+    {
+      "validFor": 2,
+      "name": "BlightCraftingRecipes",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BlightCraftingResult",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BlightCraftingResults"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BlightCraftingItems",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BlightCraftingItems"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -14286,7 +14383,7 @@
           "interval": false
         },
         {
-          "name": "ModsKey",
+          "name": "Mod",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -14301,7 +14398,7 @@
           "interval": false
         },
         {
-          "name": "PassiveSkillsKey",
+          "name": "PassiveSkill",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -82306,7 +82403,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -82539,7 +82636,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -82552,7 +82649,7 @@
           "description": null,
           "array": false,
           "type": "u16",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,

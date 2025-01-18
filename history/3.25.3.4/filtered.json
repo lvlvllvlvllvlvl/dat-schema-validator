@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1735942024,
+  "createdAt": 1737146145,
   "tables": [
     {
       "validFor": 3,
@@ -14394,7 +14394,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -14421,7 +14421,7 @@
       ]
     },
     {
-      "validFor": 3,
+      "validFor": 1,
       "name": "BlightCraftingRecipes",
       "columns": [
         {
@@ -14489,6 +14489,58 @@
       "added": "3.11.2b"
     },
     {
+      "validFor": 2,
+      "name": "BlightCraftingRecipes",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BlightCraftingResult",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BlightCraftingResults"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BlightCraftingItems",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BlightCraftingItems"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [
+        "crafting"
+      ]
+    },
+    {
       "validFor": 3,
       "name": "BlightCraftingResults",
       "columns": [
@@ -14506,7 +14558,7 @@
           "interval": false
         },
         {
-          "name": "ModsKey",
+          "name": "Mod",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -14521,7 +14573,7 @@
           "interval": false
         },
         {
-          "name": "PassiveSkillsKey",
+          "name": "PassiveSkill",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -86164,7 +86216,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -86398,7 +86450,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -86411,7 +86463,7 @@
           "description": null,
           "array": false,
           "type": "u16",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
