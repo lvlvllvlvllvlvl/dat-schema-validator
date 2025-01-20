@@ -411,10 +411,9 @@ await fs.rm(path.join(schemaDir, "heuristics"), RF);
 await fs.rename(heuristics, path.join(schemaDir, "heuristics"));
 
 if (!args?.includes("--historical")) {
-  if (!poe2) {
-    await fs.rm("heuristics", RF);
-    await fs.cp(path.join(schemaDir, "heuristics"), "heuristics", R);
-  }
+  const dir = poe2 ? "poe2" : "poe";
+  await fs.rm(dir, RF);
+  await fs.cp(schemaDir, dir, R);
   await Promise.all(
     Object.values(metafiles).map(async (filename) => {
       const rows = csvParse(await fs.readFile(filename));
