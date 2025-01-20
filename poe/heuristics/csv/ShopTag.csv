@@ -1,0 +1,683 @@
+"rownum","Id","Name","IsCategory","Category","bool","row","bool","i32","i32"
+0,"Specials","Specials",1,"","",28,"",-16843010,-16843010
+1,"NewItems","New",1,"","",28,"",-16843010,-16843010
+2,"StashTabs","Stash Tabs",1,"",1,28,"",-16843010,-16843010
+3,"Bundles","Bundles",1,"","",28,"",-16843010,-16843010
+4,"ArmourEffects","Armour",1,"",1,28,"",-16843010,-16843010
+5,"BackAttachments","Back Attachments",1,"",1,28,"",-16843010,-16843010
+6,"WeaponEffects","Weapon",1,"",1,28,"",-16843010,-16843010
+7,"FinisherEffects","Finisher Effects",1,"","",28,"",6,0
+8,"Portals","Portals",1,"",1,28,"",-16843010,-16843010
+9,"AlternateSkillEffects","Skill Effects",1,"","",28,"",16,0
+10,"CharacterEffects","Character",1,"",1,28,"",-16843010,-16843010
+11,"FootprintEffects","Footprints",1,"","",28,"",-16843010,-16843010
+12,"Guild","Guild",1,"","",28,"",-16843010,-16843010
+13,"GuildHideout","Guild Hideout",1,"","",28,"",-16843010,-16843010
+14,"Pets","Pets",1,"",1,28,"",-16843010,-16843010
+15,"Hideout","Hideout",1,"",1,28,"",-16843010,-16843010
+16,"VisualEffects","Visual Effects",1,"",1,28,"",-16843010,-16843010
+17,"GuildStashTabs","Stash Tabs","","","",28,1,-16843010,-16843010
+18,"GuildHideouts","Hideouts","","","",28,1,-16843010,-16843010
+19,"GuildHideoutDecorations","Hideout Decorations","","","",28,1,-16843010,-16843010
+20,"GuildHideoutSkins","Utility Skins","","","",28,1,-16843010,-16843010
+21,"GuildBundles","Bundles","","","",28,1,-16843010,-16843010
+22,"Consumable","Consumable","","","",28,"",-16843010,-16843010
+23,"MysteryPacks","Mystery Packs","",22,"",28,"",-16843010,-16843010
+24,"MostPopular","Most Popular","","","",28,"",-16843010,-16843010
+25,"AccountFeatures","Account Features",1,"","",28,"",-16843010,-16843010
+26,"ClassicEffects","Classic Effects","","","",28,"",-16843010,-16843010
+27,"TencentHotAndNew","Hot and New",1,"","",28,"",-16843010,-16843010
+28,"TencentAccountFunctions","Account Functions",1,"","",28,"",-16843010,-16843010
+29,"TencentGuildFunctions","Guild Functions",1,"","",28,"",-16843010,-16843010
+30,"TencentCosmetics","Cosmetics",1,"","",28,"",-16843010,-16843010
+31,"TencentBackAttachments","Back Attachments",1,"","",28,"",-16843010,-16843010
+32,"TencentWeaponEffects","Weapon Effects",1,"","",28,"",-16843010,-16843010
+33,"TencentSkillEffects","Skill Effects",1,"","",28,"",-16843010,-16843010
+34,"TencentCharacterEffects","Character Effects",1,"","",28,"",-16843010,-16843010
+35,"TencentFootprintsEffects","Footprints Effects",1,"","",28,"",-16843010,-16843010
+36,"TencentPortalEffects","Portal Effects",1,"","",28,"",-16843010,-16843010
+37,"TencentPets","Pets",1,"","",28,"",-16843010,-16843010
+38,"TencentHideout","Hideout",1,"","",28,"",-16843010,-16843010
+39,"TencentTradeableMicrotransactions","Tradeable Microtransaction",1,"","",28,"",-16843010,-16843010
+40,"TencentSecondary","Tencent Misc","","","",28,"",-16843010,-16843010
+41,"CursorMtx","Cursor Skin","","","",28,"",10,0
+42,"HUDMtx","HUD Skin","","","",28,"",-16843010,-16843010
+43,"JewelMtx","Passive Jewel Skin","","","",28,"",10,0
+44,"FlaskMtx","Flask Skin","","","",28,"",10,0
+45,"BeltMtx","Belt Skin","","","",28,"",10,0
+46,"AmuletMtx","Amulet Skin","","","",28,"",10,0
+47,"WeaponSkin1Mtx","Weapon Skin","","","",28,"",6,0
+48,"WeaponSkin2Mtx","Weapon Skin","","","",28,"",6,0
+49,"WeaponEffect1Mtx","Weapon Effect","","","",28,"",6,0
+50,"WeaponEffect2Mtx","Weapon Effect","","","",28,"",6,0
+51,"WeaponAddedEffect1Mtx","Weapon Added Effect","","","",28,"",6,0
+52,"WeaponAddedEffect2Mtx","Weapon Added Effect","","","",28,"",6,0
+53,"HelmetSkinMtx","Helmet Skin","",4,"",28,"",4,0
+54,"HelmetAttachmentMtx","Helmet Attachment","",4,"",28,"",4,0
+55,"ArmourSkinMtx","Armour Skin","",4,"",28,"",4,0
+56,"ArmourAttachmentMtx","Armour Attachment","",4,"",28,"",4,0
+57,"GlovesMtx","Gloves","",4,"",28,"",4,0
+58,"BootsMtx","Boots","",4,"",28,"",4,0
+59,"FootprintsMtx","Footprints","","","",28,"",16,0
+60,"ShieldSkin","Shield Skin","","","",28,"",6,0
+61,"ApparitionMtx","Apparition","","","",28,"",16,0
+62,"CharacterEffectMtx","Character Effect","","","",28,"",10,0
+63,"PetMtx","Pet","","","",28,"",-16843010,-16843010
+64,"SocialFrameMtx","Social Frame","","","",28,"",-16843010,-16843010
+65,"PortraitMtx","Portrait","","","",28,"",-16843010,-16843010
+66,"PortalMtx","Portal","","","",28,"",8,0
+67,"RingMtx","Ring Skin","","","",28,"",10,0
+68,"HipAttachmentMtx","Hip Attachment","","","",28,"",10,0
+69,"SlotlessMtx","[DNT]","","","",28,"",-16843010,-16843010
+70,"AlternateCharges","Alternate Charge Skin","",10,"",28,"",16,0
+71,"AncestralCallMtx","Ancestral Call","",9,"",28,"",-16843010,-16843010
+72,"AncestralWarchiefMtx","Ancestral Warchief","",9,"",28,"",-16843010,-16843010
+73,"AngerMtx","Anger","",9,"",28,"",-16843010,-16843010
+74,"ArcMtx","Arc","",9,"",28,"",-16843010,-16843010
+75,"ArcticArmourMtx","Arctic Armour","",9,"",28,"",-16843010,-16843010
+76,"BallLightningMtx","Ball Lightning","",9,"",28,"",-16843010,-16843010
+77,"BarrageMtx","Barrage","",9,"",28,"",-16843010,-16843010
+78,"BladefallMtx","Bladefall","",9,"",28,"",-16843010,-16843010
+79,"BladeflurryMtx","Blade Flurry","",9,"",28,"",-16843010,-16843010
+80,"BladeVortexMtx","Blade Vortex","",9,"",28,"",-16843010,-16843010
+81,"BlasphemyMtx","Blasphemy","",9,"",28,"",-16843010,-16843010
+82,"BlastRainMtx","Blast Rain","",9,"",28,"",-16843010,-16843010
+83,"BlinkArrowMtx","Blink Arrow","",9,"",28,"",-16843010,-16843010
+84,"BloodRageMtx","Blood Rage","",9,"",28,"",-16843010,-16843010
+85,"ClarityMtx","Clarity","",9,"",28,"",-16843010,-16843010
+86,"CleaveMtx","Cleave","",9,"",28,"",-16843010,-16843010
+87,"ChargedDashMtx","Charged Dash","",9,"",28,"",-16843010,-16843010
+88,"ColdSnapMtx","Cold Snap","",9,"",28,"",-16843010,-16843010
+89,"ContagionMtx","Contagion","",9,"",28,"",-16843010,-16843010
+90,"ConvocationMtx","Convocation","",9,"",28,"",-16843010,-16843010
+91,"CremationMtx","Cremation","",9,"",28,"",-16843010,-16843010
+92,"CycloneMtx","Cyclone","",9,"",28,"",-16843010,-16843010
+93,"DecoyTotemMtx","Decoy Totem","",9,"",28,"",-16843010,-16843010
+94,"DesecrateMtx","Desecrate","",9,"",28,"",-16843010,-16843010
+95,"DeterminationMtx","Determination","",9,"",28,"",-16843010,-16843010
+96,"DevouringTotemMtx","Devouring Totem","",9,"",28,"",-16843010,-16843010
+97,"DischargeMtx","Discharged","",9,"",28,"",-16843010,-16843010
+98,"DisciplineMtx","Discipline","",9,"",28,"",-16843010,-16843010
+99,"DoubleStrikeMtx","Double Strike","",9,"",28,"",-16843010,-16843010
+100,"EarthquakeMtx","Earthquake","",9,"",28,"",-16843010,-16843010
+101,"ElementalHitMtx","Elemental Hit","",9,"",28,"",-16843010,-16843010
+102,"EssenceDrainMtx","Essence Drain","",9,"",28,"",-16843010,-16843010
+103,"EtherealKnivesMtx","Ethereal Knives","",9,"",28,"",-16843010,-16843010
+104,"FireballMtx","Fireball","",9,"",28,"",-16843010,-16843010
+105,"FirestormMtx","Firestorm","",9,"",28,"",-16843010,-16843010
+106,"FlameblastMtx","Flameblast","",9,"",28,"",-16843010,-16843010
+107,"FlameDashMtx","Flame Dash","",9,"",28,"",-16843010,-16843010
+108,"FlameTotemMtx","Holy Flame Totem","",9,"",28,"",-16843010,-16843010
+109,"FlickerStrikeMtx","Flicker Strike","",9,"",28,"",-16843010,-16843010
+110,"FreezingPulseMtx","Freezing Pulse","",9,"",28,"",-16843010,-16843010
+111,"FrostBladesMtx","Frost Blades","",9,"",28,"",-16843010,-16843010
+112,"FrostBoltMtx","Frostbolt","",9,"",28,"",-16843010,-16843010
+113,"FrostBoltNovaMtx","Vortex","",9,"",28,"",-16843010,-16843010
+114,"FrostBombMtx","Frost Bomb","",9,"",28,"",-16843010,-16843010
+115,"GlacialCascadeMtx","Glacial Cascade","",9,"",28,"",-16843010,-16843010
+116,"GraceMtx","Grace","",9,"",28,"",-16843010,-16843010
+117,"GroundSlamMtx","Ground Slam","",9,"",28,"",-16843010,-16843010
+118,"HasteMtx","Haste","",9,"",28,"",-16843010,-16843010
+119,"HatredMtx","Hatred","",9,"",28,"",-16843010,-16843010
+120,"HeraldOfAgonyMtx","Herald of Agony","",9,"",28,"",-16843010,-16843010
+121,"HeraldOfAshMtx","Herald of Ash","",9,"",28,"",-16843010,-16843010
+122,"HeraldOfIceMtx","Herald of Ice","",9,"",28,"",-16843010,-16843010
+123,"HeraldOfLightMtx","Herald of Purity","",9,"",28,"",-16843010,-16843010
+124,"HeraldOfThunderMtx","Herald of Thunder","",9,"",28,"",-16843010,-16843010
+125,"HexblastMtx","Hexblast","",9,"",28,"",-16843010,-16843010
+126,"HolyRelicMtx","Summon Holy Relic","",9,"",28,"",-16843010,-16843010
+127,"IceNovaMtx","Ice Nova","",9,"",28,"",-16843010,-16843010
+128,"IceSpearMtx","Ice Spear","",9,"",28,"",-16843010,-16843010
+129,"IceTrapMtx","Ice Trap","",9,"",28,"",-16843010,-16843010
+130,"ImmortalCallMtx","Immortal Call","",9,"",28,"",-16843010,-16843010
+131,"IncinerateMtx","Incinerate","",9,"",28,"",-16843010,-16843010
+132,"KineticBlastMtx","Kinetic Blast","",9,"",28,"",-16843010,-16843010
+133,"LacerateMtx","Lacerate","",9,"",28,"",-16843010,-16843010
+134,"LightningSpireMtx","Lightning Spire","",9,"",28,"",-16843010,-16843010
+135,"LightningWarpMtx","Lightning Warp","",9,"",28,"",-16843010,-16843010
+136,"LeapSlamMtx","Leap Slam","",9,"",28,"",-16843010,-16843010
+137,"LightningArrowMtx","Lightning Arrow","",9,"",28,"",-16843010,-16843010
+138,"MagmaOrbMtx","Rolling Magma","",9,"",28,"",-16843010,-16843010
+139,"MirageArcherMtx","Mirage Archer","",9,"",28,"",-16843010,-16843010
+140,"MirrorArrowMtx","Mirror Arrow","",9,"",28,"",-16843010,-16843010
+141,"MoltenShellMtx","Molten Shell","",9,"",28,"",-16843010,-16843010
+142,"MoltenStrikeMtx","Molten Strike","",9,"",28,"",-16843010,-16843010
+143,"OrbOfStormsMtx","Orb of Storms","",9,"",28,"",-16843010,-16843010
+144,"PhaseRunMtx","Phase Run","",9,"",28,"",-16843010,-16843010
+145,"CausticArrowMtx","Caustic Arrow","",9,"",28,"",-16843010,-16843010
+146,"PurityMtx","Purity","",9,"",28,"",-16843010,-16843010
+147,"PurityofFireMtx","Purity of Fire","",9,"",28,"",-16843010,-16843010
+148,"PurityofIceMtx","Purity of Ice","",9,"",28,"",-16843010,-16843010
+149,"PurityofLightningMtx","Purity of Lightning","",9,"",28,"",-16843010,-16843010
+150,"RainOfArrowsMtx","Rain of Arrows","",9,"",28,"",-16843010,-16843010
+151,"RaiseSpectreMtx","Raise Spectre","",9,"",28,"",-16843010,-16843010
+152,"RaiseZombieMtx","Raise Zombie","",9,"",28,"",-16843010,-16843010
+153,"ReaveMtx","Reave","",9,"",28,"",-16843010,-16843010
+154,"RejuvenationTotemMtx","Rejuvenation Totem","",9,"",28,"",-16843010,-16843010
+155,"RighteousFireMtx","Righteous Fire","",9,"",28,"",-16843010,-16843010
+156,"ScorchingRayMtx","Scorching Ray","",9,"",28,"",-16843010,-16843010
+157,"ScourgeArrowMtx","Scourge Arrow","",9,"",28,"",-16843010,-16843010
+158,"SearingBondMtx","Searing Bond","",9,"",28,"",-16843010,-16843010
+159,"ShieldChargeMtx","Shield Charge","",9,"",28,"",-16843010,-16843010
+160,"ShockNovaMtx","Shock Nova","",9,"",28,"",-16843010,-16843010
+161,"ShockwaveTotemMtx","Shockwave Totem","",9,"",28,"",-16843010,-16843010
+162,"SiegeBallistaMtx","Siege Ballista","",9,"",28,"",-16843010,-16843010
+163,"SparkMtx","Spark","",9,"",28,"",-16843010,-16843010
+164,"SpectralShieldThrowMtx","Spectral Shield Throw","",9,"",28,"",-16843010,-16843010
+165,"SplitArrowMtx","Split Arrow","",9,"",28,"",-16843010,-16843010
+166,"StormCallMtx","Storm Call","",9,"",28,"",-16843010,-16843010
+167,"SummonChaosGolemMtx","Summon Chaos Golem","",9,"",28,"",-16843010,-16843010
+168,"SummonFlameGolemMtx","Summon Flame Golem","",9,"",28,"",-16843010,-16843010
+169,"SummonIceGolemMtx","Summon Ice Golem","",9,"",28,"",-16843010,-16843010
+170,"SummonLightningGolemMtx","Summon Lightning Golem","",9,"",28,"",-16843010,-16843010
+171,"SummonRagingSpiritMtx","Summon Raging Spirit","",9,"",28,"",-16843010,-16843010
+172,"SummonStoneGolemMtx","Summon Stone Golem","",9,"",28,"",-16843010,-16843010
+173,"SummonSkeletonsMtx","Summon Skeletons","",9,"",28,"",-16843010,-16843010
+174,"SunderMtx","Sunder","",9,"",28,"",-16843010,-16843010
+175,"TempestShieldMtx","Tempest Shield","",9,"",28,"",-16843010,-16843010
+176,"ThrownWeaponMtx","Spectral Throw","",9,"",28,"",-16843010,-16843010
+177,"TornadoShotMtx","Tornado Shot","",9,"",28,"",-16843010,-16843010
+178,"ToxicRainMtx","Toxic Rain","",9,"",28,"",-16843010,-16843010
+179,"VaalAncestralWarchiefMtx","Vaal Ancestral Warchief","",9,"",28,"",-16843010,-16843010
+180,"VaalAnimateWeaponMtx","Vaal Animate Weapon","",9,"",28,"",-16843010,-16843010
+181,"VaalArcMtx","Vaal Arc","",9,"",28,"",-16843010,-16843010
+182,"VaalArcticArmourMtx","Vaal Arctic Armour","",9,"",28,"",-16843010,-16843010
+183,"VaalBladeVortexMtx","Vaal Blade Vortex","",9,"",28,"",-16843010,-16843010
+184,"VaalClarityMtx","Vaal Clarity","",9,"",28,"",-16843010,-16843010
+185,"VaalColdSnapMtx","Vaal Cold Snap","",9,"",28,"",-16843010,-16843010
+186,"VaalCycloneMtx","Vaal Cyclone","",9,"",28,"",-16843010,-16843010
+187,"VaalDisciplineMtx","Vaal Discipline","",9,"",28,"",-16843010,-16843010
+188,"VaalDominationMtx","Vaal Domination","",9,"",28,"",-16843010,-16843010
+189,"VaalDoubleStrikeMtx","Vaal Double Strike","",9,"",28,"",-16843010,-16843010
+190,"VaalEarthquakeMtx","Vaal Earthquake","",9,"",28,"",-16843010,-16843010
+191,"VaalFireballMtx","Vaal Fireball","",9,"",28,"",-16843010,-16843010
+192,"VaalFirestormMtx","Vaal Firestorm","",9,"",28,"",-16843010,-16843010
+193,"VaalFlameblastMtx","Vaal Flameblast","",9,"",28,"",-16843010,-16843010
+194,"VaalGraceMtx","Vaal Grace","",9,"",28,"",-16843010,-16843010
+195,"VaalGroundSlamMtx","Vaal Ground Slam","",9,"",28,"",-16843010,-16843010
+196,"VaalHasteMtx","Vaal Haste","",9,"",28,"",-16843010,-16843010
+197,"VaalIceNovaMtx","Vaal Ice Nova","",9,"",28,"",-16843010,-16843010
+198,"VaalIceShotMtx","Vaal Ice Shot","",9,"",28,"",-16843010,-16843010
+199,"VaalImmortalCall","Vaal Immortal Call","",9,"",28,"",-16843010,-16843010
+200,"VaalLightningArrowMtx","Vaal Lightning Arrow","",9,"",28,"",-16843010,-16843010
+201,"VaalLightningWarpMtx","Vaal Lightning Warp","",9,"",28,"",-16843010,-16843010
+202,"VaalMoltenShellMtx","Vaal Molten Shell","",9,"",28,"",-16843010,-16843010
+203,"VaalMoltenStrikeMtx","Vaal Molten Strike","",9,"",28,"",-16843010,-16843010
+204,"VaalPurityOfFireMtx","Vaal Impurity of Fire","",9,"",28,"",-16843010,-16843010
+205,"VaalPurityOfIceMtx","Vaal Impurity of Ice","",9,"",28,"",-16843010,-16843010
+206,"VaalPurityOfLightningMtx","Vaal Impurity of Lightning","",9,"",28,"",-16843010,-16843010
+207,"VaalRainOfArrowsMtx","Vaal Rain of Arrows","",9,"",28,"",-16843010,-16843010
+208,"VaalReapMtx","Vaal Reap","",9,"",28,"",-16843010,-16843010
+209,"VaalReaveMtx","Vaal Reave","",9,"",28,"",-16843010,-16843010
+210,"VaalRejuvenationTotemMtx","Vaal Rejuvenation Totem","",9,"",28,"",-16843010,-16843010
+211,"VaalRighteousFireMtx","Vaal Righteous Fire","",9,"",28,"",-16843010,-16843010
+212,"VaalSmiteMtx","Vaal Smite","",9,"",28,"",-16843010,-16843010
+213,"VaalSparkMtx","Vaal Spark","",9,"",28,"",-16843010,-16843010
+214,"VaalStormCallMtx","Vaal Storm Call","",9,"",28,"",-16843010,-16843010
+215,"VaalSummonSkeletonsMtx","Vaal Summon Skeletons","",9,"",28,"",-16843010,-16843010
+216,"VaalThrownWeaponMtx","Vaal Spectral Throw","",9,"",28,"",-16843010,-16843010
+217,"VaalPowerSiphonMtx","Vaal Power Siphon","",9,"",28,"",-16843010,-16843010
+218,"VaalFlickerStrikeMtx","Vaal Flicker Strike","",9,"",28,"",-16843010,-16843010
+219,"VaalVenomGyreMtx","Vaal Venom Gyre","",9,"",28,"",-16843010,-16843010
+220,"VaalBladeFlurryMtx","Vaal Blade Flurry","",9,"",28,"",-16843010,-16843010
+221,"VaalCleaveMtx","Vaal Cleave","",9,"",28,"",-16843010,-16843010
+222,"VaalCausticArrowMtx","Vaal Caustic Arrow","",9,"",28,"",-16843010,-16843010
+223,"VitalityMtx","Vitality","",9,"",28,"",-16843010,-16843010
+224,"VolatileDeadMtx","Volatile Dead","",9,"",28,"",-16843010,-16843010
+225,"WhirlingBladesMtx","Whirling Blades","",9,"",28,"",-16843010,-16843010
+226,"WitherMtx","Wither","",9,"",28,"",-16843010,-16843010
+227,"WrathMtx","Wrath","",9,"",28,"",-16843010,-16843010
+228,"RangedAttackTotemMtx","Ranged Attack Totem","",9,"",28,"",-16843010,-16843010
+229,"SpellTotemMtx","SpellTotem","",9,"",28,"",-16843010,-16843010
+230,"WarBannerMtx","War Banner","",9,"",28,"",-16843010,-16843010
+231,"DreadBannerMtx","Dread Banner","",9,"",28,"",-16843010,-16843010
+232,"ZealotryMtx","Zealotry","",9,"",28,"",-16843010,-16843010
+233,"MalevolenceMtx","Malevolence","",9,"",28,"",-16843010,-16843010
+234,"SoulrendMtx","Soulrend","",9,"",28,"",-16843010,-16843010
+235,"DivineIreMtx","Divine Ire","",9,"",28,"",-16843010,-16843010
+236,"WinterOrbMtx","Winter Orb","",9,"",28,"",-16843010,-16843010
+237,"BaneMtx","Bane","",9,"",28,"",-16843010,-16843010
+238,"IceDashMtx","Ice Dash","",9,"",28,"",-16843010,-16843010
+239,"QuickDodgeMtx","Dash","",9,"",28,"",-16843010,-16843010
+240,"PrecisionMtx","Precision","",9,"",28,"",-16843010,-16843010
+241,"PrideMtx","Pride","",9,"",28,"",-16843010,-16843010
+242,"LightningTrapMtx","Lightning Trap","",9,"",28,"",-16843010,-16843010
+243,"VaalLightningTrapMtx","Vaal Lightning Trap","",9,"",28,"",-16843010,-16843010
+244,"BladestormMtx","Bladestorm","",9,"",28,"",-16843010,-16843010
+245,"BloodAndSandMtx","Blood and Sand","",9,"",28,"",-16843010,-16843010
+246,"FleshAndStoneMtx","Flesh and Stone","",9,"",28,"",-16843010,-16843010
+247,"StormBrandMtx","Storm Brand","",9,"",28,"",-16843010,-16843010
+248,"BlightMtx","Blight","",9,"",28,"",-16843010,-16843010
+249,"VaalBlightMtx","Vaal Blight","",9,"",28,"",-16843010,-16843010
+250,"PyroclastMineMtx","Pyroclast Mine","",9,"",28,"",-16843010,-16843010
+251,"HailstormMineMtx","Icicle Mine","",9,"",28,"",-16843010,-16843010
+252,"StormblastMineMtx","Stormblast Mine","",9,"",28,"",-16843010,-16843010
+253,"BlastChainMineMtx","Remote Mine","",9,"",28,"",-16843010,-16843010
+254,"HighImpactMineMtx","Remote Mine","",9,"",28,"",-16843010,-16843010
+255,"LocusMineMtx","Remote Mine","",9,"",28,"",-16843010,-16843010
+256,"SummonSkitterbotsMtx","Summon Skitterbots","",9,"",28,"",-16843010,-16843010
+257,"ArtilleryBallistaMtx","Artillery Ballista","",9,"",28,"",-16843010,-16843010
+258,"ShrapnelBallistaMtx","Shrapnel Ballista","",9,"",28,"",-16843010,-16843010
+259,"ExplosiveArrowMtx","Explosive Arrow","",9,"",28,"",-16843010,-16843010
+260,"BlasphemyPlusMtx","Awakened Blasphemy","",9,"",28,"",-16843010,-16843010
+261,"SummonCarrionGolemMtx","Summon Carrion Golem","",9,"",28,"",-16843010,-16843010
+262,"BladeBlastMtx","Blade Blast","",9,"",28,"",-16843010,-16843010
+263,"AnimateWeaponMtx","Animated Weapon","",9,"",28,"",-16843010,-16843010
+264,"KineticBoltMtx","Kinetic Bolt","",9,"",28,"",-16843010,-16843010
+265,"PowerSiphonMtx","Power Siphon","",9,"",28,"",-16843010,-16843010
+266,"StormbindMtx","Stormbind","",9,"",28,"",-16843010,-16843010
+267,"DominatingBlowMtx","Dominating Blow","",9,"",28,"",-16843010,-16843010
+268,"EnduringCryMtx","Enduring Cry","",9,"",28,"",-16843010,-16843010
+269,"RallyingCryMtx","Rallying Cry","",9,"",28,"",-16843010,-16843010
+270,"AbyssalCryMtx","Abyssal Cry","",9,"",28,"",-16843010,-16843010
+271,"IntimidatingCryMtx","Intimidating Cry","",9,"",28,"",-16843010,-16843010
+272,"GeneralsCryMtx","General's Cry","",9,"",28,"",-16843010,-16843010
+273,"AncestralCryMtx","Ancestral Cry","",9,"",28,"",-16843010,-16843010
+274,"SeismicCryMtx","Seismic Cry","",9,"",28,"",-16843010,-16843010
+275,"TectonicSlamMtx","Tectonic Slam","",9,"",28,"",-16843010,-16843010
+276,"FistOfWarMtx","Fist of War","",9,"",28,"",-16843010,-16843010
+277,"IceCrashMtx","Ice Crash","",9,"",28,"",-16843010,-16843010
+278,"LancingSteelMtx","Lancing Steel","",9,"",28,"",-16843010,-16843010
+279,"ShatteringSteelMtx","Shattering Steel","",9,"",28,"",-16843010,-16843010
+280,"DetonateDeadMtx","Detonate Dead","",9,"",28,"",-16843010,-16843010
+281,"VaalDetonateDeadMtx","Vaal Detonate Dead","",9,"",28,"",-16843010,-16843010
+282,"VoidSphereMtx","Void Sphere","",9,"",28,"",-16843010,-16843010
+283,"SmiteMtx","Smite","",9,"",28,"",-16843010,-16843010
+284,"EarthshatterMtx","Earthshatter","",9,"",28,"",-16843010,-16843010
+285,"ConsecratedPathMtx","Consecrated Path","",9,"",28,"",-16843010,-16843010
+286,"CracklingLanceMtx","Crackling Lance","",9,"",28,"",-16843010,-16843010
+287,"BodyswapMtx","Bodyswap","",9,"",28,"",-16843010,-16843010
+288,"FlameWallMtx","Flame Wall","",9,"",28,"",-16843010,-16843010
+289,"EnsnaringArrowMtx","Ensnaring Arrow","",9,"",28,"",-16843010,-16843010
+290,"SigilOfPowerMtx","Sigil of Power","",9,"",28,"",-16843010,-16843010
+291,"SteelskinMtx","Steelskin","",9,"",28,"",-16843010,-16843010
+292,"PunctureMtx","Puncture","",9,"",28,"",-16843010,-16843010
+293,"WaveOfConvictionMtx","Wave of Conviction","",9,"",28,"",-16843010,-16843010
+294,"BoneOfferingMtx","Bone Offering","",9,"",28,"",-16843010,-16843010
+295,"SpiritOfferingMtx","Spirit Offering","",9,"",28,"",-16843010,-16843010
+296,"FleshOfferingMtx","Flesh Offering","",9,"",28,"",-16843010,-16843010
+297,"FrenzyMtx","Frenzy","",9,"",28,"",-16843010,-16843010
+298,"WitheringStepMtx","Withering Step","",9,"",28,"",-16843010,-16843010
+299,"IceShotMtx","Ice Shot","",9,"",28,"",-16843010,-16843010
+300,"DefianceBannerMtx","Defiance Banner","",9,"",28,"",-16843010,-16843010
+301,"PenanceBrandMtx","Penance Brand","",9,"",28,"",-16843010,-16843010
+302,"ArcanistBrandMtx","Arcanist Brand","",9,"",28,"",-16843010,-16843010
+303,"WintertideBrandMtx","Wintertide Brand","",9,"",28,"",-16843010,-16843010
+304,"ArmageddonBrandMtx","Armageddon Brand","",9,"",28,"",-16843010,-16843010
+305,"SmokeMineMtx","Smoke Mine","",9,"",28,"",-16843010,-16843010
+306,"ArcaneCloakMtx","Arcane Cloak","",9,"",28,"",-16843010,-16843010
+307,"PlagueBearerMtx","Plague Bearer","",9,"",28,"",-16843010,-16843010
+308,"ChainHookMtx","Chain Hook","",9,"",28,"",-16843010,-16843010
+309,"BloodOfferingMtx","Blood Offering","",9,"",28,"",-16843010,-16843010
+310,"EarthbreakerMtx","Earthbreaker","",9,"",28,"",-16843010,-16843010
+311,"BurningArrowMtx","Burning Arrow","",9,"",28,"",-16843010,-16843010
+312,"VaalBurningArrowMtx","Vaal Burning Arrow","",9,"",28,"",-16843010,-16843010
+313,"ExsanguinateMtx","Exsanguinate","",9,"",28,"",-16843010,-16843010
+314,"HydrosphereMtx","Hydrosphere","",9,"",28,"",-16843010,-16843010
+315,"LightningStrikeMtx","Lightning Strike","",9,"",28,"",-16843010,-16843010
+316,"VaalLightningStrikeMtx","Vaal Lightning Strike","",9,"",28,"",-16843010,-16843010
+317,"InfernalBlowMtx","Infernal Blow","",9,"",28,"",-16843010,-16843010
+318,"SweepMtx","Sweep","",9,"",28,"",-16843010,-16843010
+319,"VaalSweepMtx","Vaal Sweep","",9,"",28,"",-16843010,-16843010
+320,"DualStrikeMtx","Dual Strike","",9,"",28,"",-16843010,-16843010
+321,"EyeOfWinterMtx","Eye of Winter","",9,"",28,"",-16843010,-16843010
+322,"SpectralHelixMtx","Spectral Helix","",9,"",28,"",-16843010,-16843010
+323,"EnergyBladeMtx","Energy Blade","",9,"",28,"",-16843010,-16843010
+324,"TornadoMtx","Tornado","",9,"",28,"",-16843010,-16843010
+325,"ForbiddenRiteMtx","ForbiddenRite","",9,"",28,"",-16843010,-16843010
+326,"ShockwaveSupportMtx","Shockwave","",9,"",28,"",-16843010,-16843010
+327,"CastWhenDamageTakenMtx","Cast when Damage Taken","",9,"",28,"",-16843010,-16843010
+328,"PoisonousConcoctionMtx","Poisonous Concoction","",9,"",28,"",-16843010,-16843010
+329,"CorruptingFeverMtx","Corrupting Fever","",9,"",28,"",-16843010,-16843010
+330,"SeismicTrapMtx","Seismic Trap","",9,"",28,"",-16843010,-16843010
+331,"FireTrapMtx","Fire Trap","",9,"",28,"",-16843010,-16843010
+332,"BoneshatterMtx","Boneshatter","",9,"",28,"",-16843010,-16843010
+333,"EnvyMtx","Envy","",9,"",28,"",-16843010,-16843010
+334,"DeathAuraMtx","Death Aura","",9,"",28,"",-16843010,-16843010
+335,"GluttonyOfElementsMtx","Gluttony Of Elements","",9,"",28,"",-16843010,-16843010
+336,"BlindingAuraMtx","Blinding Aura","",9,"",28,"",-16843010,-16843010
+337,"GalvanicFieldMtx","Galvanic Field","",9,"",28,"",-16843010,-16843010
+338,"AlchemistsMarkMtx","Alchemist's Mark","",9,"",28,"",-16843010,-16843010
+339,"LightningConduitMtx","Lightning Conduit","",9,"",28,"",-16843010,-16843010
+340,"LightningTendrilsMtx","Lightning Tendrils","",9,"",28,"",-16843010,-16843010
+341,"CobraLashMtx","Cobra Lash","",9,"",28,"",-16843010,-16843010
+342,"VenomGyreMtx","Venom Gyre","",9,"",28,"",-16843010,-16843010
+343,"VolleyMtx","Volley","",9,"",28,"",-16843010,-16843010
+344,"GreaterVolleyMtx","Greater Volley","",9,"",28,"",-16843010,-16843010
+345,"ReapMtx","Reap","",9,"",28,"",-16843010,-16843010
+346,"RageVortexMtx","Rage Vortex","",9,"",28,"",-16843010,-16843010
+347,"CreepingFrostMtx","Creeping Frost","",9,"",28,"",-16843010,-16843010
+348,"ImpendingDoomMtx","Impending Doom","",9,"",28,"",-16843010,-16843010
+349,"PoachersMarkMtx","Poacher's Mark","",9,"",28,"",-16843010,-16843010
+350,"AssassinsMarkMtx","Assassin's Mark","",9,"",28,"",-16843010,-16843010
+351,"SnipersMarkMtx","Sniper's Mark","",9,"",28,"",-16843010,-16843010
+352,"WarlordsMarkMtx","Warlord's Mark","",9,"",28,"",-16843010,-16843010
+353,"Theme","Theme","","","",28,"",-16843010,-16843010
+354,"InfernalTheme","Infernal","",353,"",28,"",-16843010,-16843010
+355,"NecroticTheme","Necrotic","",353,"",28,"",-16843010,-16843010
+356,"BreachTheme","Breach","",353,"",28,"",-16843010,-16843010
+357,"LegacyTheme","Legacy","",353,"",28,"",-16843010,-16843010
+358,"GoreTheme","Gore","",353,"",28,"",-16843010,-16843010
+359,"GhostflameTheme","Ghostflame","",353,"",28,"",-16843010,-16843010
+360,"GloomTheme","Gloom","",353,"",28,"",-16843010,-16843010
+361,"DragonTheme","Dragon","",353,"",28,"",-16843010,-16843010
+362,"DemonicTheme","Demonic","",353,"",28,"",-16843010,-16843010
+363,"DeicideTheme","Deicide","",353,"",28,"",-16843010,-16843010
+364,"ArcticTheme","Arctic","",353,"",28,"",-16843010,-16843010
+365,"ArcaneTheme","Arcane","",353,"",28,"",-16843010,-16843010
+366,"SteampunkTheme","Steam-Powered","",353,"",28,"",-16843010,-16843010
+367,"VampiricTheme","Vampiric","",353,"",28,"",-16843010,-16843010
+368,"VerdantTheme","Verdant","",353,"",28,"",-16843010,-16843010
+369,"SeraphTheme","Seraph","",353,"",28,"",-16843010,-16843010
+370,"ProphecyTheme","Prophecy","",353,"",28,"",-16843010,-16843010
+371,"ConsumableTheme","Consumable","",353,"",28,"",-16843010,-16843010
+372,"EbonyTheme","Ebony","",353,"",28,"",-16843010,-16843010
+373,"RadiantTheme","Radiant","",353,"",28,"",-16843010,-16843010
+374,"LightningTheme","Lightning","",353,"",28,"",-16843010,-16843010
+375,"AcidTheme","Acid","",353,"",28,"",-16843010,-16843010
+376,"CrimsonTheme","Crimson","",353,"",28,"",-16843010,-16843010
+377,"CelestialTheme","Celestial","",353,"",28,"",-16843010,-16843010
+378,"GoldenTheme","Golden","",353,"",28,"",-16843010,-16843010
+379,"PurpleTheme","Purple","",353,"",28,"",-16843010,-16843010
+380,"EmeraldTheme","Emerald","",353,"",28,"",-16843010,-16843010
+381,"DanceTheme","Dance","",353,"",28,"",-16843010,-16843010
+382,"AnimalTheme","Animal","",353,"",28,"",-16843010,-16843010
+383,"TribalTheme","Tribal","",353,"",28,"",-16843010,-16843010
+384,"ChallengeRewardsTheme","Challenge Rewards","",353,"",28,"",-16843010,-16843010
+385,"ClosedBetaSupporterPacksTheme","Closed Beta Supporter Packs","",353,"",28,"",-16843010,-16843010
+386,"OpenBetaSupporterPacksTheme","Open Beta Supporter Packs","",353,"",28,"",-16843010,-16843010
+387,"ReleaseSupporterPacksTheme","Release Supporter Packs","",353,"",28,"",-16843010,-16843010
+388,"ForsakenMastersTheme","Forsaken Masters","",353,"",28,"",-16843010,-16843010
+389,"AwakeningTheme","Awakening","",353,"",28,"",-16843010,-16843010
+390,"AscendancyTheme","Ascendancy","",353,"",28,"",-16843010,-16843010
+391,"AtlasTheme","Atlas","",353,"",28,"",-16843010,-16843010
+392,"FallofOriathTheme","Fall of Oriath","",353,"",28,"",-16843010,-16843010
+393,"MiscellaneousTheme","Miscellaneous","",353,"",28,"",-16843010,-16843010
+394,"UltimateChaosTheme","Ultimate Chaos","",353,"",28,"",-16843010,-16843010
+395,"PureLightTheme","Pure Light","",353,"",28,"",-16843010,-16843010
+396,"HarbingerTheme","Harbinger","",353,"",28,"",-16843010,-16843010
+397,"PitchBlackTheme","Pitch Black","",353,"",28,"",-16843010,-16843010
+398,"WastelandWarriorTheme","Wasteland Warrior","",353,"",28,"",-16843010,-16843010
+399,"DesertTheme","Desert","",353,"",28,"",-16843010,-16843010
+400,"ExecutionerTheme","Executioner","",353,"",28,"",-16843010,-16843010
+401,"FireTheme","Fire","",353,"",28,"",-16843010,-16843010
+402,"IceTheme","Ice","",353,"",28,"",-16843010,-16843010
+403,"PolarTheme","Polar","",353,"",28,"",-16843010,-16843010
+404,"LichTheme","Lich","",353,"",28,"",-16843010,-16843010
+405,"FireAndIceTheme","Fire and Ice","",353,"",28,"",-16843010,-16843010
+406,"AbyssTheme","Abyss","",353,"",28,"",-16843010,-16843010
+407,"HalloweenTheme","Halloween","",353,"",28,"",-16843010,-16843010
+408,"CultistTheme","Cultist","",353,"",28,"",-16843010,-16843010
+409,"WarlockTheme","Warlock","",353,"",28,"",-16843010,-16843010
+410,"PirateTheme","Pirate","",353,"",28,"",-16843010,-16843010
+411,"AtlasWarTheme","War for the Atlas","",353,"",28,"",-16843010,-16843010
+412,"NatureTheme","Nature","",353,"",28,"",-16843010,-16843010
+413,"GothicTheme","Gothic","",353,"",28,"",-16843010,-16843010
+414,"SinAndInnocenceTheme","Sin and Innocence","",353,"",28,"",-16843010,-16843010
+415,"BestiaryTheme","Bestiary","",353,"",28,"",-16843010,-16843010
+416,"StygianTheme","Stygian","",353,"",28,"",-16843010,-16843010
+417,"ManticoreTheme","Manticore","",353,"",28,"",-16843010,-16843010
+418,"SeawitchTheme","Seawitch","",353,"",28,"",-16843010,-16843010
+419,"PhantasmalTheme","Phantasmal","",353,"",28,"",-16843010,-16843010
+420,"FallenAngelTheme","Fallen Angel","",353,"",28,"",-16843010,-16843010
+421,"MalachaiTheme","Malachai","",353,"",28,"",-16843010,-16843010
+422,"CrystalTheme","Crystal","",353,"",28,"",-16843010,-16843010
+423,"IncursionTheme","Incursion","",353,"",28,"",-16843010,-16843010
+424,"CarnageTheme","Carnage","",353,"",28,"",-16843010,-16843010
+425,"ApocalypseTheme","Apocalypse","",353,"",28,"",-16843010,-16843010
+426,"IvoryChaosTheme","Ivory Chaos","",353,"",28,"",-16843010,-16843010
+427,"MadmanTheme","Madman","",353,"",28,"",-16843010,-16843010
+428,"GryffonTheme","Gryffon","",353,"",28,"",-16843010,-16843010
+429,"GorgonTheme","Gorgon","",353,"",28,"",-16843010,-16843010
+430,"BloodGuardTheme","Blood Guard","",353,"",28,"",-16843010,-16843010
+431,"FaithGuardTheme","Faith Guard","",353,"",28,"",-16843010,-16843010
+432,"SphinxTheme","Sphinx","",353,"",28,"",-16843010,-16843010
+433,"DelveTheme","Delve","",353,"",28,"",-16843010,-16843010
+434,"OriathTheme","Oriath","",353,"",28,"",-16843010,-16843010
+435,"PyreTheme","Pyre","",353,"",28,"",-16843010,-16843010
+436,"ColiseumTheme","Coliseum","",353,"",28,"",-16843010,-16843010
+437,"NightLotusTheme","Night Lotus","",353,"",28,"",-16843010,-16843010
+438,"HarpyonTheme","Harpyon","",353,"",28,"",-16843010,-16843010
+439,"ElderTheme","Elder","",353,"",28,"",-16843010,-16843010
+440,"BetrayalTheme","Betrayal","",353,"",28,"",-16843010,-16843010
+441,"FairgravesTheme","Fairgraves","",353,"",28,"",-16843010,-16843010
+442,"UtilityTheme","Utility","",353,"",28,"",-16843010,-16843010
+443,"CoastalTheme","Coastal","",353,"",28,"",-16843010,-16843010
+444,"EncampmentTheme","Encampment","",353,"",28,"",-16843010,-16843010
+445,"ForestTheme","Forest","",353,"",28,"",-16843010,-16843010
+446,"RuinsTheme","Ruins","",353,"",28,"",-16843010,-16843010
+447,"VaalTheme","Vaal","",353,"",28,"",-16843010,-16843010
+448,"DungeonTheme","Dungeon","",353,"",28,"",-16843010,-16843010
+449,"SarnTheme","Sarn","",353,"",28,"",-16843010,-16843010
+450,"GardensTheme","Gardens","",353,"",28,"",-16843010,-16843010
+451,"OrnateTheme","Ornate","",353,"",28,"",-16843010,-16843010
+452,"SceptreTheme","Sceptre","",353,"",28,"",-16843010,-16843010
+453,"CryptTheme","Crypt","",353,"",28,"",-16843010,-16843010
+454,"EffectsTheme","Effects","",353,"",28,"",-16843010,-16843010
+455,"CaveTheme","Cave","",353,"",28,"",-16843010,-16843010
+456,"BeastTheme","Beast","",353,"",28,"",-16843010,-16843010
+457,"KaruiTheme","Karui","",353,"",28,"",-16843010,-16843010
+458,"LabyrinthTheme","Labyrinth","",353,"",28,"",-16843010,-16843010
+459,"HighgateTheme","Highgate","",353,"",28,"",-16843010,-16843010
+460,"OssuaryTheme","Ossuary","",353,"",28,"",-16843010,-16843010
+461,"ReliquaryTheme","Reliquary","",353,"",28,"",-16843010,-16843010
+462,"EzomyteTheme","Ezomyte","",353,"",28,"",-16843010,-16843010
+463,"VanguardTheme","Vanguard","",353,"",28,"",-16843010,-16843010
+464,"PitfighterTheme","Pitfighter","",353,"",28,"",-16843010,-16843010
+465,"CrucibleTheme","Crucible","",353,"",28,"",-16843010,-16843010
+466,"LibraryTheme","Library","",353,"",28,"",-16843010,-16843010
+467,"SlavePensTheme","Slave Pens","",353,"",28,"",-16843010,-16843010
+468,"InnocenceTheme","Innocence","",353,"",28,"",-16843010,-16843010
+469,"AssassinTheme","Assassin","",353,"",28,"",-16843010,-16843010
+470,"EmpyreanTheme","Empyrean","",353,"",28,"",-16843010,-16843010
+471,"BlackguardTheme","Blackguard","",353,"",28,"",-16843010,-16843010
+472,"ChamberOfSinsTheme","Chamber of Sins","",353,"",28,"",-16843010,-16843010
+473,"TempleTheme","Temple","",353,"",28,"",-16843010,-16843010
+474,"ExcavationTheme","Excavation","",353,"",28,"",-16843010,-16843010
+475,"BonesTheme","Bones","",353,"",28,"",-16843010,-16843010
+476,"ChurchTheme","Church","",353,"",28,"",-16843010,-16843010
+477,"CourthouseTheme","Courthouse","",353,"",28,"",-16843010,-16843010
+478,"ExilesTheme","Exiles","",353,"",28,"",-16843010,-16843010
+479,"SynthesisTheme","Synthesis","",353,"",28,"",-16843010,-16843010
+480,"PrimevalTheme","Primeval","",353,"",28,"",-16843010,-16843010
+481,"GlimmerwoodTheme","Glimmerwood","",353,"",28,"",-16843010,-16843010
+482,"MarakethTheme","Maraketh","",353,"",28,"",-16843010,-16843010
+483,"ViperTheme","Viper","",353,"",28,"",-16843010,-16843010
+484,"DarkprismTheme","Darkprism","",353,"",28,"",-16843010,-16843010
+485,"SunprismTheme","Sunprism","",353,"",28,"",-16843010,-16843010
+486,"GargoyleTheme","Gargoyle","",353,"",28,"",-16843010,-16843010
+487,"MageguardTheme","Mageguard","",353,"",28,"",-16843010,-16843010
+488,"ExtinctionTheme","Extinction","",353,"",28,"",-16843010,-16843010
+489,"LegionTheme","Legion","",353,"",28,"",-16843010,-16843010
+490,"PlatedTheme","Plated","",353,"",28,"",-16843010,-16843010
+491,"FrontierTheme","Frontier","",353,"",28,"",-16843010,-16843010
+492,"IllusionistTheme","Illusionist","",353,"",28,"",-16843010,-16843010
+493,"ElementalTheme","Elemental","",353,"",28,"",-16843010,-16843010
+494,"ZenithTheme","Zenith","",353,"",28,"",-16843010,-16843010
+495,"MiracleTheme","Miracle","",353,"",28,"",-16843010,-16843010
+496,"CardinalTheme","Cardinal","",353,"",28,"",-16843010,-16843010
+497,"VaalViperTheme","Vaal Viper","",353,"",28,"",-16843010,-16843010
+498,"VoidEmperorTheme","Void Emperor","",353,"",28,"",-16843010,-16843010
+499,"CarnivalTheme","Carnival","",353,"",28,"",-16843010,-16843010
+500,"ChiyouTheme","Chiyou","",353,"",28,"",-16843010,-16843010
+501,"BlightTheme","Blight","",353,"",28,"",-16843010,-16843010
+502,"HavenwoodTheme","Havenwood","",353,"",28,"",-16843010,-16843010
+503,"PolarisTheme","Polaris","",353,"",28,"",-16843010,-16843010
+504,"BasiliskTheme","Basilisk","",353,"",28,"",-16843010,-16843010
+505,"CrusaderTheme","Crusader","",353,"",28,"",-16843010,-16843010
+506,"EyrieTheme","Eyrie","",353,"",28,"",-16843010,-16843010
+507,"JudicatorTheme","Judicator","",353,"",28,"",-16843010,-16843010
+508,"OrionTheme","Orion","",353,"",28,"",-16843010,-16843010
+509,"MetamorphTheme","Metamorph","",353,"",28,"",-16843010,-16843010
+510,"ExileConTheme","ExileCon","",353,"",28,"",-16843010,-16843010
+511,"RevenantTheme","Revenant","",353,"",28,"",-16843010,-16843010
+512,"ColdsnapTheme","Coldsnap","",353,"",28,"",-16843010,-16843010
+513,"MaliceTheme","Malice","",353,"",28,"",-16843010,-16843010
+514,"ThaumaturgyTheme","Thaumaturgy","",353,"",28,"",-16843010,-16843010
+515,"BalefireTheme","Balefire","",353,"",28,"",-16843010,-16843010
+516,"DeliriumTheme","Delirium","",353,"",28,"",-16843010,-16843010
+517,"HeartseekerTheme","Heartseeker","",353,"",28,"",-16843010,-16843010
+518,"DarkMagicTheme","Dark Magic","",353,"",28,"",-16843010,-16843010
+519,"JinliTheme","Jinli","",353,"",28,"",-16843010,-16843010
+520,"ImaginationTheme","Imagination","",353,"",28,"",-16843010,-16843010
+521,"HighPriestTheme","High Priest","",353,"",28,"",-16843010,-16843010
+522,"GoddessTheme","Goddess","",353,"",28,"",-16843010,-16843010
+523,"SawbladeTheme","Sawblade","",353,"",28,"",-16843010,-16843010
+524,"DreadspireTheme","Dreadspire","",353,"",28,"",-16843010,-16843010
+525,"AngelsAndDemonsTheme","Angels and Demons","",353,"",28,"",-16843010,-16843010
+526,"NightwatchTheme","Nightwatch","",353,"",28,"",-16843010,-16843010
+527,"HarvestTheme","Harvest","",353,"",28,"",-16843010,-16843010
+528,"HeistTheme","Heist","",353,"",28,"",-16843010,-16843010
+529,"TwilightTheme","Twilight","",353,"",28,"",-16843010,-16843010
+530,"EthercraftTheme","Ethercraft","",353,"",28,"",-16843010,-16843010
+531,"DarkwoodTheme","Darkwood","",353,"",28,"",-16843010,-16843010
+532,"JudgementTheme","Judgement","",353,"",28,"",-16843010,-16843010
+533,"RaptureTheme","Rapture","",353,"",28,"",-16843010,-16843010
+534,"ValkyrieTheme","Valkyrie","",353,"",28,"",-16843010,-16843010
+535,"WarlordTheme","Warlord","",353,"",28,"",-16843010,-16843010
+536,"RitualTheme","Ritual","",353,"",28,"",-16843010,-16843010
+537,"GlimmerspriteTheme","Glimmersprite","",353,"",28,"",-16843010,-16843010
+538,"Core2021Theme","Core 2021","",353,"",28,"",-16843010,-16843010
+539,"AtlasCore2021Theme","Echoes of the Atlas","",353,"",28,"",-16843010,-16843010
+540,"MavenTheme","Maven","",353,"",28,"",-16843010,-16843010
+541,"OblivionTheme","Oblivion","",353,"",28,"",-16843010,-16843010
+542,"BrimstoneTheme","Brimstone","",353,"",28,"",-16843010,-16843010
+543,"FrostVikingTheme","Frost Viking","",353,"",28,"",-16843010,-16843010
+544,"UltimatumTheme","Ultimatum","",353,"",28,"",-16843010,-16843010
+545,"ApollyonTheme","Apollyon","",353,"",28,"",-16843010,-16843010
+546,"MerchantTheme","Merchant","",353,"",28,"",-16843010,-16843010
+547,"MidnightPactTheme","Midnight Pact","",353,"",28,"",-16843010,-16843010
+548,"JingweiTheme","Jingwei","",353,"",28,"",-16843010,-16843010
+549,"SlitherTheme","Slither","",353,"",28,"",-16843010,-16843010
+550,"ExpeditionTheme","Expedition","",353,"",28,"",-16843010,-16843010
+551,"MyrmidonTheme","Myrmidon","",353,"",28,"",-16843010,-16843010
+552,"BanebrandTheme","Banebrand","",353,"",28,"",-16843010,-16843010
+553,"StarfallTheme","Starfall","",353,"",28,"",-16843010,-16843010
+554,"NecrolordTheme","Necrolord","",353,"",28,"",-16843010,-16843010
+555,"DirebladeTheme","Direblade","",353,"",28,"",-16843010,-16843010
+556,"CursedTheme","Cursed","",353,"",28,"",-16843010,-16843010
+557,"AtlantisTheme","Atlantis","",353,"",28,"",-16843010,-16843010
+558,"ScourgeTheme","Scourge","",353,"",28,"",-16843010,-16843010
+559,"ScourgelordTheme","Scourgelord","",353,"",28,"",-16843010,-16843010
+560,"OnyxTheme","Onyx","",353,"",28,"",-16843010,-16843010
+561,"AstralTheme","Astral","",353,"",28,"",-16843010,-16843010
+562,"Core2022Theme","Core 2022","",353,"",28,"",-16843010,-16843010
+563,"WinterDragonTheme","Winter Dragon","",353,"",28,"",-16843010,-16843010
+564,"HarmonyTheme","Harmony","",353,"",28,"",-16843010,-16843010
+565,"GodOfThunderTheme","God of Thunder","",353,"",28,"",-16843010,-16843010
+566,"Archnemesis","Archnemesis","",353,"",28,"",-16843010,-16843010
+567,"AuspiciousTheme","Auspicious","",353,"",28,"",-16843010,-16843010
+568,"HarmoniousTheme","Harmonious","",353,"",28,"",-16843010,-16843010
+569,"VulcanTheme","Vulcan","",353,"",28,"",-16843010,-16843010
+570,"MercurialTheme","Mercurial","",353,"",28,"",-16843010,-16843010
+571,"EtherealTheme","Ethereal","",353,"",28,"",-16843010,-16843010
+572,"MasqueradeTheme","Masquerade","",353,"",28,"",-16843010,-16843010
+573,"KiracsVaultTheme","Kirac's Vault","",353,"",28,"",-16843010,-16843010
+574,"ChaosTheme","Chaos","",353,"",28,"",-16843010,-16843010
+575,"Stormstrider","Stormstrider","",353,"",28,"",-16843010,-16843010
+576,"SentinelTheme","Sentinel","",353,"",28,"",-16843010,-16843010
+577,"OphidianTheme","Ophidian","",353,"",28,"",-16843010,-16843010
+578,"RubyTheme","Ruby","",353,"",28,"",-16843010,-16843010
+579,"SapphireTheme","Sapphire","",353,"",28,"",-16843010,-16843010
+580,"MoltenTheme","Molten","",353,"",28,"",-16843010,-16843010
+581,"MistTheme","Mist","",353,"",28,"",-16843010,-16843010
+582,"ExaltedTheme","Exalted","",353,"",28,"",-16843010,-16843010
+583,"Lunar","Lunar","",353,"",28,"",-16843010,-16843010
+584,"Unlocked","Unlocked",1,"","",28,"",-16843010,-16843010
+585,"StormstriderBoots","Stormstrider Boots","",575,"",28,"",-16843010,-16843010
+586,"ScintillationBodyArmour","Scintillation Body Armour","",493,"",28,"",-16843010,-16843010
+587,"NgamahuBodyArmour","Ngamahu Body Armour","",457,"",28,"",-16843010,-16843010
+588,"ThunderstrikeGloves","Thunderstrike Gloves","",374,"",28,"",-16843010,-16843010
+589,"PhoenixHelmet","Phoenix Helmet","",354,"",28,"",-16843010,-16843010
+590,"ManaTankBackAttachment","Mana Tank Back Attachment","",393,"",28,"",-16843010,-16843010
+591,"SplinteringShield","Splintering Shield","",439,"",28,"",-16843010,-16843010
+592,"WillpowerAmulet","Willpower Amulet","",393,"",28,"",-16843010,-16843010
+593,"FlaskEffectSentinel","Nexus Flask Effects","",393,"",28,"",-16843010,-16843010
+594,"CrystallineChargeSentinel","Crystal Charges","",422,"",28,"",-16843010,-16843010
+595,"FlareCharacterEffect","Flare Character Effect","",354,"",28,"",-16843010,-16843010
+596,"WarpRuneHideout","Hideout Warp Runes","",393,"",28,"",-16843010,-16843010
+597,"ShardcrownHelmet","Shardcrown Helmet","",422,"",28,"",-16843010,-16843010
+598,"DeathnotchBow","Deathnotch Bow","",393,"",28,"",-16843010,-16843010
+599,"TreasureHunterWeaponEffect","Treasure Hunter Weapon Effect","",546,"",28,"",-16843010,-16843010
+600,"LakeOfKalandraTheme","Lake of Kalandra","",353,"",28,"",-16843010,-16843010
+601,"PyromaniacWeaponEffect","Pyromaniac Weapon Effect","",354,"",28,"",-16843010,-16843010
+602,"SummonersAmulet","Summoner's Amulet","",393,"",28,"",-16843010,-16843010
+603,"OshabisHeaddress","Oshabi's Headdress","",527,"",28,"",-16843010,-16843010
+604,"CrystallisedBodyArmour","Crystallised Body Armour","",422,"",28,"",-16843010,-16843010
+605,"EnchantersRing","Enchanter's Ring","",393,"",28,"",-16843010,-16843010
+606,"TorturersGloves","Torturer's Gloves","",393,"",28,"",-16843010,-16843010
+607,"FireworksBackAttachment","Fireworks Back Attachment","",393,"",28,"",-16843010,-16843010
+608,"CrystalariumBoots","Crystalarium Boots","",422,"",28,"",-16843010,-16843010
+609,"GloriousHelmet","Glorious Helmet","",393,"",28,"",-16843010,-16843010
+610,"RaincallerFlask","Raincaller Flask","",393,"",28,"",-16843010,-16843010
+611,"DovecallerWings","Dovecaller Wings","",393,"",28,"",-16843010,-16843010
+612,"StormHarrier","Storm Harrier Pet","",393,"",28,"",-16843010,-16843010
+613,"RevelationBlade","Revelation Blade","",393,"",28,"",-16843010,-16843010
+614,"Arachnomorph","Arachnomorph Pet","",393,"",28,"",-16843010,-16843010
+615,"TinkersWaypoint","Tinker's Waypoint","",393,"",28,"",-16843010,-16843010
+616,"ForbiddenSanctum","Forbidden Sanctum","",353,"",28,"",-16843010,-16843010
+617,"Core2023","Core 2023","",353,"",28,"",-16843010,-16843010
+618,"AlchemistTheme","Alchemist","",353,"",28,"",-16843010,-16843010
+619,"VaultPass","Kirac's Vault","","","",28,"",-16843010,-16843010
+620,"ArachnidTheme","Arachnid","",353,"",28,"",-16843010,-16843010
+621,"ShadeTheme","Shade","",353,"",28,"",-16843010,-16843010
+622,"DiscipleTheme","Disciple","",353,"",28,"",-16843010,-16843010
+623,"TrialOfTheAncestorsTheme","Trial of the Ancestors","",353,"",28,"",-16843010,-16843010
+624,"MagmaticTheme","Magmatic","",353,"",28,"",-16843010,-16843010
+625,"Core2024","Core 2024","",353,"",28,"",-16843010,-16843010
+626,"AfflictionTheme","Affliction Theme","",353,"",28,"",-16843010,-16843010
+627,"RaceRewards","Race Rewards","",353,"",28,"",-16843010,-16843010
+628,"SolarTheme","Solar","",353,"",28,"",-16843010,-16843010
+629,"EldritchTheme","Eldritch","",353,"",28,"",-16843010,-16843010
+630,"NecropolisTheme","Necropolis","",353,"",28,"",-16843010,-16843010
+631,"VoidbornTheme","Voidborn","",353,"",28,"",-16843010,-16843010
+632,"WuzhiqiTheme","Wuzhiqi","",353,"",28,"",-16843010,-16843010
+633,"PaladinTheme","Paladin","",353,"",28,"",-16843010,-16843010
+634,"PenanceTheme","Penance","",353,"",28,"",-16843010,-16843010
+635,"SettlersOfKalguurTheme","Settlers of Kalguur","",353,"",28,"",-16843010,-16843010
+636,"ExtraEffectMtx","Extra Effects","","","",28,"",16,0
+637,"BowMtx","Bow Skin","","","",28,"",6,0
+638,"MaceMtx","Mace Skin","","","",28,"",6,0
+639,"SceptreMtx","Sceptre Skin","","","",28,"",6,0
+640,"AxeMtx","Axe Skin","","","",28,"",6,0
+641,"SwordMtx","Sword Skin","","","",28,"",6,0
+642,"WandMtx","Wand Skin","","","",28,"",6,0
+643,"StaffMtx","Staff Skin","","","",28,"",6,0
+644,"ClawMtx","Claw Skin","","","",28,"",6,0
+645,"StashUpgrades","Upgrade","","","",28,"",2,0
+646,"StashBundles","Bundles","","","",28,"",2,0
+647,"StashLeagueTabs","League","","","",28,"",2,0
+648,"PetBiped","Biped","","","",28,"",14,0
+649,"PetQuadruped","Quadruped","","","",28,"",14,0
+650,"PetFlying","Flying","","","",28,"",14,0
+651,"PetMammal","Mammal","","","",28,"",14,0
+652,"PetMechanical","Mechanical","","","",28,"",14,0
+653,"PetMythical","Mythical","","","",28,"",14,0
+654,"PetFish","Fish","","","",28,"",14,0
+655,"PetArthropod","Arthropod","","","",28,"",14,0
+656,"PetCephalopod","Cephalopod","","","",28,"",14,0
+657,"PetAmphibian","Amphibian","","","",28,"",14,0
+658,"PetReptile","Reptile","","","",28,"",14,0
+659,"PetVisualEffect","Visual Effect","","","",28,"",14,0
+660,"HideoutMtx","Hideouts","","","",28,"",15,0
+661,"StashSkinMtx","Stash Skin","","","",28,"",15,0
+662,"MapDeviceMtx","Map Device Skin","","","",28,"",15,0
+663,"CraftingBenchMtx","Crafting Bench Skin","","","",28,"",15,0
+664,"HideoutDecoration","Decoration","","","",28,"",15,0
+665,"HideoutArchitectural","Architectural Decoration","","","",28,"",15,0
+666,"HideoutFurniture","Furniture Decoration","","","",28,"",15,0
+667,"HideoutLighting","Lighting Decoration","","","",28,"",15,0
+668,"PortalFire","Fire","","","",28,"",8,0
+669,"PortalWater","Water","","","",28,"",8,0
+670,"PortalLightning","Lighting","","","",28,"",8,0
+671,"PortalIce","Ice","","","",28,"",8,0
+672,"PortalEldritch","Eldritch","","","",28,"",8,0
+673,"PortalArcane","Arcane","","","",28,"",8,0
+674,"PortalMechanical","Mechanical","","","",28,"",8,0
+675,"PortalMythical","Mythical","","","",28,"",8,0
+676,"PortalCelestial","Celestial","","","",28,"",8,0
+677,"PortalEarth","Earth","","","",28,"",8,0
+678,"WingsMtx","Wings","","","",28,"",5,0
+679,"CloakMtx","Cloak","","","",28,"",5,0
+680,"BackAttachmentMtx","Back Attachment","","","",28,"",5,0
+681,"PoE2EarlyAccessTheme","Path of Exile 2 Early Access","",353,"",28,"",-16843010,-16843010
