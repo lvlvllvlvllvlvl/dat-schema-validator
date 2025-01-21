@@ -3588,7 +3588,7 @@ type NPCTextAudio {
   _: i32
   _: i32
   _: i32
-  NPCs: [rid]
+  NPCs: [NPCs]
   _: rid
   _: f32
   _: [_]

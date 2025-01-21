@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1737378855,
+  "createdAt": 1737426547,
   "tables": [
     {
       "validFor": 3,
@@ -86137,7 +86137,9 @@
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "NPCs"
+          },
           "until": null,
           "file": null,
           "files": null,
