@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1737873212,
+  "createdAt": 1737876970,
   "tables": [
     {
       "validFor": 3,
@@ -77978,7 +77978,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Flag",
           "description": null,
           "array": false,
           "type": "bool",
@@ -77991,7 +77991,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Weight",
           "description": null,
           "array": false,
           "type": "i32",
@@ -78022,12 +78022,10 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "row",
+          "type": "string",
           "unique": false,
           "localized": false,
-          "references": {
-            "table": "MonsterPackEntries"
-          },
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -78588,7 +78586,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Formation",
           "description": null,
           "array": false,
           "type": "foreignrow",

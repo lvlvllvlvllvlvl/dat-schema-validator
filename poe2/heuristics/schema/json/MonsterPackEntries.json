@@ -27,7 +27,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Flag",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -39,7 +39,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Weight",
     "offset": 25,
     "unknownArray": false,
     "unique": false,
@@ -69,12 +69,15 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 45,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 45,
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]

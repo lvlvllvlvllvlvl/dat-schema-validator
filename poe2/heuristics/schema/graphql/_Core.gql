@@ -2981,8 +2981,8 @@ enum MonsterPackCounts @indexing(first: 0) { _ }
 type MonsterPackEntries {
   Id: string @unique
   MonsterPacksKey: MonsterPacks
-  _: bool
-  _: i32
+  Flag: bool
+  Weight: i32
   MonsterVarietiesKey: MonsterVarieties
   _: string
 }
@@ -3002,7 +3002,7 @@ type MonsterPacks {
   MinLevel: i32
   MaxLevel: i32
   _: [_] # All rows empty
-  _: PackFormation
+  Formation: PackFormation
   _: i32
   _: bool
   _: [string]

@@ -27,7 +27,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Flag",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -39,7 +39,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Weight",
     "offset": 25,
     "unknownArray": false,
     "unique": false,
@@ -76,10 +76,7 @@
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": false,
-        "name": "MonsterPackEntries"
-      }
+      "string": {}
     },
     "size": 8
   }
