@@ -2988,23 +2988,21 @@ type MonsterPackEntries {
 }
 
 type MonsterPacks {
-  Id: string @unique
-  _: i32
-  _: i32 # All rows empty
-  _: string
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: [_]
+  Id: string
+  WorldAreas: [WorldAreas]
+  MinCount: i32
+  MaxCount: i32
+  BossMonsterSpawnChance: i32
+  BossCount: i32
+  BossMonsters: [MonsterVarieties]
   _: bool
-  _: [_]
-  _: [string]
-  _: [_]
-  _: rid
-  _: i32
-  _: i32 # All rows empty
-  _: rid
+  _: [i32]
+  Grounds: [string]
+  Tags: [Tags]
+  MinLevel: i32
+  MaxLevel: i32
+  _: [_] # All rows empty
+  _: PackFormation
   _: i32
   _: bool
   _: [string]
@@ -3013,8 +3011,8 @@ type MonsterPacks {
   _: string
   _: bool
   _: bool
-  _: [_]
-  _: [_]
+  AdditionalMonsters: [MonsterVarieties]
+  AdditionalCounts: [i32]
 }
 
 type MonsterProjectileAttack {
@@ -3229,10 +3227,7 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: rid
   _: f32
   _: f32
   _: bool
@@ -3240,7 +3235,7 @@ type MonsterVarieties {
   _: rid
   _: i32
   _: i32
-  _: i32
+  _: f32
   _: rid
   _: bool
   _: i32
@@ -4793,54 +4788,57 @@ type Words {
 }
 
 type WorldAreas {
-  Id: string @unique
+  Id: string
   Name: string
   Act: i32
   IsTown: bool
   HasWaypoint: bool
-  Connections_WorldAreasKeys: [WorldAreas]
+  Connections: [WorldAreas]
   AreaLevel: i32
   HASH16: i16
   _: i32
   _: i32
+  LoadingScreens: [string]
+  FlagOnEntered: QuestFlags
+  RequiredFlags: [QuestFlags]
+  _: i32
+  Topologies: [Topologies]
+  ParentTown: WorldAreas
+  _: i32
+  _: rid
+  _: rid
+  Bosses: [MonsterVarieties]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: bool
+  _: [_] # All rows empty
+  _: rid
+  _: rid
+  AreaMods: [Mods]
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  Tags: [Tags]
+  _: rid
+  _: rid
+  _: i32
+  _: i32
+  _: rid
   _: [string]
-  _: rid
-  _: [_]
-  _: i32
-  _: [_]
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: [_]
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: bool
-  _: [_] # All rows empty
-  _: rid
-  _: rid
-  _: [_]
-  _: i32 # All rows empty
-  _: bool
-  _: string
-  _: bool
-  _: string
-  _: [_]
-  _: rid
-  _: rid
-  _: WorldAreas
-  _: rid
-  _: [_] # All rows empty
   _: bool
   _: rid
   _: rid
-  _: WorldAreas
   _: i32
-  _: rid
   _: i32
-  _: rid
+  _: i32
+  Environment: Environments
+  _: i32
+  TerrainPlugins: TerrainPlugins
   _: rid
   _: i32 # All rows empty
   _: bool
