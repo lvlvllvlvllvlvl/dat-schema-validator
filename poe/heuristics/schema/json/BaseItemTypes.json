@@ -431,7 +431,9 @@
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "size": 16
   },
@@ -460,14 +462,17 @@
     "size": 1
   },
   {
+    "name": "",
+    "offset": 314,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 314,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]
