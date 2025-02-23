@@ -2944,7 +2944,7 @@ type Mods @tags(list: ["crafting"]) {
   ArchnemesisMinionMod: Mods
   HASH32: i32
   _: [rid]
-  _: i32
+  Disabled2: i32
   _: [GrantedEffectsPerLevel]
 }
 
@@ -5733,11 +5733,11 @@ type LegacyAtlasInfluenceOutcomes {
 }
 
 # Added 3.25
-type maprelicinventorylayout {
-  _: i32
-  _: i32
-  _: i32
-  _: string
+type MapRelicInventoryLayout {
+  XOffset: i32
+  YOffset: i32
+  UnlockQuest: i32
+  UnlockText: string
 }
 
 # Added 3.22
@@ -6454,11 +6454,9 @@ type UltimatumLifescalingPerLevel {
 }
 
 # Added 3.25
-type uniquemapreliclimits {
-  _: rid
-  _: bool
-  _: u16 # All rows empty
-  _: bool
+type UniqueMapRelicLimits {
+  Idol: Words @unique
+  Limit: i32
 }
 
 # Added 3.25

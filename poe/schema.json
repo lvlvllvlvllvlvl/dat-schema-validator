@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1739966306,
+  "createdAt": 1740261231,
   "tables": [
     {
       "validFor": 3,
@@ -75416,7 +75416,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Disabled2",
           "description": null,
           "array": false,
           "type": "i32",
@@ -111396,6 +111396,100 @@
       "tags": []
     },
     {
+      "validFor": 3,
+      "name": "MapRelicInventoryLayout",
+      "columns": [
+        {
+          "name": "XOffset",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "YOffset",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "UnlockQuest",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "UnlockText",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
+      "name": "UniqueMapRelicLimits",
+      "columns": [
+        {
+          "name": "Idol",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": true,
+          "localized": false,
+          "references": {
+            "table": "Words"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Limit",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
       "validFor": 2,
       "name": "AtlasPassiveSkillSubTrees",
       "columns": [
@@ -114612,7 +114706,8 @@
         "TINCTURE",
         "ANIMAL_CHARM",
         "NECROPOLIS_MONSTER",
-        "UBER_MAP"
+        "UBER_MAP",
+        "IDOL"
       ]
     },
     {
