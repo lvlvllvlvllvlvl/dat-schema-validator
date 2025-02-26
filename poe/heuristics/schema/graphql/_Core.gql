@@ -2944,7 +2944,8 @@ type Mods @tags(list: ["crafting"]) {
   ArchnemesisMinionMod: Mods
   HASH32: i32
   _: [rid]
-  Disabled2: i32
+  "0: All, 1: Normal, 2: Ruthless"
+  GameMode: i32
   _: [GrantedEffectsPerLevel]
 }
 

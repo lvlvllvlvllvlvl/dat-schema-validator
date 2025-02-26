@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1740261231,
+  "createdAt": 1740468498,
   "tables": [
     {
       "validFor": 3,
@@ -7113,7 +7113,7 @@
         },
         {
           "name": "GameMode",
-          "description": "1: Normal, 2: Ruthless",
+          "description": "0: All, 1: Normal, 2: Ruthless",
           "array": false,
           "type": "i32",
           "unique": false,
@@ -75113,8 +75113,8 @@
           "interval": false
         },
         {
-          "name": "Disabled2",
-          "description": null,
+          "name": "GameMode",
+          "description": "0: All, 1: Normal, 2: Ruthless",
           "array": false,
           "type": "i32",
           "unique": false,
