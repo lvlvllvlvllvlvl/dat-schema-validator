@@ -1,0 +1,24 @@
+type ArchitectLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type IncursionArchitect {
+  MonsterVarietiesKey: MonsterVarieties
+  MinLevel: i32
+}
+
+enum IncursionBrackets @indexing(first: 0) { _ }
+
+enum IncursionChestRewards @indexing(first: 0) { _ }
+
+enum IncursionChests @indexing(first: 0) { _ }
+
+enum IncursionRoomBossFightEvents @indexing(first: 0) { _ }
+
+enum IncursionRooms @indexing(first: 0) { _ }
+
+type IncursionUniqueUpgradeComponents @tags(list: ["item:recipe", "item:unique"]) {
+  BaseUnique: Words
+  UpgradeCurrency: BaseItemTypes
+}
