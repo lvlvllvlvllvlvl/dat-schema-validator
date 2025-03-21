@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Conqueror",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AtlasExiles"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "WorldArea",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "WorldAreas"
+      }
+    },
+    "size": 16
+  }
+]
