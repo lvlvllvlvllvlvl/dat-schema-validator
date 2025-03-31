@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1740468498,
+  "createdAt": 1743351995,
   "tables": [
     {
       "validFor": 3,
@@ -61502,8 +61502,8 @@
           "interval": false
         },
         {
-          "name": "CopiedStats",
-          "description": "Values for these stats are copied from the base StatSet of the GrantedEffect",
+          "name": "IgnoredStats",
+          "description": "Values for these stats are NOT copied from the base StatSet of the GrantedEffect",
           "array": true,
           "type": "foreignrow",
           "unique": false,
