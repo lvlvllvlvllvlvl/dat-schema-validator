@@ -93,287 +93,182 @@
     "size": 16
   },
   {
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "WebsiteDescription",
     "offset": 80,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "boolean": true
+      "string": {}
     },
+    "size": 8
+  },
+  {
+    "name": "WebsiteImage",
+    "offset": 88,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "HideOnWebsite",
     "offset": 96,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "string": {}
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "GrantedEffect",
     "offset": 97,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "boolean": true
+      "string": {}
     },
+    "size": 8
+  },
+  {
+    "name": "",
     "offset": 105,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "SkillTotemId",
     "offset": 106,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
+    "size": 4
+  },
+  {
+    "name": "IsManuallyCasted",
     "offset": 110,
-    "size": 1,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Input_Stats",
     "offset": 111,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "Output_Stats",
     "offset": 127,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "MinionActiveSkillTypes",
     "offset": 143,
-    "size": 16,
-    "unknownArray": true
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkillType"
+      }
+    },
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 159,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "IsGem",
     "offset": 160,
-    "size": 1,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "SecondarySkillSpecificStats",
     "offset": 161,
-    "size": 16,
-    "unknownArray": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 177,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 181,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 197,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "offset": 198,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
-    "offset": 206,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 222,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 223,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 224,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 225,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "offset": 241,
-    "size": 8,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 249,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "offset": 265,
-    "size": 8,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 273,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 289,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 305,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "offset": 306,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "name": "SkillMine",
+    "offset": 177,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -381,28 +276,245 @@
         "size": 4
       }
     },
-    "offset": 314,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "AlternateSkillTargetingBehaviour",
+    "offset": 181,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "AlternateSkillTargetingBehaviours"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 197,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "AIFile",
+    "offset": 198,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 318,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "StatContextFlags",
+    "offset": 206,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "VirtualStatContextFlags"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 222,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 223,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 224,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "ShapeShiftForm",
+    "offset": 225,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ShapeShiftForms"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "VideoClip",
+    "offset": 241,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "CharacterAudioEvent",
+    "offset": 249,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CharacterAudioEvents"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "AiScript",
+    "offset": 265,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "MinionType",
+    "offset": 273,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "MinionType"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 289,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 305,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 306,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "StatDescriptionType",
+    "offset": 314,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "StatDescription",
+    "offset": 318,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "WeaponRequirements",
     "offset": 326,
-    "size": 16,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "ActiveSkillWeaponRequirement"
+      }
+    },
+    "size": 16
   }
 ]

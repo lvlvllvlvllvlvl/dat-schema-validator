@@ -891,91 +891,64 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
-    "size": 4
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 568,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 572,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 576,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "name": "",
+    "offset": 580,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 580,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 596,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 596,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 612,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "offset": 612,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "GemCuttingIcon",
+    "offset": 616,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 616,
     "size": 8
   }
 ]

@@ -63,37 +63,38 @@ type ActiveSkills {
   Icon_DDSFile: string @file(ext: ".dds")
   ActiveSkillTargetTypes: [ActiveSkillTargetTypes]
   ActiveSkillTypes: [ActiveSkillType]
-  _: [_]
+  WebsiteDescription: string
+  WebsiteImage: string
+  HideOnWebsite: bool
+  GrantedEffect: string
   _: bool
-  _: string
+  SkillTotemId: SkillTotems
+  IsManuallyCasted: bool
+  Input_Stats: [Stats]
+  Output_Stats: [Stats]
+  MinionActiveSkillTypes: [ActiveSkillType]
   _: bool
-  _: i32
+  IsGem: bool
+  SecondarySkillSpecificStats: [Stats]
+  SkillMine: i32
+  AlternateSkillTargetingBehaviour: AlternateSkillTargetingBehaviours
   _: bool
-  _: [_]
-  _: [_]
-  _: [_]
+  AIFile: string @file(ext: ".ai")
+  StatContextFlags: [VirtualStatContextFlags]
   _: bool
   _: bool
-  _: [_]
-  _: i32
+  _: bool
+  ShapeShiftForm: ShapeShiftForms
+  VideoClip: string @file(ext: ".bk2")
+  CharacterAudioEvent: CharacterAudioEvents
+  AiScript: string @file(ext: ".ais")
+  MinionType: MinionType
   _: rid
   _: bool
   _: string
-  _: [_]
-  _: bool
-  _: bool
-  _: bool
-  _: rid
-  _: string
-  _: rid
-  _: string
-  _: rid
-  _: rid
-  _: bool
-  _: string
-  _: i32
-  _: string
-  _: rid
+  StatDescriptionType: StatDescriptionTypes
+  StatDescription: string
+  WeaponRequirements: ActiveSkillWeaponRequirement
 }
 
 type ActiveSkillType {
@@ -784,14 +785,11 @@ type Characters {
   _: f32
   _: f32
   BaseClass: string
-  _: i32
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
   _: rid
-  _: [_]
+  _: rid
+  _: [rid]
   _: f32
-  _: string
+  GemCuttingIcon: string
 }
 
 type CharacterStartQuestState {
@@ -1759,21 +1757,20 @@ type GrantedEffects {
   Animation: Animation
   MultiPartAchievement: MultiPartAchievements
   _: bool
-  _: i32
-  _: i32
+  RegularVariant: GrantedEffects
   _: bool
   _: i32
   _: i32
-  _: rid
-  _: i32 # All rows empty
-  _: bool
-  _: [_]
-  _: string
-  _: [_]
-  _: bool
-  _: [_]
   _: i32
-  _: [string]
+  _: bool
+  StatSet: GrantedEffectStatSets
+  AdditionalStatSets: [GrantedEffectStatSets]
+  Audio: string
+  CostTypes: [CostTypes]
+  _: bool
+  _: [i32]
+  _: i32
+  SupportWeaponRestrictions: [ItemClasses]
 }
 
 type GrantedEffectsPerLevel {
@@ -4270,7 +4267,7 @@ type SkillGems @tags(list: ["item:def"]) {
   _: bool
   _: i32
   _: bool
-  _: [_]
+  _: [rid]
 }
 
 type SkillMineVariations {
@@ -5017,10 +5014,11 @@ type activeskillrequirements {
   _: bool
 }
 
-type activeskillweaponrequirement {
-  _: string
-  _: [_]
-  _: rid
+# Added 4.2
+type ActiveSkillWeaponRequirement {
+  Id: string @unique
+  WieldableClasses: [WieldableClasses]
+  String: ClientStrings
 }
 
 # Added 4.1
@@ -5096,6 +5094,7 @@ type AtlasPassiveSkillSubTrees {
   _: rid
 }
 
+# Added 4.2
 type atlastowerinventorylayout {
   _: i32
   _: i32
@@ -5114,10 +5113,12 @@ type AttributeRequirements {
   ReqDex: i32
 }
 
+# Added 4.2
 type AudioCharacterClass {
   _: string
 }
 
+# Added 4.2
 type AzmeriFeatureRooms {
   _: i32
   _: i32
@@ -5127,6 +5128,7 @@ type AzmeriFeatureRooms {
   _: bool
 }
 
+# Added 4.2
 type AzmeriWoodsDustType {
   _: string
   _: string
@@ -5323,6 +5325,7 @@ type CharacterMeleeSkills {
   _: bool
 }
 
+# Added 4.2
 type characterskinmeshreplacement {
   _: [_]
   _: string
@@ -5402,6 +5405,7 @@ type corpseexplosiongibs {
   _: [string]
 }
 
+# Added 4.2
 type corpsesinkareaoverrides {
   _: rid
   _: i32
@@ -5427,6 +5431,7 @@ type CosmeticsEquipPanelMode {
   _: [_]
 }
 
+# Added 4.2
 type cosmeticspaneltab {
   _: string
   _: [_]
@@ -5454,6 +5459,7 @@ type crossbowskillboltoverride {
   _: i32 # All rows empty
 }
 
+# Added 4.2
 type currencyconsumeeffects {
   _: rid
   _: currencyconsumeeffects
@@ -5583,6 +5589,7 @@ type destructivedamageeffects {
   _: bool
 }
 
+# Added 4.2
 type displaycasetypes {
   _: string
   _: bool
@@ -5619,6 +5626,7 @@ type dynamicstashslots {
   _: i32
 }
 
+# Added 4.2
 type endgamecleansedmods {
   _: rid
   _: [_]
@@ -5695,6 +5703,7 @@ type EndgameMapDecorations {
   _: bool
 }
 
+# Added 4.2
 type endgamemappinicons {
   _: [_]
 }
@@ -5748,6 +5757,7 @@ type expeditiondealsdialogue {
   _: i32 # All rows empty
 }
 
+# Added 4.2
 type fadeoncorpseconsumeepks {
   _: rid
   _: i32
@@ -5877,6 +5887,7 @@ type goldvisualidentities {
   _: rid
 }
 
+# Added 4.2
 type grantedeffectdisplayinforegrouping {
   _: rid
   _: [_]
@@ -6117,6 +6128,7 @@ type ItemVisualReplacement {
   _: rid
 }
 
+# Added 4.2
 type itemvisualsreplacedwithstat {
   _: rid
   _: rid
@@ -6166,6 +6178,7 @@ type LegacyAtlasInfluenceOutcomes {
   _: [_]
 }
 
+# Added 4.2
 type levelupsoundeffect {
   _: string
   _: rid
@@ -6437,6 +6450,7 @@ type misccooldowns {
   _: bool
 }
 
+# Added 4.2
 type miscparticles {
   _: string
   _: string
@@ -6444,6 +6458,7 @@ type miscparticles {
   _: [_] # All rows empty
 }
 
+# Added 4.2
 type miscparticlesartvariations {
   _: string
   _: [_]
@@ -6535,11 +6550,12 @@ type mobiletutorialgroup {
 }
 
 # Added 4.1
-type modgrantedskills {
-  _: rid
-  _: rid
+type ModGrantedSkills {
+  Mod: Mods
+  Skill: SkillGems
 }
 
+# Added 4.2
 type monstercategories {
   _: rid
   _: string
@@ -6730,6 +6746,7 @@ type passivejeweluniqueart {
   _: rid
 }
 
+# Added 4.2
 type passivenodeuiartoverride {
   _: [_]
   _: string
@@ -6741,11 +6758,13 @@ type passivenodeuiartoverride {
   _: string
 }
 
+# Added 4.2
 type passiveskillfiltergroups {
   _: string
   _: string
 }
 
+# Added 4.2
 type playerminionintrinsicstats {
   _: rid
   _: i32
@@ -6810,6 +6829,7 @@ type racerewardtomicro {
   _: i32
 }
 
+# Added 4.2
 type recombinableclasses {
   _: rid
   _: rid
@@ -6844,6 +6864,7 @@ type resistancepenaltyperarealevel {
   _: i32
 }
 
+# Added 4.2
 type rogueexilemodbonuses {
   _: rid
   _: [_]
@@ -6949,6 +6970,7 @@ type SkillGemLevelUpEffects {
   _: rid
 }
 
+# Added 4.2
 type skillgemsearchterms {
   _: string
   _: string
@@ -6992,6 +7014,7 @@ type SoulCores {
   _: i32
 }
 
+# Added 4.2
 type soulcoresperclass {
   _: rid
   _: rid
@@ -7006,6 +7029,7 @@ type statconvertaltattackcontainer {
   _: [_]
 }
 
+# Added 4.2
 type statistictrackingmicrotransactioncountertype {
   _: string
   _: string
@@ -7052,6 +7076,7 @@ type StatVisuals {
   _: bool
 }
 
+# Added 4.2
 type strongboxpacks {
   _: i32
   _: rid
@@ -7075,6 +7100,7 @@ type surgeeffectpackartvariations {
   _: bool
 }
 
+# Added 4.2
 type tempesttypes {
   _: string
   _: rid
@@ -7125,6 +7151,7 @@ type TieredMicrotransactions {
   _: bool
 }
 
+# Added 4.2
 type timetrackingmapdeviceinterfaceartvariation {
   _: string
   _: [_] # All rows empty
@@ -7133,6 +7160,7 @@ type timetrackingmapdeviceinterfaceartvariation {
   _: [_]
 }
 
+# Added 4.2
 type tormentmodcolours {
   _: rid
   _: [string]
@@ -7235,6 +7263,7 @@ type UncutGemTiers {
   AreaLevel: i32
 }
 
+# Added 4.2
 type uniquemapskillbooks {
   _: rid
   _: i32
@@ -7274,6 +7303,7 @@ type waystonestashtabsubgroups {
   _: i32 # All rows empty
 }
 
+# Added 4.2
 type weaponbufforbstype {
   _: rid
   _: string
@@ -7286,8 +7316,8 @@ type weaponbufforbstype {
 }
 
 # Added 4.1
-type wieldableclasses {
-  _: rid
+type WieldableClasses {
+  ItemClass: ItemClasses
   _: bool
   _: bool
   _: rid

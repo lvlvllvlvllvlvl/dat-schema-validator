@@ -353,11 +353,13 @@ type Ascendancy {
   _: i32
   _: i32
   BackgroundImage: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: [_] # All rows empty
+  LeagueName: string
+  LeagueFlavourText: string
+  LeagueBackgroundImage: string
+  LeaguePassiveTreeImage: string
+  _: i32
+  _: i32
+  LeagueIcon: string
 }
 
 type AtlasFog {

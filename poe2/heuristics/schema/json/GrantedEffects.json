@@ -246,51 +246,38 @@
     "size": 1
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "RegularVariant",
     "offset": 146,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": false,
+        "name": "GrantedEffects"
       }
     },
-    "offset": 150,
-    "size": 4,
-    "unique": false
+    "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 154,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 155,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -298,22 +285,29 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 159,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 163,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -321,61 +315,95 @@
         "size": 4
       }
     },
-    "offset": 179,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 167,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 183,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "StatSet",
+    "offset": 168,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
-      "array": true,
+      "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "GrantedEffectStatSets"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "AdditionalStatSets",
     "offset": 184,
-    "size": 16,
-    "unknownArray": true
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "GrantedEffectStatSets"
+      }
+    },
+    "size": 16
   },
   {
+    "name": "Audio",
+    "offset": 200,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 200,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "CostTypes",
+    "offset": 208,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "CostTypes"
       }
     },
-    "offset": 208,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 224,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 224,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 225,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -383,11 +411,14 @@
         "size": 4
       }
     },
-    "offset": 225,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 241,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -395,16 +426,21 @@
         "size": 4
       }
     },
-    "offset": 241,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "SupportWeaponRestrictions",
+    "offset": 245,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true,
+        "name": "ItemClasses"
+      }
     },
-    "offset": 245,
     "size": 16
   }
 ]
