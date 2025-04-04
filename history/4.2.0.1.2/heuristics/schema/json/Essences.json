@@ -67,9 +67,8 @@
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
     "size": 16
@@ -132,103 +131,92 @@
     "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 81,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": false,
+        "name": "Essences"
       }
     },
-    "offset": 85,
-    "size": 4,
-    "unique": false
+    "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 89,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 93,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 109,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "CraftedMod",
+    "offset": 109,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ItemClasses",
+    "offset": 125,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ItemClasses"
       }
     },
-    "offset": 125,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 141,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
-        "unsigned": true,
-        "size": 2
+        "unsigned": false,
+        "size": 4
       }
     },
-    "offset": 142,
-    "size": 2,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 144,
-    "size": 1,
-    "unique": false
+    "size": 4
   }
 ]
