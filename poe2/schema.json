@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1743803452,
+  "createdAt": 1743804660,
   "tables": [
     {
       "validFor": 3,
@@ -76050,19 +76050,6 @@
           "interval": false
         },
         {
-          "name": "IsEssenceOnlyModifier",
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "Stat6Value",
           "description": null,
           "array": false,
@@ -76594,6 +76581,19 @@
           "description": null,
           "array": false,
           "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "IsEssenceOnlyModifier",
+          "description": null,
+          "array": false,
+          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,

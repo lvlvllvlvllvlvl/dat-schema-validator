@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Mod",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Value",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Tags",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "name": "Tags"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "SpawnWeight",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "CraftableType",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "name": "CraftableModTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  }
+]
