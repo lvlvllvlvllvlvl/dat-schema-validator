@@ -106,12 +106,17 @@ const versionArg = (args?.findIndex((s) => s === "-v" || s === "--version") ?? -
 if (args && versionArg) {
   version = args[versionArg];
 } else {
-  version = (
-    await fetch("https://ggpk.exposed/version?poe=" + (poe2 ? 2 : 1)).then((r) => r.text())
-  )
+  const url = await fetch("https://ggpk.exposed/version?poe=" + (poe2 ? 2 : 1)).then((r) =>
+    r.text(),
+  );
+  version = url
     .split("/")
     .filter((v) => v.match(/\d+(\.\d+)+/))
     .pop()!;
+  if (!version) {
+    console.log("cdn url:", url, "game version:", version);
+    process.exit(1);
+  }
   progress.push(fs.writeFile(`version${poe2 ? 2 : ""}.txt`, version), "version.txt");
 }
 
