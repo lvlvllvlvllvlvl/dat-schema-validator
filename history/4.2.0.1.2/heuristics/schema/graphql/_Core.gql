@@ -4845,16 +4845,15 @@ type WorldAreas {
   _: i32
   _: i32
   LoadingScreens: [string]
-  _: [_]
-  _: [_]
+  FlagOnEntered: [QuestFlags]
+  RequiredFlags: [QuestFlags]
   _: i32
-  _: [_]
-  _: i32
-  _: i32
+  Topologies: [Topologies]
+  ParentTown: WorldAreas
   _: i32
   _: rid
   _: rid
-  _: [_]
+  Bosses: [MonsterVarieties]
   _: [_] # All rows empty
   _: [_] # All rows empty
   _: [_] # All rows empty
@@ -4862,26 +4861,30 @@ type WorldAreas {
   _: [_] # All rows empty
   _: rid
   _: rid
-  _: [_]
-  _: i32 # All rows empty
-  _: bool
-  _: string
-  _: bool
-  _: string
-  _: [_]
-  _: rid
-  _: rid
-  _: WorldAreas
-  _: rid
-  _: [_] # All rows empty
-  _: bool
-  _: rid
-  _: rid
-  _: WorldAreas
+  AreaMods: [Mods]
   _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  Tags: [Tags]
+  _: rid
   _: rid
   _: i32
+  _: i32
   _: rid
+  _: [string]
+  _: bool
+  _: rid
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  Environment: Environments
+  _: i32
+  TerrainPlugins: TerrainPlugins
   _: rid
   _: i32 # All rows empty
   _: bool
