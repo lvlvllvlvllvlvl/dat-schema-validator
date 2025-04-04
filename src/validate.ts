@@ -3,7 +3,6 @@ import { parse as csvParse } from "csv-parse/sync";
 import * as csv from "csv-stringify";
 import { rmSync } from "fs";
 import * as fs from "fs/promises";
-import { tmpdir } from "os";
 import path from "path";
 import { SCHEMA_URL, SchemaFile } from "pathofexile-dat-schema";
 import { analyzeDatFile, readDatFile, validateHeader } from "pathofexile-dat/dat.js";
@@ -12,14 +11,14 @@ import { onExit } from "signal-exit";
 import { ShapeChange } from "./changes.js";
 import {
   CdnBundleLoader,
-  FileLoader,
-  NamedHeader,
   exportAllRows,
+  FileLoader,
   importHeaders,
+  NamedHeader,
   sleep,
 } from "./datfile.js";
-import { Enumeration, Table, exportGQL } from "./graphql.js";
-import { PossibleHeaders, getPossibleHeaders, guessType } from "./heuristic.js";
+import { Enumeration, exportGQL, Table } from "./graphql.js";
+import { getPossibleHeaders, guessType, PossibleHeaders } from "./heuristic.js";
 
 const TRANSLATIONS = [
   { name: "English", path: "data" },
@@ -47,7 +46,7 @@ const progressBars =
         {
           format: "[{bar}] {percentage}% | {value}/{total} | {step} | {table}",
         },
-        Presets.rect
+        Presets.rect,
       )
     : null;
 let lastFrame = performance.now();
@@ -79,11 +78,11 @@ const progress = {
 };
 if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log(
-    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--annotate]"
+    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--annotate]",
   );
   console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
   console.log(
-    "If a version is specified, data will be read from inya.zao.se, otherwise the latest version from the poe cdn will be used"
+    "If a version is specified, data will be read from inya.zao.se, otherwise the latest version from the poe cdn will be used",
   );
   exit();
 }
@@ -99,7 +98,7 @@ const metafiles = Object.fromEntries(
   (await fs.readdir(metafileDir)).map((f) => [
     f.toLowerCase().replaceAll(".csv", ""),
     path.join(metafileDir, f),
-  ])
+  ]),
 );
 
 let version: string;
@@ -108,13 +107,11 @@ if (args && versionArg) {
   version = args[versionArg];
 } else {
   version = (
-    await fetch(
-      `https://lvlvllvlvllvlvl.github.io/poecdn-bundle-index/poe${poe2 ? 2 : 1}/urls.json`
-    ).then((r) => r.json())
-  ).urls[0]
+    await fetch("https://ggpk.exposed/version?poe=" + (poe2 ? 2 : 1)).then((r) => r.text())
+  )
     .split("/")
-    .filter((v) => v)
-    .pop();
+    .filter((v) => v.match(/\d+(\.\d+)+/))
+    .pop()!;
   progress.push(fs.writeFile(`version${poe2 ? 2 : ""}.txt`, version), "version.txt");
 }
 
@@ -136,14 +133,14 @@ if (args && schemaArg) {
   progress.push(
     fs.writeFile(
       path.join(schemaDir, schemaPrefix + "schema.json"),
-      JSON.stringify(schema, null, 2)
+      JSON.stringify(schema, null, 2),
     ),
-    "schema.json"
+    "schema.json",
   );
 }
 
 const loader = await FileLoader.create(
-  await CdnBundleLoader.create(path.join(".cache"), version, !!versionArg)
+  await CdnBundleLoader.create(path.join(".cache"), version, !!versionArg),
 );
 
 const getType = ({ type }: NamedHeader) =>
@@ -169,12 +166,12 @@ await fs.mkdir(`${heuristics}/schema/graphql`, R);
 const validFor = poe2 ? (t: any) => t.validFor & 2 : (t: any) => t.validFor & 1;
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
   Object.fromEntries(
-    schema.tables.filter(validFor).map((t) => [`data/${t.name}.datc64`.toLowerCase(), t])
+    schema.tables.filter(validFor).map((t) => [`data/${t.name}.datc64`.toLowerCase(), t]),
   ),
   Object.fromEntries(
     schema.enumerations?.filter(validFor)?.map((t) => [`data/${t.name}.datc64`.toLowerCase(), t]) ||
-      []
-  )
+      [],
+  ),
 );
 loader.clearBundleCache();
 const allTables = !args?.find((v) => v === "-t" || v === "--table" || v === "--tables");
@@ -183,7 +180,7 @@ const files = loader
   .filter(
     (f) =>
       f.endsWith(".datc64") &&
-      (allTables || tablesToProcess?.includes(path.parse(f).name.toLowerCase()))
+      (allTables || tablesToProcess?.includes(path.parse(f).name.toLowerCase())),
   )
   .sort();
 progress.requests?.setTotal(files.length * includeTranslations.length);
@@ -215,7 +212,7 @@ await Promise.all(
           } finally {
             concurrentLoads--;
           }
-        })
+        }),
       )
     ).filter((v) => v);
     try {
@@ -234,7 +231,7 @@ await Promise.all(
       const columnStats = datFiles.map(analyzeDatFile);
       if (
         !datFiles.every(
-          (f) => f.rowLength === datFiles[0].rowLength || f.rowCount === datFiles[0].rowCount
+          (f) => f.rowLength === datFiles[0].rowLength || f.rowCount === datFiles[0].rowCount,
         )
       ) {
         console.warn("Not all data are equal");
@@ -252,7 +249,7 @@ await Promise.all(
           table,
           (...args) => errors.push(args.join(" ")),
           datFiles,
-          columnStats
+          columnStats,
         );
         let invalid = Math.min(table.columns.length, headers.length);
         headers.forEach((header, i) => {
@@ -264,7 +261,7 @@ await Promise.all(
                   (s) =>
                     validateHeader(header, s) &&
                     (!header.interval ||
-                      validateHeader({ ...header, offset: header.offset + header.size! }, s))
+                      validateHeader({ ...header, offset: header.offset + header.size! }, s)),
                 ))
             ) {
               invalid = Math.min(invalid, i);
@@ -274,8 +271,8 @@ await Promise.all(
                 Array.isArray(header)
                   ? `${table.name}.datc64 column ${i + 1} "<unknown>": array not valid.${change}`
                   : `${table.name}.datc64 column ${i + 1} ${header.name || "<unknown>"}: ${getType(
-                      header
-                    )} not valid at offset ${header.offset}.${change}`
+                      header,
+                    )} not valid at offset ${header.offset}.${change}`,
               );
             }
           } catch (e) {
@@ -295,7 +292,7 @@ await Promise.all(
               return arr;
             }, [] as PossibleHeaders),
             columnStats,
-            datFiles
+            datFiles,
           )
         )[0];
 
@@ -309,7 +306,7 @@ await Promise.all(
                   hdr,
                   data.map(({ name }, i) => ({ name, datFile: datFiles[i] })),
                   table.name,
-                  args?.includes("--validate")
+                  args?.includes("--validate"),
                 ),
                 {
                   cast: {
@@ -317,17 +314,17 @@ await Promise.all(
                   },
                   quoted_empty: true,
                   quoted_string: true,
-                }
-              )
+                },
+              ),
             ),
-            `${table.name}.csv`
+            `${table.name}.csv`,
           );
           progress.push(
             fs.writeFile(
               path.join(`${heuristics}/schema/json`, `${table.name}.json`),
-              JSON.stringify(hdr, undefined, 2)
+              JSON.stringify(hdr, undefined, 2),
             ),
-            `${table.name}.json`
+            `${table.name}.json`,
           );
           headerMap[table.name] = hdr;
           tables.push(table);
@@ -352,7 +349,7 @@ await Promise.all(
       if (
         !args?.includes("--historical") &&
         Object.keys(shape).find(
-          (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k])
+          (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k]),
         )
       ) {
         meta.push(shape);
@@ -366,7 +363,7 @@ await Promise.all(
     } finally {
       progress.increment("processing", { table: table.name });
     }
-  })
+  }),
 );
 progressBars?.stop();
 
@@ -376,14 +373,14 @@ progress.push(
     enumerations.sort((a, b) => a.name.localeCompare(b.name)),
     (table) => headerMap[table.name],
     `${heuristics}/schema/graphql`,
-    (...args) => errors.push(args.join(" "))
+    (...args) => errors.push(args.join(" ")),
   ),
-  "graphql"
+  "graphql",
 );
 errors.length &&
   progress.push(
     fs.writeFile(path.join(schemaDir, schemaPrefix + "errors.txt"), errors.sort().join("\n")),
-    "errors.txt"
+    "errors.txt",
   );
 const missing = schema.tables
   .filter(validFor)
@@ -394,15 +391,15 @@ const missing = schema.tables
 missing.length &&
   progress.push(
     fs.writeFile(path.join(schemaDir, schemaPrefix + "missing.txt"), missing.sort().join("\n")),
-    "missing.txt"
+    "missing.txt",
   );
 schema.tables = schema.tables.filter((t) => !(missing.includes(t.name) && validFor(t)));
 progress.push(
   fs.writeFile(
     path.join(schemaDir, schemaPrefix + "filtered.json"),
-    JSON.stringify(schema, null, 2)
+    JSON.stringify(schema, null, 2),
   ),
-  "filtered.json"
+  "filtered.json",
 );
 await Promise.all(progress.promises);
 progressBars?.update();
@@ -421,7 +418,7 @@ if (!args?.includes("--historical")) {
         rows.push({ version });
         await fs.writeFile(filename, csv.stringify(rows, { header: true }));
       }
-    })
+    }),
   );
 }
 
