@@ -96,7 +96,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "HelpText",
     "offset": 70,
     "unknownArray": false,
     "unique": false,
@@ -104,13 +104,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ClientStrings"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Description",
     "offset": 86,
     "unknownArray": false,
     "unique": false,
@@ -118,7 +119,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "ClientStrings"
       }
     },
     "size": 16
