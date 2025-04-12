@@ -7006,13 +7006,13 @@ type socketaudioevents {
 # Added 4.1
 type SoulCores {
   BaseItemType: BaseItemTypes
-  StatsWeapon: [Stats]
-  StatsValuesWeapon: [i32]
+  StatsMartialWeapon: [Stats]
+  StatsValuesMartialWeapon: [i32]
   StatsArmour: [Stats]
   StatsValuesArmour: [i32]
-  _: i32
-  _: [_]
-  _: [_]
+  Rank: i32
+  StatsCasterWeapon: [Stats]
+  StatsValuesCasterWeapon: [i32]
 }
 
 # Added 4.2

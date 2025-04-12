@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1744311460,
+  "createdAt": 1744380595,
   "tables": [
     {
       "validFor": 3,
@@ -109365,7 +109365,7 @@
           "interval": false
         },
         {
-          "name": "StatsWeapon",
+          "name": "StatsMartialWeapon",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -109380,7 +109380,7 @@
           "interval": false
         },
         {
-          "name": "StatsValuesWeapon",
+          "name": "StatsValuesMartialWeapon",
           "description": null,
           "array": true,
           "type": "i32",
@@ -109421,9 +109421,37 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Rank",
           "description": null,
           "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StatsCasterWeapon",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StatsValuesCasterWeapon",
+          "description": null,
+          "array": true,
           "type": "i32",
           "unique": false,
           "localized": false,

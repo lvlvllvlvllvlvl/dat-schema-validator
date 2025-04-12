@@ -15,7 +15,7 @@
     "size": 16
   },
   {
-    "name": "StatsWeapon",
+    "name": "StatsMartialWeapon",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -30,7 +30,7 @@
     "size": 16
   },
   {
-    "name": "StatsValuesWeapon",
+    "name": "StatsValuesMartialWeapon",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -75,7 +75,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Rank",
     "offset": 80,
     "unknownArray": false,
     "unique": false,
@@ -90,25 +90,33 @@
     "size": 4
   },
   {
+    "name": "StatsCasterWeapon",
+    "offset": 84,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Stats"
       }
     },
-    "offset": 84,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   },
   {
+    "name": "StatsValuesCasterWeapon",
+    "offset": 100,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
-    "offset": 100,
-    "size": 16,
-    "unknownArray": true
+    "size": 16
   }
 ]
