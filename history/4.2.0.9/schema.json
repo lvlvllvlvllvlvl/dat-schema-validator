@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1745405490,
+  "createdAt": 1745739749,
   "tables": [
     {
       "validFor": 3,
@@ -114746,6 +114746,39 @@
           "references": null,
           "until": null,
           "file": ".dds",
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
+      "name": "UltimatumTrialLength",
+      "columns": [
+        {
+          "name": "MinAreaLevel",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Length",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
           "files": null,
           "interval": false
         }

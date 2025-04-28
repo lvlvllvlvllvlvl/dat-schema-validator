@@ -1,5 +1,10 @@
 [
   {
+    "name": "MinAreaLevel",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -7,10 +12,14 @@
         "size": 4
       }
     },
-    "offset": 0,
     "size": 4
   },
   {
+    "name": "Length",
+    "offset": 4,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,7 +27,6 @@
         "size": 4
       }
     },
-    "offset": 4,
     "size": 4
   }
 ]

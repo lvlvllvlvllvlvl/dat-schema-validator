@@ -7262,9 +7262,9 @@ type ultimatumrooms {
 }
 
 # Added 4.1
-type ultimatumtriallength {
-  _: i32
-  _: i32
+type UltimatumTrialLength {
+  MinAreaLevel: i32
+  Length: i32
 }
 
 # Added 4.1
