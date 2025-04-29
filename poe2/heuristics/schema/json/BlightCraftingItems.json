@@ -72,7 +72,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "EnchantedMod",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -80,7 +80,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "name": "Mods"
       }
     },
     "size": 16

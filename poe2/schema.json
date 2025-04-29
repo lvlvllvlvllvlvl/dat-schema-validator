@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1745739749,
+  "createdAt": 1745831835,
   "tables": [
     {
       "validFor": 3,
@@ -14450,13 +14450,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "EnchantedMod",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Mods"
+          },
           "until": null,
           "file": null,
           "files": null,
