@@ -5101,7 +5101,7 @@ type atlastowerinventorylayout {
 
 # Added 4.1
 type AttributeRequirements {
-  BaseItemType: BaseItemTypes
+  BaseItemType: BaseItemTypes @unique
   ReqStr: i32
   ReqInt: i32
   ReqDex: i32
@@ -6095,7 +6095,7 @@ type itemdisenchantvalues {
 
 # Added 4.1
 type ItemInherentSkills {
-  BaseItemType: BaseItemTypes
+  BaseItemType: BaseItemTypes @unique
   SkillsGranted: [SkillGems]
   IsWeapon: bool
 }
@@ -6107,7 +6107,7 @@ type itemisedvisualeffectexclusivetypes {
 
 # Added 4.1
 type ItemSpirit {
-  BaseItemType: BaseItemTypes
+  BaseItemType: BaseItemTypes @unique
   SpiritGranted: i32
 }
 
