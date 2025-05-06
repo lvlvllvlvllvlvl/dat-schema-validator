@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1746384776,
+  "createdAt": 1746432182,
   "tables": [
     {
       "validFor": 3,
@@ -88788,7 +88788,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
@@ -88974,7 +88974,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
@@ -110042,7 +110042,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"

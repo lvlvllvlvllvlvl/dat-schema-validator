@@ -3965,7 +3965,7 @@ type QuestFlags {
 }
 
 type QuestItems {
-  Item: BaseItemTypes
+  Item: BaseItemTypes @unique
   TriggeredQuestFlag: QuestFlags
   _: QuestFlags
   _: i32
@@ -7026,7 +7026,7 @@ type socketaudioevents {
 
 # Added 4.1
 type SoulCores {
-  BaseItemType: BaseItemTypes
+  BaseItemType: BaseItemTypes @unique
   StatsMartialWeapon: [Stats]
   StatsValuesMartialWeapon: [i32]
   StatsArmour: [Stats]
