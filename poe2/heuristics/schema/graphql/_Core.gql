@@ -7063,6 +7063,7 @@ type SoulCoresPerClass {
   StatsValues: [i32]
 }
 
+# Added 4.2
 type stashavailabilities {
   _: i32
   _: i32
@@ -7412,6 +7413,7 @@ type worldmaplegends {
   _: string
 }
 
+# Added 4.2
 type worldobjectdisplayedapplicableitems {
   _: string
   _: [_]
