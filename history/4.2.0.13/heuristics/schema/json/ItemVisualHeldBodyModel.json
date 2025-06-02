@@ -3,13 +3,13 @@
     "name": "ItemVisualIdentity",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -18,7 +18,7 @@
     "name": "MarauderAnimatedObject",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -30,7 +30,7 @@
     "name": "RangerAnimatedObject",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -42,7 +42,7 @@
     "name": "WitchAnimatedObject",
     "offset": 32,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -54,7 +54,7 @@
     "name": "DuelistAnimatedObject",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -66,7 +66,7 @@
     "name": "TemplarAnimatedObject",
     "offset": 48,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -78,7 +78,7 @@
     "name": "ShadowAnimatedObject",
     "offset": 56,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -90,7 +90,7 @@
     "name": "ScionAnimatedObject",
     "offset": 64,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -192,7 +192,8 @@
     },
     "offset": 128,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -204,7 +205,8 @@
     },
     "offset": 144,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -216,7 +218,8 @@
     },
     "offset": 160,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -228,7 +231,8 @@
     },
     "offset": 176,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -240,7 +244,8 @@
     },
     "offset": 192,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -252,7 +257,8 @@
     },
     "offset": 208,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -264,6 +270,7 @@
     },
     "offset": 224,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

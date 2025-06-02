@@ -1,4 +1,4 @@
-"rownum","rid","i32","i32","rid","string","bool","string","bool"
+"rownum","rid_0","i32_16","i32_20","rid_24","string_40","bool_48","string_49","bool_57"
 0,0,0,0,"","globals.childzana_int.PlayAnimation( childzana_idle_to_cowering_01 );\r\nDelay(0.3, { globals.dominusNPC.FaceObject( globals.childzana_int, false, false ); } );",1,"",""
 1,0,1,0,"","",1,"",""
 2,0,2,0,"","globals.zana_guard_int.SetStateTo( cutscene_controller, 3);\r\nglobals.childzana_int.PlayAnimation( childzana_idle_cowering_01 );\r\nDelay(0.1, { globals.dominusNPC.FaceObject( globals.childzana_int, false, false ); } );",1,"",""

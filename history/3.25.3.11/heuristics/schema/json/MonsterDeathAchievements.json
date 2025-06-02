@@ -21,7 +21,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -36,7 +36,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -63,7 +63,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "PlayerConditions"
+        "table": "PlayerConditions"
       }
     },
     "size": 16
@@ -78,7 +78,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterDeathConditions"
+        "table": "MonsterDeathConditions"
       }
     },
     "size": 16
@@ -160,7 +160,8 @@
     },
     "offset": 99,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -171,7 +172,8 @@
     },
     "offset": 115,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -194,7 +196,8 @@
     },
     "offset": 147,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -235,7 +238,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "NearbyMonsterConditions"
+        "table": "NearbyMonsterConditions"
       }
     },
     "size": 16
@@ -262,7 +265,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MultiPartAchievementConditions"
+        "table": "MultiPartAchievementConditions"
       }
     },
     "size": 16
@@ -277,7 +280,8 @@
     },
     "offset": 216,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -300,7 +304,8 @@
     },
     "offset": 233,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -311,7 +316,8 @@
     },
     "offset": 249,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",

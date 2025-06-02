@@ -33,7 +33,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "PreloadGroups"
+        "table": "PreloadGroups"
       }
     },
     "size": 16
@@ -72,7 +72,7 @@
     "name": "HASH32",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

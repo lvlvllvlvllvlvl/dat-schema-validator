@@ -3,13 +3,13 @@
     "name": "Item",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -18,19 +18,20 @@
     "name": "NamePlural",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "ScriptReward",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

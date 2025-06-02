@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -15,7 +15,7 @@
     "name": "ScriptArgs",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -27,19 +27,20 @@
     "name": "Name",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Icon",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -51,13 +52,14 @@
     "name": "Text",
     "offset": 32,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",

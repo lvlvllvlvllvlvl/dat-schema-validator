@@ -38,7 +38,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Stat",
@@ -50,7 +51,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16

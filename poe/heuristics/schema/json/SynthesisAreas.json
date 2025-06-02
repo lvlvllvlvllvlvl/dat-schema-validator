@@ -66,7 +66,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Topologies"
+        "table": "Topologies"
       }
     },
     "size": 16
@@ -81,7 +81,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterPacks"
+        "table": "MonsterPacks"
       }
     },
     "size": 16
@@ -108,7 +108,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "SynthesisAreaSizeKey",
@@ -120,7 +121,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "SynthesisAreaSize"
+        "table": "SynthesisAreaSize"
       }
     },
     "size": 16
@@ -135,7 +136,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16

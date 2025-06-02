@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "CharacterAudioEvents"
+        "table": "CharacterAudioEvents"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Characters"
+        "table": "Characters"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "CharacterTextAudio"
+        "table": "CharacterTextAudio"
       }
     },
     "size": 16

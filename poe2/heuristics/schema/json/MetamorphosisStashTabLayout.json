@@ -15,13 +15,13 @@
     "name": "StoredItem",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -126,6 +126,7 @@
     },
     "offset": 48,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

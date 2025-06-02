@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -178,7 +178,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -193,7 +193,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -202,13 +202,13 @@
     "name": "Display_Quiver_ModsKey",
     "offset": 224,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -223,7 +223,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -238,7 +238,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -253,7 +253,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -268,7 +268,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -283,7 +283,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -298,7 +298,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -313,7 +313,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -328,7 +328,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -337,7 +337,7 @@
     "name": "HASH32",
     "offset": 368,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -373,7 +373,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -388,7 +388,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "EssenceType"
+        "table": "EssenceType"
       }
     },
     "size": 16
@@ -433,7 +433,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -448,7 +448,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -463,7 +463,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -478,7 +478,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -493,7 +493,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -508,7 +508,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -523,7 +523,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -532,13 +532,13 @@
     "name": "Helmet_ModsKey",
     "offset": 552,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -547,13 +547,13 @@
     "name": "BodyArmour_ModsKey",
     "offset": 568,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -562,13 +562,13 @@
     "name": "Boots_ModsKey",
     "offset": 584,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -577,13 +577,13 @@
     "name": "Gloves_ModsKey",
     "offset": 600,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -598,7 +598,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -607,13 +607,13 @@
     "name": "Wand_ModsKey",
     "offset": 632,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -622,13 +622,13 @@
     "name": "Staff_ModsKey",
     "offset": 648,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -637,13 +637,13 @@
     "name": "TwoHandSword_ModsKey",
     "offset": 664,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -652,13 +652,13 @@
     "name": "TwoHandAxe_ModsKey",
     "offset": 680,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -667,13 +667,13 @@
     "name": "TwoHandMace_ModsKey",
     "offset": 696,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -682,13 +682,13 @@
     "name": "Claw_ModsKey",
     "offset": 712,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -697,13 +697,13 @@
     "name": "Dagger_ModsKey",
     "offset": 728,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -712,13 +712,13 @@
     "name": "OneHandSword_ModsKey",
     "offset": 744,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -727,13 +727,13 @@
     "name": "OneHandThrustingSword_ModsKey",
     "offset": 760,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -742,13 +742,13 @@
     "name": "OneHandAxe_ModsKey",
     "offset": 776,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -757,13 +757,13 @@
     "name": "OneHandMace_ModsKey",
     "offset": 792,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -772,13 +772,13 @@
     "name": "Sceptre_ModsKey",
     "offset": 808,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -787,13 +787,13 @@
     "name": "Display_Monster_ModsKey",
     "offset": 824,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -817,13 +817,13 @@
     "name": "Belt_ModsKey",
     "offset": 844,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -832,13 +832,13 @@
     "name": "Amulet_ModsKey",
     "offset": 860,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -847,13 +847,13 @@
     "name": "Ring_ModsKey",
     "offset": 876,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -868,7 +868,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -877,13 +877,13 @@
     "name": "Shield_ModsKey",
     "offset": 908,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -898,7 +898,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -925,7 +925,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16

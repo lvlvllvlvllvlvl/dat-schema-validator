@@ -15,7 +15,7 @@
     "name": "AllocationsRequired",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -36,7 +36,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "HellscapePassives"
+        "table": "HellscapePassives"
       }
     },
     "size": 16

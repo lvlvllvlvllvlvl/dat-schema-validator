@@ -19,8 +19,8 @@ type TormentSpirits {
   _: [_]
   _: [_]
   _: rid
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
   _: i32
   _: i32
 }

@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "LabyrinthSection"
+        "table": "LabyrinthSection"
       }
     },
     "size": 16
@@ -38,8 +38,7 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": false,
-        "name": "LabyrinthSectionLayout"
+        "foreign": false
       }
     },
     "size": 16
@@ -54,7 +53,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "LabyrinthSecrets"
+        "table": "LabyrinthSecrets"
       }
     },
     "size": 16
@@ -69,7 +68,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "LabyrinthSecrets"
+        "table": "LabyrinthSecrets"
       }
     },
     "size": 16
@@ -84,7 +83,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "LabyrinthAreas"
+        "table": "LabyrinthAreas"
       }
     },
     "size": 16
@@ -127,7 +126,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "LabyrinthNodeOverrides"
+        "table": "LabyrinthNodeOverrides"
       }
     },
     "size": 16

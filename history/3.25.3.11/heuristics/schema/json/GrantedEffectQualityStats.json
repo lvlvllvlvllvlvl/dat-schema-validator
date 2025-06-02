@@ -3,13 +3,13 @@
     "name": "GrantedEffectsKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "GrantedEffects"
+        "table": "GrantedEffects"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -54,7 +54,8 @@
     "offset": 48,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -66,6 +67,7 @@
     "offset": 64,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

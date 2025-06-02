@@ -3,13 +3,13 @@
     "name": "WorldAreas",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -18,7 +18,7 @@
     "name": "",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -69,7 +69,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -102,7 +102,7 @@
     "name": "",
     "offset": 60,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

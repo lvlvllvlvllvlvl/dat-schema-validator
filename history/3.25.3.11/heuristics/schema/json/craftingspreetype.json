@@ -5,7 +5,8 @@
       "string": {}
     },
     "offset": 0,
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "type": {
@@ -16,7 +17,8 @@
     },
     "offset": 8,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -28,7 +30,8 @@
     },
     "offset": 24,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -39,7 +42,8 @@
     },
     "offset": 40,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -57,7 +61,8 @@
     },
     "offset": 57,
     "size": 8,
-    "unique": false
+    "unique": false,
+    "localized": true
   },
   {
     "type": {

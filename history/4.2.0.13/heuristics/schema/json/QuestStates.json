@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Quest"
+        "table": "Quest"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -69,7 +69,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",
@@ -93,7 +94,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "MapPinsKeys1",
@@ -105,7 +107,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MapPins"
+        "table": "MapPins"
       }
     },
     "size": 16
@@ -132,7 +134,8 @@
     },
     "offset": 89,
     "size": 8,
-    "unique": false
+    "unique": false,
+    "localized": true
   },
   {
     "type": {
@@ -154,7 +157,8 @@
     },
     "offset": 113,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -175,7 +179,8 @@
     },
     "offset": 130,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -187,7 +192,8 @@
     },
     "offset": 146,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -221,7 +227,8 @@
     },
     "offset": 182,
     "size": 8,
-    "unique": false
+    "unique": false,
+    "localized": true
   },
   {
     "type": {
@@ -232,6 +239,7 @@
     },
     "offset": 190,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

@@ -15,13 +15,13 @@
     "name": "ExtraFeature",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ExtraTerrainFeatures"
+        "table": "ExtraTerrainFeatures"
       }
     },
     "size": 16
@@ -36,7 +36,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ExpeditionFactions"
+        "table": "ExpeditionFactions"
       }
     },
     "size": 16
@@ -90,13 +90,13 @@
     "name": "Area",
     "offset": 52,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -111,7 +111,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ExpeditionAreas"
+        "table": "ExpeditionAreas"
       }
     },
     "size": 16
@@ -153,7 +153,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16

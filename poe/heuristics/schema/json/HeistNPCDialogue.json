@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "DialogueEvent"
+        "table": "DialogueEvent"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistNPCs"
+        "table": "HeistNPCs"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16

@@ -21,19 +21,20 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "ItemTag",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16

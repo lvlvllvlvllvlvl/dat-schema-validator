@@ -36,7 +36,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",
@@ -57,7 +58,7 @@
     "name": "ActNumber",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -72,7 +73,7 @@
     "name": "WorldPanelImage",
     "offset": 28,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -144,7 +145,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16

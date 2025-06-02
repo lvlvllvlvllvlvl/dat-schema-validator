@@ -24,7 +24,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "CraftingItemClassCategoriesKeys",
@@ -36,7 +37,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "CraftingItemClassCategories"
+        "table": "CraftingItemClassCategories"
       }
     },
     "size": 16
@@ -51,7 +52,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Rank",
@@ -72,13 +74,13 @@
     "name": "UnlockArea",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16

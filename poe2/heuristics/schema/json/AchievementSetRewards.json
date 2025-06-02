@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -69,7 +69,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "NotificationIcon",
@@ -93,7 +94,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Id",

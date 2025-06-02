@@ -42,7 +42,7 @@ export function tableGQL(table: Table, headers: NamedHeader[], err: (...args) =>
       } else if (header.type.decimal?.size === 8) {
         type = "f64";
       } else if (header.type.key) {
-        type = header.type.key.foreign ? header.type.key.name ?? "rid" : table.name;
+        type = header.type.key.foreign ? header.type.key.table ?? "rid" : table.name;
       }
 
       const directives = [] as string[];

@@ -36,7 +36,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -111,7 +111,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -165,7 +165,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -210,7 +210,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -240,7 +240,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "PackFormation"
+        "table": "PackFormation"
       }
     },
     "size": 16
@@ -278,7 +278,8 @@
       "string": {}
     },
     "offset": 158,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "name": "",
@@ -350,7 +351,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NecropolisPacks"
+        "table": "NecropolisPacks"
       }
     },
     "size": 16

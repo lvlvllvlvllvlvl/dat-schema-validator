@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -53,7 +53,8 @@
     },
     "offset": 12,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -64,6 +65,7 @@
     },
     "offset": 28,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

@@ -21,7 +21,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterTypes"
+        "table": "MonsterTypes"
       }
     },
     "size": 16
@@ -132,7 +132,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -276,7 +276,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -396,7 +396,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "GrantedEffects"
+        "table": "GrantedEffects"
       }
     },
     "size": 16
@@ -423,7 +423,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -464,7 +464,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "DamageMultiplier",
@@ -521,7 +522,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -536,7 +537,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -551,7 +552,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -566,7 +567,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemClasses"
+        "table": "ItemClasses"
       }
     },
     "size": 16
@@ -581,7 +582,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemClasses"
+        "table": "ItemClasses"
       }
     },
     "size": 16
@@ -596,7 +597,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -626,7 +627,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -641,7 +642,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -656,7 +657,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -767,7 +768,7 @@
     "name": "HASH16",
     "offset": 453,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -800,7 +801,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "KillWhileOnslaughtIsActive_AchievementItemsKey",
@@ -812,7 +814,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -827,7 +829,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterSegments"
+        "table": "MonsterSegments"
       }
     },
     "size": 16
@@ -842,7 +844,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterArmours"
+        "table": "MonsterArmours"
       }
     },
     "size": 16
@@ -857,7 +859,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -872,7 +874,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -887,7 +889,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -902,7 +904,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -1164,7 +1166,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterConditionalEffectPacks"
+        "table": "MonsterConditionalEffectPacks"
       }
     },
     "size": 16

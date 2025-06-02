@@ -3,13 +3,13 @@
     "name": "HeistContractsKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistContracts"
+        "table": "HeistContracts"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistObjectives"
+        "table": "HeistObjectives"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "HeistNPCs"
+        "table": "HeistNPCs"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistJobs"
+        "table": "HeistJobs"
       }
     },
     "size": 16
@@ -63,7 +63,7 @@
     "name": "",
     "offset": 64,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -120,13 +120,13 @@
     "name": "HeistRoomsKey1",
     "offset": 77,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistRooms"
+        "table": "HeistRooms"
       }
     },
     "size": 16
@@ -141,7 +141,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -174,7 +174,7 @@
     "name": "",
     "offset": 111,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -234,7 +234,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -261,7 +261,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -270,13 +270,13 @@
     "name": "HaveQuest",
     "offset": 154,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -291,7 +291,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -330,7 +330,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",
@@ -354,7 +355,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -381,7 +382,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistIntroAreas"
+        "table": "HeistIntroAreas"
       }
     },
     "size": 16
@@ -411,7 +412,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistRooms"
+        "table": "HeistRooms"
       }
     },
     "size": 16

@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -39,13 +39,14 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "HASH16",
     "offset": 28,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -66,7 +67,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16

@@ -21,7 +21,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -36,7 +36,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -63,7 +63,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "PlayerConditions"
+        "table": "PlayerConditions"
       }
     },
     "size": 16
@@ -78,7 +78,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterDeathConditions"
+        "table": "MonsterDeathConditions"
       }
     },
     "size": 16
@@ -172,7 +172,8 @@
     "offset": 115,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -184,7 +185,8 @@
     "offset": 131,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -196,7 +198,8 @@
     "offset": 147,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -232,7 +235,8 @@
     "offset": 183,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -278,7 +282,8 @@
       }
     },
     "offset": 208,
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "type": {

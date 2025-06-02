@@ -3,6 +3,6 @@ enum ElderBossArenas @indexing(first: 0) { _ }
 enum ElderMapBossOverride @indexing(first: 0) { _ }
 
 type ElderGuardians {
-  Id: string
+  Id: string @unique
   MapIcon: string
 }

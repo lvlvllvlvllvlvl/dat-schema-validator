@@ -3,13 +3,13 @@
     "name": "MonsterVarietiesKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BestiaryGroups"
+        "table": "BestiaryGroups"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BestiaryEncounters"
+        "table": "BestiaryEncounters"
       }
     },
     "size": 16
@@ -90,7 +90,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -105,7 +105,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BestiaryGenus"
+        "table": "BestiaryGenus"
       }
     },
     "size": 16
@@ -131,8 +131,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "BestiaryCapturableMonsters"
+        "foreign": false
       }
     },
     "size": 8

@@ -3,13 +3,13 @@
     "name": "HideoutArea",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -18,7 +18,7 @@
     "name": "HASH16",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -51,7 +51,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -66,7 +66,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -120,7 +120,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HideoutRarity"
+        "table": "HideoutRarity"
       }
     },
     "size": 16
@@ -141,7 +141,7 @@
     "name": "Name",
     "offset": 88,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -218,6 +218,7 @@
     },
     "offset": 131,
     "size": 8,
-    "unique": false
+    "unique": false,
+    "localized": true
   }
 ]

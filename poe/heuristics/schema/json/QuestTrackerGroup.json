@@ -15,13 +15,14 @@
     "name": "Name",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "QuestType",
@@ -33,7 +34,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestType"
+        "table": "QuestType"
       }
     },
     "size": 16

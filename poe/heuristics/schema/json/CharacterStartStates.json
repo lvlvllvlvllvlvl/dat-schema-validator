@@ -21,7 +21,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "CharactersKey",
@@ -33,7 +34,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Characters"
+        "table": "Characters"
       }
     },
     "size": 16
@@ -63,7 +64,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "PassiveSkills"
+        "table": "PassiveSkills"
       }
     },
     "size": 16
@@ -78,7 +79,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "CharacterStartStateSet"
+        "table": "CharacterStartStateSet"
       }
     },
     "size": 16
@@ -107,7 +108,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "CharacterStartQuestState"
+        "table": "CharacterStartQuestState"
       }
     },
     "size": 16

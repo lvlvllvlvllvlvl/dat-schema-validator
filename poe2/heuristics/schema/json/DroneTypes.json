@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -15,13 +15,13 @@
     "name": "",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -30,13 +30,13 @@
     "name": "",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -45,37 +45,39 @@
     "name": "DeployText",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",
     "offset": 48,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "UnlockedStat",
     "offset": 56,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -84,24 +86,26 @@
     "name": "SocketableText",
     "offset": 72,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "NotPoweredText",
     "offset": 80,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   }
 ]

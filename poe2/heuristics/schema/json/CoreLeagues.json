@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -39,13 +39,13 @@
     "name": "",
     "offset": 10,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -60,7 +60,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -69,13 +69,13 @@
     "name": "",
     "offset": 42,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -90,7 +90,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -99,13 +99,13 @@
     "name": "",
     "offset": 74,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -120,7 +120,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -135,7 +135,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -191,7 +191,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -230,7 +230,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16

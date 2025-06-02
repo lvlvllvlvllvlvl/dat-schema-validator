@@ -15,7 +15,7 @@
     "name": "HASH16",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -36,7 +36,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ModType"
+        "table": "ModType"
       }
     },
     "size": 16
@@ -66,7 +66,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -81,7 +81,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -96,7 +96,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -111,7 +111,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -141,7 +141,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "GenerationType",
@@ -168,7 +169,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ModFamily"
+        "table": "ModFamily"
       }
     },
     "size": 16
@@ -303,7 +304,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -333,7 +334,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -348,7 +349,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "GrantedEffectsPerLevel"
+        "table": "GrantedEffectsPerLevel"
       }
     },
     "size": 16
@@ -390,7 +391,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -405,7 +406,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ModType"
+        "table": "ModType"
       }
     },
     "size": 16
@@ -450,7 +451,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -465,7 +466,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -480,7 +481,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -495,7 +496,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -525,7 +526,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -582,7 +583,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -624,7 +625,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ItemClasses"
+        "table": "ItemClasses"
       }
     },
     "size": 16
@@ -666,7 +667,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "GrantedEffectsPerLevel"
+        "table": "GrantedEffectsPerLevel"
       }
     },
     "size": 16
@@ -711,7 +712,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -726,7 +727,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -786,7 +787,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -1053,7 +1054,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BuffTemplates"
+        "table": "BuffTemplates"
       }
     },
     "size": 16
@@ -1067,8 +1068,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "Mods"
+        "foreign": false
       }
     },
     "size": 8
@@ -1077,7 +1077,7 @@
     "name": "HASH32",
     "offset": 613,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -1127,7 +1127,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "GrantedEffectsPerLevel"
+        "table": "GrantedEffectsPerLevel"
       }
     },
     "size": 16

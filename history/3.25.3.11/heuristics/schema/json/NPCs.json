@@ -21,7 +21,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Metadata",
@@ -59,7 +60,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCMaster"
+        "table": "NPCMaster"
       }
     },
     "size": 16
@@ -74,7 +75,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",
@@ -101,7 +103,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "NPCAudio"
+        "table": "NPCAudio"
       }
     },
     "size": 16
@@ -116,7 +118,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "NPCAudio"
+        "table": "NPCAudio"
       }
     },
     "size": 16
@@ -125,7 +127,7 @@
     "name": "HASH16",
     "offset": 100,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -145,8 +147,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "NPCs"
+        "foreign": false
       }
     },
     "size": 8
@@ -161,7 +162,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCPortraits"
+        "table": "NPCPortraits"
       }
     },
     "size": 16
@@ -176,7 +177,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCDialogueStyles"
+        "table": "NPCDialogueStyles"
       }
     },
     "size": 16

@@ -3,7 +3,7 @@
     "name": "",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -198,7 +198,8 @@
     "offset": 58,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -375,7 +376,8 @@
       "string": {}
     },
     "offset": 123,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -396,7 +398,8 @@
     },
     "offset": 147,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -447,7 +450,8 @@
     },
     "offset": 184,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {

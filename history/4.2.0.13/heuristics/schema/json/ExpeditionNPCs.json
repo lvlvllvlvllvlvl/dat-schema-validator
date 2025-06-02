@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -21,7 +21,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "NPCs"
+        "table": "NPCs"
       }
     },
     "size": 16
@@ -36,7 +36,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -75,13 +75,13 @@
     "name": "",
     "offset": 48,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -90,13 +90,13 @@
     "name": "Faction",
     "offset": 64,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ExpeditionFactions"
+        "table": "ExpeditionFactions"
       }
     },
     "size": 16
@@ -105,13 +105,13 @@
     "name": "Reroll",
     "offset": 80,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -120,13 +120,13 @@
     "name": "AllBombsPlaced",
     "offset": 96,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -135,13 +135,13 @@
     "name": "BombPlacedRemnant",
     "offset": 112,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -150,13 +150,13 @@
     "name": "BombPlacedTreasure",
     "offset": 128,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -165,13 +165,13 @@
     "name": "BombPlacedMonsters",
     "offset": 144,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -180,13 +180,13 @@
     "name": "BombPlacedGeneric",
     "offset": 160,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -195,13 +195,13 @@
     "name": "EncounterComplete",
     "offset": 176,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16

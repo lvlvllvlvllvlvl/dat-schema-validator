@@ -3,7 +3,7 @@
     "name": "",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -17,7 +17,9 @@
       "string": {}
     },
     "offset": 8,
-    "size": 8
+    "size": 8,
+    "unique": true,
+    "localized": true
   },
   {
     "type": {
@@ -25,7 +27,8 @@
       "string": {}
     },
     "offset": 16,
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "type": {
@@ -35,7 +38,8 @@
       }
     },
     "offset": 24,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -45,7 +49,8 @@
       }
     },
     "offset": 40,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -53,6 +58,8 @@
       "string": {}
     },
     "offset": 56,
-    "size": 8
+    "size": 8,
+    "unique": true,
+    "localized": true
   }
 ]

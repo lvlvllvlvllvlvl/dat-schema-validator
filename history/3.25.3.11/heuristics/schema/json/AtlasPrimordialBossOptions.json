@@ -3,7 +3,7 @@
     "name": "",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -18,7 +18,7 @@
     "name": "",
     "offset": 4,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -33,7 +33,7 @@
     "name": "DefaultIcon",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -45,7 +45,7 @@
     "name": "HoverIcon",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -57,7 +57,7 @@
     "name": "HighlightIcon",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -81,13 +81,13 @@
     "name": "Description",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ClientStrings"
+        "table": "ClientStrings"
       }
     },
     "size": 16
@@ -96,13 +96,13 @@
     "name": "DescriptionActive",
     "offset": 56,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ClientStrings"
+        "table": "ClientStrings"
       }
     },
     "size": 16
@@ -111,7 +111,7 @@
     "name": "ProgressTracker",
     "offset": 72,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -123,7 +123,7 @@
     "name": "ProgressTrackerFill",
     "offset": 80,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -135,19 +135,20 @@
     "name": "Name",
     "offset": 88,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "MapDeviceTrackerFill",
     "offset": 96,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

@@ -21,7 +21,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "TradeMarketCategory",
@@ -33,7 +34,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "TradeMarketCategory"
+        "table": "TradeMarketCategory"
       }
     },
     "size": 16
@@ -48,7 +49,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemClassCategories"
+        "table": "ItemClassCategories"
       }
     },
     "size": 16
@@ -75,7 +76,8 @@
     "offset": 49,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "IdentifyAchievements",
@@ -87,7 +89,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -138,7 +140,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -252,7 +254,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemStances"
+        "table": "ItemStances"
       }
     },
     "size": 16
@@ -357,7 +359,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16

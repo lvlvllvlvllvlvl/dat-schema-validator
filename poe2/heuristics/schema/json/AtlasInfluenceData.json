@@ -3,13 +3,13 @@
     "name": "InfluencePack",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AtlasInfluenceOutcomes"
+        "table": "AtlasInfluenceOutcomes"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterPacks"
+        "table": "MonsterPacks"
       }
     },
     "size": 16
@@ -53,7 +53,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -128,7 +128,8 @@
     },
     "offset": 80,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",

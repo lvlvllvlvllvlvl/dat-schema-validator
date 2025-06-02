@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Words"
+        "table": "Words"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "UniqueStashTypes"
+        "table": "UniqueStashTypes"
       }
     },
     "size": 16
@@ -137,8 +137,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "UniqueStashLayout"
+        "foreign": false
       }
     },
     "size": 8
@@ -152,8 +151,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "UniqueStashLayout"
+        "foreign": false
       }
     },
     "size": 8

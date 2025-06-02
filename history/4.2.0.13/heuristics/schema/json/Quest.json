@@ -36,7 +36,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Icon_DDSFile",
@@ -87,7 +88,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestType"
+        "table": "QuestType"
       }
     },
     "size": 16
@@ -132,7 +133,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestTrackerGroup"
+        "table": "QuestTrackerGroup"
       }
     },
     "size": 16
@@ -167,7 +168,8 @@
     },
     "offset": 87,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -178,6 +180,7 @@
     },
     "offset": 103,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

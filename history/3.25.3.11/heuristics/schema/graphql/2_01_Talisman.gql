@@ -4,7 +4,7 @@ type TalismanMonsterMods {
 }
 
 type TalismanPacks {
-  Id: string
+  Id: string @unique
   MonsterPacksKeys: [MonsterPacks]
   _: i32
   _: i32

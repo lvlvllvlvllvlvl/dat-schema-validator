@@ -15,13 +15,13 @@
     "name": "BaseItemTypesKey",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -30,7 +30,7 @@
     "name": "HASH16",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -45,7 +45,7 @@
     "name": "HASH32",
     "offset": 28,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -117,7 +117,8 @@
       }
     },
     "offset": 42,
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "type": {
@@ -177,7 +178,8 @@
       }
     },
     "offset": 74,
-    "size": 4
+    "size": 4,
+    "unique": true
   },
   {
     "type": {

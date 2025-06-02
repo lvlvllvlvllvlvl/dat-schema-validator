@@ -84,10 +84,48 @@ export class DbBuilder {
 
     await builder.execute();
 
+    const text: Record<string, Record<string, any>[]> = {};
+    for (const {
+      column: { name, offset },
+      rows,
+    } of data.filter((d) => d.column.localized)) {
+      const column = name || `offset_${offset}`;
+      for (const [lang, values] of Object.entries(rows)) {
+        const result = (text[lang] = text[lang] || []);
+        values.forEach((value, row) => {
+          for (const text of Array.isArray(value) ? value : [value]) {
+            result.push({
+              text,
+              table,
+              column,
+              row,
+            });
+          }
+        });
+      }
+    }
+    const rel: Record<string, any>[] = data
+      .filter((d) => d.column.type.key?.foreign)
+      .flatMap(({ column, rows: { [this._lang]: rows } }) => {
+        return rows
+          .flatMap((v, i) => (Array.isArray(v) ? v.map((v) => ({ v, i })) : [{ v, i }]))
+          .map((row) => ({
+            source_table: table,
+            source_column: column.name || `offset_${column.offset}`,
+            source_row: row.i,
+            target_table: column.type.key?.foreign ? column.type.key.table : table,
+            target_row: row.v,
+          }));
+      });
+
+    for (const [lang, values] of Object.entries(text)) {
+      await this._insertBatched(lang, values);
+    }
+    if (rel.length) await this._insertBatched("relations", rel);
+
     const col_count = data.length;
     const row_count = Object.values(data[0].rows)[0].length;
     const batchSize = Math.floor(999 / col_count);
-
     for (let index = 0; index < row_count; index += batchSize) {
       const values = this._getValues(data, index, Math.min(index + batchSize, row_count));
       try {
@@ -99,6 +137,18 @@ export class DbBuilder {
 
     if (this._dependencies[table]) {
       this._dependencies[table].resolve(row_count);
+    }
+  }
+
+  private async _insertBatched(table: string, data: Record<string, any>[]) {
+    const col_count = Object.keys(data[0]).length;
+    const row_count = data.length;
+    const batchSize = Math.floor(999 / col_count);
+    for (let index = 0; index < row_count; index += batchSize) {
+      await this._db
+        .insertInto(table)
+        .values(data.slice(index, index + batchSize))
+        .execute();
     }
   }
 

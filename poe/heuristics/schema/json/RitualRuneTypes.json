@@ -21,7 +21,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -81,7 +81,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BuffDefinitions"
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
@@ -111,7 +111,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "RitualSpawnPatterns"
+        "table": "RitualSpawnPatterns"
       }
     },
     "size": 16
@@ -126,7 +126,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -171,7 +171,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -186,7 +186,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Environments"
+        "table": "Environments"
       }
     },
     "size": 16
@@ -216,7 +216,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -231,7 +231,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Description",
@@ -243,7 +244,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "DaemonSpawningDataKey",
@@ -255,7 +257,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "DaemonSpawningData"
+        "table": "DaemonSpawningData"
       }
     },
     "size": 16

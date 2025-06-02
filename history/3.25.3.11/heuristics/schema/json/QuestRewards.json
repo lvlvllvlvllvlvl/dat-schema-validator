@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestRewardOffers"
+        "table": "QuestRewardOffers"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Characters"
+        "table": "Characters"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -125,7 +125,8 @@
     "offset": 84,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "RewardStack",
@@ -175,7 +176,8 @@
     },
     "offset": 106,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -217,7 +219,8 @@
     "offset": 130,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -273,6 +276,7 @@
     "offset": 170,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

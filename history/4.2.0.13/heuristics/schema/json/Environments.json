@@ -73,7 +73,8 @@
     },
     "offset": 64,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "EnvironmentTransitionsKey",
@@ -85,7 +86,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "EnvironmentTransitions"
+        "table": "EnvironmentTransitions"
       }
     },
     "size": 16
@@ -100,7 +101,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "PreloadGroups"
+        "table": "PreloadGroups"
       }
     },
     "size": 16

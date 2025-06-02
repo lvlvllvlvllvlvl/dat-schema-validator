@@ -60,7 +60,7 @@
     "name": "",
     "offset": 32,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -69,7 +69,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "localized": true
   },
   {
     "name": "",
@@ -96,7 +97,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -120,7 +121,7 @@
     "name": "Icon",
     "offset": 72,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -132,13 +133,13 @@
     "name": "PrecursorTabletStat",
     "offset": 80,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -153,7 +154,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -177,25 +178,27 @@
     "name": "Description",
     "offset": 128,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Name",
     "offset": 136,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "type": {
@@ -205,7 +208,8 @@
       }
     },
     "offset": 144,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -217,7 +221,8 @@
     },
     "offset": 160,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -225,7 +230,9 @@
       "string": {}
     },
     "offset": 176,
-    "size": 8
+    "size": 8,
+    "unique": true,
+    "localized": true
   },
   {
     "type": {
@@ -233,6 +240,8 @@
       "string": {}
     },
     "offset": 184,
-    "size": 8
+    "size": 8,
+    "unique": true,
+    "localized": true
   }
 ]

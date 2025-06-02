@@ -7,7 +7,8 @@
       }
     },
     "offset": 0,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -61,7 +62,8 @@
       "string": {}
     },
     "offset": 68,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -69,7 +71,8 @@
       "string": {}
     },
     "offset": 84,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -77,7 +80,8 @@
       "string": {}
     },
     "offset": 100,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -85,7 +89,8 @@
       "string": {}
     },
     "offset": 116,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -119,6 +124,7 @@
     },
     "offset": 164,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

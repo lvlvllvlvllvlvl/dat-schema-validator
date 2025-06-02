@@ -63,13 +63,13 @@ type HeistBalancePerLevel {
 type HeistChestRewardTypes {
   Id: string @unique
   Art: string
-  RewardTypeName: string
+  RewardTypeName: string @localized
   _: HeistChestRewardTypes
-  RewardRoomName: string
+  RewardRoomName: string @localized
   MinLevel: i32
   MaxLevel: i32
   Weight: i32
-  RewardRoomName2: string
+  RewardRoomName2: string @localized
   HeistJobsKey: [HeistJobs]
   _: i32
   _: i32
@@ -177,7 +177,7 @@ type HeistIntroAreas {
 
 type HeistJobs {
   Id: string @unique
-  Name: string
+  Name: string @localized
   RequiredSkillIcon: string
   SkillIcon: string
   _: f32
@@ -189,7 +189,7 @@ type HeistJobs {
   Cost_StatsKey: Stats
   ExperienceGain_StatsKey: Stats
   ConsoleBlueprintLegend: string
-  Description: string
+  Description: string @localized
 }
 
 type HeistJobsExperiencePerLevel {
@@ -264,7 +264,7 @@ type HeistObjectives {
 type HeistObjectiveValueDescriptions {
   Tier: i32
   MarkersMultiply: f32
-  Description: string
+  Description: string @localized
 }
 
 type HeistPatrolPacks {

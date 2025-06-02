@@ -5,7 +5,8 @@
       "string": {}
     },
     "offset": 0,
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "type": {
@@ -16,7 +17,8 @@
     },
     "offset": 8,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -24,7 +26,9 @@
       "string": {}
     },
     "offset": 24,
-    "size": 8
+    "size": 8,
+    "unique": true,
+    "localized": true
   },
   {
     "type": {
@@ -35,7 +39,8 @@
     },
     "offset": 32,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {

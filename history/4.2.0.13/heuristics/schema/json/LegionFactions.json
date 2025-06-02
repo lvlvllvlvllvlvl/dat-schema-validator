@@ -36,7 +36,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "LegionBalancePerLevel"
+        "table": "LegionBalancePerLevel"
       }
     },
     "size": 16
@@ -79,7 +79,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BuffVisuals"
+        "table": "BuffVisuals"
       }
     },
     "size": 16
@@ -88,13 +88,13 @@
     "name": "MiscAnimatedKey1",
     "offset": 52,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -103,13 +103,13 @@
     "name": "MiscAnimatedKey2",
     "offset": 68,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -118,13 +118,13 @@
     "name": "MiscAnimatedKey3",
     "offset": 84,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -139,7 +139,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -148,13 +148,13 @@
     "name": "MiscAnimatedKey4",
     "offset": 116,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -169,7 +169,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -212,7 +212,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -221,13 +221,13 @@
     "name": "StatsKey",
     "offset": 172,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -236,7 +236,7 @@
     "name": "Shard",
     "offset": 188,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -248,7 +248,7 @@
     "name": "RewardJewelArt",
     "offset": 196,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

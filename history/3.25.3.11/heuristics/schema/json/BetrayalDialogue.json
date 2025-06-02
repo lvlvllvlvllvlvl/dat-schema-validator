@@ -68,7 +68,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BetrayalTargets"
+        "table": "BetrayalTargets"
       }
     },
     "size": 16
@@ -126,7 +126,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BetrayalUpgrades"
+        "table": "BetrayalUpgrades"
       }
     },
     "size": 16
@@ -203,13 +203,13 @@
     "name": "NPCTextAudioKey",
     "offset": 158,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16

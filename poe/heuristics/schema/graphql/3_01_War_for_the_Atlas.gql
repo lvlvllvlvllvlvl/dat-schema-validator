@@ -11,6 +11,6 @@ type ElderMapBossOverride {
 }
 
 type ElderGuardians {
-  Id: string
+  Id: string @unique
   MapIcon: string
 }

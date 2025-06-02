@@ -3,7 +3,7 @@
     "name": "Tier",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -18,13 +18,14 @@
     "name": "Name",
     "offset": 4,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "OfferingItem",
@@ -36,7 +37,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -45,13 +46,13 @@
     "name": "QuestFlag",
     "offset": 28,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -66,7 +67,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "LabyrinthTrials"
+        "table": "LabyrinthTrials"
       }
     },
     "size": 16
@@ -75,7 +76,7 @@
     "name": "AreaLevel",
     "offset": 60,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -105,13 +106,13 @@
     "name": "JewelReward",
     "offset": 68,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Words"
+        "table": "Words"
       }
     },
     "size": 16
@@ -150,7 +151,7 @@
     "name": "MinLevel",
     "offset": 116,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -165,7 +166,7 @@
     "name": "",
     "offset": 120,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -180,7 +181,7 @@
     "name": "",
     "offset": 124,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -201,7 +202,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ClientStrings"
+        "table": "ClientStrings"
       }
     },
     "size": 16

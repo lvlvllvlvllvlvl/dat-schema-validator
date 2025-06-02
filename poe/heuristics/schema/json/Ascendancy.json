@@ -36,7 +36,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Characters"
+        "table": "Characters"
       }
     },
     "size": 16
@@ -45,7 +45,7 @@
     "name": "CoordinateRect",
     "offset": 28,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -69,31 +69,33 @@
     "name": "Name",
     "offset": 44,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "FlavourText",
     "offset": 52,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "OGGFile",
     "offset": 60,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -105,7 +107,7 @@
     "name": "PassiveTreeImage",
     "offset": 68,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -147,7 +149,7 @@
     "name": "BackgroundImage",
     "offset": 84,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -159,25 +161,27 @@
     "name": "LeagueName",
     "offset": 92,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "LeagueFlavourText",
     "offset": 100,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "LeagueBackgroundImage",
@@ -237,7 +241,7 @@
     "name": "LeagueIcon",
     "offset": 132,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

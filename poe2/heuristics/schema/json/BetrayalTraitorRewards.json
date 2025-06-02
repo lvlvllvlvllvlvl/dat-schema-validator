@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BetrayalJobs"
+        "table": "BetrayalJobs"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BetrayalTargets"
+        "table": "BetrayalTargets"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BetrayalRanks"
+        "table": "BetrayalRanks"
       }
     },
     "size": 16
@@ -54,7 +54,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Description2",
@@ -66,6 +67,7 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   }
 ]

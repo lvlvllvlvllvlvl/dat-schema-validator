@@ -21,7 +21,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "PassiveSkillMasteryEffects"
+        "table": "PassiveSkillMasteryEffects"
       }
     },
     "size": 16
@@ -30,7 +30,7 @@
     "name": "InactiveIcon",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -42,7 +42,7 @@
     "name": "ActiveIcon",
     "offset": 32,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -54,7 +54,7 @@
     "name": "ActiveEffectImage",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -84,7 +84,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "SoundEffects"
+        "table": "SoundEffects"
       }
     },
     "size": 16
@@ -93,13 +93,13 @@
     "name": "MasteryCountStat",
     "offset": 65,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16

@@ -3,13 +3,13 @@
     "name": "Result",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ArchnemesisMods"
+        "table": "ArchnemesisMods"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ArchnemesisMods"
+        "table": "ArchnemesisMods"
       }
     },
     "size": 16
@@ -33,7 +33,7 @@
     "name": "",
     "offset": 32,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

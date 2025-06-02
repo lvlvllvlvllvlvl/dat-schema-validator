@@ -3,13 +3,13 @@
     "name": "MonsterVarietiesKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -114,7 +114,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -144,7 +144,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -159,7 +159,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -208,7 +208,8 @@
     },
     "offset": 152,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -219,7 +220,8 @@
     },
     "offset": 168,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -241,7 +243,8 @@
     },
     "offset": 200,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -253,7 +256,8 @@
     },
     "offset": 216,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -274,7 +278,8 @@
       }
     },
     "offset": 248,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -284,7 +289,8 @@
       }
     },
     "offset": 264,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {

@@ -1,5 +1,5 @@
 type AncestralEmbraceVariations {
-  Id: string
+  Id: string @unique
   Minion: MonsterVarieties
   _: rid
 }
@@ -34,7 +34,7 @@ type AncestralTrialDialogue {
 }
 
 type AncestralTrialDialogueEvents {
-  Id: string
+  Id: string @unique
   _: i32
 }
 
@@ -42,21 +42,21 @@ type AncestralTrialFieldItems {
   _: rid
   _: rid
   HASH32: i32
-  Description: string
+  Description: string @localized
   Achievement: [AchievementItems]
   _: rid
   _: rid
 }
 
 type AncestralTrialItems {
-  Id: string
+  Id: string @unique
   HASH16: i32
-  Name: string
+  Name: string @localized
   Image: string
   _: rid
   _: i32
   Mods: [Mods]
-  FlavorText: string
+  FlavorText: string @localized
   _: i32
   _: [_] # All rows empty
   _: rid
@@ -76,9 +76,9 @@ type AncestralTrialMonsters {
 }
 
 type AncestralTrialPositionType {
-  Id: string
+  Id: string @unique
   PlayerTotemIcon: string
-  Name: string
+  Name: string @localized
   EnemyTotemIcon: string
   PlayerTotemSmallIcon: string
   EnemyTotemSmallIcon: string
@@ -105,10 +105,10 @@ type AncestralTrialTribes {
   _: rid
   Portrait: string
   TribeIcon: string
-  TribeName: string @unique
+  TribeName: string @unique @localized
   FavourTracker: string
   _: [rid]
-  Name: string
+  Name: string @localized
   _: rid
   _: rid
   _: rid
@@ -124,7 +124,7 @@ type AncestralTrialTribes {
 }
 
 type AncestralTrialUnitPositions {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32
@@ -132,14 +132,14 @@ type AncestralTrialUnitPositions {
 }
 
 type AncestralTrialUnits {
-  Id: string
-  Name: string
+  Id: string @unique
+  Name: string @localized
   Tribe: AncestralTrialTribes
   Image: string
   TotemImage: string
   HASH16: i32
   _: i32
-  Description: string
+  Description: string @localized
   _: i32
   _: i32
   Position: AncestralTrialUnitPositions
@@ -159,8 +159,8 @@ type PassiveSkillTattoos {
 }
 
 type PassiveSkillTattooTargetSets {
-  Id: string
+  Id: string @unique
   Set: [i32]
-  Name: string
-  Qualifier: string
+  Name: string @localized
+  Qualifier: string @localized
 }

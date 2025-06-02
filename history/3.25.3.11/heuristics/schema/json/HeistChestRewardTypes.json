@@ -33,7 +33,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",
@@ -44,8 +45,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "HeistChestRewardTypes"
+        "foreign": false
       }
     },
     "size": 8
@@ -60,7 +60,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "MinLevel",
@@ -117,7 +118,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "HeistJobsKey",
@@ -129,7 +131,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "HeistJobs"
+        "table": "HeistJobs"
       }
     },
     "size": 16

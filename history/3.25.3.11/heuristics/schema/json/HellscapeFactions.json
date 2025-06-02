@@ -15,13 +15,13 @@
     "name": "",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Environments"
+        "table": "Environments"
       }
     },
     "size": 16
@@ -30,13 +30,13 @@
     "name": "",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Environments"
+        "table": "Environments"
       }
     },
     "size": 16
@@ -51,7 +51,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Environments"
+        "table": "Environments"
       }
     },
     "size": 16
@@ -60,7 +60,7 @@
     "name": "",
     "offset": 56,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -81,7 +81,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -90,7 +90,7 @@
     "name": "",
     "offset": 76,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -102,13 +102,13 @@
     "name": "Boss",
     "offset": 84,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16

@@ -42,7 +42,7 @@ type AfflictionRewardMapMods {
 type AfflictionRewardTypeVisuals {
   AfflictionRewardTypes: AfflictionRewardTypes
   Id: string
-  Name: string
+  Name: string @localized
 }
 
 type AfflictionSplitDemons {

@@ -322,7 +322,8 @@ export interface NamedHeader extends Header {
   size?: number;
   type: Header["type"] & {
     key?: {
-      name?: string;
+      table?: string;
+      column?: string;
     };
   };
 }
@@ -404,12 +405,17 @@ export function importHeaders(
           string: column.type === "string" ? {} : undefined,
           boolean: column.type === "bool" ? true : undefined,
           key:
-            column.type === "row" || column.type === "foreignrow"
-              ? {
-                  foreign: column.type === "foreignrow",
-                  name: column.references?.table,
-                }
-              : undefined,
+            column.type === "row"
+              ? { foreign: false }
+              : column.type === "foreignrow"
+                ? column.references
+                  ? {
+                      foreign: true,
+                      table: column.references.table,
+                      column: "column" in column.references ? column.references.column : undefined,
+                    }
+                  : { foreign: true }
+                : undefined,
         };
       }
       headers.push({

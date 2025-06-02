@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -69,7 +69,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterPacks"
+        "table": "MonsterPacks"
       }
     },
     "size": 16
@@ -84,7 +84,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -137,8 +137,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "Maps"
+        "foreign": false
       }
     },
     "size": 8
@@ -167,8 +166,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "Maps"
+        "foreign": false
       }
     },
     "size": 8
@@ -182,8 +180,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "Maps"
+        "foreign": false
       }
     },
     "size": 8
@@ -197,8 +194,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "Maps"
+        "foreign": false
       }
     },
     "size": 8

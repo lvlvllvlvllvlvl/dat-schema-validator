@@ -33,13 +33,13 @@
     "name": "MiscObject",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscObjects"
+        "table": "MiscObjects"
       }
     },
     "size": 16

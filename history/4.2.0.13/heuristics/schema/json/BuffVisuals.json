@@ -57,7 +57,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "PreloadGroups"
+        "table": "PreloadGroups"
       }
     },
     "size": 16
@@ -84,7 +84,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "MiscAnimated1",
@@ -96,7 +97,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -111,7 +112,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -126,7 +127,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "EPKFile",
@@ -201,7 +203,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "BuffVisualOrbs"
+        "table": "BuffVisualOrbs"
       }
     },
     "size": 16
@@ -216,7 +218,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -320,6 +322,7 @@
     "offset": 244,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   }
 ]

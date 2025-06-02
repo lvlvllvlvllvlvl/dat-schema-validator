@@ -1,4 +1,4 @@
 type BeyondFactions {
-  Id: string
+  Id: string @unique
   Boss: MonsterVarieties
 }

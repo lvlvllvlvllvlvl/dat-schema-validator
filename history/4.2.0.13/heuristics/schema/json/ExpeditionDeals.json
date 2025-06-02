@@ -48,7 +48,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCTextAudio"
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -76,7 +76,8 @@
     },
     "offset": 40,
     "size": 4,
-    "unique": false
+    "unique": false,
+    "localized": true
   },
   {
     "type": {

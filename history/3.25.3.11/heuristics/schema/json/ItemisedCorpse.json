@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -18,13 +18,13 @@
     "name": "MonsterVariety",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -39,7 +39,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "MonsterCategory",
@@ -51,7 +52,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "CorpseTypeTags"
+        "table": "CorpseTypeTags"
       }
     },
     "size": 16

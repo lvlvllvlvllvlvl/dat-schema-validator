@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -21,7 +21,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -64,7 +64,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "BuffVisuals"
+        "table": "BuffVisuals"
       }
     },
     "size": 16
@@ -79,7 +79,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -94,7 +94,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "MiscAnimated"
+        "table": "MiscAnimated"
       }
     },
     "size": 16

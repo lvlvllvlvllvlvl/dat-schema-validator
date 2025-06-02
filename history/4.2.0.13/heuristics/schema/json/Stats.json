@@ -72,7 +72,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",
@@ -107,8 +108,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "Stats"
+        "foreign": false
       }
     },
     "size": 8
@@ -122,8 +122,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "Stats"
+        "foreign": false
       }
     },
     "size": 8
@@ -144,7 +143,7 @@
     "name": "HASH32",
     "offset": 42,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -177,7 +176,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "PassiveSkillStatCategories"
+        "table": "PassiveSkillStatCategories"
       }
     },
     "size": 16
@@ -228,7 +227,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "VirtualStatContextFlags"
+        "table": "VirtualStatContextFlags"
       }
     },
     "size": 16
@@ -243,7 +242,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "VirtualStatContextFlags"
+        "table": "VirtualStatContextFlags"
       }
     },
     "size": 16

@@ -33,7 +33,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ActiveSkillType"
+        "table": "ActiveSkillType"
       }
     },
     "size": 16
@@ -75,7 +75,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ActiveSkillType"
+        "table": "ActiveSkillType"
       }
     },
     "size": 16
@@ -90,7 +90,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ActiveSkillType"
+        "table": "ActiveSkillType"
       }
     },
     "size": 16
@@ -189,7 +189,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ActiveSkills"
+        "table": "ActiveSkills"
       }
     },
     "size": 16
@@ -228,7 +228,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ActiveSkillType"
+        "table": "ActiveSkillType"
       }
     },
     "size": 16
@@ -243,7 +243,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Animation"
+        "table": "Animation"
       }
     },
     "size": 16
@@ -258,7 +258,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MultiPartAchievements"
+        "table": "MultiPartAchievements"
       }
     },
     "size": 16
@@ -285,7 +285,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ItemClasses"
+        "table": "ItemClasses"
       }
     },
     "size": 16
@@ -299,8 +299,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "GrantedEffects"
+        "foreign": false
       }
     },
     "size": 8
@@ -372,7 +371,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "GrantedEffectStatSets"
+        "table": "GrantedEffectStatSets"
       }
     },
     "size": 16

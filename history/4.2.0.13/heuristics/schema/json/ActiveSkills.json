@@ -21,7 +21,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Description",
@@ -33,7 +34,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "ActionType",
@@ -45,7 +47,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ActionTypes"
+        "table": "ActionTypes"
       }
     },
     "size": 16
@@ -87,7 +89,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ActiveSkillType"
+        "table": "ActiveSkillType"
       }
     },
     "size": 16
@@ -189,7 +191,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -204,7 +206,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -219,7 +221,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ActiveSkillType"
+        "table": "ActiveSkillType"
       }
     },
     "size": 16
@@ -258,7 +260,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -288,7 +290,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AlternateSkillTargetingBehaviours"
+        "table": "AlternateSkillTargetingBehaviours"
       }
     },
     "size": 16
@@ -327,7 +329,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "VirtualStatContextFlags"
+        "table": "VirtualStatContextFlags"
       }
     },
     "size": 16
@@ -378,7 +380,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ShapeShiftForms"
+        "table": "ShapeShiftForms"
       }
     },
     "size": 16
@@ -405,7 +407,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "CharacterAudioEvents"
+        "table": "CharacterAudioEvents"
       }
     },
     "size": 16
@@ -432,7 +434,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MinionType"
+        "table": "MinionType"
       }
     },
     "size": 16
@@ -473,7 +475,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "StatDescriptionType",
@@ -512,7 +515,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ActiveSkillWeaponRequirement"
+        "table": "ActiveSkillWeaponRequirement"
       }
     },
     "size": 16

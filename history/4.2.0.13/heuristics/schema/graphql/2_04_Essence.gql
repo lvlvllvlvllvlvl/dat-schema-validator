@@ -17,7 +17,7 @@ type Essences {
 }
 
 type EssenceType {
-  Id: string
+  Id: string @unique
   EssenceType: i32
   IsCorruptedEssence: bool
   WordsKey: Words

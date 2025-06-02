@@ -15,19 +15,20 @@
     "name": "Name",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Icon",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -39,7 +40,7 @@
     "name": "IconSmall",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -51,7 +52,7 @@
     "name": "Illustration",
     "offset": 32,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -63,7 +64,7 @@
     "name": "PageArt",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -75,13 +76,14 @@
     "name": "FlavourText",
     "offset": 48,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "",
@@ -99,13 +101,13 @@
     "name": "TagsKey",
     "offset": 57,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -114,7 +116,7 @@
     "name": "",
     "offset": 73,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -135,7 +137,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -144,13 +146,13 @@
     "name": "CurrencyItemsKey",
     "offset": 93,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "CurrencyItems"
+        "table": "CurrencyItems"
       }
     },
     "size": 16

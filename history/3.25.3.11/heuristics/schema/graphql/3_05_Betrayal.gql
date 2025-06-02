@@ -1,12 +1,12 @@
 type BetrayalChoiceActions {
-  Id: string
+  Id: string @unique
   BetrayalChoicesKey: BetrayalChoices
   ClientStringsKey: ClientStrings
 }
 
 type BetrayalChoices {
-  Id: string
-  Text: string
+  Id: string @unique
+  Text: string @localized
   _: i32
   Achievements: [AchievementItems]
 }
@@ -39,8 +39,8 @@ type BetrayalForts {
 }
 
 type BetrayalJobs {
-  Id: string
-  Text: string
+  Id: string @unique
+  Text: string @localized
   ExtraTerrainFeaturesKey: ExtraTerrainFeatures
   Art: string
   _: i32
@@ -52,15 +52,15 @@ type BetrayalJobs {
 }
 
 type BetrayalRanks {
-  Id: string
-  Text: string
+  Id: string @unique
+  Text: string @localized
   Level: i32
   RankImage: string
 }
 
 type BetrayalRelationshipState {
-  Id: string
-  Text: string
+  Id: string @unique
+  Text: string @localized
 }
 
 type BetrayalTargetJobAchievements {
@@ -75,16 +75,16 @@ type BetrayalTargetLifeScalingPerLevel {
 }
 
 type BetrayalTargets {
-  Id: string
+  Id: string @unique
   BetrayalRanksKey: BetrayalRanks
   MonsterVarietiesKey: MonsterVarieties
   BetrayalJobsKey: BetrayalJobs
   Art: string
   _: bool
   ItemClasses: ItemClasses
-  FullName: string
+  FullName: string @localized
   Safehouse_ARMFile: string @file(ext: ".arm")
-  ShortName: string
+  ShortName: string @localized
   _: i32
   SafehouseLeader_AcheivementItemsKey: AchievementItems
   Level3_AchievementItemsKey: AchievementItems
@@ -99,14 +99,14 @@ type BetrayalTraitorRewards @tags(list: ["item:droptable"]) {
   BetrayalJobsKey: BetrayalJobs
   BetrayalTargetsKey: BetrayalTargets
   BetrayalRanksKey: BetrayalRanks
-  Description: string
-  Description2: string
+  Description: string @localized
+  Description2: string @localized
 }
 
 type BetrayalUpgrades {
   Id: string @unique
-  Name: string
-  Description: string
+  Name: string @localized
+  Description: string @localized
   ModsKey: [Mods]
   ArtFile: string
   BetrayalUpgradeSlotsKey: i32
@@ -127,7 +127,7 @@ type SafehouseBYOCrafting @tags(list: ["crafting"]) {
   BetrayalJobsKey: BetrayalJobs
   BetrayalTargetsKey: BetrayalTargets
   Rank: i32
-  _: rid
+  _: rid @unique
 }
 
 type Scarabs {
@@ -136,7 +136,7 @@ type Scarabs {
 }
 
 type ScarabTypes {
-  Id: string
+  Id: string @unique
   Tag: Tags
   DisableDrops: Stats
   MoreLikely: Stats

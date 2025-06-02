@@ -21,7 +21,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "GrantedEffect",
@@ -33,7 +34,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "GrantedEffects"
+        "table": "GrantedEffects"
       }
     },
     "size": 16
@@ -48,7 +49,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "GrantedEffects"
+        "table": "GrantedEffects"
       }
     },
     "size": 16
@@ -63,7 +64,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "GrantedEffects"
+        "table": "GrantedEffects"
       }
     },
     "size": 16
@@ -78,7 +79,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "GrantedEffects"
+        "table": "GrantedEffects"
       }
     },
     "size": 16
@@ -93,7 +94,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "SupportName",
@@ -105,7 +107,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "GemTags",
@@ -117,7 +120,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "GemTags"
+        "table": "GemTags"
       }
     },
     "size": 16
@@ -132,7 +135,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16

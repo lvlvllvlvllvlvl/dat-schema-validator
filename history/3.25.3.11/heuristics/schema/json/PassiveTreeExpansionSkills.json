@@ -3,13 +3,13 @@
     "name": "PassiveSkillsKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "PassiveSkills"
+        "table": "PassiveSkills"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "PassiveSkills"
+        "table": "PassiveSkills"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "PassiveTreeExpansionJewelSizes"
+        "table": "PassiveTreeExpansionJewelSizes"
       }
     },
     "size": 16

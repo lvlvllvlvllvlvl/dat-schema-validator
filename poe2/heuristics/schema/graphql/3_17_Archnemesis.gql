@@ -1,5 +1,5 @@
 type ArchnemesisMetaRewards {
-  Id: string
+  Id: string @unique
   RewardText: string @localized
   RewardGroup: i32
   ScriptArgument: string
@@ -20,7 +20,7 @@ type ArchnemesisMods {
 }
 
 type ArchnemesisModVisuals {
-  Id: string
+  Id: string @unique
   _: MiscAnimated
   _: rid
   _: rid

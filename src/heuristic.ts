@@ -253,7 +253,7 @@ function unprintable(data: any) {
 
 export function toGraphql(headers: NamedHeader[]): string[] {
   return headers.map((h) => {
-    return `${h.name || "_"}: ${graphqlType(h).replace("rid", h.type.key?.name || "rid")}`;
+    return `${h.name || "_"}: ${graphqlType(h).replace("rid", h.type.key?.table || "rid")}`;
   });
 }
 export function graphqlType(header: NamedHeader): string {

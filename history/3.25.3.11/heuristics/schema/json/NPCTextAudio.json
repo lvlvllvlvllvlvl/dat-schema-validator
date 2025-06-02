@@ -21,7 +21,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Characters"
+        "table": "Characters"
       }
     },
     "size": 16
@@ -36,7 +36,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Mono_AudioFile",
@@ -153,7 +154,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "NPCs"
+        "table": "NPCs"
       }
     },
     "size": 16

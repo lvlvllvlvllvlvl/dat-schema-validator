@@ -1,9 +1,9 @@
 type UltimatumEncounterTypes {
   Id: string @unique
-  Name: string
+  Name: string @localized
   _: bool
   _: bool
-  _: rid
+  _: rid @unique
   _: rid
 }
 
@@ -14,14 +14,14 @@ type UltimatumModifiers {
   TypesFiltered: [UltimatumModifierTypes]
   PreviousTier: [UltimatumModifiers]
   _: bool
-  Name: string
+  Name: string @localized
   Icon: string
   HASH16: u16
   _: i16
   _: [string]
   BuffTemplates: [BuffTemplates]
   Tier: i32
-  Description: string
+  Description: string @localized
   _: [_] # All rows empty
   TextAudio: NPCTextAudio
   _: rid

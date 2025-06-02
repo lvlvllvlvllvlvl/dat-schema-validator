@@ -15,13 +15,14 @@
     "name": "Name",
     "offset": 8,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Description",
@@ -33,7 +34,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "ModsKey",
@@ -45,7 +47,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -54,7 +56,7 @@
     "name": "ArtFile",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -102,7 +104,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -117,7 +119,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -132,7 +134,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "GrantedEffects"
+        "table": "GrantedEffects"
       }
     },
     "size": 16
@@ -162,7 +164,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemClasses"
+        "table": "ItemClasses"
       }
     },
     "size": 16

@@ -21,7 +21,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestFlags"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -66,7 +66,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "CharacterTextAudio"
+        "table": "CharacterTextAudio"
       }
     },
     "size": 16
@@ -81,7 +81,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "CharacterTextAudio"
+        "table": "CharacterTextAudio"
       }
     },
     "size": 16
@@ -119,7 +119,8 @@
     },
     "offset": 66,
     "size": 16,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -160,7 +161,8 @@
       "string": {}
     },
     "offset": 91,
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
     "type": {

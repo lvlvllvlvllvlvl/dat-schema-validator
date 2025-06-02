@@ -21,7 +21,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemClasses"
+        "table": "ItemClasses"
       }
     },
     "size": 16
@@ -66,7 +66,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "InheritsFrom",
@@ -105,7 +106,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "FlavourText"
+        "table": "FlavourText"
       }
     },
     "size": 16
@@ -120,7 +121,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -150,7 +151,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "SoundEffects"
+        "table": "SoundEffects"
       }
     },
     "size": 16
@@ -165,7 +166,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -210,7 +211,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -240,7 +241,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -255,7 +256,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Equip_AchievementItem",
@@ -267,7 +269,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -294,7 +296,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -309,7 +311,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -323,8 +325,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "BaseItemTypes"
+        "foreign": false
       }
     },
     "size": 8
@@ -351,7 +352,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "SoundEffects"
+        "table": "SoundEffects"
       }
     },
     "size": 16
@@ -392,7 +393,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "TradeMarketCategory"
+        "table": "TradeMarketCategory"
       }
     },
     "size": 16
@@ -419,7 +420,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -434,7 +435,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ShopTag"
+        "table": "ShopTag"
       }
     },
     "size": 16

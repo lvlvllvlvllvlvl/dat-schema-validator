@@ -33,7 +33,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -123,7 +123,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "Characters",
@@ -135,7 +136,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Characters"
+        "table": "Characters"
       }
     },
     "size": 16
@@ -174,7 +175,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "IsJustIcon",
@@ -198,7 +200,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -225,7 +227,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Ascendancy"
+        "table": "Ascendancy"
       }
     },
     "size": 16
@@ -252,7 +254,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ReminderText"
+        "table": "ReminderText"
       }
     },
     "size": 16
@@ -321,7 +323,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "BuffTemplates"
+        "table": "BuffTemplates"
       }
     },
     "size": 16
@@ -402,7 +404,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "PassiveSkillMasteryGroups"
+        "table": "PassiveSkillMasteryGroups"
       }
     },
     "size": 16
@@ -417,7 +419,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AtlasPassiveSkillTreeGroupType"
+        "table": "AtlasPassiveSkillTreeGroupType"
       }
     },
     "size": 16
@@ -432,7 +434,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "SoundEffects"
+        "table": "SoundEffects"
       }
     },
     "size": 16
@@ -639,7 +641,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "AtlasPassiveSkillSubTrees"
+        "table": "AtlasPassiveSkillSubTrees"
       }
     },
     "size": 16
@@ -666,7 +668,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "SkillGems"
+        "table": "SkillGems"
       }
     },
     "size": 16

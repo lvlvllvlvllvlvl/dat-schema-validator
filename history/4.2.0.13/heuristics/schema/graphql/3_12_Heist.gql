@@ -97,7 +97,7 @@ enum HeistIntroAreas @indexing(first: 0) { _ }
 
 type HeistJobs {
   Id: string @unique
-  Name: string
+  Name: string @localized
   RequiredSkillIcon: string
   SkillIcon: string
   _: f32
@@ -109,7 +109,7 @@ type HeistJobs {
   Cost_StatsKey: Stats
   ExperienceGain_StatsKey: Stats
   ConsoleBlueprintLegend: string
-  Description: string
+  Description: string @localized
 }
 
 type HeistJobsExperiencePerLevel {
@@ -181,7 +181,7 @@ type HeistObjectives {
 type HeistObjectiveValueDescriptions {
   Tier: i32
   MarkersMultiply: f32
-  Description: string
+  Description: string @localized
 }
 
 enum HeistPatrolPacks @indexing(first: 0) { _ }

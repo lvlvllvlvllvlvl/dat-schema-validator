@@ -106,7 +106,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -121,7 +121,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -166,7 +166,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ShrineSounds"
+        "table": "ShrineSounds"
       }
     },
     "size": 16
@@ -193,7 +193,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -244,7 +244,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ClientStrings"
+        "table": "ClientStrings"
       }
     },
     "size": 16
@@ -259,7 +259,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ClientStrings"
+        "table": "ClientStrings"
       }
     },
     "size": 16
@@ -300,7 +300,8 @@
     "offset": 178,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {

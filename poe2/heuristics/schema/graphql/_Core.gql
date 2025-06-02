@@ -1,15 +1,15 @@
 type AchievementItemRewards @tags(list: ["mtx:reward"]) {
   AchievementItemsKey: AchievementItems
   BaseItemTypesKey: BaseItemTypes
-  Message: string
-  Id: string
+  Message: string @localized
+  Id: string @unique
 }
 
 type AchievementItems {
   Id: string @unique
   _: i32
   _: i32
-  Name: string
+  Name: string @localized
   CompletionsRequired: i32
   AchievementsKey: Achievements
   _: bool
@@ -20,9 +20,9 @@ type AchievementItems {
 
 type Achievements {
   Id: string @unique
-  Description: string
+  Description: string @localized
   SetId: AchievementSetsDisplay @ref(column: "Id")
-  Objective: string
+  Objective: string @localized
   HASH16: i16
   _: bool
   HideAchievementItems: bool
@@ -44,21 +44,21 @@ type AchievementSetRewards @tags(list: ["mtx:reward"]) {
   AchievementsRequired: i32
   Rewards: [BaseItemTypes]
   TotemPieceEveryNAchievements: i32
-  Message: string
+  Message: string @localized
   NotificationIcon: string @file(ext: ".dds")
-  HideoutName: string
+  HideoutName: string @localized
   Id: string
 }
 
 type AchievementSetsDisplay {
   Id: i32 @unique
-  Title: string
+  Title: string @localized
 }
 
 type ActiveSkills {
   Id: string @unique
-  DisplayedName: string
-  Description: string
+  DisplayedName: string @localized
+  Description: string @localized
   ActionType: ActionTypes
   Icon_DDSFile: string @file(ext: ".dds")
   ActiveSkillTargetTypes: [ActiveSkillTargetTypes]
@@ -91,7 +91,7 @@ type ActiveSkills {
   MinionType: MinionType
   _: rid
   _: bool
-  _: string
+  _: string @localized
   StatDescriptionType: StatDescriptionTypes
   StatDescription: string
   WeaponRequirements: ActiveSkillWeaponRequirement
@@ -104,7 +104,7 @@ type ActiveSkillType {
 
 type Acts {
   Id: string @unique
-  UI_Title: string
+  UI_Title: string @localized
   ActNumber: i32
   _: string
   _: string
@@ -116,7 +116,7 @@ type Acts {
   _: [rid]
   _: rid
   _: [rid]
-  Description: string
+  Description: string @localized
 }
 
 type AddBuffToTargetVarieties {
@@ -124,7 +124,7 @@ type AddBuffToTargetVarieties {
   _: [i32]
   StatsKeys: [Stats]
   _: i32
-  _: i32
+  _: i32 @unique
   _: i32
   _: [_]
   _: [_]
@@ -133,8 +133,8 @@ type AddBuffToTargetVarieties {
 }
 
 type AdditionalLifeScaling {
-  IntId: i32
-  ID: string
+  IntId: i32 @unique
+  ID: string @unique
   DatFile: string @file(ext: ".dat")
 }
 
@@ -156,7 +156,7 @@ type AdvancedSkillsTutorial {
   Id: string @unique
   SkillGemInfoKey1: [SkillGemInfo]
   SkillGemInfoKey2: [SkillGemInfo]
-  Description: string
+  Description: string @localized
   International_BK2File: string @file(ext: ".bk2")
   SkillGemsKey: SkillGems
   China_BK2File: string @file(ext: ".bk2")
@@ -193,7 +193,7 @@ type AlternatePassiveAdditions {
 type AlternatePassiveSkills {
   Id: string @unique
   AlternateTreeVersion: AlternateTreeVersions
-  Name: string
+  Name: string @localized
   PassiveType: [i32]
   Stats: [Stats]
   Stat1: i32
@@ -209,7 +209,7 @@ type AlternatePassiveSkills {
   ConquerorIndex: i32 @file(ext: ".dds")
   Random: AchievementItems
   _: i32
-  FlavourText: string
+  FlavourText: string @localized
   DDSIcon: string
   AchievementItems: [AchievementItems]
   ConquerorVersion: i32
@@ -374,13 +374,13 @@ type AtlasInfluenceData {
 }
 
 type AtlasInfluenceOutcomes {
-  Id: string
+  Id: string @unique
   _: i32
   Type: AtlasInfluenceOutcomeTypes
 }
 
 type AtlasInfluenceSets {
-  Id: string
+  Id: string @unique
   InfluencePacks: [AtlasInfluenceOutcomes]
 }
 
@@ -392,7 +392,7 @@ type AtlasMods {
 type AtlasFavouredMapSlots {
   _: i32
   _: i32
-  Requirement: string
+  Requirement: string @localized
 }
 
 enum AtlasNode @indexing(first: 0) { _ }
@@ -408,7 +408,7 @@ type AtlasPositions {
 
 type AwardDisplay {
   Id: string @unique
-  Text: string
+  Text: string @localized
   BackgroundImage: string
   _: i32
   _: f32
@@ -423,7 +423,7 @@ type AwardDisplay {
 
 type BackendErrors {
   Id: string @unique
-  Text: string
+  Text: string @localized
 }
 
 type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
@@ -445,7 +445,7 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   HASH32: u32 @unique
   VendorRecipe_AchievementItems: [AchievementItems]
   "the inflection identifier used for i18n in related fields"
-  Inflection: string
+  Inflection: string @localized
   Equip_AchievementItem: AchievementItems
   IsCorrupted: bool
   Identify_AchievementItems: [AchievementItems]
@@ -465,8 +465,8 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
 
 type BindableVirtualKeys {
   KeyCode: i32
-  Name: string
-  Id: string
+  Name: string @localized
+  Id: string @localized
 }
 
 type BlightStashTabLayout {
@@ -485,7 +485,7 @@ type BlightStashTabLayout {
 }
 
 type BloodTypes {
-  Id: string
+  Id: string @unique
   _: [_]
   _: rid
   _: rid
@@ -499,10 +499,10 @@ type BloodTypes {
 
 type BuffDefinitions {
   Id: string @unique
-  Description: string
+  Description: string @localized
   Invisible: bool
   Removable: bool
-  Name: string
+  Name: string @localized
   Stats: [Stats]
   CancelOnDeath: bool
   MergeMode: BuffMergeModes
@@ -545,7 +545,7 @@ type BuffDefinitions {
   _: bool
   _: Stats
   _: [i32]
-  _: string
+  _: string @localized
   _: [Stats]
   _: [i32]
   _: i32
@@ -622,10 +622,10 @@ type BuffVisuals {
   EPKFiles2: [string] @file(ext: ".epk")
   PreloadGroups: [PreloadGroups]
   _: bool
-  BuffName: string
+  BuffName: string @localized
   MiscAnimated1: MiscAnimated
   MiscAnimated2: MiscAnimated
-  BuffDescription: string
+  BuffDescription: string @localized
   EPKFile: string @file(ext: ".epk")
   HasExtraArt: bool
   ExtraArt: string
@@ -690,13 +690,13 @@ type CharacterEventTextAudio {
 type CharacterPanelDescriptionModes {
   Id: string @unique
   _: string
-  FormatString_Positive: string
-  FormatString_Negative: string
+  FormatString_Positive: string @localized
+  FormatString_Negative: string @localized
 }
 
 type CharacterPanelStats {
   Id: string @unique
-  Text: string
+  Text: string @localized
   StatsKeys1: [Stats]
   CharacterPanelDescriptionModesKey: CharacterPanelDescriptionModes
   StatsKeys2: [Stats]
@@ -715,7 +715,7 @@ type CharacterPanelStats {
 type CharacterPanelTabs {
   Id: string @unique
   _: i32
-  Text: string
+  Text: string @localized
   _: i32
 }
 
@@ -757,9 +757,9 @@ type Characters {
   _: rid
   _: i32
   PassiveTreeImage: string @file(ext: ".dds")
+  _: i32 @localized
   _: i32
-  _: i32
-  AttrsAsId: string
+  AttrsAsId: string @unique
   LoginScreen: string @file(ext: ".ao")
   PlayerCritter: string
   PlayerEffect: string
@@ -793,7 +793,7 @@ type Characters {
 }
 
 type CharacterStartQuestState {
-  Id: string
+  Id: string @unique
   QuestKeys: [Quest]
   QuestStates: [i32]
   _: [rid]
@@ -808,7 +808,7 @@ type CharacterStartQuestState {
 
 type CharacterStartStates {
   Id: string @unique
-  Description: string
+  Description: string @localized
   CharactersKey: Characters
   Level: i32
   PassiveSkillsKeys: [PassiveSkills]
@@ -828,12 +828,12 @@ type CharacterStartStates {
 }
 
 type CharacterStartStateSet {
-  Id: string
+  Id: string @unique
 }
 
 type CharacterTextAudio {
   Id: string @unique
-  Text: string
+  Text: string @localized
   SoundFile: string @file(ext: ".ogg")
   ParrotSoundFile: string @file(ext: ".ogg")
   _: i32
@@ -876,31 +876,31 @@ type Chests {
   Id: string @unique
   _: bool
   _: i32
-  Name: string
+  Name: string @localized
   AOFiles: [string] @file(ext: ".ao")
   _: bool
   _: rid
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: i32
   _: i32
   _: i32
   _: i32
   _: i32 # All rows empty
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: i32 # All rows empty
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: i32
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: f32
-  _: i32 # All rows empty
+  _: f32 @localized
+  _: i32 @localized # All rows empty
   _: i32
   _: i32
   _: rid
@@ -909,14 +909,14 @@ type Chests {
   _: i32
   _: i32
   _: i32 # All rows empty
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: rid
   _: [_] # All rows empty
@@ -942,16 +942,16 @@ type Chests {
 
 type ClientStrings {
   Id: string @unique
-  Text: string
-  XBoxText: string
-  XBoxText2: string
+  Text: string @localized
+  XBoxText: string @localized
+  XBoxText2: string @localized
   HASH32: u32
-  PlaystationText: string
-  _: string
+  PlaystationText: string @localized
+  _: string @localized
 }
 
 type ClientLeagueAction {
-  Id: string
+  Id: string @unique
   _: rid
   _: i32
   GamepadIcon: string
@@ -975,10 +975,10 @@ type Colours {
 
 type Commands {
   Id: string @unique
-  Command: string
+  Command: string @localized
   _: bool
   EnglishCommand: string
-  Description: string
+  Description: string @localized
   _: bool
 }
 
@@ -991,7 +991,7 @@ type ComponentCharges @tags(list: ["item:def"]) {
 }
 
 type CoreLeagues {
-  Id: string
+  Id: string @unique
   _: bool
   _: bool
   _: Stats
@@ -1014,7 +1014,7 @@ type CoreLeagues {
 type CostTypes {
   Id: string @unique
   Stat: Stats
-  FormatText: string
+  FormatText: string @localized
   Divisor: i32
   PerMinute: bool
 }
@@ -1026,7 +1026,7 @@ type CraftingBenchOptions @tags(list: ["crafting"]) {
   Cost_BaseItemTypes: [BaseItemTypes]
   Cost_Values: [i32]
   RequiredLevel: i32
-  Name: string
+  Name: string @localized
   CraftingBenchCustomAction: CraftingBenchCustomActions
   ItemClasses: [ItemClasses]
   Links: i32
@@ -1034,7 +1034,7 @@ type CraftingBenchOptions @tags(list: ["crafting"]) {
   Sockets: i32
   ItemQuantity: i32
   _: [i32]
-  Description: string
+  Description: string @localized
   IsDisabled: bool
   IsAreaOption: bool
   RecipeIds: [RecipeUnlockDisplay] @ref(column: "RecipeId")
@@ -1069,16 +1069,16 @@ type CraftingBenchUnlockCategories {
   Id: string @unique
   _: i32
   _: [i32]
-  UnlockType: string
+  UnlockType: string @localized
   CraftingItemClassCategories: [CraftingItemClassCategories]
-  ObtainingDescription: string
+  ObtainingDescription: string @localized
 }
 
 type CraftingItemClassCategories {
   Id: string @unique
   ItemClasses: [ItemClasses]
   _: string
-  Text: string
+  Text: string @localized
 }
 
 type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
@@ -1086,31 +1086,31 @@ type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
   StackSize: i32
   CurrencyUseType: i32
   Action: string
-  Directions: string
+  Directions: string @localized
   "Full stack transforms into this item"
   FullStack_BaseItemType: BaseItemTypes
-  Description: string
+  Description: string @localized
   Usage_AchievementItems: [AchievementItems]
   Scroll: bool
   Possession_AchievementItem: AchievementItems
   _: [rid]
   _: [i32]
   CurrencyTab_StackSize: i32
-  XBoxDirections: string
+  XBoxDirections: string @localized
   _: i32
   ModifyMapsAchievements: [AchievementItems]
   ModifyContractsAchievements: [AchievementItems]
   CombineAchievements: [AchievementItems]
   ChangedForHardmode: bool
-  DescriptionHardmode: string
+  DescriptionHardmode: string @localized
   IsGold: bool
-  UsageHint: string
+  UsageHint: string @localized
   _: bool
   _: bool
 }
 
 type CurrencyStashTabLayout {
-  Id: string
+  Id: string @unique
   StoredItem: BaseItemTypes
   XOffset: i32
   YOffset: i32
@@ -1126,7 +1126,7 @@ type CurrencyStashTabLayout {
 }
 
 type DaemonSpawningData {
-  Id: string
+  Id: string @unique
   MonsterVarieties: [MonsterVarieties]
   _: i32
   _: bool
@@ -1138,7 +1138,7 @@ type DaemonSpawningData {
 }
 
 type DamageHitEffects {
-  Id: i32
+  Id: i32 @unique
   _: i32
   _: i32
   _: [_]
@@ -1274,7 +1274,7 @@ type EffectivenessCostConstants {
 }
 
 type EinharMissions {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32
@@ -1303,7 +1303,7 @@ type Environments {
 }
 
 type EnvironmentTransitions {
-  Id: string
+  Id: string @unique
   OTFiles: [string] @file(ext: ".ot")
   _: [string]
 }
@@ -1386,7 +1386,7 @@ type ExpandingPulse {
 }
 
 type ExperienceLevels {
-  Id: string
+  Id: string @unique
   Level: i32
   Experience: u32
 }
@@ -1397,7 +1397,7 @@ type ExtraTerrainFeatures {
   TdtFiles: [string] @file(ext: ".tdt")
   _: bool
   _: i32 # All rows empty
-  _: i32
+  _: i32 @unique
   _: i32
   _: i32
   _: i32 # All rows empty
@@ -1411,7 +1411,7 @@ type ExtraTerrainFeatures {
 }
 
 type FixedHideoutDoodadTypes {
-  Id: string
+  Id: string @unique
   HideoutDoodadsKeys: [HideoutDoodads]
   BaseTypeHideoutDoodadsKey: HideoutDoodads
   _: i32
@@ -1443,11 +1443,11 @@ type Flasks @tags(list: ["item:def"]) {
 type FlavourText {
   Id: string @unique
   HASH16: u16
-  Text: string
+  Text: string @localized
 }
 
 type Footprints {
-  Id: string
+  Id: string @unique
   Active_AOFiles: [string] @file(ext: ".ao")
   Idle_AOFiles: [string] @file(ext: ".ao")
   _: [string] @file(ext: ".ao")
@@ -1457,12 +1457,12 @@ type Footprints {
 }
 
 type FootstepAudio {
-  Id: string
+  Id: string @unique
   Index: i32
 }
 
 type FragmentStashTabLayout {
-  Id: string
+  Id: string @unique
   XOffset: i32
   YOffset: i32
   FirstSlotIndex: i32
@@ -1486,27 +1486,27 @@ type GameConstants {
 }
 
 type GameLogos {
-  Id: string
+  Id: string @unique
   LogoIntl: string
   LogoTW: string
 }
 
 type GameObjectTasks {
-  Id: string
+  Id: string @unique
   HASH16: i32
 }
 
 type GamepadButton {
   _: string
+  _: string @localized
   _: string
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @localized
+  _: string @localized
+  _: string @localized
 }
 
 type GamepadType {
-  Id: string
+  Id: string @unique
   Console: string
   ImageFile: string
 }
@@ -1518,7 +1518,7 @@ type GameStats {
 
 type GemTags {
   Id: string @unique
-  Name: string
+  Name: string @localized
   LocalLevelStat: Stats
   LocalQualityStat: Stats
   GlobalSpellLevelStat: Stats
@@ -1529,7 +1529,7 @@ type GenericBuffAuras {
 }
 
 type GenericLeagueRewardTypes @tags(list: ["item:droptable"]) {
-  Id: string
+  Id: string @unique
   MinLevel: i32
   MaxLevel: i32
 }
@@ -1895,12 +1895,12 @@ type HideoutDoodads {
 }
 
 type HideoutDoodadCategory {
-  Id: string
+  Id: string @unique
   Name: string @localized
 }
 
 type HideoutDoodadTags {
-  Id: string
+  Id: string @unique
   _: [i32]
   _: [i32]
   Name: string @localized
@@ -1908,7 +1908,7 @@ type HideoutDoodadTags {
 
 type HideoutNPCs {
   Hideout_NPC: NPCs
-  _: rid
+  _: rid @unique
   _: rid
   _: rid
   _: i32
@@ -1930,7 +1930,7 @@ type Hideouts {
   _: string
   _: bool
   _: bool
-  _: string
+  _: string @unique
   _: [_]
   _: bool
   _: rid
@@ -1961,7 +1961,7 @@ type InfluenceTags {
 }
 
 type Inventories {
-  Id: string
+  Id: string @unique
   InventoryIdKey: i32
   InventoryTypeKey: InventoryType
   _: bool
@@ -1973,13 +1973,13 @@ type Inventories {
 
 type ItemClassCategories {
   Id: string @unique
-  Text: string
+  Text: string @localized
   _: rid
 }
 
 type ItemClasses @tags(list: ["crafting"]) {
   Id: string @unique
-  Name: string
+  Name: string @localized
   TradeMarketCategory: TradeMarketCategory
   ItemClassCategory: ItemClassCategories
   RemovedIfLeavesArea: bool
@@ -2011,7 +2011,7 @@ type ItemClasses @tags(list: ["crafting"]) {
 }
 
 type ItemFrameType {
-  Id: string
+  Id: string @unique
   _: bool
   DoubleLine: bool
   HeaderSingle: string
@@ -2106,7 +2106,7 @@ type ItemVisualEffect {
 }
 
 type ItemVisualHeldBodyModel {
-  ItemVisualIdentity: ItemVisualIdentity
+  ItemVisualIdentity: ItemVisualIdentity @unique
   MarauderAnimatedObject: string
   RangerAnimatedObject: string
   WitchAnimatedObject: string
@@ -2251,9 +2251,9 @@ type LeagueInfo {
   PanelImage: string
   HeaderImage: string
   Screenshots: [string]
-  Description: string
+  Description: string @localized
   _: bool
-  TrailerVideoLink: string
+  TrailerVideoLink: string @localized
   BackgroundImage: string
   _: bool
   _: bool
@@ -2261,7 +2261,7 @@ type LeagueInfo {
 }
 
 type LeagueInfoPanelVersions {
-  Id: string
+  Id: string @unique
 }
 
 type LeagueProgressQuestFlags {
@@ -2307,7 +2307,7 @@ type MapConnections {
   MapPinsKey0: MapPins
   MapPinsKey1: MapPins
   _: rid
-  RestrictedAreaText: string
+  RestrictedAreaText: string @localized
   _: rid
   _: rid
   _: rid
@@ -2318,7 +2318,7 @@ type MapConnections {
 enum MapCreationInformation @indexing(first: 0) { _ }
 
 type MapDeviceRecipes @tags(list: ["item:recipe"]) {
-  Id: string
+  Id: string @unique
   RecipeItems: [BaseItemTypes]
   _: [string]
   _: rid
@@ -2328,18 +2328,18 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   _: bool
   _: i32 # All rows empty
   _: i32 # All rows empty
-  _: i32
+  _: i32 @unique
   _: i32 # All rows empty
   _: i32
   _: i32 # All rows empty
-  _: i32
+  _: i32 @unique
   _: i32
   _: i32 # All rows empty
   _: bool
 }
 
 type MapDevices {
-  Id: string
+  Id: string @unique
   MiscObject: MiscObjects
   _: i32
   _: string
@@ -2384,8 +2384,8 @@ type MapPins {
   _: i32
   _: i32
   _: [_]
-  _: string
-  _: string
+  _: string @localized
+  _: string @localized
   _: [_]
   _: i32
   _: [_]
@@ -2397,7 +2397,7 @@ type MapPins {
   _: string
   _: rid
   _: rid
-  _: string
+  _: string @localized
   _: bool
   _: i32
   _: i32
@@ -2419,7 +2419,7 @@ type Maps @tags(list: ["item:def", "item:recipe"]) {
 
 type MapSeries {
   Id: string @unique
-  Name: string
+  Name: string @localized
   BaseIcon_DDSFile: string @file(ext: ".dds")
   Infected_DDSFile: string @file(ext: ".dds")
   Shaper_DDSFile: string @file(ext: ".dds")
@@ -2432,7 +2432,7 @@ type MapSeries {
 enum MapSeriesTiers @indexing(first: 0) { _ }
 
 type MapStashSpecialTypeEntries {
-  Id: string
+  Id: string @unique
   _: i32
   MapItem: BaseItemTypes
   Name: string @localized
@@ -2464,7 +2464,7 @@ type MapTiers {
   Tier: i32
   Level: i32
   Level2: i32
-  _: i32
+  _: i32 @unique
 }
 
 type Melee {
@@ -2519,8 +2519,8 @@ type MicroMigrationData {
 }
 
 type MicrotransactionCategory {
-  Id: MicrotransactionCategoryId
-  Name: string
+  Id: MicrotransactionCategoryId @unique
+  Name: string @localized
   _: i32
   _: [_]
   _: i32
@@ -2534,7 +2534,7 @@ type MicrotransactionCharacterPortraitVariations {
 }
 
 type MicrotransactionCombineFormula {
-  Id: string
+  Id: string @unique
   Result_BaseItemTypesKey: BaseItemTypes
   Ingredients_BaseItemTypesKeys: [BaseItemTypes]
   BK2File: string @file(ext: ".bk2")
@@ -2546,7 +2546,7 @@ type MicrotransactionCombineFormula {
 type MicrotransactionCursorVariations {
   _: BaseItemTypes
   _: rid
-  _: u16
+  _: u16 @unique
 }
 
 type MicrotransactionFireworksVariations {
@@ -2597,7 +2597,7 @@ type MicrotransactionRecycleSalvageValues {
 }
 
 type MicrotransactionSlot {
-  Id: MicrotransactionSlotId
+  Id: MicrotransactionSlotId @unique
   _: rid
   Name: string @localized
   _: rid
@@ -2606,7 +2606,7 @@ type MicrotransactionSlot {
   _: i32
   _: i32
   _: bool
-  _: string
+  _: string @localized
   _: string
 }
 
@@ -2618,7 +2618,7 @@ type MicrotransactionSocialFrameVariations {
 }
 
 type MinimapIcons {
-  Id: string
+  Id: string @unique
   MinimapIconRadius: i32
   LargemapIconRadius: i32
   _: bool
@@ -2626,7 +2626,7 @@ type MinimapIcons {
   _: bool
   MinimapIconPointerMaxDistance: i32
   _: i32
-  _: string
+  _: string @localized
 }
 
 type MiniQuestStates {
@@ -2710,7 +2710,7 @@ type MiscObjectsArtVariations {
 enum MissionTileMap @indexing(first: 0) { _ }
 
 type MissionTimerTypes {
-  Id: string
+  Id: string @unique
   Image: string
   BackgroundImage: string
   _: [rid]
@@ -2753,7 +2753,7 @@ type Mods @tags(list: ["crafting"]) {
   Stat3: Stats
   Stat4: Stats
   Domain: ModDomains
-  Name: string
+  Name: string @localized
   GenerationType: ModGenerationType
   Families: [ModFamily]
   Stat1Value: i32
@@ -2816,7 +2816,7 @@ type Mods @tags(list: ["crafting"]) {
   _: GrantedEffectsPerLevel
   BuffTemplate: BuffTemplates
   ArchnemesisMinionMod: Mods
-  HASH32: u32
+  HASH32: u32 @unique
   _: [rid]
   _: i32
   _: [GrantedEffectsPerLevel]
@@ -2835,7 +2835,7 @@ type ModType {
 }
 
 type MonsterArmours {
-  Id: string
+  Id: string @unique
   ArtString_SMFile: string @file(ext: ".sm")
 }
 
@@ -2858,7 +2858,7 @@ type MonsterConditionalEffectPacks {
 }
 
 type MonsterConditions {
-  Id: string
+  Id: string @unique
   Rarity: Rarity
   Stat: Stats
   NotRarity: Rarity
@@ -2895,7 +2895,7 @@ type MonsterDeathAchievements {
   _: i32 # All rows empty
   _: i32 # All rows empty
   _: bool
-  _: i32
+  _: i32 @unique
   _: i32 # All rows empty
   _: bool
   _: i32 # All rows empty
@@ -2929,7 +2929,7 @@ type MonsterGroupEntries {
 }
 
 type MonsterHeightBrackets {
-  Id: string
+  Id: string @unique
   _: i32
   BuffVisuals1: BuffVisuals
   BuffVisuals2: BuffVisuals
@@ -2977,7 +2977,7 @@ type MonsterMapDifficulty {
 }
 
 type MonsterMortar {
-  Id: i32
+  Id: i32 @unique
   _: rid
   _: rid
   _: rid
@@ -3015,7 +3015,7 @@ type MonsterPackEntries {
 }
 
 type MonsterPacks {
-  Id: string
+  Id: string @unique
   WorldAreas: [WorldAreas]
   MinCount: i32
   MaxCount: i32
@@ -3108,12 +3108,12 @@ type MonsterResistances {
 }
 
 type MonsterSegments {
-  Id: string
+  Id: string @unique
   Shapes: string
 }
 
 type MonsterSpawnerGroups {
-  Id: string @files(ext: [".ot", ".otc"])
+  Id: string @unique @files(ext: [".ot", ".otc"])
 }
 
 type MonsterSpawnerGroupsPerLevel {
@@ -3176,7 +3176,7 @@ type MonsterVarieties {
   Mods2: [Mods]
   Stance: string
   _: rid
-  Name: string
+  Name: string @localized
   "in percent"
   DamageMultiplier: i32
   "in percent"
@@ -3202,7 +3202,7 @@ type MonsterVarieties {
   _: i32
   HASH16: u16
   _: bool
-  _: string
+  _: string @localized
   KillWhileOnslaughtIsActive_AchievementItem: AchievementItems
   MonsterSegment: MonsterSegments
   MonsterArmour: MonsterArmours
@@ -3225,7 +3225,7 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: f32
-  AilmentThreshold: i32
+  AilmentThreshold: i32 @localized
   SinkEffect: i32
   _: i32
   MonsterConditionalEffectPack: MonsterConditionalEffectPacks
@@ -3241,7 +3241,7 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: i32
-  _: i32
+  _: i32 @localized
   _: i32
   _: i32
   _: i32
@@ -3279,7 +3279,7 @@ type MonsterVarietiesArtVariations {
 
 type MouseCursorSizeSettings {
   Size: string
-  Description: string
+  Description: string @localized
   Ratio: f32
 }
 
@@ -3355,8 +3355,8 @@ type Music {
   BankFile: string @file(ext: ".bank")
   HASH16: i32
   IsAvailableInHideout: bool
-  Name: string
-  _: string
+  Name: string @localized
+  _: string @localized
   MusicCategories: [MusicCategories]
   _: bool
   _: i32
@@ -3364,7 +3364,7 @@ type Music {
 
 type MusicCategories {
   Id: string @unique
-  Name: string
+  Name: string @localized
   Order: i32
   _: bool
 }
@@ -3376,7 +3376,7 @@ type MysteryBoxes {
   BundleId: string
   _: bool
   _: string
-  _: string
+  _: string @localized
 }
 
 type NearbyMonsterConditions {
@@ -3395,8 +3395,8 @@ type Notifications {
   Id: string @unique
   _: bool
   _: bool
-  Message: string
-  _: string
+  Message: string @localized
+  _: string @localized
   _: i32
   _: bool
   _: bool
@@ -3418,7 +3418,7 @@ type NPCAudio {
 }
 
 type NPCConversations {
-  Id: string
+  Id: string @unique
   DialogueEvent: DialogueEvent
   NPCTextAudioKeys: [NPCTextAudio]
   _: [i32]
@@ -3475,7 +3475,7 @@ type NPCFollowerVariations {
 }
 
 type NPCMaster {
-  Id: string
+  Id: string @unique
   _: bool
   _: bool
   Signature_ModsKey: Mods
@@ -3484,7 +3484,7 @@ type NPCMaster {
   SpawnWeight_Values: [i32]
   _: rid
   _: i32
-  AreaDescription: string
+  AreaDescription: string @localized
   _: rid
   _: i32
   _: Stats
@@ -3506,11 +3506,11 @@ type NPCPortraits {
 
 type NPCs {
   Id: string @unique
-  Name: string
+  Name: string @localized
   Metadata: string @files(ext: [".ot", ".otc"])
   _: rid
   NPCMasterKey: NPCMaster
-  ShortName: string
+  ShortName: string @localized
   _: i32
   NPCAudios1: [NPCAudio]
   NPCAudios2: [NPCAudio]
@@ -3526,7 +3526,7 @@ type NPCs {
 }
 
 type NPCShop {
-  Id: string
+  Id: string @unique
   _: i32
   _: [rid]
   _: [_] # All rows empty
@@ -3539,7 +3539,7 @@ type NPCShop {
   _: i32
   _: [_]
   _: rid
-  _: i32
+  _: i32 @unique
   _: i32 # All rows empty
   _: i32 # All rows empty
   _: bool
@@ -3549,7 +3549,7 @@ type NPCShop {
 type NPCTalk {
   NPCKey: NPCs
   _: i32
-  DialogueOption: string
+  DialogueOption: string @localized
   _: [i32]
   _: [i32]
   _: [i32]
@@ -3571,10 +3571,10 @@ type NPCTalk {
   _: rid
   _: i32
   _: bool
+  _: i32 @localized
+  _: i32 @localized
   _: i32
-  _: i32
-  _: i32
-  _: NPCTalk
+  _: NPCTalk @localized
   _: rid
   _: rid
   _: i32
@@ -3590,26 +3590,26 @@ type NPCTalk {
 }
 
 type NPCTalkCategory {
-  Id: string
+  Id: string @unique
   _: bool
 }
 
 type NPCTalkConsoleQuickActions {
-  Id: string
+  Id: string @unique
   Controller: string
   _: string
 }
 
 type NPCTextAudio {
-  Id: string
+  Id: string @unique
   Characters: [Characters]
-  Text: string
+  Text: string @localized
   AudioFiles: [string]
-  _: i32
+  _: i32 @localized
   _: i32
   _: bool
   _: bool
-  _: i32
+  _: i32 @localized
   _: i32
   _: i32
   _: i32
@@ -3624,7 +3624,7 @@ type NPCTextAudio {
 enum OnKillAchievements @indexing(first: 0) { _ }
 
 type PackFormation {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32
@@ -3639,7 +3639,7 @@ type PackFormation {
 }
 
 type PassiveJewelRadii {
-  ID: string
+  ID: string @unique
   RingOuterRadius: i32
   RingInnerRadius: i32
   Radius: i32
@@ -3657,10 +3657,10 @@ type PassiveJewelSlots {
 
 type PassiveSkillFilterOptions {
   Id: string @unique
-  _: string
+  _: string @unique @localized
   _: rid
   _: i32
-  _: string
+  _: string @unique @localized
   _: bool
   _: bool
   _: bool
@@ -3676,8 +3676,8 @@ type PassiveSkillOverrideTypes {
 }
 
 type PassiveOverrideLimits {
-  Id: string
-  Description: string
+  Id: string @unique
+  Description: string @localized
 }
 
 type PassiveSkillMasteryGroups {
@@ -3711,11 +3711,11 @@ type PassiveSkills {
   Stat4Value: i32
   "Id used by PassiveSkillGraph.psg"
   PassiveSkillGraphId: u16 @unique
-  Name: string
+  Name: string @localized
   Characters: [Characters]
   IsKeystone: bool
   IsNotable: bool
-  FlavourText: string
+  FlavourText: string @localized
   IsJustIcon: bool
   AchievementItem: AchievementItems
   IsJewelSocket: bool
@@ -3759,11 +3759,11 @@ type PassiveSkills {
 
 type PassiveSkillStatCategories {
   Id: string @unique
-  Name: string
+  Name: string @localized
 }
 
 type PassiveSkillTrees {
-  Id: string
+  Id: string @unique
   PassiveSkillGraph: string
   _: i32
   _: f32
@@ -3787,7 +3787,7 @@ type PassiveSkillTrees {
 enum PassiveSkillTreeTutorial @indexing(first: 0) { _ }
 
 type PassiveSkillTreeUIArt {
-  Id: string
+  Id: string @unique
   GroupBackgroundSmall: string
   GroupBackgroundMedium: string
   GroupBackgroundLarge: string
@@ -3831,12 +3831,12 @@ type Pet {
   _: bool
   _: bool
   _: i32 # All rows empty
-  _: i32
+  _: i32 @unique
   _: rid
   _: i32 # All rows empty
   _: i32
   _: i32 # All rows empty
-  _: i32
+  _: i32 @unique
   _: i32 # All rows empty
   _: i32
   _: i32
@@ -3862,8 +3862,8 @@ type PlayerConditions {
 }
 
 type PlayerTradeWhisperFormats {
-  Id: string
-  Whisper: string
+  Id: string @unique
+  Whisper: string @localized
   InStash: bool
   IsPriced: bool
 }
@@ -3929,7 +3929,7 @@ type ProjectilesArtVariations {
 }
 
 type PVPTypes {
-  Id: string
+  Id: string @unique
   _: rid
 }
 
@@ -3960,7 +3960,7 @@ type QuestAchievements {
 }
 
 type QuestFlags {
-  Id: string
+  Id: string @unique
   HASH32: i32
 }
 
@@ -3983,7 +3983,7 @@ type QuestItems {
 }
 
 type QuestRewardOffers {
-  Id: string
+  Id: string @unique
   QuestKey: Quest
   QuestFlag: QuestFlags
   _: i32
@@ -4039,12 +4039,12 @@ type QuestStates {
   Order: i32
   FlagsPresent: [QuestFlags]
   FlagsMissing: [QuestFlags]
-  Text: string
+  Text: string @localized
   _: bool
-  Message: string
+  Message: string @localized
   MapPinsKeys1: [MapPins]
   _: i32
-  _: string
+  _: string @localized
   _: rid
   _: [_]
   _: bool
@@ -4052,7 +4052,7 @@ type QuestStates {
   _: [_]
   _: i32
   _: rid
-  _: QuestStates
+  _: QuestStates @localized
   _: [_]
 }
 
@@ -4081,9 +4081,9 @@ type QuestType {
 }
 
 type Races {
-  Id: string
+  Id: string @unique
   Mods: [Mods]
-  _: string
+  _: string @localized
   _: string
   _: i32
   _: i32
@@ -4101,7 +4101,7 @@ type RaceTimes {
 }
 
 type Rarity {
-  Id: string
+  Id: string @unique
   MinMods: i32
   MaxMods: i32
   _: i32
@@ -4113,11 +4113,11 @@ type Rarity {
 
 type Realms {
   Id: string @unique
-  Name: string
+  Name: string @localized
   Server: [string]
   IsEnabled: bool
   Server2: [string]
-  ShortName: string
+  ShortName: string @localized
   _: [Realms]
   _: Realms
   _: i32
@@ -4127,7 +4127,7 @@ type Realms {
 
 type RecipeUnlockDisplay {
   RecipeId: i32 @unique
-  Description: string
+  Description: string @localized
   CraftingItemClassCategoriesKeys: [CraftingItemClassCategories]
   UnlockDescription: string
   Rank: i32
@@ -4164,7 +4164,7 @@ type ShieldTypes @tags(list: ["item:def"]) {
 }
 
 type ShopTag {
-  Id: string
+  Id: string @unique
   Name: string @localized
   IsCategory: bool
   Category: ShopTag
@@ -4186,7 +4186,7 @@ type SigilDisplay {
 }
 
 type SingleGroundLaser {
-  Id: i32
+  Id: i32 @unique
   _: rid
   _: rid
   _: i32
@@ -4207,7 +4207,7 @@ type SingleGroundLaser {
 }
 
 type SkillArtVariations {
-  Id: string
+  Id: string @unique
   _: [rid]
   _: [i32]
   _: [i32]
@@ -4228,7 +4228,7 @@ type SkillArtVariations {
 
 type SkillGemInfo {
   Id: string @unique
-  Description: string
+  Description: string @localized
   VideoURL1: string
   SkillGemsKey: SkillGems
   VideoURL2: string
@@ -4284,12 +4284,12 @@ type SkillMorphDisplay {
 }
 
 type SkillSurgeEffects {
-  _: string
+  _: string @unique
   _: string
   _: bool
   _: bool
   _: bool
-  _: string
+  _: string @unique
   _: i32 # All rows empty
   _: i32 # All rows empty
   _: bool
@@ -4313,14 +4313,14 @@ type SkillTotemVariations {
 }
 
 type SkillTrapVariations {
-  Id: i32
+  Id: i32 @unique
   Metadata: string
   MiscAnimated: MiscAnimated
 }
 
 type SocketNotches {
-  Id: string
-  Description: string
+  Id: string @unique
+  Description: string @localized
   RedSocketImage: string
   BlueSocketImage: string
   GreenSocketImage: string
@@ -4390,7 +4390,7 @@ type StashTabAffinities {
 type StashType {
   Id: string @unique
   StashId: StashId @unique
-  Id2: string
+  Id2: string @unique
   _: i32
   _: i32
   _: i32
@@ -4413,7 +4413,7 @@ type Stats @tags(list: ["crafting"]) {
   IsLocal: bool
   IsWeaponLocal: bool
   Semantic: StatSemantics
-  Text: string
+  Text: string @localized
   _: bool
   IsVirtual: bool
   MainHandAlias_Stat: Stats
@@ -4434,7 +4434,7 @@ type Stats @tags(list: ["crafting"]) {
 }
 
 type SuicideExplosion {
-  Id: i32
+  Id: i32 @unique
   _: rid
   _: rid
   _: bool
@@ -4446,7 +4446,7 @@ type SuicideExplosion {
 }
 
 type SummonedSpecificBarrels {
-  Id: string
+  Id: string @unique
   Chest: Chests
   _: rid
   _: rid
@@ -4478,7 +4478,7 @@ type SummonedSpecificMonsters {
 enum SummonedSpecificMonstersOnDeath @indexing(first: 0) { _ }
 
 type SurgeEffects {
-  Id: string
+  Id: string @unique
   _: MiscAnimated
   _: [f32]
   _: [MiscAnimated]
@@ -4488,7 +4488,7 @@ type SurgeEffects {
 type SurgeTypes {
   Id: string @unique
   SurgeEffects: [SurgeEffects]
-  IntId: i32
+  IntId: i32 @unique
 }
 
 type TableCharge {
@@ -4569,7 +4569,7 @@ type TableMonsterSpawners {
 type Tags {
   Id: string @unique
   HASH32: u32
-  DisplayString: string
+  DisplayString: string @localized
   _: [rid]
   UiHints: string
 }
@@ -4618,13 +4618,13 @@ type TerrainPlugins {
 
 type Tips {
   Id: string @unique
-  Text: string
-  TextXBox: string
+  Text: string @localized
+  TextXBox: string @localized
   _: bool
   _: rid
   _: i32 # All rows empty
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
   _: u16 # All rows empty
   _: bool
 }
@@ -4640,7 +4640,7 @@ type Topologies {
 }
 
 type TradeMarketCategory {
-  Id: string
+  Id: string @unique
   Name: string @localized
   StyleFlag: TradeMarketCategoryStyleFlag
   Group: TradeMarketCategoryGroups
@@ -4650,7 +4650,7 @@ type TradeMarketCategory {
 }
 
 type TradeMarketCategoryGroups {
-  Id: string
+  Id: string @unique
   Name: string @localized
 }
 
@@ -4703,7 +4703,7 @@ type UITalkText {
   Id: string @unique
   UITalkCategoriesKey: UITalkCategories
   OGGFile: string @file(ext: ".ogg")
-  Text: string
+  Text: string @localized
   _: bool
   NPCTextAudio: NPCTextAudio
 }
@@ -4736,7 +4736,7 @@ enum UniqueMaps @indexing(first: 0) { _ }
 
 type UniqueStashLayout @tags(list: ["item:unique"]) {
   WordsKey: Words
-  ItemVisualIdentityKey: ItemVisualIdentity
+  ItemVisualIdentityKey: ItemVisualIdentity @unique
   UniqueStashTypesKey: UniqueStashTypes
   _: i32
   _: i32
@@ -4750,7 +4750,7 @@ type UniqueStashLayout @tags(list: ["item:unique"]) {
 }
 
 type UniqueStashTypes {
-  Id: string
+  Id: string @unique
   Order: i32
   Width: i32
   Height: i32
@@ -4787,8 +4787,8 @@ type WeaponImpactSoundData {
 }
 
 type WeaponSoundTypes {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
 }
 
 type WeaponTypes @tags(list: ["item:def"]) {
@@ -4804,13 +4804,13 @@ type WeaponTypes @tags(list: ["item:def"]) {
 }
 
 type WindowCursors {
-  Id: string
+  Id: string @unique
   CursorDefault: string @file(ext: ".bmp")
   CursorClick: string @file(ext: ".bmp")
   _: i32
   _: i32
   CursorHover: string @file(ext: ".bmp")
-  Description: string
+  Description: string @localized
   IsEnabled: bool
   _: i32
 }
@@ -4821,14 +4821,14 @@ type Words {
   SpawnWeight_Tags: [Tags]
   SpawnWeight_Values: [i32]
   _: i32
-  Text2: string
+  Text2: string @localized
   "the inflection identifier used for i18n in related fields"
-  Inflection: string
+  Inflection: string @localized
 }
 
 type WorldAreas {
-  Id: string
-  Name: string
+  Id: string @unique
+  Name: string @localized
   Act: i32
   IsTown: bool
   HasWaypoint: bool
@@ -4860,19 +4860,19 @@ type WorldAreas {
   _: i32
   _: i32
   _: bool
-  _: i32
+  _: i32 @localized
   _: i32
   Tags: [Tags]
   _: rid
   _: rid
-  _: i32
+  _: i32 @localized
   _: i32
   _: rid
   _: [string]
   _: bool
   _: rid
   _: rid
-  _: i32
+  _: i32 @localized
   _: i32
   _: i32
   Environment: Environments
@@ -4884,7 +4884,7 @@ type WorldAreas {
   _: bool
   _: i32
   _: rid
-  _: i32
+  _: i32 @unique @localized
   _: rid
   _: rid
   _: rid
@@ -4894,30 +4894,30 @@ type WorldAreas {
   _: bool
   _: i32
   _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: i32 # All rows empty
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: i32 # All rows empty
+  _: i32 @localized
+  _: i32 @localized
   _: i32
+  _: i32 # All rows empty
+  _: i32 @localized
+  _: i32 @localized
   _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: i32 # All rows empty
   _: i32
 }
 
 type WorldAreaLeagueChances {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32
@@ -4952,7 +4952,7 @@ type WorldPopupIconTypes {
   _: f32
   _: f32
   _: f32
-  _: string
+  _: string @localized
   _: bool
   _: i32
 }
@@ -4993,7 +4993,7 @@ type activeskillrequirementicons {
 
 # Added 4.1
 type activeskillrequirements {
-  _: rid
+  _: rid @unique
   _: rid
   _: bool
   _: i32
@@ -5015,16 +5015,16 @@ type ActiveSkillWeaponRequirement {
 
 # Added 4.1
 type advancedcraftingbenchcustomtags {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique @localized
   _: i32
 }
 
 # Added 4.1
 type advancedcraftingbenchtabfiltertypes {
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique @localized
+  _: string @unique
   _: [_]
   _: [_] # All rows empty
 }
@@ -5039,7 +5039,7 @@ type AlternateTreeArt {
 
 # Added 4.1
 type areadifficultystats {
-  _: rid
+  _: rid @unique
   _: [_]
   _: rid
 }
@@ -5053,7 +5053,7 @@ type areastatsperdifficulty {
 
 # Added 4.1
 type arrowspearoverride {
-  _: rid
+  _: rid @unique
   _: rid
 }
 
@@ -5088,13 +5088,13 @@ type AtlasPassiveSkillSubTrees {
 
 # Added 4.2
 type atlastowerinventorylayout {
+  _: i32 @unique
+  _: i32 @unique
+  _: string @unique
   _: i32
+  _: i32 @unique
   _: i32
-  _: string
-  _: i32
-  _: i32
-  _: i32
-  _: string
+  _: string @unique
 }
 
 # Added 4.1
@@ -5107,7 +5107,7 @@ type AttributeRequirements {
 
 # Added 4.2
 type AudioCharacterClass {
-  _: string
+  _: string @unique
 }
 
 # Added 4.2
@@ -5123,16 +5123,16 @@ type AzmeriFeatureRooms {
 # Added 4.2
 type AzmeriWoodsDustType {
   _: string
-  _: string
-  _: string
-  _: rid
-  _: rid
-  _: string
+  _: string @unique @localized
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: string @unique @localized
 }
 
 # Added 4.1
 type ballisticbouncebehaviour {
-  _: string
+  _: string @unique
   _: f32
   _: f32
   _: i32
@@ -5143,7 +5143,7 @@ type ballisticbouncebehaviour {
 
 # Added 4.1
 type ballisticbounceoverride {
-  _: string
+  _: string @unique
   _: i32
   _: i32
   _: i32
@@ -5161,12 +5161,12 @@ type ballisticbounceoverride {
 type BattlePasses {
   Id: string @unique
   LeagueCategory: LeagueCategory
-  International_BK2File: string
-  China_BK2File: string
+  International_BK2File: string @localized
+  China_BK2File: string @localized
   MapCompletionCount: i32
   _: bool
   Id2: string @unique
-  _: rid
+  _: rid @unique
 }
 
 # Added 4.1
@@ -5179,12 +5179,12 @@ type BattlePassRewards {
   Id: string
   RewardedMTX: [BaseItemTypes]
   _: i32
-  RewardDescription: string
+  RewardDescription: string @localized
   _: string
   _: i32
   _: i32
   _: bool
-  RewardTitle: string
+  RewardTitle: string @localized
   _: rid
   _: bool
   _: i32
@@ -5203,7 +5203,7 @@ type BattlePassRewards {
 # Added 4.1
 type BattlePassTracks {
   Id: string @unique
-  Description: string
+  Description: string @localized
 }
 
 # Added 4.1
@@ -5252,7 +5252,7 @@ type buffvisualshapeshiftoverride {
 
 # Added 4.1
 type caravanstops {
-  _: string
+  _: string @unique
   _: [_] # All rows empty
   _: f32
   _: i32
@@ -5296,11 +5296,11 @@ type CharacterCreationDialogue {
 
 # Added 4.1
 type charactercreationicons {
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @localized
+  _: string @unique @localized
+  _: string @unique
+  _: string @unique
 }
 
 # Added 4.1
@@ -5329,16 +5329,16 @@ type characterskinmeshreplacement {
 
 # Added 4.1
 type charactervariationgroups {
-  _: string
-  _: rid
-  _: rid
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
 }
 
 # Added 4.1
 type chargevariations {
   _: rid
   _: rid
-  _: rid
+  _: rid @unique
   _: rid
 }
 
@@ -5351,25 +5351,25 @@ type ClassPassiveSkillOverrides {
 
 # Added 4.1
 type clientstrings2 {
+  _: string @unique
+  _: string @localized
+  _: string @localized
   _: string
-  _: string
-  _: string
-  _: string
-  _: i32
-  _: [_]
+  _: i32 @unique
+  _: [_] @localized
 }
 
 # Added 4.1
 type combatuiprompts {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique @localized
   _: rid
 }
 
 # Added 4.1
 type completionnotifications {
-  _: string
-  _: string
+  _: string @unique
+  _: string @localized
   _: string
   _: f32
   _: string
@@ -5387,13 +5387,13 @@ type ConditionalAchievements {
 
 # Added 4.1
 type corpseexplosiongibs {
-  _: string
+  _: string @unique
   _: [string]
 }
 
 # Added 4.2
 type corpsesinkareaoverrides {
-  _: rid
+  _: rid @unique
   _: i32
   _: i32
 }
@@ -5419,9 +5419,9 @@ type CosmeticsEquipPanelMode {
 
 # Added 4.2
 type cosmeticspaneltab {
-  _: string
+  _: string @unique
   _: [_]
-  _: string
+  _: string @unique @localized
   _: [_]
   _: string
 }
@@ -5447,7 +5447,7 @@ type crossbowskillboltoverride {
 
 # Added 4.2
 type currencyconsumeeffects {
-  _: rid
+  _: rid @unique
   _: currencyconsumeeffects
   _: currencyconsumeeffects
   _: f32
@@ -5466,8 +5466,8 @@ type CurrencyExchange {
 
 # Added 4.1
 type CurrencyExchangeCategories {
-  Id: string
-  Name: string
+  Id: string @unique
+  Name: string @localized
 }
 
 # Added 4.1
@@ -5485,7 +5485,7 @@ type CurrencyUseEffects {
 
 # Added 4.1
 type damagecalculationtypes {
-  _: string
+  _: string @unique
   _: [_]
   _: [_]
   _: [_]
@@ -5513,7 +5513,7 @@ type damagecalculationtypes {
   _: rid
   _: rid
   _: rid
-  _: string
+  _: string @unique
   _: rid
   _: i32
   _: bool
@@ -5565,7 +5565,7 @@ type DelveRobotVariations {
 
 # Added 4.1
 type destructivedamageeffects {
-  _: string
+  _: string @unique
   _: [_]
   _: [_]
   _: [_]
@@ -5577,26 +5577,26 @@ type destructivedamageeffects {
 
 # Added 4.2
 type displaycasetypes {
-  _: string
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: string @unique
+  _: bool @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
   _: u16 # All rows empty
   _: bool
 }
@@ -5614,7 +5614,7 @@ type dynamicstashslots {
 
 # Added 4.2
 type endgamecleansedmods {
-  _: rid
+  _: rid @unique
   _: [_]
 }
 
@@ -5643,8 +5643,8 @@ type EndgameMapBiomes {
   _: i32
   GroundTypeCorrupted1: string @file(ext: ".gt")
   GroundTypeCorrupted2: string @file(ext: ".gt")
-  _: string
-  _: string
+  _: string @unique @localized
+  _: string @unique
 }
 
 # Added 4.1
@@ -5653,7 +5653,7 @@ type EndgameMapContent {
   SpawnChance: [i32]
   _: i32
   _: i32
-  _: i32
+  _: i32 @localized
   _: i32
   InherentStat: [Stats]
   _: [i32]
@@ -5661,12 +5661,12 @@ type EndgameMapContent {
   PrecursorTabletStat: Stats
   Stats: [Stats]
   StatsValues: [i32]
-  Description: string
-  Name: string
-  _: rid
+  Description: string @localized
+  Name: string @localized
+  _: rid @unique
   _: [_]
-  _: string
-  _: string
+  _: string @unique @localized
+  _: string @unique @localized
 }
 
 # Added 4.1
@@ -5691,21 +5691,21 @@ type EndgameMapDecorations {
 
 # Added 4.2
 type endgamemapfasttravelpins {
-  _: string
-  _: string
-  _: [_]
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique @localized
+  _: [_] @localized
+  _: string @unique
+  _: string @unique
+  _: string @unique
   _: i32
-  _: string
+  _: string @localized
 }
 
 # Added 4.2
 type endgamemappinicons {
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
 }
 
 # Added 4.1
@@ -5727,11 +5727,11 @@ type EndgameMaps {
   WorldArea: WorldAreas
   NaturalSpawnWeight: [i32]
   NativePacks: [MonsterPacks]
-  FlavourText: string
+  FlavourText: string @localized
   MinWatchstoneTier: i32
   _: i32
   _: i32 # All rows empty
-  _: i32
+  _: i32 @localized
   _: rid
   _: i32 # All rows empty
   _: rid
@@ -5759,8 +5759,8 @@ type expeditiondealsdialogue {
 
 # Added 4.2
 type expeditionstashtablayout {
-  _: string
-  _: rid
+  _: string @unique
+  _: rid @unique
 }
 
 # Added 4.2
@@ -5771,7 +5771,7 @@ type fadeoncorpseconsumeepks {
 
 # Added 4.1
 type gambleprices {
-  _: rid
+  _: rid @unique
   _: i32
   _: f32
   _: i32
@@ -5792,10 +5792,10 @@ type GameObjectTasksFromStats {
 
 # Added 4.1
 type gamepadbuttonbindaction {
+  _: string @unique
   _: string
-  _: string
-  _: string
-  _: string
+  _: string @localized
+  _: string @unique @localized
   _: bool
 }
 
@@ -5809,7 +5809,7 @@ type GamepadButtonCombination {
 
 # Added 4.1
 type gamepaditemactiontypes {
-  _: string
+  _: string @unique
   _: rid
   _: bool
   _: bool
@@ -5826,7 +5826,7 @@ type GemEffects {
   Id: string @unique
   Name: string
   GrantedEffect: GrantedEffects
-  SupportText: string
+  SupportText: string @localized
   SupportName: string
   GemTags: [GemTags]
   Consumed_Mod: Mods
@@ -5842,7 +5842,7 @@ type GemEffects {
 
 # Added 4.1
 type genericskillindicator {
-  _: rid
+  _: rid @unique
   _: string
   _: i32 # All rows empty
   _: i32 # All rows empty
@@ -5857,7 +5857,7 @@ type genericskillindicator {
 
 # Added 4.1
 type goldbasetypeprices {
-  _: rid
+  _: rid @unique
   _: i32
 }
 
@@ -5883,26 +5883,26 @@ type GoldModPrices {
 
 # Added 4.1
 type goldrespecprices {
-  _: i32
-  _: i32
+  _: i32 @unique
+  _: i32 @unique
 }
 
 # Added 4.1
 type goldvisualidentities {
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
 }
 
 # Added 4.2
 type grantedeffectdisplayinforegrouping {
-  _: rid
+  _: rid @unique
   _: [_]
 }
 
 # Added 4.1
 type GrantedEffectLabels {
-  Id: string
-  Text: string
+  Id: string @unique
+  Text: string @localized
   _: bool
   _: bool
   _: bool
@@ -5910,21 +5910,21 @@ type GrantedEffectLabels {
 
 # Added 4.1
 type grantedskillsocketnumbers {
-  _: i32
-  _: i32
+  _: i32 @unique
+  _: i32 @unique
 }
 
 # Added 4.1
 type graphicalitemreceptacle {
-  _: string
-  _: string
-  _: rid
+  _: string @unique
+  _: string @unique
+  _: rid @unique
   _: bool
   _: bool
-  _: rid
-  _: string
-  _: rid
-  _: string
+  _: rid @unique
+  _: string @unique
+  _: rid @unique
+  _: string @unique
 }
 
 # Added 4.1
@@ -5938,22 +5938,22 @@ type graphicalitemreceptacleslot {
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: i32
-  _: i32
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: rid @unique
+  _: rid @unique
+  _: i32 @unique
+  _: i32 @unique
   _: u16 # All rows empty
   _: bool
 }
 
 # Added 4.1
 type hapticevents {
-  _: string
+  _: string @unique
   _: string
   _: i32
   _: i32
@@ -6004,7 +6004,7 @@ type HideoutCraftingBenchInterfaceVisuals {
 
 # Added 4.1
 type hideoutresistpenalties {
-  _: string
+  _: string @unique
   _: i32
 }
 
@@ -6034,8 +6034,8 @@ type HudEnergyShieldVisuals {
   _: string
   _: string
   _: bool
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
 }
 
 # Added 4.1
@@ -6068,7 +6068,7 @@ type HudVisualsFromStat {
 
 # Added 4.1
 type indicatorconditions {
-  _: string
+  _: string @unique
   _: i32 # All rows empty
   _: [_]
   _: i32 # All rows empty
@@ -6084,8 +6084,8 @@ type indicatorconditions {
 
 # Added 4.1
 type itemdisenchantvalues {
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
   _: bool
   _: u16 # All rows empty
   _: bool
@@ -6100,7 +6100,7 @@ type ItemInherentSkills {
 
 # Added 4.1
 type itemisedvisualeffectexclusivetypes {
-  _: string
+  _: string @unique
 }
 
 # Added 4.1
@@ -6111,18 +6111,18 @@ type ItemSpirit {
 
 # Added 4.1
 type itemtoggleable {
-  _: rid
+  _: rid @unique
   _: itemtoggleable
 }
 
 # Added 4.1
 type itemvisualheldbodymodeloverridebyitemaffiliatedattributes {
-  _: rid
+  _: rid @unique
+  _: string @unique
+  _: string @unique
   _: string
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
   _: string
   _: string
 }
@@ -6136,26 +6136,26 @@ type ItemVisualReplacement {
 
 # Added 4.2
 type itemvisualsreplacedwithstat {
+  _: rid @unique
   _: rid
-  _: rid
-  _: rid
+  _: rid @unique
 }
 
 # Added 4.1
 type KeywordPopups {
   Id: string @unique
-  Term: string
-  Definition: string
+  Term: string @localized
+  Definition: string @localized
   _: string
 }
 
 # Added 4.1
 type kioskmodecharactertutorials {
-  _: string
-  _: rid
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: rid @unique
+  _: string @unique @localized
+  _: string @unique
+  _: string @unique @localized
 }
 
 # Added 4.1
@@ -6168,9 +6168,9 @@ type leaguecategorytodisplayname {
 
 # Added 4.1
 type leaguenames {
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique @localized
+  _: string @unique @localized
 }
 
 # Added 4.1
@@ -6186,14 +6186,14 @@ type LegacyAtlasInfluenceOutcomes {
 
 # Added 4.2
 type levelupsoundeffect {
-  _: string
-  _: rid
-  _: rid
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
 }
 
 # Added 4.1
 type loginareas {
-  _: string
+  _: string @unique
   _: string
   _: i32 # All rows empty
   _: rid
@@ -6202,8 +6202,8 @@ type loginareas {
 
 # Added 4.1
 type mapcurrencyinventorylayout {
-  _: rid
-  _: i32
+  _: rid @unique
+  _: i32 @unique
   _: i32 # All rows empty
 }
 
@@ -6218,7 +6218,7 @@ type MemoryLineType {
   _: i32
   _: rid
   _: i32
-  Suffix: string
+  Suffix: string @localized
   _: rid
 }
 
@@ -6269,10 +6269,10 @@ type MicrotransactionConditionalApparitions {
 
 # Added 4.1
 type microtransactioncounters {
-  _: string
-  _: f32
-  _: i32
-  _: string
+  _: string @unique
+  _: f32 @unique
+  _: i32 @unique
+  _: string @unique
 }
 
 # Added 4.1
@@ -6305,10 +6305,10 @@ type MicrotransactionJewelVariations {
 
 # Added 4.1
 type microtransactionlevelupeffects {
-  _: string
+  _: string @unique
   _: rid
   _: rid
-  _: rid
+  _: rid @unique
   _: rid
   _: [_]
   _: string
@@ -6360,7 +6360,7 @@ type MicrotransactionOnKillConditions {
   _: i32
   _: i32
   _: bool
-  _: i32
+  _: i32 @unique
   _: i32 # All rows empty
   _: [_]
 }
@@ -6381,8 +6381,8 @@ type MicrotransactionOnKillEffects {
 
 # Added 4.1
 type MicrotransactionSkillGemEffectSlotTypes {
-  Id: string
-  Type: string
+  Id: string @unique
+  Type: string @localized
   _: i32
 }
 
@@ -6390,33 +6390,33 @@ type MicrotransactionSkillGemEffectSlotTypes {
 type MicrotransactionSlotAdditionalDefaultOptions {
   _: i32
   _: i32
-  _: string
+  _: string @localized
   _: string
 }
 
 # Added 4.1
 type microtransactiontrackingmapfragmenttypes {
-  _: rid
+  _: rid @unique
   _: i32
 }
 
 # Added 4.1
 type minioncommands {
+  _: rid @unique
+  _: rid @unique
   _: rid
-  _: rid
-  _: rid
-  _: rid
+  _: rid @unique
 }
 
 # Added 4.1
 type miniongemlevelscaling {
-  _: i32
-  _: i32
+  _: i32 @unique
+  _: i32 @unique
 }
 
 # Added 4.1
 type minionstats {
-  _: rid
+  _: rid @unique
   _: [_]
   _: [_]
   _: [_]
@@ -6450,7 +6450,7 @@ type MinionType {
 
 # Added 4.1
 type misccooldowns {
-  _: string
+  _: string @unique
   _: i32
   _: i32
   _: bool
@@ -6458,8 +6458,8 @@ type misccooldowns {
 
 # Added 4.2
 type miscparticles {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
   _: i32
   _: [_] # All rows empty
 }
@@ -6492,42 +6492,42 @@ type miscprojectilemodartvariations {
 
 # Added 4.1
 type mobileactoneatlasquestprogression {
-  _: string
-  _: rid
-  _: rid
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
   _: [_]
 }
 
 # Added 4.1
 type mobileascendancythresholds {
-  _: string
-  _: rid
+  _: string @unique
+  _: rid @unique
   _: i32 # All rows empty
 }
 
 # Added 4.1
 type mobilecharactercreation {
-  _: string
+  _: string @unique
   _: [_]
 }
 
 # Added 4.1
 type mobileskillgemlayout {
-  _: string
+  _: string @unique
   _: rid
   _: i32
   _: bool
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
   _: i32
   _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: i32 @localized
+  _: i32 @localized
+  _: i32 @localized
+  _: i32 @localized
+  _: i32 @localized
+  _: i32 @localized
+  _: i32 @localized
   _: i32 # All rows empty
   _: u16 # All rows empty
   _: bool
@@ -6535,22 +6535,22 @@ type mobileskillgemlayout {
 
 # Added 4.1
 type mobileskillgemlayoutpages {
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @localized
 }
 
 # Added 4.1
 type mobiletutorial {
-  _: string
-  _: string
+  _: string @unique
+  _: string @localized
   _: rid
 }
 
 # Added 4.1
 type mobiletutorialgroup {
-  _: string
-  _: rid
+  _: string @unique
+  _: rid @unique
   _: bool
   _: bool
 }
@@ -6563,20 +6563,20 @@ type ModGrantedSkills {
 
 # Added 4.2
 type monstercategories {
-  _: rid
-  _: string
-  _: string
+  _: rid @unique
+  _: string @unique @localized
+  _: string @unique
 }
 
 # Added 4.1
 type monsterencounterskillgroups {
-  _: string
+  _: string @unique
   _: [_]
 }
 
 # Added 4.1
 type monstershapeshift {
-  _: rid
+  _: rid @unique
   _: rid
   _: i32 # All rows empty
   _: rid
@@ -6592,8 +6592,8 @@ type monstershapeshift {
 
 # Added 4.1
 type mtxtypegamespecific {
-  _: rid
-  _: i32
+  _: rid @unique
+  _: i32 @unique
   _: string
   _: i32
   _: [_]
@@ -6601,14 +6601,14 @@ type mtxtypegamespecific {
 
 # Added 4.1
 type mtxtypes {
-  _: string
-  _: i32
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: i32 @unique
+  _: string @localized
+  _: string @localized
+  _: string @localized
+  _: string @localized
+  _: string @localized
+  _: string @localized
   _: rid
   _: rid
   _: rid
@@ -6623,12 +6623,12 @@ type mtxtypes {
   _: bool
   _: bool
   _: bool
-  _: string
+  _: string @localized
 }
 
 # Added 4.1
 type npcdialoguecutscene {
-  _: string
+  _: string @unique
   _: bool
   _: string
   _: bool
@@ -6653,21 +6653,21 @@ type npcdialoguecutscenesequences {
 
 # Added 4.1
 type npcportraitaooverrides {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
   _: i32 # All rows empty
   _: i32 # All rows empty
 }
 
 # Added 4.1
 type npcshopgamblervisualidentity {
-  _: rid
+  _: rid @unique
   _: [_]
 }
 
 # Added 4.1
 type npcshops {
-  _: string
+  _: string @unique
   _: rid
   _: rid
   _: rid
@@ -6677,21 +6677,21 @@ type npcshops {
 
 # Added 4.1
 type npctalkmobilegroup {
-  _: string
+  _: string @unique
   _: string
   _: string
 }
 
 # Added 4.1
 type npctype {
-  _: string
+  _: string @unique
 }
 
 # Added 4.1
 type npcvendordialogue {
-  _: string
+  _: string @unique
   _: [_]
-  _: rid
+  _: rid @unique
   _: [_]
   _: i32
   _: i32
@@ -6699,7 +6699,7 @@ type npcvendordialogue {
 
 # Added 4.1
 type npcvendordialogueconditions {
-  _: string
+  _: string @unique
   _: rid
   _: rid
   _: i32
@@ -6710,17 +6710,17 @@ type npcvendordialogueconditions {
 
 # Added 4.1
 type ongoingbuffvariations {
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
   _: [_]
   _: bool
 }
 
 # Added 4.1
 type ongoingtriggervariations {
-  _: rid
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
+  _: rid @unique
   _: bool
   _: [_]
 }
@@ -6745,10 +6745,10 @@ type PassiveJewelNodeModifyingStats {
 
 # Added 4.1
 type passivejeweluniqueart {
-  _: rid
+  _: rid @unique
   _: i32 # All rows empty
   _: rid
-  _: string
+  _: string @unique
   _: rid
 }
 
@@ -6766,14 +6766,14 @@ type passivenodeuiartoverride {
 
 # Added 4.2
 type passiveskillfiltergroups {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique @localized
 }
 
 # Added 4.2
 type playerminionintrinsicstats {
-  _: rid
-  _: i32
+  _: rid @unique
+  _: i32 @unique
 }
 
 # Added 4.1
@@ -6803,7 +6803,7 @@ type PreloadFromStats {
 
 # Added 4.1
 type projectileoverrides {
-  _: string
+  _: string @unique
   _: [string]
   _: string
   _: [string]
@@ -6821,23 +6821,23 @@ type questitemnpcaudio {
 
 # Added 4.1
 type questrewardtype {
+  _: string @unique
   _: string
-  _: string
-  _: string
-  _: string
+  _: string @localized
+  _: string @localized
   _: rid
 }
 
 # Added 4.1
 type racerewardtomicro {
-  _: rid
-  _: rid
-  _: i32
+  _: rid @unique
+  _: rid @unique
+  _: i32 @unique
 }
 
 # Added 4.2
 type recombinableclasses {
-  _: rid
+  _: rid @unique
   _: rid
   _: i32 # All rows empty
 }
@@ -6847,13 +6847,13 @@ type RelicInventoryLayout {
   _: i32
   _: i32
   _: i32
-  Requirement: string
+  Requirement: string @localized
 }
 
 # Added 4.1
 type RelicItemEffectVariations {
   Id: string @unique
-  Description: string
+  Description: string @localized
   DDSFile: string @file(ext: ".dds")
 }
 
@@ -6866,7 +6866,7 @@ type reservationskillsaudio {
 
 # Added 4.1
 type resistancepenaltyperarealevel {
-  _: i32
+  _: i32 @unique
   _: i32
 }
 
@@ -6887,22 +6887,22 @@ type RitualStashTabLayout {
 
 # Added 4.2
 type rogueexilemodbonuses {
-  _: rid
+  _: rid @unique
   _: [_]
   _: [_]
 }
 
 # Added 4.1
 type sanctumbalanceperlevel {
-  _: i32
+  _: i32 @unique
   _: i32 # All rows empty
-  _: i32
-  _: i32
+  _: i32 @unique
+  _: i32 @unique
 }
 
 # Added 4.1
 type sanctumrewardobjects {
-  _: string
+  _: string @unique
   _: i32
   _: bool
   _: rid
@@ -6910,9 +6910,9 @@ type sanctumrewardobjects {
 
 # Added 4.1
 type shapeshiftformclones {
-  _: rid
-  _: rid
-  _: string
+  _: rid @unique
+  _: rid @unique
+  _: string @unique
 }
 
 # Added 4.1
@@ -6965,21 +6965,21 @@ type ShrineVisualArtVariations {
 
 # Added 4.1
 type SkillCraftingData {
-  Id: string
+  Id: string @unique
   Character: Characters
   ListBackground: string
   Icon: string
   ConsoleIcon: string
-  Name: string
+  Name: string @localized
 }
 
 # Added 4.1
 type skillevents {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
   _: i32 # All rows empty
   _: i32 # All rows empty
-  _: i32
+  _: i32 @unique
 }
 
 # Added 4.1
@@ -6993,8 +6993,8 @@ type SkillGemLevelUpEffects {
 
 # Added 4.2
 type skillgemsearchterms {
-  _: string
-  _: string
+  _: string @unique
+  _: string @localized
 }
 
 # Added 4.1
@@ -7065,23 +7065,23 @@ type SoulCoresPerClass {
 
 # Added 4.2
 type stashavailabilities {
+  _: i32 @unique
   _: i32
-  _: i32
-  _: string
+  _: string @unique
 }
 
 # Added 4.1
 type statconvertaltattackcontainer {
-  _: rid
-  _: rid
+  _: rid @unique
+  _: rid @unique
   _: [_]
 }
 
 # Added 4.2
 type statistictrackingmicrotransactioncountertype {
+  _: string @unique
   _: string
-  _: string
-  _: string
+  _: string @unique @localized
 }
 
 # Added 4.1
@@ -7140,7 +7140,7 @@ type SupportGems {
 
 # Added 4.1
 type surgeeffectpackartvariations {
-  _: string
+  _: string @unique
   _: rid
   _: i32 # All rows empty
   _: i32
@@ -7150,8 +7150,8 @@ type surgeeffectpackartvariations {
 
 # Added 4.2
 type tempesttypes {
-  _: string
-  _: rid
+  _: string @unique
+  _: rid @unique
   _: rid
   _: rid
   _: rid
@@ -7169,14 +7169,14 @@ type tempesttypes {
   _: i32 # All rows empty
   _: i32
   _: i32 # All rows empty
-  _: i32
+  _: i32 @unique
   _: u16 # All rows empty
 }
 
 # Added 4.1
 type threetoonerecipes {
-  _: string
-  _: rid
+  _: string @unique
+  _: rid @unique
   _: rid
   _: i32
   _: rid
@@ -7201,7 +7201,7 @@ type TieredMicrotransactions {
 
 # Added 4.2
 type timetrackingmapdeviceinterfaceartvariation {
-  _: string
+  _: string @unique
   _: [_] # All rows empty
   _: [_]
   _: [_]
@@ -7210,34 +7210,34 @@ type timetrackingmapdeviceinterfaceartvariation {
 
 # Added 4.2
 type tormentmodcolours {
-  _: rid
+  _: rid @unique
   _: [string]
 }
 
 # Added 4.1
 type totemdefendervarieties {
-  _: rid
+  _: rid @unique
   _: i32
 }
 
 # Added 4.1
 type touchinteractiontype {
-  _: string
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
 }
 
 # Added 4.1
 type traptools {
-  _: rid
+  _: rid @unique
   _: i32
   _: i32
 }
 
 # Added 4.1
 type treasurehuntermissions {
-  _: string
+  _: string @unique
   _: rid
   _: rid
   _: [_] # All rows empty
@@ -7256,7 +7256,7 @@ type treasurehuntermissions {
 
 # Added 4.1
 type triggeredaudioeventvolumeoverrides {
-  _: string
+  _: string @unique
   _: f32
   _: [_]
   _: i32
@@ -7270,14 +7270,14 @@ type TryTheNewLeagueVersions {
 
 # Added 4.1
 type ultimatummonsterpackfamily {
-  _: string
+  _: string @unique
   _: i32 # All rows empty
 }
 
 # Added 4.1
 type ultimatumrooms {
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
   _: rid
   _: i32 # All rows empty
   _: i32 # All rows empty
@@ -7319,9 +7319,9 @@ type UncutGemTiers {
 
 # Added 4.2
 type uniquemapskillbooks {
-  _: rid
-  _: i32
-  _: i32
+  _: rid @unique
+  _: i32 @unique
+  _: i32 @unique
 }
 
 # Added 4.1
@@ -7334,7 +7334,7 @@ type UtilityFlaskBuffs {
 
 # Added 4.1
 type visualpinproperties {
-  _: string
+  _: string @unique
   _: rid
   _: rid
   _: rid
@@ -7351,15 +7351,15 @@ type visualpinproperties {
 
 # Added 4.1
 type waystonestashtabsubgroups {
-  _: i32
-  _: string
+  _: i32 @unique
+  _: string @unique
   _: rid
   _: i32 # All rows empty
 }
 
 # Added 4.2
 type weaponbufforbstype {
-  _: rid
+  _: rid @unique
   _: string
   _: i32
   _: i32
@@ -7403,9 +7403,9 @@ type WieldableClasses {
 
 # Added 4.1
 type worldmaplegends {
-  _: string
-  _: string
-  _: string
+  _: string @unique
+  _: string @unique
+  _: string @localized
   _: i32
   _: i32
   _: [_]
@@ -7415,13 +7415,13 @@ type worldmaplegends {
 
 # Added 4.2
 type worldobjectdisplayedapplicableitems {
-  _: string
+  _: string @unique
   _: [_]
 }
 
 # Added 4.1
 type worldscreenmappindialogue {
-  _: rid
+  _: rid @unique
   _: i32
   _: [_]
 }

@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HideoutNPCs"
+        "table": "HideoutNPCs"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -99,7 +99,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "CraftingBenchCustomAction",
@@ -126,7 +127,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "ItemClasses"
+        "table": "ItemClasses"
       }
     },
     "size": 16
@@ -213,7 +214,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "IsDisabled",
@@ -279,7 +281,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "CraftingItemClassCategories"
+        "table": "CraftingItemClassCategories"
       }
     },
     "size": 16
@@ -309,7 +311,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "CraftingBenchUnlockCategories"
+        "table": "CraftingBenchUnlockCategories"
       }
     },
     "size": 16
@@ -426,7 +428,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Mods"
+        "table": "Mods"
       }
     },
     "size": 16
@@ -441,7 +443,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "CraftingBenchSortCategories"
+        "table": "CraftingBenchSortCategories"
       }
     },
     "size": 16
@@ -497,7 +499,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -512,7 +514,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -527,7 +529,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16
@@ -568,7 +570,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16

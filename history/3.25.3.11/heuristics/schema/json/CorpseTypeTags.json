@@ -3,13 +3,13 @@
     "name": "Tag",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Tags"
+        "table": "Tags"
       }
     },
     "size": 16
@@ -18,25 +18,26 @@
     "name": "Name",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "RavenousBuff",
     "offset": 24,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BuffDefinitions"
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
@@ -45,7 +46,7 @@
     "name": "Icon",
     "offset": 40,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -57,7 +58,7 @@
     "name": "",
     "offset": 48,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -76,7 +77,8 @@
       }
     },
     "offset": 52,
-    "size": 16
+    "size": 16,
+    "unique": true
   },
   {
     "type": {
@@ -84,7 +86,8 @@
       "string": {}
     },
     "offset": 68,
-    "size": 8
+    "size": 8,
+    "unique": true
   },
   {
     "type": {
@@ -92,7 +95,9 @@
       "string": {}
     },
     "offset": 76,
-    "size": 8
+    "size": 8,
+    "unique": true,
+    "localized": true
   },
   {
     "type": {

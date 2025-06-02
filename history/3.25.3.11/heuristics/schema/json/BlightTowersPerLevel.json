@@ -3,13 +3,13 @@
     "name": "BlightTowersKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BlightTowers"
+        "table": "BlightTowers"
       }
     },
     "size": 16
@@ -33,13 +33,13 @@
     "name": "MonsterVarietiesKey",
     "offset": 20,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16

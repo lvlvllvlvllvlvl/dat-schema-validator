@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "QuestRewardOffers"
+        "table": "QuestRewardOffers"
       }
     },
     "size": 16
@@ -253,7 +253,8 @@
     "offset": 110,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -338,7 +339,8 @@
     "offset": 174,
     "size": 16,
     "noData": true,
-    "unknownArray": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {

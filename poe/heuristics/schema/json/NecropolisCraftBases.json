@@ -3,7 +3,7 @@
     "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -21,7 +21,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -36,7 +36,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NecropolisUniqueCrafts"
+        "table": "NecropolisUniqueCrafts"
       }
     },
     "size": 16
@@ -78,7 +78,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NecropolisCraftItemTypes"
+        "table": "NecropolisCraftItemTypes"
       }
     },
     "size": 16
@@ -93,7 +93,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "CraftTag",
@@ -105,7 +106,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Stats"
+        "table": "Stats"
       }
     },
     "size": 16

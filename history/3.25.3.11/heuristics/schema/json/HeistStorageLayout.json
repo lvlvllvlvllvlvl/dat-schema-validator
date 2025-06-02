@@ -21,7 +21,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -42,7 +42,7 @@
     "name": "ButtonFile",
     "offset": 25,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -75,7 +75,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistJobs"
+        "table": "HeistJobs"
       }
     },
     "size": 16
@@ -180,7 +180,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemClasses"
+        "table": "ItemClasses"
       }
     },
     "size": 16

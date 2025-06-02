@@ -3,13 +3,13 @@
     "name": "BaseItemTypesKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "BaseItemTypes"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -18,13 +18,13 @@
     "name": "PassiveTreeExpansionJewelSizesKey",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "PassiveTreeExpansionJewelSizes"
+        "table": "PassiveTreeExpansionJewelSizes"
       }
     },
     "size": 16
@@ -33,7 +33,7 @@
     "name": "MinNodes",
     "offset": 32,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -48,7 +48,7 @@
     "name": "MaxNodes",
     "offset": 36,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

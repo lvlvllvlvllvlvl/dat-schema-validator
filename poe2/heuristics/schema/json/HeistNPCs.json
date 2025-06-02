@@ -3,13 +3,13 @@
     "name": "NPCsKey",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCs"
+        "table": "NPCs"
       }
     },
     "size": 16
@@ -18,13 +18,13 @@
     "name": "MonsterVarietiesKey",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "MonsterVarieties"
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "HeistJobs"
+        "table": "HeistJobs"
       }
     },
     "size": 16
@@ -48,7 +48,7 @@
     "name": "PortraitFile",
     "offset": 48,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -66,7 +66,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "HeistNPCStats"
+        "table": "HeistNPCStats"
       }
     },
     "size": 16
@@ -118,7 +118,7 @@
     "name": "Name",
     "offset": 108,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -130,7 +130,7 @@
     "name": "SilhouetteFile",
     "offset": 116,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -177,8 +177,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": false,
-        "name": "HeistNPCs"
+        "foreign": false
       }
     },
     "size": 8
@@ -201,13 +200,13 @@
     "name": "Ally_NPCsKey",
     "offset": 156,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "name": "NPCs"
+        "table": "NPCs"
       }
     },
     "size": 16
@@ -216,7 +215,7 @@
     "name": "ActiveNPCIcon",
     "offset": 172,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -234,7 +233,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "HeistJobs"
+        "table": "HeistJobs"
       }
     },
     "size": 16
@@ -249,7 +248,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "name": "AchievementItems"
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -258,7 +257,7 @@
     "name": "AOFile",
     "offset": 212,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,

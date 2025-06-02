@@ -21,6 +21,8 @@ import { Enumeration, exportGQL, Table } from "./graphql.js";
 import { getPossibleHeaders, guessType, PossibleHeaders } from "./heuristic.js";
 import { DbBuilder } from "./exile-db/DbBuilder.js";
 
+const startTime = performance.now();
+
 const TRANSLATIONS = [
   { name: "English", path: "data" },
   { name: "French", path: "data/french" },
@@ -41,11 +43,23 @@ const args = argv[1].includes("validate.ts") ? argv.slice(2) : null;
 const tablesToProcess = args?.map((a) => a.toLowerCase());
 const langsToProcess = tablesToProcess;
 const quiet = Boolean(args?.find((v) => v === "-q" || v === "--quiet"));
+const padding = {
+  percentage: 3,
+  value: 4,
+  total: -4,
+};
 const progressBars =
   args && !quiet
     ? new MultiBar(
         {
           format: "[{bar}] {percentage}% | {value}/{total} | {step} | {table}",
+          formatValue: (v, _, type) =>
+            padding[type]
+              ? padding[type] > 0
+                ? String(v).padStart(padding[type])
+                : String(v).padEnd(-padding[type])
+              : String(v),
+          gracefulExit: true,
         },
         Presets.rect,
       )
@@ -54,20 +68,32 @@ let lastFrame = performance.now();
 const progress = {
   promises: [] as Promise<any>[],
   requests: progressBars?.create(9999, 0, {
-    step: "loading files",
+    step: "loading files".padEnd(15),
     table: "...",
   }),
   processing: progressBars?.create(999, 0, {
     step: "processing data",
     table: "...",
   }),
-  output: progressBars?.create(99, 0, {
-    step: "writing files",
+  csv: progressBars?.create(999, 0, {
+    step: "csv export".padEnd(15),
     table: "...",
   }),
-  push: (task: Promise<any>, table: string) => {
-    progress.output?.setTotal(progress.promises.length + 1);
-    progress.promises.push(task.then(() => progress.increment("output", { table })));
+  json: progressBars?.create(999, 0, {
+    step: "json export".padEnd(15),
+    table: "...",
+  }),
+  sql: progressBars?.create(999, 0, {
+    step: "sql export".padEnd(15),
+    table: "...",
+  }),
+  output: progressBars?.create(6, 0, {
+    step: "misc files".padEnd(15),
+    table: "...",
+  }),
+  push: (task: Promise<any>, table: string, output = "output") => {
+    progress[output]?.update({ table });
+    progress.promises.push(task.then(() => progress.increment(output)));
   },
   increment: (bar: string, ...args: any[]) => {
     progress[bar]?.increment(...args);
@@ -79,7 +105,7 @@ const progress = {
 };
 if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log(
-    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--annotate]",
+    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--no-annotate]",
   );
   console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
   console.log(
@@ -192,7 +218,9 @@ let files = loader
   )
   .sort();
 progress.requests?.setTotal(files.length * includeTranslations.length);
-progress.processing?.setTotal(files.length);
+for (const i of ["processing", "csv", "sql", "json"]) {
+  progress[i]?.setTotal(files.length);
+}
 
 const dbPath = `poe${poe2 ? 2 : 1}.sqlite`;
 await fs.rm(dbPath, { force: true });
@@ -315,7 +343,7 @@ await Promise.all(
           const [csvData, sqlData] = exportAllRows(
             hdr,
             data.map(({ name }, i) => ({ name, datFile: datFiles[i] })),
-            args?.includes("--validate"),
+            !(args && args.includes("--no-annotate")),
           );
           progress.push(
             fs.writeFile(
@@ -329,14 +357,20 @@ await Promise.all(
               }),
             ),
             `${table.name}.csv`,
+            "csv",
           );
-          progress.push(db.createTable(table.name, sqlData), `${table.name}.json`);
           progress.push(
             fs.writeFile(
               path.join(`${heuristics}/schema/json`, `${table.name}.json`),
               JSON.stringify(hdr, undefined, 2),
             ),
             `${table.name}.json`,
+            "json",
+          );
+          progress.push(
+            Promise.resolve().then(() => db.createTable(table.name, sqlData)),
+            `${table.name}.sql`,
+            "sql",
           );
           headerMap[table.name] = hdr;
           tables.push(table);
@@ -377,7 +411,6 @@ await Promise.all(
     }
   }),
 );
-progressBars?.stop();
 
 progress.push(
   exportGQL(
@@ -414,6 +447,7 @@ progress.push(
   "filtered.json",
 );
 await Promise.all(progress.promises);
+progress.promises = [];
 progressBars?.update();
 
 await fs.rm(path.join(schemaDir, "heuristics"), RF);
@@ -434,4 +468,10 @@ if (!args?.includes("--historical")) {
   );
 }
 
-process.exit();
+progressBars?.update();
+progressBars?.stop();
+
+if (!quiet) {
+  const endTime = performance.now();
+  console.log("completed in", (endTime - startTime) / 1000, "seconds");
+}

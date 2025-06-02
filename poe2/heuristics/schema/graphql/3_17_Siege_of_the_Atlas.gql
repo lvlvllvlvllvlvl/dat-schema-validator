@@ -1,7 +1,7 @@
 enum AtlasPrimordialAltarChoices @indexing(first: 0) { _ }
 
 type AtlasPrimordialAltarChoiceTypes {
-  Id: string
+  Id: string @unique
   TopIconEater: string
   BottomIconEater: string
   TopIconExarch: string
@@ -10,7 +10,7 @@ type AtlasPrimordialAltarChoiceTypes {
 }
 
 type AtlasPrimordialBosses {
-  Id: string
+  Id: string @unique
   _: i32
   _: i32
   _: i32
@@ -58,11 +58,11 @@ type PrimordialBossLifeScalingPerLevel {
 }
 
 type AtlasUpgradesInventoryLayout {
-  Id: string
+  Id: string @unique
   _: i32
   Voidstone: BaseItemTypes
   _: i32
-  Objective: string
+  Objective: string @localized
   GrantAtlasUpgrade: QuestFlags
   _: rid
 }
@@ -77,7 +77,7 @@ type KiracLevels {
 }
 
 type ScoutingReports @tags(list: ["item:def"]) {
-  Id: string
+  Id: string @unique
   BaseItemType: BaseItemTypes
   MinMapTier: i32
 }

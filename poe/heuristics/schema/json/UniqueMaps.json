@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "ItemVisualIdentity"
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -24,7 +24,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "WorldAreas"
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -39,7 +39,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "Words"
+        "table": "Words"
       }
     },
     "size": 16
@@ -54,7 +54,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "name": "FlavourText"
+        "table": "FlavourText"
       }
     },
     "size": 16
@@ -93,7 +93,8 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
     "name": "IsDropDisabled",
