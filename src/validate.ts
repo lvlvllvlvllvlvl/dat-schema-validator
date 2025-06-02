@@ -19,6 +19,7 @@ import {
 } from "./datfile.js";
 import { Enumeration, exportGQL, Table } from "./graphql.js";
 import { getPossibleHeaders, guessType, PossibleHeaders } from "./heuristic.js";
+import { DbBuilder } from "./exile-db/DbBuilder.js";
 
 const TRANSLATIONS = [
   { name: "English", path: "data" },
@@ -31,7 +32,7 @@ const TRANSLATIONS = [
   { name: "Spanish", path: "data/spanish" },
   { name: "Thai", path: "data/thai" },
   { name: "Traditional Chinese", path: "data/traditional chinese" },
-];
+] as const;
 
 const R = { recursive: true };
 const RF = { recursive: true, force: true };
@@ -64,11 +65,11 @@ const progress = {
     step: "writing files",
     table: "...",
   }),
-  push: (task, table: string) => {
+  push: (task: Promise<any>, table: string) => {
     progress.output?.setTotal(progress.promises.length + 1);
     progress.promises.push(task.then(() => progress.increment("output", { table })));
   },
-  increment: (bar, ...args) => {
+  increment: (bar: string, ...args: any[]) => {
     progress[bar]?.increment(...args);
     if (progressBars && performance.now() - lastFrame > 200) {
       progressBars.update();
@@ -154,7 +155,9 @@ const getType = ({ type }: NamedHeader) =>
     .map((key) => (key === "key" && !type.key?.foreign ? "self" : key))
     .join("/");
 
-let includeTranslations = args?.find((v) => v === "-l" || v === "--lang" || v === "--langs")
+const includeTranslations: readonly (typeof TRANSLATIONS)[number][] = args?.find(
+  (v) => v === "-l" || v === "--lang" || v === "--langs",
+)
   ? TRANSLATIONS.filter((t) => langsToProcess?.includes(t.name.toLowerCase()))
   : TRANSLATIONS;
 
@@ -180,7 +183,7 @@ const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
 );
 loader.clearBundleCache();
 const allTables = !args?.find((v) => v === "-t" || v === "--table" || v === "--tables");
-const files = loader
+let files = loader
   .listFiles("Data")
   .filter(
     (f) =>
@@ -190,6 +193,11 @@ const files = loader
   .sort();
 progress.requests?.setTotal(files.length * includeTranslations.length);
 progress.processing?.setTotal(files.length);
+
+const dbPath = `poe${poe2 ? 2 : 1}.sqlite`;
+await fs.rm(dbPath, { force: true });
+const db = new DbBuilder(dbPath, true);
+await db.createSpecialTables(includeTranslations.map((t) => t.name));
 
 let concurrentLoads = 0;
 await Promise.all(
@@ -211,6 +219,7 @@ await Promise.all(
               tr.name === "English" ||
               ("columns" in table && table.columns?.find((c) => c.localized))
             ) {
+              console.log("File not found: " + fileName, tr, e);
               errors.push("File not found: " + fileName);
             }
             return null!;
@@ -232,7 +241,7 @@ await Promise.all(
 
       tablesSeen.add(table.name);
 
-      const datFiles = data.map((d) => readDatFile(".datc64", d.buf as any));
+      const datFiles = data.map((d) => readDatFile(".datc64", d.buf));
       const columnStats = datFiles.map(analyzeDatFile);
       if (
         !datFiles.every(
@@ -244,7 +253,7 @@ await Promise.all(
       if (!columnStats.every((f) => f.length === columnStats[0].length)) {
         console.warn("Not all stats are equal");
       }
-      if (columnStats[0].length !== datFiles[0].rowLength) {
+      if (columnStats.length && columnStats[0].length !== datFiles[0].rowLength) {
         console.warn("Not stats data are equal");
       }
       table.columns = table.columns || [];
@@ -303,27 +312,25 @@ await Promise.all(
 
         if (possible?.length) {
           const hdr = possible.map((p) => (Array.isArray(p) ? guessType(p, datFiles[0]) : p));
+          const [csvData, sqlData] = exportAllRows(
+            hdr,
+            data.map(({ name }, i) => ({ name, datFile: datFiles[i] })),
+            args?.includes("--validate"),
+          );
           progress.push(
             fs.writeFile(
               path.join(`${heuristics}/csv`, `${table.name}.csv`),
-              csv.stringify(
-                exportAllRows(
-                  hdr,
-                  data.map(({ name }, i) => ({ name, datFile: datFiles[i] })),
-                  table.name,
-                  args?.includes("--validate"),
-                ),
-                {
-                  cast: {
-                    string: (v) => JSON.stringify(v).slice(1, -1),
-                  },
-                  quoted_empty: true,
-                  quoted_string: true,
+              csv.stringify(csvData, {
+                cast: {
+                  string: (v) => JSON.stringify(v).slice(1, -1),
                 },
-              ),
+                quoted_empty: true,
+                quoted_string: true,
+              }),
             ),
             `${table.name}.csv`,
           );
+          progress.push(db.createTable(table.name, sqlData), `${table.name}.json`);
           progress.push(
             fs.writeFile(
               path.join(`${heuristics}/schema/json`, `${table.name}.json`),
@@ -349,7 +356,7 @@ await Promise.all(
         var_offset: datFile.dataFixed.length + datFile.memsize / 2,
         var_size: datFile.dataVariable.length,
       };
-      var latest = meta.length === 0 ? null : meta[meta.length - 1];
+      const latest = meta.length === 0 ? null : meta[meta.length - 1];
       const metaName = path.join(metafileDir, table.name + ".csv");
       if (
         !args?.includes("--historical") &&
@@ -413,9 +420,9 @@ await fs.rm(path.join(schemaDir, "heuristics"), RF);
 await fs.rename(heuristics, path.join(schemaDir, "heuristics"));
 
 if (!args?.includes("--historical")) {
-  const dir = poe2 ? "poe2" : "poe";
-  await fs.rm(dir, RF);
-  await fs.cp(schemaDir, dir, R);
+  const sequel = poe2 ? "poe2" : "poe";
+  await fs.rm(sequel, RF);
+  await fs.cp(schemaDir, sequel, R);
   await Promise.all(
     Object.values(metafiles).map(async (filename) => {
       const rows = csvParse(await fs.readFile(filename));

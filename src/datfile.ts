@@ -54,7 +54,7 @@ export class FileLoader {
       filesInfo: Uint8Array;
       pathReps: Uint8Array;
       dirsInfo: Uint8Array;
-    }
+    },
   ) {}
 
   static async create(bundleLoader: IBundleLoader) {
@@ -73,20 +73,20 @@ export class FileLoader {
     });
   }
 
-  async getFileContents(fullPath: string) {
+  async getFileContents(fullPath: string): Promise<ArrayBuffer> {
     const location = this.bundles.getFileInfo(
       this.newVerson ? fullPath.toLowerCase() : fullPath,
       this.index.bundlesInfo,
-      this.index.filesInfo
+      this.index.filesInfo,
     );
     if (!location) {
-      throw "no location found for " + fullPath;
+      throw new Error("no location found for " + fullPath);
     }
     const bundleBin = await this.bundleLoader.fetchFile(location.bundle);
-    return await this.bundles.decompressSliceInBundle(
+    return this.bundles.decompressSliceInBundle(
       new Uint8Array(bundleBin),
       location.offset,
-      location.size
+      location.size,
     );
   }
 
@@ -94,7 +94,7 @@ export class FileLoader {
     return this.bundles.getDirContent(
       this.newVerson ? dir.toLowerCase() : dir,
       this.index.pathReps,
-      this.index.dirsInfo
+      this.index.dirsInfo,
     ).files;
   }
 
@@ -106,15 +106,20 @@ export class FileLoader {
 export interface IBundleLoader {
   fetchFile: (name: string) => Promise<ArrayBuffer>;
   patchVer: string;
+  fromInya: () => boolean;
 }
 
-export class CdnBundleLoader {
+export class CdnBundleLoader implements IBundleLoader {
   private constructor(
     private cacheDir: string,
     public patchVer: string,
     private manifest?: Record<string, string>,
-    private zstd?: ZstdDec
+    private zstd?: ZstdDec,
   ) {}
+
+  fromInya(): boolean {
+    return Boolean(this.manifest);
+  }
 
   private filePromise: { [name: string]: Promise<any> | undefined } = {};
 
@@ -125,7 +130,7 @@ export class CdnBundleLoader {
     } catch {
       await fs.mkdir(cacheDir, { recursive: true });
     }
-    let manifest: any = undefined;
+    let manifest: { [x: string]: string } | undefined = undefined;
     let zstd: any = undefined;
     if (inya) {
       zstd = import("@oneidentity/zstd-js/decompress").then(({ ZstdInit }) => ZstdInit());
@@ -139,7 +144,10 @@ export class CdnBundleLoader {
       }
       manifest = await Object.entries(build.manifests)
         .map(([k, v]) => `${k}/${v}`)
-        .reduce(async (mf, mfid) => await this.getManifest(mfid, await zstd, mf), {});
+        .reduce(
+          async (mf, mfid) => await this.getManifest(mfid, await zstd, await mf),
+          Promise.resolve({}),
+        );
     }
     return new CdnBundleLoader(cacheDir, patchVer, manifest, await zstd);
   }
@@ -147,7 +155,7 @@ export class CdnBundleLoader {
   async fetchFile(name: string): Promise<ArrayBuffer> {
     // Ensure only one fetch is running at a time per file
     return (this.filePromise[name] = (this.filePromise[name] || Promise.resolve()).then(() =>
-      this.doFetchFile(name)
+      this.doFetchFile(name),
     ));
   }
 
@@ -166,7 +174,11 @@ export class CdnBundleLoader {
     return bundleBin;
   }
 
-  static async getManifest(mfid: string, { ZstdStream }: ZstdDec, manifest) {
+  static async getManifest(
+    mfid: string,
+    { ZstdStream }: ZstdDec,
+    manifest: { [x: string]: string },
+  ) {
     const ndjson = await retryFetch(inyaManifest(mfid))
       .then((r) => r.arrayBuffer())
       .then((r) => Buffer.from(ZstdStream.decompress(new Uint8Array(r))).toString());
@@ -201,22 +213,30 @@ export class CdnBundleLoader {
   async fetchCDN(name: string) {
     const webpath = `${this.patchVer}/${BUNDLE_DIR}/${name}`;
     const response = await retryFetch(
-      `https://patch${this.patchVer.startsWith("4") ? "-poe2" : ""}.poecdn.com/${webpath}`
+      `https://patch${this.patchVer.startsWith("4") ? "-poe2" : ""}.poecdn.com/${webpath}`,
     );
     return await response.arrayBuffer();
   }
 }
 
+export type Datum = ReturnType<typeof readColumn>[number];
+export type SqlData = { column: NamedHeader; rows: { [lang: string]: Datum[] } };
+
 export function exportAllRows(
   headers: NamedHeader[],
   datFiles: { name: string; datFile: DatFile }[],
-  name: string,
-  annotate = false
+  annotate = false,
 ) {
-  const columns = headers.flatMap((header) => {
+  const sqlData: SqlData[] = [];
+
+  const columns: {
+    name?: string;
+    header?: NamedHeader;
+    data: Datum[];
+  }[] = headers.flatMap((header) => {
     const data = datFiles.map(({ name, datFile }) => ({ name, rows: readColumn(header, datFile) }));
 
-    const seen = datFiles.map((d) => new Set());
+    const seen = datFiles.map(() => new Set());
     if (annotate) {
       header.unique = header.unique || (data[0].rows.length > 1 && !header.type.array);
     }
@@ -241,8 +261,17 @@ export function exportAllRows(
       });
     });
 
+    sqlData.push({
+      column: header,
+      rows: Object.fromEntries(data.map(({ name, rows }) => [name, rows])),
+    });
+
     return header.localized
-      ? data.map(({ name, rows }) => ({ name: `${header.name} (${name})`, header, data: rows }))
+      ? data.map(({ name, rows }) => ({
+          name: name === "English" ? header.name : `${header.name} (${name})`,
+          header,
+          data: rows,
+        }))
       : {
           name: header.name,
           header,
@@ -255,30 +284,31 @@ export function exportAllRows(
     data: Array(datFiles[0].datFile.rowCount)
       .fill(undefined)
       .map((_, idx) => idx),
-  } as any);
+  });
 
-  return Array(datFiles[0].datFile.rowCount + 1)
+  const csvData = Array(datFiles[0].datFile.rowCount + 1)
     .fill(undefined)
     .map((_, idx) =>
       columns.map((col) =>
         idx === 0
           ? col.name
             ? col.name
-            : graphqlType(col.header)
+            : col.header && `${graphqlType(col.header)}_${col.header.offset}`
           : col.header?.type?.decimal
-          ? formatFloat(col.data[idx - 1])
-          : col.data[idx - 1]
-      )
-    );
+            ? formatFloat(col.data[idx - 1])
+            : col.data[idx - 1],
+      ),
+    ) as [string, ...Datum[]][];
+  return [csvData, sqlData] as const;
 }
 
-function formatFloat(float?: any) {
+function formatFloat(float?: any): Datum {
   if (Array.isArray(float)) {
-    return float.map(formatFloat);
+    return float.map(formatFloat) as number[];
   } else if (isNaN(float)) {
     return float;
   } else {
-    return parseFloat(float.toFixed(4));
+    return parseFloat(float.toFixed(4)) as number;
   }
 }
 
@@ -314,21 +344,21 @@ const VALID_TYPES = Object.keys(INT_TYPES).concat(
   "f32",
   "f64",
   "row",
-  "foreignrow"
+  "foreignrow",
 );
 
 export function importHeaders(sch: SchemaTable): NamedHeader[];
 export function importHeaders(
   sch: SchemaTable,
-  err: (...args) => void,
+  err: (...args: any) => void,
   datFiles: DatFile[],
-  stats: ColumnStats[][]
+  stats: ColumnStats[][],
 ): PossibleHeaders;
 export function importHeaders(
   sch: SchemaTable,
-  err: (...args) => void = console.warn,
+  err: (...args: any) => void = console.warn,
   datFiles?: DatFile[],
-  stats?: ColumnStats[][]
+  stats?: ColumnStats[][],
 ): PossibleHeaders {
   const headers = [] as PossibleHeaders;
 
@@ -340,8 +370,8 @@ export function importHeaders(
           offset,
           stats,
           datFiles,
-          Object.values(headerTypes).filter((t) => t.array)
-        )[0] || []
+          Object.values(headerTypes).filter((t) => t.array),
+        )[0] || [],
       );
     } else {
       let type: NamedHeader["type"];
@@ -369,8 +399,8 @@ export function importHeaders(
             column.type === "f32"
               ? { size: 4 }
               : (column.type as any) === "f64"
-              ? { size: 8 }
-              : undefined,
+                ? { size: 8 }
+                : undefined,
           string: column.type === "string" ? {} : undefined,
           boolean: column.type === "bool" ? true : undefined,
           key:
