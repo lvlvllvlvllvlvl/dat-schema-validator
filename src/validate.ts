@@ -226,9 +226,9 @@ for (const i of ["processing", "csv", "sql", "json"]) {
   progress[i]?.setTotal(files.length);
 }
 
-const dbPath = `poe${poe2 ? 2 : 1}.sqlite`;
+const dbPath = path.join(schemaDir, "dat.sqlite");
 await fs.rm(dbPath, { force: true });
-const db = new DbBuilder(path.resolve(dbPath), true);
+const db = new DbBuilder(dbPath, true);
 await db.createSpecialTables(includeTranslations.map((t) => t.name));
 
 let concurrentLoads = 0;
