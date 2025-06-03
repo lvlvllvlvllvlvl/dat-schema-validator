@@ -42,7 +42,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch' || steps.autocommit.outputs.changes_detected == 'true'
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          path: ./
+          path: current
 
     outputs:
       changes_detected: ${{ steps.autocommit.outputs.changes_detected }}

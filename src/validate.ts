@@ -124,7 +124,7 @@ const tablesSeen = new Set<string>();
 const tables = [] as Table[];
 const enumerations = [] as Enumeration[];
 const headerMap = {} as { [name: string]: NamedHeader[] };
-const metafileDir = poe2 ? "meta2" : "meta";
+const metafileDir = "current/" + (poe2 ? "meta2" : "meta");
 const metafiles = Object.fromEntries(
   (await fs.readdir(metafileDir)).map((f) => [
     f.toLowerCase().replaceAll(".csv", ""),
@@ -461,7 +461,7 @@ await fs.rm(path.join(schemaDir, "heuristics"), RF);
 await fs.rename(heuristics, path.join(schemaDir, "heuristics"));
 
 if (!args?.includes("--historical")) {
-  const sequel = poe2 ? "poe2" : "poe";
+  const sequel = "current/" + (poe2 ? "poe2" : "poe");
   await fs.rm(sequel, RF);
   await fs.cp(schemaDir, sequel, R);
   await Promise.all(
