@@ -1,4 +1,4 @@
-name: Validate schema
+name: export data
 
 on:
   workflow_dispatch:
@@ -31,11 +31,37 @@ jobs:
         with:
           path: .cache
           key: poecdn-${{ steps.get-version.outputs.version }}
-      - name: validate schema
-        run: npx -y tsx src/validate.ts --quiet
-      - name: validate poe2 schema
-        run: npx -y tsx src/validate.ts --poe2 --quiet
+      - name: export data
+        run: bun src/validate.ts --quiet & bun src/validate.ts --poe2 --quiet; wait
       - name: commit changes
+        id: autocommit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "validate schema at version ${{ steps.get-version.outputs.version }}"
+          commit_message: "export data at version ${{ steps.get-version.outputs.version }}"
+      - name: upload gh-pages artifact
+        if: github.event_name == 'workflow_dispatch' || steps.autocommit.outputs.changes_detected == 'true'
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: ./
+
+    outputs:
+      changes_detected: ${{ steps.autocommit.outputs.changes_detected }}
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    needs: build
+    if: github.event_name == 'workflow_dispatch' || needs.build.outputs.changes_detected == 'true'
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: deploy gh-pages
+        id: deployment
+        uses: actions/deploy-pages@v4.0.5

@@ -92,8 +92,12 @@ const progress = {
     table: "...",
   }),
   push: (task: Promise<any>, table: string, output = "output") => {
-    progress[output]?.update({ table });
-    progress.promises.push(task.then(() => progress.increment(output)));
+    progress.promises.push(
+      task.finally(() => {
+        progress[output]?.update({ table });
+        progress.increment(output);
+      }),
+    );
   },
   increment: (bar: string, ...args: any[]) => {
     progress[bar]?.increment(...args);
@@ -224,7 +228,7 @@ for (const i of ["processing", "csv", "sql", "json"]) {
 
 const dbPath = `poe${poe2 ? 2 : 1}.sqlite`;
 await fs.rm(dbPath, { force: true });
-const db = new DbBuilder(dbPath, true);
+const db = new DbBuilder(path.resolve(dbPath), true);
 await db.createSpecialTables(includeTranslations.map((t) => t.name));
 
 let concurrentLoads = 0;
@@ -376,6 +380,9 @@ await Promise.all(
           tables.push(table);
         } else {
           enumerations.push(table);
+          progress.push(Promise.resolve(), `${table.name}.csv`, "csv");
+          progress.push(Promise.resolve(), `${table.name}.json`, "json");
+          progress.push(Promise.resolve(), `${table.name}.sql`, "sql");
         }
       } else {
         enumerations.push(table);
@@ -468,6 +475,7 @@ if (!args?.includes("--historical")) {
   );
 }
 
+await db.close();
 progressBars?.update();
 progressBars?.stop();
 
