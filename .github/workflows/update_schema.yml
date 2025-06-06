@@ -3,7 +3,7 @@ name: export data
 on:
   workflow_dispatch:
   push:
-    branches: ["develop"]
+    branches: [ "develop" ]
   schedule:
     - cron: "0 0 * * *"
 
@@ -31,8 +31,10 @@ jobs:
         with:
           path: .cache
           key: poecdn-${{ steps.get-version.outputs.version }}
-      - name: export data
-        run: npx -y tsx src/validate.ts --quiet & npx -y tsx src/validate.ts --poe2 --quiet; wait
+
+      - run: npx -y tsx src/validate.ts --quiet
+      - run: npx -y tsx src/validate.ts --poe2 --quiet
+
       - name: commit changes
         id: autocommit
         uses: stefanzweifel/git-auto-commit-action@v4
