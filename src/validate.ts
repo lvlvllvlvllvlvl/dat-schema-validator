@@ -274,7 +274,15 @@ await Promise.all(
       tablesSeen.add(table.name);
 
       const datFiles = data.map((d) => readDatFile(".datc64", d.buf));
-      const columnStats = datFiles.map(analyzeDatFile);
+      const columnStats: ReturnType<typeof analyzeDatFile>[] = [];
+      try {
+        for (const datFile of datFiles) {
+          columnStats.push(analyzeDatFile(datFile));
+        }
+      } catch (cause) {
+        table.columns = [];
+        throw new Error("Error analysing datfile", { cause });
+      }
       if (
         !datFiles.every(
           (f) => f.rowLength === datFiles[0].rowLength || f.rowCount === datFiles[0].rowCount,
