@@ -5020,6 +5020,7 @@ type advancedcraftingbenchtabfiltertypes {
   _: [_] # All rows empty
 }
 
+# Added 4.2
 type alternatecharacterskin {
   _: [_]
   _: [_]
@@ -5040,6 +5041,7 @@ type alternatecharacterskin {
   _: bool
 }
 
+# Added 4.2
 type alternatecharacterskinmaterialreplacementshape {
   _: rid
   _: i32
@@ -5702,6 +5704,7 @@ type endgamemapfasttravelpins {
   _: string @localized
 }
 
+# Added 4.2
 type endgamemaplocation {
   _: string @unique
   _: [_]
@@ -6203,6 +6206,7 @@ type loginareas {
   _: i32 # All rows empty
 }
 
+# Added 4.2
 type mapambushvariations {
   _: rid @unique
   _: i32 # All rows empty
