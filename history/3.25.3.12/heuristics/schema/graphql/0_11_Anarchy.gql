@@ -1,0 +1,10 @@
+type RogueExiles {
+  MonsterVarietiesKey: MonsterVarieties
+  _: bool
+  _: rid
+}
+
+type RogueExileLifeScalingPerLevel {
+  Level: i32
+  AdditionalLife: i32
+}

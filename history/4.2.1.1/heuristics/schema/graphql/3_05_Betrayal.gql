@@ -1,0 +1,134 @@
+type BetrayalChoiceActions {
+  Id: string @unique
+  BetrayalChoicesKey: BetrayalChoices
+  ClientStringsKey: ClientStrings
+}
+
+type BetrayalChoices {
+  Id: string @unique
+  Text: string @localized
+  _: i32
+  Achievements: [AchievementItems]
+}
+
+enum BetrayalDialogue @indexing(first: 0) { _ }
+
+enum BetrayalForts @indexing(first: 0) { _ }
+
+type BetrayalJobs {
+  Id: string @unique
+  Text: string @localized
+  ExtraTerrainFeaturesKey: ExtraTerrainFeatures
+  Art: string
+  _: i32
+  _: i32
+  WorldAreasKey: WorldAreas
+  Completion_AchievementItemsKey: [AchievementItems]
+  OpenChests_AchievementItemsKey: [AchievementItems]
+  MissionCompletion_AcheivementItemsKey: [AchievementItems]
+}
+
+type BetrayalRanks {
+  Id: string @unique
+  Text: string @localized
+  Level: i32
+  RankImage: string
+}
+
+type BetrayalRelationshipState {
+  Id: string @unique
+  Text: string @localized
+}
+
+type BetrayalTargetJobAchievements {
+  BetrayalTargetsKey: BetrayalTargets
+  BetrayalJobsKey: BetrayalJobs
+  AchievementItemsKey: AchievementItems
+}
+
+type BetrayalTargetLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type BetrayalTargets {
+  Id: string @unique
+  BetrayalRanksKey: BetrayalRanks
+  MonsterVarietiesKey: MonsterVarieties
+  BetrayalJobsKey: BetrayalJobs
+  Art: string
+  _: bool
+  ItemClasses: ItemClasses
+  FullName: string @localized
+  Safehouse_ARMFile: string @file(ext: ".arm")
+  ShortName: string @localized
+  _: i32
+  SafehouseLeader_AcheivementItemsKey: AchievementItems
+  Level3_AchievementItemsKey: AchievementItems
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  ScriptArgument: string
+}
+
+type BetrayalTraitorRewards @tags(list: ["item:droptable"]) {
+  BetrayalJobsKey: BetrayalJobs
+  BetrayalTargetsKey: BetrayalTargets
+  BetrayalRanksKey: BetrayalRanks
+  Description: string @localized
+  Description2: string @localized
+}
+
+type BetrayalUpgrades {
+  Id: string @unique
+  Name: string @localized
+  Description: string @localized
+  ModsKey: [Mods]
+  ArtFile: string
+  BetrayalUpgradeSlotsKey: i32
+  _: [i32]
+  ItemVisualIdentityKey0: ItemVisualIdentity
+  ItemVisualIdentityKey1: ItemVisualIdentity
+  GrantedEffectsKey: GrantedEffects
+  _: i32
+  ItemClassesKey: ItemClasses
+}
+
+type BetrayalWallLifeScalingPerLevel {
+  Level: i32
+  MoreLife: i32
+}
+
+type SafehouseBYOCrafting @tags(list: ["crafting"]) {
+  BetrayalJobsKey: BetrayalJobs
+  BetrayalTargetsKey: BetrayalTargets
+  Rank: i32
+  Description: string @localized
+  ServerCommand: string
+  _: [rid]
+  Description2: string @localized
+  ServerCommand2: string
+}
+
+type SafehouseCraftingSpreeType {
+  Id: string @unique
+  Currencies: [SafehouseCraftingSpreeCurrencies]
+  CurrencyCount: [i32]
+  _: [rid]
+  Disabled: bool
+  ItemClassText: string @localized
+  _: i32
+}
+
+type SafehouseCraftingSpreeCurrencies {
+  Id: string @unique
+  BaseItemTypesKey: BaseItemTypes
+  HasSpecificBaseItem: bool
+}
+
+type Scarabs {
+  _: i32
+  _: rid
+  _: i32 # All rows empty
+}

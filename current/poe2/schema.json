@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1747322538,
+  "createdAt": 1749184986,
   "tables": [
     {
       "validFor": 3,
@@ -114855,6 +114855,34 @@
         },
         {
           "name": "StatsValuesCasterWeapon",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StatsAllEquipment",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StatsValuesAllEquipment",
           "description": null,
           "array": true,
           "type": "i32",
