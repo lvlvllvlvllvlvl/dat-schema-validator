@@ -229,7 +229,7 @@ for (const i of ["processing", "csv", "sql", "json"]) {
 const dbPath = path.join(schemaDir, "dat.sqlite");
 await fs.rm(dbPath, { force: true });
 const db = new DbBuilder(dbPath, true);
-await db.createSpecialTables(includeTranslations.map((t) => t.name));
+await db.initSpecialTables(includeTranslations.map((t) => t.name));
 
 let concurrentLoads = 0;
 await Promise.all(
@@ -483,11 +483,19 @@ if (!args?.includes("--historical")) {
   );
 }
 
-await db.close();
 progressBars?.update();
 progressBars?.stop();
 
 if (!quiet) {
-  const endTime = performance.now();
-  console.log("completed in", (endTime - startTime) / 1000, "seconds");
+  console.log("populating special tables...");
+}
+const dbTime = performance.now();
+await db.populateSpecialTables();
+await db.close();
+if (!quiet) {
+  console.log("...", Math.round(performance.now() - dbTime), "ms");
+}
+
+if (!quiet) {
+  console.log("completed in", Math.round(performance.now() - startTime) / 1000, "seconds");
 }

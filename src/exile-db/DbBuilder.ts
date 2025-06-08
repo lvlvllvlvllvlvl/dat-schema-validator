@@ -4,13 +4,23 @@ import { SqliteWorkerDialect } from "kysely-sqlite-worker";
 
 // from https://github.com/moepmoep12/exile-db/blob/main/scripts/buildDatabase.ts
 
+interface Relation {
+  source_table: string;
+  source_column: string;
+  source_row: number;
+  target_table: string;
+  target_column?: string;
+  target_row: any;
+}
+
 /**
  * Builds the initial database by creating the tables
  */
 export class DbBuilder {
   private readonly _db: Kysely<any>;
   private readonly _generateNames: boolean;
-  private _lang = "English";
+  private languages = ["English"];
+  private readonly deferred_relations = [] as Relation[];
   private readonly _dependencies: Record<
     string,
     { resolve: (row_count: number) => void; promise: Promise<number> }
@@ -23,8 +33,8 @@ export class DbBuilder {
     });
   }
 
-  public async createSpecialTables(languages: string[]) {
-    this._lang = languages[0];
+  public async initSpecialTables(languages: string[]) {
+    this.languages = languages;
     await this._db.schema
       .createTable("relations")
       .ifNotExists()
@@ -43,18 +53,32 @@ export class DbBuilder {
         .addColumn("column", "text")
         .addColumn("row", "integer")
         .execute();
+    }
+  }
+
+  public async populateSpecialTables() {
+    for (const lang of this.languages) {
       // language=SQL format=false
-      await sql`create virtual table if not exists ${sql.table(lang + "_search")} using fts5(
-        text, table unindexed, column unindexed, row unindexed, content=${sql.table(lang)}
+      await sql`create virtual table if not exists ${sql.table(lang + "_search")} using fts5 (
+        text, table unindexed, column unindexed, row unindexed, content = ${sql.table(lang)}
       )`.execute(this._db);
-      // language=SQL format=false
-      await sql`create trigger if not exists ${sql.table(lang + "_trigger")}
-        after insert
-        on ${sql.table(lang)}
-      begin
-        insert into ${sql.table(lang + "_search")} (rowid, text)
-        values (new.rowid, new.text);
-      end`.execute(this._db);
+    }
+    for (const rel of this.deferred_relations) {
+      try {
+        await this._db
+          .insertInto("relations")
+          .values((builder) => ({
+            ...rel,
+            target_column: undefined,
+            target_row: builder
+              .selectFrom(rel.target_table)
+              .select("rowid")
+              .where(rel.target_column!, "=", rel.target_row),
+          }))
+          .execute();
+      } catch (e) {
+        console.log("error inserting", rel, e);
+      }
     }
   }
 
@@ -102,18 +126,30 @@ export class DbBuilder {
         });
       }
     }
-    const rel: Record<string, any>[] = data
+    const rel = data
       .filter((d) => d.column.type.key?.foreign)
-      .flatMap(({ column, rows: { [this._lang]: rows } }) => {
+      .flatMap(({ column, rows: { [this.languages[0]]: rows } }) => {
         return rows
           .flatMap((v, i) => (Array.isArray(v) ? v.map((v) => ({ v, i })) : [{ v, i }]))
           .map((row) => ({
             source_table: table,
             source_column: column.name || `offset_${column.offset}`,
             source_row: row.i,
-            target_table: column.type.key?.foreign ? column.type.key.table : table,
+            target_table: column.type.key?.foreign ? column.type.key.table! : table,
+            target_column: column.type.key?.column,
             target_row: row.v,
           }));
+      })
+      .filter((rel) => {
+        if (!rel.target_row) {
+          return false;
+        } else if (rel.target_column) {
+          this.deferred_relations.push(rel);
+          return false;
+        } else {
+          delete rel.target_column;
+          return true;
+        }
       });
 
     for (const [lang, values] of Object.entries(text)) {
@@ -155,7 +191,7 @@ export class DbBuilder {
     for (let i = start; i < end; i++) {
       result.push(
         Object.fromEntries(
-          data.map(({ column, rows: { [this._lang]: rows } }) => [
+          data.map(({ column, rows: { [this.languages[0]]: rows } }) => [
             column.name || `offset_${column.offset}`,
             Array.isArray(rows[i])
               ? JSON.stringify(rows[i])
