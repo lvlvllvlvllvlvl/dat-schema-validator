@@ -188,19 +188,22 @@ export class DbBuilder {
 
   private _getValues(data: SqlData[], start: number, end: number) {
     const result: Record<string, any>[] = [];
-    for (let i = start; i < end; i++) {
+    for (let rowid = start; rowid < end; rowid++) {
       result.push(
-        Object.fromEntries(
-          data.map(({ column, rows: { [this.languages[0]]: rows } }) => [
-            column.name || `offset_${column.offset}`,
-            Array.isArray(rows[i])
-              ? JSON.stringify(rows[i])
-              : !column.type.boolean
-                ? rows[i]
-                : rows[i]
-                  ? 1
-                  : 0,
-          ]),
+        Object.assign(
+          Object.fromEntries(
+            data.map(({ column, rows: { [this.languages[0]]: rows } }) => [
+              column.name || `offset_${column.offset}`,
+              Array.isArray(rows[rowid])
+                ? JSON.stringify(rows[rowid])
+                : !column.type.boolean
+                  ? rows[rowid]
+                  : rows[rowid]
+                    ? 1
+                    : 0,
+            ]),
+          ),
+          { rowid },
         ),
       );
     }
