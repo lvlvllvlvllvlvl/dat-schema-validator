@@ -60,8 +60,11 @@ export class DbBuilder {
     for (const lang of this.languages) {
       // language=SQL format=false
       await sql`create virtual table if not exists ${sql.table(lang + "_search")} using fts5 (
-        text, table unindexed, column unindexed, row unindexed, content = ${sql.table(lang)}
+        text, table unindexed, column unindexed, row unindexed, content=${sql.table(lang)}
       )`.execute(this._db);
+      // language=SQL format=false
+      await sql`insert into ${sql.table(lang + "_search")} (rowid, text)
+        select rowid, text from ${sql.table(lang)}`.execute(this._db);
     }
     for (const rel of this.deferred_relations) {
       try {
