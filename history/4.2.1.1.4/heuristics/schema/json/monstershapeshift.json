@@ -1,0 +1,130 @@
+[
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 0,
+    "size": 16,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 16,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 32,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 36,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 52,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 68,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 84,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 100,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 116,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 132,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 148,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 164,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  }
+]

@@ -1,0 +1,22 @@
+type RogueExiles {
+  MonsterVarietiesKey: MonsterVarieties
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: [_]
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+}
+
+type RogueExileLifeScalingPerLevel {
+  Level: i32
+  AdditionalLife: i32
+}

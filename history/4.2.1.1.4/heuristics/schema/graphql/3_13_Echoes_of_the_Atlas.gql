@@ -1,0 +1,18 @@
+enum InfluenceModUpgrades @indexing(first: 0) { _ }
+
+type MavenDialog {
+  Id: string @unique
+  TextAudioT1: NPCTextAudio
+  TextAudioT2: NPCTextAudio
+  TextAudioT3: NPCTextAudio
+  TextAudioT4: NPCTextAudio
+  TextAudioT5: NPCTextAudio
+  _: bool
+  TextAudioT6: NPCTextAudio
+}
+
+enum MavenFights @indexing(first: 0) { _ }
+
+type MavenJewelRadiusKeystones {
+  Keystone: PassiveSkills
+}
