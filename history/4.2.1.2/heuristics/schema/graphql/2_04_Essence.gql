@@ -1,0 +1,24 @@
+type Essences {
+  BaseItemType: BaseItemTypes @unique
+  HASH32: u32
+  _: i32
+  _: i32
+  _: [rid]
+  _: i32
+  MonsterMod: Mods
+  _: bool
+  CraftTag: Tags
+  UpgradeResult: Essences
+  Tier: i32
+  Stats: Stats
+  CraftedMod: Mods
+  ItemClasses: [ItemClasses]
+  _: i32
+}
+
+type EssenceType {
+  Id: string @unique
+  EssenceType: i32
+  IsCorruptedEssence: bool
+  WordsKey: Words
+}

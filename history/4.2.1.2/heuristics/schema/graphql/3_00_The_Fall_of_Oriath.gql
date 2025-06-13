@@ -1,0 +1,30 @@
+type PantheonPanelLayout {
+  Id: string @unique
+  X: i32
+  Y: i32
+  IsMajorGod: bool
+  CoverImage: string
+  GodName2: string @localized
+  SelectionImage: string
+  Effect1_Stats: [Stats]
+  Effect1_Values: [i32]
+  Effect2_Stats: [Stats]
+  GodName3: string @localized
+  Effect3_Values: [i32]
+  Effect3_Stats: [Stats]
+  GodName4: string @localized
+  Effect4_Stats: [Stats]
+  Effect4_Values: [i32]
+  GodName1: string @localized
+  Effect2_Values: [i32]
+  QuestFlag: QuestFlags
+  _: rid
+  _: string
+  _: [_] # All rows empty
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: bool
+  _: [_]
+}
+
+enum PantheonSouls @indexing(first: 0) { _ }

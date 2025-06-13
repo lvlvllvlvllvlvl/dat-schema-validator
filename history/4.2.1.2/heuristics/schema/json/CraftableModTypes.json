@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ModType",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ModType"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "HASH16",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": true,
+        "size": 2
+      }
+    },
+    "size": 2
+  }
+]
