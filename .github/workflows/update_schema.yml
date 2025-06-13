@@ -34,6 +34,7 @@ jobs:
 
       - run: npx -y tsx src/validate.ts --quiet
       - run: npx -y tsx src/validate.ts --poe2 --quiet
+      - run: find * -name *.csv -size +50M -print -delete
 
       - name: commit changes
         id: autocommit
