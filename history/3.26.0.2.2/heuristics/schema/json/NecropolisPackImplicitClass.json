@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "MoreImplicit",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "NecropolisPackImplicits"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "LessImplicit",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "NecropolisPackImplicits"
+      }
+    },
+    "size": 16
+  }
+]
