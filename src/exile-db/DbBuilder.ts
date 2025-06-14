@@ -35,6 +35,7 @@ export class DbBuilder {
 
   public async initSpecialTables(languages: string[]) {
     this.languages = languages;
+
     await this._db.schema
       .createTable("relations")
       .ifNotExists()
@@ -44,28 +45,16 @@ export class DbBuilder {
       .addColumn("target_table", "text")
       .addColumn("target_row", "integer")
       .execute();
+
     for (const lang of languages) {
-      await this._db.schema
-        .createTable(lang)
-        .ifNotExists()
-        .addColumn("text", "text")
-        .addColumn("table", "text")
-        .addColumn("column", "text")
-        .addColumn("row", "integer")
-        .execute();
+      // language=SQL format=false
+      await sql`create virtual table if not exists ${sql.table(lang)} using fts5 (
+        text, table unindexed, column unindexed, row unindexed
+      )`.execute(this._db);
     }
   }
 
   public async populateSpecialTables() {
-    for (const lang of this.languages) {
-      // language=SQL format=false
-      await sql`create virtual table if not exists ${sql.table(lang + "_search")} using fts5 (
-        text, table unindexed, column unindexed, row unindexed, content=${sql.table(lang)}
-      )`.execute(this._db);
-      // language=SQL format=false
-      await sql`insert into ${sql.table(lang + "_search")} (rowid, text)
-        select rowid, text from ${sql.table(lang)}`.execute(this._db);
-    }
     for (const rel of this.deferred_relations) {
       try {
         await this._db
