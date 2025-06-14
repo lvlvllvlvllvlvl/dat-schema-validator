@@ -39,7 +39,7 @@ async function retryFetch(url: string) {
 
     await sleep(1000 * Math.pow(2, i));
   }
-  throw url;
+  process.exit(1);
 }
 
 export class FileLoader {
