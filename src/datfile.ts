@@ -266,14 +266,15 @@ export function exportAllRows(
       rows: Object.fromEntries(data.map(({ name, rows }) => [name, rows])),
     });
 
+    const name = header.name || `${graphqlType(header)}_${header.offset}`;
     return header.localized
-      ? data.map(({ name, rows }) => ({
-          name: name === "English" ? header.name : `${header.name} (${name})`,
+      ? data.map(({ name: lang, rows }) => ({
+          name: lang === "English" ? name : `${name} (${lang})`,
           header,
           data: rows,
         }))
       : {
-          name: header.name,
+          name,
           header,
           data: data[0].rows,
         };
@@ -292,8 +293,6 @@ export function exportAllRows(
       columns.map((col) =>
         idx === 0
           ? col.name
-            ? col.name
-            : col.header && `${graphqlType(col.header)}_${col.header.offset}`
           : col.header?.type?.decimal
             ? formatFloat(col.data[idx - 1])
             : col.data[idx - 1],

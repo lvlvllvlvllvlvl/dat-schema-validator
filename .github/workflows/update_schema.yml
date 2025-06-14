@@ -42,7 +42,7 @@ jobs:
         with:
           commit_message: "export data at version ${{ steps.get-version.outputs.version }}"
       - name: upload gh-pages artifact
-        if: github.event_name == 'workflow_dispatch' || steps.autocommit.outputs.changes_detected == 'true'
+        if: github.event_name != 'schedule' || steps.autocommit.outputs.changes_detected == 'true'
         uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: current
@@ -54,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
 
     needs: build
-    if: github.event_name == 'workflow_dispatch' || needs.build.outputs.changes_detected == 'true'
+    if: github.event_name != 'schedule' || needs.build.outputs.changes_detected == 'true'
 
     permissions:
       pages: write

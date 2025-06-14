@@ -94,6 +94,7 @@ const progress = {
     table: "...",
   }),
   push: (task: Promise<any>, table: string, output = "output") => {
+    if (!progress[output]) return;
     const i = progress.promises.length;
     progress.promises.push(
       task.finally(() => {
@@ -398,6 +399,9 @@ await Promise.all(
         }
       } else {
         enumerations.push(table);
+        progress.push(Promise.resolve(), `${table.name}.csv`, "csv");
+        progress.push(Promise.resolve(), `${table.name}.json`, "json");
+        progress.push(Promise.resolve(), `${table.name}.sql`, "sql");
       }
 
       const datFile = datFiles[0];
