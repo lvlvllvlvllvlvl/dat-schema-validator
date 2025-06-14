@@ -5223,14 +5223,14 @@ type BattlePassTracks {
 }
 
 # Added 3.26
-type bosskillevent {
-  _: string @unique
+type BossKillEvent {
+  _: string
+  QuestFlag: QuestFlags
+  AreaLevel: i32
+  Monster: MonsterVarieties
   _: rid
-  _: rid
-  _: i32 # All rows empty
-  _: rid
-  _: rid
-  _: i32 # All rows empty
+  _: i32
+  QuestFlag2: QuestFlags
   _: i32
   _: i32
 }
@@ -5440,9 +5440,9 @@ type Descendancy {
 }
 
 # Added 3.26
-type divinationbufftemplates {
-  _: rid @unique
-  _: rid @unique
+type DivinationBuffTemplates {
+  Buff: BuffTemplates
+  DivCardArt: DivinationCardArt
 }
 
 # Added 3.22
@@ -5813,42 +5813,42 @@ type MemoryLineType {
 }
 
 # Added 3.26
-type mercenaryattributes {
-  _: string @unique
-  _: string @unique @localized
-  _: [_]
+type MercenaryAttributes {
+  Id: string @unique
+  Name: string @localized
+  Tags: [Tags]
 }
 
 # Added 3.26
-type mercenarybuilds {
-  _: string @unique
-  _: rid
-  _: [_]
+type MercenaryBuilds {
+  Id: string @unique
+  Class: MercenaryClasses
+  Skill1: [MercenarySkills]
   _: i32
-  _: [_]
-  _: i32 # All rows empty
-  _: [_] # All rows empty
+  Skill2: [MercenarySkills]
   _: i32
-  _: [_]
-  _: [_] # All rows empty
-  _: [_]
-  _: string
-  _: u16 @unique
-  _: string @unique @localized
+  _: [rid]
+  _: i32
+  Skill3: [MercenarySkills]
+  _: [string]
+  Tags: [Tags]
+  AIFile: string
+  HASH16: u16
+  BuildName: string @localized
+  _: i32
+  Infamous: bool
   _: rid
-  _: rid
-  _: i32 # All rows empty
-  _: bool
   _: string
-  _: [_]
-  _: [_]
+  _: [string]
+  Achievements: [AchievementItems]
+  WieldableTypes: [MercenaryWieldableTypes]
 }
 
 # Added 3.26
-type mercenarybuildvisualoverrides {
-  _: rid
-  _: rid
-  _: i32 # All rows empty
+type MercenaryBuildVisualOverrides {
+  Id: MercenaryBuilds
+  SlotId: i32
+  MtxGameSpecific: MtxTypeGameSpecific
 }
 
 # Added 3.26
@@ -5867,80 +5867,78 @@ type MercenaryClasses {
 }
 
 # Added 3.26
-type mercenaryflavourtext {
-  _: string @unique
-  _: string @unique @localized
-  _: i32 @unique
-  _: i32 # All rows empty
-  _: u16 # All rows empty
-  _: string
-  _: [_]
+type MercenaryFlavourText {
+  Id: string @unique
+  Description: string @localized
+  HASH16: u16
+  Tags: [Tags]
+  TagWeight: [i32]
 }
 
 # Added 3.26
-type mercenaryinventories {
-  _: rid @unique
-  _: i32 @unique
+type MercenaryInventories {
+  Id: MercenaryClasses @unique
+  _: i32
   _: i32
   _: i32
   _: i32
 }
 
 # Added 3.26
-type mercenaryrenownlevels {
-  _: i32 @unique
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-}
-
-# Added 3.26
-type mercenaryskillfamilies {
-  _: string @unique
-}
-
-# Added 3.26
-type mercenaryskills {
-  _: rid @unique
-  _: rid
-  _: [_]
-  _: rid
-  _: string @localized
-  _: string @localized
+type MercenaryRenownLevels {
+  RenownLevel: i32
   _: i32
   _: i32
-  _: rid
-  _: u16 @unique
-  _: string
 }
 
 # Added 3.26
-type mercenarysupportcounts {
-  _: string @unique
+type MercenarySkillFamilies {
+  Id: string @unique
 }
 
 # Added 3.26
-type mercenarysupportfamilies {
-  _: string @unique
-}
-
-# Added 3.26
-type mercenarysupports {
-  _: string @unique
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: [_]
-  _: [i32]
-  _: string @localized
-  _: rid
-  _: u16 @unique
-  _: string
+type MercenarySkills {
+  Id: GrantedEffects @unique
+  SupportCount: MercenarySupportCounts
+  PossibleSupports: [MercenarySupports]
+  SecondaryGrantedEffect: GrantedEffects
+  Name: string @localized
+  Description: string @localized
   _: i32
+  _: i32
+  SkillFamily: MercenarySkillFamilies
+  HASH16: u16
+  HouseIcon: string
 }
 
 # Added 3.26
-type mercenarywieldabletypes {
-  _: rid @unique
+type MercenarySupportCounts {
+  Id: string @unique
+}
+
+# Added 3.26
+type MercenarySupportFamilies {
+  Id: string @unique
+}
+
+# Added 3.26
+type MercenarySupports {
+  Id: string @unique
+  _: i32
+  _: i32
+  _: i32
+  Stat: [Stats]
+  StatValues: [i32]
+  Name: string @localized
+  SupportFamily: MercenarySupportFamilies
+  HASH16: u16
+  GemIcon: string
+  Variant: i32
+}
+
+# Added 3.26
+type MercenaryWieldableTypes {
+  ItemClass: ItemClasses
 }
 
 # Added 3.19
@@ -6137,10 +6135,10 @@ type microtransactiontrackingmapfragmenttypes {
 }
 
 # Added 3.26
-type miniondoublingstattypes {
-  _: rid @unique
-  _: rid
-  _: i32 # All rows empty
+type MinionDoublingStatTypes {
+  Id: i32 @unique
+  Stat: Stats
+  MinionType: MinionType
 }
 
 # Added 3.22
@@ -6182,17 +6180,17 @@ type MonsterStatueOverrides {
 }
 
 # Added 3.25
-type mtxtypegamespecific {
-  _: rid @unique
-  _: i32 @unique
-  _: string
+type MtxTypeGameSpecific {
+  Type: MtxTypes
+  HASH16: i32
+  DDSFile: string @file(ext: ".dds")
   _: i32
-  _: [_]
+  _: [i32]
 }
 
 # Added 3.25
-type mtxtypes {
-  _: string @unique
+type MtxTypes {
+  Id: string @unique
   _: i32 @unique
   _: string @localized
   _: string @localized
@@ -6429,9 +6427,9 @@ type racerewardtomicro {
 }
 
 # Added 3.26
-type recombinableclasses {
-  _: rid @unique
-  _: i32 # All rows empty
+type RecombinableClasses {
+  Id: ItemClasses @unique
+  _: i32
 }
 
 # Added 3.20
@@ -6718,9 +6716,9 @@ type villagebalanceperlevelshared {
 }
 
 # Added 3.26
-type villagebasestats {
-  _: rid @unique
-  _: i32
+type VillageBaseStats {
+  Stat: Stats
+  StatValue: i32
 }
 
 # Added 3.25
@@ -6874,9 +6872,9 @@ type VillageUpgradeCategories {
 }
 
 # Added 3.26
-type worldobjectdisplayedapplicableitems {
-  _: string @unique
-  _: [_]
+type WorldObjectDisplayedApplicableItems {
+  Id: string @unique
+  BaseItemType: [BaseItemTypes]
 }
 
 # Added 3.26

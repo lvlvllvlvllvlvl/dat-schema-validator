@@ -1,0 +1,295 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Class",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MercenaryClasses"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Skill1",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MercenarySkills"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Skill2",
+    "offset": 44,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MercenarySkills"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 60,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Skill3",
+    "offset": 84,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MercenarySkills"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 100,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "size": 16
+  },
+  {
+    "name": "Tags",
+    "offset": 116,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Tags"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "AIFile",
+    "offset": 132,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "HASH16",
+    "offset": 140,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": true,
+        "size": 2
+      }
+    },
+    "size": 2
+  },
+  {
+    "name": "BuildName",
+    "offset": 142,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "localized": true
+  },
+  {
+    "name": "",
+    "offset": 150,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Infamous",
+    "offset": 154,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 155,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 171,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 179,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "size": 16
+  },
+  {
+    "name": "Achievements",
+    "offset": 195,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "AchievementItems"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "WieldableTypes",
+    "offset": 211,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MercenaryWieldableTypes"
+      }
+    },
+    "size": 16
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Buff",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "BuffTemplates"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "DivCardArt",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "DivinationCardArt"
+      }
+    },
+    "size": 16
+  }
+]

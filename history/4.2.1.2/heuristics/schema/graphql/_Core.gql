@@ -6546,17 +6546,17 @@ type monstershapeshift {
 }
 
 # Added 4.1
-type mtxtypegamespecific {
-  _: rid @unique
-  _: i32 @unique
-  _: string
+type MtxTypeGameSpecific {
+  Type: MtxTypes
+  HASH16: i32
+  DDSFile: string @file(ext: ".dds")
   _: i32
-  _: [_]
+  _: [i32]
 }
 
 # Added 4.1
-type mtxtypes {
-  _: string @unique
+type MtxTypes {
+  Id: string @unique
   _: i32 @unique
   _: string @localized
   _: string @localized
@@ -6791,10 +6791,10 @@ type racerewardtomicro {
 }
 
 # Added 4.2
-type recombinableclasses {
-  _: rid @unique
+type RecombinableClasses {
+  Id: ItemClasses @unique
+  _: i32
   _: rid
-  _: i32 # All rows empty
 }
 
 # Added 4.1
@@ -7384,9 +7384,9 @@ type worldmaplegends {
 }
 
 # Added 4.2
-type worldobjectdisplayedapplicableitems {
-  _: string @unique
-  _: [_]
+type WorldObjectDisplayedApplicableItems {
+  Id: string @unique
+  BaseItemType: [BaseItemTypes]
 }
 
 # Added 4.1
