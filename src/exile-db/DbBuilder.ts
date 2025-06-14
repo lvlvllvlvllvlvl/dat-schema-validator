@@ -1,6 +1,6 @@
-import { ColumnDataType, Kysely, sql } from "kysely";
+import { ColumnDataType, Kysely, sql, SqliteDialect } from "kysely";
 import { NamedHeader, SqlData } from "../datfile.js";
-import { SqliteWorkerDialect } from "kysely-sqlite-worker";
+import Database from "better-sqlite3";
 
 // from https://github.com/moepmoep12/exile-db/blob/main/scripts/buildDatabase.ts
 
@@ -29,7 +29,7 @@ export class DbBuilder {
   constructor(dbPath: string, generateNames = false) {
     this._generateNames = generateNames;
     this._db = new Kysely({
-      dialect: new SqliteWorkerDialect({ source: dbPath }),
+      dialect: new SqliteDialect({ database: new Database(dbPath) }),
     });
   }
 
