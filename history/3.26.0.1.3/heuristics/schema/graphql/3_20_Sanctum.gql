@@ -1,0 +1,124 @@
+type SanctumAirlocks {
+  Floor: SanctumFloors
+  _: i32
+  _: [i32]
+  Area1: WorldAreas
+  Area2: WorldAreas
+}
+
+type SanctumDefenceIcons {
+  Id: string @unique
+  Stat: Stats
+  DefenceIcon: string
+  DefenceBrokenIcon: string
+  BrokenStat: Stats
+  Description: string @localized
+}
+
+type SanctumDeferredRewardCategories {
+  Item: BaseItemTypes
+  NamePlural: string @localized
+  ScriptReward: string
+}
+
+type SanctumDeferredRewards {
+  Id: string @unique
+  DeferralIcon: string
+  DeferralCategory: SanctumPersistentEffectCategories
+  RewardCategory: SanctumDeferredRewardCategories
+  Count: i32
+}
+
+type SanctumFloors {
+  Id: string @unique
+  Area: WorldAreas
+  Title: ClientStrings
+  RoomIcon: string
+  BossIcon: string
+  Description: string @localized
+  Summary: ClientStrings
+  Itemised: BaseItemTypes
+}
+
+type SanctumFodderLifeScalingPerLevel {
+  Level: i32
+  _: i32
+}
+
+type SanctumLifeScalingPerLevel {
+  Level: i32
+  _: i32
+}
+
+type SanctumPersistentEffectCategories {
+  Id: string @unique
+  Frame: string
+  Popup: string
+  Glow: string
+  Curse: bool
+  Boon: bool
+  Icon: string
+  Name: string @localized
+  Deferral: bool
+}
+
+type SanctumPersistentEffects {
+  Id: string @unique
+  Stats: [Stats]
+  StatValues: [i32]
+  Name: string @localized
+  Icon: string
+  _: i32
+  _: bool
+  EffectCategory: SanctumPersistentEffectCategories
+  NextEffect: SanctumPersistentEffects
+  _: string
+  BoonDesc: string @localized
+  CurseDesc: string @localized
+  _: i32
+  _: i32
+  _: bool
+  _: [rid]
+  Guard: [MonsterVarieties]
+  FirstEffect: SanctumPersistentEffects
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+  HASH16: i32
+}
+
+type SanctumRooms {
+  Id: string @unique
+  ArmFile: string
+  RoomType: SanctumRoomTypes
+  Script: string
+  Floor: SanctumFloors
+  Area: WorldAreas
+}
+
+type SanctumRoomTypes {
+  Id: string @unique
+  _: bool
+  _: bool
+  _: rid
+  _: rid
+  _: bool
+  Icon: string
+  _: bool
+  Description: string @localized
+  _: [string] @localized
+  Rooms: [SanctumRooms]
+  _: string
+  _: bool
+}
+
+type SanctumSelectionDisplayOverride {
+  Id: string @unique
+  Reward: string @localized
+  Icon: string
+  Downside: string @localized
+  Item: BaseItemTypes
+  Count: i32
+  RewardCategory: SanctumDeferredRewardCategories
+}
