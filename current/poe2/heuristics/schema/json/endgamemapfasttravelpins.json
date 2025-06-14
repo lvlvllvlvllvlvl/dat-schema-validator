@@ -20,17 +20,21 @@
   },
   {
     "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "array": false,
+      "string": {}
     },
     "offset": 16,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false,
-    "localized": true
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 24,
+    "size": 8,
+    "unique": true
   },
   {
     "type": {

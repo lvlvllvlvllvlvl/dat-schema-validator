@@ -33,17 +33,7 @@ type ExpeditionCurrency {
   _: rid
 }
 
-type ExpeditionDeals {
-  Id: i32 @unique
-  Function: string
-  Arguments: string
-  TextAudio: NPCTextAudio
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: rid
-  _: i32 # All rows empty
-  _: i32
-}
+enum ExpeditionDeals @indexing(first: 0) { _ }
 
 type ExpeditionFactions {
   Id: string @unique

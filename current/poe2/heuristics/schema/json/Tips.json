@@ -49,12 +49,13 @@
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "offset": 25,
-    "size": 16,
+    "size": 4,
     "unique": false
   },
   {
@@ -65,7 +66,7 @@
         "size": 4
       }
     },
-    "offset": 41,
+    "offset": 29,
     "size": 4,
     "noData": true,
     "unique": false
@@ -78,23 +79,10 @@
         "size": 4
       }
     },
-    "offset": 45,
+    "offset": 33,
     "size": 4,
-    "unique": false,
-    "localized": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 49,
-    "size": 4,
-    "unique": false,
-    "localized": true
+    "noData": true,
+    "unique": false
   },
   {
     "type": {
@@ -104,7 +92,7 @@
         "size": 2
       }
     },
-    "offset": 53,
+    "offset": 37,
     "size": 2,
     "noData": true,
     "unique": false
@@ -114,8 +102,21 @@
       "array": false,
       "boolean": true
     },
-    "offset": 55,
+    "offset": 39,
     "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 40,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
     "unique": false
   }
 ]

@@ -879,45 +879,25 @@ type Chests {
   Name: string @localized
   AOFiles: [string] @file(ext: ".ao")
   _: bool
+  _: i32
+  _: bool
+  _: bool
+  _: i32
+  _: [_] # All rows empty
   _: rid
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: f32 @localized
-  _: i32 @localized # All rows empty
-  _: i32
-  _: i32
+  _: bool
+  _: [_]
+  _: [_]
   _: rid
   _: i32
+  _: string @localized
   _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
+  _: rid
+  _: rid
+  _: [_]
+  _: rid
+  _: string
+  _: bool
   _: rid
   _: [_] # All rows empty
   _: string
@@ -3545,48 +3525,7 @@ type NPCShop {
   _: rid
 }
 
-type NPCTalk {
-  NPCKey: NPCs
-  _: i32
-  DialogueOption: string @localized
-  _: [i32]
-  _: [i32]
-  _: [i32]
-  Script: string
-  TextAudio: NPCTextAudio
-  Category: NPCTalkCategory
-  QuestRewardOffersKey: QuestRewardOffers
-  QuestFlag: QuestFlags
-  NPCTextAudioKeys: [NPCTextAudio]
-  Script2: string
-  _: bool
-  _: bool
-  _: [i32]
-  _: [i32]
-  _: i32
-  _: [i32]
-  _: i32
-  _: bool
-  _: rid
-  _: i32
-  _: bool
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: NPCTalk @localized
-  _: rid
-  _: rid
-  _: i32
-  _: [_] # All rows empty
-  _: i32
-  _: rid
-  _: i32 # All rows empty
-  _: rid
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-}
+enum NPCTalk @indexing(first: 0) { _ }
 
 type NPCTalkCategory {
   Id: string @unique
@@ -4051,7 +3990,7 @@ type QuestStates {
   _: [_]
   _: i32
   _: rid
-  _: QuestStates @localized
+  _: string
   _: [_]
 }
 
@@ -4620,12 +4559,12 @@ type Tips {
   Text: string @localized
   TextXBox: string @localized
   _: bool
-  _: rid
+  _: i32
   _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
+  _: i32 # All rows empty
   _: u16 # All rows empty
   _: bool
+  _: [_] # All rows empty
 }
 
 type Topologies {
@@ -4882,37 +4821,26 @@ type WorldAreas {
   _: bool
   _: bool
   _: i32
+  _: i32
+  _: i32
+  _: [_] # All rows empty
   _: rid
-  _: i32 @unique @localized
   _: rid
   _: rid
   _: rid
-  _: rid
-  _: i32 # All rows empty
   _: rid
   _: bool
+  _: u16 # All rows empty
+  _: bool
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
+  _: i32
+  _: string @localized
   _: i32
   _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32 # All rows empty
-  _: i32
+  _: bool
 }
 
 type WorldAreaLeagueChances {
@@ -5367,7 +5295,8 @@ type clientstrings2 {
   _: string @localized
   _: string
   _: i32 @unique
-  _: [_] @localized
+  _: string
+  _: string
 }
 
 # Added 4.1
@@ -5704,7 +5633,8 @@ type EndgameMapDecorations {
 type endgamemapfasttravelpins {
   _: string @unique
   _: string @unique @localized
-  _: [_] @localized
+  _: string
+  _: string @unique
   _: string @unique
   _: string @unique
   _: string @unique
@@ -6548,20 +6478,14 @@ type mobileskillgemlayout {
   _: rid
   _: i32
   _: bool
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized
-  _: i32 @localized
-  _: i32 @localized
-  _: i32 @localized
-  _: i32 @localized
-  _: i32 @localized
-  _: i32 # All rows empty
   _: u16 # All rows empty
   _: bool
+  _: string
+  _: string
+  _: string @localized
+  _: string @localized
+  _: string
+  _: string
 }
 
 # Added 4.1
