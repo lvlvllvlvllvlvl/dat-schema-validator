@@ -69,7 +69,7 @@ export async function getPossibleHeaders(
   byOffset: PossibleHeaders,
   stats: ColumnStats[][],
   datFiles: DatFile[],
-  headers: Readonly<PossibleHeaders> = []
+  headers: Readonly<PossibleHeaders> = [],
 ): Promise<Readonly<PossibleHeaders>[]> {
   const maxOffset = datFiles[0].rowLength;
   const len = (header: NamedHeader) => header.size || getHeaderLength(header, datFiles[0]);
@@ -113,7 +113,7 @@ export async function getPossibleHeaders(
 function nextOffset(
   headers: Readonly<PossibleHeaders>,
   last: NamedHeader | NamedHeader[],
-  len: (header: NamedHeader) => number
+  len: (header: NamedHeader) => number,
 ): number {
   return headers.length && last
     ? Array.isArray(last)
@@ -126,19 +126,19 @@ export function possibleColumnHeaders(
   offset: number,
   stats: ColumnStats[][],
   datFiles: DatFile[],
-  types: HeaderType[]
+  types: HeaderType[],
 ) {
   const valid = (header: Header) => {
     if (!stats.every((s) => validateHeader(header, s))) {
       return false;
+    } else if (header.type.string) {
+      return validateString(header, datFiles);
+    } else {
+      return validateNonString(header, datFiles);
     }
-    if (header.type.string && !isString(header, datFiles)) {
-      return false;
-    }
-    return true;
   };
-  var possibleHeaders = types
-    .map((type) => ({ type, offset } as NamedHeader))
+  const possibleHeaders = types
+    .map((type) => ({ type, offset }) as NamedHeader)
     .filter(valid)
     .reduce((result, header) => {
       const size = header.size || getHeaderLength(header, datFiles[0]);
@@ -210,6 +210,7 @@ export function guessType(possibles: NamedHeader[], datFile: DatFile): NamedHead
 }
 
 const SMALLEST_NORMAL_F32 = Math.pow(2, -126);
+
 function looksLikeFloat(possibles: NamedHeader[], datFile: DatFile): NamedHeader | undefined {
   const header = possibles.find((p) => p.type.decimal);
   if (!header) {
@@ -239,11 +240,11 @@ function looksLikeFloat(possibles: NamedHeader[], datFile: DatFile): NamedHeader
   }
 }
 
-function isString(header: NamedHeader, datFiles: DatFile[]) {
+function validateString(header: NamedHeader, datFiles: DatFile[]) {
   return !datFiles.find((datFile) =>
     readColumn(header, datFile).find((v) =>
-      Array.isArray(v) ? v.find(unprintable) : unprintable(v)
-    )
+      Array.isArray(v) ? v.find(unprintable) : unprintable(v),
+    ),
   );
 }
 
@@ -251,18 +252,31 @@ function unprintable(data: any) {
   return /[\x00-\x08\x0E-\x1F]/.test(data);
 }
 
+function validateNonString(header: NamedHeader, datFiles: DatFile[]) {
+  const [first, ...rest] = datFiles.map((datFile) => readColumn(header, datFile));
+  return first.every((cell, row) => rest.every((col) => isEqual(cell, col[row])));
+}
+
+function isEqual(a: unknown, b: unknown) {
+  if (a === b) return true;
+  if (!Array.isArray(a) || !Array.isArray(b)) return false;
+  if (a.length !== b.length) return false;
+  return a.every((v, i) => v === b[i]);
+}
+
 export function toGraphql(headers: NamedHeader[]): string[] {
   return headers.map((h) => {
     return `${h.name || "_"}: ${graphqlType(h).replace("rid", h.type.key?.table || "rid")}`;
   });
 }
+
 export function graphqlType(header: NamedHeader): string {
   const type = Object.entries(headerTypes).find(([_, value]) => typeEq(value, header.type));
   if (!type?.[0]) {
     console.warn(
       "didn't recognize type",
       Object.values(headerTypes).map((value) => typeEqDebug(value, header.type)),
-      header
+      header,
     );
     return "<unknown>";
   }

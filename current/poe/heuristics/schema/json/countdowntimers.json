@@ -96,15 +96,14 @@
   {
     "type": {
       "array": false,
-      "decimal": {
+      "integer": {
+        "unsigned": false,
         "size": 4
       }
     },
     "offset": 72,
     "size": 4,
-    "noData": true,
-    "unique": false,
-    "localized": true
+    "unique": false
   },
   {
     "type": {

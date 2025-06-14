@@ -83,19 +83,23 @@ const progress = {
     step: "json export".padEnd(15),
     table: "...",
   }),
-  sql: progressBars?.create(999, 0, {
-    step: "sql export".padEnd(15),
-    table: "...",
-  }),
+  sql: args?.includes("--no-db")
+    ? undefined
+    : progressBars?.create(999, 0, {
+        step: "sql export".padEnd(15),
+        table: "...",
+      }),
   output: progressBars?.create(6, 0, {
     step: "misc files".padEnd(15),
     table: "...",
   }),
   push: (task: Promise<any>, table: string, output = "output") => {
+    const i = progress.promises.length;
     progress.promises.push(
       task.finally(() => {
         progress[output]?.update({ table });
         progress.increment(output);
+        progress.promises[i] = Promise.resolve();
       }),
     );
   },
@@ -109,7 +113,7 @@ const progress = {
 };
 if (args?.find((v) => v === "-h" || v === "--help")) {
   console.log(
-    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--no-annotate]",
+    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--no-annotate] [--no-db]",
   );
   console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
   console.log(
@@ -227,9 +231,9 @@ for (const i of ["processing", "csv", "sql", "json"]) {
 }
 
 const dbPath = path.join(schemaDir, "dat.sqlite");
-await fs.rm(dbPath, { force: true });
-const db = new DbBuilder(dbPath, true);
-await db.initSpecialTables(includeTranslations.map((t) => t.name));
+!args?.includes("--no-db") && (await fs.rm(dbPath, { force: true }));
+const db = args?.includes("--no-db") ? undefined : new DbBuilder(dbPath, true);
+await db?.initSpecialTables(includeTranslations.map((t) => t.name));
 
 let concurrentLoads = 0;
 await Promise.all(
@@ -355,7 +359,7 @@ await Promise.all(
           const [csvData, sqlData] = exportAllRows(
             hdr,
             data.map(({ name }, i) => ({ name, datFile: datFiles[i] })),
-            !(args && args.includes("--no-annotate")),
+            !args?.includes("--no-annotate"),
           );
           progress.push(
             fs.writeFile(
@@ -380,7 +384,7 @@ await Promise.all(
             "json",
           );
           progress.push(
-            Promise.resolve().then(() => db.createTable(table.name, sqlData)),
+            Promise.resolve().then(() => db?.createTable(table.name, sqlData)),
             `${table.name}.sql`,
             "sql",
           );
@@ -486,13 +490,13 @@ if (!args?.includes("--historical")) {
 progressBars?.update();
 progressBars?.stop();
 
-if (!quiet) {
+if (db && !quiet) {
   console.log("populating special tables...");
 }
 const dbTime = performance.now();
-await db.populateSpecialTables();
-await db.close();
-if (!quiet) {
+await db?.populateSpecialTables();
+await db?.close();
+if (db && !quiet) {
   console.log("...", Math.round(performance.now() - dbTime), "ms");
 }
 

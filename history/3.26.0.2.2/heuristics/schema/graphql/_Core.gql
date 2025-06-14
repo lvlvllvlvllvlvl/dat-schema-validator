@@ -5318,7 +5318,7 @@ type countdowntimers {
   _: i32
   _: i32
   _: i32
-  _: f32 @localized # All rows empty
+  _: i32
   _: i32
 }
 
@@ -5833,23 +5833,15 @@ type mercenarybuilds {
   _: [_] # All rows empty
   _: [_]
   _: string
-  _: i32 @unique @localized
-  _: i32 # All rows empty
+  _: u16 @unique
+  _: string @unique @localized
   _: rid
   _: rid
   _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @unique @localized
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @unique @localized
-  _: u16 # All rows empty
   _: bool
+  _: string
+  _: [_]
+  _: [_]
 }
 
 # Added 3.26
@@ -5880,13 +5872,9 @@ type mercenaryflavourtext {
   _: string @unique @localized
   _: i32 @unique
   _: i32 # All rows empty
-  _: i32 @unique @localized
-  _: i32 @localized # All rows empty
-  _: i32
-  _: i32 # All rows empty
-  _: i32 @localized
-  _: i32 @localized # All rows empty
   _: u16 # All rows empty
+  _: string
+  _: [_]
 }
 
 # Added 3.26
@@ -5921,9 +5909,8 @@ type mercenaryskills {
   _: i32
   _: i32
   _: rid
-  _: i32 @unique @localized
-  _: i32 @localized
-  _: u16 # All rows empty
+  _: u16 @unique
+  _: string
 }
 
 # Added 3.26
@@ -5943,13 +5930,12 @@ type mercenarysupports {
   _: i32 # All rows empty
   _: i32 # All rows empty
   _: [_]
-  _: [_]
+  _: [i32]
   _: string @localized
   _: rid
-  _: i32 @unique @localized
-  _: i32 # All rows empty
+  _: u16 @unique
+  _: string
   _: i32
-  _: u16 # All rows empty
 }
 
 # Added 3.26
@@ -6229,7 +6215,8 @@ type mtxtypes {
   _: bool
   _: bool
   _: string @localized
-  _: [_] @localized
+  _: string
+  _: string
 }
 
 # Added 3.24
@@ -6662,8 +6649,8 @@ type tradewindowvisuals {
   _: [_]
   _: [_]
   _: [_]
-  _: [_]
-  _: [_]
+  _: [i32]
+  _: [i32]
   _: bool @unique
 }
 
@@ -6835,11 +6822,10 @@ type villageshippingfailures {
   _: i32
   _: bool
   _: i32
-  _: i32 @localized
-  _: i32 @localized
-  _: i32
   _: u16 # All rows empty
   _: bool
+  _: string @localized
+  _: i32
 }
 
 # Added 3.25
