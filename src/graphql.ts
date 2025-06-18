@@ -1,12 +1,13 @@
-import { parse as csvParse } from "csv-parse/sync";
 import { SCHEMA_URL, SchemaEnumeration, SchemaFile, SchemaTable } from "pathofexile-dat-schema";
-import { NamedHeader, importHeaders } from "./datfile.js";
+import { importHeaders, NamedHeader } from "./datfile.js";
 
 import * as fs from "fs/promises";
 import path from "path";
+
 export interface Table extends SchemaTable {
   added?: string;
 }
+
 export interface Enumeration extends SchemaEnumeration {
   added?: string;
 }
@@ -42,7 +43,7 @@ export function tableGQL(table: Table, headers: NamedHeader[], err: (...args) =>
       } else if (header.type.decimal?.size === 8) {
         type = "f64";
       } else if (header.type.key) {
-        type = header.type.key.foreign ? header.type.key.table ?? "rid" : table.name;
+        type = header.type.key.foreign ? (header.type.key.table ?? "rid") : table.name;
       }
 
       const directives = [] as string[];
@@ -115,43 +116,17 @@ export async function exportGQL(
   enumerations: Enumeration[],
   getHeaders: (table: Table) => NamedHeader[],
   dest: string,
-  err: (...args) => void = console.warn
+  err: (...args: any[]) => void = console.warn,
 ) {
-  const files = {} as any;
-  const sources = csvParse(await fs.readFile("gqlsources.csv"));
-  const sourceMap = {} as any;
-  for (const [file, type, name] of sources) {
-    files[file] = files[file] || [];
-    sourceMap[name] = { file, type, name, index: files[file].length };
-    files[file].push(undefined);
-  }
-
   for (const table of tables) {
-    if (table.name in sourceMap) delete table.added;
-    const gql = tableGQL(table, getHeaders(table as SchemaTable), err);
-    const mapping = sourceMap[table.name];
-    delete sourceMap[table.name];
-    if (mapping) {
-      files[mapping.file][mapping.index] = gql;
-    } else {
-      files["_Core.gql"].push(gql);
-    }
+    await fs.writeFile(
+      path.join(dest, table.name + ".gql"),
+      tableGQL(table, getHeaders(table as SchemaTable), err),
+    );
   }
-  for (const enumeration of enumerations) {
-    const gql = enumGQL(enumeration);
-    const mapping = sourceMap[enumeration.name];
-    delete sourceMap[enumeration.name];
-    if (mapping) {
-      files[mapping.file][mapping.index] = gql;
-    } else {
-      files["_Core.gql"].push(gql);
-    }
+  for (const table of enumerations) {
+    await fs.writeFile(path.join(dest, table.name + ".gql"), enumGQL(table));
   }
-  await Promise.all(
-    Object.entries(files).map(([file, gql]) =>
-      fs.writeFile(path.join(dest, file), (gql as string[]).filter((v) => v).join("\n"))
-    )
-  );
 }
 
 if (process.argv[1].includes("graphql.ts")) {
