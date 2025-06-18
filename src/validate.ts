@@ -1,13 +1,11 @@
 import { MultiBar, Presets } from "cli-progress";
 import { parse as csvParse } from "csv-parse/sync";
 import * as csv from "csv-stringify";
-import { rmSync } from "fs";
 import * as fs from "fs/promises";
 import path from "path";
 import { SCHEMA_URL, SchemaFile } from "pathofexile-dat-schema";
 import { analyzeDatFile, readDatFile, validateHeader } from "pathofexile-dat/dat.js";
 import { argv, exit } from "process";
-import { onExit } from "signal-exit";
 import { ShapeChange } from "./changes.js";
 import {
   CdnBundleLoader,
@@ -198,9 +196,6 @@ const includeTranslations: readonly (typeof TRANSLATIONS)[number][] = args?.find
 
 await fs.mkdir("tmp", R);
 const tmp = await fs.mkdtemp(path.join("tmp", "dat-validator-"));
-onExit(() => {
-  rmSync(tmp, RF);
-});
 const heuristics = path.join(tmp, "heuristics");
 await fs.mkdir(`${heuristics}/csv`, R);
 await fs.mkdir(`${heuristics}/schema/json`, R);
