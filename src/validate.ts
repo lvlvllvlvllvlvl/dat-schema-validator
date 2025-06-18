@@ -197,9 +197,13 @@ const includeTranslations: readonly (typeof TRANSLATIONS)[number][] = args?.find
 await fs.mkdir("tmp", R);
 const tmp = await fs.mkdtemp(path.join("tmp", "dat-validator-"));
 const heuristics = path.join(tmp, "heuristics");
-await fs.mkdir(`${heuristics}/csv`, R);
-await fs.mkdir(`${heuristics}/schema/json`, R);
-await fs.mkdir(`${heuristics}/schema/graphql`, R);
+const csvDir = await fs.mkdir(`${heuristics}/csv`, R);
+const jsonDir = await fs.mkdir(`${heuristics}/schema/json`, R);
+const gqlDir = await fs.mkdir(`${heuristics}/schema/graphql`, R);
+if (!csvDir || !jsonDir || !gqlDir) {
+  console.error("Error creating tmp dirs, created:", csvDir, jsonDir, gqlDir);
+  process.exit(1);
+}
 
 const validFor = poe2 ? (t: any) => t.validFor & 2 : (t: any) => t.validFor & 1;
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
@@ -359,7 +363,7 @@ await Promise.all(
           );
           progress.push(
             fs.writeFile(
-              path.join(`${heuristics}/csv`, `${table.name}.csv`),
+              path.join(csvDir, `${table.name}.csv`),
               csv.stringify(csvData, {
                 cast: {
                   string: (v) => JSON.stringify(v).slice(1, -1),
@@ -373,7 +377,7 @@ await Promise.all(
           );
           progress.push(
             fs.writeFile(
-              path.join(`${heuristics}/schema/json`, `${table.name}.json`),
+              path.join(jsonDir, `${table.name}.json`),
               JSON.stringify(hdr, undefined, 2),
             ),
             `${table.name}.json`,
@@ -435,7 +439,7 @@ progress.push(
     tables.sort((a, b) => a.name.localeCompare(b.name)),
     enumerations.sort((a, b) => a.name.localeCompare(b.name)),
     (table) => headerMap[table.name],
-    `${heuristics}/schema/graphql`,
+    gqlDir,
     (...args) => errors.push(args.join(" ")),
   ),
   "graphql",
