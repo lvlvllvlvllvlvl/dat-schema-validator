@@ -1,0 +1,23 @@
+# Added 4.1
+type SkillSurgeEffects {
+  _: string @unique
+  _: string
+  _: bool
+  _: bool
+  _: bool
+  _: string @unique
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: bool
+  _: bool
+  _: bool
+  _: i32 # All rows empty
+  _: bool
+  _: bool
+  _: bool
+  _: rid
+  _: bool
+  _: [_]
+  _: bool
+  _: i32
+}

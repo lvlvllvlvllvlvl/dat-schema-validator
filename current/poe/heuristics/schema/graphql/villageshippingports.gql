@@ -1,0 +1,16 @@
+# Added 3.25
+type villageshippingports {
+  _: string @unique
+  _: string @unique @localized
+  _: string
+  _: string @unique
+  _: string @unique @localized
+  _: bool
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+  _: bool
+  _: f32
+}

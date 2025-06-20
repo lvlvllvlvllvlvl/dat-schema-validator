@@ -1,0 +1,9 @@
+# Added 3.11
+type LabyrinthAreas {
+  Id: string @unique
+  Normal_WorldAreasKeys: [WorldAreas]
+  Cruel_WorldAreasKeys: [WorldAreas]
+  Merciless_WorldAreasKeys: [WorldAreas]
+  Endgame_WorldAreasKeys: [WorldAreas]
+  _: i32
+}

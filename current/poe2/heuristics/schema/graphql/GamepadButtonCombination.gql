@@ -1,0 +1,7 @@
+# Added 4.1
+type GamepadButtonCombination {
+  Id: string @unique
+  Button1: GamepadButton
+  Button2: GamepadButton
+  _: i32
+}

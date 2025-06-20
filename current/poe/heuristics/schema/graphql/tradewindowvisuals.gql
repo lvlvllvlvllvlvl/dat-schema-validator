@@ -1,0 +1,11 @@
+# Added 3.24
+type tradewindowvisuals {
+  _: [_]
+  _: string @unique
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [i32]
+  _: [i32]
+  _: bool @unique
+}

@@ -1,0 +1,7 @@
+# Added 3.19
+type PlayerTradeWhisperFormats {
+  Id: string @unique
+  Whisper: string @localized
+  InStash: bool
+  IsPriced: bool
+}

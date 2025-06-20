@@ -1,0 +1,23 @@
+# Added 4.1
+type UltimatumModifiers {
+  Id: string @unique
+  Types: [UltimatumModifierTypes]
+  ExtraMods: [Mods]
+  TypesFiltered: [UltimatumModifierTypes]
+  PreviousTier: [UltimatumModifiers]
+  _: bool
+  Name: string @localized
+  Icon: string
+  HASH16: u16
+  _: i16
+  _: [string]
+  BuffTemplates: [BuffTemplates]
+  Tier: i32
+  Description: string @localized
+  _: [_] # All rows empty
+  TextAudio: NPCTextAudio
+  _: rid
+  MapStats: [Stats]
+  MapStatValues: [i32]
+  MapMods: [Mods]
+}

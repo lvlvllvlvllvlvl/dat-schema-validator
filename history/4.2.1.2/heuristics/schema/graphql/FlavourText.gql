@@ -1,0 +1,6 @@
+# Added 4.1
+type FlavourText {
+  Id: string @unique
+  HASH16: u16
+  Text: string @localized
+}

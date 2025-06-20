@@ -1,0 +1,10 @@
+# Added 4.1
+type PassiveJewelSlots {
+  Slot: PassiveSkills
+  ClusterJewelSize: PassiveTreeExpansionJewelSizes
+  ClusterIndex: i32
+  ReplacesSlot: PassiveJewelSlots
+  ProxySlot: PassiveSkills
+  StartIndices: [i32]
+  _: rid
+}

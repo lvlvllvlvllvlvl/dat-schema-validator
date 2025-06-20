@@ -1,0 +1,8 @@
+# Added 3.22
+type SanctumDeferredRewards {
+  Id: string @unique
+  DeferralIcon: string
+  DeferralCategory: SanctumPersistentEffectCategories
+  RewardCategory: SanctumDeferredRewardCategories
+  Count: i32
+}

@@ -1,0 +1,5 @@
+# Added 4.1
+type AtlasInfluenceSets {
+  Id: string @unique
+  InfluencePacks: [AtlasInfluenceOutcomes]
+}

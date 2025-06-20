@@ -1,0 +1,21 @@
+# Added 4.1
+type BuffVisualOrbTypes {
+  Id: string @unique
+  _: f32
+  _: f32
+  _: f32
+  _: f32
+  _: i32
+  _: bool
+  RadiusStat: Stats
+  HeightStat: Stats
+  _: i32
+  _: bool
+  _: f32
+  _: i32
+  _: f32
+  _: bool
+  _: f32
+  _: bool
+  _: string
+}

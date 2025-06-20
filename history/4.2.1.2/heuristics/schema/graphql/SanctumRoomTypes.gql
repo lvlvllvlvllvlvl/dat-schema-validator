@@ -1,0 +1,16 @@
+# Added 4.1
+type SanctumRoomTypes {
+  Id: string @unique
+  _: bool
+  _: bool
+  _: rid
+  _: rid
+  _: bool
+  Icon: string
+  _: bool
+  Description: string @localized
+  _: [string] @localized
+  Rooms: [SanctumRooms]
+  _: string
+  _: bool
+}

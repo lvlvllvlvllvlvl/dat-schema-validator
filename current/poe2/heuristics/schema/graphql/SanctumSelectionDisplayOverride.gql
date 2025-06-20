@@ -1,0 +1,8 @@
+# Added 4.1
+type SanctumSelectionDisplayOverride {
+  Id: string @unique
+  Reward: string @localized
+  Icon: string
+  Downside: string
+  Item: BaseItemTypes
+}

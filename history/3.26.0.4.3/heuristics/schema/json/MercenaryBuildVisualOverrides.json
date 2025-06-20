@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MercenaryBuilds"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "SlotId",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "MtxGameSpecific",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MtxTypeGameSpecific"
+      }
+    },
+    "size": 16
+  }
+]

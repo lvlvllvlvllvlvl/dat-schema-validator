@@ -1,0 +1,79 @@
+# Added 4.1
+type WorldAreas {
+  Id: string @unique
+  Name: string @localized
+  Act: i32
+  IsTown: bool
+  HasWaypoint: bool
+  Connections: [WorldAreas]
+  AreaLevel: i32
+  HASH16: i16
+  _: i32
+  _: i32
+  LoadingScreens: [string]
+  FlagOnEntered: [QuestFlags]
+  RequiredFlags: [QuestFlags]
+  _: i32
+  Topologies: [Topologies]
+  ParentTown: WorldAreas
+  _: i32
+  _: rid
+  _: rid
+  Bosses: [MonsterVarieties]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: bool
+  _: [_] # All rows empty
+  _: rid
+  _: rid
+  AreaMods: [Mods]
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: bool
+  _: i32 @localized
+  _: i32
+  Tags: [Tags]
+  _: rid
+  _: rid
+  _: i32 @localized
+  _: i32
+  _: rid
+  _: [string]
+  _: bool
+  _: rid
+  _: rid
+  _: i32 @localized
+  _: i32
+  _: i32
+  Environment: Environments
+  _: i32
+  TerrainPlugins: TerrainPlugins
+  _: rid
+  _: i32 # All rows empty
+  _: bool
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: [_] # All rows empty
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: bool
+  _: u16 # All rows empty
+  _: bool
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
+  _: i32
+  _: string @localized
+  _: i32
+  _: i32 # All rows empty
+  _: bool
+}

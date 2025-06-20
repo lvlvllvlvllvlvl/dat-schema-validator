@@ -1,0 +1,11 @@
+# Added 4.1
+type MicrotransactionCategory {
+  Id: MicrotransactionCategoryId @unique
+  Name: string @localized
+  _: i32
+  _: [_]
+  _: i32
+  _: bool
+  _: u16 # All rows empty
+  _: bool
+}

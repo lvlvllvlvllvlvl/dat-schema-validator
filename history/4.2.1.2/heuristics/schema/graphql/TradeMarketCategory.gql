@@ -1,0 +1,10 @@
+# Added 4.1
+type TradeMarketCategory {
+  Id: string @unique
+  Name: string @localized
+  StyleFlag: TradeMarketCategoryStyleFlag
+  Group: TradeMarketCategoryGroups
+  _: [i32]
+  _: bool
+  IsDisabled: bool
+}

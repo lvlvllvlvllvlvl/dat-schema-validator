@@ -1,0 +1,6 @@
+# Added 3.11
+type LabyrinthBonusItems {
+  BaseItemType: BaseItemTypes
+  AreaLevel: i32
+  LabyrinthName: string @localized
+}

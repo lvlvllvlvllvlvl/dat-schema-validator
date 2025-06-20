@@ -1,0 +1,7 @@
+# Added 4.1
+type ongoingbuffvariations {
+  _: rid @unique
+  _: rid @unique
+  _: [_]
+  _: bool
+}

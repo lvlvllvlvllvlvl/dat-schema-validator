@@ -1,0 +1,12 @@
+# Added 4.1
+type MinimapIcons {
+  Id: string @unique
+  MinimapIconRadius: i32
+  LargemapIconRadius: i32
+  _: bool
+  _: bool
+  _: bool
+  MinimapIconPointerMaxDistance: i32
+  _: i32
+  _: string @localized
+}

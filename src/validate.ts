@@ -194,16 +194,14 @@ const includeTranslations: readonly (typeof TRANSLATIONS)[number][] = args?.find
   ? TRANSLATIONS.filter((t) => langsToProcess?.includes(t.name.toLowerCase()))
   : TRANSLATIONS;
 
-
 const heuristics = path.join(schemaDir, "heuristics");
 await fs.rm(heuristics, RF);
-const csvDir = await fs.mkdir(`${heuristics}/csv`, R);
-const jsonDir = await fs.mkdir(`${heuristics}/schema/json`, R);
-const gqlDir = await fs.mkdir(`${heuristics}/schema/graphql`, R);
-if (!csvDir || !jsonDir || !gqlDir) {
-  console.error("Error creating tmp dirs, created:", csvDir, jsonDir, gqlDir);
-  process.exit(1);
-}
+const csvDir = path.join(heuristics, "csv")
+await fs.mkdir(csvDir, R);
+const jsonDir = path.join(heuristics, "schema", "json");
+await fs.mkdir(jsonDir, R);
+const gqlDir = path.join(heuristics, "schema", "graphql");
+await fs.mkdir(gqlDir, R);
 
 const validFor = poe2 ? (t: any) => t.validFor & 2 : (t: any) => t.validFor & 1;
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(

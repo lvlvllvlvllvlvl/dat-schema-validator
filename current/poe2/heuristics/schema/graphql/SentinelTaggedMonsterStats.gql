@@ -1,0 +1,8 @@
+# Added 4.1
+type SentinelTaggedMonsterStats {
+  TaggedStat: Stats
+  _: Stats
+  _: [rid]
+  _: rid
+  _: rid
+}

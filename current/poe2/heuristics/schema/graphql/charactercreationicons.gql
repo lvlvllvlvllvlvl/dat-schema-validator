@@ -1,0 +1,8 @@
+# Added 4.1
+type charactercreationicons {
+  _: string @unique
+  _: string @localized
+  _: string @unique @localized
+  _: string @unique
+  _: string @unique
+}

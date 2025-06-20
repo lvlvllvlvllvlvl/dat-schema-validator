@@ -1,0 +1,15 @@
+# Added 3.11
+type BetrayalUpgrades {
+  Id: string @unique
+  Name: string @localized
+  Description: string @localized
+  ModsKey: [Mods]
+  ArtFile: string
+  BetrayalUpgradeSlotsKey: i32
+  _: [i32]
+  ItemVisualIdentityKey0: ItemVisualIdentity
+  ItemVisualIdentityKey1: ItemVisualIdentity
+  GrantedEffectsKey: GrantedEffects
+  _: i32
+  ItemClassesKey: ItemClasses
+}

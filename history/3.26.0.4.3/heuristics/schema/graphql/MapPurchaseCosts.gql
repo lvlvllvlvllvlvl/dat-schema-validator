@@ -1,0 +1,6 @@
+# Added 3.11
+type MapPurchaseCosts {
+  Tier: i32 @unique
+  Cost: ItemCosts
+  _: rid
+}

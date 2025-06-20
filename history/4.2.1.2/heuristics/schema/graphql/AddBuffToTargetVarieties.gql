@@ -1,0 +1,13 @@
+# Added 4.1
+type AddBuffToTargetVarieties {
+  BuffDefinitions: BuffDefinitions
+  _: [i32]
+  StatsKeys: [Stats]
+  _: i32
+  _: i32 @unique
+  _: i32
+  _: [_]
+  _: [_]
+  _: [_]
+  _: bool
+}

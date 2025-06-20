@@ -1,0 +1,8 @@
+# Added 3.11
+type MissionTransitionTiles {
+  Id: string @unique
+  TDTFile: string @file(ext: ".tdt")
+  _: i32
+  _: i32
+  _: i32
+}

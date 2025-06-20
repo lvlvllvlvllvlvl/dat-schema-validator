@@ -1,0 +1,8 @@
+# Added 4.1
+type DamageHitEffects {
+  Id: i32 @unique
+  _: i32
+  _: i32
+  _: [_]
+  _: [_]
+}

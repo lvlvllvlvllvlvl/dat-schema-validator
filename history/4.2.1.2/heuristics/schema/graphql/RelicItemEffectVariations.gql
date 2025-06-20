@@ -1,0 +1,6 @@
+# Added 4.1
+type RelicItemEffectVariations {
+  Id: string @unique
+  Description: string @localized
+  DDSFile: string @file(ext: ".dds")
+}

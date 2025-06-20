@@ -1,0 +1,6 @@
+# Added 3.13
+type QuestTrackerGroup {
+  Id: string @unique
+  Name: string @localized
+  QuestType: QuestType
+}

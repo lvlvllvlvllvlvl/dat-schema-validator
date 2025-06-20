@@ -1,0 +1,9 @@
+# Added 4.1
+type SummonedSpecificBarrels {
+  Id: string @unique
+  Chest: Chests
+  _: rid
+  _: rid
+  _: rid
+  _: string
+}

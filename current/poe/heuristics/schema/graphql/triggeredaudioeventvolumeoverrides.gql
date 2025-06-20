@@ -1,0 +1,7 @@
+# Added 3.24
+type triggeredaudioeventvolumeoverrides {
+  _: string @unique
+  _: f32
+  _: [_]
+  _: i32
+}

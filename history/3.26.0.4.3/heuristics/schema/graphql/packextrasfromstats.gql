@@ -1,0 +1,6 @@
+# Added 3.24
+type packextrasfromstats {
+  _: rid @unique
+  _: rid
+  _: i32 @unique
+}

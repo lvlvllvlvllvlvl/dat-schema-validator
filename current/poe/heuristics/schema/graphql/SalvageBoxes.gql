@@ -1,0 +1,6 @@
+# Added 3.11
+type SalvageBoxes {
+  BaseItemType: BaseItemTypes
+  Id: string @unique
+  _: string
+}

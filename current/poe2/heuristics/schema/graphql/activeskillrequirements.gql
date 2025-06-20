@@ -1,0 +1,14 @@
+# Added 4.1
+type activeskillrequirements {
+  _: rid @unique
+  _: rid
+  _: bool
+  _: i32
+  _: rid
+  _: rid
+  _: rid
+  _: bool
+  _: i32 # All rows empty
+  _: bool
+  _: bool
+}

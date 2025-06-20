@@ -1,0 +1,15 @@
+# Added 3.25
+type villageshippingfailures {
+  _: string @unique
+  _: string @unique @localized
+  _: [_]
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: u16 # All rows empty
+  _: bool
+  _: string @localized
+  _: i32
+}

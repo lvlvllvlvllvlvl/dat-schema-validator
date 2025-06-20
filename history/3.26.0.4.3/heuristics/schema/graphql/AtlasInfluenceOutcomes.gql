@@ -1,0 +1,6 @@
+# Added 3.11
+type AtlasInfluenceOutcomes {
+  Id: string @unique
+  _: i32
+  Type: AtlasInfluenceOutcomeTypes
+}

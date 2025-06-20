@@ -1,0 +1,5 @@
+# Added 4.1
+type EffectivenessCostConstants {
+  Id: string @unique
+  Multiplier: f32
+}

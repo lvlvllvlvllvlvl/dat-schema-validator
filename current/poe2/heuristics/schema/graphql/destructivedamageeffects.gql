@@ -1,0 +1,11 @@
+# Added 4.1
+type destructivedamageeffects {
+  _: string @unique
+  _: [_]
+  _: [_]
+  _: [_]
+  _: rid
+  _: i32
+  _: [_]
+  _: bool
+}

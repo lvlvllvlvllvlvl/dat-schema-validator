@@ -1,0 +1,11 @@
+# Added 4.1
+type completionnotifications {
+  _: string @unique
+  _: string @localized
+  _: string
+  _: f32
+  _: string
+  _: rid
+  _: string
+  _: [_]
+}

@@ -1,0 +1,10 @@
+# Added 3.11
+type CharacterStartQuestState {
+  Id: string @unique
+  QuestKeys: [Quest]
+  QuestStates: [i32]
+  _: [rid]
+  MapPinsKeys: [MapPins]
+  _: [i32]
+  _: [rid]
+}

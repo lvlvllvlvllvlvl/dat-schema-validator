@@ -1,0 +1,21 @@
+# Added 4.1
+type Animation {
+  Id: string @unique
+  _: bool
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: rid
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: [_]
+  _: bool
+  _: i32
+  _: bool
+}

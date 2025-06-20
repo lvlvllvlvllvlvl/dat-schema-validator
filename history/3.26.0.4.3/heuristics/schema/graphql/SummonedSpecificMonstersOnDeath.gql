@@ -1,0 +1,9 @@
+# Added 3.11
+type SummonedSpecificMonstersOnDeath {
+  Id: string @unique
+  MonsterVarietiesKey: MonsterVarieties
+  _: i32
+  _: rid
+  _: i32
+  _: bool
+}

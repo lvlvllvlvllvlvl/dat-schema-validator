@@ -1,0 +1,14 @@
+# Added 4.1
+type BlightTopologyNodes {
+  Id: string @unique
+  _: [i32]
+  Size: i32
+  Angle: i32
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: i32
+}

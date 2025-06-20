@@ -1,0 +1,5 @@
+# Added 4.1
+type Rulesets {
+  Id: string @unique
+  _: [string]
+}

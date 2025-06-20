@@ -1,0 +1,6 @@
+# Added 4.1
+type charactervariationgroups {
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+}

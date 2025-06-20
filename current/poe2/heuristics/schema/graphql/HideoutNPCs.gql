@@ -1,0 +1,11 @@
+# Added 4.1
+type HideoutNPCs {
+  Hideout_NPC: NPCs
+  _: rid @unique
+  _: rid
+  _: rid
+  _: i32
+  _: rid
+  _: i32
+  _: rid
+}

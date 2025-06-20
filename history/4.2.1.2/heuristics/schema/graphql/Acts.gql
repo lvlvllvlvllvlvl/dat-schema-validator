@@ -1,0 +1,17 @@
+# Added 4.1
+type Acts {
+  Id: string @unique
+  UI_Title: string @localized
+  ActNumber: i32
+  _: string
+  _: string
+  _: i32
+  IsEndGame: bool
+  _: i32
+  _: [rid]
+  _: [rid]
+  _: [rid]
+  _: rid
+  _: [rid]
+  Description: string @localized
+}

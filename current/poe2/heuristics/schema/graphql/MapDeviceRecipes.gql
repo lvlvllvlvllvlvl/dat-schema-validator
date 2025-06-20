@@ -1,0 +1,21 @@
+# Added 4.1
+type MapDeviceRecipes @tags(list: ["item:recipe"]) {
+  Id: string @unique
+  RecipeItems: [BaseItemTypes]
+  _: [string]
+  _: rid
+  _: i32 # All rows empty
+  _: rid
+  _: i32 # All rows empty
+  _: bool
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32 @unique
+  _: i32 # All rows empty
+  _: i32
+  _: i32 # All rows empty
+  _: i32 @unique
+  _: i32
+  _: i32 # All rows empty
+  _: bool
+}

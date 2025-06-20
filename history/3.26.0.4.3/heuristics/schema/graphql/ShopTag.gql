@@ -1,0 +1,12 @@
+# Added 3.17
+type ShopTag {
+  Id: string @unique
+  Name: string @localized
+  IsCategory: bool
+  Category: ShopTag
+  PoE2: bool
+  _: string
+  Guild: bool
+  _: ShopTag
+  _: string
+}

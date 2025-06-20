@@ -1,0 +1,7 @@
+# Added 3.11
+type MusicCategories {
+  Id: string @unique
+  Name: string @localized
+  Order: i32
+  _: bool
+}

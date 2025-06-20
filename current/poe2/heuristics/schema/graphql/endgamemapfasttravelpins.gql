@@ -1,0 +1,12 @@
+# Added 4.2
+type endgamemapfasttravelpins {
+  _: string @unique
+  _: string @unique @localized
+  _: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: i32
+  _: string @localized
+}

@@ -1,0 +1,5 @@
+# Added 4.1
+type DialogueEvent {
+  Id: string @unique
+  Timer: i32
+}

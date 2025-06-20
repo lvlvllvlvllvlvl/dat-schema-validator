@@ -1,0 +1,5 @@
+# Added 4.1
+type SpecialRooms {
+  Id: string @unique
+  ARMFile: string @file(ext: ".arm")
+}

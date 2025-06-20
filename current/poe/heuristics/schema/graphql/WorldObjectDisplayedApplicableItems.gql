@@ -1,0 +1,5 @@
+# Added 3.26
+type WorldObjectDisplayedApplicableItems {
+  Id: string @unique
+  BaseItemType: [BaseItemTypes]
+}

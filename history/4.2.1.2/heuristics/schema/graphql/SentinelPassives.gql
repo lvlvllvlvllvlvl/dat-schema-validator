@@ -1,0 +1,14 @@
+# Added 4.1
+type SentinelPassives {
+  Id: string @unique
+  HASH16: i32
+  _: string @localized
+  _: [rid]
+  _: [i32]
+  _: i32
+  _: i32
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+}

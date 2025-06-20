@@ -1,0 +1,9 @@
+# Added 4.1
+type RecipeUnlockDisplay {
+  RecipeId: i32 @unique
+  Description: string @localized
+  CraftingItemClassCategoriesKeys: [CraftingItemClassCategories]
+  UnlockDescription: string
+  Rank: i32
+  UnlockArea: WorldAreas
+}

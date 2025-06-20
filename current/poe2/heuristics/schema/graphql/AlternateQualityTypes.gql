@@ -1,0 +1,8 @@
+# Added 4.1
+type AlternateQualityTypes @tags(list: ["item:def"]) {
+  Id: string @unique
+  Description: string @localized
+  Item: BaseItemTypes
+  _: rid
+  HASH16: u16
+}

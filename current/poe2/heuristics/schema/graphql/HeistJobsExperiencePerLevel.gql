@@ -1,0 +1,8 @@
+# Added 4.1
+type HeistJobsExperiencePerLevel {
+  HeistJobsKey: HeistJobs
+  Tier: i32
+  Experience: i32
+  MinLevel: i32
+  AchievementItemsKey: [AchievementItems]
+}

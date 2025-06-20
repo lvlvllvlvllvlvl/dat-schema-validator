@@ -1,0 +1,6 @@
+# Added 4.1
+type worldscreenmappindialogue {
+  _: rid @unique
+  _: i32
+  _: [_]
+}

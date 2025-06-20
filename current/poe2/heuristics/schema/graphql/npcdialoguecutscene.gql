@@ -1,0 +1,12 @@
+# Added 4.1
+type npcdialoguecutscene {
+  _: string @unique
+  _: bool
+  _: string
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: [_]
+}

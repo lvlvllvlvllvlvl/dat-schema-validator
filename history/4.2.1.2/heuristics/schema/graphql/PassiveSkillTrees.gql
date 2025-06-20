@@ -1,0 +1,22 @@
+# Added 4.1
+type PassiveSkillTrees {
+  Id: string @unique
+  PassiveSkillGraph: string
+  _: i32
+  _: f32
+  _: f32
+  _: f32
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: ClientStrings
+  UIArt: PassiveSkillTreeUIArt
+}

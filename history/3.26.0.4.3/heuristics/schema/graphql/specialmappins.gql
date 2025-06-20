@@ -1,0 +1,18 @@
+# Added 3.24
+type specialmappins {
+  _: string @unique
+  _: string @unique
+  _: i32
+  _: rid
+  _: rid
+  _: i32
+  _: bool
+  _: bool
+  _: bool
+  _: i32 @unique
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: i32
+  _: rid
+}

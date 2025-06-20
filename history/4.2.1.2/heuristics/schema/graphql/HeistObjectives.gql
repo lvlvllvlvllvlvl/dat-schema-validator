@@ -1,0 +1,6 @@
+# Added 4.1
+type HeistObjectives {
+  BaseItemType: BaseItemTypes @unique
+  Scaling: f32
+  Name: string @localized
+}

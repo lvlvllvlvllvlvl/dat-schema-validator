@@ -1,0 +1,6 @@
+# Added 4.2
+type monstercategories {
+  _: rid @unique
+  _: string @unique @localized
+  _: string @unique
+}

@@ -1,0 +1,7 @@
+# Added 3.16
+type PassiveJewelRadii {
+  ID: string @unique
+  RingOuterRadius: i32
+  RingInnerRadius: i32
+  Radius: i32
+}

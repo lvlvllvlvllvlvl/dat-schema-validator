@@ -1,0 +1,5 @@
+# Added 4.2
+type skillgemsearchterms {
+  _: string @unique
+  _: string @localized
+}

@@ -1,0 +1,6 @@
+# Added 3.16
+type GamepadType {
+  Id: string @unique
+  Console: string
+  ImageFile: string
+}

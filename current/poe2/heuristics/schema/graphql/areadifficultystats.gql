@@ -1,0 +1,6 @@
+# Added 4.1
+type areadifficultystats {
+  _: rid @unique
+  _: [_]
+  _: rid
+}

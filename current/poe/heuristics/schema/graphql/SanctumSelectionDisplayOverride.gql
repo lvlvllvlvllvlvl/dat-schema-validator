@@ -1,0 +1,10 @@
+# Added 3.20
+type SanctumSelectionDisplayOverride {
+  Id: string @unique
+  Reward: string @localized
+  Icon: string
+  Downside: string @localized
+  Item: BaseItemTypes
+  Count: i32
+  RewardCategory: SanctumDeferredRewardCategories
+}

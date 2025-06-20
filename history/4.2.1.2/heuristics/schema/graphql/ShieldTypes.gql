@@ -1,0 +1,6 @@
+# Added 4.1
+type ShieldTypes @tags(list: ["item:def"]) {
+  BaseItemType: BaseItemTypes @unique
+  Block: i32
+  _: i32
+}

@@ -1,0 +1,7 @@
+# Added 4.1
+type HideoutDoodadTags {
+  Id: string @unique
+  _: [i32]
+  _: [i32]
+  Name: string @localized
+}

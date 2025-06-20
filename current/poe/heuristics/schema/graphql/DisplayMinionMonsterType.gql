@@ -1,0 +1,5 @@
+# Added 3.11
+type DisplayMinionMonsterType {
+  Id: i32 @unique
+  MonsterVarietiesKey: MonsterVarieties
+}

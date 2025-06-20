@@ -1,0 +1,13 @@
+# Added 3.23
+type CorpseTypeTags {
+  Tag: Tags
+  Name: string @localized
+  RavenousBuff: BuffDefinitions
+  Icon: string
+  _: i32
+  _: rid @unique
+  _: string @unique
+  _: string @unique @localized
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+}

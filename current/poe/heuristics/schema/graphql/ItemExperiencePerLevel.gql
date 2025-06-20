@@ -1,0 +1,6 @@
+# Added 3.11
+type ItemExperiencePerLevel {
+  ItemExperienceType: ItemExperienceTypes
+  ItemCurrentLevel: i32
+  Experience: i32
+}

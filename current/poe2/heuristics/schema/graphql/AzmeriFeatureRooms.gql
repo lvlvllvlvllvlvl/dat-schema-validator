@@ -1,0 +1,9 @@
+# Added 4.2
+type AzmeriFeatureRooms {
+  _: i32
+  _: i32
+  _: string
+  _: string
+  _: [_] # All rows empty
+  _: bool
+}

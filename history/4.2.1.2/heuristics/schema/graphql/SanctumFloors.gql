@@ -1,0 +1,12 @@
+# Added 4.1
+type SanctumFloors {
+  Id: string @unique
+  Area: WorldAreas
+  Title: ClientStrings
+  RoomIcon: string
+  BossIcon: string
+  Description: string @localized
+  Summary: ClientStrings
+  Itemised: BaseItemTypes
+  _: i32 @unique
+}

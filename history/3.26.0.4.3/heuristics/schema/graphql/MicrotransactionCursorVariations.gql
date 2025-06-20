@@ -1,0 +1,6 @@
+# Added 3.13
+type MicrotransactionCursorVariations {
+  _: BaseItemTypes
+  _: rid
+  _: u16 @unique
+}

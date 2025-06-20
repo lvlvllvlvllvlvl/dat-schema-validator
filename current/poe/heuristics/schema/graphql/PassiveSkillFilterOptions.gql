@@ -1,0 +1,7 @@
+# Added 3.11
+type PassiveSkillFilterOptions {
+  Id: string @unique
+  _: rid
+  Name: string
+  _: string
+}

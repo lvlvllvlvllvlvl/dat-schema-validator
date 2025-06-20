@@ -1,0 +1,9 @@
+# Added 4.1
+type ActionTypes {
+  Id: string @unique
+  _: u16
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+}

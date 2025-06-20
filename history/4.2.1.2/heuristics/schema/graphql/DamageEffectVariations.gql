@@ -1,0 +1,20 @@
+# Added 4.1
+type DamageEffectVariations {
+  Id: string @unique
+  _: [_]
+  _: [string]
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+  _: bool
+  _: rid
+}

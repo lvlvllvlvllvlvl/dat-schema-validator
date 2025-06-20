@@ -1,0 +1,5 @@
+# Added 4.1
+type ExpeditionMarkersCommon {
+  Id: string @unique
+  AOFile: string
+}

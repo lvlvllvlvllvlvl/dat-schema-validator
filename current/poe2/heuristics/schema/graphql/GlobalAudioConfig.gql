@@ -1,0 +1,6 @@
+# Added 4.1
+type GlobalAudioConfig {
+  Id: string @unique
+  Value: i32
+  _: bool
+}

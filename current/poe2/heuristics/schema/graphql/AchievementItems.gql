@@ -1,0 +1,13 @@
+# Added 4.1
+type AchievementItems {
+  Id: string @unique
+  _: i32
+  _: i32
+  Name: string @localized
+  CompletionsRequired: i32
+  AchievementsKey: Achievements
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+}

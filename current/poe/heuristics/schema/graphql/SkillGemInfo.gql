@@ -1,0 +1,9 @@
+# Added 3.11
+type SkillGemInfo {
+  Id: string @unique
+  Description: string @localized
+  VideoURL1: string
+  SkillGemsKey: SkillGems
+  VideoURL2: string
+  CharactersKeys: [Characters]
+}

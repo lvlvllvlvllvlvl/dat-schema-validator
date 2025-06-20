@@ -1,0 +1,6 @@
+# Added 4.1
+type MonsterGroupEntries {
+  Id: string @unique
+  MonsterVarietiesKey: MonsterVarieties
+  MonsterGroupNamesId: i32
+}

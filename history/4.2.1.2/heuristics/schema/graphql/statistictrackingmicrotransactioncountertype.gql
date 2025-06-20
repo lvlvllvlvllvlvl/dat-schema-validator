@@ -1,0 +1,6 @@
+# Added 4.2
+type statistictrackingmicrotransactioncountertype {
+  _: string @unique
+  _: string
+  _: string @unique @localized
+}

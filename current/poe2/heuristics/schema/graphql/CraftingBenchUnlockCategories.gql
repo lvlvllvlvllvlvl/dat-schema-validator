@@ -1,0 +1,9 @@
+# Added 4.1
+type CraftingBenchUnlockCategories {
+  Id: string @unique
+  _: i32
+  _: [i32]
+  UnlockType: string @localized
+  CraftingItemClassCategories: [CraftingItemClassCategories]
+  ObtainingDescription: string @localized
+}

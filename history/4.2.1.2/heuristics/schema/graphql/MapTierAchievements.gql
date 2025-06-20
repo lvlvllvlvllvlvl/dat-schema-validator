@@ -1,0 +1,6 @@
+# Added 4.1
+type MapTierAchievements {
+  Id: string @unique
+  AchievementItemsKey: [AchievementItems]
+  MapTiers: [i32]
+}

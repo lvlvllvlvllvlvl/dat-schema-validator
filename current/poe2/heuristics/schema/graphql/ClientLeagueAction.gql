@@ -1,0 +1,7 @@
+# Added 4.1
+type ClientLeagueAction {
+  Id: string @unique
+  _: rid
+  _: i32
+  GamepadIcon: string
+}

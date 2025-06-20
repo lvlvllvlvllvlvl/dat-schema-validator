@@ -1,0 +1,4 @@
+# Added 3.11
+type MonsterSpawnerGroups {
+  Id: string @unique @files(ext: [".ot", ".otc"])
+}

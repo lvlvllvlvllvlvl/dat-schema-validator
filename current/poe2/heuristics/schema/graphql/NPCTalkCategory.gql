@@ -1,0 +1,5 @@
+# Added 4.1
+type NPCTalkCategory {
+  Id: string @unique
+  _: bool
+}

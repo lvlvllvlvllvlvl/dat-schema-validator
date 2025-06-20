@@ -1,0 +1,6 @@
+# Added 3.11
+type GameConstants {
+  Id: string @unique
+  Value: i32
+  Divisor: i32
+}

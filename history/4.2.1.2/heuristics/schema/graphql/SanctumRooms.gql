@@ -1,0 +1,10 @@
+# Added 4.1
+type SanctumRooms {
+  Id: string @unique
+  ArmFile: string
+  RoomType: SanctumRoomTypes
+  Script: string
+  Floor: SanctumFloors
+  Area: WorldAreas
+  _: i32
+}

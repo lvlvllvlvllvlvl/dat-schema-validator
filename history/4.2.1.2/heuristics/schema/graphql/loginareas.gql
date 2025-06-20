@@ -1,0 +1,8 @@
+# Added 4.1
+type loginareas {
+  _: string @unique
+  _: string
+  _: i32 # All rows empty
+  _: rid
+  _: i32 # All rows empty
+}

@@ -1,0 +1,7 @@
+# Added 3.13
+type GiftWrapArtVariations {
+  Width: i32
+  Height: i32
+  _: i32
+  Item: BaseItemTypes
+}

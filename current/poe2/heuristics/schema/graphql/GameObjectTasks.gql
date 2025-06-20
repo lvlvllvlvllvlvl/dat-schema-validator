@@ -1,0 +1,5 @@
+# Added 4.1
+type GameObjectTasks {
+  Id: string @unique
+  HASH16: i32
+}

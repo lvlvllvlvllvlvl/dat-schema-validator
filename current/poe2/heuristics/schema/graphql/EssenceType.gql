@@ -1,0 +1,7 @@
+# Added 4.1
+type EssenceType {
+  Id: string @unique
+  EssenceType: i32
+  IsCorruptedEssence: bool
+  WordsKey: Words
+}

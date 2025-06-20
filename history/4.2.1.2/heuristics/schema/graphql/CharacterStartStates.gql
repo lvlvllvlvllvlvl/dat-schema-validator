@@ -1,0 +1,21 @@
+# Added 4.1
+type CharacterStartStates {
+  Id: string @unique
+  Description: string @localized
+  CharactersKey: Characters
+  Level: i32
+  PassiveSkillsKeys: [PassiveSkills]
+  CharacterStartStateSetKey: CharacterStartStateSet
+  _: rid
+  CharacterStartQuestStateKeys: [CharacterStartQuestState]
+  _: bool
+  InfoText: string
+  _: rid
+  _: [_]
+  _: [_]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_]
+  _: [_]
+  _: bool
+}

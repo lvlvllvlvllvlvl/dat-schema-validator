@@ -1,0 +1,10 @@
+# Added 3.11
+type AtlasNodeDefinition {
+  WorldAreasKey: WorldAreas
+  ItemVisualIdentityKey: ItemVisualIdentity @unique
+  _: bool
+  Tier: i32
+  _: i32
+  _: i32
+  _: bool
+}

@@ -1,0 +1,7 @@
+# Added 4.1
+type CharacterPanelTabs {
+  Id: string @unique
+  _: i32
+  Text: string @localized
+  _: i32
+}

@@ -1,0 +1,16 @@
+# Added 4.1
+type MicrotransactionPortalVariations {
+  BaseItemTypesKey: BaseItemTypes
+  Id: i32 @unique
+  _: bool
+  _: i32 # All rows empty
+  _: bool
+  _: string
+  _: f32
+  _: rid
+  _: string
+  _: f32
+  _: string
+  _: string
+  _: [_]
+}

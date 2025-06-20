@@ -1,0 +1,14 @@
+# Added 3.11
+type NPCAudio {
+  Id: string @unique
+  _: [i32]
+  _: [i32]
+  VolumePercentage: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  _: i32
+  _: i32
+}

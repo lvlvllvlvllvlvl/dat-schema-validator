@@ -1,0 +1,8 @@
+# Added 4.1
+type SanctumAirlocks {
+  Floor: SanctumFloors
+  _: i32
+  _: [i32]
+  Area1: WorldAreas
+  Area2: WorldAreas
+}

@@ -1,0 +1,16 @@
+# Added 4.1
+type Tutorial {
+  Id: string @unique
+  UIFile: string @file(ext: ".ui")
+  ClientString: ClientStrings
+  IsEnabled: bool
+  _: i32
+  _: [i32]
+  _: rid
+  _: i32
+  _: [i32]
+  _: bool
+  _: bool
+  _: i32
+  _: bool
+}

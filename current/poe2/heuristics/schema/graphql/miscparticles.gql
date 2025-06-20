@@ -1,0 +1,7 @@
+# Added 4.2
+type miscparticles {
+  _: string @unique
+  _: string @unique
+  _: i32
+  _: [_] # All rows empty
+}

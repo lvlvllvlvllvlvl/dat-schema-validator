@@ -1,0 +1,5 @@
+# Added 4.1
+type CurrencyExchangeCategories {
+  Id: string @unique
+  Name: string @localized
+}

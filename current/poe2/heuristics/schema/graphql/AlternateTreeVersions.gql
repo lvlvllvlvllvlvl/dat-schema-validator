@@ -1,0 +1,15 @@
+# Added 4.1
+type AlternateTreeVersions {
+  ConquerorType: string @unique
+  SmallAttributeReplaced: bool
+  SmallNormalPassiveReplaced: bool
+  SmallAttributePassiveSkillAdditions: i32
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: u16 # All rows empty
+  _: bool
+}

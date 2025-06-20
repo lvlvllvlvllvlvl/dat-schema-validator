@@ -1,0 +1,14 @@
+# Added 4.1
+type genericskillindicator {
+  _: rid @unique
+  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: [_]
+  _: [string]
+  _: [string]
+  _: [string]
+  _: [_]
+  _: rid
+  _: i32 # All rows empty
+}

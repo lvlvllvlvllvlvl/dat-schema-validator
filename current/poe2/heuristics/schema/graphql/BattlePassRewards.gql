@@ -1,0 +1,30 @@
+# Added 4.1
+type BattlePassRewards {
+  BattlePass: BattlePasses
+  RewardTier: i32
+  _: i32
+  _: i32
+  _: bool
+  Id: string
+  RewardedMTX: [BaseItemTypes]
+  _: i32
+  RewardDescription: string @localized
+  _: string
+  _: i32
+  _: i32
+  _: bool
+  RewardTitle: string @localized
+  _: rid
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+  _: bool
+}

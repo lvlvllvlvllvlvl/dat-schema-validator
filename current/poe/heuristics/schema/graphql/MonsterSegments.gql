@@ -1,0 +1,5 @@
+# Added 3.11
+type MonsterSegments {
+  Id: string @unique
+  Shapes: string
+}

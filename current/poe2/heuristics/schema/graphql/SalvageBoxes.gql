@@ -1,0 +1,6 @@
+# Added 4.1
+type SalvageBoxes {
+  BaseItemType: BaseItemTypes
+  Id: string @unique
+  _: string
+}

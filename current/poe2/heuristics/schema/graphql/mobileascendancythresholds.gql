@@ -1,0 +1,6 @@
+# Added 4.1
+type mobileascendancythresholds {
+  _: string @unique
+  _: rid @unique
+  _: i32 # All rows empty
+}

@@ -1,0 +1,7 @@
+# Added 4.1
+type CharacterPanelDescriptionModes {
+  Id: string @unique
+  _: string
+  FormatString_Positive: string @localized
+  FormatString_Negative: string @localized
+}

@@ -1,0 +1,6 @@
+# Added 4.1
+type BuffVisualsArtVariations {
+  Buff: string
+  Visuals: [BuffVisuals]
+  _: i32
+}

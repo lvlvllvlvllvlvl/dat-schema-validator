@@ -1,0 +1,5 @@
+# Added 4.1
+type QuestFlags {
+  Id: string @unique
+  HASH32: i32
+}

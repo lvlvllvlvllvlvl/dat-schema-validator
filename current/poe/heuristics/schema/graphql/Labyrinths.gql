@@ -1,0 +1,17 @@
+# Added 3.11
+type Labyrinths @tags(list: ["item:droptable", "item:unique"]) {
+  Tier: i32
+  Name: string @localized
+  OfferingItem: BaseItemTypes
+  QuestFlag: QuestFlags
+  RequiredTrials: [LabyrinthTrials]
+  AreaLevel: i32
+  _: i32
+  JewelReward: Words
+  _: [i32]
+  _: [i32]
+  MinLevel: i32
+  _: i32
+  _: i32
+  CraftingFontDescription: ClientStrings
+}

@@ -1,0 +1,21 @@
+# Added 4.1
+type NPCShop {
+  Id: string @unique
+  _: i32
+  _: [rid]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32
+  _: [_]
+  _: rid
+  _: i32 @unique
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: bool
+  _: rid
+}

@@ -1,0 +1,12 @@
+# Added 4.1
+type MapStashSpecialTypeEntries {
+  Id: string @unique
+  _: i32
+  MapItem: BaseItemTypes
+  Name: string @localized
+  _: i32
+  _: string
+  _: string
+  _: bool
+  _: bool
+}

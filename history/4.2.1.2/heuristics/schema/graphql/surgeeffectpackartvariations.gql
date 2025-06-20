@@ -1,0 +1,9 @@
+# Added 4.1
+type surgeeffectpackartvariations {
+  _: string @unique
+  _: rid
+  _: i32 # All rows empty
+  _: i32
+  _: i32 # All rows empty
+  _: bool
+}

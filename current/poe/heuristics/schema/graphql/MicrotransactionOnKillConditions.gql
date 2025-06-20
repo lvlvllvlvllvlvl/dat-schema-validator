@@ -1,0 +1,17 @@
+# Added 3.21
+type MicrotransactionOnKillConditions {
+  Id: string @unique
+  _: [_]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: i32
+  _: bool
+  _: [_]
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: i32 @unique
+  _: i32 # All rows empty
+  _: [string]
+}

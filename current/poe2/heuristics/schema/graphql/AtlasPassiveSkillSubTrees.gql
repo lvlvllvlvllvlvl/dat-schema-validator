@@ -1,0 +1,12 @@
+# Added 4.1
+type AtlasPassiveSkillSubTrees {
+  Id: string @unique
+  UI_Image: string
+  UI_Background: string
+  IllustrationX: i32
+  IllustrationY: i32
+  CounterX: i32
+  CounterY: i32
+  _: rid
+  _: rid
+}

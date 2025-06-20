@@ -1,0 +1,9 @@
+# Added 4.1
+type ShrineVisualArtVariations {
+  _: rid @unique
+  _: bool
+  _: rid
+  _: bool
+  _: bool
+  _: bool
+}

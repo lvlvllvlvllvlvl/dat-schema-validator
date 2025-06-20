@@ -1,0 +1,6 @@
+# Added 3.11
+type NPCShop {
+  Id: string @unique
+  _: i32
+  _: [rid]
+}

@@ -1,0 +1,7 @@
+# Added 4.1
+type waystonestashtabsubgroups {
+  _: i32 @unique
+  _: string @unique
+  _: rid
+  _: i32 # All rows empty
+}

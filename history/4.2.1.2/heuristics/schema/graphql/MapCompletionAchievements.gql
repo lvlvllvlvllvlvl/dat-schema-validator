@@ -1,0 +1,11 @@
+# Added 4.1
+type MapCompletionAchievements {
+  _: string
+  MapStatConditionsKeys: [MapStatConditions]
+  StatsKeys: [Stats]
+  AchievementItemsKeys: [AchievementItems]
+  MapTierAchievementsKeys: [MapTierAchievements]
+  _: bool
+  WorldAreasKeys: [WorldAreas]
+  _: [_] # All rows empty
+}

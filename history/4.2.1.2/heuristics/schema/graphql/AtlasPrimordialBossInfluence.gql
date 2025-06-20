@@ -1,0 +1,11 @@
+# Added 4.1
+type AtlasPrimordialBossInfluence {
+  Boss: AtlasPrimordialBosses
+  Progress: i32
+  MinMapTier: i32
+  _: i32
+  _: i32
+  _: rid
+  _: f32
+  _: QuestFlags
+}

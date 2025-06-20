@@ -1,0 +1,8 @@
+# Added 3.24
+type ItemisedNecropolisPacks {
+  Item: BaseItemTypes @unique
+  Pack: NecropolisPacks
+  Description: string @localized
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+}

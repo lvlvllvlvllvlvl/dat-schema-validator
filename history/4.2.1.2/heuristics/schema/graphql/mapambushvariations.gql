@@ -1,0 +1,14 @@
+# Added 4.2
+type mapambushvariations {
+  _: rid @unique
+  _: i32 # All rows empty
+  _: [_]
+  _: f32
+  _: i32
+  _: i32
+  _: bool
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: bool
+  _: u16
+}

@@ -1,0 +1,7 @@
+# Added 3.12
+type ItemCostPerLevel {
+  Contract_BaseItemTypesKey: BaseItemTypes
+  Level: i32
+  Cost: ItemCosts
+  CostHardmode: ItemCosts
+}

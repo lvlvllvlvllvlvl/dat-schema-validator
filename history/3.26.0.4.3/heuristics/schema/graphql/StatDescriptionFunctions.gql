@@ -1,0 +1,5 @@
+# Added 3.11
+type StatDescriptionFunctions {
+  Id: string @unique
+  TranslationId: string @unique
+}

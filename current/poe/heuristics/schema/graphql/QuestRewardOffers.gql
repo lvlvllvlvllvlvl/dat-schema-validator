@@ -1,0 +1,16 @@
+# Added 3.11
+type QuestRewardOffers {
+  Id: string @unique
+  QuestKey: Quest
+  QuestFlag: QuestFlags
+  _: i32
+  RewardWindowTake: ClientStrings
+  _: bool
+  _: bool
+  RewardWindowTitle: ClientStrings
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: rid
+}

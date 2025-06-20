@@ -1,0 +1,9 @@
+# Added 4.2
+type AzmeriWoodsDustType {
+  _: string
+  _: string @unique @localized
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: string @unique @localized
+}

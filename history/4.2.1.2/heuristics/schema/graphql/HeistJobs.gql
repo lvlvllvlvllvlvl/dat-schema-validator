@@ -1,0 +1,17 @@
+# Added 4.1
+type HeistJobs {
+  Id: string @unique
+  Name: string @localized
+  RequiredSkillIcon: string
+  SkillIcon: string
+  _: f32
+  _: i32
+  MapIcon: string
+  Level_StatsKey: Stats
+  Alert_StatsKey: Stats
+  Alarm_StatsKey: Stats
+  Cost_StatsKey: Stats
+  ExperienceGain_StatsKey: Stats
+  ConsoleBlueprintLegend: string
+  Description: string @localized
+}

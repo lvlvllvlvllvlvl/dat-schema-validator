@@ -1,0 +1,6 @@
+# Added 4.2
+type RecombinableClasses {
+  Id: ItemClasses @unique
+  _: i32
+  _: rid
+}

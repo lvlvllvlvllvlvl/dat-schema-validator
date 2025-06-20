@@ -1,0 +1,7 @@
+# Added 3.11
+type Tags {
+  Id: string @unique
+  _: i32
+  DisplayString: string @localized
+  Name: string @localized
+}

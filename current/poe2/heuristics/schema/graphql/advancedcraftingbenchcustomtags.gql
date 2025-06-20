@@ -1,0 +1,6 @@
+# Added 4.1
+type advancedcraftingbenchcustomtags {
+  _: string @unique
+  _: string @unique @localized
+  _: i32
+}

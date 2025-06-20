@@ -1,0 +1,12 @@
+# Added 4.1
+type AdditionalMonsterPacksFromStats {
+  StatsKey: Stats
+  _: i32
+  MonsterPacksKeys: [MonsterPacks]
+  AdditionalMonsterPacksStatMode: i32
+  PackCountStatsKey: Stats
+  StatsKeys: [Stats]
+  StatsValues: [i32]
+  _: i32
+  PackSizeStatsKey: Stats
+}

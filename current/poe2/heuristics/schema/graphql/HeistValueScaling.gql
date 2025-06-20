@@ -1,0 +1,6 @@
+# Added 4.1
+type HeistValueScaling {
+  Id: string @unique
+  _: f32
+  _: f32
+}

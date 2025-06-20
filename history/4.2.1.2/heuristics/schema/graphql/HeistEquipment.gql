@@ -1,0 +1,6 @@
+# Added 4.1
+type HeistEquipment @tags(list: ["item:def"]) {
+  BaseItemTypesKey: BaseItemTypes @unique
+  RequiredJob_HeistJobsKey: HeistJobs
+  RequiredLevel: i32
+}

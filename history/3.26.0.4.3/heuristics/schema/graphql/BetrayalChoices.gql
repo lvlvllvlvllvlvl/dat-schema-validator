@@ -1,0 +1,7 @@
+# Added 3.11
+type BetrayalChoices {
+  Id: string @unique
+  Text: string @localized
+  _: i32
+  Achievements: [AchievementItems]
+}

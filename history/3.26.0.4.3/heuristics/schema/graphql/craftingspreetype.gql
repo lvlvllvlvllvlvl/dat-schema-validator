@@ -1,0 +1,11 @@
+# Added 3.25
+type craftingspreetype {
+  _: string @unique
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_]
+  _: bool
+  _: string @localized
+  _: i32
+  _: rid
+}

@@ -1,0 +1,13 @@
+# Added 4.1
+type Environments {
+  Id: string @unique
+  Base_ENVFile: string @file(ext: ".env")
+  Corrupted_ENVFiles: [string] @file(ext: ".env")
+  _: [rid]
+  _: [rid]
+  _: [_]
+  EnvironmentTransitionsKey: EnvironmentTransitions
+  PreloadGroup: PreloadGroups
+  _: bool
+  _: f32
+}

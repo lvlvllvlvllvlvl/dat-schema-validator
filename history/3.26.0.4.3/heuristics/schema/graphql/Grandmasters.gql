@@ -1,0 +1,9 @@
+# Added 3.11
+type Grandmasters {
+  Id: string @unique
+  GMFile: string @file(ext: ".gm")
+  AISFile: string @file(ext: ".ais")
+  ModsKeys: [Mods]
+  CharacterLevel: i32
+  _: bool
+}

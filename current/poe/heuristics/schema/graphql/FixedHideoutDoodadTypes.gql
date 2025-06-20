@@ -1,0 +1,14 @@
+# Added 3.11
+type FixedHideoutDoodadTypes {
+  Id: string @unique
+  HideoutDoodadsKeys: [HideoutDoodads]
+  BaseTypeHideoutDoodadsKey: HideoutDoodads
+  _: i32
+  _: i32
+  _: bool
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}

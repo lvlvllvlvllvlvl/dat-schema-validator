@@ -1,0 +1,6 @@
+# Added 4.1
+type ReminderText {
+  Id: string @unique
+  Text: string @localized
+  TextHardmode: string @localized
+}

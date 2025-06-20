@@ -1,0 +1,9 @@
+# Added 4.1
+type BlightEncounterWaves {
+  MonsterSpawnerId: string @unique
+  EncounterType: BlightEncounterTypes
+  _: i32
+  _: i32
+  _: i32
+  Wave: i32
+}
