@@ -194,9 +194,9 @@ const includeTranslations: readonly (typeof TRANSLATIONS)[number][] = args?.find
   ? TRANSLATIONS.filter((t) => langsToProcess?.includes(t.name.toLowerCase()))
   : TRANSLATIONS;
 
-await fs.mkdir("tmp", R);
-const tmp = await fs.mkdtemp(path.join("tmp", "dat-validator-"));
-const heuristics = path.join(tmp, "heuristics");
+
+const heuristics = path.join(schemaDir, "heuristics");
+await fs.rm(heuristics, RF);
 const csvDir = await fs.mkdir(`${heuristics}/csv`, R);
 const jsonDir = await fs.mkdir(`${heuristics}/schema/json`, R);
 const gqlDir = await fs.mkdir(`${heuristics}/schema/graphql`, R);
@@ -471,9 +471,6 @@ progress.push(
 await Promise.all(progress.promises);
 progress.promises = [];
 progressBars?.update();
-
-await fs.rm(path.join(schemaDir, "heuristics"), RF);
-await fs.rename(heuristics, path.join(schemaDir, "heuristics"));
 
 if (!args?.includes("--historical")) {
   const sequel = "current/" + (poe2 ? "poe2" : "poe");
