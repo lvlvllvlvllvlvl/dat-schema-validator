@@ -1,8 +1,0 @@
-# Added 3.11
-type AtlasExiles {
-  Id: string @unique
-  _: i32
-  InfluencedItemIncrStat: Stats
-  MapIcon: string @file(ext: ".dds")
-  MapIcon2: string @file(ext: ".dds")
-}

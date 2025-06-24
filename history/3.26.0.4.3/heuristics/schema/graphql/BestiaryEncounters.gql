@@ -1,7 +1,0 @@
-# Added 3.11
-type BestiaryEncounters {
-  Id: string @unique
-  MonsterPacksKey: MonsterPacks
-  MonsterVarietiesKey: MonsterVarieties
-  MonsterSpawnerId: string @files(ext: [".ot", ".otc"])
-}

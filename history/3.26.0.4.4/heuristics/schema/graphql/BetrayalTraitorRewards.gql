@@ -1,8 +1,0 @@
-# Added 3.11
-type BetrayalTraitorRewards @tags(list: ["item:droptable"]) {
-  BetrayalJobsKey: BetrayalJobs
-  BetrayalTargetsKey: BetrayalTargets
-  BetrayalRanksKey: BetrayalRanks
-  Description: string @localized
-  Description2: string @localized
-}

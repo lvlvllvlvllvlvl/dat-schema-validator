@@ -1,8 +1,0 @@
-type TalismanMonsterMods {
-  ModTypeKey: ModType
-  ModsKey: Mods
-}
-
-enum TalismanPacks @indexing(first: 0) { _ }
-
-enum Talismans @indexing(first: 0) { _ }

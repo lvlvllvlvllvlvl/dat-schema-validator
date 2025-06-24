@@ -1,6 +1,0 @@
-# Added 3.11
-type DelveRooms {
-  DelveBiomesKey: DelveBiomes
-  DelveFeaturesKey: DelveFeatures
-  ARMFile: string @file(ext: ".arm")
-}

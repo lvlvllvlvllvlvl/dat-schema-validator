@@ -1,9 +1,0 @@
-# Added 3.11
-type LabyrinthSection {
-  Id: string @unique
-  ExclusionGroup: LabyrinthExclusionGroups
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-}

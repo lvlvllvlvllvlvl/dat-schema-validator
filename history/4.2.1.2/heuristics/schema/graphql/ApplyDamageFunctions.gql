@@ -1,6 +1,0 @@
-# Added 4.1
-type ApplyDamageFunctions {
-  Id: string @unique
-  StatsKeys: [Stats]
-  _: bool
-}

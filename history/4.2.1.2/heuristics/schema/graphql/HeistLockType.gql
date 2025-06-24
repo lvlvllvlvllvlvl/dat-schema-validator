@@ -1,6 +1,0 @@
-# Added 4.1
-type HeistLockType {
-  Id: string @unique
-  HeistJobsKey: HeistJobs
-  SkillIcon: string
-}

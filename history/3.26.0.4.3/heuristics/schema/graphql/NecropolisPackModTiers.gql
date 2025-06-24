@@ -1,8 +1,0 @@
-# Added 3.24
-type NecropolisPackModTiers {
-  Id: string @unique
-  Icon: string
-  Name: string @localized
-  TextColours: [string]
-  SpecialTier: bool
-}

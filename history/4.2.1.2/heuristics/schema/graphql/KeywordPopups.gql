@@ -1,7 +1,0 @@
-# Added 4.1
-type KeywordPopups {
-  Id: string @unique
-  Term: string @localized
-  Definition: string @localized
-  _: string
-}

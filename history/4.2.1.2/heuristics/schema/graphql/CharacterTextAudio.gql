@@ -1,9 +1,0 @@
-# Added 4.1
-type CharacterTextAudio {
-  Id: string @unique
-  Text: string @localized
-  SoundFile: string @file(ext: ".ogg")
-  ParrotSoundFile: string @file(ext: ".ogg")
-  _: i32
-  _: i32
-}

@@ -1,9 +1,0 @@
-# Added 3.11
-type DamageParticleEffects {
-  DamageParticleEffectTypes: DamageParticleEffectTypes
-  Variation: i32
-  PETFile: string @file(ext: ".pet")
-  ImpactSoundData1: ImpactSoundData
-  ImpactSoundData2: ImpactSoundData
-  _: i32
-}

@@ -1,6 +1,0 @@
-# Added 3.11
-type ModType {
-  Name: string @unique
-  ModSellPriceTypesKeys: [ModSellPriceTypes]
-  _: bool
-}

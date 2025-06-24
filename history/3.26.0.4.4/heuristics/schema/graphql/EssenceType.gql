@@ -1,8 +1,0 @@
-# Added 3.11
-type EssenceType {
-  Id: string @unique
-  EssenceType: i32
-  IsCorruptedEssence: bool
-  WordsKey: Words
-  _: rid
-}

@@ -1,7 +1,0 @@
-# Added 3.14
-type CostTypes {
-  Id: string @unique
-  StatsKey: Stats
-  FormatText: string @localized
-  _: i32
-}

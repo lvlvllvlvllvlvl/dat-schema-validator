@@ -1,8 +1,0 @@
-# Added 3.12
-type BuffVisualOrbs {
-  Id: string @unique
-  BuffVisualOrbTypesKey: BuffVisualOrbTypes
-  BuffVisualOrbArtKeys: [BuffVisualOrbArt]
-  Player_BuffVisualOrbArtKeys: [BuffVisualOrbArt]
-  BuffVisualOrbArtKeys2: [BuffVisualOrbArt]
-}

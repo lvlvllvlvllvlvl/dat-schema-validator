@@ -1,7 +1,0 @@
-# Added 3.11
-type BetrayalRanks {
-  Id: string @unique
-  Text: string @localized
-  Level: i32
-  RankImage: string
-}

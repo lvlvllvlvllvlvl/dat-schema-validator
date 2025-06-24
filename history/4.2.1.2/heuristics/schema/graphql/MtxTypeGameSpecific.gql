@@ -1,8 +1,0 @@
-# Added 4.1
-type MtxTypeGameSpecific {
-  Type: MtxTypes
-  HASH16: i32
-  DDSFile: string @file(ext: ".dds")
-  _: i32
-  _: [i32]
-}

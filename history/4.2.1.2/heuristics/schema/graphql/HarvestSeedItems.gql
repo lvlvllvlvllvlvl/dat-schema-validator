@@ -1,6 +1,0 @@
-# Added 4.1
-type HarvestSeedItems @tags(list: ["item:def"]) {
-  Id: i32 @unique
-  BaseItem: BaseItemTypes
-  DropStat: Stats
-}

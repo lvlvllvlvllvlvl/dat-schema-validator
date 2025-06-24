@@ -1,9 +1,0 @@
-# Added 3.11
-type Commands {
-  Id: string @unique
-  Command: string @localized
-  _: bool
-  EnglishCommand: string
-  Description: string @localized
-  _: bool
-}

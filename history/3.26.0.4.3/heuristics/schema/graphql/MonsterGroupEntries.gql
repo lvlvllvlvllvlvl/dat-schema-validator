@@ -1,6 +1,0 @@
-# Added 3.11
-type MonsterGroupEntries {
-  Id: string @unique
-  MonsterVarietiesKey: MonsterVarieties
-  MonsterGroupNamesId: i32
-}

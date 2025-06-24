@@ -1,5 +1,0 @@
-# Added 3.11
-type StartingPassiveSkills {
-  Id: string @unique
-  PassiveSkills: [PassiveSkills]
-}

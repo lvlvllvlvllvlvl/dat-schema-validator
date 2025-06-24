@@ -1,7 +1,0 @@
-# Added 4.1
-type CharacterEventTextAudio {
-  Event: CharacterAudioEvents
-  Character: Characters
-  TextAudio: [CharacterTextAudio]
-  _: i32
-}

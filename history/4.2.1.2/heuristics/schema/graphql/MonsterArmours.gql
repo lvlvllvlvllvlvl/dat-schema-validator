@@ -1,5 +1,0 @@
-# Added 4.1
-type MonsterArmours {
-  Id: string @unique
-  ArtString_SMFile: string @file(ext: ".sm")
-}

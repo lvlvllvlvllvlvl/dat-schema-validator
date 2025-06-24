@@ -1,6 +1,0 @@
-# Added 4.1
-type BlightCraftingRecipes @tags(list: ["crafting"]) {
-  Id: string @unique
-  BlightCraftingResult: BlightCraftingResults
-  BlightCraftingItems: [BlightCraftingItems]
-}

@@ -1,5 +1,0 @@
-# Added 4.1
-type DropEffects {
-  Id: string @unique
-  AOFile: string @file(ext: ".ao")
-}

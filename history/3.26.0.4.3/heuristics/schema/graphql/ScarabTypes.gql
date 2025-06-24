@@ -1,8 +1,0 @@
-# Added 3.11
-type ScarabTypes {
-  Id: string @unique
-  Tag: Tags
-  DisableDrops: Stats
-  MoreLikely: Stats
-  Count: Stats
-}

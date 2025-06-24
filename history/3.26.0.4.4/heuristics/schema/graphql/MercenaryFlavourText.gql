@@ -1,8 +1,0 @@
-# Added 3.26
-type MercenaryFlavourText {
-  Id: string @unique
-  Description: string @localized
-  HASH16: u16
-  Tags: [Tags]
-  TagWeight: [i32]
-}

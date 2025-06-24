@@ -1,9 +1,0 @@
-# Added 4.1
-type AtlasPrimordialAltarChoiceTypes {
-  Id: string @unique
-  TopIconEater: string
-  BottomIconEater: string
-  TopIconExarch: string
-  BottomIconExarch: string
-  Text: string @localized
-}

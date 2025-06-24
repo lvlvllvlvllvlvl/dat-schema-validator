@@ -1,8 +1,0 @@
-# Added 4.1
-type CostTypes {
-  Id: string @unique
-  Stat: Stats
-  FormatText: string @localized
-  Divisor: i32
-  PerMinute: bool
-}

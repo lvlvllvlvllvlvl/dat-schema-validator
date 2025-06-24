@@ -1,8 +1,0 @@
-# Added 4.1
-type UltimatumWagerTypes {
-  Id: string @unique
-  HASH16: u16
-  CurrencyItem: CurrencyItems
-  Count: i32
-  DisplayText: string @localized
-}

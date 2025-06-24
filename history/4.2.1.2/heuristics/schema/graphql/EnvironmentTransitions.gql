@@ -1,6 +1,0 @@
-# Added 4.1
-type EnvironmentTransitions {
-  Id: string @unique
-  OTFiles: [string] @file(ext: ".ot")
-  _: [string]
-}

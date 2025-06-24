@@ -1,6 +1,0 @@
-# Added 4.1
-type HellscapePassiveTree {
-  Id: string @unique
-  AllocationsRequired: i32
-  Passives: [HellscapePassives]
-}

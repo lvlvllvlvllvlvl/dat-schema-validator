@@ -1,8 +1,0 @@
-# Added 3.24
-type AtlasTrees {
-  Id: string @unique
-  Name: string @localized
-  _: i32
-  _: i32
-  UnlockObjective: string @localized
-}

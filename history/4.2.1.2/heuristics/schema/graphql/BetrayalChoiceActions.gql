@@ -1,6 +1,0 @@
-# Added 4.1
-type BetrayalChoiceActions {
-  Id: string @unique
-  BetrayalChoicesKey: BetrayalChoices
-  ClientStringsKey: ClientStrings
-}

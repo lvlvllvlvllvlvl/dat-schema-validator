@@ -1,6 +1,0 @@
-# Added 3.26
-type ZanaInfluenceCostPerCurrency {
-  Action: string @unique
-  Cost: i32
-  _: bool
-}

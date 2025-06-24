@@ -1,6 +1,0 @@
-# Added 3.24
-type NecropolisPackImplicitClass {
-  Id: string @unique
-  MoreImplicit: NecropolisPackImplicits
-  LessImplicit: NecropolisPackImplicits
-}

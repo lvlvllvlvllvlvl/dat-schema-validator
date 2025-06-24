@@ -1,9 +1,0 @@
-# Added 4.1
-type ExpeditionRelics {
-  Id: string @unique
-  Name: string @localized
-  ItemTag: Tags
-  AOFile: string
-  MinLevel: i32
-  MaxLevel: i32
-}

@@ -1,9 +1,0 @@
-# Added 3.11
-type MonsterProjectileAttack {
-  Id: i32 @unique
-  Projectile: Projectiles
-  _: bool
-  _: bool
-  _: bool
-  _: i32
-}

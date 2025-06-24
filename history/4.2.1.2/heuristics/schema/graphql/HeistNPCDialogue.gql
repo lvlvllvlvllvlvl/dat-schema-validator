@@ -1,8 +1,0 @@
-# Added 4.1
-type HeistNPCDialogue {
-  DialogueEventKey: DialogueEvent
-  HeistNPCsKey: HeistNPCs
-  AudioNormal: [NPCTextAudio]
-  AudioLoud: [NPCTextAudio]
-  _: i32
-}

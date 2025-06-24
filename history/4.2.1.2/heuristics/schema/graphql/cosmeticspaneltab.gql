@@ -1,8 +1,0 @@
-# Added 4.2
-type cosmeticspaneltab {
-  _: string @unique
-  _: [_]
-  _: string @unique @localized
-  _: [_]
-  _: string
-}

@@ -1,8 +1,0 @@
-# Added 3.11
-type CraftingItemClassCategories {
-  Id: string @unique
-  ItemClasses: [ItemClasses]
-  _: string
-  Text: string @localized
-  _: [rid]
-}

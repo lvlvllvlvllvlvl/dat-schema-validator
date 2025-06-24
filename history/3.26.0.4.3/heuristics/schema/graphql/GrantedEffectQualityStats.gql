@@ -1,8 +1,0 @@
-# Added 3.12
-type GrantedEffectQualityStats @tags(list: ["item:droptable"]) {
-  GrantedEffectsKey: GrantedEffects
-  StatsKeys: [Stats]
-  StatsValuesPermille: [i32]
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-}

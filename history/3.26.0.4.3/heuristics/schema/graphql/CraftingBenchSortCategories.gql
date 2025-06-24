@@ -1,7 +1,0 @@
-# Added 3.15
-type CraftingBenchSortCategories {
-  Id: string @unique
-  Name: ClientStrings
-  IsVisible: bool
-  Type: CraftingBenchTypes
-}

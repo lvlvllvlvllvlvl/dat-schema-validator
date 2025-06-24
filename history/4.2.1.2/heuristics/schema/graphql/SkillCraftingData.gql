@@ -1,9 +1,0 @@
-# Added 4.1
-type SkillCraftingData {
-  Id: string @unique
-  Character: Characters
-  ListBackground: string
-  Icon: string
-  ConsoleIcon: string
-  Name: string @localized
-}

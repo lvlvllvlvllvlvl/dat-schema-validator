@@ -1,9 +1,0 @@
-# Added 3.17
-type ArchnemesisMetaRewards {
-  Id: string @unique
-  RewardText: string @localized
-  RewardGroup: i32
-  ScriptArgument: string
-  MinLevel: i32
-  MaxLevel: i32
-}

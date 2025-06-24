@@ -1,7 +1,0 @@
-# Added 4.1
-type MicrotransactionSocialFrameVariations {
-  BaseItemTypesKey: BaseItemTypes
-  Id: i32 @unique
-  _: i32 # All rows empty
-  _: u16 # All rows empty
-}

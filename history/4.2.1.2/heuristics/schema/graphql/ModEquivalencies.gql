@@ -1,8 +1,0 @@
-# Added 4.1
-type ModEquivalencies {
-  Id: string @unique
-  ModsKey0: Mods
-  ModsKey1: Mods
-  ModsKey2: Mods
-  _: bool
-}

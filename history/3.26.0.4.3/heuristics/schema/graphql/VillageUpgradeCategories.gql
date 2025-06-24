@@ -1,9 +1,0 @@
-# Added 3.25
-type VillageUpgradeCategories {
-  Id: string @unique
-  ScriptArgs: string
-  Name: string @localized
-  Icon: string
-  Text: string @localized
-  _: rid
-}

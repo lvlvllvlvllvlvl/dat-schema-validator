@@ -1,9 +1,0 @@
-# Added 3.11
-type UITalkText {
-  Id: string @unique
-  UITalkCategoriesKey: UITalkCategories
-  OGGFile: string @file(ext: ".ogg")
-  Text: string @localized
-  _: bool
-  NPCTextAudio: NPCTextAudio
-}

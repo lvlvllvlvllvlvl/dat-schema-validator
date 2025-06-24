@@ -1,6 +1,0 @@
-# Added 3.24
-type PackFrequencyNames {
-  Id: string @unique
-  Frequency: f32
-  Text: ClientStrings
-}

@@ -1,6 +1,0 @@
-# Added 4.1
-type StatVisuals {
-  _: rid @unique
-  EPKFiles: [string] @file(ext: ".epk")
-  _: bool
-}

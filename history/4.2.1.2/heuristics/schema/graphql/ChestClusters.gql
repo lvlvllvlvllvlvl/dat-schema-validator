@@ -1,9 +1,0 @@
-# Added 4.1
-type ChestClusters {
-  Id: string @unique
-  ChestsKeys: [Chests]
-  _: [i32]
-  _: i32
-  _: i32
-  _: i32
-}

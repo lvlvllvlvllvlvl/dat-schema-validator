@@ -1,7 +1,0 @@
-# Added 4.1
-type PassiveJewelArt {
-  BaseItemTypesKey: BaseItemTypes @unique
-  SocketedImage: string
-  SocketedImageLarge: string
-  _: rid
-}

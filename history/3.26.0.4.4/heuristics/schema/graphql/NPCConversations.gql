@@ -1,8 +1,0 @@
-# Added 3.12
-type NPCConversations {
-  Id: string @unique
-  DialogueEvent: DialogueEvent
-  NPCTextAudioKeys: [NPCTextAudio]
-  _: [i32]
-  _: i32
-}

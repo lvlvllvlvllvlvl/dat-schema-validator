@@ -1,7 +1,0 @@
-# Added 4.1
-type StashTabAffinities {
-  SpecializedStash: StashId
-  Name: string @localized
-  ShowInStashes: [StashId]
-  _: bool
-}

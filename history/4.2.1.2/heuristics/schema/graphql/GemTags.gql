@@ -1,8 +1,0 @@
-# Added 4.1
-type GemTags {
-  Id: string @unique
-  Name: string @localized
-  LocalLevelStat: Stats
-  LocalQualityStat: Stats
-  GlobalSpellLevelStat: Stats
-}

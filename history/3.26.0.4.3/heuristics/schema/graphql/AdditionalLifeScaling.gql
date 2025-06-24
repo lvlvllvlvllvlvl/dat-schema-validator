@@ -1,7 +1,0 @@
-# Added 3.11
-type AdditionalLifeScaling {
-  IntId: i32 @unique
-  ID: string @unique
-  DatFile: string @file(ext: ".dat")
-  _: bool
-}

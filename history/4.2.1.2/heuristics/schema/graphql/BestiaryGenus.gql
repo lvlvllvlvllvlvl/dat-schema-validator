@@ -1,8 +1,0 @@
-# Added 4.1
-type BestiaryGenus {
-  Id: string @unique
-  Name: string @localized
-  BestiaryGroupsKey: BestiaryGroups
-  Name2: string @localized
-  Icon: string
-}

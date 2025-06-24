@@ -1,8 +1,0 @@
-# Added 3.24
-type TypeTags {
-  Id: string @unique
-  Tag: Tags
-  Name: string
-  Icon: string
-  _: Stats
-}

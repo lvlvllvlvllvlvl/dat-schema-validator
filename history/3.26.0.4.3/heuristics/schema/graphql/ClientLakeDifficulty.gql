@@ -1,7 +1,0 @@
-# Added 3.19
-type ClientLakeDifficulty {
-  Id: i32 @unique
-  Scaling: f32
-  _: i32
-  _: i32
-}

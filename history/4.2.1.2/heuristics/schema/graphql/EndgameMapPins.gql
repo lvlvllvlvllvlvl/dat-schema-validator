@@ -1,9 +1,0 @@
-# Added 4.1
-type EndgameMapPins {
-  Id: string @unique
-  UnavailablePin: MiscAnimated
-  AvailablePin: MiscAnimated
-  ActivePin: MiscAnimated
-  FailedPin: MiscAnimated
-  CompletePin: MiscAnimated
-}

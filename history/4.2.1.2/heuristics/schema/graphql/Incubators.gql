@@ -1,8 +1,0 @@
-# Added 4.1
-type Incubators @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes @unique
-  _: i32
-  Description: string @localized
-  HASH16: i32
-  AchievementItemsKeys: [AchievementItems]
-}

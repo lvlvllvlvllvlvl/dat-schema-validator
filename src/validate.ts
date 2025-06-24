@@ -154,7 +154,8 @@ if (args && versionArg) {
 }
 
 let schema: SchemaFile;
-let schemaDir = path.join("history", version);
+let schemaDir = "current/" + (poe2 ? "poe2" : "poe");
+await fs.rm(schemaDir, RF);
 let schemaPrefix = "";
 const schemaArg = (args?.findIndex((s) => s === "-s" || s === "--schema") ?? -1) + 1;
 if (args && schemaArg) {
@@ -414,7 +415,6 @@ await Promise.all(
       const latest = meta.length === 0 ? null : meta[meta.length - 1];
       const metaName = path.join(metafileDir, table.name + ".csv");
       if (
-        !args?.includes("--historical") &&
         Object.keys(shape).find(
           (k) => k !== "version" && k !== "var_offset" && String(shape[k]) !== String(latest?.[k]),
         )
@@ -487,21 +487,6 @@ progress.push(
 await Promise.all(progress.promises);
 progress.promises = [];
 progressBars?.update();
-
-if (!args?.includes("--historical")) {
-  const sequel = "current/" + (poe2 ? "poe2" : "poe");
-  await fs.rm(sequel, RF);
-  await fs.cp(schemaDir, sequel, R);
-  await Promise.all(
-    Object.values(metafiles).map(async (filename) => {
-      const rows = csvParse(await fs.readFile(filename));
-      if (rows[rows.length - 1].row_count) {
-        rows.push({ version });
-        await fs.writeFile(filename, csv.stringify(rows, { header: true }));
-      }
-    }),
-  );
-}
 
 progressBars?.update();
 progressBars?.stop();

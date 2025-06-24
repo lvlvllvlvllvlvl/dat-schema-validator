@@ -1,8 +1,0 @@
-# Added 4.1
-type MicrotransactionAppliedInventoryItemArtVariations {
-  _: rid @unique
-  DDSFiles: [string] @file(ext: ".dds")
-  _: [_]
-  _: [_]
-  _: [_] # All rows empty
-}

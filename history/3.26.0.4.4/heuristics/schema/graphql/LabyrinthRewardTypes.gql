@@ -1,5 +1,0 @@
-# Added 3.11
-type LabyrinthRewardTypes {
-  Id: string @unique
-  ObjectPath: string @files(ext: [".ot", ".otc"])
-}

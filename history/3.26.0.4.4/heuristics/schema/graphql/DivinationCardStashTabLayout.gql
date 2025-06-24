@@ -1,6 +1,0 @@
-# Added 3.11
-type DivinationCardStashTabLayout {
-  StoredItem: BaseItemTypes @unique
-  IsInGame: bool
-  IsEnabled: bool
-}

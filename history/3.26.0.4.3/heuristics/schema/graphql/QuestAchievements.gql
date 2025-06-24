@@ -1,9 +1,0 @@
-# Added 3.11
-type QuestAchievements {
-  Id: string @unique
-  QuestStates: [i32]
-  _: [i32]
-  AchievementItems: [AchievementItems]
-  NPCs: [NPCs]
-  _: bool
-}

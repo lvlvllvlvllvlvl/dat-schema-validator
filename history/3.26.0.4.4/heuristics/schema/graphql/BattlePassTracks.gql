@@ -1,6 +1,0 @@
-# Added 3.21
-type BattlePassTracks {
-  Id: string @unique
-  Description: string @localized
-  _: string @localized
-}

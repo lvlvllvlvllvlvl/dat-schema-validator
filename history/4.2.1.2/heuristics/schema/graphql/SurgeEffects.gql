@@ -1,8 +1,0 @@
-# Added 4.1
-type SurgeEffects {
-  Id: string @unique
-  _: MiscAnimated
-  _: [f32]
-  _: [MiscAnimated]
-  _: [string]
-}

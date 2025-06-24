@@ -1,9 +1,0 @@
-# Added 3.22
-type AncestralTrialPositionType {
-  Id: string @unique
-  PlayerTotemIcon: string
-  Name: string @localized
-  EnemyTotemIcon: string
-  PlayerTotemSmallIcon: string
-  EnemyTotemSmallIcon: string
-}

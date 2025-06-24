@@ -1,7 +1,0 @@
-# Added 3.11
-type BlightCraftingRecipes @tags(list: ["crafting"]) {
-  Id: string @unique
-  BlightCraftingItemsKeys: [BlightCraftingItems]
-  BlightCraftingResultsKey: BlightCraftingResults
-  BlightCraftingTypesKey: BlightCraftingTypes
-}

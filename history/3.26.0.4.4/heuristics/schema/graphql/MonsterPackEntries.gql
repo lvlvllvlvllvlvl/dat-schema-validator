@@ -1,9 +1,0 @@
-# Added 3.11
-type MonsterPackEntries {
-  Id: string @unique
-  MonsterPacksKey: MonsterPacks
-  Flag: bool
-  Weight: i32
-  MonsterVarietiesKey: MonsterVarieties
-  _: string
-}

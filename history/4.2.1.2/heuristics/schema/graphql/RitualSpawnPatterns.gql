@@ -1,7 +1,0 @@
-# Added 4.1
-type RitualSpawnPatterns {
-  Id: string @unique
-  _: i32
-  SpawnOrder: [string]
-  _: bool
-}

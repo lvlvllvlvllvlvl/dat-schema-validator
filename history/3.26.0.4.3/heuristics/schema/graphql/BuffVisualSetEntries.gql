@@ -1,7 +1,0 @@
-# Added 3.11
-type BuffVisualSetEntries {
-  Id: string @unique
-  _: i32
-  BuffVisual: BuffVisuals
-  _: i32
-}

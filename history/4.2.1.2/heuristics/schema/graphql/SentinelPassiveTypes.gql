@@ -1,8 +1,0 @@
-# Added 4.1
-type SentinelPassiveTypes {
-  Id: string @unique
-  DefaultIcon: string
-  ActiveIcon: string
-  DroneType: DroneTypes
-  _: i32
-}

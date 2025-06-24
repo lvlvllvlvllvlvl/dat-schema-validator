@@ -1,8 +1,0 @@
-# Added 4.1
-type advancedcraftingbenchtabfiltertypes {
-  _: string @unique
-  _: string @unique @localized
-  _: string @unique
-  _: [_]
-  _: [_] # All rows empty
-}

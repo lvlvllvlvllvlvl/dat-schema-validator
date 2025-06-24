@@ -1,7 +1,0 @@
-# Added 3.19
-type BeyondFactions {
-  Id: string @unique
-  Boss: MonsterVarieties
-  _: rid
-  _: rid @unique
-}
