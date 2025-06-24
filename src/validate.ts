@@ -87,7 +87,7 @@ const progress = {
         step: "sql export".padEnd(15),
         table: "...",
       }),
-  output: progressBars?.create(6, 0, {
+  output: progressBars?.create(7, 0, {
     step: "misc files".padEnd(15),
     table: "...",
   }),
@@ -129,10 +129,9 @@ const enumerations = [] as Enumeration[];
 const headerMap = {} as { [name: string]: NamedHeader[] };
 const metafileDir = "current/" + (poe2 ? "meta2" : "meta");
 const metafiles = Object.fromEntries(
-  (await fs.readdir(metafileDir)).map((f) => [
-    f.toLowerCase().replaceAll(".csv", ""),
-    path.join(metafileDir, f),
-  ]),
+  (await fs.readdir(metafileDir))
+    .filter((f) => f.endsWith(".csv"))
+    .map((f) => [f.toLowerCase().replaceAll(".csv", ""), path.join(metafileDir, f)]),
 );
 
 let version: string;
@@ -196,7 +195,7 @@ const includeTranslations: readonly (typeof TRANSLATIONS)[number][] = args?.find
 
 const heuristics = path.join(schemaDir, "heuristics");
 await fs.rm(heuristics, RF);
-const csvDir = path.join(heuristics, "csv")
+const csvDir = path.join(heuristics, "csv");
 await fs.mkdir(csvDir, R);
 const jsonDir = path.join(heuristics, "schema", "json");
 await fs.mkdir(jsonDir, R);
@@ -232,6 +231,8 @@ const dbPath = path.join(schemaDir, "dat.sqlite");
 !args?.includes("--no-db") && (await fs.rm(dbPath, { force: true }));
 const db = args?.includes("--no-db") ? undefined : new DbBuilder(dbPath, true);
 await db?.initSpecialTables(includeTranslations.map((t) => t.name));
+
+const widths: { [table: string]: { version: string; row_width: number }[] } = {};
 
 let concurrentLoads = 0;
 await Promise.all(
@@ -424,6 +425,14 @@ await Promise.all(
         }
         progress.push(fs.writeFile(metaName, csv.stringify(meta, { header: true })), metaName);
       }
+      widths[table.name] = [];
+      let prev = -1;
+      meta.forEach(({ version, row_width }) => {
+        if (row_width !== prev) {
+          prev = row_width;
+          widths[table.name].push({ version, row_width });
+        }
+      });
     } catch (e) {
       console.error(file, e);
     } finally {
@@ -465,6 +474,15 @@ progress.push(
     JSON.stringify(schema, null, 2),
   ),
   "filtered.json",
+);
+const sortedWidths = Object.fromEntries(
+  Object.entries(widths).sort((a, b) =>
+    a[0].localeCompare(b[0], undefined, { sensitivity: "base" }),
+  ),
+);
+progress.push(
+  fs.writeFile(path.join(metafileDir, "widths.json"), JSON.stringify(sortedWidths, null, 2)),
+  "widths.json",
 );
 await Promise.all(progress.promises);
 progress.promises = [];
