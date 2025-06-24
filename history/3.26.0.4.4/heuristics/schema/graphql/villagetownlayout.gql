@@ -1,0 +1,11 @@
+# Added 3.25
+type villagetownlayout {
+  _: string @unique
+  _: rid
+  _: rid
+  _: string
+  _: string @localized
+  _: i32
+  _: i32
+  _: rid
+}

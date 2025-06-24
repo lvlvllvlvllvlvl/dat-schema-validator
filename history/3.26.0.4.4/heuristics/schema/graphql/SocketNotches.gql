@@ -1,0 +1,8 @@
+# Added 3.16
+type SocketNotches {
+  Id: string @unique
+  Description: string @localized
+  RedSocketImage: string
+  BlueSocketImage: string
+  GreenSocketImage: string
+}

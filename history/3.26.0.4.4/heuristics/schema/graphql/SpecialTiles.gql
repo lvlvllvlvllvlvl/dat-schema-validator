@@ -1,0 +1,5 @@
+# Added 3.11
+type SpecialTiles {
+  Id: string @unique
+  TDTFile: string @file(ext: ".tdt")
+}

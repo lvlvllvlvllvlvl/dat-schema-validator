@@ -1,0 +1,15 @@
+# Added 3.12
+type HeistChestRewardTypes {
+  Id: string @unique
+  Art: string
+  RewardTypeName: string @localized
+  _: HeistChestRewardTypes
+  RewardRoomName: string @localized
+  MinLevel: i32
+  MaxLevel: i32
+  Weight: i32
+  RewardRoomName2: string @localized
+  HeistJobsKey: [HeistJobs]
+  _: i32
+  _: i32
+}

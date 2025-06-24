@@ -1,0 +1,5 @@
+# Added 3.11
+type AchievementSetsDisplay {
+  Id: i32 @unique
+  Title: string @localized
+}

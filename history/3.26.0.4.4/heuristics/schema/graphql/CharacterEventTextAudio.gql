@@ -1,0 +1,6 @@
+# Added 3.19
+type CharacterEventTextAudio {
+  Event: CharacterAudioEvents
+  Character: Characters
+  TextAudio: [CharacterTextAudio]
+}

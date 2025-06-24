@@ -1,0 +1,5 @@
+# Added 3.11
+type QuestType {
+  Id: string @unique
+  _: [i32]
+}

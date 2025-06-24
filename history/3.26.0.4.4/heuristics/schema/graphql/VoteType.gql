@@ -1,0 +1,11 @@
+# Added 3.11
+type VoteType {
+  Id: string @unique
+  Text: string @localized
+  AcceptText: string @localized
+  RejectText: string @localized
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}

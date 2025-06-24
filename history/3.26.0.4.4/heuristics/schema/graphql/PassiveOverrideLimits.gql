@@ -1,0 +1,6 @@
+# Added 3.22
+type PassiveOverrideLimits {
+  Id: string @unique
+  Description: string @localized
+  _: bool
+}

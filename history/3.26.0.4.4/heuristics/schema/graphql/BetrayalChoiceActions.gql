@@ -1,0 +1,6 @@
+# Added 3.11
+type BetrayalChoiceActions {
+  Id: string @unique
+  BetrayalChoicesKey: BetrayalChoices
+  ClientStringsKey: ClientStrings
+}

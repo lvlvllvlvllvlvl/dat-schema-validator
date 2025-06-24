@@ -1,0 +1,7 @@
+# Added 3.23
+type microtransactioncounters {
+  _: string @unique
+  _: f32 @unique
+  _: i32 @unique
+  _: string @unique
+}

@@ -1,0 +1,7 @@
+# Added 3.22
+type PassiveSkillOverrideTypes {
+  Id: string @unique
+  CounterStat: Stats
+  _: bool
+  _: bool
+}

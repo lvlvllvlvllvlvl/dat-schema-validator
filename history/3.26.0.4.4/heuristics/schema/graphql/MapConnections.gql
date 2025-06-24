@@ -1,0 +1,11 @@
+# Added 3.11
+type MapConnections {
+  MapPinsKey0: MapPins
+  MapPinsKey1: MapPins
+  _: rid
+  RestrictedAreaText: string @localized
+  _: rid
+  _: rid
+  _: rid
+  _: [_] # All rows empty
+}

@@ -1,0 +1,6 @@
+# Added 3.26
+type MercenaryAttributes {
+  Id: string @unique
+  Name: string @localized
+  Tags: [Tags]
+}

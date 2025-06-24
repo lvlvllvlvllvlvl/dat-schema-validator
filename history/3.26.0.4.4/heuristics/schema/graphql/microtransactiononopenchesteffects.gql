@@ -1,0 +1,8 @@
+# Added 3.24
+type microtransactiononopenchesteffects {
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: i32 @unique
+  _: i32
+}

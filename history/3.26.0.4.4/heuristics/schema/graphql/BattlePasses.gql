@@ -1,0 +1,10 @@
+# Added 3.17
+type BattlePasses {
+  Id: string @unique
+  LeagueCategory: LeagueCategory
+  International_BK2File: string @localized
+  China_BK2File: string @localized
+  MapCompletionCount: i32
+  _: bool
+  _: rid @unique
+}

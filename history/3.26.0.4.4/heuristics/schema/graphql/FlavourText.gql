@@ -1,0 +1,6 @@
+# Added 3.11
+type FlavourText {
+  Id: string @unique
+  _: i32
+  Text: string @localized
+}

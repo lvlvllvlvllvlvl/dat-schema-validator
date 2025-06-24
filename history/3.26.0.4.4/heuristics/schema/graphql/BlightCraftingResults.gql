@@ -1,0 +1,6 @@
+# Added 3.11
+type BlightCraftingResults {
+  Id: string @unique
+  Mod: Mods
+  PassiveSkill: PassiveSkills
+}

@@ -1,0 +1,5 @@
+# Added 3.11
+type MonsterArmours {
+  Id: string @unique
+  ArtString_SMFile: string @file(ext: ".sm")
+}

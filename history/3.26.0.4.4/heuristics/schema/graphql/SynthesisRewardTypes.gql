@@ -1,0 +1,7 @@
+# Added 3.11
+type SynthesisRewardTypes {
+  Id: string @unique
+  Description: string @localized
+  ArtFile: string
+  AchievementItemsKey: AchievementItems
+}

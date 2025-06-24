@@ -1,0 +1,9 @@
+# Added 3.13
+type TalkingPetNPCAudio {
+  _: TalkingPetAudioEvents
+  _: TalkingPets
+  _: [i32]
+  _: string
+  _: bool
+  _: [_]
+}

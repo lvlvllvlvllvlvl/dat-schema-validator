@@ -1,0 +1,6 @@
+# Added 3.11
+type BindableVirtualKeys {
+  KeyCode: i32
+  Name: string @localized
+  Id: string @localized
+}

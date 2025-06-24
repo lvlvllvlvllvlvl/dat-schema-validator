@@ -1,0 +1,6 @@
+# Added 3.11
+type NPCTalkConsoleQuickActions {
+  Id: string @unique
+  Controller: string
+  _: string
+}

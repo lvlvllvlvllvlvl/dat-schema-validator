@@ -1,0 +1,9 @@
+# Added 3.11
+type LeagueFlag {
+  Id: string @unique
+  Image: string
+  IsHC: bool
+  IsSSF: bool
+  Banner: string
+  IsRuthless: bool
+}

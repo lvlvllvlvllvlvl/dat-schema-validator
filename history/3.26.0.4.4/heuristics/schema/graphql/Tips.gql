@@ -1,0 +1,6 @@
+# Added 3.11
+type Tips {
+  Id: string @unique
+  Text: string @localized
+  TextXBox: string @localized
+}

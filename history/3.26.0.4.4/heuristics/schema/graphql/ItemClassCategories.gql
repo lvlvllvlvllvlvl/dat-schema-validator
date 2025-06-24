@@ -1,0 +1,6 @@
+# Added 3.11
+type ItemClassCategories {
+  Id: string @unique
+  Text: string @localized
+  _: rid
+}

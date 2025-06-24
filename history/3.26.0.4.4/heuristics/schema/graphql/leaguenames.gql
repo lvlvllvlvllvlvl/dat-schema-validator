@@ -1,0 +1,6 @@
+# Added 3.24
+type leaguenames {
+  _: string @unique
+  _: string @unique @localized
+  _: string @unique @localized
+}

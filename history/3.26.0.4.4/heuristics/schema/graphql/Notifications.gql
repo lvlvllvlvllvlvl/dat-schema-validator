@@ -1,0 +1,11 @@
+# Added 3.11
+type Notifications {
+  Id: string @unique
+  _: bool
+  _: bool
+  Message: string @localized
+  _: string @localized
+  _: i32
+  _: bool
+  _: bool
+}

@@ -1,0 +1,14 @@
+# Added 3.11
+type Realms {
+  Id: string @unique
+  Name: string @localized
+  Server: [string]
+  IsEnabled: bool
+  Server2: [string]
+  ShortName: string @localized
+  _: [Realms]
+  _: Realms
+  _: i32
+  IsGammaRealm: bool
+  SpeedtestUrl: [string]
+}

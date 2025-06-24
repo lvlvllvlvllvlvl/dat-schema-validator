@@ -1,0 +1,14 @@
+# Added 3.26
+type MercenarySkills {
+  Id: GrantedEffects @unique
+  SupportCount: MercenarySupportCounts
+  PossibleSupports: [MercenarySupports]
+  SecondaryGrantedEffect: GrantedEffects
+  Name: string @localized
+  Description: string @localized
+  _: i32
+  _: i32
+  SkillFamily: MercenarySkillFamilies
+  HASH16: u16
+  HouseIcon: string
+}
