@@ -64,7 +64,7 @@ const progressBars =
     : null;
 let lastFrame = performance.now();
 const progress = {
-  promises: [] as Promise<any>[],
+  promises: [] as any[],
   requests: progressBars?.create(9999, 0, {
     step: "loading files".padEnd(15),
     table: "...",
@@ -92,14 +92,14 @@ const progress = {
     table: "...",
   }),
   push: (task: Promise<any>, table: string, output = "output") => {
-    if (!progress[output]) return;
     const i = progress.promises.length;
     progress.promises.push(
-      task.finally(() => {
-        progress[output]?.update({ table });
-        progress.increment(output);
-        progress.promises[i] = Promise.resolve();
-      }),
+      progress[output]
+        ? task.finally(() => {
+            progress.increment(output, { table });
+            progress.promises[i] = null;
+          })
+        : task,
     );
   },
   increment: (bar: string, ...args: any[]) => {
@@ -384,7 +384,7 @@ await Promise.all(
             "json",
           );
           progress.push(
-            Promise.resolve().then(() => db?.createTable(table.name, sqlData)),
+            db?.createTable(table.name, sqlData) || Promise.resolve(),
             `${table.name}.sql`,
             "sql",
           );
