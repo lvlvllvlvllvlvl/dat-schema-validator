@@ -2,7 +2,7 @@
 type TieredMicrotransactionsVisuals {
   MTX: BaseItemTypes
   Tier: i32
-  Description: string
+  Description: string @localized
   DDSFile: string @file(ext: ".dds")
   _: i32
   _: string
