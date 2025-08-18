@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1749926441,
+  "createdAt": 1755525794,
   "tables": [
     {
       "validFor": 3,
@@ -71426,7 +71426,7 @@
       "added": "4.1.0.10.2"
     },
     {
-      "validFor": 3,
+      "validFor": 1,
       "name": "MapTiers",
       "columns": [
         {
@@ -71457,6 +71457,65 @@
         },
         {
           "name": "Level2",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
+      "name": "MapTiers",
+      "columns": [
+        {
+          "name": "Tier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Level",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Level2",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
           "description": null,
           "array": false,
           "type": "i32",
@@ -110909,6 +110968,40 @@
           "description": null,
           "array": false,
           "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.1.0.10.2"
+    },
+    {
+      "validFor": 2,
+      "name": "GrantedSkillSocketNumbers",
+      "columns": [
+        {
+          "name": "Level",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Sockets",
+          "description": null,
+          "array": false,
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
