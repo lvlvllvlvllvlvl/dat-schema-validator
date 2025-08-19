@@ -9,6 +9,6 @@ type RitualStashTabLayout {
   Height: i32
   _: bool
   _: string
-  _: i32 # All rows empty
-  _: [_] # All rows empty
+  _: i32
+  _: [rid]
 }

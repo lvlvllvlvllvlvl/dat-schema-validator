@@ -10,23 +10,23 @@ type Chests {
   _: bool
   _: bool
   _: i32
-  _: [_] # All rows empty
+  _: [rid]
   _: rid
   _: bool
-  _: [_]
-  _: [_]
+  _: [rid]
+  _: [rid]
   _: rid
   _: i32
   _: string @localized
   _: i32
   _: rid
   _: rid
-  _: [_]
+  _: [rid]
   _: rid
   _: string
   _: bool
   _: rid
-  _: [_] # All rows empty
+  _: [rid]
   _: string
   _: i32
   _: i32

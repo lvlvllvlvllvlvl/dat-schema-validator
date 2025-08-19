@@ -25,7 +25,7 @@
     "localized": true
   },
   {
-    "name": "SoundFile",
+    "name": "",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -34,10 +34,11 @@
       "array": false,
       "string": {}
     },
-    "size": 8
+    "size": 8,
+    "localized": true
   },
   {
-    "name": "ParrotSoundFile",
+    "name": "",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -49,10 +50,10 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "HASH32",
     "offset": 32,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -71,11 +72,20 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "size": 4
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 44,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   }
 ]

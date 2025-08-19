@@ -17,8 +17,8 @@ type Projectiles {
   _: i32
   _: bool
   _: bool
-  _: [string]
-  _: string
+  Stuck_AOFile: [string] @file(ext: ".ao")
+  Bounce_AOFile: string @file(ext: ".ao")
   _: i32
   _: i32
   _: i32
