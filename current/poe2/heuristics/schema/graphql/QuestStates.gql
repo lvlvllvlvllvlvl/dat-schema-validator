@@ -7,16 +7,16 @@ type QuestStates {
   Text: string @localized
   _: bool
   Message: string @localized
-  MapPinsKeys1: [MapPins]
+  MapPinsKeys: [MapPins]
   _: i32
-  _: string @localized
-  _: rid
-  _: [_]
+  MapPinsText: string @localized
+  MapPinsKey: MapPins
+  _: [rid]
   _: bool
-  _: [_]
-  _: [_]
+  _: [i32]
+  _: [i32]
   _: i32
-  _: rid
+  SoundEffect: SoundEffects
   _: string
-  _: [_]
+  _: [rid]
 }

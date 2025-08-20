@@ -3,11 +3,11 @@ type QuestStaticRewards {
   QuestFlag: QuestFlags
   _: i32
   _: i32
-  _: [_]
-  _: [_]
-  _: rid
+  StatsKeys: [Stats]
+  StatValues: [i32]
+  QuestKey: Quest
   _: i32
-  _: rid
+  ClientStringsKey: ClientStrings
   _: i32
   _: bool
 }

@@ -35,7 +35,7 @@ type Chests {
   _: rid
   _: bool
   _: bool
-  _: [_] # All rows empty
+  _: [rid]
   _: bool
   _: [string] @localized
   _: bool
