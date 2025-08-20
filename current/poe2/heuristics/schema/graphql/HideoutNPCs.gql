@@ -1,7 +1,7 @@
 # Added 4.1
 type HideoutNPCs {
   Hideout_NPC: NPCs
-  _: rid @unique
+  HideoutDoodad: HideoutDoodads @unique
   _: rid
   _: rid
   _: i32
