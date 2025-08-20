@@ -1,0 +1,9 @@
+# Added 4.1
+type MinionStats {
+  Stat: Stats @unique
+  _: [rid]
+  _: [rid]
+  _: [rid]
+  _: bool
+  _: bool
+}

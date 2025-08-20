@@ -1,0 +1,6 @@
+# Added 4.1
+type LeagueNames {
+  Id: string @unique
+  Name1: string @unique @localized
+  Name2: string @unique @localized
+}

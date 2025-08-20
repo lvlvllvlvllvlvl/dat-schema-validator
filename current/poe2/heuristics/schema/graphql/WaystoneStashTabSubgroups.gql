@@ -1,0 +1,7 @@
+# Added 4.1
+type WaystoneStashTabSubgroups {
+  Tier: i32 @unique
+  Text: string @unique
+  Colour: rid
+  _: i32
+}

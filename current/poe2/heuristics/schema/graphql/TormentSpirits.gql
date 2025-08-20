@@ -11,18 +11,18 @@ type TormentSpirits {
   _: i32
   ModsKeys0: [Mods]
   ModsKeys1: [Mods]
+  StatsKeys1: Stats
+  _: i32
+  Type: i32
+  ModsKeys3: [Mods]
+  _: [rid]
+  StatsKeys2: Stats
+  _: [rid]
+  _: [i32]
   _: rid
+  ModsKeys4: Mods @unique
+  DropsBaseItems: [BaseItemTypes]
   _: i32
   _: i32
-  _: [_]
-  _: [_]
-  _: rid
-  _: [_]
-  _: [_]
-  _: rid
-  _: rid @unique
-  _: [_]
-  _: i32
-  _: i32
-  _: [_]
+  _: [i32]
 }

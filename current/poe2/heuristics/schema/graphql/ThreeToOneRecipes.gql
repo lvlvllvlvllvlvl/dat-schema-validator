@@ -1,0 +1,8 @@
+# Added 4.1
+type ThreeToOneRecipes {
+  _: string @unique
+  InputBaseItem: rid @unique
+  OutputBaseItem: rid
+  _: i32
+  _: rid
+}
