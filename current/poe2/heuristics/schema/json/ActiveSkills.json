@@ -440,50 +440,25 @@
     "size": 16
   },
   {
-    "name": "",
-    "offset": 289,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 305,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 289,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 306,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "offset": 290,
     "size": 8,
+    "unique": false,
     "localized": true
   },
   {
-    "name": "StatDescriptionType",
-    "offset": 314,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -491,33 +466,40 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 298,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "StatDescription",
-    "offset": 318,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "offset": 302,
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "WeaponRequirements",
-    "offset": 326,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "ActiveSkillWeaponRequirement"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 310,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 326,
+    "size": 4,
+    "unique": false
   }
 ]

@@ -1,5 +1,5 @@
 # Added 4.2
 type fadeoncorpseconsumeepks {
-  _: rid
-  _: i32
+  _: rid @unique
+  _: i32 @unique
 }

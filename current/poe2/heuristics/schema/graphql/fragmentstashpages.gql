@@ -1,0 +1,5 @@
+type fragmentstashpages {
+  _: string @unique
+  _: string @unique @localized
+  _: string
+}

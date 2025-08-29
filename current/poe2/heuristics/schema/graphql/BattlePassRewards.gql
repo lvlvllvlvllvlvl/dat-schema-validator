@@ -5,7 +5,7 @@ type BattlePassRewards {
   _: i32
   _: i32
   _: bool
-  Id: string
+  Id: string @unique
   RewardedMTX: [BaseItemTypes]
   _: i32
   RewardDescription: string @localized

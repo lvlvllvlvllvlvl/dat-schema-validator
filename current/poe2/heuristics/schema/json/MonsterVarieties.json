@@ -1731,5 +1731,29 @@
     "offset": 905,
     "size": 16,
     "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 921,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 937,
+    "size": 4,
+    "noData": true,
+    "unique": false
   }
 ]

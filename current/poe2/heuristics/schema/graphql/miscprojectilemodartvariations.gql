@@ -1,6 +1,6 @@
 # Added 4.1
 type miscprojectilemodartvariations {
-  _: string
+  _: string @unique
   _: i32 # All rows empty
   _: i32
   _: rid

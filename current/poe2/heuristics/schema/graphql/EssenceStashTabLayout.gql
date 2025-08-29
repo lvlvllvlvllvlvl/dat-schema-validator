@@ -8,8 +8,6 @@ type EssenceStashTabLayout {
   Width: i32
   Height: i32
   IsUpgradableEssenceSlot: bool
-  _: string
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: rid
   _: i32 # All rows empty
 }

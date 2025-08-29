@@ -576,7 +576,7 @@
     "name": "PlayerEffect",
     "offset": 324,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -955,5 +955,27 @@
       "string": {}
     },
     "size": 8
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 624,
+    "size": 16,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 640,
+    "size": 16,
+    "unique": false
   }
 ]

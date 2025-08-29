@@ -1,1 +1,8 @@
-enum microtransactiononopenchesteffects @indexing(first: 0) { _ }
+# Added 4.1
+type microtransactiononopenchesteffects {
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+  _: i32 @unique
+  _: i32
+}

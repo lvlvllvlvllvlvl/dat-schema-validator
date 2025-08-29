@@ -10,6 +10,5 @@ type DeliriumStashTabLayout {
   SlotSize: i32
   _: bool
   _: rid
-  _: u16 # All rows empty
-  _: bool
+  _: i32
 }

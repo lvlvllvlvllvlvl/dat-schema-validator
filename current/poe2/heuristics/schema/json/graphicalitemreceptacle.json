@@ -26,7 +26,7 @@
     },
     "offset": 16,
     "size": 16,
-    "unique": true
+    "unique": false
   },
   {
     "type": {
@@ -49,22 +49,24 @@
   {
     "type": {
       "array": false,
+      "string": {}
+    },
+    "offset": 34,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 34,
+    "offset": 42,
     "size": 16,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "offset": 50,
-    "size": 8,
-    "unique": true
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -75,7 +77,7 @@
     },
     "offset": 58,
     "size": 16,
-    "unique": true
+    "unique": false
   },
   {
     "type": {
@@ -83,6 +85,93 @@
       "string": {}
     },
     "offset": 74,
+    "size": 8,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 82,
+    "size": 16,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 98,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 99,
+    "size": 8,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 107,
+    "size": 8,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 115,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 116,
+    "size": 16,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 132,
+    "size": 8,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 140,
+    "size": 16,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 156,
     "size": 8,
     "unique": true
   }

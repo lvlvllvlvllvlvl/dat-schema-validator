@@ -20,4 +20,8 @@ type ShapeShiftForms {
   Status: string
   _: f32
   _: bool
+  _: rid
+  _: i32
+  _: bool
+  _: i32 @unique
 }

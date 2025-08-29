@@ -1,1 +1,9 @@
-enum DivinationCardArt @indexing(first: 0) { _ }
+# Added 4.1
+type DivinationCardArt @tags(list: ["item:def"]) {
+  BaseItemTypesKey: BaseItemTypes
+  VirtualFile: string
+  Influences: [InfluenceTypes]
+  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+}

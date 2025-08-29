@@ -4,15 +4,14 @@ type Essences {
   HASH32: u32
   _: i32
   _: i32
-  _: [rid]
   _: i32
-  MonsterMod: Mods
+  _: i32 # All rows empty
+  _: [_]
+  _: [_]
+  _: rid @unique
   _: bool
-  CraftTag: Tags
-  UpgradeResult: Essences
-  Tier: i32
-  Stats: Stats
-  CraftedMod: Mods
-  ItemClasses: [ItemClasses]
   _: i32
+  _: i32
+  _: i32
+  _: rid
 }

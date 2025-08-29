@@ -1,0 +1,5 @@
+type craftingspreecurrencies {
+  _: string @unique
+  _: rid @unique
+  _: bool
+}

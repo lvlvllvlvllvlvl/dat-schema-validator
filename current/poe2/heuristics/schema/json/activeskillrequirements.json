@@ -24,10 +24,13 @@
   {
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
     "offset": 32,
-    "size": 1,
+    "size": 4,
     "unique": false
   },
   {
@@ -38,7 +41,7 @@
         "size": 4
       }
     },
-    "offset": 33,
+    "offset": 36,
     "size": 4,
     "unique": false
   },
@@ -49,7 +52,7 @@
         "foreign": true
       }
     },
-    "offset": 37,
+    "offset": 40,
     "size": 16,
     "unique": false
   },
@@ -60,7 +63,7 @@
         "foreign": true
       }
     },
-    "offset": 53,
+    "offset": 56,
     "size": 16,
     "unique": false
   },
@@ -71,7 +74,7 @@
         "foreign": true
       }
     },
-    "offset": 69,
+    "offset": 72,
     "size": 16,
     "unique": false
   },
@@ -80,7 +83,16 @@
       "array": false,
       "boolean": true
     },
-    "offset": 85,
+    "offset": 88,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 89,
     "size": 1,
     "unique": false
   },
@@ -92,7 +104,7 @@
         "size": 4
       }
     },
-    "offset": 86,
+    "offset": 90,
     "size": 4,
     "noData": true,
     "unique": false
@@ -102,16 +114,7 @@
       "array": false,
       "boolean": true
     },
-    "offset": 90,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 91,
+    "offset": 94,
     "size": 1,
     "unique": false
   }

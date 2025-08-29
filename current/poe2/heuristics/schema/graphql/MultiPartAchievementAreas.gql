@@ -1,6 +1,1 @@
-# Added 4.1
-type MultiPartAchievementAreas {
-  _: rid
-  _: [rid]
-  _: i32
-}
+enum MultiPartAchievementAreas @indexing(first: 0) { _ }

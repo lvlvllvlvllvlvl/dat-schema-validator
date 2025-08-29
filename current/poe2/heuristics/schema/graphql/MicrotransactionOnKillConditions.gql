@@ -13,5 +13,5 @@ type MicrotransactionOnKillConditions {
   _: bool
   _: i32 @unique
   _: i32 # All rows empty
-  _: [string]
+  _: [_]
 }

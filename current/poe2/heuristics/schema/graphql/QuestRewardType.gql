@@ -5,4 +5,5 @@ type QuestRewardType {
   Name: string @localized
   Description: string @localized
   Reward: BaseItemTypes
+  _: rid
 }

@@ -12,24 +12,15 @@
   },
   {
     "type": {
-      "array": false,
-      "key": {
-        "foreign": false
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "offset": 16,
-    "size": 8,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": false
-      }
-    },
-    "offset": 24,
-    "size": 8,
+    "size": 16,
+    "unknownArray": true,
     "unique": false
   },
   {

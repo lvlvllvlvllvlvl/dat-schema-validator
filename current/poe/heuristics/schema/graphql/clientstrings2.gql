@@ -1,0 +1,8 @@
+type clientstrings2 {
+  _: string @unique
+  _: string
+  _: string
+  _: clientstrings2
+  _: i32 @unique
+  _: [_]
+}

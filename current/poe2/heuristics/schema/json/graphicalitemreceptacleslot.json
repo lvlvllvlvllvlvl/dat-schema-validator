@@ -2,10 +2,12 @@
   {
     "type": {
       "array": false,
-      "boolean": true
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 0,
-    "size": 1,
+    "size": 16,
     "unique": false
   },
   {
@@ -16,59 +18,19 @@
         "size": 4
       }
     },
-    "offset": 1,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 5,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 9,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 13,
+    "offset": 16,
     "size": 4,
     "unique": false
   },
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
-    "offset": 17,
-    "size": 4,
+    "offset": 20,
+    "size": 16,
     "unique": false
   },
   {
@@ -79,92 +41,26 @@
         "size": 4
       }
     },
-    "offset": 21,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 25,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 29,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 33,
+    "offset": 36,
     "size": 4,
     "unique": true
   },
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "offset": 37,
-    "size": 4,
-    "unique": true
+    "offset": 40,
+    "size": 8,
+    "unique": false
   },
   {
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "offset": 41,
-    "size": 4,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 45,
-    "size": 4,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 49,
-    "size": 4,
+    "offset": 48,
+    "size": 8,
     "unique": true
   },
   {
@@ -174,65 +70,30 @@
         "foreign": true
       }
     },
-    "offset": 53,
+    "offset": 56,
     "size": 16,
     "unique": true
   },
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "string": {}
     },
-    "offset": 69,
-    "size": 16,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 85,
-    "size": 4,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 89,
-    "size": 4,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": true,
-        "size": 2
-      }
-    },
-    "offset": 93,
-    "size": 2,
-    "noData": true,
+    "offset": 72,
+    "size": 8,
     "unique": false
   },
   {
     "type": {
-      "array": false,
-      "boolean": true
+      "array": true,
+      "key": {
+        "foreign": true
+      }
     },
-    "offset": 95,
-    "size": 1,
+    "offset": 80,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
     "unique": false
   }
 ]

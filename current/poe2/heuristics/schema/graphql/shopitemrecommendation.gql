@@ -1,0 +1,14 @@
+type shopitemrecommendation {
+  _: string @unique
+  _: [_]
+  _: [_]
+  _: [string]
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
+  _: string @unique
+  _: bool
+  _: bool
+  _: bool
+}

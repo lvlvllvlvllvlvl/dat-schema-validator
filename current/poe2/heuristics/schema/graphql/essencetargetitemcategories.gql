@@ -1,0 +1,5 @@
+type essencetargetitemcategories {
+  _: string @unique
+  _: [_]
+  _: string @unique @localized
+}

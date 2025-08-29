@@ -1,8 +1,8 @@
 # Added 4.1
 type miscprojectilemod {
+  _: string @unique
   _: [_]
-  _: string
-  _: string
+  _: string @unique
   _: rid
   _: rid
   _: string

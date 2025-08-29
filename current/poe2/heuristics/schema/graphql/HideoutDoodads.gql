@@ -2,20 +2,21 @@
 type HideoutDoodads {
   BaseItemTypesKey: BaseItemTypes @unique
   Variation_AOFiles: [string] @file(ext: ".ao")
-  IsNonMasterDoodad: bool
-  InheritsFrom: string @files(ext: [".ot", ".otc"])
+  _: [_]
   _: bool
-  IsCraftingBench: bool
-  Tags: [HideoutDoodadTags]
+  _: string
+  _: bool
+  _: bool
+  _: [_]
   _: bool
   _: rid
-  Category: HideoutDoodadCategory
+  _: rid
   _: i32
   _: bool
   _: rid
   _: bool
   _: rid
-  _: [string]
+  _: [_] # All rows empty
   _: i32
   _: i32
   _: bool

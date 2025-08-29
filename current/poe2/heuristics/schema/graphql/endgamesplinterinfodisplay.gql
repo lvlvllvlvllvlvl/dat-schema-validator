@@ -1,0 +1,7 @@
+type endgamesplinterinfodisplay {
+  _: string @unique
+  _: string @unique @localized
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
+}

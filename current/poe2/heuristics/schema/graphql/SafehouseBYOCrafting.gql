@@ -3,9 +3,5 @@ type SafehouseBYOCrafting @tags(list: ["crafting"]) {
   BetrayalJobsKey: BetrayalJobs
   BetrayalTargetsKey: BetrayalTargets
   Rank: i32
-  Description: string @localized
-  ServerCommand: string
-  _: [rid]
-  Description2: string @localized
-  ServerCommand2: string
+  _: rid @unique
 }

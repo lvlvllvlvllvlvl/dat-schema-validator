@@ -1,0 +1,9 @@
+type craftingspreetype {
+  _: string @unique
+  _: [_]
+  _: [_]
+  _: [_]
+  _: bool
+  _: string @localized
+  _: i32
+}

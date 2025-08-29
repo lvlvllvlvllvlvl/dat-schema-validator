@@ -1,4 +1,1 @@
-# Added 4.1
-type HellscapeImmuneMonsters {
-  Monster: MonsterVarieties
-}
+enum HellscapeImmuneMonsters @indexing(first: 0) { _ }

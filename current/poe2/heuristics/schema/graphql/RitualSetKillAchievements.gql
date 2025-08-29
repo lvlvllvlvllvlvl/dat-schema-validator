@@ -1,5 +1,1 @@
-# Added 4.1
-type RitualSetKillAchievements {
-  Achievement: AchievementItems
-  KillBosses: [MonsterVarieties]
-}
+enum RitualSetKillAchievements @indexing(first: 0) { _ }

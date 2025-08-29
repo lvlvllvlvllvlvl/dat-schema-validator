@@ -131,36 +131,12 @@
   {
     "type": {
       "array": false,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 49,
-    "size": 8,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 57,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 61,
-    "size": 4,
-    "noData": true,
+    "size": 16,
     "unique": false
   },
   {

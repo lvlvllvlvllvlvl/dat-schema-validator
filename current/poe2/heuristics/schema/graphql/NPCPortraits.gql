@@ -4,7 +4,8 @@ type NPCPortraits {
   PortraitFile: string
   _: i32
   _: i32
+  _: i32
   _: bool
-  _: u16 # All rows empty
+  _: i32
   _: bool
 }

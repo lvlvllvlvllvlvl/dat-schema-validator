@@ -3,4 +3,7 @@ type UncutGemTiers {
   BaseItemType: BaseItemTypes
   Tier: i32
   AreaLevel: i32
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32 # All rows empty
 }

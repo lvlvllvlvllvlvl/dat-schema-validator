@@ -1,0 +1,20 @@
+type npctalkdialoguetextaudio {
+  _: string @unique
+  _: rid
+  _: string @localized
+  _: [string]
+  _: [_]
+  _: rid
+  _: [_]
+  _: i32 # All rows empty
+  _: i32
+  _: [_] # All rows empty
+  _: [_]
+  _: [_]
+  _: [string]
+  _: [_]
+  _: [_]
+  _: [string] @localized
+  _: [string] @localized
+  _: rid
+}

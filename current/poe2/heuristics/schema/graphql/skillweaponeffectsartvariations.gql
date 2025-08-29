@@ -1,0 +1,8 @@
+type skillweaponeffectsartvariations {
+  _: string @unique
+  _: [string]
+  _: bool
+  _: i32 # All rows empty
+  _: u16 # All rows empty
+  _: bool
+}

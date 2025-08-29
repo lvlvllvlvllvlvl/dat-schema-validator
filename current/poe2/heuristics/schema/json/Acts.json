@@ -151,7 +151,7 @@
     "name": "",
     "offset": 93,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -179,7 +179,7 @@
     "name": "Description",
     "offset": 125,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -187,5 +187,16 @@
     },
     "size": 8,
     "localized": true
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 133,
+    "size": 16,
+    "unique": false
   }
 ]

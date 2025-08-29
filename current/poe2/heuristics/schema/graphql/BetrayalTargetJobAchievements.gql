@@ -1,6 +1,1 @@
-# Added 4.1
-type BetrayalTargetJobAchievements {
-  BetrayalTargetsKey: BetrayalTargets
-  BetrayalJobsKey: BetrayalJobs
-  AchievementItemsKey: AchievementItems
-}
+enum BetrayalTargetJobAchievements @indexing(first: 0) { _ }

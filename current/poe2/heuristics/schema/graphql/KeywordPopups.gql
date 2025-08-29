@@ -4,4 +4,5 @@ type KeywordPopups {
   Term: string @localized
   Definition: string @localized
   _: string
+  _: string @localized
 }

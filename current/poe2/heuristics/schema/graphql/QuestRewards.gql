@@ -7,27 +7,29 @@ type QuestRewards @tags(list: ["item:reward"]) {
   _: i32
   _: i32
   _: i32
-  _: rid
+  _: i32
+  _: i32 # All rows empty
+  _: i32 # All rows empty
   _: i32
   _: i32
   _: i32
   _: i32
   _: i32
   _: rid
+  _: i32 # All rows empty
   _: i32
+  _: i32 # All rows empty
   _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: i32 # All rows empty
   _: bool
-  _: [rid]
+  _: [_] # All rows empty
   _: rid
   _: i32
-  _: i32
-  _: i32
+  _: i32 # All rows empty
+  _: i32 # All rows empty
   _: rid
-  _: i32
-  _: [rid]
-  _: i32
+  _: i32 # All rows empty
+  _: [_] # All rows empty
+  _: i32 # All rows empty
   _: bool
 }

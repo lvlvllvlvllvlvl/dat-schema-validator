@@ -1,0 +1,5 @@
+type strongboxvarieties {
+  _: rid @unique
+  _: string
+  _: [_] # All rows empty
+}

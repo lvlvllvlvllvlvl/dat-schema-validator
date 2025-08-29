@@ -1,11 +1,13 @@
 # Added 4.2
 type weaponbufforbstype {
-  _: rid @unique
+  _: rid
   _: string
+  _: [_] # All rows empty
   _: i32
   _: i32
   _: i32
   _: i32
   _: i32
+  _: bool
   _: bool
 }

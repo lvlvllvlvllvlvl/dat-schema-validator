@@ -2,10 +2,8 @@
 type PassiveSkillMasteryGroups {
   Id: string @unique
   MasteryEffects: [PassiveSkillMasteryEffects]
-  InactiveIcon: string @file(ext: ".dds")
-  ActiveIcon: string @file(ext: ".dds")
-  ActiveEffectImage: string
   _: bool
-  SoundEffect: SoundEffects
-  MasteryCountStat: Stats
+  _: rid
+  _: rid
+  _: rid @unique
 }

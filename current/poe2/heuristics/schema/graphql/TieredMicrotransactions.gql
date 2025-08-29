@@ -3,7 +3,7 @@ type TieredMicrotransactions {
   MTX: BaseItemTypes @unique
   TierThresholds: [i32]
   _: Stats
-  _: [_]
+  _: [_] # All rows empty
   _: Stats
   TierCount: i32
   _: [Stats]

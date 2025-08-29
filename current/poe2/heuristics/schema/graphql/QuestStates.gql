@@ -19,4 +19,6 @@ type QuestStates {
   SoundEffect: SoundEffects
   _: string
   _: [rid]
+  _: bool
+  _: bool
 }

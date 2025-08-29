@@ -15,7 +15,7 @@
     "name": "PortraitFile",
     "offset": 8,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -56,9 +56,21 @@
   {
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
     "offset": 24,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 28,
     "size": 1,
     "unique": false
   },
@@ -66,13 +78,12 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": true,
-        "size": 2
+        "unsigned": false,
+        "size": 4
       }
     },
-    "offset": 25,
-    "size": 2,
-    "noData": true,
+    "offset": 29,
+    "size": 4,
     "unique": false
   },
   {
@@ -80,7 +91,7 @@
       "array": false,
       "boolean": true
     },
-    "offset": 27,
+    "offset": 33,
     "size": 1,
     "unique": false
   }
