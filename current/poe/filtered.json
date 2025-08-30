@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1755713254,
+  "createdAt": 1756517532,
   "tables": [
     {
       "validFor": 3,
@@ -38013,19 +38013,6 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
           "type": "bool",
           "unique": false,
           "localized": false,
@@ -38036,7 +38023,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "ShortDescription",
           "description": null,
           "array": false,
           "type": "string",
@@ -38052,12 +38039,10 @@
           "name": "StatDescriptionType",
           "description": null,
           "array": false,
-          "type": "enumrow",
+          "type": "i32",
           "unique": false,
           "localized": false,
-          "references": {
-            "table": "StatDescriptionTypes"
-          },
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -38086,6 +38071,19 @@
           "references": {
             "table": "ActiveSkillWeaponRequirement"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -42053,9 +42051,9 @@
           "interval": false
         },
         {
-          "name": "Characters",
+          "name": "Character",
           "description": null,
-          "array": true,
+          "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
@@ -42172,6 +42170,19 @@
           "interval": false
         },
         {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
           "name": "BackgroundImage",
           "description": null,
           "array": false,
@@ -42198,10 +42209,75 @@
           "interval": false
         },
         {
-          "name": "Disabled",
+          "name": null,
           "description": null,
           "array": false,
-          "type": "bool",
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": null,
@@ -44107,19 +44183,6 @@
           "interval": false
         },
         {
-          "name": "SiteVisibility",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "ItemVisualIdentity",
           "description": null,
           "array": false,
@@ -44297,21 +44360,6 @@
           "unique": false,
           "localized": false,
           "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "TradeMarketCategory",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "TradeMarketCategory"
-          },
           "until": null,
           "file": null,
           "files": null,
@@ -90397,32 +90445,6 @@
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "NPCs",
           "description": null,
           "array": true,
@@ -121737,6 +121759,39 @@
     },
     {
       "validFor": 2,
+      "name": "SupportGemFamily",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Text",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": true,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
       "name": "SupportGems",
       "columns": [
         {
@@ -121777,6 +121832,75 @@
           "references": null,
           "until": null,
           "file": ".dds",
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Family",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "SupportGemFamily"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "IsLineage",
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "FlavourText",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "FlavourText"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
           "files": null,
           "interval": false
         }
@@ -121848,6 +121972,67 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
+      "name": "TieredCurrency",
+      "columns": [
+        {
+          "name": "BaseItemType",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": true,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Tier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "MinimumModLevel",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,

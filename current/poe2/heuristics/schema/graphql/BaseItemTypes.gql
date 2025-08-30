@@ -13,25 +13,23 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   SoundEffect: SoundEffects
   Tags: [Tags]
   ModDomain: ModDomains
-  SiteVisibility: i32
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 @unique
-  _: [_] # All rows empty
-  _: string @localized
+  ItemVisualIdentity: ItemVisualIdentity
+  HASH32: u32 @unique
+  VendorRecipe_AchievementItems: [AchievementItems]
+  "the inflection identifier used for i18n in related fields"
+  Inflection: string @localized
+  Equip_AchievementItem: AchievementItems
+  IsCorrupted: bool
+  Identify_AchievementItems: [AchievementItems]
+  IdentifyMagic_AchievementItems: [AchievementItems]
+  "the item which represents this item in the fragment stash tab"
+  FragmentBaseItemType: BaseItemTypes
+  _: bool
+  UncutGemSoundEffect: SoundEffects
   _: rid
   _: bool
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: i32
-  _: i32
-  _: bool
-  _: rid
-  _: rid
-  _: bool
-  _: bool
-  _: [_] # All rows empty
-  _: rid
+  Unmodifiable: bool
+  Achievement: [AchievementItems]
+  ShopTag: ShopTag
   _: rid
 }

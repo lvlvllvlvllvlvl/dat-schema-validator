@@ -3,9 +3,9 @@ type SupportGems {
   SkillGem: SkillGems
   _: i32
   Icon: string @file(ext: ".dds")
-  _: [_]
-  _: bool
-  _: rid
+  Family: [SupportGemFamily]
+  IsLineage: bool
+  FlavourText: FlavourText
   _: rid
   _: rid
 }
