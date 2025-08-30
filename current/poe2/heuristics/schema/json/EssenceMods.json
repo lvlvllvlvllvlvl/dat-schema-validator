@@ -30,7 +30,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Mod1",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -38,13 +38,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Mod2",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -52,7 +53,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
     "size": 16
@@ -85,6 +87,11 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 88,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -92,9 +99,6 @@
         "size": 4
       }
     },
-    "offset": 88,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]
