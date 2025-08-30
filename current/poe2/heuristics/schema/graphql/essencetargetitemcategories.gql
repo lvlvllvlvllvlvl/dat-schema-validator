@@ -1,6 +1,0 @@
-# Added 4.3
-type essencetargetitemcategories {
-  _: string @unique
-  _: [_]
-  _: string @unique @localized
-}
