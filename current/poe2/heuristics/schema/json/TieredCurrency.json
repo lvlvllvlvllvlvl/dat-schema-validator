@@ -37,25 +37,22 @@
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 36,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
     "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 24,
+    "size": 16,
+    "unique": true
   }
 ]

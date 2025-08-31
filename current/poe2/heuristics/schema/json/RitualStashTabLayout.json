@@ -102,7 +102,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "ShowIfEmpty",
     "offset": 44,
     "unknownArray": false,
     "unique": false,
@@ -114,17 +114,25 @@
     "size": 1
   },
   {
+    "name": "",
+    "offset": 45,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 45,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 61,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -132,18 +140,18 @@
         "size": 4
       }
     },
-    "offset": 61,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 65,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 65,
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]
