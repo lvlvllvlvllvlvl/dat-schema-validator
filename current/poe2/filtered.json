@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1756644794,
+  "createdAt": 1756645220,
   "tables": [
     {
       "validFor": 3,
@@ -41322,6 +41322,21 @@
           "interval": false
         },
         {
+          "name": "BaseAscendancy",
+          "description": null,
+          "array": false,
+          "type": "row",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Ascendancy"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
           "name": null,
           "description": null,
           "array": false,
@@ -41338,7 +41353,20 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "foreignrow",
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -113650,6 +113678,59 @@
       ],
       "tags": [],
       "added": "4.2.0.1"
+    },
+    {
+      "validFor": 2,
+      "name": "AscendancyPassiveSkillOverrides",
+      "columns": [
+        {
+          "name": "AscendancyToOverrideFor",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Ascendancy"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SkillToOverride",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "PassiveSkills"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Override",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "PassiveSkills"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.3.0.1"
     },
     {
       "validFor": 2,

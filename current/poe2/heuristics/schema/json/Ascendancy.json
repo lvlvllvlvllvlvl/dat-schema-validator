@@ -188,8 +188,22 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "BaseAscendancy",
     "offset": 93,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false
+      }
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 101,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -204,17 +218,33 @@
   },
   {
     "name": "",
-    "offset": 97,
+    "offset": 105,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
-    "size": 16
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 109,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   },
   {
     "name": "",
