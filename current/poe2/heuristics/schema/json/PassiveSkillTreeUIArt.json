@@ -60,7 +60,7 @@
     "size": 1
   },
   {
-    "name": "PassiveFrameNormal",
+    "name": "GroupBackgroundSmallBlank",
     "offset": 33,
     "unknownArray": false,
     "unique": false,
@@ -72,7 +72,7 @@
     "size": 8
   },
   {
-    "name": "NotableFrameNormal",
+    "name": "GroupBackgroundMediumBlank",
     "offset": 41,
     "unknownArray": false,
     "unique": false,
@@ -84,7 +84,7 @@
     "size": 8
   },
   {
-    "name": "KeystoneFrameNormal",
+    "name": "GroupBackgroundLargeBlank",
     "offset": 49,
     "unknownArray": false,
     "unique": false,
@@ -96,78 +96,103 @@
     "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "",
     "offset": 57,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16
+  },
+  {
+    "name": "PassiveFrame",
     "offset": 73,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "NotableFrame",
     "offset": 89,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "KeystoneFrame",
     "offset": 105,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
       }
     },
-    "offset": 121,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "JewelFrame",
+    "offset": 121,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Ornament",
+    "offset": 137,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 137,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "",
+    "offset": 145,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 145,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]
