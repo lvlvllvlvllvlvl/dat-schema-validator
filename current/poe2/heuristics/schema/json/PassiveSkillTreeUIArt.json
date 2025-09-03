@@ -96,7 +96,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Connection",
     "offset": 57,
     "unknownArray": false,
     "unique": false,
@@ -104,7 +104,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeConnectionArt"
       }
     },
     "size": 16
@@ -170,7 +171,7 @@
     "size": 16
   },
   {
-    "name": "Ornament",
+    "name": "Glow",
     "offset": 137,
     "unknownArray": false,
     "unique": false,
@@ -182,7 +183,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "AscendancyStart",
     "offset": 145,
     "unknownArray": false,
     "unique": false,
@@ -190,7 +191,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
       }
     },
     "size": 16
