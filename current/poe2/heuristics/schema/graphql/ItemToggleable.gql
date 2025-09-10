@@ -1,0 +1,5 @@
+# Added 4.1
+type ItemToggleable {
+  BaseItemType: BaseItemTypes @unique
+  _: ItemToggleable
+}

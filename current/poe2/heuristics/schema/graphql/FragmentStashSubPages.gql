@@ -1,0 +1,7 @@
+# Added 4.3
+type FragmentStashSubPages {
+  Id: string @unique
+  Text: string @unique @localized
+  Icon: string @unique
+  MainPage: FragmentStashPages
+}

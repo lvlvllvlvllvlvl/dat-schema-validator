@@ -1,0 +1,6 @@
+# Added 4.3
+type SupportGemSocketedVisualIdentity {
+  Id: string @unique
+  BackingIcon: string @unique
+  ItemIcon: string @unique
+}
