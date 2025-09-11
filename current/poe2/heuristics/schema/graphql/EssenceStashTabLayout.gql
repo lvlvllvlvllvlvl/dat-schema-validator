@@ -7,7 +7,10 @@ type EssenceStashTabLayout {
   FirstSlotIndex: i32 @unique
   Width: i32
   Height: i32
-  IsUpgradableEssenceSlot: bool
-  _: rid
+  ShowIfEmpty: bool
+  _: i32
+  FrameType: i32
+  _: i32 # All rows empty
+  _: i32 # All rows empty
   _: i32 # All rows empty
 }

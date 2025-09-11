@@ -2,6 +2,6 @@
 type CharacterMeleeSkills {
   _: rid
   _: rid
-  _: [_]
+  SkillGems: [SkillGems]
   _: bool
 }

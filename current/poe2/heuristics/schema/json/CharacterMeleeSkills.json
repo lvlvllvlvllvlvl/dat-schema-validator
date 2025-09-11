@@ -28,24 +28,30 @@
     "size": 16
   },
   {
+    "name": "SkillGems",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SkillGems"
       }
     },
-    "offset": 32,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 48,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

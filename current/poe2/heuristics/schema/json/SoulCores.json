@@ -150,25 +150,32 @@
     "size": 16
   },
   {
+    "name": "Limit",
+    "offset": 148,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoulCoreLimits"
       }
     },
-    "offset": 148,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 164,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 164,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

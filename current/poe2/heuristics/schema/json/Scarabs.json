@@ -1,5 +1,10 @@
 [
   {
+    "name": "Type",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -7,9 +12,22 @@
         "size": 4
       }
     },
-    "offset": 0,
-    "size": 4,
-    "unique": false
+    "size": 4
+  },
+  {
+    "name": "Tier",
+    "offset": 4,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   },
   {
     "type": {
@@ -18,21 +36,8 @@
         "foreign": true
       }
     },
-    "offset": 4,
+    "offset": 8,
     "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 20,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "unique": true
   }
 ]

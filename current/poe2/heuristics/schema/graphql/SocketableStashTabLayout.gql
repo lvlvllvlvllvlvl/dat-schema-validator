@@ -8,6 +8,9 @@ type SocketableStashTabLayout {
   Width: i32
   Height: i32
   _: bool
-  _: rid
+  _: i32
+  FrameType: i32
+  _: i32 # All rows empty
+  _: i32 # All rows empty
   _: i32 # All rows empty
 }
