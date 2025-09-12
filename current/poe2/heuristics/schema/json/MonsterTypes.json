@@ -12,6 +12,11 @@
     "size": 8
   },
   {
+    "name": "",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -19,32 +24,26 @@
         "size": 4
       }
     },
-    "offset": 8,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "IsSummoned",
+    "offset": 12,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 12,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "Armour",
     "offset": 13,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -52,11 +51,14 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "Evasion",
     "offset": 17,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -64,11 +66,14 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "EnergyShieldFromLife",
     "offset": 21,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -76,32 +81,56 @@
         "size": 4
       }
     },
-    "offset": 25,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "DamageSpread",
+    "offset": 25,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "MonsterResistances",
+    "offset": 29,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MonsterResistances"
       }
     },
-    "offset": 29,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 45,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 45,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 46,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -109,8 +138,6 @@
         "size": 4
       }
     },
-    "offset": 46,
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

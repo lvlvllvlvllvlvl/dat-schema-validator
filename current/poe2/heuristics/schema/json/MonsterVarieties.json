@@ -1722,28 +1722,40 @@
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "MonsterCategory",
     "offset": 905,
-    "size": 16,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MonsterCategories"
+      }
+    },
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 921,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 921,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 937,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -1751,9 +1763,6 @@
         "size": 4
       }
     },
-    "offset": 937,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
   }
 ]

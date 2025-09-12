@@ -2,5 +2,5 @@
 type SoulCoreLimits {
   Id: string
   Limit: i32
-  _: string @localized
+  Text: string @localized
 }

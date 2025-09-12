@@ -2,5 +2,5 @@
 type Scarabs {
   Type: i32
   Tier: i32
-  _: rid @unique
+  BaseItemType: BaseItemTypes @unique
 }

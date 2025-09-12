@@ -10,8 +10,5 @@ type CurrencyStashTabLayout {
   ShowIfEmpty: bool
   SlotGroup: i32
   _: i32
-  Frametype: i32
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  SlotIcon: DynamicStashSlots
 }

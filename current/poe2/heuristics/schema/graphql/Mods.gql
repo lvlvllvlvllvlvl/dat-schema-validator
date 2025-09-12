@@ -72,7 +72,7 @@ type Mods @tags(list: ["crafting"]) {
   _: GrantedEffectsPerLevel
   BuffTemplate: BuffTemplates
   ArchnemesisMinionMod: Mods
-  HASH32: u32 @unique
+  HASH32: u32
   _: [rid]
   _: i32
   _: [GrantedEffectsPerLevel]

@@ -8,7 +8,7 @@ type DeliriumStashTabLayout {
   Width: i32
   Height: i32
   SlotSize: i32
-  _: bool
-  _: rid
   _: i32
+  SlotIcon: DynamicStashSlots
+  ShowIfEmpty: bool
 }

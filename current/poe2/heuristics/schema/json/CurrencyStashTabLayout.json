@@ -144,57 +144,18 @@
     "size": 4
   },
   {
-    "name": "Frametype",
+    "name": "SlotIcon",
     "offset": 53,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "DynamicStashSlots"
       }
     },
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 57,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 61,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 65,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 16
   }
 ]
