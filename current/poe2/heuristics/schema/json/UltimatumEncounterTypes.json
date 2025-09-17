@@ -25,43 +25,57 @@
     "localized": true
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 16,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 17,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "QuestFlag",
     "offset": 18,
-    "size": 16,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "NPCText",
     "offset": 34,
-    "size": 16,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "NPCTextAudio"
+      }
+    },
+    "size": 16
   }
 ]

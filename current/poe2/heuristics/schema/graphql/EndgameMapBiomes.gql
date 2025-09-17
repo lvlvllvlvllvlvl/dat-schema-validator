@@ -17,6 +17,6 @@ type EndgameMapBiomes {
   _: i32
   GroundTypeCorrupted1: string @file(ext: ".gt")
   GroundTypeCorrupted2: string @file(ext: ".gt")
-  _: string @unique @localized
-  _: string @unique
+  Name: string @localized
+  GroundTypeSanctified: string @file(ext: ".gt")
 }

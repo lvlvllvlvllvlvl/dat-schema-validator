@@ -65,14 +65,18 @@
     "size": 16
   },
   {
+    "name": "QuestFlag",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
-    "offset": 48,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]
