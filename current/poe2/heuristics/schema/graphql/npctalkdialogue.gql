@@ -1,7 +1,0 @@
-# Added 4.3
-type npctalkdialogue {
-  _: string @unique
-  _: [_]
-  _: [string]
-  _: i32
-}

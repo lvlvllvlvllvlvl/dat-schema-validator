@@ -72,7 +72,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "DefinitionBuff",
     "offset": 13,
     "unknownArray": false,
     "unique": true,
@@ -80,13 +80,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "DefinitionDepleted",
     "offset": 29,
     "unknownArray": false,
     "unique": true,
@@ -94,13 +95,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "DefinitionValue",
     "offset": 45,
     "unknownArray": false,
     "unique": true,
@@ -108,7 +110,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
@@ -126,23 +129,29 @@
     "size": 1
   },
   {
+    "name": "",
+    "offset": 62,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 62,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 78,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 78,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

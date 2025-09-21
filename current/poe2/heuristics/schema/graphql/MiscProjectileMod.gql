@@ -1,0 +1,10 @@
+# Added 4.1
+type MiscProjectileMod {
+  Id: string @unique
+  _: string
+  _: string
+  AOFile: string @file(ext: ".ao")
+  _: rid
+  _: rid
+  _: string
+}

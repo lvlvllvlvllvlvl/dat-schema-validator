@@ -5,8 +5,8 @@ type MapStashSpecialTypeEntries {
   MapItem: BaseItemTypes
   Name: string @localized
   _: i32
-  _: string
-  _: string
-  _: bool
-  _: bool
+  DDSFile: string @file(ext: ".dds")
+  DDSFileNew: string @file(ext: ".dds")
+  IsShaperGuardian: bool
+  IsElderGuardian: bool
 }
