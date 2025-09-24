@@ -23,16 +23,16 @@ type WorldAreas {
   _: [_] # All rows empty
   _: [_] # All rows empty
   _: [_] # All rows empty
-  _: bool
+  IsMapArea: bool
   _: [_] # All rows empty
   _: rid
   _: rid
   AreaMods: [Mods]
   _: i32
   _: bool
+  MaxLevel: i32
   _: i32
-  _: i32
-  _: bool
+  IsHideout: bool
   _: i32 @localized
   _: i32
   Tags: [Tags]
@@ -42,7 +42,7 @@ type WorldAreas {
   _: i32
   _: rid
   _: [string]
-  _: bool
+  IsUniqueMapArea: bool
   _: rid
   _: rid
   _: i32 @localized

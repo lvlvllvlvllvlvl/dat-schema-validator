@@ -1,9 +1,9 @@
 # Added 4.3
-type passivejewelradiiart {
-  _: string @unique
-  _: string @unique
-  _: string @unique
-  _: string
+type PassiveJewelRadiiArt {
+  Id: string @unique
+  Circle1: string
+  Circle2: string
+  Glow: string
   _: i32 # All rows empty
   _: i32 # All rows empty
   _: [_]

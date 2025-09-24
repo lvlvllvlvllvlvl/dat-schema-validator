@@ -12,64 +12,19 @@
     "size": 8
   },
   {
-    "name": "PositionX",
+    "name": "WorldArea",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
-    "size": 4
-  },
-  {
-    "name": "PositionY",
-    "offset": 12,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 16,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 20,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 16
   },
   {
     "name": "WorldAreasKeys",
@@ -113,7 +68,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "QuestFlags1",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -121,7 +76,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -142,7 +98,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "QuestFlags2",
     "offset": 76,
     "unknownArray": false,
     "unique": false,
@@ -150,13 +106,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlags3",
     "offset": 92,
     "unknownArray": false,
     "unique": false,
@@ -164,13 +121,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlag1",
     "offset": 108,
     "unknownArray": false,
     "unique": false,
@@ -178,7 +136,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -196,34 +155,18 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "ParentMapPin",
     "offset": 132,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": false
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 136,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 8
   },
   {
     "name": "MetadataId",
@@ -252,7 +195,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlag2",
     "offset": 164,
     "unknownArray": false,
     "unique": false,
@@ -260,7 +203,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16

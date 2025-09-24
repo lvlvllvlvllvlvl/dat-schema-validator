@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1758484674,
+  "createdAt": 1758709850,
   "tables": [
     {
       "validFor": 3,
@@ -45993,6 +45993,32 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": [],
@@ -59999,7 +60025,7 @@
       "added": "4.1.0.10.2"
     },
     {
-      "validFor": 3,
+      "validFor": 1,
       "name": "GamepadButton",
       "columns": [
         {
@@ -60061,6 +60087,91 @@
           "type": "string",
           "unique": false,
           "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
+      "name": "GamepadButton",
+      "columns": [
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": true,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": true,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": true,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": true,
           "references": null,
           "until": null,
           "file": null,
@@ -73097,52 +73208,15 @@
           "interval": false
         },
         {
-          "name": "PositionX",
-          "description": "X starts at left side of image, can be negative",
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "PositionY",
-          "description": "Y starts at top side of image, can be negative",
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
+          "name": "WorldArea",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
+          "references": {
+            "table": "WorldAreas"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -73190,13 +73264,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "QuestFlags1",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -73216,39 +73292,45 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "QuestFlags2",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "QuestFlags3",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "QuestFlag1",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -73268,26 +73350,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "ParentMapPin",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "row",
           "unique": false,
           "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
+          "references": {
+            "table": "MapPins"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -73320,13 +73391,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "QuestFlag2",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "QuestFlags"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -82649,7 +82722,7 @@
       "added": "4.1.0.10.2"
     },
     {
-      "validFor": 3,
+      "validFor": 1,
       "name": "MonsterResistances",
       "columns": [
         {
@@ -82812,6 +82885,442 @@
           "name": "ChaosMerciless",
           "description": null,
           "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
+      "name": "MonsterResistances",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Fire1",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Fire2",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Fire3",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Fire4",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Fire5",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Cold1",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Cold2",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Cold3",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Cold4",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Cold5",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Lightning1",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Lightning2",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Lightning3",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Lightning4",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Lightning5",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Chaos1",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Chaos2",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Chaos3",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Chaos4",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Chaos5",
+          "description": null,
+          "array": true,
           "type": "i32",
           "unique": false,
           "localized": false,
@@ -108720,7 +109229,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsMapArea",
           "description": null,
           "array": false,
           "type": "bool",
@@ -108813,7 +109322,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "MaxLevel",
           "description": null,
           "array": false,
           "type": "i32",
@@ -108839,7 +109348,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsHideout",
           "description": null,
           "array": false,
           "type": "bool",
@@ -108971,7 +109480,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsUniqueMapArea",
           "description": null,
           "array": false,
           "type": "bool",
@@ -117870,6 +118379,163 @@
     },
     {
       "validFor": 2,
+      "name": "ActiveSkillRequirements",
+      "columns": [
+        {
+          "name": "GrantedEffect",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": true,
+          "localized": false,
+          "references": {
+            "table": "GrantedEffects"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BuffDefinition",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BuffDefinitions"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Stat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.1.0.10.2"
+    },
+    {
+      "validFor": 2,
       "name": "ActiveSkillWeaponRequirement",
       "columns": [
         {
@@ -117918,6 +118584,70 @@
       ],
       "tags": [],
       "added": "4.2.0.1"
+    },
+    {
+      "validFor": 2,
+      "name": "AlternateTreeExtraPassiveOverridesFromJewelStats",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RadiusArt",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "PassiveJewelRadiiArt"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "PassiveSkill",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "PassiveSkills"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.3.0.1"
     },
     {
       "validFor": 2,
@@ -118802,6 +119532,718 @@
       ],
       "tags": [],
       "added": "4.3.0.1"
+    },
+    {
+      "validFor": 2,
+      "name": "DamageCalculationTypes",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "PhysicalDamageStats",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "FireDamageStats",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "ColdDamageStats",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "LightningDamageStats",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "ChaosDamageStats",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "CritChanceStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "CritBonusStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "AlwaysCritStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "CannotCritStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StunThresholdStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StunDurationStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "CannotBlockStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "KnockbackStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "KnockbackOnCritStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "KnockbackChanceStat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Text",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Type",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "IsAttack",
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "row",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "DamageCalculationTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.1.0.10.2"
     },
     {
       "validFor": 2,
@@ -119781,6 +121223,57 @@
     },
     {
       "validFor": 2,
+      "name": "EndgameMapLocation",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Biomes",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "EndgameMapBiomes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "AdjecentBiomes",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "EndgameMapBiomes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.2.1.1"
+    },
+    {
+      "validFor": 2,
       "name": "EndgameMapPinIcons",
       "columns": [
         {
@@ -119940,13 +121433,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "WorldArea",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": true,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "WorldAreas"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -120122,13 +121617,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "MapLocations",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "EndgameMapLocation"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -121277,6 +122774,174 @@
     },
     {
       "validFor": 2,
+      "name": "IndicatorConditions",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.1.0.10.2"
+    },
+    {
+      "validFor": 2,
       "name": "ItemDisenchantValues",
       "columns": [
         {
@@ -122370,6 +124035,147 @@
       ],
       "tags": [],
       "added": "4.1.0.10.2"
+    },
+    {
+      "validFor": 2,
+      "name": "OngoingTriggerVariations",
+      "columns": [
+        {
+          "name": "ActiveSkill",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": true,
+          "localized": false,
+          "references": {
+            "table": "ActiveSkills"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BuffReserve",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BuffDefinitions"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BuffCount",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BuffDefinitions"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Stats",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.1.0.10.2"
+    },
+    {
+      "validFor": 2,
+      "name": "PassiveJewelRadiiArt",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Circle1",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Circle2",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Glow",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.3.0.1"
     },
     {
       "validFor": 2,
@@ -125312,6 +127118,223 @@
           "description": null,
           "array": false,
           "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.1.0.10.2"
+    },
+    {
+      "validFor": 2,
+      "name": "WorldDescriptionButton",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "IconDefault",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "IconLight",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "IconWASD",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Sound1",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "SoundEffects"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Sound2",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "SoundEffects"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [],
+      "added": "4.3.0.1"
+    },
+    {
+      "validFor": 2,
+      "name": "WorldMapLegends",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Icon",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Name",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": true,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Acts",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Acts"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
