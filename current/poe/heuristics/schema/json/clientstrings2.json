@@ -15,7 +15,8 @@
     },
     "offset": 8,
     "size": 8,
-    "unique": false
+    "unique": false,
+    "localized": true
   },
   {
     "type": {
@@ -24,14 +25,13 @@
     },
     "offset": 16,
     "size": 8,
-    "unique": false
+    "unique": false,
+    "localized": true
   },
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": false
-      }
+      "string": {}
     },
     "offset": 24,
     "size": 8,
@@ -51,15 +51,20 @@
   },
   {
     "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "array": false,
+      "string": {}
     },
     "offset": 36,
-    "size": 16,
-    "unknownArray": true,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 44,
+    "size": 8,
     "unique": false
   }
 ]

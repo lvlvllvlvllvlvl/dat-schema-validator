@@ -1,9 +1,10 @@
 # Added 3.26
 type clientstrings2 {
   _: string @unique
+  _: string @localized
+  _: string @localized
   _: string
-  _: string
-  _: clientstrings2
   _: i32 @unique
-  _: [_]
+  _: string
+  _: string
 }
