@@ -2,7 +2,7 @@
 type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   Id: string @unique
   RecipeItems: [BaseItemTypes]
-  _: [string]
+  _: [_]
   _: rid
   _: i32 # All rows empty
   _: rid

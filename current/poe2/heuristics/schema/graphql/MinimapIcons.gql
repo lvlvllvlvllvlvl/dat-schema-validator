@@ -5,8 +5,8 @@ type MinimapIcons {
   LargemapIconRadius: i32
   _: bool
   _: bool
-  _: bool
-  MinimapIconPointerMaxDistance: i32
+  _: i32
   _: i32
   _: string @localized
+  _: i32
 }

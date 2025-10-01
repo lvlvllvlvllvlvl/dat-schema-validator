@@ -4,4 +4,5 @@ type AchievementItemRewards @tags(list: ["mtx:reward"]) {
   BaseItemTypesKey: BaseItemTypes
   Message: string @localized
   Id: string @unique
+  _: string @unique @localized
 }

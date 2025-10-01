@@ -1,7 +1,7 @@
 # Added 4.1
 type caravanstops {
-  _: string
-  _: [_] # All rows empty
+  _: rid @unique
+  _: string @unique
   _: f32
   _: i32
   _: i32

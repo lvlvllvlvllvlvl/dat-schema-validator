@@ -3,12 +3,9 @@ type HardModeExtraContentChances {
   Id: string @unique
   _: i32
   _: i32
-  _: bool
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: u16 # All rows empty
-  _: bool
+  _: [_]
+  _: [_]
+  _: [_]
 }

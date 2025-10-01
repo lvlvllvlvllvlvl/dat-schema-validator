@@ -11,12 +11,23 @@
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "string": {}
     },
     "offset": 8,
-    "size": 16,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 16,
+    "size": 4,
+    "noData": true,
     "unique": false
   },
   {
@@ -26,8 +37,21 @@
         "foreign": true
       }
     },
-    "offset": 24,
+    "offset": 20,
     "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 36,
+    "size": 4,
+    "noData": true,
     "unique": false
   }
 ]

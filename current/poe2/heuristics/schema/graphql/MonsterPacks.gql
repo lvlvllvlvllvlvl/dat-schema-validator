@@ -25,4 +25,5 @@ type MonsterPacks {
   _: bool
   AdditionalMonsters: [MonsterVarieties]
   AdditionalCounts: [i32]
+  _: bool
 }
