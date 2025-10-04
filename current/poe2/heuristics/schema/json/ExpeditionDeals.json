@@ -7,27 +7,18 @@
     "interval": false,
     "type": {
       "array": false,
-      "string": {}
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "size": 8
+    "size": 4
   },
   {
-    "name": "UI_Image",
-    "offset": 8,
+    "name": "Function",
+    "offset": 4,
     "unknownArray": false,
-    "unique": true,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "UI_Background",
-    "offset": 16,
-    "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -36,93 +27,113 @@
     "size": 8
   },
   {
-    "name": "IllustrationX",
-    "offset": 24,
-    "unknownArray": false,
-    "unique": true,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "IllustrationY",
-    "offset": 28,
+    "name": "Arguments",
+    "offset": 12,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "size": 4
-  },
-  {
-    "name": "CounterX",
-    "offset": 32,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "CounterY",
-    "offset": 36,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 8
   },
   {
     "name": "",
-    "offset": 40,
+    "offset": 20,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true,
-        "table": "ClientStrings"
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
-    "size": 16
+    "size": 4
+  },
+  {
+    "name": "Description",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "localized": true
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 32,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   },
   {
     "name": "",
     "offset": 56,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true,
-        "table": "ClientStrings"
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
-    "size": 16
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 60,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "DealFamily",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   }
 ]

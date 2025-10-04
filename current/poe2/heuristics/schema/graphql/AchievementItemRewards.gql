@@ -1,8 +1,8 @@
 # Added 4.2
 type AchievementItemRewards @tags(list: ["mtx:reward"]) {
-  AchievementItemsKey: AchievementItems
-  BaseItemTypesKey: BaseItemTypes
+  AchievementItem: AchievementItems
+  BaseItemType: BaseItemTypes
   Message: string @localized
   Id: string @unique
-  _: string @unique @localized
+  _: string @localized
 }

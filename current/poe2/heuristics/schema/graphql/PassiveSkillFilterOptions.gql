@@ -1,10 +1,10 @@
 # Added 4.1
 type PassiveSkillFilterOptions {
   Id: string @unique
-  _: string @unique @localized
-  _: rid
+  Filters: string @localized
+  FilterGroup: PassiveSkillFilterGroups
   _: i32
-  _: string @unique @localized
+  Name: string @localized
   _: bool
   _: bool
   _: bool

@@ -45,17 +45,26 @@
     "size": 4
   },
   {
+    "name": "DestinationArea",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
-    "offset": 24,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -63,21 +72,21 @@
         "size": 4
       }
     },
-    "offset": 40,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 44,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 44,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
     "type": {
@@ -106,6 +115,11 @@
     "unique": false
   },
   {
+    "name": "",
+    "offset": 92,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -113,8 +127,6 @@
         "size": 4
       }
     },
-    "offset": 92,
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

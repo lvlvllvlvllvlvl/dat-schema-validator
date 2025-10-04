@@ -1,1 +1,13 @@
-enum ExpeditionDeals @indexing(first: 0) { _ }
+# Added 4.1
+type ExpeditionDeals {
+  Id: i32 @unique
+  Function: string
+  Arguments: string
+  _: i32
+  Description: string @localized
+  _: [_] # All rows empty
+  _: string
+  _: i32
+  _: i32
+  DealFamily: ExpeditionDealFamilies
+}

@@ -1,6 +1,6 @@
 # Added 4.1
-type ExpeditionCurrency {
-  BaseItemType: BaseItemTypes
-  _: rid @unique
-  _: rid
+type ExpeditionCurrency @tags(list: ["item:def"]) {
+  BaseItemType: BaseItemTypes @unique
+  NPC: ExpeditionNPCs
+  LootSound: SoundEffects
 }

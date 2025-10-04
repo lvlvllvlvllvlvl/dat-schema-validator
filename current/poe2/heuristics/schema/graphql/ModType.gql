@@ -1,10 +1,7 @@
 # Added 4.1
 type ModType {
   Name: string @unique
-  ModSellPriceTypesKeys: [ModSellPriceTypes]
+  Stat: [Stats]
+  _: [_] # All rows empty
   _: bool
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
 }

@@ -1,7 +1,7 @@
 # Added 4.1
 type ModEffectStats {
-  StatsKey: Stats
-  TagsKeys: [Tags]
+  Stat: Stats
+  Tags: [Tags]
   _: bool
   _: i32
   _: bool

@@ -1,17 +1,10 @@
 [
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 0,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -19,11 +12,14 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 4,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -31,11 +27,14 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 8,
-    "size": 4,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -43,8 +42,21 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 12,
-    "size": 4,
-    "unique": true
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   }
 ]

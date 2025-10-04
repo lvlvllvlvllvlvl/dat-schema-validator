@@ -109,51 +109,44 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "size": 4
+    "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 92,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "name": "",
+    "offset": 96,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 96,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "",
+    "offset": 104,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 104,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 105,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 105,
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]
