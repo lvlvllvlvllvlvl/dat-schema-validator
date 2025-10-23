@@ -36,6 +36,6 @@ type Chests {
   _: bool
   _: [_]
   _: bool
-  _: [_]
+  _: [string] @localized
   _: bool
 }

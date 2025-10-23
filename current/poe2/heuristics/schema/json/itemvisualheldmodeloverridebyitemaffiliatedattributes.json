@@ -12,24 +12,24 @@
   },
   {
     "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "array": false,
+      "string": {}
     },
     "offset": 16,
-    "size": 16,
-    "unknownArray": true,
+    "size": 8,
     "unique": false
   },
   {
     "type": {
-      "array": false,
-      "string": {}
+      "array": true,
+      "key": {
+        "foreign": true
+      }
     },
-    "offset": 32,
-    "size": 8,
+    "offset": 24,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
     "unique": false
   },
   {
@@ -65,6 +65,24 @@
       "string": {}
     },
     "offset": 64,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 72,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 80,
     "size": 8,
     "unique": false
   }
