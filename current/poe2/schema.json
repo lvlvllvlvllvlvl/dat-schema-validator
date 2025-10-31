@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1761928802,
+  "createdAt": 1761930273,
   "tables": [
     {
       "validFor": 3,
@@ -44341,21 +44341,6 @@
           "interval": false
         },
         {
-          "name": "TradeMarketCategory",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "TradeMarketCategory"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "Unmodifiable",
           "description": null,
           "array": false,
@@ -44369,7 +44354,7 @@
           "interval": false
         },
         {
-          "name": "Achievement",
+          "name": "Achievement1",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -44384,13 +44369,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Achievement2",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AchievementItems"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -68852,21 +68839,6 @@
           "unique": false,
           "localized": false,
           "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "Flags",
-          "description": null,
-          "array": true,
-          "type": "enumrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "ItemClassFlags"
-          },
           "until": null,
           "file": null,
           "files": null,
