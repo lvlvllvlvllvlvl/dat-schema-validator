@@ -150,171 +150,147 @@
     "size": 16
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 68,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
-      "array": false,
+      "array": true,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 84,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 100,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "TopologiesKeys",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 104,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "Topologies"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "ParentTown_WorldAreasKey",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 120,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": false
-      }
-    },
-    "size": 8
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 124,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 128,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 132,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 148,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
-      "array": false,
+      "array": true,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "Bosses_MonsterVarietiesKeys",
     "offset": 164,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "MonsterVarieties"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "Monsters_MonsterVarietiesKeys",
     "offset": 180,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "MonsterVarieties"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "SpawnWeight_TagsKeys",
     "offset": 196,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "Tags"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "SpawnWeight_Values",
-    "offset": 212,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -322,126 +298,101 @@
         "size": 4
       }
     },
-    "size": 16
+    "offset": 212,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "IsMapArea",
-    "offset": 228,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 228,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "FullClear_AchievementItemsKeys",
-    "offset": 229,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "AchievementItems"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 229,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 245,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "offset": 245,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "AchievementItemsKey",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 261,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "AchievementItems"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "ModsKeys",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 277,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "Mods"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 293,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
-      "array": false,
+      "array": true,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "VaalArea",
     "offset": 297,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": false
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 313,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 313,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "MaxLevel",
-    "offset": 314,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -449,54 +400,54 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 314,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "AreaTypeTags",
-    "offset": 318,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "Tags"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 318,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "IsHideout",
-    "offset": 334,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 334,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "Inflection",
-    "offset": 335,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "offset": 335,
     "size": 8,
+    "unique": false,
     "localized": true
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 343,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -504,314 +455,154 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 347,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "Tags",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 351,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "Tags"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "IsVaalArea",
+    "type": {
+      "array": false,
+      "boolean": true
+    },
     "offset": 367,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 1,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
-  },
-  {
-    "name": "IsLabyrinthAirlock",
     "offset": 368,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 1,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
-  },
-  {
-    "name": "IsLabyrinthArea",
     "offset": 369,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "TwinnedFullClear_AchievementItemsKey",
-    "offset": 370,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "AchievementItems"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "Enter_AchievementItemsKey",
-    "offset": 386,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "AchievementItems"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "TSIFile",
-    "offset": 402,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "",
-    "offset": 410,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "offset": 370,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "WaypointActivation_AchievementItemsKeys",
-    "offset": 426,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 386,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 402,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 410,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "AchievementItems"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 426,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "IsUniqueMapArea",
+    "type": {
+      "array": false,
+      "boolean": true
+    },
     "offset": 442,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 1,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
-  },
-  {
-    "name": "IsLabyrinthBossArea",
     "offset": 443,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "FirstEntry_NPCTextAudioKey",
-    "offset": 444,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "NPCTextAudio"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "FirstEntry_SoundEffectsKey",
-    "offset": 460,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "SoundEffects"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "FirstEntry_NPCsKey",
-    "offset": 476,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "",
-    "offset": 484,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "EnvironmentsKey",
-    "offset": 488,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "Environments"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 504,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 508,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "offset": 444,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 524,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 525,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 526,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": false
+        "foreign": true
       }
     },
-    "size": 8
+    "offset": 460,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 534,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 476,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -819,7 +610,99 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 484,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 488,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 504,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 508,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 524,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 525,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 526,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 530,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 534,
+    "size": 4,
+    "noData": true,
+    "unique": false
   },
   {
     "type": {
@@ -835,85 +718,39 @@
     "unique": false
   },
   {
-    "name": "LeagueChance1",
-    "offset": 554,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "WorldAreaLeagueChances"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 570,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "LeagueChance2",
-    "offset": 574,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "WorldAreaLeagueChances"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 590,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "offset": 554,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "Ruleset",
-    "offset": 606,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Rulesets"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 570,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 622,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 586,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -921,21 +758,43 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 602,
+    "size": 4,
+    "noData": true,
+    "unique": false
   },
   {
-    "name": "QuestFlag",
-    "offset": 626,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "QuestFlags"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 606,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 622,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 626,
+    "size": 16,
+    "unique": false
   }
 ]

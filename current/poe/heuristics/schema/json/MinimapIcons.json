@@ -66,25 +66,13 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MinimapIconPointerMaxDistance",
     "offset": 18,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "MinimapIconPointerMaxDistance",
-    "offset": 19,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
@@ -94,7 +82,7 @@
   },
   {
     "name": "",
-    "offset": 23,
+    "offset": 22,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -106,5 +94,14 @@
       }
     },
     "size": 4
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 26,
+    "size": 1,
+    "unique": false
   }
 ]

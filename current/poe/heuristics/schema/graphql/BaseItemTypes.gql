@@ -13,27 +13,26 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   SoundEffect: SoundEffects
   TagsKeys: [Tags]
   ModDomain: ModDomains
-  SiteVisibility: i32
   ItemVisualIdentity: ItemVisualIdentity
-  HASH32: i32 @unique
-  VendorRecipe_AchievementItems: [AchievementItems]
-  "the inflection identifier used for i18n in related fields"
-  Inflection: string @localized
-  Equip_AchievementItemsKey: AchievementItems
-  IsCorrupted: bool
-  Identify_AchievementItems: [AchievementItems]
-  IdentifyMagic_AchievementItems: [AchievementItems]
-  "the item which represents this item in the fragment stash tab"
-  FragmentBaseItemTypesKey: BaseItemTypes
+  HASH32: i32
+  _: i32 @unique
+  _: [_]
+  _: string @localized
+  _: rid
+  _: bool
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: i32
+  _: i32
   _: bool
   _: rid
   _: rid
   _: bool
-  TradeMarketCategory: TradeMarketCategory
-  Unmodifiable: bool
-  Achievement: [AchievementItems]
-  _: [rid]
-  IgnoreQuantBonus: bool
+  _: rid
+  _: bool
+  _: [_]
+  _: [_]
+  _: bool
   _: bool
   _: rid
 }
