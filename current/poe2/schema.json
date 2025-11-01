@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1761981487,
+  "createdAt": 1761998850,
   "tables": [
     {
       "validFor": 3,
@@ -59026,19 +59026,6 @@
           "file": ".ot",
           "files": null,
           "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": true,
-          "type": "string",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
         }
       ],
       "tags": []
@@ -76767,6 +76754,19 @@
         },
         {
           "name": "SecretsTier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "KeepersTier",
           "description": null,
           "array": false,
           "type": "i32",
