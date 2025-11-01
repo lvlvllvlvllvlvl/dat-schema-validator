@@ -36,5 +36,5 @@ type CraftingBenchOptions @tags(list: ["crafting"]) {
   MapDevice: bool
   _: [rid]
   Tags: [Tags]
-  _: [_]
+  _: [i32]
 }

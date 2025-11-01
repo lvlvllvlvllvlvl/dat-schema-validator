@@ -1,7 +1,7 @@
 # Added 3.27
 type brequelpassivesubtrees {
-  _: string @unique
-  _: rid @unique
-  _: rid @unique
-  _: rid @unique
+  Id: string @unique
+  _: ClientStrings
+  _: ClientStrings
+  _: BaseItemTypes
 }

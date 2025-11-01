@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1761998850,
+  "createdAt": 1762013328,
   "tables": [
     {
       "validFor": 3,
@@ -36763,6 +36763,71 @@
     },
     {
       "validFor": 3,
+      "name": "brequelpassivesubtrees",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ClientStrings"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ClientStrings"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
       "name": "AtlasTrees",
       "columns": [
         {
@@ -49612,6 +49677,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -54153,6 +54231,19 @@
           "references": {
             "table": "Tags"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -94457,6 +94548,60 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BrequelSubTree",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "brequelpassivesubtrees"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,
