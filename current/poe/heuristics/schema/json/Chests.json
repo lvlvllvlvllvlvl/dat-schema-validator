@@ -410,12 +410,14 @@
   {
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 287,
     "size": 16,
-    "unique": false,
-    "localized": true
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {

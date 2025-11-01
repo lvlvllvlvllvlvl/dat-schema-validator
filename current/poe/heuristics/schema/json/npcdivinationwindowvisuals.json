@@ -2,13 +2,36 @@
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
+      "boolean": true
     },
     "offset": 0,
-    "size": 16,
+    "size": 1,
     "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 1,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 5,
+    "size": 4,
+    "noData": true,
+    "unique": false
   },
   {
     "type": {
@@ -17,8 +40,43 @@
         "foreign": true
       }
     },
-    "offset": 16,
+    "offset": 9,
     "size": 16,
-    "unique": true
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 25,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": true,
+        "size": 2
+      }
+    },
+    "offset": 29,
+    "size": 2,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 31,
+    "size": 1,
+    "unique": false
   }
 ]

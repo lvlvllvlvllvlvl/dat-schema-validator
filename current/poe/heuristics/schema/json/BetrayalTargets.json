@@ -248,5 +248,31 @@
       "string": {}
     },
     "size": 8
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 177,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 193,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   }
 ]

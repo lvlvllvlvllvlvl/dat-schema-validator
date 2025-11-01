@@ -63,4 +63,5 @@ type Characters {
   _: MonsterVarieties
   _: i32
   _: f32
+  _: rid @unique
 }

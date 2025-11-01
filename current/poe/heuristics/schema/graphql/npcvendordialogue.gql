@@ -1,0 +1,10 @@
+type npcvendordialogue {
+  _: string @unique
+  _: [_]
+  _: rid @unique
+  _: [_]
+  _: i32 # All rows empty
+  _: bool
+  _: u16 # All rows empty
+  _: bool
+}

@@ -113,5 +113,30 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 53,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 69,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   }
 ]

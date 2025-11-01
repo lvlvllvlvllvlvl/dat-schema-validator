@@ -1,0 +1,16 @@
+type uiartascendancy {
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string
+  _: string
+  _: [_] # All rows empty
+  _: string
+  _: string
+  _: i32
+}

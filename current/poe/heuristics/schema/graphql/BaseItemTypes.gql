@@ -14,25 +14,24 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   TagsKeys: [Tags]
   ModDomain: ModDomains
   ItemVisualIdentity: ItemVisualIdentity
-  HASH32: i32
-  _: i32 @unique
-  _: [_]
-  _: string @localized
-  _: rid
-  _: bool
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: i32
-  _: i32
-  _: bool
-  _: rid
-  _: rid
+  HASH32: i32 @unique
+  VendorRecipe_AchievementItems: [AchievementItems]
+  "the inflection identifier used for i18n in related fields"
+  Inflection: string @localized
+  Equip_AchievementItemsKey: AchievementItems
+  IsCorrupted: bool
+  Identify_AchievementItems: [AchievementItems]
+  IdentifyMagic_AchievementItems: [AchievementItems]
+  "the item which represents this item in the fragment stash tab"
+  FragmentBaseItemTypesKey: BaseItemTypes
   _: bool
   _: rid
+  _: rid
   _: bool
-  _: [_]
-  _: [_]
-  _: bool
+  Unmodifiable: bool
+  Achievement1: [AchievementItems]
+  Achievement2: [AchievementItems]
+  IgnoreQuantBonus: bool
   _: bool
   _: rid
 }

@@ -636,5 +636,43 @@
       }
     },
     "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 334,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 350,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 351,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 352,
+    "size": 1,
+    "unique": false
   }
 ]

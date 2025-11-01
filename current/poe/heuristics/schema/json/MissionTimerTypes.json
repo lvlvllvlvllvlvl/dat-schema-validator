@@ -90,5 +90,46 @@
       }
     },
     "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 88,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 96,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "offset": 104,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 108,
+    "size": 4,
+    "unique": false
   }
 ]

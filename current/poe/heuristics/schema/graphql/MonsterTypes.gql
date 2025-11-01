@@ -3,13 +3,14 @@ type MonsterTypes {
   Id: string @unique
   _: i32
   _: i32
+  IsSummoned: bool
+  Armour: i32
+  Evasion: i32
+  EnergyShieldFromLife: i32
+  DamageSpread: i32
   _: i32
-  _: bool
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: rid
   _: bool
   _: bool
   _: bool

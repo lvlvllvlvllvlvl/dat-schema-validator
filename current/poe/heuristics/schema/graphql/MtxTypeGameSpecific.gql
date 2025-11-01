@@ -5,4 +5,7 @@ type MtxTypeGameSpecific {
   DDSFile: string @file(ext: ".dds")
   _: i32
   _: [i32]
+  _: bool
+  _: u16 # All rows empty
+  _: bool
 }

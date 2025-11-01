@@ -96,12 +96,18 @@
     "size": 4
   },
   {
+    "name": "",
+    "offset": 26,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "offset": 26,
-    "size": 1,
-    "unique": false
+    "size": 4
   }
 ]

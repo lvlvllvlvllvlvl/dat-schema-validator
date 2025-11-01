@@ -205,7 +205,7 @@
     "name": "HASH32",
     "offset": 140,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -217,220 +217,234 @@
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "VendorRecipe_AchievementItems",
     "offset": 144,
-    "size": 4,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
-    "offset": 148,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "Inflection",
+    "offset": 160,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 164,
     "size": 8,
-    "unique": false,
     "localized": true
   },
   {
+    "name": "Equip_AchievementItemsKey",
+    "offset": 168,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
-    "offset": 172,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "IsCorrupted",
+    "offset": 184,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 188,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "Identify_AchievementItems",
+    "offset": 185,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
-    "offset": 189,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "IdentifyMagic_AchievementItems",
+    "offset": 201,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
-    "offset": 205,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "FragmentBaseItemTypesKey",
+    "offset": 217,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": false
       }
     },
-    "offset": 221,
-    "size": 4,
-    "unique": false
+    "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 225,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 229,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 226,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 230,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 242,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 246,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 258,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 262,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 263,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "name": "Unmodifiable",
+    "offset": 259,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 279,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "Achievement1",
+    "offset": 260,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
-    "offset": 280,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "Achievement2",
+    "offset": 276,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
-    "offset": 296,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "IgnoreQuantBonus",
+    "offset": 292,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 312,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 293,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 313,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 294,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 314,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

@@ -10,4 +10,5 @@ type BetrayalJobs {
   Completion_AchievementItemsKey: [AchievementItems]
   OpenChests_AchievementItemsKey: [AchievementItems]
   MissionCompletion_AcheivementItemsKey: [AchievementItems]
+  _: string @unique
 }

@@ -3,4 +3,5 @@ type StashTabAffinities {
   SpecializedStash: StashId
   Name: string @localized
   ShowInStashes: [StashId]
+  _: i32
 }

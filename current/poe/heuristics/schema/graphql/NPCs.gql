@@ -17,4 +17,7 @@ type NPCs {
   _: rid
   Gender: string
   _: bool
+  _: bool
+  _: u16 # All rows empty
+  _: bool
 }

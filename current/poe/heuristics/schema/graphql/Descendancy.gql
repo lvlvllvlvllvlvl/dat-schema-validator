@@ -9,4 +9,7 @@ type Descendancy {
   _: string @localized
   _: rid
   _: rid
+  _: i32 @unique
+  _: rid
+  _: rid
 }

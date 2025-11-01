@@ -11,4 +11,6 @@ type MercenarySupports {
   HASH16: u16
   GemIcon: string
   Variant: i32
+  _: [_] # All rows empty
+  _: [_] # All rows empty
 }

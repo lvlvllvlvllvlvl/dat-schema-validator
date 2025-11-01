@@ -5,20 +5,20 @@ type Stats @tags(list: ["crafting"]) {
   IsLocal: bool
   IsWeaponLocal: bool
   Semantics: StatSemantics
-  _: string @localized
+  _: bool
+  IsVirtual: bool
+  MainHandAlias_StatsKey: Stats
+  OffHandAlias_StatsKey: Stats
+  _: bool
+  HASH32: i32
+  BelongsActiveSkillsKey: [ActiveSkills] @ref(column: "Id")
+  Category: PassiveSkillStatCategories
   _: bool
   _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: bool
-  _: i32 @unique
-  _: [string]
-  _: rid
-  _: bool
-  _: bool
-  _: bool
-  _: [_]
-  _: [_]
+  """
+  If not, displayed in advanced mod description as " — Unscalable Value"
+  """
+  IsScalable: bool
+  ContextFlags: [VirtualStatContextFlags]
+  _: [rid]
 }

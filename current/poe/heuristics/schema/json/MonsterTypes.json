@@ -42,27 +42,23 @@
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "IsSummoned",
     "offset": 16,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 20,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "Armour",
+    "offset": 17,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -70,11 +66,14 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "Evasion",
     "offset": 21,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -82,11 +81,14 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "EnergyShieldFromLife",
     "offset": 25,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -94,9 +96,22 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "DamageSpread",
     "offset": 29,
-    "size": 4,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   },
   {
     "type": {
@@ -113,12 +128,25 @@
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "offset": 37,
-    "size": 16,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 41,
+    "size": 4,
     "unique": false
   },
   {
@@ -126,7 +154,7 @@
       "array": false,
       "boolean": true
     },
-    "offset": 53,
+    "offset": 45,
     "size": 1,
     "unique": false
   },
@@ -135,7 +163,7 @@
       "array": false,
       "boolean": true
     },
-    "offset": 54,
+    "offset": 46,
     "size": 1,
     "unique": false
   },
@@ -144,7 +172,7 @@
       "array": false,
       "boolean": true
     },
-    "offset": 55,
+    "offset": 47,
     "size": 1,
     "unique": false
   }

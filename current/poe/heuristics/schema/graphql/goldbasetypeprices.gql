@@ -1,1 +1,7 @@
-enum goldbasetypeprices @indexing(first: 0) { _ }
+# Added 3.25
+type goldbasetypeprices {
+  _: rid @unique
+  _: i32
+  _: f32
+  _: bool
+}

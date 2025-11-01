@@ -15,4 +15,5 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   _: i32
   _: [Mods]
   _: bool
+  _: [_]
 }

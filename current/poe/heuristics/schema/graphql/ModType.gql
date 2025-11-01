@@ -3,4 +3,8 @@ type ModType {
   Name: string @unique
   ModSellPriceTypesKeys: [ModSellPriceTypes]
   _: bool
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
 }

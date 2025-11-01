@@ -1,0 +1,11 @@
+type brequelencounterskills {
+  _: string @unique
+  _: rid
+  _: string @unique @localized
+  _: string @unique
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+}

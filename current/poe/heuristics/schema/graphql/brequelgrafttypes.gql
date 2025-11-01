@@ -1,0 +1,9 @@
+type brequelgrafttypes {
+  _: string @unique
+  _: [_] # All rows empty
+  _: string @unique
+  _: rid @unique
+  _: i32
+  _: string
+  _: rid @unique
+}

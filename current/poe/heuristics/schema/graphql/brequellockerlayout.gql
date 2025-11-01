@@ -1,0 +1,8 @@
+type brequellockerlayout {
+  _: string @unique
+  _: i32
+  _: i32
+  _: rid @unique
+  _: i32 # All rows empty
+  _: string @unique @localized
+}

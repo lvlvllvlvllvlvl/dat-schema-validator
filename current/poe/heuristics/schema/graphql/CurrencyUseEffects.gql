@@ -3,10 +3,10 @@ type CurrencyUseEffects {
   _: rid @unique
   _: i32
   BK2File: string @file(ext: ".bk2")
-  SoundFile: string @file(ext: ".ogg")
   _: bool
-  BK2File2: string @file(ext: ".bk2")
+  _: string
   _: bool
   _: rid
   _: f32
+  _: rid
 }

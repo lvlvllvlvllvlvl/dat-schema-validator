@@ -70,5 +70,36 @@
       }
     },
     "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 48,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": true,
+        "size": 2
+      }
+    },
+    "offset": 49,
+    "size": 2,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 51,
+    "size": 1,
+    "unique": false
   }
 ]

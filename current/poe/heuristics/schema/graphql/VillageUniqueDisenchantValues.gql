@@ -2,4 +2,5 @@
 type VillageUniqueDisenchantValues @tags(list: ["item:droptable"]) {
   UniqueName: Words @unique
   Value: f32
+  _: i32
 }
