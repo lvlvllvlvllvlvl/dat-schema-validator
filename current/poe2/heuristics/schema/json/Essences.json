@@ -34,7 +34,7 @@
     "offset": 20,
     "unknownArray": false,
     "unique": false,
-    "interval": false,
+    "interval": true,
     "type": {
       "array": true,
       "integer": {
@@ -45,26 +45,18 @@
     "size": 16
   },
   {
-    "name": "",
-    "offset": 36,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "Mods"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 36,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 52,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -72,41 +64,44 @@
         "size": 4
       }
     },
-    "size": 16
+    "offset": 52,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "MonsterMod",
-    "offset": 68,
-    "unknownArray": false,
-    "unique": true,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Mods"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 68,
+    "size": 16,
+    "unique": true
   },
   {
-    "name": "Perfect",
-    "offset": 84,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 84,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 85,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -114,14 +109,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 89,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -129,36 +121,19 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "Tier",
     "offset": 93,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "MapStat",
-    "offset": 97,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Stats"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 97,
+    "size": 16,
+    "unique": false
   }
 ]

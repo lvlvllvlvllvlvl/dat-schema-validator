@@ -1,0 +1,17 @@
+# Added 3.27
+type PassiveSkillTreeUIArtAscendancy {
+  Id: string @unique
+  StartNode: string
+  PassiveFrameNormal: string
+  PassiveFrameCanAllocate: string
+  PassiveFrameActive: string
+  PassiveFrameMask: string
+  NotableFrameNormal: string
+  NotableFrameCanAllocate: string
+  NotableFrameActive: string
+  NotableFrameMask: string
+  SocketFrameNormal: string
+  SocketFrameCanAllocate: string
+  SocketFrameActive: string
+  SocketFrameMask: string
+}

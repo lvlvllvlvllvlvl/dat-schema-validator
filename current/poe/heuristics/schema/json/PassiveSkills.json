@@ -610,7 +610,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "DescendancyKey",
     "offset": 302,
     "unknownArray": false,
     "unique": false,
@@ -618,7 +618,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Descendancy"
       }
     },
     "size": 16

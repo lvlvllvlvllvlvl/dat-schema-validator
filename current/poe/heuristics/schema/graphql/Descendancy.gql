@@ -1,15 +1,15 @@
 # Added 3.23
 type Descendancy {
-  _: string
-  _: string @localized
-  _: string
-  _: string @localized
-  _: string
-  _: string
-  _: string @localized
+  Id: string @unique
+  Name: string @localized
+  BackgroundImage: string
+  FlavourText: string @localized
+  CoordinateRect: string
+  RGBFlavourTextColour: string
+  UnlockCondition: string @localized
   _: rid
   _: rid
-  _: i32 @unique
-  _: rid
+  _: i32
+  UIArt: PassiveSkillTreeUIArtAscendancy
   _: rid
 }

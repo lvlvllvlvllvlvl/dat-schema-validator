@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1762013328,
+  "createdAt": 1762094666,
   "tables": [
     {
       "validFor": 3,
@@ -1646,7 +1646,7 @@
       "tags": []
     },
     {
-      "validFor": 3,
+      "validFor": 1,
       "name": "DivinationCardArt",
       "columns": [
         {
@@ -1687,6 +1687,71 @@
           "references": {
             "table": "InfluenceTypes"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": [
+        "item:def"
+      ]
+    },
+    {
+      "validFor": 2,
+      "name": "DivinationCardArt",
+      "columns": [
+        {
+          "name": "BaseItemTypesKey",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "VirtualFile",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Influences",
+          "description": null,
+          "array": true,
+          "type": "enumrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "InfluenceTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -5098,7 +5163,7 @@
           "until": null,
           "file": null,
           "files": null,
-          "interval": false
+          "interval": true
         },
         {
           "name": null,
@@ -5157,26 +5222,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "UpgradeResult",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "row",
           "unique": false,
           "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
+          "references": {
+            "table": "Essences"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -33223,7 +33277,7 @@
       "name": "Descendancy",
       "columns": [
         {
-          "name": null,
+          "name": "Id",
           "description": null,
           "array": false,
           "type": "string",
@@ -33236,7 +33290,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Name",
           "description": null,
           "array": false,
           "type": "string",
@@ -33249,7 +33303,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "BackgroundImage",
           "description": null,
           "array": false,
           "type": "string",
@@ -33262,7 +33316,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "FlavourText",
           "description": null,
           "array": false,
           "type": "string",
@@ -33275,7 +33329,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "CoordinateRect",
           "description": null,
           "array": false,
           "type": "string",
@@ -33288,7 +33342,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "RGBFlavourTextColour",
           "description": null,
           "array": false,
           "type": "string",
@@ -33301,7 +33355,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "UnlockCondition",
           "description": null,
           "array": false,
           "type": "string",
@@ -33321,6 +33375,47 @@
           "unique": false,
           "localized": false,
           "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "UIArt",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "PassiveSkillTreeUIArtAscendancy"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -36922,6 +37017,110 @@
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
+      "name": "BrequelGraftTypes",
+      "columns": [
+        {
+          "name": "BaseItemType",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "LeftArm",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RightArm",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SkillGem",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "SkillGems"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SkillAnimation",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Achievement",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "AchievementItems"
           },
           "until": null,
           "file": null,
@@ -42716,19 +42915,6 @@
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "BackgroundImage",
           "description": null,
           "array": false,
@@ -42755,6 +42941,19 @@
           "interval": false
         },
         {
+          "name": "Disabled",
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
           "name": "BaseAscendancy",
           "description": null,
           "array": false,
@@ -42770,7 +42969,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "UIArt",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -55607,6 +55806,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": [
@@ -55936,6 +56148,19 @@
           "description": null,
           "array": false,
           "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -56904,6 +57129,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -57122,6 +57360,45 @@
         },
         {
           "name": "StunThreshold",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
           "description": null,
           "array": false,
           "type": "i32",
@@ -65321,6 +65598,32 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -67727,6 +68030,19 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,
@@ -73128,6 +73444,45 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
@@ -92581,6 +92936,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -94598,6 +94966,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -96488,13 +96869,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "DescendancyKey",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Descendancy"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -98169,6 +98552,195 @@
           "references": {
             "table": "PassiveSkillTreeNodeFrameArt"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
+      "name": "PassiveSkillTreeUIArtAscendancy",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StartNode",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "PassiveFrameNormal",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "PassiveFrameCanAllocate",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "PassiveFrameActive",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "PassiveFrameMask",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "NotableFrameNormal",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "NotableFrameCanAllocate",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "NotableFrameActive",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "NotableFrameMask",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SocketFrameNormal",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SocketFrameCanAllocate",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SocketFrameActive",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SocketFrameMask",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -110127,6 +110699,195 @@
     },
     {
       "validFor": 3,
+      "name": "UIArtAscendancy",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "AscendancyButtonNormal",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "AscendancyInfoPlate",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "ButtonBackground",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "ButtonBackgroundDouble",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "NameBackground",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "AscendancyButtonHighlight",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "AscendancyButtonPressed",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Color",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RespcBGTop",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RespcBGMiddle",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RespcBGBottom",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
       "name": "UITalkText",
       "columns": [
         {
@@ -112590,6 +113351,19 @@
           "references": {
             "table": "QuestFlags"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -123910,26 +124684,30 @@
       "name": "CharacterMeleeSkills",
       "columns": [
         {
-          "name": null,
+          "name": "MainHand",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "WieldableClasses"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "OffHand",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "WieldableClasses"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -126695,7 +127473,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "OutcomeModWeights",
           "description": null,
           "array": true,
           "type": "i32",
@@ -128372,6 +129150,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -129644,7 +130435,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Normal",
           "description": null,
           "array": false,
           "type": "string",
@@ -129657,7 +130448,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Intermediate2",
           "description": null,
           "array": false,
           "type": "string",
@@ -129670,7 +130461,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Intermediate",
           "description": null,
           "array": false,
           "type": "string",
@@ -129683,7 +130474,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Active",
           "description": null,
           "array": false,
           "type": "string",
@@ -129696,7 +130487,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Mask",
           "description": null,
           "array": false,
           "type": "string",

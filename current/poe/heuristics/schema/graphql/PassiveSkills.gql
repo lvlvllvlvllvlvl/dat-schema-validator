@@ -45,7 +45,7 @@ type PassiveSkills {
   _: i32
   _: [rid]
   _: bool
-  _: rid
+  DescendancyKey: Descendancy
   _: rid
   BrequelSubTree: brequelpassivesubtrees
   _: bool

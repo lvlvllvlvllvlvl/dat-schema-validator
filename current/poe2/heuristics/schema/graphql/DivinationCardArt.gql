@@ -3,7 +3,5 @@ type DivinationCardArt @tags(list: ["item:def"]) {
   BaseItemTypesKey: BaseItemTypes
   VirtualFile: string
   Influences: [InfluenceTypes]
-  _: string
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: rid
 }
