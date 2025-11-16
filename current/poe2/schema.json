@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1763309798,
+  "createdAt": 1763325103,
   "tables": [
     {
       "validFor": 3,
@@ -78408,12 +78408,10 @@
           "name": "Id",
           "description": null,
           "array": false,
-          "type": "enumrow",
-          "unique": false,
+          "type": "i32",
+          "unique": true,
           "localized": false,
-          "references": {
-            "table": "MicrotransactionCategoryId"
-          },
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -120381,11 +120379,12 @@
           "name": "Category",
           "description": null,
           "array": false,
-          "type": "foreignrow",
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "MicrotransactionCategory"
+            "table": "MicrotransactionCategory",
+            "column": "Id"
           },
           "until": null,
           "file": null,
@@ -134116,12 +134115,6 @@
     {
       "validFor": 3,
       "name": "MapFragmentFamilies",
-      "indexing": 0,
-      "enumerators": []
-    },
-    {
-      "validFor": 3,
-      "name": "MicrotransactionCategoryId",
       "indexing": 0,
       "enumerators": []
     },

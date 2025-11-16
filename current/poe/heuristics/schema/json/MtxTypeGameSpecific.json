@@ -42,6 +42,11 @@
     "size": 8
   },
   {
+    "name": "Category",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -49,11 +54,14 @@
         "size": 4
       }
     },
-    "offset": 28,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -61,40 +69,21 @@
         "size": 4
       }
     },
-    "offset": 32,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 48,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
-        "unsigned": true,
-        "size": 2
+        "unsigned": false,
+        "size": 4
       }
     },
-    "offset": 49,
-    "size": 2,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 51,
-    "size": 1,
-    "unique": false
+    "size": 4
   }
 ]

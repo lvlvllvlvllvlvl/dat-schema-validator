@@ -1,6 +1,6 @@
 # Added 3.17
 type MicrotransactionCategory {
-  Id: MicrotransactionCategoryId @unique
+  Id: i32 @unique
   Name: string @localized
   _: i32
 }
