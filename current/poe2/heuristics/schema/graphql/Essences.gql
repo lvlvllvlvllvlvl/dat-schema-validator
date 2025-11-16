@@ -3,12 +3,11 @@ type Essences {
   BaseItemType: BaseItemTypes @unique
   HASH32: u32
   _: [i32]
-  _: [_]
-  _: [_]
-  _: rid @unique
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: rid
+  _: [Mods]
+  _: [i32]
+  MonsterMod: Mods
+  Perfect: bool
+  UpgradeResult: Essences
+  Tier: i32
+  MapStat: Stats
 }

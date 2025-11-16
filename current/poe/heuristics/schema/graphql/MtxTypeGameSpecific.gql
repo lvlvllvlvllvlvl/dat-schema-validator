@@ -1,10 +1,10 @@
 # Added 3.25
 type MtxTypeGameSpecific {
-  Type: MtxTypes
+  Type: MtxTypes @unique
   HASH16: i32
   DDSFile: string @file(ext: ".dds")
   _: i32
-  _: [i32]
+  _: [_]
   _: bool
   _: u16 # All rows empty
   _: bool

@@ -133,7 +133,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ShopTag",
     "offset": 92,
     "unknownArray": false,
     "unique": false,
@@ -141,7 +141,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ShopTag"
       }
     },
     "size": 16

@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1762094666,
+  "createdAt": 1763309798,
   "tables": [
     {
       "validFor": 3,
@@ -5197,7 +5197,7 @@
           "until": null,
           "file": null,
           "files": null,
-          "interval": true
+          "interval": false
         },
         {
           "name": null,
@@ -37308,7 +37308,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
@@ -67350,14 +67350,14 @@
       "name": "HideoutDoodads",
       "columns": [
         {
-          "name": "BaseItemTypesKey",
+          "name": "MtxTypeGameSpecific",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": true,
           "localized": false,
           "references": {
-            "table": "BaseItemTypes"
+            "table": "MtxTypeGameSpecific"
           },
           "until": null,
           "file": null,
@@ -78269,6 +78269,19 @@
           "description": null,
           "array": false,
           "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -119360,13 +119373,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "ShopTag",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "ShopTag"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -119873,7 +119888,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "MtxTypes"
@@ -119906,32 +119921,6 @@
           "references": null,
           "until": null,
           "file": ".dds",
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": true,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
           "files": null,
           "interval": false
         }
@@ -131865,6 +131854,22 @@
           "unique": false,
           "localized": false,
           "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "UpgradableInStashType",
+          "description": null,
+          "array": true,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "StashType",
+            "column": "Id"
+          },
           "until": null,
           "file": null,
           "files": null,
