@@ -2,5 +2,5 @@
 type MapPurchaseCosts {
   Tier: i32 @unique
   Cost: ItemCosts
-  _: rid
+  CostHardmode: ItemCosts
 }

@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1763325103,
+  "createdAt": 1763493417,
   "tables": [
     {
       "validFor": 3,
@@ -69724,7 +69724,7 @@
       "name": "ItemCostPerLevel",
       "columns": [
         {
-          "name": "Contract_BaseItemTypesKey",
+          "name": "BaseItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -69914,10 +69914,10 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "RuthlessWithGold",
           "description": null,
           "array": true,
-          "type": "array",
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -76192,13 +76192,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "CostHardmode",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "ItemCosts"
+          },
           "until": null,
           "file": null,
           "files": null,

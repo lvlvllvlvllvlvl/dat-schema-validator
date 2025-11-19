@@ -30,7 +30,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "CostHardmode",
     "offset": 20,
     "unknownArray": false,
     "unique": true,
@@ -38,7 +38,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemCosts"
       }
     },
     "size": 16
