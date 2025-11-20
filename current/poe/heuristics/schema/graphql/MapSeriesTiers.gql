@@ -1,6 +1,6 @@
 # Added 3.11
 type MapSeriesTiers {
-  MapsKey: Maps
+  MapsKey: Maps @unique
   MapWorldsTier: i32
   BetrayalTier: i32
   SynthesisTier: i32

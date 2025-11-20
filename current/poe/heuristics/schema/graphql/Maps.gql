@@ -14,8 +14,7 @@ type Maps @tags(list: ["item:def", "item:recipe"]) {
   UpgradedFrom_MapsKey: Maps
   MapsKey2: Maps
   MapsKey3: Maps
-  "References MapSeries as an enum: i32, 1-based indexing"
-  MapSeriesKey: i32
+  MapGeneration: MapGenerations
   _: bool
   _: bool
   _: bool

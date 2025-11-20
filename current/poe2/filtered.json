@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1763535523,
+  "createdAt": 1763648405,
   "tables": [
     {
       "validFor": 3,
@@ -75001,13 +75001,15 @@
           "interval": false
         },
         {
-          "name": "MapSeriesKey",
-          "description": "References MapSeries as an enum: i32, 1-based indexing",
+          "name": "MapGeneration",
+          "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "MapGenerations"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -75504,7 +75506,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "Maps"
@@ -130784,6 +130786,17 @@
       "name": "MapFragmentFamilies",
       "indexing": 0,
       "enumerators": []
+    },
+    {
+      "validFor": 3,
+      "name": "MapGenerations",
+      "indexing": 1,
+      "enumerators": [
+        "ORIGINAL",
+        "THE_AWAKENING",
+        "WAR_FOR_THE_ATLAS",
+        "ATLAS_OF_WORLDS"
+      ]
     },
     {
       "validFor": 3,
