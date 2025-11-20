@@ -1,5 +1,5 @@
 # Added 3.27
 type currencyapplymodealternativecurrency {
-  _: rid
+  _: rid @unique
   _: rid
 }
