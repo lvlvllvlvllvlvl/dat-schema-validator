@@ -1,5 +1,5 @@
 # Added 3.27
 type stashtabaffinitybyitemclasscategory {
   _: rid @unique
-  _: i32
+  _: rid
 }

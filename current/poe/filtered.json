@@ -106732,34 +106732,6 @@
           "file": null,
           "files": null,
           "interval": false
-        },
-        {
-          "name": "Name",
-          "description": null,
-          "array": false,
-          "type": "string",
-          "unique": false,
-          "localized": true,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "ShowInStashes",
-          "description": null,
-          "array": true,
-          "type": "enumrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "StashId"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
         }
       ],
       "tags": [],

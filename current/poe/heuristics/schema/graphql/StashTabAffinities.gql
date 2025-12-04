@@ -1,7 +1,8 @@
 # Added 3.12
 type StashTabAffinities {
   SpecializedStash: StashId
-  Name: string @localized
-  ShowInStashes: [StashId]
+  _: i32 # All rows empty
+  _: [_] # All rows empty
+  _: [_]
   _: i32
 }

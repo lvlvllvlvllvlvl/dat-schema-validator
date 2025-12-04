@@ -1,0 +1,9 @@
+type microtransactionafkeffects {
+  _: string @unique
+  _: rid @unique
+  _: rid
+  _: rid @unique
+  _: i32
+  _: i32
+  _: [_]
+}
