@@ -3,11 +3,11 @@ type Hideouts {
   HideoutArea: WorldAreas
   HASH16: i16
   HideoutFile: string @file(ext: ".hideout")
-  _: rid
-  _: string
+  ClaimSideArea: WorldAreas
+  HideoutImage: string
+  IsEnabled: bool
   _: bool
-  _: bool
-  _: string @unique
+  Name: string
   _: [_]
   _: bool
   _: rid

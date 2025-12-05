@@ -1,6 +1,6 @@
 # Added 4.1
 type MicrotransactionCursorVariations {
-  _: BaseItemTypes
+  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
   _: rid
-  _: u16 @unique
+  _: i16
 }

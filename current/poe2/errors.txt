@@ -28,7 +28,6 @@ ExtraTerrainFeatures.datc64 column 6 <unknown>: array/integer not valid at offse
 ExtraTerrainFeatures.datc64 column 7 <unknown>: self not valid at offset 73. Last changed in version 4.3.0.1
 ExtraTerrainFeatures.datc64 column 8 WorldAreasKey: key not valid at offset 81. Last changed in version 4.3.0.1
 ExtraTerrainFeatures.datc64 column 9 <unknown>: boolean not valid at offset 97. Last changed in version 4.3.0.1
-FixedHideoutDoodadTypes.datc64 column 9 <unknown>: key not valid at offset 69. Last changed in version 4.3.1.3
 GameObjectTasksFromStats.datc64 column 3 <unknown>: boolean not valid at offset 32. Last changed in version 4.3.0.1
 GeometryAttack.datc64 column 55 <unknown>: key not valid at offset 273. Last changed in version 4.3.0.1
 GeometryTrigger.datc64 column 43 <unknown>: boolean not valid at offset 183. Last changed in version 4.3.0.4
@@ -47,29 +46,13 @@ HideoutDoodads.datc64 column 6 IsCraftingBench: boolean not valid at offset 42. 
 HideoutDoodads.datc64 column 7 Tags: array/key not valid at offset 43. Last changed in version 4.3.1.4
 HideoutDoodads.datc64 column 8 <unknown>: boolean not valid at offset 59. Last changed in version 4.3.1.4
 HideoutDoodads.datc64 column 9 <unknown>: key not valid at offset 60. Last changed in version 4.3.1.4
-Hideouts.datc64 column 10 NotActsArea: boolean not valid at offset 87. Last changed in version 4.3.1.3
-Hideouts.datc64 column 11 Name: string not valid at offset 88. Last changed in version 4.3.1.3
-Hideouts.datc64 column 12 <unknown>: array/integer not valid at offset 96. Last changed in version 4.3.1.3
-Hideouts.datc64 column 4 SpawnAreas: array/key not valid at offset 26. Last changed in version 4.3.1.3
-Hideouts.datc64 column 5 ClaimSideArea: key not valid at offset 42. Last changed in version 4.3.1.3
-Hideouts.datc64 column 6 HideoutImage: string not valid at offset 58. Last changed in version 4.3.1.3
-Hideouts.datc64 column 9 Rarity: key not valid at offset 71. Last changed in version 4.3.1.3
+Hideouts.datc64 column 9 <unknown>: key not valid at offset 60. Last changed in version 4.3.1.3
 MapConnections.datc64 column 8 "<unknown>": array not valid. Last changed in version 4.3.0.1
 MapDeviceRecipes.datc64 column 14 <unknown>: array/key not valid at offset 104. Last changed in version 4.3.1.1
 MapDeviceRecipes.datc64 column 3 WorldArea: key not valid at offset 24. Last changed in version 4.3.1.1
 MemoryLineType.datc64 column 12 <unknown>: key not valid at offset 80. Last changed in version 4.1.0.10.2
 MemoryLineType.datc64 column 9 Suffix: string not valid at offset 64. Last changed in version 4.1.0.10.2
-MicrotransactionCursorVariations.datc64 column 3 <unknown>: integer not valid at offset 32. Last changed in version 4.1.0.10.2
-MicrotransactionJewelVariations.datc64 column 6 "<unknown>": array not valid. Last changed in version 4.3.0.1
-MicrotransactionJewelVariations.datc64 column 8 <unknown>: string not valid at offset 48. Last changed in version 4.3.0.1
 MicrotransactionOnKillConditions.datc64 column 12 <unknown>: string not valid at offset 90. Last changed in version 4.3.0.1
-MicrotransactionPortalVariations.datc64 column 10 PortalEffectLarge: string not valid at offset 76. Last changed in version 4.3.1.4
-MicrotransactionPortalVariations.datc64 column 13 Script: string not valid at offset 92. Last changed in version 4.3.1.4
-MicrotransactionPortalVariations.datc64 column 3 AOFile: string not valid at offset 20. Last changed in version 4.3.1.4
-MicrotransactionPortalVariations.datc64 column 4 MapAOFile: string not valid at offset 28. Last changed in version 4.3.1.4
-MicrotransactionPortalVariations.datc64 column 6 MiscObject: key not valid at offset 40. Last changed in version 4.3.1.4
-MicrotransactionPortalVariations.datc64 column 7 PortalEffect: string not valid at offset 56. Last changed in version 4.3.1.4
-MicrotransactionPortalVariations.datc64 column 9 <unknown>: string not valid at offset 68. Last changed in version 4.3.1.4
 MicrotransactionSocialFrameVariations.datc64 column 3 BK2File: string not valid at offset 20. Last changed in version 4.3.1.3
 MonsterDeathAchievements.datc64 column 12 "<unknown>": array not valid. Last changed in version 4.1.0.10.2
 MonsterDeathAchievements.datc64 column 13 "<unknown>": array not valid. Last changed in version 4.1.0.10.2
@@ -122,7 +105,8 @@ SkillSurgeEffects.datc64 column 3 <unknown>: boolean not valid at offset 24. Las
 SkillSurgeEffects.datc64 column 4 <unknown>: boolean not valid at offset 25. Last changed in version 4.3.0.1
 SkillSurgeEffects.datc64 column 5 <unknown>: boolean not valid at offset 26. Last changed in version 4.3.0.1
 SkillSurgeEffects.datc64 column 6 MiscAnimated: key not valid at offset 27. Last changed in version 4.3.0.1
-StashTabAffinities.datc64 column 2 Name: string not valid at offset 4. Last changed in version 4.2.0.7
-StashTabAffinities.datc64 column 3 ShowInStashes: array/integer not valid at offset 12. Last changed in version 4.2.0.7
+StashTabAffinities.datc64 column 3 <unknown>: array/key not valid at offset 20. Last changed in version 4.2.0.7
+StashTabAffinities.datc64 column 4 ShowInStashes: array/integer not valid at offset 36. Last changed in version 4.2.0.7
+StashTabAffinityByBaseItemType.datc64 column 2 StashTabAffinityId: key not valid at offset 16.
 StatisticTrackingMicrotransactionsStatistics.datc64 column 1 <unknown>: boolean not valid at offset 0. Last changed in version 4.3.1.4
 ThreeToOneRecipes.datc64 column 6 UpgradableInStashType: array/string not valid at offset 60. Last changed in version 4.3.1.2

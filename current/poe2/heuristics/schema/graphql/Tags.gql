@@ -3,6 +3,6 @@ type Tags {
   Id: string @unique
   HASH32: u32
   DisplayString: string @localized
-  _: [rid]
+  _: [ClientStrings]
   UiHints: string
 }

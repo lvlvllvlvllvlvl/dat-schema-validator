@@ -1,6 +1,6 @@
 [
   {
-    "name": "BaseItemTypesKey",
+    "name": "MtxTypeGameSpecific",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "BaseItemTypes"
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16
@@ -24,122 +24,154 @@
       "array": false,
       "integer": {
         "unsigned": false,
+        "size": 2
+      }
+    },
+    "size": 2
+  },
+  {
+    "name": "AOFile",
+    "offset": 18,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "MapAOFile",
+    "offset": 26,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 34,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "decimal": {
         "size": 4
       }
     },
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 20,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 21,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "offset": 25,
-    "size": 1,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "offset": 26,
-    "size": 8,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "decimal": {
-        "size": 4
-      }
-    },
-    "offset": 34,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "name": "MiscObject",
+    "offset": 38,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscObjects"
       }
     },
-    "offset": 38,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "PortalEffect",
+    "offset": 54,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 54,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "",
+    "offset": 62,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "offset": 62,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "",
     "offset": 66,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 74,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "PortalEffectLarge",
+    "offset": 74,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
-      "array": true,
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 82,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "offset": 82,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 86,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Script",
+    "offset": 90,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   }
 ]

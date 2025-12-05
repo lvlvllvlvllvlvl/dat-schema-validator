@@ -1,16 +1,16 @@
 # Added 4.1
 type MicrotransactionPortalVariations {
-  BaseItemTypesKey: BaseItemTypes
-  Id: i32 @unique
-  _: bool
-  _: i32 # All rows empty
-  _: bool
-  _: string
+  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
+  Id: i16 @unique
+  AOFile: string @file(ext: ".ao")
+  MapAOFile: string @file(ext: ".ao")
   _: f32
-  _: rid
-  _: string
+  MiscObject: MiscObjects
+  PortalEffect: string @file(ext: ".ao")
   _: f32
   _: string
-  _: string
-  _: [_]
+  PortalEffectLarge: string @file(ext: ".ao")
+  _: i32
+  _: i32
+  Script: string
 }

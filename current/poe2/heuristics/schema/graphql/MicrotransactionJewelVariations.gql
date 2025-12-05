@@ -1,6 +1,6 @@
 # Added 4.1
 type MicrotransactionJewelVariations {
-  _: rid @unique
+  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
   _: i32
   _: string
   _: string
