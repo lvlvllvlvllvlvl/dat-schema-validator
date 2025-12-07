@@ -243,7 +243,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "StartingNode",
     "offset": 129,
     "unknownArray": false,
     "unique": false,
@@ -342,15 +342,18 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 163,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
-    "offset": 163,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]
