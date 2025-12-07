@@ -1,6 +1,6 @@
 [
   {
-    "name": "BaseItemType",
+    "name": "HideoutDoodads",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -9,22 +9,22 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "BaseItemTypes"
+        "table": "HideoutDoodads"
       }
     },
     "size": 16
   },
   {
-    "name": "StashTabAffinityId",
+    "name": "InterfaceVisuals",
     "offset": 16,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
-      "array": true,
+      "array": false,
       "key": {
         "foreign": true,
-        "table": "StashTabAffinityId"
+        "table": "HideoutSalvageBenchInterfaceVisuals"
       }
     },
     "size": 16
