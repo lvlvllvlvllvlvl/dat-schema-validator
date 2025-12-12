@@ -21,19 +21,6 @@ import { DbBuilder } from "./exile-db/DbBuilder.js";
 
 const startTime = performance.now();
 
-const TRANSLATIONS = [
-  { name: "English", path: "data" },
-  { name: "French", path: "data/french" },
-  { name: "German", path: "data/german" },
-  { name: "Japanese", path: "data/japanese" },
-  { name: "Korean", path: "data/korean" },
-  { name: "Portuguese", path: "data/portuguese" },
-  { name: "Russian", path: "data/russian" },
-  { name: "Spanish", path: "data/spanish" },
-  { name: "Thai", path: "data/thai" },
-  { name: "Traditional Chinese", path: "data/traditional chinese" },
-] as const;
-
 const R = { recursive: true };
 const RF = { recursive: true, force: true };
 
@@ -110,18 +97,9 @@ const progress = {
     }
   },
 };
-if (args?.find((v) => v === "-h" || v === "--help")) {
-  console.log(
-    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--no-annotate] [--no-db]",
-  );
-  console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
-  console.log(
-    "If a version is specified, data will be read from inya.zao.se, otherwise the latest version from the poe cdn will be used",
-  );
-  exit();
-}
 
 const poe2 = args?.indexOf("-2")! >= 0 || args?.indexOf("--poe2")! >= 0;
+const dataDir = poe2 ? "data/balance" : "data";
 const errors = [] as string[];
 const tablesSeen = new Set<string>();
 const tables = [] as Table[];
@@ -133,6 +111,30 @@ const metafiles = Object.fromEntries(
     .filter((f) => f.endsWith(".csv"))
     .map((f) => [f.toLowerCase().replaceAll(".csv", ""), path.join(metafileDir, f)]),
 );
+
+const TRANSLATIONS = [
+  { name: "English", path: dataDir },
+  { name: "French", path: `${dataDir}/french` },
+  { name: "German", path: `${dataDir}/german` },
+  { name: "Japanese", path: `${dataDir}/japanese` },
+  { name: "Korean", path: `${dataDir}/korean` },
+  { name: "Portuguese", path: `${dataDir}/portuguese` },
+  { name: "Russian", path: `${dataDir}/russian` },
+  { name: "Spanish", path: `${dataDir}/spanish` },
+  { name: "Thai", path: `${dataDir}/thai` },
+  { name: "Traditional Chinese", path: `${dataDir}/traditional chinese` },
+] as const;
+
+if (args?.find((v) => v === "-h" || v === "--help")) {
+  console.log(
+    "Usage: npx tsx src/validate.ts [-2|--poe2] [-q|--quiet] [-s|--schema <schema.json>] [-t|--table <tables>] [-l|--lang <languages>] [-v|--version <version>] [--no-annotate] [--no-db]",
+  );
+  console.log("Known languages:", TRANSLATIONS.map((t) => t.name).join(", "));
+  console.log(
+    "If a version is specified, data will be read from inya.zao.se, otherwise the latest version from the poe cdn will be used",
+  );
+  exit();
+}
 
 let version: string;
 const versionArg = (args?.findIndex((s) => s === "-v" || s === "--version") ?? -1) + 1;
@@ -206,11 +208,12 @@ await fs.mkdir(gqlDir, R);
 const validFor = poe2 ? (t: any) => t.validFor & 2 : (t: any) => t.validFor & 1;
 const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
   Object.fromEntries(
-    schema.tables.filter(validFor).map((t) => [`data/${t.name}.datc64`.toLowerCase(), t]),
+    schema.tables.filter(validFor).map((t) => [`${dataDir}/${t.name}.datc64`.toLowerCase(), t]),
   ),
   Object.fromEntries(
-    schema.enumerations?.filter(validFor)?.map((t) => [`data/${t.name}.datc64`.toLowerCase(), t]) ||
-      [],
+    schema.enumerations
+      ?.filter(validFor)
+      ?.map((t) => [`${dataDir}/${t.name}.datc64`.toLowerCase(), t]) || [],
   ),
 );
 loader.clearBundleCache();
