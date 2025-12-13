@@ -25,7 +25,8 @@
     },
     "offset": 16,
     "size": 8,
-    "unique": false
+    "unique": false,
+    "localized": true
   },
   {
     "type": {
@@ -50,21 +51,24 @@
   {
     "type": {
       "array": false,
+      "string": {}
+    },
+    "offset": 36,
+    "size": 8,
+    "unique": false,
+    "localized": true
+  },
+  {
+    "type": {
+      "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 36,
+    "offset": 44,
     "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "offset": 52,
-    "size": 8,
+    "noData": true,
+    "unknownArray": true,
     "unique": false
   },
   {
@@ -78,6 +82,28 @@
     "offset": 60,
     "size": 16,
     "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 76,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 92,
+    "size": 16,
     "unique": false
   }
 ]

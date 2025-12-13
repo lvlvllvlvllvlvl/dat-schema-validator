@@ -117,16 +117,19 @@ type MonsterVarieties {
   _: f32
   _: bool
   _: [string]
-  _: rid
+  _: [_]
   _: i32
   _: i32
-  _: f32
+  _: i32
   _: rid
   _: bool
   _: i32
   _: bool
   _: i32
-  MonsterCategory: MonsterCategories
   _: rid
-  _: i32
+  _: rid
+  _: i32 # All rows empty
+  _: rid
+  _: bool
+  _: [_]
 }

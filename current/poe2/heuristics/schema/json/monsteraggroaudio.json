@@ -15,15 +15,15 @@
     },
     "offset": 8,
     "size": 8,
-    "unique": true
+    "unique": false
   },
   {
     "type": {
-      "array": false,
+      "array": true,
       "string": {}
     },
     "offset": 16,
-    "size": 8,
+    "size": 16,
     "unique": false
   },
   {
@@ -33,7 +33,7 @@
         "size": 4
       }
     },
-    "offset": 24,
+    "offset": 32,
     "size": 4,
     "unique": false
   },
@@ -44,7 +44,7 @@
         "size": 4
       }
     },
-    "offset": 28,
+    "offset": 36,
     "size": 4,
     "unique": false
   },
@@ -53,7 +53,7 @@
       "array": false,
       "string": {}
     },
-    "offset": 32,
+    "offset": 40,
     "size": 8,
     "unique": false
   }

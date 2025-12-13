@@ -239,5 +239,28 @@
     "size": 16,
     "unknownArray": true,
     "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 268,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 284,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   }
 ]

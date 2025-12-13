@@ -1,0 +1,6 @@
+type currencyperitemclassconditions {
+  _: rid @unique
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+}

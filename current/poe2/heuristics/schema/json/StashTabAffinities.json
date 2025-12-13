@@ -27,7 +27,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "size": 4,
+    "localized": true
   },
   {
     "type": {
@@ -66,5 +67,17 @@
     "offset": 40,
     "size": 4,
     "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 44,
+    "size": 4,
+    "unique": true
   }
 ]

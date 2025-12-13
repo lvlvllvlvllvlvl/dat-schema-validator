@@ -4,4 +4,7 @@ type ongoingbuffvariations {
   _: rid @unique
   _: [_]
   _: bool
+  _: [_]
+  _: rid
+  _: [_]
 }

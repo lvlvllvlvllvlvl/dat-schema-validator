@@ -5,4 +5,5 @@ type cosmeticspaneltab {
   _: string @unique @localized
   _: [_]
   _: string
+  _: [_]
 }

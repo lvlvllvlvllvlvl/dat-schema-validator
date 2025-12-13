@@ -2,9 +2,6 @@
 type ShapeShiftForms {
   Id: string @unique
   AOFile: string @file(ext: ".ao")
-  ACTFile: string @file(ext: ".act")
-  Source: MiscEffectPacks
-  Destination: MiscEffectPacks
   StatsKeys: [Stats]
   StatsValues: [i32]
   _: rid
@@ -20,8 +17,13 @@ type ShapeShiftForms {
   Status: string
   _: f32
   _: bool
-  _: rid
   _: i32
   _: bool
   _: i32 @unique
+  _: [_]
+  _: string
+  _: bool
+  _: bool
+  _: rid
+  _: string @localized
 }

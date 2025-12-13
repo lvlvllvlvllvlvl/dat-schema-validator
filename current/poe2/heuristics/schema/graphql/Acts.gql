@@ -15,4 +15,6 @@ type Acts {
   _: [rid]
   Description: string @localized
   _: rid
+  _: bool
+  _: rid @unique
 }

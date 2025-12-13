@@ -1,8 +1,8 @@
 # Added 4.3
 type monsteraggroaudio {
   _: string @unique
-  _: string @unique
   _: string
+  _: [string]
   _: f32
   _: f32
   _: string

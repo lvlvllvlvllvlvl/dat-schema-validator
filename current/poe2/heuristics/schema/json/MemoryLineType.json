@@ -42,50 +42,18 @@
     "size": 2
   },
   {
-    "name": "",
-    "offset": 26,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 27,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "Stats",
-    "offset": 28,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "Stats"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 26,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "StatsValues",
-    "offset": 44,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -93,22 +61,10 @@
         "size": 4
       }
     },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 60,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "offset": 42,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -118,7 +74,19 @@
         "size": 4
       }
     },
-    "offset": 64,
+    "offset": 58,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 62,
     "size": 4,
     "unique": true
   },
@@ -129,7 +97,7 @@
         "foreign": true
       }
     },
-    "offset": 68,
+    "offset": 66,
     "size": 16,
     "unique": true
   },
@@ -141,7 +109,7 @@
         "size": 4
       }
     },
-    "offset": 84,
+    "offset": 82,
     "size": 4,
     "noData": true,
     "unique": false
@@ -151,7 +119,7 @@
       "array": false,
       "string": {}
     },
-    "offset": 88,
+    "offset": 86,
     "size": 8,
     "unique": true,
     "localized": true
@@ -163,7 +131,7 @@
         "foreign": true
       }
     },
-    "offset": 96,
+    "offset": 94,
     "size": 16,
     "unique": false
   }

@@ -1,1 +1,10 @@
-enum primalavatarvarieties @indexing(first: 0) { _ }
+# Added 4.3
+type primalavatarvarieties {
+  _: rid
+  _: rid
+  _: [_]
+  _: f32
+  _: rid
+  _: i32 # All rows empty
+  _: f32
+}

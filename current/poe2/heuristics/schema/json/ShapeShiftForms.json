@@ -24,50 +24,8 @@
     "size": 8
   },
   {
-    "name": "ACTFile",
-    "offset": 16,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "Source",
-    "offset": 24,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "MiscEffectPacks"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "Destination",
-    "offset": 40,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "MiscEffectPacks"
-      }
-    },
-    "size": 16
-  },
-  {
     "name": "StatsKeys",
-    "offset": 56,
+    "offset": 16,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -82,7 +40,7 @@
   },
   {
     "name": "StatsValues",
-    "offset": 72,
+    "offset": 32,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -97,7 +55,7 @@
   },
   {
     "name": "",
-    "offset": 88,
+    "offset": 48,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -111,7 +69,7 @@
   },
   {
     "name": "",
-    "offset": 104,
+    "offset": 64,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -126,7 +84,7 @@
   },
   {
     "name": "",
-    "offset": 108,
+    "offset": 68,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -138,7 +96,7 @@
   },
   {
     "name": "",
-    "offset": 116,
+    "offset": 76,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -153,7 +111,7 @@
   },
   {
     "name": "",
-    "offset": 120,
+    "offset": 80,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -167,7 +125,7 @@
   },
   {
     "name": "",
-    "offset": 124,
+    "offset": 84,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -181,7 +139,7 @@
   },
   {
     "name": "",
-    "offset": 128,
+    "offset": 88,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -195,7 +153,7 @@
   },
   {
     "name": "SkillStat",
-    "offset": 132,
+    "offset": 92,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -210,7 +168,7 @@
   },
   {
     "name": "",
-    "offset": 148,
+    "offset": 108,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -225,7 +183,7 @@
   },
   {
     "name": "",
-    "offset": 152,
+    "offset": 112,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -237,9 +195,9 @@
   },
   {
     "name": "Status",
-    "offset": 153,
+    "offset": 113,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -249,7 +207,7 @@
   },
   {
     "name": "",
-    "offset": 161,
+    "offset": 121,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -263,7 +221,7 @@
   },
   {
     "name": "",
-    "offset": 165,
+    "offset": 125,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -276,23 +234,12 @@
   {
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 166,
-    "size": 16,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "offset": 182,
+    "offset": 126,
     "size": 4,
     "unique": false
   },
@@ -301,7 +248,7 @@
       "array": false,
       "boolean": true
     },
-    "offset": 186,
+    "offset": 130,
     "size": 1,
     "unique": false
   },
@@ -313,8 +260,68 @@
         "size": 4
       }
     },
-    "offset": 187,
+    "offset": 131,
     "size": 4,
     "unique": true
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 135,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 151,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 159,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 160,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 161,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 177,
+    "size": 8,
+    "unique": false,
+    "localized": true
   }
 ]

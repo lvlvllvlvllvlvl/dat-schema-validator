@@ -860,5 +860,17 @@
     "offset": 318,
     "size": 4,
     "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 322,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   }
 ]

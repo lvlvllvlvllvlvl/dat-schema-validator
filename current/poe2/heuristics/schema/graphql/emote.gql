@@ -1,0 +1,14 @@
+type emote {
+  _: string @unique
+  _: rid @unique
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32 @unique
+  _: i32 # All rows empty
+  _: i32 @unique
+  _: i32 # All rows empty
+  _: u16 # All rows empty
+  _: bool
+}

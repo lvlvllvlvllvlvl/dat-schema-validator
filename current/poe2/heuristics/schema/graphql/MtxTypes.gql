@@ -24,5 +24,6 @@ type MtxTypes {
   _: bool
   _: string @localized
   _: string @localized
-  _: string
+  _: string @localized
+  _: string @localized
 }

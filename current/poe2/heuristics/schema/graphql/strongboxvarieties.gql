@@ -1,6 +1,6 @@
 # Added 4.3
 type strongboxvarieties {
-  _: rid @unique
+  _: rid
   _: string
   _: [_] # All rows empty
 }

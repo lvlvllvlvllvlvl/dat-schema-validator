@@ -5,7 +5,6 @@ type Stats @tags(list: ["crafting"]) {
   IsLocal: bool
   IsWeaponLocal: bool
   Semantic: StatSemantics
-  Text: string @localized
   _: bool
   IsVirtual: bool
   MainHandAlias_Stat: Stats

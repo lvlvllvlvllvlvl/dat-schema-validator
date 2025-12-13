@@ -5,4 +5,10 @@ type MtxTypeGameSpecific {
   DDSFile: string @file(ext: ".dds")
   Category: MicrotransactionCategory @ref(column: "Id")
   _: [i32]
+  _: bool
+  _: i32
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: i32
 }

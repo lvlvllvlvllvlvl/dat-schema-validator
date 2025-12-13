@@ -1,0 +1,17 @@
+type incursion2crafting {
+  _: string @unique
+  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: i32
+  _: i32
+  _: string @unique
+  _: string @localized
+  _: string @localized
+  _: bool
+  _: i32
+  _: string
+  _: string @localized
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+}

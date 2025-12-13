@@ -4,4 +4,5 @@ type CharacterEventTextAudio {
   Character: Characters
   TextAudio: [CharacterTextAudio]
   _: i32
+  _: rid
 }

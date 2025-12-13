@@ -265,15 +265,20 @@
   },
   {
     "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "array": false,
+      "string": {}
     },
     "offset": 156,
-    "size": 16,
-    "unknownArray": true,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 164,
+    "size": 8,
     "unique": false
   }
 ]

@@ -250,13 +250,25 @@
   {
     "type": {
       "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 178,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "offset": 178,
+    "offset": 194,
     "size": 4,
+    "noData": true,
     "unique": false
   }
 ]

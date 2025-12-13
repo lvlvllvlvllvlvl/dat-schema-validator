@@ -75,38 +75,8 @@
     "size": 4
   },
   {
-    "name": "Tags",
-    "offset": 32,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "Tags"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "SpawnWeight",
-    "offset": 48,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
     "name": "CraftableType",
-    "offset": 64,
+    "offset": 32,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -121,7 +91,7 @@
   },
   {
     "name": "",
-    "offset": 80,
+    "offset": 48,
     "unknownArray": false,
     "unique": false,
     "interval": false,

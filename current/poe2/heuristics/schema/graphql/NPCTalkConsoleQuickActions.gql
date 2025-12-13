@@ -2,5 +2,7 @@
 type NPCTalkConsoleQuickActions {
   Id: string @unique
   Controller: string
-  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: rid
 }

@@ -198,5 +198,25 @@
     "offset": 133,
     "size": 16,
     "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 149,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 150,
+    "size": 16,
+    "unique": true
   }
 ]

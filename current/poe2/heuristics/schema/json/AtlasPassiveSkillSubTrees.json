@@ -124,5 +124,20 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "",
+    "offset": 72,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ClientStrings"
+      }
+    },
+    "size": 16
   }
 ]

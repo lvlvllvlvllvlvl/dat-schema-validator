@@ -2,10 +2,12 @@
 type completionnotifications {
   _: string @unique
   _: string @localized
-  _: string
+  _: string @localized
   _: f32
   _: string
-  _: rid
-  _: string
+  _: string @localized
+  _: [_] # All rows empty
   _: [_]
+  _: rid
+  _: rid
 }

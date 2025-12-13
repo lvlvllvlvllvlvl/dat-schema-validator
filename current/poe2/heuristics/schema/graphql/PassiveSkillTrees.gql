@@ -6,7 +6,7 @@ type PassiveSkillTrees {
   _: f32
   _: f32
   _: i32 @unique
-  _: i32 @unique
+  _: i32
   _: bool
   _: bool
   _: bool
@@ -19,4 +19,7 @@ type PassiveSkillTrees {
   _: rid
   _: i32 # All rows empty
   _: bool
+  _: i32 @unique
+  _: i32 @unique
+  _: i32 @unique
 }

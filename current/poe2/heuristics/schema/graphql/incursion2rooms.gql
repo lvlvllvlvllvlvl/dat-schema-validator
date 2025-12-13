@@ -1,0 +1,12 @@
+type incursion2rooms {
+  _: string @unique
+  _: bool
+  _: [_]
+  _: [string]
+  _: [string]
+  _: i32
+  _: bool
+  _: bool
+  _: string @localized
+  _: string
+}

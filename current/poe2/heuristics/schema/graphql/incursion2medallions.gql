@@ -1,0 +1,10 @@
+type incursion2medallions {
+  _: string @unique
+  _: string @unique @localized
+  _: string @unique @localized
+  _: string @unique
+  _: bool
+  _: rid @unique
+  _: string @unique @localized
+  _: rid @unique
+}

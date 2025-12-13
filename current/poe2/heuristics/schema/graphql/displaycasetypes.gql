@@ -2,24 +2,24 @@
 type displaycasetypes {
   _: string @unique
   _: bool
-  _: i32 @unique
   _: i32
   _: i32
   _: i32
   _: i32
   _: i32
-  _: i32 @unique
   _: i32
-  _: i32 @unique
-  _: i32 @unique
-  _: i32 @unique
-  _: i32 @unique
-  _: i32 @unique
-  _: i32 @unique
-  _: i32 @unique
-  _: i32 @unique
-  _: i32 @unique
-  _: i32 @unique
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
   _: u16 # All rows empty
   _: bool
 }

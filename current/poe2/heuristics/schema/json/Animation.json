@@ -226,5 +226,18 @@
     "offset": 86,
     "size": 4,
     "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 90,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   }
 ]

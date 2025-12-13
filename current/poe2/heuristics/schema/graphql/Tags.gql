@@ -4,5 +4,5 @@ type Tags {
   HASH32: u32
   DisplayString: string @localized
   _: [ClientStrings]
-  UiHints: string
+  UiHints: string @localized
 }

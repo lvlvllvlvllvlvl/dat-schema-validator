@@ -196,5 +196,36 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "type": {
+      "array": true,
+      "string": {}
+    },
+    "offset": 92,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 108,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 124,
+    "size": 1,
+    "unique": false
   }
 ]

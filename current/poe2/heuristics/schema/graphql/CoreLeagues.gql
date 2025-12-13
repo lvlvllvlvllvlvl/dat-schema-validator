@@ -18,5 +18,6 @@ type CoreLeagues {
   _: bool
   _: [Stats]
   _: bool
-  _: i32
+  _: rid
+  _: i32 # All rows empty
 }

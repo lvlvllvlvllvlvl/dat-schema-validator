@@ -6,4 +6,5 @@ type MiniQuestStates {
   _: string
   _: i32
   TSIFile: string @file(ext: ".tsi")
+  _: i32
 }
