@@ -1,7 +1,0 @@
-# Added 4.4
-type soulcorestatcategories {
-  _: string @unique
-  _: [_]
-  _: string @localized
-  _: i32
-}

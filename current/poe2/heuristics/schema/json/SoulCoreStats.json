@@ -1,74 +1,90 @@
 [
   {
-    "name": "BaseItemType",
+    "name": "SoulCore",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true,
-        "table": "BaseItemTypes"
+        "table": "SoulCores"
       }
     },
     "size": 16
   },
   {
-    "name": "RequiredLevel",
+    "name": "StatCategory",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
+      "key": {
+        "foreign": true,
+        "table": "SoulCoreStatCategories"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Stats",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "StatsValues",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "size": 4
+    "size": 16
   },
   {
-    "name": "Limit",
-    "offset": 20,
+    "name": "BondedStats",
+    "offset": 64,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
-      "array": false,
+      "array": true,
       "key": {
         "foreign": true,
-        "table": "SoulCoreLimits"
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
-    "offset": 36,
+    "name": "BondedStatsValues",
+    "offset": 80,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "Type",
-    "offset": 52,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "SoulCoreTypes"
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "size": 16
