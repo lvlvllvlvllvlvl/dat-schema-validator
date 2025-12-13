@@ -219,7 +219,7 @@ const tableMap: { [name: string]: Table & Enumeration } = Object.assign(
 loader.clearBundleCache();
 const allTables = !args?.find((v) => v === "-t" || v === "--table" || v === "--tables");
 let files = loader
-  .listFiles("Data")
+  .listFiles(dataDir)
   .filter(
     (f) =>
       f.endsWith(".datc64") &&
@@ -247,7 +247,7 @@ await Promise.all(
       await Promise.all(
         includeTranslations.map(async (tr) => {
           while (concurrentLoads > 30) await sleep(100);
-          const fileName = file.replace(/^data/, tr.path);
+          const fileName = file.replace(dataDir, tr.path);
           concurrentLoads++;
           try {
             progress.increment("requests", { table: fileName });
