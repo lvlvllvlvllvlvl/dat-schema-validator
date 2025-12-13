@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1765590661,
+  "createdAt": 1765602473,
   "tables": [
     {
       "validFor": 3,
@@ -41665,7 +41665,7 @@
       "added": "3.16.0"
     },
     {
-      "validFor": 3,
+      "validFor": 1,
       "name": "Animation",
       "columns": [
         {
@@ -41835,6 +41835,26 @@
       ],
       "tags": [],
       "added": "3.11.2b"
+    },
+    {
+      "validFor": 2,
+      "name": "Animation",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
     },
     {
       "validFor": 3,
@@ -113837,32 +113857,6 @@
           "description": null,
           "array": false,
           "type": "i16",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
