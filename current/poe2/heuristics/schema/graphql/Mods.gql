@@ -21,7 +21,7 @@ type Mods @tags(list: ["crafting"]) {
   Stat4Value: Tags
   _: GrantedEffectsPerLevel
   SpawnWeight_Tags: [ModAuraFlags]
-  SpawnWeight_Values: [i32]
+  _: [i32]
   Tags: [AchievementItems]
   GrantedEffectsPerLevel: [ModType]
   AuraFlags: [i32]
@@ -79,5 +79,5 @@ type Mods @tags(list: ["crafting"]) {
   RadiusJewelType: i32
   IsEssenceOnlyModifier: bool
   _: i32
-  _: [_]
+  SpawnWeight_Values: [i32]
 }

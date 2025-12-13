@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1765606202,
+  "createdAt": 1765615044,
   "tables": [
     {
       "validFor": 3,
@@ -81353,7 +81353,7 @@
           "interval": false
         },
         {
-          "name": "SpawnWeight_Values",
+          "name": null,
           "description": null,
           "array": true,
           "type": "i32",
@@ -82111,6 +82111,19 @@
           "name": null,
           "description": null,
           "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SpawnWeight_Values",
+          "description": null,
+          "array": true,
           "type": "i32",
           "unique": false,
           "localized": false,
@@ -126331,7 +126344,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "Mods"
