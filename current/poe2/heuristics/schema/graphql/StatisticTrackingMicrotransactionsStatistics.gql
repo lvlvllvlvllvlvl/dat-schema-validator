@@ -1,18 +1,13 @@
 # Added 4.1
 type StatisticTrackingMicrotransactionsStatistics {
-  _: rid
+  StatisticTrackingMtx: StatisticTrackingMicrotransactions
   _: i32
   _: i32
   _: rid
   _: bool
-  _: string
+  Icon: string
   _: bool
   _: rid
-  _: bool
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  CounterType: StatisticTrackingMicrotransactionCounterType
   _: i32
-  _: u16 # All rows empty
-  _: bool
 }

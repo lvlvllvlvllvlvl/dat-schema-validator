@@ -71,6 +71,11 @@
     "size": 16
   },
   {
+    "name": "UpgradableInStashes",
+    "offset": 60,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -78,9 +83,6 @@
         "size": 4
       }
     },
-    "offset": 60,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

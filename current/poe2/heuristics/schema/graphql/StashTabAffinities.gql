@@ -1,9 +1,8 @@
 # Added 4.1
 type StashTabAffinities {
   StashTabAffinityId: StashTabAffinityId @unique
-  _: i32 @localized
-  _: i32 # All rows empty
-  _: [_]
+  Name: string @localized
+  ShowInStashes: [StashId]
   _: i32
-  _: i32 @unique
+  _: i32
 }

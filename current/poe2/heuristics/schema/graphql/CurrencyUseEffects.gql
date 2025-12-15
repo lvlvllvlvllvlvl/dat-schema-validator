@@ -1,10 +1,10 @@
 # Added 4.1
 type CurrencyUseEffects {
-  _: string @unique
-  _: string
-  _: string
+  Id: string @unique
+  BK2File: string @file(ext: ".bk2")
+  SoundFile: string @file(ext: ".ogg")
   _: bool
-  _: string
+  BK2File2: string @file(ext: ".bk2")
   _: u16 # All rows empty
   _: bool
   _: u16

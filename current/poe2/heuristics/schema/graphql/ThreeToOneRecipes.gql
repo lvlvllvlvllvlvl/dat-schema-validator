@@ -5,5 +5,5 @@ type ThreeToOneRecipes {
   OutputBaseItem: BaseItemTypes
   _: i32
   _: rid
-  _: [_]
+  UpgradableInStashes: [StashId]
 }
