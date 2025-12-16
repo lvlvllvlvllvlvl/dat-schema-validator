@@ -23,10 +23,21 @@
   },
   {
     "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 32,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
       "array": true,
       "string": {}
     },
-    "offset": 32,
+    "offset": 48,
     "size": 16,
     "unique": false
   }
