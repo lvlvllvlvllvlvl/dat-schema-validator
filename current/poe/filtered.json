@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1765803710,
+  "createdAt": 1765889335,
   "tables": [
     {
       "validFor": 3,
@@ -98068,13 +98068,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "AscendancyUnlock",
           "description": null,
-          "array": false,
+          "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Ascendancy"
+          },
           "until": null,
           "file": null,
           "files": null,
