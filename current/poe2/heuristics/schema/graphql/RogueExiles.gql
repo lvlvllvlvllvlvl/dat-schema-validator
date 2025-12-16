@@ -1,6 +1,6 @@
 # Added 4.1
 type RogueExiles {
-  MonsterVarietiesKey: MonsterVarieties
+  MonsterVarietiesKey: MonsterVarieties @unique
   _: rid
   _: rid
   _: rid
@@ -9,7 +9,7 @@ type RogueExiles {
   _: rid
   _: rid
   _: rid
-  _: [_]
+  _: [i32]
   _: rid
   _: rid
   _: rid

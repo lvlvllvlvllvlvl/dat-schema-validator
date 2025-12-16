@@ -54,7 +54,7 @@ type PassiveSkills {
   IsFree: bool
   _: bool
   _: [PassiveSkills]
-  _: rid
+  AscendancyUnlock: Ascendancy
   _: bool
   _: rid
 }

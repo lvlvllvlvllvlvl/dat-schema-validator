@@ -265,72 +265,58 @@
     "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "",
     "offset": 209,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "string": {}
-    },
-    "offset": 225,
-    "size": 8,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 233,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 225,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
-    "offset": 249,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 241,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
-    "offset": 253,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 257,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 257,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
     "type": {

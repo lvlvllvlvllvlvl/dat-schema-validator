@@ -17,12 +17,11 @@ type NPCDialogueStyles {
   _: [i32]
   _: i32
   _: i32
-  _: f32
-  _: i32 # All rows empty
+  _: string
   _: string
   _: i32
   _: i32
-  _: i32 # All rows empty
+  _: i32
   _: bool
-  _: [_]
+  _: [i32]
 }

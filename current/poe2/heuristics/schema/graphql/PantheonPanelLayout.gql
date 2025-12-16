@@ -20,10 +20,8 @@ type PantheonPanelLayout {
   Effect2_Values: [i32]
   QuestFlag: QuestFlags
   _: rid
-  _: string
-  _: [_] # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: rid
+  _: rid
   _: bool
   _: [_] # All rows empty
 }

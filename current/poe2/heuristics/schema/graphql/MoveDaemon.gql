@@ -18,18 +18,21 @@ type MoveDaemon {
   _: i32
   _: bool
   _: bool
-  _: rid
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: f32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
   _: i32
   _: bool
-  _: MoveDaemon
+  _: string
   _: i32
   _: bool
   _: bool
-  _: i32 # All rows empty
-  _: bool
   _: i32
+  _: bool
+  _: f32
   _: i32
   _: bool
 }

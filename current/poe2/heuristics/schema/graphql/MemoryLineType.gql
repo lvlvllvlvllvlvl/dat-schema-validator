@@ -3,12 +3,12 @@ type MemoryLineType {
   Id: string @unique
   MemoryLine: AtlasMemoryLine
   HASH16: i16
-  _: [_]
-  _: [_]
+  Stats: [Stats]
+  StatsValues: [i32]
   _: i32
-  _: i32 @unique
-  _: rid @unique
-  _: i32 # All rows empty
-  _: string @unique @localized
+  _: i32
   _: rid
+  _: i32
+  Suffix: string @localized
+  Mod: Mods
 }

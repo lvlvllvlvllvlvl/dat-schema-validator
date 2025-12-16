@@ -37,23 +37,17 @@ type GeometryTrigger {
   _: rid
   _: bool
   _: bool
-  _: bool
   _: i32
   _: i32
+  _: [rid]
+  _: [i32]
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
+  _: f32
   _: i32
   _: bool
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32
+  _: bool
   _: bool
 }

@@ -1,13 +1,10 @@
 # Added 4.1
 type ShapeShiftTransformData {
-  _: rid
+  ShapeShiftForm: ShapeShiftForms
   _: rid
   _: string
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: rid
   _: bool
   _: bool
   _: bool

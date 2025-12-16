@@ -1,26 +1,19 @@
 # Added 4.1
 type Pet {
-  Id: string @unique @files(ext: [".ot", ".otc"])
-  BaseItemTypesKey: BaseItemTypes
-  HASH16: i32
+  Id: string @unique
+  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
+  HASH16: i16
   HASH32: i32
-  _: i32
+  Size: i32
   _: bool
   _: bool
-  _: i32 # All rows empty
-  _: i32 @unique
+  _: [rid]
   _: rid
-  _: i32 # All rows empty
+  _: [rid]
   _: i32
-  _: i32 # All rows empty
-  _: i32 @unique
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: bool
+  _: rid
+  _: bool
   _: bool
   _: bool
   _: string

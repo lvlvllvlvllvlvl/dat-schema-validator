@@ -1,8 +1,6 @@
 # Added 4.1
 type NPCTalkConsoleQuickActions {
   Id: string @unique
-  Controller: string
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: rid
   _: rid
 }

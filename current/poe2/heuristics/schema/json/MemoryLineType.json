@@ -42,18 +42,26 @@
     "size": 2
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Stats",
     "offset": 26,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
   },
   {
+    "name": "StatsValues",
+    "offset": 42,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -61,24 +69,14 @@
         "size": 4
       }
     },
-    "offset": 42,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 58,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -86,22 +84,43 @@
         "size": 4
       }
     },
-    "offset": 62,
-    "size": 4,
-    "unique": true
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 62,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 66,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 66,
-    "size": 16,
-    "unique": true
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 82,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -109,30 +128,34 @@
         "size": 4
       }
     },
-    "offset": 82,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "Suffix",
+    "offset": 86,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 86,
     "size": 8,
-    "unique": true,
     "localized": true
   },
   {
+    "name": "Mod",
+    "offset": 94,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
-    "offset": 94,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

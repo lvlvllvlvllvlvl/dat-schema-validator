@@ -1,6 +1,6 @@
 # Added 4.1
 type MonsterShapeshift {
-  _: i32 @unique
+  Id: i32 @unique
   _: rid
   _: rid
   _: rid
@@ -11,5 +11,6 @@ type MonsterShapeshift {
   _: [string]
   _: rid
   _: rid
-  _: [_]
+  _: string
+  _: string
 }

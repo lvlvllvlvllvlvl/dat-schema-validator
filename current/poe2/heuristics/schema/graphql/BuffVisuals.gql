@@ -18,8 +18,7 @@ type BuffVisuals {
   BuffVisualOrbs: [BuffVisualOrbs]
   MiscAnimated3: MiscAnimated
   _: rid
-  _: i32
-  _: i32
+  _: BuffVisuals
   _: rid
   _: f32
   _: f32
@@ -29,5 +28,5 @@ type BuffVisuals {
   _: bool
   _: bool
   _: bool
-  _: [_]
+  _: [i32]
 }

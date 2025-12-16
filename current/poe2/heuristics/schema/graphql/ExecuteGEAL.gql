@@ -19,27 +19,34 @@ type ExecuteGEAL {
   _: i32
   _: i32
   _: i32
-  _: i32 # All rows empty
+  _: i32
   _: bool
+  Script: string
+  _: bool
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
   _: string
-  _: bool
-  _: i32
-  _: bool
-  _: i32
-  _: i32
-  _: bool
-  _: i32
-  _: [string]
   _: string
-  _: [_]
+  _: string
   _: string
   _: string
   _: i32
   _: bool
-  _: [_]
+  _: bool
+  _: [_] # All rows empty
+  _: i32
   _: bool
   _: i32
   _: bool
-  _: rid
-  _: bool
+  _: i32
+  _: i32
+  _: i32
 }

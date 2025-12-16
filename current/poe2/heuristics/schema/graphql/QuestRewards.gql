@@ -19,14 +19,14 @@ type QuestRewards @tags(list: ["item:reward"]) {
   RewardStack: i32
   _: bool
   _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: rid
-  _: i32 # All rows empty
   _: [_] # All rows empty
-  _: i32 # All rows empty
+  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  _: i32
+  _: [_] # All rows empty
+  _: i32
   _: bool
 }

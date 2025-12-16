@@ -2,12 +2,12 @@
 type HideoutDoodads {
   MtxTypeGameSpecific: MtxTypeGameSpecific @unique
   Variation_AOFiles: [string] @file(ext: ".ao")
-  _: [_]
+  _: [i32]
   _: bool
   _: string
   _: bool
   _: bool
-  _: [_]
+  _: [rid]
   _: bool
   _: rid
   _: rid
@@ -17,8 +17,7 @@ type HideoutDoodads {
   _: bool
   _: rid
   _: [string]
-  _: i32
-  _: i32
+  _: HideoutDoodads
   _: bool
   _: bool
 }

@@ -1,7 +1,7 @@
 # Added 4.1
 type GameObjectTasksFromStats {
-  _: rid @unique
-  _: rid
+  Stat: Stats @unique
+  GameObjectTask: GameObjectTasks
   _: i32
   _: bool
   _: bool
