@@ -19,13 +19,14 @@ type PassiveSkillTrees {
   _: bool
   Name: ClientStrings
   UIArt: PassiveSkillTreeUIArt
-  _: bool
+  _: i32
+  _: i32
+  _: f32
+  _: f32
+  _: f32
   _: i32 # All rows empty
   _: i32 # All rows empty
-  _: rid
   _: i32 # All rows empty
-  _: u16 # All rows empty
-  _: bool
   _: i32 @unique
   _: i32 @unique
   _: i32 @unique

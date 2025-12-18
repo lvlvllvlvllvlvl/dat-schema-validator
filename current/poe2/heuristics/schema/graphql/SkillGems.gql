@@ -6,7 +6,7 @@ type SkillGems @tags(list: ["item:def"]) {
   IntelligenceRequirementPercent: i32
   VaalVariant_BaseItemType: BaseItemTypes
   IsVaalVariant: bool
-  MinionGlobalSkillLevelStat: Stats
+  GlobalSkillLevelStat: Stats
   GemType: i32
   _: bool
   _: bool
@@ -27,5 +27,5 @@ type SkillGems @tags(list: ["item:def"]) {
   _: i32
   _: bool
   _: [rid]
-  tier: i32
+  Tier: i32
 }

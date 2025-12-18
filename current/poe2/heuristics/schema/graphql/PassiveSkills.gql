@@ -53,8 +53,8 @@ type PassiveSkills {
   WeaponPointsGranted: i32
   IsFree: bool
   _: bool
-  _: [PassiveSkills]
-  AscendancyUnlock: Ascendancy
+  UnlockedBy: [PassiveSkills]
+  VisibleForAscendancy: Ascendancy
   _: bool
-  _: rid
+  NodeFrameArt: PassiveSkillTreeNodeFrameArt
 }

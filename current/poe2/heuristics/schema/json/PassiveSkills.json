@@ -713,7 +713,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "UnlockedBy",
     "offset": 343,
     "unknownArray": false,
     "unique": false,
@@ -727,7 +727,7 @@
     "size": 16
   },
   {
-    "name": "AscendancyUnlock",
+    "name": "VisibleForAscendancy",
     "offset": 359,
     "unknownArray": false,
     "unique": false,
@@ -754,7 +754,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "NodeFrameArt",
     "offset": 376,
     "unknownArray": false,
     "unique": false,
@@ -762,7 +762,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
       }
     },
     "size": 16

@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1765898565,
+  "createdAt": 1766048402,
   "tables": [
     {
       "validFor": 1,
@@ -102826,7 +102826,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "UnlockedBy",
           "description": null,
           "array": true,
           "type": "row",
@@ -102841,7 +102841,7 @@
           "interval": false
         },
         {
-          "name": "AscendancyUnlock",
+          "name": "VisibleForAscendancy",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -102869,13 +102869,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "NodeFrameArt",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "PassiveSkillTreeNodeFrameArt"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -103427,6 +103429,71 @@
           "references": {
             "table": "PassiveSkillTreeUIArt"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -111457,7 +111524,7 @@
           "interval": false
         },
         {
-          "name": "MinionGlobalSkillLevelStat",
+          "name": "GlobalSkillLevelStat",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -111740,7 +111807,7 @@
           "interval": false
         },
         {
-          "name": "tier",
+          "name": "Tier",
           "description": null,
           "array": false,
           "type": "i32",
@@ -124254,6 +124321,19 @@
           "name": null,
           "description": null,
           "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
           "type": "i32",
           "unique": false,
           "localized": false,
