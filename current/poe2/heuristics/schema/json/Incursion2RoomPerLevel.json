@@ -80,7 +80,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Mod",
     "offset": 52,
     "unknownArray": false,
     "unique": false,
@@ -88,13 +88,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ModValues",
     "offset": 68,
     "unknownArray": false,
     "unique": false,
@@ -109,12 +110,15 @@
     "size": 16
   },
   {
+    "name": "Description2",
+    "offset": 84,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 84,
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]

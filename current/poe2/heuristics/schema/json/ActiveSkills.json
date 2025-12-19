@@ -425,7 +425,7 @@
     "size": 8
   },
   {
-    "name": "MinionType",
+    "name": "",
     "offset": 273,
     "unknownArray": false,
     "unique": false,
@@ -433,8 +433,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "MinionType"
+        "foreign": true
       }
     },
     "size": 16

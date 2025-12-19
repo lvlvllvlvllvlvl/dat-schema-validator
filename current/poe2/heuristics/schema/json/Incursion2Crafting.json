@@ -134,7 +134,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "SoundEffect",
     "offset": 69,
     "unknownArray": false,
     "unique": false,
@@ -142,18 +142,22 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
+    "name": "CanTakeCurrency",
+    "offset": 85,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 85,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]
