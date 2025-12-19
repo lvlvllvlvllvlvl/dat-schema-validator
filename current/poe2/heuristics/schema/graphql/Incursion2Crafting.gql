@@ -11,4 +11,5 @@ type Incursion2Crafting {
   _: i32
   GlowIcon_DDSFile: string @file(ext: ".dds")
   _: rid
+  _: bool
 }

@@ -8,4 +8,5 @@ type Incursion2RoomPerLevel {
   Icon_DDSFile: string @file(ext: ".dds")
   _: rid
   _: [i32]
+  _: string
 }
