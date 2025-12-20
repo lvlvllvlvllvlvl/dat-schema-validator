@@ -48,45 +48,25 @@
     "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 32,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": false
       }
     },
-    "offset": 36,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 8
   },
   {
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 40,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -94,11 +74,14 @@
         "size": 4
       }
     },
-    "offset": 56,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 44,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -106,18 +89,61 @@
         "size": 4
       }
     },
-    "offset": 60,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "Inverse1",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 60,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Inverse2",
     "offset": 64,
-    "size": 8,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   },
   {
     "type": {
