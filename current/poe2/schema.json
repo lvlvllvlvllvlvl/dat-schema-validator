@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1766306869,
+  "createdAt": 1766473539,
   "tables": [
     {
       "validFor": 1,
@@ -37321,7 +37321,7 @@
     },
     {
       "validFor": 3,
-      "name": "brequelpassivesubtrees",
+      "name": "BrequelPassiveSubTrees",
       "columns": [
         {
           "name": "Id",
@@ -102659,7 +102659,7 @@
           "unique": false,
           "localized": false,
           "references": {
-            "table": "brequelpassivesubtrees"
+            "table": "BrequelPassiveSubTrees"
           },
           "until": null,
           "file": null,
@@ -138788,7 +138788,7 @@
     },
     {
       "validFor": 2,
-      "name": "MonsterShapeshift",
+      "name": "MonsterShapeShift",
       "columns": [
         {
           "name": "Id",
