@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1766473539,
+  "createdAt": 1766716636,
   "tables": [
     {
       "validFor": 1,
@@ -137067,7 +137067,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "UpgradedBy",
           "description": null,
           "array": true,
           "type": "row",
@@ -137082,7 +137082,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "ConvertedBy",
           "description": null,
           "array": true,
           "type": "row",
@@ -137097,7 +137097,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "ConvertedTo",
           "description": null,
           "array": true,
           "type": "row",
@@ -137112,7 +137112,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "UpgradedByPower",
           "description": null,
           "array": false,
           "type": "i32",
@@ -137125,7 +137125,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsPastExclusive",
           "description": null,
           "array": false,
           "type": "bool",
@@ -137138,7 +137138,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsBossReward",
           "description": null,
           "array": false,
           "type": "bool",
