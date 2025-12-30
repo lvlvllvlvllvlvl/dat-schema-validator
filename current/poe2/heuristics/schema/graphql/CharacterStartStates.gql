@@ -2,20 +2,20 @@
 type CharacterStartStates {
   Id: string @unique
   Description: string @localized
-  CharactersKey: Characters
+  Character: Characters
   Level: i32
   PassiveSkillsKeys: [PassiveSkills]
-  CharacterStartStateSetKey: CharacterStartStateSet
+  CharacterStartStateSet: CharacterStartStateSet
   _: rid
-  CharacterStartQuestStateKeys: [CharacterStartQuestState]
+  CharacterStartQuestStates: [CharacterStartQuestState]
   _: bool
   InfoText: string
   _: rid
-  _: [_]
-  _: [_]
+  _: [rid]
+  _: [rid]
   _: [_] # All rows empty
   _: [_] # All rows empty
-  _: [_]
-  _: [_]
+  _: [rid]
+  _: [rid]
   _: bool
 }

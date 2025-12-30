@@ -25,7 +25,7 @@
     "localized": true
   },
   {
-    "name": "CharactersKey",
+    "name": "Character",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -70,7 +70,7 @@
     "size": 16
   },
   {
-    "name": "CharacterStartStateSetKey",
+    "name": "CharacterStartStateSet",
     "offset": 52,
     "unknownArray": false,
     "unique": false,
@@ -99,7 +99,7 @@
     "size": 16
   },
   {
-    "name": "CharacterStartQuestStateKeys",
+    "name": "CharacterStartQuestStates",
     "offset": 84,
     "unknownArray": false,
     "unique": false,
@@ -152,28 +152,32 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 125,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 125,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 141,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 141,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "type": {
@@ -202,36 +206,43 @@
     "unique": false
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "",
     "offset": 189,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 205,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 205,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 221,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 221,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

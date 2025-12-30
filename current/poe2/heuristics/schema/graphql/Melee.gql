@@ -3,17 +3,17 @@ type Melee {
   ActiveSkill: ActiveSkills
   _: i32
   MiscAnimated: MiscAnimated
-  MeleeTrailsKey1: MeleeTrails
-  MeleeTrailsKey2: MeleeTrails
-  MeleeTrailsKey3: MeleeTrails
-  MeleeTrailsKey4: MeleeTrails
-  MeleeTrailsKey5: MeleeTrails
-  MeleeTrailsKey6: MeleeTrails
-  MeleeTrailsKey7: MeleeTrails
+  MeleeTrail1: MeleeTrails
+  MeleeTrail2: MeleeTrails
+  MeleeTrail3: MeleeTrails
+  MeleeTrail4: MeleeTrails
+  MeleeTrail5: MeleeTrails
+  MeleeTrail6: MeleeTrails
+  MeleeTrail7: MeleeTrails
   _: bool
   SurgeEffect_EPKFile: string @file(ext: ".epk")
   _: string
   _: string
-  _: rid
-  _: rid
+  MeleeTrail8: MeleeTrails
+  MeleeTrail9: MeleeTrails
 }

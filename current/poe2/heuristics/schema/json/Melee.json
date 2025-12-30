@@ -45,7 +45,7 @@
     "size": 16
   },
   {
-    "name": "MeleeTrailsKey1",
+    "name": "MeleeTrail1",
     "offset": 36,
     "unknownArray": false,
     "unique": false,
@@ -60,7 +60,7 @@
     "size": 16
   },
   {
-    "name": "MeleeTrailsKey2",
+    "name": "MeleeTrail2",
     "offset": 52,
     "unknownArray": false,
     "unique": false,
@@ -75,7 +75,7 @@
     "size": 16
   },
   {
-    "name": "MeleeTrailsKey3",
+    "name": "MeleeTrail3",
     "offset": 68,
     "unknownArray": false,
     "unique": false,
@@ -90,7 +90,7 @@
     "size": 16
   },
   {
-    "name": "MeleeTrailsKey4",
+    "name": "MeleeTrail4",
     "offset": 84,
     "unknownArray": false,
     "unique": false,
@@ -105,7 +105,7 @@
     "size": 16
   },
   {
-    "name": "MeleeTrailsKey5",
+    "name": "MeleeTrail5",
     "offset": 100,
     "unknownArray": false,
     "unique": false,
@@ -120,7 +120,7 @@
     "size": 16
   },
   {
-    "name": "MeleeTrailsKey6",
+    "name": "MeleeTrail6",
     "offset": 116,
     "unknownArray": false,
     "unique": false,
@@ -135,7 +135,7 @@
     "size": 16
   },
   {
-    "name": "MeleeTrailsKey7",
+    "name": "MeleeTrail7",
     "offset": 132,
     "unknownArray": false,
     "unique": false,
@@ -198,25 +198,33 @@
     "size": 8
   },
   {
+    "name": "MeleeTrail8",
+    "offset": 173,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MeleeTrails"
       }
     },
-    "offset": 173,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "MeleeTrail9",
+    "offset": 189,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MeleeTrails"
       }
     },
-    "offset": 189,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]
