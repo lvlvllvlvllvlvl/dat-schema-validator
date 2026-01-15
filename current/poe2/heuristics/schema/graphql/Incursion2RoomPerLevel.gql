@@ -8,5 +8,5 @@ type Incursion2RoomPerLevel {
   Icon_DDSFile: string @file(ext: ".dds")
   Mod: Mods
   ModValues: [i32]
-  Description2: string
+  Description2: string @localized
 }
