@@ -30,25 +30,26 @@ type PassiveSkills {
   _: i32
   IsExpansion: bool
   IsProxyPassive: bool
+  "0: Character, 1: Atlas, 2: Genesis"
   SkillType: PassiveSkillTypes
   MasteryGroup: PassiveSkillMasteryGroups
-  Group: AtlasPassiveSkillTreeGroupType
+  AtlasGroup: AtlasPassiveSkillTreeGroupType
   SoundEffect: SoundEffects
-  _: string @localized
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: bool
-  _: [rid]
-  _: i32
-  _: [rid]
-  _: bool
+  NameHardmode: string @localized
+  HasHardmodeAlternate: bool
+  Stat1ValueHardmode: i32
+  Stat2ValueHardmode: i32
+  Stat3ValueHardmode: i32
+  Stat4ValueHardmode: i32
+  Stat5ValueHardmode: i32
+  StatsHardmode: [Stats]
+  SkillPointsGrantedHardmode: i32
+  BuffsHardmode: [BuffTemplates]
+  IsAtlasWormhole: bool
   DescendancyKey: Descendancy
-  _: rid
+  GrantedEffectsPerLevelHardmode: GrantedEffectsPerLevel
   BrequelSubTree: BrequelPassiveSubTrees
+  IsBrequelStartingNode: bool
   _: bool
-  _: bool
-  _: bool
+  IsBrequelWomb: bool
 }

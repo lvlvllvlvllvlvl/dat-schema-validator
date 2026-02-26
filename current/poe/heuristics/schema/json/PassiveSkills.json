@@ -425,7 +425,7 @@
     "size": 16
   },
   {
-    "name": "Group",
+    "name": "AtlasGroup",
     "offset": 204,
     "unknownArray": false,
     "unique": false,
@@ -455,7 +455,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "NameHardmode",
     "offset": 236,
     "unknownArray": false,
     "unique": false,
@@ -468,83 +468,8 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "HasHardmodeAlternate",
     "offset": 244,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 248,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 252,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 256,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 260,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 264,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -555,7 +480,82 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Stat1ValueHardmode",
+    "offset": 245,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Stat2ValueHardmode",
+    "offset": 249,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Stat3ValueHardmode",
+    "offset": 253,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Stat4ValueHardmode",
+    "offset": 257,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Stat5ValueHardmode",
+    "offset": 261,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "StatsHardmode",
     "offset": 265,
     "unknownArray": false,
     "unique": false,
@@ -563,13 +563,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "SkillPointsGrantedHardmode",
     "offset": 281,
     "unknownArray": false,
     "unique": false,
@@ -584,7 +585,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "BuffsHardmode",
     "offset": 285,
     "unknownArray": false,
     "unique": false,
@@ -592,13 +593,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffTemplates"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "IsAtlasWormhole",
     "offset": 301,
     "unknownArray": false,
     "unique": false,
@@ -625,7 +627,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "GrantedEffectsPerLevelHardmode",
     "offset": 318,
     "unknownArray": false,
     "unique": false,
@@ -633,7 +635,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GrantedEffectsPerLevel"
       }
     },
     "size": 16
@@ -654,7 +657,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "IsBrequelStartingNode",
     "offset": 350,
     "unknownArray": false,
     "unique": false,
@@ -678,7 +681,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "IsBrequelWomb",
     "offset": 352,
     "unknownArray": false,
     "unique": false,

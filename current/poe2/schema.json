@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1767117267,
+  "createdAt": 1772106474,
   "tables": [
     {
       "validFor": 1,
@@ -32032,13 +32032,15 @@
       "name": "AncestralTrialChieftains",
       "columns": [
         {
-          "name": null,
+          "name": "Tribe",
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AncestralTrialTribes"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -32956,13 +32958,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "NPC",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "NPCs"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -103897,7 +103901,7 @@
         },
         {
           "name": "SkillType",
-          "description": null,
+          "description": "0: Character, 1: Atlas, 2: Genesis",
           "array": false,
           "type": "enumrow",
           "unique": false,
@@ -103926,7 +103930,7 @@
           "interval": false
         },
         {
-          "name": "Group",
+          "name": "AtlasGroup",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -103956,7 +103960,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "NameHardmode",
           "description": null,
           "array": false,
           "type": "string",
@@ -103969,72 +103973,7 @@
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
+          "name": "HasHardmodeAlternate",
           "description": null,
           "array": false,
           "type": "bool",
@@ -104047,20 +103986,7 @@
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": true,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
+          "name": "Stat1ValueHardmode",
           "description": null,
           "array": false,
           "type": "i32",
@@ -104073,10 +103999,10 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Stat2ValueHardmode",
           "description": null,
-          "array": true,
-          "type": "foreignrow",
+          "array": false,
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -104086,7 +104012,89 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Stat3ValueHardmode",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Stat4ValueHardmode",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Stat5ValueHardmode",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StatsHardmode",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SkillPointsGrantedHardmode",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BuffsHardmode",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BuffTemplates"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "IsAtlasWormhole",
           "description": null,
           "array": false,
           "type": "bool",
@@ -104114,13 +104122,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "GrantedEffectsPerLevelHardmode",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "GrantedEffectsPerLevel"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -104142,7 +104152,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsBrequelStartingNode",
           "description": null,
           "array": false,
           "type": "bool",
@@ -104168,7 +104178,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsBrequelWomb",
           "description": null,
           "array": false,
           "type": "bool",

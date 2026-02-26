@@ -1,7 +1,7 @@
 # Added 3.22
 type AncestralTrialTribes {
   Id: string @unique
-  _: rid
+  NPC: NPCs
   Portrait: string
   TribeIcon: string
   TribeName: string @unique @localized
