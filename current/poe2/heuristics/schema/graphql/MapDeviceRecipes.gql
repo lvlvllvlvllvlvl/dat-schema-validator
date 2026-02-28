@@ -2,7 +2,7 @@
 type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   Id: string @unique
   RecipeItems: [BaseItemTypes]
-  _: [_]
+  _: [string]
   _: rid
   _: i32
   _: rid
