@@ -78,4 +78,5 @@ type Mods @tags(list: ["crafting"]) {
   "0: All, 1: Normal, 2: Ruthless"
   GameMode: i32
   _: [GrantedEffectsPerLevel]
+  _: bool
 }

@@ -208,14 +208,25 @@
   {
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
     "offset": 121,
     "size": 16,
+    "noData": true,
     "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 137,
+    "size": 16,
     "unique": false
   }
 ]

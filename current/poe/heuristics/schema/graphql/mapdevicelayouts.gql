@@ -1,0 +1,13 @@
+type mapdevicelayouts {
+  _: string @unique
+  _: i32
+  _: [_]
+  _: string
+  _: [_]
+  _: [_]
+  _: rid
+  _: bool
+  _: i32
+  _: [_]
+  _: [_]
+}

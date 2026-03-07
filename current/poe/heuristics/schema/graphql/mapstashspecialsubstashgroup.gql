@@ -1,0 +1,13 @@
+type mapstashspecialsubstashgroup {
+  _: string @unique
+  _: rid
+  _: string @unique @localized
+  _: bool
+  _: bool
+  _: rid
+  _: rid
+  _: rid
+  _: string
+  _: i32
+  _: i32
+}

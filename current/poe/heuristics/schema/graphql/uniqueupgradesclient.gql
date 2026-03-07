@@ -1,0 +1,4 @@
+type uniqueupgradesclient {
+  _: rid @unique
+  _: [_]
+}

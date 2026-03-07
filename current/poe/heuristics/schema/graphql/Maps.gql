@@ -6,8 +6,6 @@ type Maps @tags(list: ["item:def", "item:recipe"]) {
   MapUpgrade_BaseItemTypesKey: BaseItemTypes
   MonsterPacksKeys: [MonsterPacks]
   AchievementItem: AchievementItems
-  Regular_GuildCharacter: string
-  Unique_GuildCharacter: string
   Tier: i32
   Shaped_Base_MapsKey: Maps
   Shaped_AreaLevel: i32

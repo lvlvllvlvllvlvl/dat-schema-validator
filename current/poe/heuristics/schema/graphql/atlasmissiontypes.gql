@@ -1,0 +1,9 @@
+type atlasmissiontypes {
+  _: string @unique
+  _: [_]
+  _: [_]
+  _: rid @unique
+  _: i32
+  _: i32
+  _: rid
+}

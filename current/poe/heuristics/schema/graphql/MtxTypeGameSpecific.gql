@@ -6,4 +6,5 @@ type MtxTypeGameSpecific {
   Category: MicrotransactionCategory @ref(column: "Id")
   _: [i32]
   _: i32
+  _: [_]
 }

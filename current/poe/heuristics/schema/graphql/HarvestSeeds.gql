@@ -10,4 +10,5 @@ type HarvestSeeds {
   _: i32
   HatchAnimation: string @file(ext: ".ao")
   SeedType: i32
+  _: bool
 }

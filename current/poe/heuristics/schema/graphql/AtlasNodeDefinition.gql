@@ -1,10 +1,20 @@
 # Added 3.11
 type AtlasNodeDefinition {
-  WorldAreasKey: WorldAreas
-  ItemVisualIdentityKey: ItemVisualIdentity @unique
-  _: bool
-  Tier: i32
+  Id: string @unique
+  Area1: WorldAreas
   _: i32
   _: i32
   _: bool
+  _: bool
+  Image: string @file(ext: ".dds")
+  _: bool
+  _: bool
+  _: rid
+  _: rid
+  QuestStates: [i32]
+  _: bool
+  _: rid
+  Area2: WorldAreas
+  _: bool
+  _: rid
 }

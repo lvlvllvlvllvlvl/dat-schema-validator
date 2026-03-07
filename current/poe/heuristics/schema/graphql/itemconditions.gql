@@ -1,0 +1,11 @@
+type itemconditions {
+  _: string @unique
+  _: [_] # All rows empty
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+  _: f32
+  _: u16 # All rows empty
+  _: bool
+}

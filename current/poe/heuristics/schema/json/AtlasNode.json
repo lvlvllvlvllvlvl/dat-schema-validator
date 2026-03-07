@@ -1,9 +1,21 @@
 [
   {
-    "name": "WorldAreasKey",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Area1",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -15,23 +27,8 @@
     "size": 16
   },
   {
-    "name": "ItemVisualIdentityKey",
-    "offset": 16,
-    "unknownArray": false,
-    "unique": true,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "ItemVisualIdentity"
-      }
-    },
-    "size": 16
-  },
-  {
     "name": "",
-    "offset": 32,
+    "offset": 24,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -42,23 +39,8 @@
     "size": 1
   },
   {
-    "name": "MapsKey",
-    "offset": 33,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "Maps"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "FlavourTextKey",
-    "offset": 49,
+    "name": "FlavourText",
+    "offset": 25,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -72,8 +54,8 @@
     "size": 16
   },
   {
-    "name": "AtlasNodeKeys",
-    "offset": 65,
+    "name": "Connections",
+    "offset": 41,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -86,83 +68,8 @@
     "size": 16
   },
   {
-    "name": "Tier0",
-    "offset": 81,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Tier1",
-    "offset": 85,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Tier2",
-    "offset": 89,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Tier3",
-    "offset": 93,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "Tier4",
-    "offset": 97,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
     "name": "",
-    "offset": 101,
+    "offset": 57,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -176,7 +83,7 @@
   },
   {
     "name": "",
-    "offset": 105,
+    "offset": 61,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -190,7 +97,7 @@
   },
   {
     "name": "",
-    "offset": 109,
+    "offset": 65,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -204,7 +111,7 @@
   },
   {
     "name": "",
-    "offset": 113,
+    "offset": 69,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -218,7 +125,7 @@
   },
   {
     "name": "",
-    "offset": 117,
+    "offset": 73,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -231,8 +138,8 @@
     "size": 4
   },
   {
-    "name": "DDSFile",
-    "offset": 121,
+    "name": "UniqueArt",
+    "offset": 77,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -244,7 +151,7 @@
   },
   {
     "name": "StartingNode",
-    "offset": 129,
+    "offset": 85,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -256,7 +163,79 @@
   },
   {
     "name": "NotOnAtlas",
-    "offset": 130,
+    "offset": 86,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "DivCards",
+    "offset": 87,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "DivCardsHardmode",
+    "offset": 103,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 119,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "HASH16",
+    "offset": 123,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 2
+      }
+    },
+    "size": 2
+  },
+  {
+    "name": "",
+    "offset": 125,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -268,7 +247,7 @@
   },
   {
     "name": "",
-    "offset": 131,
+    "offset": 126,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -283,7 +262,7 @@
   },
   {
     "name": "",
-    "offset": 135,
+    "offset": 130,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -297,63 +276,246 @@
     "size": 4
   },
   {
-    "name": "",
-    "offset": 139,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 143,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "DivCards",
-    "offset": 147,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "BaseItemTypes"
+        "foreign": true
+      }
+    },
+    "offset": 134,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 150,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 151,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "WatchstoneSlot",
+    "offset": 152,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
       }
     },
     "size": 16
   },
   {
     "name": "",
-    "offset": 163,
+    "offset": 168,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "QuestStates",
+    "offset": 184,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "key": {
-        "foreign": true,
-        "table": "BaseItemTypes"
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "size": 16
+  },
+  {
+    "name": "",
+    "offset": 200,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 201,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Area2",
+    "offset": 217,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "WorldAreas"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 233,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 234,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 235,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 239,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 240,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 244,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 248,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 252,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 256,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   }
 ]

@@ -1,0 +1,16 @@
+type FaridunWishes {
+  Id: string @unique
+  _: i32
+  _: [_] # All rows empty
+  Icon: string
+  _: rid
+  _: [_] # All rows empty
+  _: rid
+  _: i32
+  _: i32
+  Name: string @localized
+  _: rid
+  _: i32
+  _: [_] # All rows empty
+  _: i32
+}

@@ -12,4 +12,10 @@ type AtlasPrimordialBossOptions {
   ProgressTrackerFill: string
   Name: string @localized
   MapDeviceTrackerFill: string
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique @localized
+  _: i32 # All rows empty
+  _: i32 # All rows empty
 }

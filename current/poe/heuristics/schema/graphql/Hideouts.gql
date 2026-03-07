@@ -10,11 +10,10 @@ type Hideouts {
   Weight: i32
   Rarity: HideoutRarity
   NotActsArea: bool
-  Name: string
   _: [i32]
   _: bool
   _: bool
   _: bool
-  _: rid
+  UnlockMtx: MtxTypes
   ErrorMessage: string @localized
 }

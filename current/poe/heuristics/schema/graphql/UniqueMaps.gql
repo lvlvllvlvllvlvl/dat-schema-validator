@@ -4,8 +4,7 @@ type UniqueMaps @tags(list: ["item:unique"]) {
   WorldAreasKey: WorldAreas
   WordsKey: Words
   FlavourTextKey: FlavourText
-  HasGuildCharacter: bool
-  GuildCharacter: string
+  _: bool
   Name: string @localized
   IsDropDisabled: bool
 }

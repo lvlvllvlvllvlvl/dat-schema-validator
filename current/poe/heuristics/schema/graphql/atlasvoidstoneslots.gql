@@ -1,0 +1,14 @@
+type atlasvoidstoneslots {
+  _: string @unique
+  _: rid @unique
+  _: i32 # All rows empty
+  _: i32 @unique
+  _: string @unique @localized
+  _: rid @unique
+  _: string @unique @localized
+  _: [_] # All rows empty
+  _: string @unique
+  _: string @unique
+  _: rid @unique
+  _: rid @unique
+}

@@ -213,13 +213,13 @@
   {
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
     "offset": 196,
     "size": 16,
+    "noData": true,
     "unknownArray": true,
     "unique": false
   }

@@ -1,0 +1,12 @@
+type dynamiccraftingbenchtypes {
+  _: string @unique
+  _: string @unique
+  _: string
+  _: string @unique
+  _: string @unique
+  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
+  _: [_]
+  _: i32 # All rows empty
+}

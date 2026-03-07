@@ -101,7 +101,7 @@
     },
     "offset": 53,
     "size": 4,
-    "unique": true
+    "unique": false
   },
   {
     "type": {
@@ -133,6 +133,17 @@
     },
     "offset": 62,
     "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 66,
+    "size": 16,
     "unique": false
   }
 ]

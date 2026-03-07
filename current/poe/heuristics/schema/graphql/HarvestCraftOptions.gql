@@ -15,4 +15,5 @@ type HarvestCraftOptions @tags(list: ["crafting"]) {
   _: bool
   Achievements: [AchievementItems]
   _: i32
+  _: i32
 }

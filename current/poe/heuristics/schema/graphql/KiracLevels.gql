@@ -2,4 +2,5 @@
 type KiracLevels {
   AreaLevel: i32
   _: i32
+  _: i32 @unique
 }

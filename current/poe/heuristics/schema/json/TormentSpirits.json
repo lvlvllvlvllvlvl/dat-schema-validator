@@ -174,5 +174,16 @@
     "offset": 128,
     "size": 16,
     "unique": true
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 144,
+    "size": 16,
+    "unique": false
   }
 ]

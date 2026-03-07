@@ -3,4 +3,6 @@ type GameLogos {
   Id: string @unique
   LogoIntl: string
   LogoTW: string
+  _: string
+  _: string
 }

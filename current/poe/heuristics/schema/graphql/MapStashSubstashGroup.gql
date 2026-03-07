@@ -1,8 +1,0 @@
-# Added 3.22
-type MapStashSubstashGroup {
-  Id: string @unique
-  Label: string @localized
-  Icon: string
-  _: rid
-  Description: string @localized
-}

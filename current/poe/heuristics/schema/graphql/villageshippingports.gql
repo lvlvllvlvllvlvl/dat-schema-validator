@@ -9,8 +9,9 @@ type villageshippingports {
   _: i32 @unique
   _: i32 @unique
   _: i32 @unique
-  _: i32 @unique
+  _: i32
   _: i32 @unique
   _: bool
   _: f32
+  _: rid
 }

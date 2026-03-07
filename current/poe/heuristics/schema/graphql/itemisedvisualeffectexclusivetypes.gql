@@ -1,4 +1,4 @@
 # Added 3.24
 type itemisedvisualeffectexclusivetypes {
-  _: string
+  _: string @unique
 }

@@ -3,7 +3,7 @@ type AlternatePassiveSkills {
   Id: string @unique
   AlternateTreeVersionsKey: AlternateTreeVersions
   Name: string @localized
-  PassiveType: [i32]
+  PassiveType: [PassiveSkillSizes]
   StatsKeys: [Stats]
   Stat1Min: i32
   Stat1Max: i32

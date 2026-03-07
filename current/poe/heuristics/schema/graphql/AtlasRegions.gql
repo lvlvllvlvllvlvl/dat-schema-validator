@@ -1,0 +1,7 @@
+# Added 3.11
+type AtlasRegions {
+  _: string @unique
+  _: rid @unique
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+}

@@ -64,4 +64,5 @@ type Characters {
   _: i32
   _: f32
   _: rid
+  _: rid @unique
 }

@@ -6,7 +6,7 @@ type brequelfruitrewardtypes {
   _: string @unique @localized
   _: string @unique @localized
   _: [_] # All rows empty
-  _: [_]
+  _: [_] # All rows empty
   _: rid @unique
   _: rid @unique
 }

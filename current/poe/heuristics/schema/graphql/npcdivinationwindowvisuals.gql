@@ -1,10 +1,5 @@
 # Added 3.26
 type npcdivinationwindowvisuals {
-  _: bool @unique
-  _: i32
-  _: i32 # All rows empty
-  _: rid
-  _: i32 # All rows empty
-  _: u16 # All rows empty
-  _: bool
+  _: rid @unique
+  _: rid @unique
 }

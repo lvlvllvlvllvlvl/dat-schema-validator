@@ -1,0 +1,5 @@
+type mapnodeheader {
+  _: string @unique
+  _: string @unique
+  _: [_]
+}
