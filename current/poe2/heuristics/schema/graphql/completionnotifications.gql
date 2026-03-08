@@ -5,8 +5,8 @@ type completionnotifications {
   _: string @localized
   _: f32
   _: string
-  _: string @localized
-  _: [_] # All rows empty
+  _: rid
+  _: string
   _: [_]
   _: rid
   _: rid

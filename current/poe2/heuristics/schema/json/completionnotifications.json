@@ -51,24 +51,21 @@
   {
     "type": {
       "array": false,
-      "string": {}
-    },
-    "offset": 36,
-    "size": 8,
-    "unique": false,
-    "localized": true
-  },
-  {
-    "type": {
-      "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 44,
+    "offset": 36,
     "size": 16,
-    "noData": true,
-    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 52,
+    "size": 8,
     "unique": false
   },
   {
