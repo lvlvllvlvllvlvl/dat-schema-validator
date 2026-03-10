@@ -49,8 +49,7 @@ type ItemVisualIdentity {
   _: bool
   _: [rid]
   _: string
-  "0: Standard, 1: Flask, 2: Divination Card, 3: Gem"
-  Composition: i32
+  Composition: ItemVisualCompositions
   _: rid
   _: rid
   _: rid

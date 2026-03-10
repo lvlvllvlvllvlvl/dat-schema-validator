@@ -1,0 +1,8 @@
+# Added 3.28
+type BrequelGrafts {
+  Id: string @unique
+  Arm: string
+  SkillGem: SkillGems
+  _: i32
+  SkillAnimation: string
+}

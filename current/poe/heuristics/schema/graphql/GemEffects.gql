@@ -11,5 +11,5 @@ type GemEffects {
   GemTags: [GemTags]
   Consumed_ModsKey: Mods
   "Used by gem icon shader https://gist.github.com/zao/08878df57aba605e5fa1e6373f2dce02"
-  ItemColor: i32
+  ItemColor: GemStyles
 }

@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1772834873,
+  "createdAt": 1773171283,
   "tables": [
     {
       "validFor": 1,
@@ -38163,7 +38163,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Wombgift",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -38183,29 +38183,14 @@
     },
     {
       "validFor": 3,
-      "name": "BrequelGraftTypes",
+      "name": "BrequelGrafts",
       "columns": [
         {
-          "name": "BaseItemType",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": true,
-          "localized": false,
-          "references": {
-            "table": "BaseItemTypes"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "LeftArm",
+          "name": "Id",
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -38214,7 +38199,7 @@
           "interval": false
         },
         {
-          "name": "RightArm",
+          "name": "Arm",
           "description": null,
           "array": false,
           "type": "string",
@@ -38266,24 +38251,10 @@
           "file": null,
           "files": null,
           "interval": false
-        },
-        {
-          "name": "Achievement",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "AchievementItems"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
         }
       ],
-      "tags": []
+      "tags": [],
+      "added": "3.28.0.1.4"
     },
     {
       "validFor": 3,
@@ -77437,12 +77408,14 @@
         },
         {
           "name": "Composition",
-          "description": "0: Standard, 1: Flask, 2: Divination Card, 3: Gem",
+          "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "ItemVisualCompositions"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -78430,12 +78403,14 @@
         },
         {
           "name": "Composition",
-          "description": "0: Standard, 1: Flask, 2: Divination Card, 3: Gem",
+          "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "ItemVisualCompositions"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -82808,6 +82783,19 @@
         },
         {
           "name": "KeepersTier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "MirageTier",
           "description": null,
           "array": false,
           "type": "i32",
@@ -126356,10 +126344,12 @@
           "name": "ItemColor",
           "description": "Used by gem icon shader https://gist.github.com/zao/08878df57aba605e5fa1e6373f2dce02",
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "GemStyles"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -145320,6 +145310,27 @@
       "enumerators": []
     },
     {
+      "validFor": 1,
+      "name": "ItemVisualCompositions",
+      "indexing": 0,
+      "enumerators": [
+        "DEFAULT",
+        "FLASK",
+        "DIVCARD",
+        "GEM"
+      ]
+    },
+    {
+      "validFor": 2,
+      "name": "ItemVisualCompositions",
+      "indexing": 0,
+      "enumerators": [
+        "DEFAULT",
+        "FLASK",
+        "DIVCARD"
+      ]
+    },
+    {
       "validFor": 3,
       "name": "LeagueCategory",
       "indexing": 0,
@@ -145788,6 +145799,18 @@
         "VILLAGER_SUFFIX",
         "MERCENARY_PREFIX",
         "MERCENARY_SUFFIX"
+      ]
+    },
+    {
+      "validFor": 3,
+      "name": "GemStyles",
+      "indexing": 1,
+      "enumerators": [
+        "TRANSFIGURED_X",
+        "TRANSFIGURED_Y",
+        "TRARTHAN",
+        "EXCEPTIONAL",
+        "DEFAULT"
       ]
     },
     {
