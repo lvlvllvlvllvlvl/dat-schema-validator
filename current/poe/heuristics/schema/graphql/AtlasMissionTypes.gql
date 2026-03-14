@@ -1,0 +1,10 @@
+# Added 3.28
+type AtlasMissionTypes {
+  Id: string @unique
+  Stats: [Stats]
+  StatValues: [i32]
+  Astrolabe: BaseItemTypes
+  _: i32
+  _: i32
+  _: rid
+}
