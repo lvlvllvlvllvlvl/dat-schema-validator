@@ -1,0 +1,7 @@
+# Added 3.28
+type MapKeys {
+  BaseItemType: BaseItemTypes @unique
+  MapTier: i32
+  KeyTier: i32
+  IsSpecial: bool
+}
