@@ -1,0 +1,6 @@
+# Added 3.28
+type MapNodeHeader {
+  Id: string @unique
+  _: string
+  _: [i32]
+}

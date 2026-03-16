@@ -213,7 +213,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Header",
     "offset": 126,
     "unknownArray": false,
     "unique": false,
@@ -221,7 +221,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MapNodeHeader"
       }
     },
     "size": 16

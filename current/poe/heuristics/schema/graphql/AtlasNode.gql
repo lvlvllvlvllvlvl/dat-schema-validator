@@ -15,14 +15,14 @@ type AtlasNode {
   NotOnAtlas: bool
   DivCards: [BaseItemTypes]
   DivCardsHardmode: [BaseItemTypes]
-  _: i32
+  Tier: i32
   HASH16: i16
-  _: bool
-  _: i32
+  IsUniqueMap: bool
+  Region: i32
   _: i32
   _: [_] # All rows empty
   _: bool
-  _: bool
+  RequiresSpecificItem: bool
   WatchstoneSlot: rid
   _: rid
   QuestStates: [i32]

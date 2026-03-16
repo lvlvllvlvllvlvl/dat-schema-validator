@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1773617480,
+  "createdAt": 1773674875,
   "tables": [
     {
       "validFor": 1,
@@ -45015,7 +45015,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -45216,7 +45216,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Tier",
           "description": null,
           "array": false,
           "type": "i32",
@@ -45242,7 +45242,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsUniqueMap",
           "description": null,
           "array": false,
           "type": "bool",
@@ -45255,7 +45255,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Region",
           "description": null,
           "array": false,
           "type": "i32",
@@ -45307,7 +45307,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "RequiresSpecificItem",
           "description": null,
           "array": false,
           "type": "bool",
@@ -45737,13 +45737,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Header",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "MapNodeHeader"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -45812,6 +45814,234 @@
       ],
       "tags": [],
       "added": "4.1.0.10.2"
+    },
+    {
+      "validFor": 3,
+      "name": "AtlasRegions",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "MemoryVault",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "WorldAreas"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
+      "name": "AtlasVoidstoneSlots",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SlotNumber",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Voidstone",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "QuestFlag",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "QuestFlags"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
     },
     {
       "validFor": 1,
@@ -81911,6 +82141,113 @@
       "added": "4.1.0.10.2"
     },
     {
+      "validFor": 3,
+      "name": "MapKeys",
+      "columns": [
+        {
+          "name": "BaseItemType",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": true,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "MapTier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "KeyTier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "IsSpecial",
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
+      "name": "MapNodeHeader",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
       "validFor": 1,
       "name": "MapPins",
       "columns": [
@@ -84021,67 +84358,6 @@
       ],
       "tags": [],
       "added": "4.1.0.10.2"
-    },
-    {
-      "validFor": 3,
-      "name": "MapKeys",
-      "columns": [
-        {
-          "name": "BaseItemType",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": true,
-          "localized": false,
-          "references": {
-            "table": "BaseItemTypes"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "MapTier",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "KeyTier",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "IsSpecial",
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        }
-      ],
-      "tags": []
     },
     {
       "validFor": 1,
