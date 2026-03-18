@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1773674875,
+  "createdAt": 1773822430,
   "tables": [
     {
       "validFor": 1,
@@ -71121,7 +71121,7 @@
           "interval": false
         },
         {
-          "name": "IncrementalEffectiveness",
+          "name": null,
           "description": null,
           "array": false,
           "type": "f32",
@@ -71134,10 +71134,10 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IncrementalEffectiveness",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "f32",
           "unique": false,
           "localized": false,
           "references": null,

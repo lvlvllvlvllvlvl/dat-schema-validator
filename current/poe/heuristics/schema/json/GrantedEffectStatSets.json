@@ -71,7 +71,7 @@
     "size": 4
   },
   {
-    "name": "IncrementalEffectiveness",
+    "name": "",
     "offset": 60,
     "unknownArray": false,
     "unique": false,
@@ -85,15 +85,14 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "IncrementalEffectiveness",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
+      "decimal": {
         "size": 4
       }
     },
