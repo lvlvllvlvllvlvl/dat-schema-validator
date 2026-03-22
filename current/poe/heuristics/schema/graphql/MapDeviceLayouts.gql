@@ -1,0 +1,16 @@
+# Added 3.28
+type MapDeviceLayouts {
+  Id: string @unique
+  Slots: i32
+  _: [i32]
+  Receptacle_DDSFile: string @file(ext: ".dds")
+  _: [f32]
+  _: [f32]
+  MapKey: MapKeys
+  _: i32
+  _: string
+  _: bool
+  _: i32
+  _: i32
+  _: [i32]
+}

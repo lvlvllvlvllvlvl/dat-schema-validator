@@ -1,0 +1,9 @@
+# Added 3.26
+type MemoryLineModifiers {
+  MemoryLineType: MemoryLineType
+  _: i32
+  Stats: [Stats]
+  StatValues: [i32]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+}

@@ -18,13 +18,12 @@ type AtlasNode {
   Tier: i32
   HASH16: i16
   IsUniqueMap: bool
-  Region: i32
-  _: i32
-  _: [_] # All rows empty
-  _: bool
+  Region: AtlasRegions
+  Node_DDSFile: string @file(ext: ".dds")
+  IsNormalMap: bool
   RequiresSpecificItem: bool
-  WatchstoneSlot: rid
-  _: rid
+  VoidstoneSlot: AtlasVoidstoneSlots
+  MapDeviceLayout: MapDeviceLayouts
   QuestStates: [i32]
   _: bool
   _: rid

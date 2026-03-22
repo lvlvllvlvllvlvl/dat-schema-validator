@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "CurrencyItem",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -8,7 +8,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -41,63 +42,83 @@
     "size": 8
   },
   {
+    "name": "",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 28,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "BK2File2",
+    "offset": 29,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 29,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
+    "name": "",
+    "offset": 37,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 37,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "Stat",
+    "offset": 38,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
-    "offset": 38,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 54,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "offset": 54,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "SoundEffect",
+    "offset": 58,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
-    "offset": 58,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

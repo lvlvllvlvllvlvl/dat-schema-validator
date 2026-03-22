@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1773822430,
+  "createdAt": 1774131360,
   "tables": [
     {
       "validFor": 1,
@@ -38067,7 +38067,7 @@
     },
     {
       "validFor": 3,
-      "name": "BrequelPassiveSubTrees",
+      "name": "BrequelFruitRewardTypes",
       "columns": [
         {
           "name": "Id",
@@ -38083,15 +38083,26 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Name",
           "description": null,
           "array": false,
-          "type": "foreignrow",
+          "type": "string",
           "unique": false,
           "localized": false,
-          "references": {
-            "table": "ClientStrings"
-          },
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Description",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -38101,11 +38112,63 @@
           "name": null,
           "description": null,
           "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "AchievementItem",
+          "description": null,
+          "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "ClientStrings"
+            "table": "AchievementItems"
           },
           "until": null,
           "file": null,
@@ -38113,15 +38176,104 @@
           "interval": false
         },
         {
-          "name": "Wombgift",
+          "name": "AchievementItemHardmode",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
+          "localized": false,
+          "references": {
+            "table": "AchievementItems"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
+      "name": "BrequelFruitTypes",
+      "columns": [
+        {
+          "name": "BaseItemType",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Reward",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BrequelFruitRewardTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -38196,6 +38348,108 @@
           "unique": false,
           "localized": false,
           "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
+      "name": "BrequelPassiveSubTrees",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ClientStrings"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ClientStrings"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Wombgift",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
+      "name": "BrequelTreeSlots",
+      "columns": [
+        {
+          "name": "PassiveSkill",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": true,
+          "localized": false,
+          "references": {
+            "table": "PassiveSkills"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "BrequelSubTree",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BrequelPassiveSubTrees"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -44961,53 +45215,6 @@
     },
     {
       "validFor": 3,
-      "name": "AtlasFavouredMapSlots",
-      "columns": [
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "Requirement",
-          "description": null,
-          "array": false,
-          "type": "string",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        }
-      ],
-      "tags": [],
-      "added": "4.1.0.10.2"
-    },
-    {
-      "validFor": 3,
       "name": "AtlasNode",
       "columns": [
         {
@@ -45258,43 +45465,32 @@
           "name": "Region",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AtlasRegions"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "Node_DDSFile",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
           "until": null,
-          "file": null,
+          "file": ".dds",
           "files": null,
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": true,
-          "type": "array",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
+          "name": "IsNormalMap",
           "description": null,
           "array": false,
           "type": "bool",
@@ -45320,26 +45516,30 @@
           "interval": false
         },
         {
-          "name": "WatchstoneSlot",
+          "name": "VoidstoneSlot",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AtlasVoidstoneSlots"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "MapDeviceLayout",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "MapDeviceLayouts"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -45579,7 +45779,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "NotOnAtlas",
           "description": null,
           "array": false,
           "type": "bool",
@@ -45592,7 +45792,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsUniqueMap",
           "description": null,
           "array": false,
           "type": "bool",
@@ -45605,7 +45805,7 @@
           "interval": false
         },
         {
-          "name": "Image",
+          "name": "Node_DDSFile",
           "description": null,
           "array": false,
           "type": "string",
@@ -45618,7 +45818,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsNormalMap",
           "description": null,
           "array": false,
           "type": "bool",
@@ -45631,7 +45831,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "RequiresSpecificItem",
           "description": null,
           "array": false,
           "type": "bool",
@@ -45644,26 +45844,30 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "VoidstoneSlot",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "AtlasVoidstoneSlots"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "MapDeviceLayout",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "MapDeviceLayouts"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -81495,6 +81699,184 @@
     },
     {
       "validFor": 3,
+      "name": "MapDeviceLayouts",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Slots",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Receptacle_DDSFile",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": ".dds",
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "f32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "MapKey",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "MapKeys"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 3,
       "name": "MapDevices",
       "columns": [
         {
@@ -83338,6 +83720,19 @@
         },
         {
           "name": "UberMemory_DDSFile",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": ".dds",
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Mirage_DDSFile",
           "description": null,
           "array": false,
           "type": "string",
@@ -126419,13 +126814,15 @@
       "name": "CurrencyUseEffects",
       "columns": [
         {
-          "name": null,
+          "name": "CurrencyItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": true,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "BaseItemTypes"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -126454,19 +126851,6 @@
           "references": null,
           "until": null,
           "file": ".bk2",
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "SoundFile",
-          "description": null,
-          "array": false,
-          "type": "string",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": ".ogg",
           "files": null,
           "interval": false
         },
@@ -126510,13 +126894,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Stat",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Stats"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -126530,6 +126916,21 @@
           "unique": false,
           "localized": false,
           "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SoundEffect",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "SoundEffects"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -129702,6 +130103,95 @@
       "tags": []
     },
     {
+      "validFor": 3,
+      "name": "MemoryLineModifiers",
+      "columns": [
+        {
+          "name": "MemoryLineType",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "MemoryLineType"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Stats",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StatValues",
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
       "validFor": 1,
       "name": "MemoryLineType",
       "columns": [
@@ -129710,7 +130200,7 @@
           "description": null,
           "array": false,
           "type": "string",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -129747,32 +130237,6 @@
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "Stats",
           "description": null,
           "array": true,
@@ -129788,7 +130252,7 @@
           "interval": false
         },
         {
-          "name": "StatsValues",
+          "name": "StatValues",
           "description": null,
           "array": true,
           "type": "i32",
@@ -129853,13 +130317,56 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "FinalAtlasNode",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
+          "references": {
+            "table": "AtlasNode"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
           "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Tier",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "CurrencyItem",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
           "until": null,
           "file": null,
           "files": null,

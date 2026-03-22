@@ -1,16 +1,25 @@
 [
   {
+    "name": "MemoryLineType",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MemoryLineType"
       }
     },
-    "offset": 0,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -18,33 +27,37 @@
         "size": 4
       }
     },
-    "offset": 16,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Stats",
     "offset": 20,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "StatValues",
     "offset": 36,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
   },
   {
     "type": {

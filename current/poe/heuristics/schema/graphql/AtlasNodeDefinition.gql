@@ -4,13 +4,13 @@ type AtlasNodeDefinition {
   Area1: WorldAreas
   _: i32
   _: i32
-  _: bool
-  _: bool
-  Image: string @file(ext: ".dds")
-  _: bool
-  _: bool
-  _: rid
-  _: rid
+  NotOnAtlas: bool
+  IsUniqueMap: bool
+  Node_DDSFile: string @file(ext: ".dds")
+  IsNormalMap: bool
+  RequiresSpecificItem: bool
+  VoidstoneSlot: AtlasVoidstoneSlots
+  MapDeviceLayout: MapDeviceLayouts
   QuestStates: [i32]
   _: bool
   _: rid

@@ -12,5 +12,5 @@ type MapSeries {
   Purple_DDSFile: string @file(ext: ".dds")
   Memory_DDSFile: string @file(ext: ".dds")
   UberMemory_DDSFile: string @file(ext: ".dds")
-  _: string
+  Mirage_DDSFile: string @file(ext: ".dds")
 }

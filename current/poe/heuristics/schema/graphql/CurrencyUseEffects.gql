@@ -1,12 +1,12 @@
 # Added 3.21
 type CurrencyUseEffects {
-  _: rid @unique
+  CurrencyItem: BaseItemTypes @unique
   _: i32
   BK2File: string @file(ext: ".bk2")
   _: bool
-  _: string
+  BK2File2: string @file(ext: ".bk2")
   _: bool
-  _: rid
+  Stat: Stats
   _: f32
-  _: rid
+  SoundEffect: SoundEffects
 }

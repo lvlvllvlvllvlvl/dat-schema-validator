@@ -253,43 +253,27 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "AtlasRegions"
       }
     },
-    "size": 4
+    "size": 16
   },
   {
-    "name": "",
-    "offset": 130,
+    "name": "Node_DDSFile",
+    "offset": 142,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "size": 4
+    "size": 8
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
-    "offset": 134,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
-    "name": "",
+    "name": "IsNormalMap",
     "offset": 150,
     "unknownArray": false,
     "unique": false,
@@ -313,7 +297,7 @@
     "size": 1
   },
   {
-    "name": "WatchstoneSlot",
+    "name": "VoidstoneSlot",
     "offset": 152,
     "unknownArray": false,
     "unique": false,
@@ -321,13 +305,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AtlasVoidstoneSlots"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MapDeviceLayout",
     "offset": 168,
     "unknownArray": false,
     "unique": false,
@@ -335,7 +320,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MapDeviceLayouts"
       }
     },
     "size": 16
