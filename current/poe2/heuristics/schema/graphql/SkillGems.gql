@@ -28,4 +28,6 @@ type SkillGems @tags(list: ["item:def"]) {
   _: bool
   _: [rid]
   Tier: i32
+  _: [_]
+  _: [_] # All rows empty
 }
