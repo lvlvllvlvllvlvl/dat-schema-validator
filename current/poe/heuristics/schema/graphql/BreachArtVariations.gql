@@ -10,4 +10,5 @@ type BreachArtVariations {
   _: rid
   _: [_]
   _: rid
+  _: rid @unique
 }
