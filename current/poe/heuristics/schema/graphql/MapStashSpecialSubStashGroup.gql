@@ -1,0 +1,13 @@
+# Added 3.28
+type MapStashSpecialSubStashGroup {
+  Id: string @unique
+  BaseItemTypes: BaseItemTypes
+  Name: string @localized
+  _: bool
+  _: bool
+  ElderGuardian: ElderGuardians
+  ShaperGuardian: ShaperGuardians
+  _: rid
+  _: string
+  _: MapStashSpecialSubStashGroup
+}

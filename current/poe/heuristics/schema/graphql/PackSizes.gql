@@ -1,0 +1,8 @@
+# Added 3.24
+type PackSizes {
+  Id: string @unique
+  Description: string
+  _: i32
+  _: i32
+  _: i32
+}

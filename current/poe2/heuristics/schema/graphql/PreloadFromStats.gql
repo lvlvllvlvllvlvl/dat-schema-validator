@@ -1,10 +1,10 @@
 # Added 4.1
 type PreloadFromStats {
-  _: rid @unique
-  _: [_]
-  _: [_] # All rows empty
-  _: [_]
-  _: [_]
+  Stat: Stats @unique
+  Animation: [MiscAnimated]
+  Object: [MiscObjects]
+  BuffVisual: [BuffVisuals]
+  EffectPack: [MiscEffectPacks]
   _: i32
-  _: [_]
+  GroundEffectType: [GroundEffectTypes]
 }

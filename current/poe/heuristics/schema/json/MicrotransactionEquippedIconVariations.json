@@ -1,14 +1,15 @@
 [
   {
-    "name": "",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16
@@ -26,6 +27,11 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -33,9 +39,6 @@
         "size": 4
       }
     },
-    "offset": 32,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

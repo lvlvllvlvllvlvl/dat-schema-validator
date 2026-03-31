@@ -1,0 +1,9 @@
+# Added 3.25
+type BYOCrafting @tags(list: ["crafting"]) {
+  Id: string @unique
+  Description: string @localized
+  Action: string
+  DescriptionRuthless: string @localized
+  ActionRuthless: string
+  AchievementItems: [AchievementItems]
+}

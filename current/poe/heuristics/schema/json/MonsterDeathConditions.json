@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "BuffDefinition",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,7 +20,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
@@ -53,7 +54,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat",
     "offset": 29,
     "unknownArray": false,
     "unique": false,
@@ -61,7 +62,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
@@ -94,7 +96,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Rarity",
     "offset": 50,
     "unknownArray": false,
     "unique": false,
@@ -102,7 +104,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Rarity"
       }
     },
     "size": 16
@@ -120,7 +123,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Mods",
     "offset": 67,
     "unknownArray": false,
     "unique": false,
@@ -128,7 +131,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
     "size": 16
@@ -161,7 +165,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Animation",
     "offset": 88,
     "unknownArray": false,
     "unique": false,
@@ -169,7 +173,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Animation"
       }
     },
     "size": 16
@@ -190,7 +195,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "ActiveSkill1",
     "offset": 108,
     "unknownArray": false,
     "unique": false,
@@ -198,13 +203,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ActiveSkills"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ActiveSkill2",
     "offset": 124,
     "unknownArray": false,
     "unique": false,
@@ -212,7 +218,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ActiveSkills"
       }
     },
     "size": 16

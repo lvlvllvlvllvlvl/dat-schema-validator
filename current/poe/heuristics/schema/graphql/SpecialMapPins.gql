@@ -1,0 +1,20 @@
+# Added 3.24
+type SpecialMapPins {
+  Id: string @unique
+  Icon: string
+  _: i32
+  QuestFlag: QuestFlags
+  WorldArea: WorldAreas
+  _: i32
+  _: bool
+  _: bool
+  _: bool
+  HASH16: u16
+  _: bool
+  _: bool
+  HighlightIcon: string
+  Text: ClientStrings
+  PinText: ClientStrings
+  _: i32
+  AreaName: ClientStrings
+}

@@ -11,18 +11,18 @@ type MonsterDeathAchievements {
   _: i32
   _: bool
   _: bool
-  _: [_]
-  _: [_]
-  _: [string]
-  _: [_]
-  _: rid
+  Stats: [Stats]
+  MultiPartAchievement1: [MultiPartAchievements]
+  MapAchievement: [MapTierAchievements]
+  MultiPartAchievement2: [MultiPartAchievements]
+  MultiPartAchievement3: MultiPartAchievements
   _: i32
   NearbyMonsterConditionsKeys: [NearbyMonsterConditions]
   _: bool
   MultiPartAchievementConditionsKeys: [MultiPartAchievementConditions]
-  _: [_]
+  _: [i32]
   _: bool
-  _: [_]
-  _: [_]
+  Area: [WorldAreas]
+  Stat: [Stats]
   _: bool
 }

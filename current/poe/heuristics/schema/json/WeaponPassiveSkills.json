@@ -42,6 +42,11 @@
     "size": 16
   },
   {
+    "name": "NodeSpawnLocation",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -49,22 +54,22 @@
         "size": 4
       }
     },
-    "offset": 28,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "Tags",
+    "offset": 44,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "CrucibleTags"
       }
     },
-    "offset": 44,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "Icon",

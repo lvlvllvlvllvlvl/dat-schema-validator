@@ -1,0 +1,17 @@
+# Added 4.3
+type MicrotransactionAfkEffects {
+  Id: string @unique
+  Stat: Stats
+  ObjectTask: GameObjectTasks
+  GrantedEffect: GrantedEffectsPerLevel
+  _: i32
+  _: i32
+  FlyingStat: [Stats]
+  _: bool
+  _: i32 # All rows empty
+  _: i32 @unique
+  _: bool
+  _: i32 # All rows empty
+  _: u16 # All rows empty
+  _: bool
+}

@@ -3,7 +3,7 @@ type MercenaryClasses {
   Id: string @unique
   MonsterVariety: MonsterVarieties
   _: i32
-  _: rid
+  Build: MercenaryBuilds
   _: i32
   _: i32
   Icon: string

@@ -1,7 +1,7 @@
 # Added 4.1
 type EffectDrivenSkill {
   _: i32
-  _: [rid]
+  Animation: [MiscAnimated]
   _: [_] # All rows empty
   _: i32
   _: i32

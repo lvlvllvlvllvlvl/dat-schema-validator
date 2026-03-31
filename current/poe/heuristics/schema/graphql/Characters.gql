@@ -16,7 +16,7 @@ type Characters {
   BaseStrength: i32
   BaseDexterity: i32
   BaseIntelligence: i32
-  _: [rid]
+  StartingMeleeSkill: [GrantedEffectsPerLevel]
   Description: string @localized
   StartSkillGem: SkillGems
   _: rid
@@ -27,10 +27,10 @@ type Characters {
   StartWeapons: [BaseItemTypes]
   Gender: string
   TraitDescription: string @localized
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  StartSupportGem: SkillGems
+  _: SkillGems
+  _: SkillGems
+  StartingWeaponBase: BaseItemTypes
   _: i32
   _: [rid]
   PassiveTreeImage: string @file(ext: ".dds")
@@ -57,12 +57,12 @@ type Characters {
   Attr: string
   AttrLowercase: string
   Script: string
-  _: rid
+  GhostArmMtx: MiscEffectPacks
   _: i32
   _: MonsterVarieties
   _: MonsterVarieties
   _: i32
   _: f32
-  _: rid
-  _: rid
+  LightningCloneBreach: MonsterVarieties
+  _: MonsterVarieties
 }

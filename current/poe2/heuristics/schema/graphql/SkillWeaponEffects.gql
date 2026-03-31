@@ -1,7 +1,7 @@
 # Added 4.1
 type SkillWeaponEffects {
-  _: string
-  _: rid
+  Id: string @unique
+  VisualEffect: ItemVisualEffect
   _: bool
   _: i32
   _: i32

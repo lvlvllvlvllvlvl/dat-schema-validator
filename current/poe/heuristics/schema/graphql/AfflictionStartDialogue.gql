@@ -2,5 +2,5 @@
 type AfflictionStartDialogue {
   WorldAreasKey: WorldAreas
   NPCTextAudioKey: NPCTextAudio
-  _: [rid]
+  MonsterVarieties: [MonsterVarieties]
 }

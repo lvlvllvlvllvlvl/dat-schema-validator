@@ -1,6 +1,6 @@
 # Added 4.1
 type MiscEffectPacksArtVariations {
-  _: string
-  _: [_]
+  Id: string
+  EffectPack: [MiscEffectPacks]
   _: i32
 }

@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -15,7 +15,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "NPC",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -30,22 +30,22 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "NPCAudio",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Animation",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -69,15 +69,18 @@
     "size": 1
   },
   {
+    "name": "NPCAudio2",
+    "offset": 57,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTextAudio"
       }
     },
-    "offset": 57,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

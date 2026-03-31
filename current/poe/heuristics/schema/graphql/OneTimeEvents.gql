@@ -1,0 +1,6 @@
+# Added 3.25
+type OneTimeEvents {
+  Id: string @unique
+  QuestFlag: QuestFlags
+  WorldArea: WorldAreas
+}

@@ -27,7 +27,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Shop",
     "offset": 12,
     "unknownArray": false,
     "unique": false,
@@ -35,13 +35,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCShop"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ShopRuthless",
     "offset": 28,
     "unknownArray": false,
     "unique": false,
@@ -49,13 +50,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCShop"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ShopRuthlessGold",
     "offset": 44,
     "unknownArray": false,
     "unique": false,
@@ -63,7 +65,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCShop"
       }
     },
     "size": 16

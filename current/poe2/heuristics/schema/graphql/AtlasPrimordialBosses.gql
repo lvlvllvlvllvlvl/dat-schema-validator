@@ -9,8 +9,8 @@ type AtlasPrimordialBosses {
   MiniBossInvitation: BaseItemTypes
   BossInvitation: BaseItemTypes
   PickUpKey: QuestFlags
-  _: rid
-  _: rid
+  MinorBossKey: QuestItems
+  BossQuestKey: QuestItems
   Tag: Tags
   Altar: MiscObjects
   AltarActivated: MiscAnimated

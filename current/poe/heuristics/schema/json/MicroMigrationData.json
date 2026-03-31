@@ -1,6 +1,6 @@
 [
   {
-    "name": "BaseItemTypesKey",
+    "name": "Mtx",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -9,7 +9,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "BaseItemTypes"
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16
@@ -44,7 +44,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MtxPack",
     "offset": 36,
     "unknownArray": false,
     "unique": false,
@@ -52,7 +52,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16

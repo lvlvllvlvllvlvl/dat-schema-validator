@@ -1,7 +1,7 @@
 # Added 3.11
 type Mods @tags(list: ["crafting"]) {
   Id: string @unique
-  HASH16: i16
+  HASH16: u16
   ModTypeKey: ModType
   Level: i32
   StatsKey1: Stats
@@ -71,12 +71,12 @@ type Mods @tags(list: ["crafting"]) {
   _: i32
   _: i32
   _: i32
-  BuffTemplate: BuffTemplates
+  BuffTemplate1: BuffTemplates
   ArchnemesisMinionMod: Mods
-  HASH32: i32
-  _: [rid]
+  HASH32: u32
+  BuffTemplate2: [BuffTemplates]
   "0: All, 1: Normal, 2: Ruthless"
   GameMode: i32
-  _: [GrantedEffectsPerLevel]
+  GrantedEffectRuthless: [GrantedEffectsPerLevel]
   _: bool
 }

@@ -1,7 +1,7 @@
 # Added 3.11
 type DaressoPitFights {
   Id: string @unique
-  _: rid
+  MonsterPack: MonsterPacks
   _: i32
   _: [i32]
   _: bool

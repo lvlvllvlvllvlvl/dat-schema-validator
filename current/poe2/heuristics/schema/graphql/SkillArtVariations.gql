@@ -1,18 +1,18 @@
 # Added 4.1
 type SkillArtVariations {
   Id: string @unique
-  _: [rid]
-  _: [i32]
-  _: [i32]
-  _: [i32]
+  AnimatedArt: [MiscAnimatedArtVariations]
+  BeamArt: [MiscBeamsArtVariations]
+  EffectPacksArt: [MiscEffectPacksArtVariations]
+  ObjectArt: [MiscObjectsArtVariations]
   Variants: [string]
-  _: [rid]
+  BuffVisuals: [BuffVisualsArtVariations]
   _: [i32]
-  _: [rid]
-  _: rid
-  _: [i32]
-  _: [rid]
-  _: [i32]
+  ProjectileArt: [ProjectilesArtVariations]
+  Stat: Stats
+  MonsterVarieties: [MonsterVarietiesArtVariations]
+  ActiveSkill: [ActiveSkills]
+  GrantedEffect: [GrantedEffects]
   _: [string]
   _: i32
   _: [_]

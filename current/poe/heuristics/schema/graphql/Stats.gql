@@ -20,5 +20,5 @@ type Stats @tags(list: ["crafting"]) {
   """
   IsScalable: bool
   ContextFlags: [VirtualStatContextFlags]
-  _: [rid]
+  DotFlag: [VirtualStatContextFlags]
 }

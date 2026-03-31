@@ -20,7 +20,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 2
       }
     },
@@ -1045,7 +1045,7 @@
     "size": 4
   },
   {
-    "name": "BuffTemplate",
+    "name": "BuffTemplate1",
     "offset": 589,
     "unknownArray": false,
     "unique": false,
@@ -1082,14 +1082,14 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
     "size": 4
   },
   {
-    "name": "",
+    "name": "BuffTemplate2",
     "offset": 617,
     "unknownArray": false,
     "unique": false,
@@ -1097,7 +1097,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffTemplates"
       }
     },
     "size": 16
@@ -1118,7 +1119,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "GrantedEffectRuthless",
     "offset": 637,
     "unknownArray": false,
     "unique": false,

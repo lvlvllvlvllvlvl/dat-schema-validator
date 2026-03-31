@@ -3,5 +3,5 @@ type PassiveJewelArt {
   BaseItemTypesKey: BaseItemTypes @unique
   SocketedImage: string
   SocketedImageLarge: string
-  _: rid
+  SoundEffect: SoundEffects
 }

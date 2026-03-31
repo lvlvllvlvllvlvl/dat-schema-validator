@@ -156,7 +156,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Area",
     "offset": 121,
     "unknownArray": false,
     "unique": false,
@@ -164,7 +164,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
     "size": 16

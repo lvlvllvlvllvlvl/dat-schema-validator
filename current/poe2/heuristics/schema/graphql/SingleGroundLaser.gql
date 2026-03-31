@@ -1,8 +1,8 @@
 # Added 4.1
 type SingleGroundLaser {
   Id: i32 @unique
-  _: rid
-  _: rid
+  MiscBeams: MiscBeams
+  MiscAnimated: MiscAnimated
   _: i32
   _: string
   _: bool
@@ -10,8 +10,8 @@ type SingleGroundLaser {
   _: bool
   _: i32
   _: i32
-  _: rid
-  _: rid
+  MiscBeamsPulse: MiscBeams
+  MiscAnimatedPulse: MiscAnimated
   _: i32
   _: bool
   _: i32

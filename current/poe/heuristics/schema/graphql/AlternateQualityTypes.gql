@@ -3,7 +3,7 @@ type AlternateQualityTypes @tags(list: ["item:def"]) {
   Id: string @unique
   Description: string @localized
   Item: BaseItemTypes
-  _: rid
+  ModEffectStat: ModEffectStats
   MapStats: [Stats]
   _: i32
   IsCatalyst: bool

@@ -171,7 +171,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Achievement",
     "offset": 137,
     "unknownArray": false,
     "unique": false,
@@ -179,7 +179,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16

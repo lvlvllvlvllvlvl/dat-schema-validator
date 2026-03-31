@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -15,21 +15,22 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Animation",
     "offset": 4,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "HitEffect",
     "offset": 20,
     "unknownArray": false,
     "unique": false,
@@ -37,7 +38,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -395,7 +397,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "BuffDefinition",
     "offset": 127,
     "unknownArray": false,
     "unique": false,
@@ -403,13 +405,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffValues",
     "offset": 143,
     "unknownArray": false,
     "unique": false,
@@ -528,7 +531,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "GeometryChannel",
     "offset": 200,
     "unknownArray": false,
     "unique": false,
@@ -536,7 +539,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GeometryChannel"
       }
     },
     "size": 16
@@ -723,7 +727,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "ExecuteGeal",
     "offset": 257,
     "unknownArray": false,
     "unique": false,
@@ -731,13 +735,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ExecuteGEAL"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "GroundEffect",
     "offset": 273,
     "unknownArray": false,
     "unique": false,
@@ -745,21 +750,25 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GroundEffectTypes"
       }
     },
     "size": 16
   },
   {
+    "name": "MonsterVariety",
+    "offset": 289,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MonsterVarieties"
       }
     },
-    "offset": 289,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

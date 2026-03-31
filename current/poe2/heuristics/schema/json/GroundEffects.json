@@ -45,7 +45,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "BuffVisual1",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -53,7 +53,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffVisuals"
       }
     },
     "size": 16
@@ -136,7 +137,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "BuffVisual2",
     "offset": 101,
     "unknownArray": false,
     "unique": false,
@@ -144,13 +145,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscObject1",
     "offset": 117,
     "unknownArray": false,
     "unique": false,
@@ -158,13 +160,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscObjects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscObject2",
     "offset": 133,
     "unknownArray": false,
     "unique": false,
@@ -172,7 +175,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscObjects"
       }
     },
     "size": 16
@@ -242,7 +246,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "BuffVisual3",
     "offset": 184,
     "unknownArray": false,
     "unique": false,
@@ -250,7 +254,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffVisuals"
       }
     },
     "size": 16

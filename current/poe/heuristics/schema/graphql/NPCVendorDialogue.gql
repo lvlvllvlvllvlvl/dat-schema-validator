@@ -1,0 +1,9 @@
+# Added 3.27
+type NPCVendorDialogue {
+  Id: string @unique
+  NPC: [NPCs]
+  NPCAudio: NPCTextAudio
+  DialogueCondition: [NPCVendorDialogueConditions]
+  _: i32
+  _: i32
+}

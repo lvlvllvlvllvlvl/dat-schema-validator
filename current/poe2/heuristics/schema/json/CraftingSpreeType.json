@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "CurrencyItem",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,13 +20,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "CurrencyItems"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "CurrencyCount",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -41,7 +42,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ItemClass",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -49,7 +50,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemClasses"
       }
     },
     "size": 16

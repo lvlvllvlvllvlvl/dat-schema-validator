@@ -1,7 +1,6 @@
 # Added 3.11
 type MicrotransactionSocialFrameVariations {
-  BaseItemTypesKey: BaseItemTypes
-  Id: i32 @unique
-  _: i32 # All rows empty
-  _: u16 # All rows empty
+  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
+  Index: i16
+  BK2File: string @file(ext: ".bk2")
 }

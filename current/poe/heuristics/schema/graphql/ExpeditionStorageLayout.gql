@@ -10,5 +10,5 @@ type ExpeditionStorageLayout {
   Height: i32
   _: i32
   _: bool
-  _: rid
+  Currency: ExpeditionCurrency
 }

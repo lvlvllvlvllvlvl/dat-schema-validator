@@ -12,7 +12,7 @@ type UniqueChests {
   _: [i32]
   AppearanceChestsKey: Chests
   ChestsKey: Chests
-  _: [rid]
+  Achievement: [AchievementItems]
   _: i32
   _: bool
   _: i32

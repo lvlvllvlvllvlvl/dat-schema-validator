@@ -1,6 +1,6 @@
 # Added 3.19
 type MicrotransactionAppliedInventoryItemArtVariations {
-  _: rid @unique
+  Id: MtxTypeGameSpecific @unique
   DDSFiles: [string] @file(ext: ".dds")
   _: [i32]
   _: [rid]

@@ -1,8 +1,8 @@
 # Added 4.1
 type SuicideExplosion {
   Id: i32 @unique
-  _: rid
-  _: rid
+  MiscAnimated: MiscAnimated
+  AnimationAlternate: MiscAnimated
   _: bool
   _: bool
   _: bool

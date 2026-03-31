@@ -150,7 +150,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "StartQuestFlags",
     "offset": 68,
     "unknownArray": false,
     "unique": false,
@@ -158,13 +158,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "EndQuestFlags",
     "offset": 84,
     "unknownArray": false,
     "unique": false,
@@ -172,7 +173,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -245,7 +247,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -259,7 +262,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -352,7 +356,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "PVPType",
     "offset": 245,
     "unknownArray": false,
     "unique": false,
@@ -360,7 +364,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PVPTypes"
       }
     },
     "size": 16
@@ -755,7 +760,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "TerrainPlugin",
     "offset": 508,
     "unknownArray": false,
     "unique": false,
@@ -763,7 +768,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "TerrainPlugins"
       }
     },
     "size": 16
@@ -822,6 +828,11 @@
     "size": 4
   },
   {
+    "name": "",
+    "offset": 538,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -829,10 +840,7 @@
         "size": 4
       }
     },
-    "offset": 538,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "LeagueChance1",
@@ -880,7 +888,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MusicCategory",
     "offset": 590,
     "unknownArray": false,
     "unique": false,
@@ -888,7 +896,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MusicCategories"
       }
     },
     "size": 16

@@ -5,9 +5,7 @@ type CorpseTypeTags {
   RavenousBuff: BuffDefinitions
   Icon: string
   _: i32
-  _: rid @unique
-  _: string @unique
-  _: string @unique @localized
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  TypeTag: TypeTags
+  _: string
+  MinimapIcon: MinimapIcons
 }

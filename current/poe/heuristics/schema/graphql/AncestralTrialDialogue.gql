@@ -1,10 +1,10 @@
 # Added 3.22
 type AncestralTrialDialogue {
-  _: rid
-  _: rid
+  Tribe: AncestralTrialTribes
+  TrialEvent: AncestralTrialDialogueEvents
   _: i32
   TextAudio: [NPCTextAudio]
-  _: rid
+  Character: Characters
   _: i32
   _: i32
   _: i32

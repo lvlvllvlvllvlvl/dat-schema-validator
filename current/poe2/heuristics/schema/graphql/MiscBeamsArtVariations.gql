@@ -1,8 +1,8 @@
 # Added 4.1
 type MiscBeamsArtVariations {
   Id: string
-  _: [_]
+  Beam: [MiscBeams]
   _: i32
   _: i32
-  _: rid
+  Stat: Stats
 }

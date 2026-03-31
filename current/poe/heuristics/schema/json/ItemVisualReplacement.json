@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -8,13 +8,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Stat",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -22,13 +23,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ItemVisualIdentity",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -36,7 +38,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16

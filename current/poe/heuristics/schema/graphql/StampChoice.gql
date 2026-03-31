@@ -1,11 +1,11 @@
 # Added 3.19
 type StampChoice {
   Id: string @unique
-  _: rid
+  Room: LakeRooms
   _: i32
   Effect: string @localized
   Icon: string
-  _: rid
-  _: [_]
-  _: i32
+  StampFamily: StampFamily
+  Achievements: [AchievementItems]
+  HASH16: u32
 }

@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Achievement",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -8,13 +8,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinLevel",
     "offset": 16,
     "unknownArray": false,
     "unique": false,

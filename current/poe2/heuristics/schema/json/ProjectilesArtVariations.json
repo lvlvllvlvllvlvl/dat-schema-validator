@@ -1,6 +1,6 @@
 [
   {
-    "name": "Projectile",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -27,16 +27,19 @@
     "size": 4
   },
   {
+    "name": "Projectiles",
+    "offset": 12,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Projectiles"
       }
     },
-    "offset": 12,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",

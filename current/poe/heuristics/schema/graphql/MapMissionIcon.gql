@@ -1,0 +1,5 @@
+# Added 3.27
+type MapMissionIcon {
+  Mission: string @unique
+  Icon: string
+}

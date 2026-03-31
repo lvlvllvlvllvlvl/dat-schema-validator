@@ -1,6 +1,6 @@
 # Added 4.1
 type MicrotransactionEquippedIconVariations {
-  _: rid
+  Id: MtxTypeGameSpecific @unique
   DDSFiles: [string] @file(ext: ".dds")
-  _: [_]
+  _: [i32]
 }

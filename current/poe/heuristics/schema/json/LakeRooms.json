@@ -177,7 +177,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "StampFamily",
     "offset": 132,
     "unknownArray": false,
     "unique": false,
@@ -185,7 +185,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "StampFamily"
       }
     },
     "size": 16
@@ -246,7 +247,7 @@
     "localized": true
   },
   {
-    "name": "TextAudio",
+    "name": "TextAudioIntro",
     "offset": 189,
     "unknownArray": false,
     "unique": false,
@@ -261,7 +262,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "TextAudioOutro",
     "offset": 205,
     "unknownArray": false,
     "unique": false,
@@ -269,7 +270,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTextAudio"
       }
     },
     "size": 16

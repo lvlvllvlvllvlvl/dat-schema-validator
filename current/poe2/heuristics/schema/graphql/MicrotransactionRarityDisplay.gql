@@ -1,7 +1,7 @@
 # Added 4.1
 type MicrotransactionRarityDisplay {
   Rarity: string @unique
-  _: rid
+  ItemFrame: ItemFrameType
   _: string
   _: string
 }

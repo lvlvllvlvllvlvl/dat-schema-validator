@@ -1,5 +1,5 @@
 # Added 3.11
 type PVPTypes {
   Id: string @unique
-  _: rid
+  Ruleset: Rulesets
 }

@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Unit",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -8,13 +8,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AncestralTrialUnits"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Object",
     "offset": 16,
     "unknownArray": false,
     "unique": true,
@@ -22,7 +23,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscObjects"
       }
     },
     "size": 16
@@ -36,7 +38,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
@@ -71,7 +73,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "SoundEffectPurchase",
     "offset": 60,
     "unknownArray": false,
     "unique": false,
@@ -79,13 +81,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "SoundEffectPlace",
     "offset": 76,
     "unknownArray": false,
     "unique": false,
@@ -93,7 +96,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16

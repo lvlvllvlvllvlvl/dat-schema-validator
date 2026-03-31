@@ -117,7 +117,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MonsterExpiredSound",
     "offset": 92,
     "unknownArray": false,
     "unique": false,
@@ -125,13 +125,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "PlayerExpiredSound",
     "offset": 108,
     "unknownArray": false,
     "unique": false,
@@ -139,13 +140,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "PlayerAcquiredSound",
     "offset": 124,
     "unknownArray": false,
     "unique": false,
@@ -153,7 +155,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16

@@ -11,7 +11,7 @@ type QuestStates {
   _: i32
   MapPinsTexts: [string] @localized
   MapPinsKeys2: [MapPins]
-  _: [rid]
+  Area: [WorldAreas]
   _: bool
   _: [i32]
   _: [i32]

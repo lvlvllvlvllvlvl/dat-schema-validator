@@ -2,8 +2,8 @@
 type NPCShopSets {
   Id: string @unique
   _: i32
-  _: rid
-  _: rid
-  _: rid
+  Shop: NPCShop
+  ShopRuthless: NPCShop
+  ShopRuthlessGold: NPCShop
   _: i32
 }

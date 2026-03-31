@@ -6,9 +6,9 @@ type AegisVariations {
   DefendsAgainstCold: bool
   DefendsAgainstLightning: bool
   DefendsAgainstChaos: bool
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: [_]
+  ActiveBuff: BuffDefinitions
+  DepletedBuff: BuffDefinitions
+  _: BuffDefinitions
+  AnimatedEffect: MiscAnimated
+  _: [MiscAnimated]
 }

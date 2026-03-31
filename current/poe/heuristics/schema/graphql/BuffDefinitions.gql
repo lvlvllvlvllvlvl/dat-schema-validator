@@ -26,7 +26,7 @@ type BuffDefinitions {
   Id2: string
   IsRecovery: bool
   _: bool
-  _: rid
+  MinStat: Stats
   _: bool
   _: i32
   _: bool
@@ -35,7 +35,7 @@ type BuffDefinitions {
   _: [i32]
   _: bool
   _: bool
-  _: [rid]
+  MultiPartAchievement: [MultiPartAchievements]
   _: bool
   _: [Stats]
   BinaryStats: [Stats]

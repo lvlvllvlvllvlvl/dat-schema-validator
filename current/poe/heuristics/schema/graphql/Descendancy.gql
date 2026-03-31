@@ -7,9 +7,9 @@ type Descendancy {
   CoordinateRect: string
   RGBFlavourTextColour: string
   UnlockCondition: string @localized
-  _: rid
-  _: rid
+  SoundEffectOpen: SoundEffects
+  SoundEffectAccept: SoundEffects
   _: i32
-  UIArt: PassiveSkillTreeUIArtAscendancy
-  _: rid
+  PassiveTreeUIArt: PassiveSkillTreeUIArtAscendancy
+  UIArt: UIArtAscendancy
 }

@@ -5,7 +5,7 @@ type AtlasPrimordialBossInfluence {
   MinMapTier: i32
   _: i32
   _: i32
-  _: rid
+  QuestItem: QuestItems
   _: f32
-  _: QuestFlags
+  QuestFlag: QuestFlags
 }

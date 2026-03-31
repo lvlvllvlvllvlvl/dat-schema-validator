@@ -6,7 +6,7 @@ type MercenaryBuilds {
   _: i32
   Skill2: [MercenarySkills]
   _: i32
-  _: [rid]
+  _: [_] # All rows empty
   _: i32
   Skill3: [MercenarySkills]
   _: [string]
@@ -16,7 +16,7 @@ type MercenaryBuilds {
   BuildName: string @localized
   _: i32
   Infamous: bool
-  _: rid
+  IdleSkill: MercenarySkills
   _: string
   _: [string]
   Achievements: [AchievementItems]

@@ -45,27 +45,33 @@
     "size": 4
   },
   {
+    "name": "DamageEffectPC",
+    "offset": 12,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "DamageEffectVariations"
       }
     },
-    "offset": 12,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "DamageEffectConsole",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "DamageEffectVariations"
       }
     },
-    "offset": 28,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

@@ -1,9 +1,9 @@
 # Added 4.3
 type CraftingSpreeType @tags(list: ["crafting"]) {
   Id: string @unique
-  _: [rid]
-  _: [i32]
-  _: [rid]
+  CurrencyItem: [CurrencyItems]
+  CurrencyCount: [i32]
+  ItemClass: [ItemClasses]
   _: bool
   Text: string @localized
   _: i32

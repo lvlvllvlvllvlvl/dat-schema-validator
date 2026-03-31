@@ -87,7 +87,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "SoundEffectOpen",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -95,13 +95,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "SoundEffectAccept",
     "offset": 72,
     "unknownArray": false,
     "unique": false,
@@ -109,7 +110,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
@@ -130,7 +132,7 @@
     "size": 4
   },
   {
-    "name": "UIArt",
+    "name": "PassiveTreeUIArt",
     "offset": 92,
     "unknownArray": false,
     "unique": false,
@@ -145,7 +147,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "UIArt",
     "offset": 108,
     "unknownArray": false,
     "unique": false,
@@ -153,7 +155,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "UIArtAscendancy"
       }
     },
     "size": 16

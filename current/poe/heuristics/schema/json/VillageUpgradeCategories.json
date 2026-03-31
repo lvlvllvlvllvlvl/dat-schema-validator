@@ -62,7 +62,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "JobType",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -70,7 +70,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "VillageJobTypes"
       }
     },
     "size": 16

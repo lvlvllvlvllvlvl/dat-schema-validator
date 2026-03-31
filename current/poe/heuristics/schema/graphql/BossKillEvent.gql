@@ -1,6 +1,6 @@
 # Added 3.26
 type BossKillEvent {
-  _: string
+  Id: string @unique
   QuestFlag: QuestFlags
   AreaLevel: i32
   Monster: MonsterVarieties

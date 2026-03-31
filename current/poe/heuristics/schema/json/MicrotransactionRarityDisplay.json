@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "ItemFrame",
     "offset": 8,
     "unknownArray": false,
     "unique": true,
@@ -20,7 +20,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemFrameType"
       }
     },
     "size": 16

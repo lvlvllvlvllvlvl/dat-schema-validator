@@ -1,6 +1,6 @@
 # Added 3.25
 type VillageJobs {
-  _: rid
+  JobType: VillageJobTypes
   _: i32
   Status: string @localized
   Stat: Stats

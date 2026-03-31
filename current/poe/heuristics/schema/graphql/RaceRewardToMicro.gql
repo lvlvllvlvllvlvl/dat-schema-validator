@@ -1,0 +1,6 @@
+# Added 3.24
+type RaceRewardToMicro {
+  Id: ItemVisualIdentity @unique
+  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
+  HASH32: u32
+}

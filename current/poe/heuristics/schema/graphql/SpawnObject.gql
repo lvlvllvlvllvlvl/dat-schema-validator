@@ -1,7 +1,7 @@
 # Added 3.11
 type SpawnObject {
-  _: i32
-  _: [rid]
+  Id: i32 @unique
+  MiscObjects: [MiscObjects] @unique
   _: [_] # All rows empty
   _: i32
   _: i32

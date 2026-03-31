@@ -3,22 +3,22 @@ type GroundEffects {
   GroundEffectTypesKey: GroundEffectTypes
   _: i32
   _: i32
-  _: rid
+  BuffVisual1: BuffVisuals
   _: f32
   _: [i32]
   _: bool
   AOFile: [string] @file(ext: ".ao")
   _: [string]
   EndEffect: string
-  _: rid
-  _: rid
-  _: rid
+  BuffVisual2: BuffDefinitions
+  MiscObject1: MiscObjects
+  MiscObject2: MiscObjects
   _: rid
   _: rid
   _: bool
   _: bool
   _: bool
-  _: rid
+  BuffVisual3: BuffVisuals
   _: rid
   _: bool
   _: bool

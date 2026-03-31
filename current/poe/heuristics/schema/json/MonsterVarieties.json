@@ -441,7 +441,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "BloodType",
     "offset": 244,
     "unknownArray": false,
     "unique": false,
@@ -449,7 +449,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BloodTypes"
       }
     },
     "size": 16
@@ -954,7 +955,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Achievement",
     "offset": 600,
     "unknownArray": false,
     "unique": false,
@@ -962,13 +963,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MultiPartAchievement",
     "offset": 616,
     "unknownArray": false,
     "unique": false,
@@ -976,7 +978,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MultiPartAchievements"
       }
     },
     "size": 16

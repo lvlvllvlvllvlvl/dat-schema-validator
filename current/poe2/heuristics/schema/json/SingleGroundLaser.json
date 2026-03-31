@@ -15,7 +15,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MiscBeams",
     "offset": 4,
     "unknownArray": false,
     "unique": false,
@@ -23,13 +23,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscBeams"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscAnimated",
     "offset": 20,
     "unknownArray": false,
     "unique": false,
@@ -37,7 +38,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -139,7 +141,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MiscBeamsPulse",
     "offset": 62,
     "unknownArray": false,
     "unique": false,
@@ -147,13 +149,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscBeams"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscAnimatedPulse",
     "offset": 78,
     "unknownArray": false,
     "unique": false,
@@ -161,7 +164,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16

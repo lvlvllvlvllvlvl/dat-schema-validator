@@ -1,7 +1,7 @@
 # Added 3.17
 type ClientLeagueAction {
   Id: string @unique
-  _: rid
+  GamepadButton: GamepadButton
   _: i32
   GamepadIcon: string
 }

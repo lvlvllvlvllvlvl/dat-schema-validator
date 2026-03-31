@@ -1,0 +1,10 @@
+# Added 3.28
+type ItemConditions {
+  Id: string @unique
+  _: [_] # All rows empty
+  _: i32
+  _: i32
+  _: bool
+  MinLevel: i32
+  MaxLevel: i32
+}

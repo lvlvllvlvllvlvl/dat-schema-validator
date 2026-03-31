@@ -1,6 +1,6 @@
 # Added 3.17
 type LeagueStaticRewards {
-  _: i32
+  Id: i32 @unique
   _: i32
   _: i32
   _: rid
@@ -8,6 +8,6 @@ type LeagueStaticRewards {
   _: i32
   _: i32
   _: bool
-  _: [_]
-  _: [_]
+  _: [i32]
+  _: [rid]
 }

@@ -3,12 +3,12 @@ type BetrayalJobs {
   Id: string @unique
   Text: string @localized
   ExtraTerrainFeaturesKey: ExtraTerrainFeatures
-  Art: string
+  IconArt: string
   _: i32
   _: i32
   WorldAreasKey: WorldAreas
   Completion_AchievementItemsKey: [AchievementItems]
   OpenChests_AchievementItemsKey: [AchievementItems]
-  MissionCompletion_AcheivementItemsKey: [AchievementItems]
-  _: string @unique
+  MissionCompletion_AchievementItemsKey: [AchievementItems]
+  Art: string
 }

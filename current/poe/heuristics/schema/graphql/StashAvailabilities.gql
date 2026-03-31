@@ -1,0 +1,6 @@
+# Added 3.25
+type StashAvailabilities {
+  Id: i32 @unique
+  _: i32
+  Message: string @localized
+}

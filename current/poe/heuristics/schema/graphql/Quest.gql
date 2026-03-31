@@ -11,5 +11,5 @@ type Quest {
   _: i32
   TrackerGroup: QuestTrackerGroup
   _: bool
-  _: rid
+  QuestFlag: QuestFlags
 }

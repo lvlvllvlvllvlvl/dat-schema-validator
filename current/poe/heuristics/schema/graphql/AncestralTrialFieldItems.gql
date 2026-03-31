@@ -1,10 +1,10 @@
 # Added 3.22
 type AncestralTrialFieldItems {
-  _: rid
-  _: rid
-  HASH32: i32
+  Unit: AncestralTrialUnits
+  Object: MiscObjects
+  HASH32: u32
   Description: string @localized
   Achievement: [AchievementItems]
-  _: rid
-  _: rid
+  SoundEffectPurchase: SoundEffects
+  SoundEffectPlace: SoundEffects
 }

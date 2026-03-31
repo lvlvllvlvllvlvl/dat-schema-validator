@@ -1,0 +1,7 @@
+# Added 3.24
+type TriggeredAudioEventVolumeOverrides {
+  Id: string @unique
+  _: f32
+  Actions: [ActionTypes]
+  _: f32
+}

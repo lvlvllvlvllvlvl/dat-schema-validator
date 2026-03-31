@@ -1,6 +1,6 @@
 # Added 3.11
 type MicrotransactionRecycleSalvageValues {
-  BaseItemType: BaseItemTypes
+  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
   _: i32
   _: i32
 }

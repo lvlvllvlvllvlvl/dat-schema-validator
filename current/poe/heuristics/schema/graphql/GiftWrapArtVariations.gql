@@ -3,5 +3,5 @@ type GiftWrapArtVariations {
   Width: i32
   Height: i32
   _: i32
-  Item: BaseItemTypes
+  Item: BaseItemTypes @unique
 }

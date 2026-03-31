@@ -75,7 +75,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "QuestItem",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -83,7 +83,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestItems"
       }
     },
     "size": 16
@@ -103,7 +104,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "QuestFlag",
     "offset": 52,
     "unknownArray": false,
     "unique": false,

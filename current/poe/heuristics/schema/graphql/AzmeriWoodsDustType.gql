@@ -1,15 +1,13 @@
 # Added 3.23
 type AzmeriWoodsDustType {
-  _: string
-  _: rid
+  Id: string @unique
+  BaseItemType: BaseItemTypes
   _: string @localized
   _: string
-  _: rid
-  _: rid
-  _: rid
-  _: string @localized
-  _: i32
-  _: rid
-  _: i32
-  _: string @localized
+  ChargeAnimation: MiscAnimated
+  ReleaseAnimation: MiscAnimated
+  Stats: Stats
+  BeamArt: MiscBeams
+  WeatherArt: MiscAnimated
+  Text: string @localized
 }

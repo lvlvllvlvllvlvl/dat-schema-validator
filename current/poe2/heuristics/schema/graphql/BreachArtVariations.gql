@@ -1,13 +1,13 @@
 # Added 4.1
 type BreachArtVariations {
   Id: string @unique
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: [_]
-  _: rid
+  Portal: MiscAnimated
+  Chest: MiscAnimated
+  LargeChest: MiscAnimated
+  Effect: MiscAnimated
+  BuffVisualSmall: BuffVisuals
+  BuffVisualBig: BuffVisuals
+  LargeChestMarker: MiscAnimated
+  SoulerCoaster: [MiscAnimated]
+  CloseEffect: MiscAnimated
 }

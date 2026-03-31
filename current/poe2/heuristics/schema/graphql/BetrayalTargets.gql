@@ -11,11 +11,11 @@ type BetrayalTargets {
   Safehouse_ARMFile: string @file(ext: ".arm")
   ShortName: string @localized
   _: i32
-  SafehouseLeader_AcheivementItemsKey: AchievementItems
+  SafehouseLeader_AchievementItemsKey: AchievementItems
   Level3_AchievementItemsKey: AchievementItems
   _: i32
   _: i32
   _: i32
-  _: rid
+  UltimatumAchievementItemsKey: AchievementItems
   ScriptArgument: string
 }

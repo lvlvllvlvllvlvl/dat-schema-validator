@@ -1,9 +1,9 @@
 # Added 4.1
 type MicrotransactionConditionalApparitions {
   Id: string @unique
-  _: [_]
-  _: [_]
-  _: rid
+  Stats: [Stats]
+  StatValues: [i32]
+  PeriodicVariation: MicrotransactionPeriodicCharacterEffectVariations
   _: rid
   _: i32
   _: bool

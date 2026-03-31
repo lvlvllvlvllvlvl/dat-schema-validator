@@ -1,8 +1,8 @@
 # Added 4.1
 type DelveFlares {
-  _: i32
-  _: rid
-  _: rid
+  Id: i32 @unique
+  Projectile: Projectiles
+  Object: MiscObjects
   _: i32
   _: rid
   _: i32

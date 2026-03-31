@@ -43,46 +43,46 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "QuestFlag1",
     "offset": 28,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlag2",
     "offset": 44,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlag3",
     "offset": 60,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -100,7 +100,7 @@
     "size": 8
   },
   {
-    "name": "TextAudio",
+    "name": "QuestFlag4",
     "offset": 84,
     "unknownArray": false,
     "unique": false,
@@ -109,7 +109,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "NPCTextAudio"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -145,7 +145,7 @@
     "size": 16
   },
   {
-    "name": "QuestFlag",
+    "name": "QuestFlag5",
     "offset": 132,
     "unknownArray": false,
     "unique": false,
@@ -298,7 +298,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "BaseItemTypes",
     "offset": 231,
     "unknownArray": false,
     "unique": false,
@@ -306,7 +306,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -352,7 +353,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "ConsoleQuickAction",
     "offset": 260,
     "unknownArray": false,
     "unique": false,
@@ -360,13 +361,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTalkConsoleQuickActions"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Music1",
     "offset": 276,
     "unknownArray": false,
     "unique": false,
@@ -374,7 +376,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Music"
       }
     },
     "size": 16
@@ -387,19 +390,6 @@
     "interval": false,
     "type": {
       "array": false,
-      "string": {}
-    },
-    "size": 8,
-    "localized": true
-  },
-  {
-    "name": "",
-    "offset": 300,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
@@ -408,35 +398,17 @@
     "size": 4
   },
   {
-    "name": "",
-    "offset": 304,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "array": true,
+      "key": {
+        "foreign": true
       }
     },
-    "size": 4,
-    "localized": true
-  },
-  {
-    "name": "",
-    "offset": 308,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "offset": 296,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -454,7 +426,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Music2",
     "offset": 316,
     "unknownArray": false,
     "unique": false,
@@ -462,7 +434,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Music"
       }
     },
     "size": 16
@@ -538,14 +511,18 @@
     "size": 8
   },
   {
+    "name": "Inventory",
+    "offset": 365,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Inventories"
       }
     },
-    "offset": 365,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

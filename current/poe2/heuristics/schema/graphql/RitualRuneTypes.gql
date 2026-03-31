@@ -19,7 +19,9 @@ type RitualRuneTypes {
   Description: string @localized
   DaemonSpawningDataKey: DaemonSpawningData
   _: bool
-  _: [_]
+  _: i32
+  _: i32 # All rows empty
+  _: string
   _: i32
   _: i32
   _: i32

@@ -12,8 +12,8 @@ type NPCTextAudio {
   _: i32
   _: i32
   NPCs: [NPCs]
-  _: rid
+  NPCPortrait: NPCPortraits
   _: bool
-  _: i32
-  _: [_]
+  _: f32
+  Cooldown: [MiscCooldowns]
 }

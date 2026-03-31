@@ -2,12 +2,9 @@
 type AtlasInfluenceData {
   InfluencePack: AtlasInfluenceOutcomes
   MonsterPacks: [MonsterPacks]
-  _: rid
+  BuffDefinition: BuffDefinitions
   _: [Stats]
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  BuffStatValues: [i32]
   _: [_]
   _: i32
   _: i32
@@ -17,7 +14,6 @@ type AtlasInfluenceData {
   _: i32
   _: i32
   _: bool
-  _: bool
-  _: bool
+  _: u16 # All rows empty
   _: bool
 }

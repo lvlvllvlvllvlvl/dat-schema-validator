@@ -1,0 +1,11 @@
+# Added 3.28
+type DynamicCraftingBenchTypes {
+  Id: string @unique
+  _: string
+  BackgroundArt: string
+  Description: string
+  Name: string
+  SoundEffect: SoundEffects
+  _: [rid]
+  _: i32
+}

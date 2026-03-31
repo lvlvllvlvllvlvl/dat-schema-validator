@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -15,7 +15,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Projectile",
     "offset": 4,
     "unknownArray": false,
     "unique": false,
@@ -23,7 +23,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Projectiles"
       }
     },
     "size": 16
@@ -204,24 +205,24 @@
     "interval": false,
     "type": {
       "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 57,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
     "size": 4
-  },
-  {
-    "name": "",
-    "offset": 60,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
   },
   {
     "name": "",
@@ -248,7 +249,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "GeometryChannel",
     "offset": 63,
     "unknownArray": false,
     "unique": false,
@@ -256,7 +257,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GeometryChannel"
       }
     },
     "size": 16

@@ -2,7 +2,7 @@
 type DelveMonsterSpawners {
   BaseMetadata: string
   _: i32
-  _: [rid]
+  Monster: [MonsterVarieties]
   _: i32
   _: i32
   _: i32

@@ -1,0 +1,8 @@
+# Added 4.1
+type MicrotransactionOnOpenChestEffects {
+  Id: string @unique
+  Animation: MiscAnimated
+  Stat: Stats
+  HASH32: u32
+  _: i32
+}

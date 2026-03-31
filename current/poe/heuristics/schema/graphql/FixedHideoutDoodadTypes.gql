@@ -6,9 +6,6 @@ type FixedHideoutDoodadTypes {
   _: i32
   _: i32
   _: bool
-  _: rid
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  UnlockQuest: Quest
+  WorldArea: WorldAreas
 }

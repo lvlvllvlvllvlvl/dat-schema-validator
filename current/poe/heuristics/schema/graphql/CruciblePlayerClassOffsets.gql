@@ -1,6 +1,6 @@
 # Added 3.21
 type CruciblePlayerClassOffsets {
-  _: rid @unique
+  Character: Characters @unique
   _: i32
   _: i32
 }

@@ -1,10 +1,10 @@
 # Added 3.11
 type SkillMorphDisplay {
-  _: rid
-  _: [rid]
+  Skill: ActiveSkills
+  BuffDefinitions: [BuffDefinitions]
   DDSFiles: [string] @file(ext: ".dds")
   _: i32
-  _: [i32]
+  Overlay: [string]
   _: i32
   _: [f32]
   _: bool

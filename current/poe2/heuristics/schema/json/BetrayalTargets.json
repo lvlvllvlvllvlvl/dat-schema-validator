@@ -149,7 +149,7 @@
     "size": 4
   },
   {
-    "name": "SafehouseLeader_AcheivementItemsKey",
+    "name": "SafehouseLeader_AchievementItemsKey",
     "offset": 109,
     "unknownArray": false,
     "unique": false,
@@ -224,7 +224,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "UltimatumAchievementItemsKey",
     "offset": 153,
     "unknownArray": false,
     "unique": false,
@@ -232,7 +232,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16

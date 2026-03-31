@@ -47,7 +47,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffTemplates"
       }
     },
     "size": 16
@@ -91,7 +92,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffTemplates"
       }
     },
     "size": 16
@@ -277,7 +279,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Mods",
     "offset": 162,
     "unknownArray": false,
     "unique": false,
@@ -285,21 +287,25 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
     "size": 16
   },
   {
+    "name": "MonsterPacks",
+    "offset": 178,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MonsterPacks"
       }
     },
-    "offset": 178,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

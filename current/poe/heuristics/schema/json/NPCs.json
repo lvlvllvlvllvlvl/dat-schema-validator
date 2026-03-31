@@ -37,7 +37,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "QuestFlags",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -45,7 +45,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -132,7 +133,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 2
       }
     },
@@ -195,7 +196,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "ShopSet",
     "offset": 143,
     "unknownArray": false,
     "unique": false,
@@ -203,7 +204,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCShopSets"
       }
     },
     "size": 16

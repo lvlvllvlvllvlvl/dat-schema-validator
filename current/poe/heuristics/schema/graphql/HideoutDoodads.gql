@@ -8,16 +8,15 @@ type HideoutDoodads {
   IsCraftingBench: bool
   Tags: [HideoutDoodadTags]
   _: bool
-  _: rid
+  Hideout: Hideouts
   Category: HideoutDoodadCategory
   _: i32
   _: bool
-  _: rid
+  AchievementReward: AchievementSetRewards
   _: bool
-  _: rid
-  _: [string]
-  _: i32
-  _: i32
+  HideoutSpecial: Hideouts
+  HideoutItems: [HideoutDoodads]
+  HideoutItemLink: HideoutDoodads
   _: bool
   _: bool
 }

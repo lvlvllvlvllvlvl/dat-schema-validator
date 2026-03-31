@@ -7,5 +7,5 @@ type PassiveSkillMasteryEffects {
   Stat2Value: i32
   Stat3Value: i32
   AchievementItem: AchievementItems
-  _: rid
+  GrantedEffect: GrantedEffectsPerLevel
 }

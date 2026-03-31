@@ -33,7 +33,7 @@ type MonsterVarieties {
   AISFile: string @file(ext: ".ais")
   ModsKeys2: [Mods]
   Stance: string
-  _: rid
+  BloodType: BloodTypes
   Name: string @localized
   "in percent"
   DamageMultiplier: i32
@@ -71,8 +71,8 @@ type MonsterVarieties {
   _: rid
   _: i32
   _: i32
-  _: [rid]
-  _: [rid]
+  Achievement: [AchievementItems]
+  MultiPartAchievement: [MultiPartAchievements]
   _: i32
   SinkAnimation_AOFile: string @file(ext: ".ao")
   _: bool

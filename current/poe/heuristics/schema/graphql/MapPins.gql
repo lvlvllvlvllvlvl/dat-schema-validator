@@ -9,13 +9,10 @@ type MapPins {
   WorldAreasKeys: [WorldAreas]
   Name: string @localized
   FlavourText: string @localized
-  _: [i32]
+  QuestFlags: [QuestFlags]
   Act: i32
   _: string
-  _: [i32]
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  QuestFlagVisit: [QuestFlags]
+  QuestFlagKill: QuestFlags
   _: rid
 }

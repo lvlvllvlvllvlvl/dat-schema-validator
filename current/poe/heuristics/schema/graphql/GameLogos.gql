@@ -1,8 +1,8 @@
 # Added 3.21
 type GameLogos {
   Id: string @unique
-  LogoIntl: string
-  LogoTW: string
-  _: string
-  _: string
+  LogoIntl: string @file(ext: ".dds")
+  LogoTW: string @file(ext: ".dds")
+  AnimatedLogoIntl: string @file(ext: ".bk2")
+  AnimatedLogoTW: string @file(ext: ".bk2")
 }

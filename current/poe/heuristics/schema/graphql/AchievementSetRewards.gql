@@ -2,7 +2,7 @@
 type AchievementSetRewards @tags(list: ["mtx:reward"]) {
   SetId: AchievementSetsDisplay @ref(column: "Id")
   AchievementsRequired: i32
-  Rewards: [BaseItemTypes]
+  Rewards: [MtxTypeGameSpecific]
   TotemPieceEveryNAchievements: i32
   Message: string @localized
   NotificationIcon: string @file(ext: ".dds")

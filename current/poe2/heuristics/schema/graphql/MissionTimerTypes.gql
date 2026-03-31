@@ -3,10 +3,10 @@ type MissionTimerTypes {
   Id: string @unique
   Image: string
   BackgroundImage: string
-  _: [rid]
+  SoundEffects: [SoundEffects]
   _: [f32]
-  _: rid
-  _: rid
+  _: SoundEffects
+  _: SoundEffects
   _: i32
   _: i32
 }

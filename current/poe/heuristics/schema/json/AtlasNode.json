@@ -354,7 +354,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "NodeDisplayName",
     "offset": 201,
     "unknownArray": false,
     "unique": false,
@@ -362,7 +362,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ClientStrings2"
       }
     },
     "size": 16

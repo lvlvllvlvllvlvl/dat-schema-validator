@@ -1,0 +1,17 @@
+# Added 3.25
+type VillageShippingPorts {
+  Id: string @unique
+  Name: string @localized
+  FlagArt: string
+  MapLineArt: string
+  ReturnMessage: string @localized
+  _: bool
+  PositionX: i32
+  PositionY: i32
+  _: i32
+  _: i32
+  DistanceFromPort: i32
+  _: bool
+  RiskMultiplier: f32
+  _: rid
+}

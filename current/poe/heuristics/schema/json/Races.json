@@ -82,7 +82,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Area",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -90,7 +90,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -123,6 +124,11 @@
     "size": 4
   },
   {
+    "name": "",
+    "offset": 69,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -130,21 +136,21 @@
         "size": 4
       }
     },
-    "offset": 69,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "ModFamily",
+    "offset": 85,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ModFamily"
       }
     },
-    "offset": 85,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

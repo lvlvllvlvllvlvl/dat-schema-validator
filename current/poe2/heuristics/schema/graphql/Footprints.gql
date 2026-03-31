@@ -6,5 +6,5 @@ type Footprints {
   _: [string] @file(ext: ".ao")
   _: [string] @file(ext: ".ao")
   _: i32
-  _: rid
+  MiscObject: MiscObjects
 }

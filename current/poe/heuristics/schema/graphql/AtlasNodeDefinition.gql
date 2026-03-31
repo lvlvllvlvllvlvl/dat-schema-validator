@@ -13,7 +13,7 @@ type AtlasNodeDefinition {
   MapDeviceLayout: MapDeviceLayouts
   QuestStates: [i32]
   _: bool
-  _: rid
+  NodeDisplayName: ClientStrings2
   Area2: WorldAreas
   _: bool
   Header: MapNodeHeader

@@ -72,7 +72,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "QuestFlag",
     "offset": 60,
     "unknownArray": false,
     "unique": false,
@@ -80,7 +80,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -179,7 +180,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Mods",
     "offset": 104,
     "unknownArray": false,
     "unique": false,
@@ -219,14 +220,18 @@
     "unique": false
   },
   {
+    "name": "AtlasNode",
+    "offset": 137,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AtlasNode"
       }
     },
-    "offset": 137,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

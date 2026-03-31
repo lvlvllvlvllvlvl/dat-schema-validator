@@ -1,0 +1,5 @@
+# Added 4.1
+type LeagueCategoryToDisplayName {
+  Id: i32 @unique
+  LeagueName: LeagueNames
+}

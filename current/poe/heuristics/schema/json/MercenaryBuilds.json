@@ -87,18 +87,17 @@
     "size": 4
   },
   {
-    "name": "",
-    "offset": 64,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
+    "offset": 64,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -225,7 +224,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "IdleSkill",
     "offset": 155,
     "unknownArray": false,
     "unique": false,
@@ -233,7 +232,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MercenarySkills"
       }
     },
     "size": 16

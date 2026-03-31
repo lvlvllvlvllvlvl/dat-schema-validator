@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Export",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,7 +20,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "VillageExports"
       }
     },
     "size": 16
@@ -41,14 +42,18 @@
     "size": 4
   },
   {
+    "name": "PopupIcon",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldPopupIconTypes"
       }
     },
-    "offset": 28,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

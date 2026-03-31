@@ -6,7 +6,7 @@ type MoveDaemon {
   _: i32
   _: i32
   _: i32
-  _: rid
+  MonsterVarietiesKeys: MonsterVarieties
   _: i32
   _: i32
   _: i32
@@ -31,8 +31,8 @@ type MoveDaemon {
   _: bool
   _: bool
   _: i32
-  _: i32
-  _: i32
   _: bool
+  _: f32
+  _: i32
   _: bool
 }

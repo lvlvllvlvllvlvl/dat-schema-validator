@@ -1,15 +1,15 @@
 # Added 3.12
 type GeometryChannel {
   Id: string @unique
-  _: rid
-  _: rid
-  _: rid
+  AnimationStart: Animation
+  AnimationEnd: Animation
+  MiscAnimated: MiscAnimated
   _: string
   _: string
   _: string
   _: bool
   _: bool
-  _: rid
+  MiscAnimated2: MiscAnimated
   _: rid
   EPKFile: string @file(ext: ".epk")
   _: i32

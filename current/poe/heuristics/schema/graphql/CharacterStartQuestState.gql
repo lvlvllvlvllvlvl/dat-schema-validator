@@ -2,9 +2,9 @@
 type CharacterStartQuestState {
   Id: string @unique
   QuestKeys: [Quest]
-  QuestStates: [i32]
-  _: [rid]
+  QuestFlags: [QuestFlags]
+  NPCs: [NPCs]
   MapPinsKeys: [MapPins]
-  _: [i32]
-  _: [rid]
+  _: [QuestFlags]
+  Areas: [WorldAreas]
 }

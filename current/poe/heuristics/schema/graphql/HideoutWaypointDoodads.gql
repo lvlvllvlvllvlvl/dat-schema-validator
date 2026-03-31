@@ -1,5 +1,6 @@
 # Added 3.19
 type HideoutWaypointDoodads {
-  _: rid @unique
-  _: [_]
+  Waypoint: HideoutDoodads @unique
+  Script1: string
+  Script2: string
 }

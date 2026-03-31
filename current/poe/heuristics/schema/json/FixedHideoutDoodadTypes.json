@@ -84,7 +84,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "UnlockQuest",
     "offset": 49,
     "unknownArray": false,
     "unique": false,
@@ -92,60 +92,25 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Quest"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "WorldArea",
     "offset": 65,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
-    "size": 4
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 69,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 73,
-    "size": 4,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 77,
-    "size": 4,
-    "unique": false
+    "size": 16
   }
 ]

@@ -3,7 +3,7 @@ type StashType {
   Id: string @unique
   StashId: StashId @unique
   Id2: string @unique
-  _: i32
+  StorageSlots: i32
   _: i32
   _: i32
   Icon: string

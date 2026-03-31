@@ -5,7 +5,7 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   WorldArea: WorldAreas
   MicrotransactionPortalVariation: MicrotransactionPortalVariations
   AreaLevel: i32
-  _: rid
+  QuestFlag: QuestFlags
   _: i32
   _: bool
   _: bool
@@ -13,8 +13,8 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   OpenAchievemnts: [AchievementItems]
   _: bool
   _: i32
-  _: [Mods]
+  Mods: [Mods]
   _: bool
   _: [_] # All rows empty
-  _: rid
+  AtlasNode: AtlasNode
 }

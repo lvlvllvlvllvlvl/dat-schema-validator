@@ -1,7 +1,7 @@
 # Added 4.1
 type MicrotransactionOnKillBeams {
   Id: string @unique
-  _: rid
+  Beam: MiscBeams
   _: string
   _: string
   _: string

@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Tribe",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -8,13 +8,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AncestralTrialTribes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "TrialEvent",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -22,7 +23,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AncestralTrialDialogueEvents"
       }
     },
     "size": 16
@@ -58,7 +60,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Character",
     "offset": 52,
     "unknownArray": false,
     "unique": false,
@@ -66,7 +68,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Characters"
       }
     },
     "size": 16

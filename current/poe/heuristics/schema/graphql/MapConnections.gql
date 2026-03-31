@@ -2,10 +2,10 @@
 type MapConnections {
   MapPinsKey0: MapPins
   MapPinsKey1: MapPins
-  _: rid
+  QuestCompleteFlag: QuestFlags
   RestrictedAreaText: string @localized
-  _: rid
-  _: rid
-  _: rid
+  QuestGainedFlag: QuestFlags
+  _: QuestFlags
+  _: QuestFlags
   _: [_] # All rows empty
 }

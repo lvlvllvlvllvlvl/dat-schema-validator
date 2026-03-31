@@ -108,7 +108,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "ClientStrings",
     "offset": 72,
     "unknownArray": false,
     "unique": false,
@@ -116,7 +116,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ClientStrings"
       }
     },
     "size": 16

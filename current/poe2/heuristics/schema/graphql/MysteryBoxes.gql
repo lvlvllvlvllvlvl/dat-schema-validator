@@ -5,6 +5,6 @@ type MysteryBoxes {
   BoxId: string
   BundleId: string
   _: bool
-  _: string
-  _: string @localized
+  Logo: string
+  Gradient: string @localized
 }

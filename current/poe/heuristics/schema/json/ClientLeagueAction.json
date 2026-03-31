@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "GamepadButton",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,7 +20,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GamepadButton"
       }
     },
     "size": 16

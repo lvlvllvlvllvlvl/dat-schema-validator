@@ -1,0 +1,6 @@
+# Added 3.25
+type MicrotransactionRandomDisguises {
+  Id: i32 @unique
+  Disguise: string
+  WorldArea: WorldAreas
+}

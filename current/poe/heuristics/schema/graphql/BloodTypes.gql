@@ -1,19 +1,19 @@
 # Added 3.11
 type BloodTypes {
   Id: string @unique
+  ImpactSoundCrit: ImpactSoundData
+  ImpactSoundGoreCrit: ImpactSoundData
+  Animation: [MiscAnimated]
+  ImpactSoundGoreHit: ImpactSoundData
   _: rid
   _: rid
-  _: [rid]
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  EffectSmall: DamageEffectVariations
+  EffectLarge: DamageEffectVariations
+  EffectCrit: DamageEffectVariations
+  EffectGoreSmall: DamageEffectVariations
+  EffectGoreLarge: DamageEffectVariations
+  EffectGoreCrit: DamageEffectVariations
+  EffectFirstBloodSmall: DamageEffectVariations
+  EffectFirstBloodLarge: DamageEffectVariations
+  EffectFirstBloodCrit: MicrotransactionPortalVariations
 }

@@ -1,0 +1,7 @@
+# Added 3.25
+type GoldBaseTypePrices {
+  BaseItemType: BaseItemTypes @unique
+  Cost: i32
+  _: f32
+  _: bool
+}

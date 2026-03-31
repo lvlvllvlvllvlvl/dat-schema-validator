@@ -3,8 +3,8 @@ type WeaponPassiveSkills {
   Id: string
   Tier: i32
   Mod: Mods
-  _: [_]
-  _: [_]
+  NodeSpawnLocation: [i32]
+  Tags: [CrucibleTags]
   Icon: string
   Type: WeaponPassiveSkillTypes
   Achievements: [AchievementItems]

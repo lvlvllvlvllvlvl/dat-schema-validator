@@ -1,0 +1,13 @@
+# Added 3.25
+type VillageShippingFailures {
+  Id: string @unique
+  Text: string @localized
+  Resource: [VillageResources]
+  ResourceLostPercent: i32
+  PortBonusLostPercent: i32
+  _: i32
+  CrewMembersLost: i32
+  _: i32
+  SubText: string @localized
+  _: i32
+}

@@ -1,8 +1,8 @@
 # Added 3.22
 type ItemClassVisualReplacement {
-  _: rid @unique
-  _: rid
-  _: rid
+  ItemClass: ItemClasses @unique
+  Stat: Stats
+  ItemVisualIdentity: ItemVisualIdentity
   _: bool
   _: bool
   _: bool

@@ -52,7 +52,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Tribe",
     "offset": 28,
     "unknownArray": false,
     "unique": false,
@@ -60,7 +60,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AncestralTrialTribes"
       }
     },
     "size": 16
@@ -137,7 +138,7 @@
     "unique": false
   },
   {
-    "name": "",
+    "name": "SoundEffectPurchase",
     "offset": 92,
     "unknownArray": false,
     "unique": false,
@@ -145,13 +146,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "SoundEffectEquip",
     "offset": 108,
     "unknownArray": false,
     "unique": false,
@@ -159,7 +161,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16

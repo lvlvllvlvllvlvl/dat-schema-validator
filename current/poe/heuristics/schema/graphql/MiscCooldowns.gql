@@ -1,0 +1,7 @@
+# Added 3.26
+type MiscCooldowns {
+  Id: string @unique
+  _: i32
+  _: i32
+  _: bool
+}

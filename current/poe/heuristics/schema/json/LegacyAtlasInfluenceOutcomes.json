@@ -86,15 +86,18 @@
     "size": 16
   },
   {
+    "name": "Mods",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
-    "offset": 40,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

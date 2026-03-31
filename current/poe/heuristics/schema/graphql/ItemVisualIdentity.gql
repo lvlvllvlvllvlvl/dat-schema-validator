@@ -45,15 +45,15 @@ type ItemVisualIdentity {
   _: string
   IsAtlasOfWorldsMapIcon: bool
   IsTier16Icon: bool
-  _: [i32]
+  KalandraAchievement: [AchievementItems]
   _: bool
-  _: [rid]
+  HeistAchievement: [AchievementItems]
   _: string
-  Composition: ItemVisualCompositions
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  Composition: i32
+  UniqueStat1: Stats
+  UniqueStat2: Stats
+  UniqueStat3: Stats
+  UniqueStat4: Stats
   _: [rid]
   _: [rid]
   _: bool

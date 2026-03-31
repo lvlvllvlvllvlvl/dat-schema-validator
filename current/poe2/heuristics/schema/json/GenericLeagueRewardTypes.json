@@ -12,11 +12,6 @@
     "size": 8
   },
   {
-    "name": "MinLevel",
-    "offset": 8,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -24,14 +19,11 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 8,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "MaxLevel",
-    "offset": 12,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -39,6 +31,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 12,
+    "size": 4,
+    "unique": false
   }
 ]

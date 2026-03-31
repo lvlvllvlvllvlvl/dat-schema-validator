@@ -1,0 +1,9 @@
+# Added 3.27
+type BrequelLockerLayout {
+  Id: string @unique
+  _: i32
+  _: i32
+  _: i32
+  ItemClass: ItemClasses
+  Name: string @localized
+}

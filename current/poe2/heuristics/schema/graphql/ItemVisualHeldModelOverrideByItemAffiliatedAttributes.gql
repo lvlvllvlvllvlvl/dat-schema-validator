@@ -1,0 +1,12 @@
+# Added 4.3
+type ItemVisualHeldModelOverrideByItemAffiliatedAttributes {
+  VisualIdentity: ItemVisualIdentity
+  ItemClass: ItemClasses
+  _: string @file(ext: ".ao")
+  _: string @file(ext: ".ao")
+  _: string @file(ext: ".ao")
+  _: string @file(ext: ".ao")
+  _: string @file(ext: ".ao")
+  _: string @file(ext: ".ao")
+  _: string @file(ext: ".ao")
+}

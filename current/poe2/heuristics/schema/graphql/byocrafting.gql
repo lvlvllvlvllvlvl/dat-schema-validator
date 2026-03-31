@@ -1,9 +1,0 @@
-# Added 4.3
-type byocrafting {
-  _: string @unique
-  _: string @localized
-  _: string
-  _: string @localized
-  _: string
-  _: [_] # All rows empty
-}

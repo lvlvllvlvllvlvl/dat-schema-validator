@@ -11,6 +11,6 @@ type TormentSpirits {
   _: i32
   ModsKeys0: [Mods]
   ModsKeys1: [Mods]
-  _: rid @unique
-  _: rid
+  PlayerPossessedMod: Mods
+  Animation: MiscAnimated
 }

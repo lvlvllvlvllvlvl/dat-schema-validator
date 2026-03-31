@@ -1,5 +1,7 @@
 # Added 3.11
 type AreaTransitionInfo {
+  StartingArea: WorldAreas
+  EndingArea: WorldAreas
   _: rid
   _: rid
   _: rid
@@ -8,10 +10,8 @@ type AreaTransitionInfo {
   _: rid
   _: rid
   _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: [rid]
+  Animation: MiscAnimated
+  MiscObject: [MiscObjects]
   _: i32
   _: [rid]
 }

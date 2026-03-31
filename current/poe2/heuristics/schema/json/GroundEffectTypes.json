@@ -41,7 +41,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -49,13 +49,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffDefinition1",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -63,13 +64,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffDefinition2",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -77,7 +79,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16

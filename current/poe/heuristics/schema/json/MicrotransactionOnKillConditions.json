@@ -12,16 +12,19 @@
     "size": 8
   },
   {
+    "name": "Rarity",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MicrotransactionRarityDisplay"
       }
     },
-    "offset": 8,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "type": {
@@ -77,6 +80,11 @@
     "size": 1
   },
   {
+    "name": "",
+    "offset": 61,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -84,10 +92,7 @@
         "size": 4
       }
     },
-    "offset": 61,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
@@ -112,64 +117,9 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 85,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 89,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
       "boolean": true
     },
     "size": 1
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 90,
-    "size": 4,
-    "unique": true
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 94,
-    "size": 4,
-    "noData": true,
-    "unique": false
   },
   {
     "type": {
@@ -178,9 +128,25 @@
         "foreign": true
       }
     },
-    "offset": 98,
+    "offset": 82,
     "size": 16,
+    "noData": true,
     "unknownArray": true,
     "unique": false
+  },
+  {
+    "name": "Stats",
+    "offset": 98,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
   }
 ]

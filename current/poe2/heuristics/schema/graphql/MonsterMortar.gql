@@ -1,9 +1,9 @@
 # Added 4.1
 type MonsterMortar {
   Id: i32 @unique
-  _: rid
-  _: rid
-  _: rid
+  Projectile: Projectiles
+  Animation: Animation
+  ImpactAnimation: MiscAnimated
   _: i32
   _: bool
   _: bool
@@ -16,7 +16,7 @@ type MonsterMortar {
   _: i32
   _: bool
   _: bool
-  _: rid
+  BounceAnimation: MiscAnimated
   _: i32
   _: f32
   _: f32

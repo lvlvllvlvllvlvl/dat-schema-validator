@@ -1,7 +1,7 @@
 # Added 3.27
 type BrequelPassiveSubTrees {
   Id: string @unique
-  _: ClientStrings
-  _: ClientStrings
+  RewardStringSingle: ClientStrings
+  RewardStringMultiple: ClientStrings
   Wombgift: BaseItemTypes
 }

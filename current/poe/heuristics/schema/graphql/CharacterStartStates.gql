@@ -6,7 +6,7 @@ type CharacterStartStates {
   Level: i32
   PassiveSkillsKeys: [PassiveSkills]
   CharacterStartStateSetKey: CharacterStartStateSet
-  _: rid
+  HubArea: WorldAreas
   CharacterStartQuestStateKeys: [CharacterStartQuestState]
   _: bool
   InfoText: string

@@ -7,5 +7,5 @@ type MapCompletionAchievements {
   MapTierAchievementsKeys: [MapTierAchievements]
   _: bool
   WorldAreasKeys: [WorldAreas]
-  _: [string]
+  Ruleset: [Rulesets]
 }

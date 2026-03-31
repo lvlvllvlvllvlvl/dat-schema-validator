@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "ChatIcon",
     "offset": 8,
     "unknownArray": false,
     "unique": true,
@@ -20,13 +20,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ChatIcons"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Portal",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -34,13 +35,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "SetBonusStat",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -48,13 +50,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Pets",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -62,13 +65,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Pet"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "WeaponEffectStats",
     "offset": 72,
     "unknownArray": false,
     "unique": false,
@@ -76,7 +80,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16

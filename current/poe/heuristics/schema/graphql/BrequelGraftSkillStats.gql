@@ -1,0 +1,5 @@
+# Added 3.27
+type BrequelGraftSkillStats {
+  GraftStat: Stats @unique
+  PlayerStat: Stats
+}

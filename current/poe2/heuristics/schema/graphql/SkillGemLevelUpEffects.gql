@@ -1,8 +1,8 @@
 # Added 4.1
 type SkillGemLevelUpEffects {
   Id: string @unique
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  StrGemAnimation: MiscAnimated
+  DexGemAnimation: MiscAnimated
+  IntGemAnimation: MiscAnimated
+  OtherGemAnimation: MiscAnimated
 }

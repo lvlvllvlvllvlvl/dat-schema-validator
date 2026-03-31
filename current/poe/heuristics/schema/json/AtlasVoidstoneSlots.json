@@ -85,7 +85,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "SoundEffect",
     "offset": 56,
     "unknownArray": false,
     "unique": true,
@@ -93,7 +93,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
@@ -143,7 +144,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Colours"
       }
     },
     "size": 16
@@ -157,7 +159,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Colours"
       }
     },
     "size": 16

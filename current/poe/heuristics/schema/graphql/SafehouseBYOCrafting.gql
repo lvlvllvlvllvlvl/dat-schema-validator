@@ -3,5 +3,5 @@ type SafehouseBYOCrafting @tags(list: ["crafting"]) {
   BetrayalJobsKey: BetrayalJobs
   BetrayalTargetsKey: BetrayalTargets
   Rank: i32
-  _: rid @unique
+  Craft: BYOCrafting
 }

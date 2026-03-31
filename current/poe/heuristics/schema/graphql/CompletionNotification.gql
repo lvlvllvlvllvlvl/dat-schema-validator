@@ -1,0 +1,7 @@
+# Added 3.28
+type CompletionNotification {
+  Id: string @unique
+  Art: string
+  Sound: SoundEffects
+  PopupMessage: ClientStrings
+}

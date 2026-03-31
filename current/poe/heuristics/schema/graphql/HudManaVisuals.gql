@@ -1,0 +1,10 @@
+# Added 3.24
+type HudManaVisuals {
+  Id: string @unique
+  OrbContent: string
+  OrbTrim: string
+  HUDContent: string
+  HUDTrim: string
+  FlaskContent: string
+  _: i32
+}

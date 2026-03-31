@@ -7,5 +7,5 @@ type UltimatumEncounterTypes {
   _: bool
   NormalAchievements: [AchievementItems]
   InscribedAchievement: AchievementItems
-  _: rid
+  EncounterChanceStat: Stats
 }

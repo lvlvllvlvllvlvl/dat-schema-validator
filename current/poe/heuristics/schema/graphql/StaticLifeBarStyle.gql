@@ -1,0 +1,8 @@
+# Added 3.25
+type StaticLifeBarStyle {
+  Id: string @unique
+  FrameLeftArt: string
+  FrameMiddleArt: string
+  FrameRightArt: string
+  BossOrnamentArt: string
+}

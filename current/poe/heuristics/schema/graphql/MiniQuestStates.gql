@@ -2,6 +2,6 @@
 type MiniQuestStates {
   _: i32
   _: [_] # All rows empty
-  _: [_]
+  QuestFlag: [QuestFlags]
   _: i32
 }

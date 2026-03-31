@@ -335,7 +335,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "StatContextFlags",
     "offset": 222,
     "unknownArray": false,
     "unique": false,
@@ -343,7 +343,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "VirtualStatContextFlags"
       }
     },
     "size": 16

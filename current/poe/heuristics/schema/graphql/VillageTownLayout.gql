@@ -1,0 +1,11 @@
+# Added 3.25
+type VillageTownLayout {
+  Id: string @unique
+  Job: VillageJobs
+  JobType: VillageJobTypes
+  MapButtonArt: string
+  Name: string @localized
+  PositionX: i32
+  PositionY: i32
+  Resource: VillageResources
+}

@@ -1,7 +1,7 @@
 # Added 4.1
 type MicroMigrationData {
-  BaseItemTypesKey: BaseItemTypes
+  Mtx: MtxTypeGameSpecific
   _: i32
   _: rid
-  _: rid
+  MtxPack: MtxTypeGameSpecific
 }

@@ -1,7 +1,7 @@
 # Added 3.11
 type CloneShot {
   Id: i32 @unique
-  MonsterVarietiesKey: MonsterVarieties
+  MonsterVarietiesKey: MonsterVarieties @unique
   MiscAnimated1: MiscAnimated
   MiscAnimated2: MiscAnimated
   MiscAnimated3: MiscAnimated

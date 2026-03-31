@@ -1,13 +1,13 @@
 # Added 3.21
 type MicrotransactionOnKillEffects {
   Id: string @unique
-  _: rid
-  _: rid
-  _: rid
+  ObjectEffect1: MicrotransactionObjectEffects
+  ObjectEffect2: MicrotransactionObjectEffects
+  KillCondition: MicrotransactionOnKillConditions
+  HASH32: u32
+  OnKillBeam: MicrotransactionOnKillBeams
   _: i32
-  _: rid
-  _: i32
-  _: rid
-  _: [_]
-  _: [_]
+  Stat: Stats
+  Counter: [MicrotransactionCounters]
+  _: [i32]
 }

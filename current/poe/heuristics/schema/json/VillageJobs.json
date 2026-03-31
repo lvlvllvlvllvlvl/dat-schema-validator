@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "JobType",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -8,7 +8,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "VillageJobTypes"
       }
     },
     "size": 16

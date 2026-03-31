@@ -1,15 +1,16 @@
 # Added 4.1
 type MicrotransactionSlot {
-  Id: MicrotransactionSlotId @unique
-  _: rid
+  Id: i32 @unique
+  ShopTag: ShopTag
   Name: string @localized
-  _: rid
-  _: i32
+  InventorySlot: Inventories
+  FlaskSlot: i32
   _: bool
   _: i32
   _: i32
   _: bool
-  _: string @localized
+  _: i32 @localized
+  _: i32 # All rows empty
   _: string
   _: i32
 }

@@ -1,0 +1,5 @@
+# Added 3.28
+type ChatColours {
+  Id: string @unique
+  HASH32: u32
+}

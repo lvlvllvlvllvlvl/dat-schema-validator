@@ -8,6 +8,6 @@ type PlayerConditions {
   StatsKeys: [Stats]
   _: bool
   StatValue: i32
-  _: [rid]
+  BaseItemType: [BaseItemTypes]
   _: bool
 }

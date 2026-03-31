@@ -27,22 +27,22 @@
     "size": 16
   },
   {
-    "name": "QuestStates",
+    "name": "QuestFlags",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "NPCs",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -50,7 +50,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCs"
       }
     },
     "size": 16
@@ -78,15 +79,15 @@
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Areas",
     "offset": 88,
     "unknownArray": false,
     "unique": false,
@@ -94,7 +95,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
     "size": 16

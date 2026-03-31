@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Mtx",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -8,13 +8,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "HASH32",
     "offset": 16,
     "unknownArray": false,
     "unique": true,
@@ -22,7 +23,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },

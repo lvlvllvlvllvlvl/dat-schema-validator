@@ -220,7 +220,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "DotFlag",
     "offset": 89,
     "unknownArray": false,
     "unique": false,
@@ -228,7 +228,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "VirtualStatContextFlags"
       }
     },
     "size": 16

@@ -2,7 +2,7 @@
 type DelveRobotVariations {
   Id: string @unique
   AOFile: string @file(ext: ".ao")
-  _: [string]
-  _: rid
-  _: rid
+  Joint: [string]
+  Pet: Pet
+  MiscAnimated: MiscAnimated
 }

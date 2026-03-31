@@ -1,6 +1,6 @@
 # Added 3.17
 type KiracLevels {
-  AreaLevel: i32
-  _: i32
-  _: i32 @unique
+  MapAreaLevelOffered: i32
+  MapCompletion: i32
+  ShopRerollCost: i32
 }

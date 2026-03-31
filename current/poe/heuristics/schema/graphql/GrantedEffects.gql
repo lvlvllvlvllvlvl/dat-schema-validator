@@ -30,6 +30,6 @@ type GrantedEffects {
   _: i32
   _: i32
   _: bool
-  StatSet: GrantedEffectStatSets
-  _: [rid]
+  StatSet1: GrantedEffectStatSets
+  StatSet2: [GrantedEffectStatSets]
 }

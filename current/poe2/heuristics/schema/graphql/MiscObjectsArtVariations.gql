@@ -1,8 +1,8 @@
 # Added 4.1
 type MiscObjectsArtVariations {
-  _: string
-  _: [_]
+  Id: string
+  MiscObject: [MiscObjects]
   _: i32
   _: i32
-  _: rid
+  Stat: Stats
 }

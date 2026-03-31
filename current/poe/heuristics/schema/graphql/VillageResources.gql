@@ -1,7 +1,7 @@
 # Added 3.25
 type VillageResources {
   Id: string @unique
-  _: rid
+  Export: VillageExports
   _: i32
-  _: rid
+  PopupIcon: WorldPopupIconTypes
 }

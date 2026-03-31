@@ -1,5 +1,5 @@
 # Added 4.1
 type TalkingPets {
-  _: rid
-  _: [rid]
+  Id: NPCs @unique
+  Pet: [Pet]
 }

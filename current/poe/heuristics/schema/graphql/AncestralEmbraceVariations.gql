@@ -2,5 +2,5 @@
 type AncestralEmbraceVariations {
   Id: string @unique
   Minion: MonsterVarieties
-  _: rid
+  BuffTemplate: BuffTemplates
 }

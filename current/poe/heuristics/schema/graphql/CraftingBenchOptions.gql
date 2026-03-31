@@ -34,7 +34,7 @@ type CraftingBenchOptions @tags(list: ["crafting"]) {
   _: Stats
   _: Stats
   MapDevice: bool
-  _: [rid]
+  PassiveSkills: [PassiveSkills]
   Tags: [Tags]
   _: [i32]
 }

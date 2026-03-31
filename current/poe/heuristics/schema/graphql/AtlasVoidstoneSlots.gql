@@ -6,10 +6,10 @@ type AtlasVoidstoneSlots {
   _: i32
   _: string @localized
   QuestFlag: QuestFlags
-  _: rid
+  SoundEffect: SoundEffects
   _: string
   _: string
   _: string
-  _: rid
-  _: rid
+  _: Colours
+  _: Colours
 }

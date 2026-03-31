@@ -1,8 +1,8 @@
 # Added 3.11
 type MonsterPackCounts {
-  _: rid
+  Area: WorldAreas @unique
   _: i32
-  _: [rid]
+  Tags: [Tags]
   _: bool
   _: [i32]
 }

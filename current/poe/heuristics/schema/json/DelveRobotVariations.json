@@ -24,7 +24,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Joint",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -36,7 +36,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Pet",
     "offset": 32,
     "unknownArray": false,
     "unique": true,
@@ -44,13 +44,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Pet"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscAnimated",
     "offset": 48,
     "unknownArray": false,
     "unique": true,
@@ -58,7 +59,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16

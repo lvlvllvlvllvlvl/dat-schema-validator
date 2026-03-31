@@ -1,6 +1,6 @@
 # Added 4.1
 type StatVisuals {
-  _: rid @unique
+  Stat: Stats @unique
   EPKFiles: [string] @file(ext: ".epk")
   _: bool
 }

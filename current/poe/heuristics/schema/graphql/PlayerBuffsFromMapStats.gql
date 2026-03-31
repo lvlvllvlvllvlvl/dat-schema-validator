@@ -1,0 +1,5 @@
+# Added 3.24
+type PlayerBuffsFromMapStats {
+  Stat: Stats @unique
+  BuffTemplate: [BuffTemplates]
+}

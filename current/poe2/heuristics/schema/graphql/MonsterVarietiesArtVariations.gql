@@ -2,5 +2,5 @@
 type MonsterVarietiesArtVariations {
   Id: string
   _: i32
-  _: [_]
+  MonsterVarietiesKeys: [MonsterVarieties]
 }

@@ -1,7 +1,7 @@
 # Added 3.23
 type SummonedSpecificMonstersOnDeathStats {
-  _: rid
-  _: rid
+  Id: Stats @unique
+  Monster: SummonedSpecificMonstersOnDeath
   _: bool
-  _: rid
+  MapStat: Stats
 }

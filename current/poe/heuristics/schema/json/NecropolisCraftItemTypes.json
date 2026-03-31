@@ -109,7 +109,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ItemClass",
     "offset": 84,
     "unknownArray": false,
     "unique": false,
@@ -117,7 +117,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemClasses"
       }
     },
     "size": 16

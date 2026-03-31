@@ -1,0 +1,14 @@
+# Added 3.26
+type CountdownTimers {
+  Id: string @unique
+  BackgroundArt: string
+  Text: string @localized
+  FightCountdown: SoundEffects
+  Countdown: [SoundEffects]
+  _: i32
+  _: i32
+  _: i32
+  _: f32
+  _: i32
+  _: f32
+}

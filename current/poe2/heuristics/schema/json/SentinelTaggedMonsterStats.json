@@ -30,7 +30,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffTemplate",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -38,7 +38,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffTemplates"
       }
     },
     "size": 16

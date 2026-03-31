@@ -1,20 +1,24 @@
 # Added 3.17
 type MicrotransactionJewelVariations {
-  _: rid @unique
+  Mtx: MtxTypeGameSpecific @unique
   _: i32
-  _: string
-  _: string
+  ActiveArt: string
+  BackgroundArt: string
   _: i32
-  _: [_]
-  _: string
-  _: string
+  BackgroundPupil: string
+  JewelCircle1: string
+  JewelCircle2: string
+  JewelCircleGlow: string
   _: i32
   _: i32
-  _: string
+  SmokeRing: string
   _: i32
-  _: string
+  Ring: string
+  _: i32
   _: i32
   _: bool
-  _: rid
   _: bool
+  _: i32
+  _: i32
+  _: i32
 }

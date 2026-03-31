@@ -1,9 +1,9 @@
 # Added 3.13
 type TalkingPetNPCAudio {
-  _: TalkingPetAudioEvents
-  _: TalkingPets
-  _: [i32]
-  _: string
+  Id: TalkingPetAudioEvents
+  NPC: TalkingPets
+  NPCAudio: [NPCTextAudio]
+  Animation: string
   _: bool
-  _: [_]
+  NPCAudio2: [NPCTextAudio]
 }

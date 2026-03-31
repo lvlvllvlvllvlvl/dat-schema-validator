@@ -3,14 +3,14 @@ type NPCTalk {
   NPCKey: NPCs
   _: i32
   DialogueOption: string @localized
-  _: [i32]
-  _: [i32]
-  _: [i32]
+  QuestFlag1: [QuestFlags]
+  QuestFlag2: [QuestFlags]
+  QuestFlag3: [QuestFlags]
   Script: string
-  TextAudio: NPCTextAudio
+  QuestFlag4: QuestFlags
   Category: NPCTalkCategory
   QuestRewardOffersKey: QuestRewardOffers
-  QuestFlag: QuestFlags
+  QuestFlag5: QuestFlags
   NPCTextAudioKeys: [NPCTextAudio]
   Script2: string
   _: bool
@@ -21,22 +21,20 @@ type NPCTalk {
   _: [i32]
   _: i32
   _: bool
-  _: rid
+  BaseItemTypes: BaseItemTypes
   _: i32
   _: bool
   DialogueOption2: string @localized
-  _: rid
-  _: rid
-  _: string @localized
+  ConsoleQuickAction: NPCTalkConsoleQuickActions
+  Music1: Music
   _: i32
-  _: i32 @localized
+  _: [_] # All rows empty
   _: i32
-  _: i32
-  _: rid
+  Music2: Music
   _: i32
   _: rid
   _: bool
   _: i32
   _: NPCTalk
-  _: rid
+  Inventory: Inventories
 }

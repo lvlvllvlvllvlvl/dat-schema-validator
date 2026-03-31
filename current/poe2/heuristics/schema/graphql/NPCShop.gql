@@ -2,7 +2,7 @@
 type NPCShop {
   Id: string @unique
   _: i32
-  _: [rid]
+  TabColours: [Colours]
   _: [_] # All rows empty
   _: [_] # All rows empty
   _: [_] # All rows empty

@@ -4,12 +4,12 @@ type AncestralTrialItems {
   HASH16: i32
   Name: string @localized
   Image: string
-  _: rid
+  Tribe: AncestralTrialTribes
   _: i32
   Mods: [Mods]
   FlavorText: string @localized
   _: i32
   _: [_] # All rows empty
-  _: rid
-  _: rid
+  SoundEffectPurchase: SoundEffects
+  SoundEffectEquip: SoundEffects
 }

@@ -2,16 +2,13 @@
 type AtlasInfluenceData {
   InfluencePack: AtlasInfluenceOutcomes
   MonsterPacks: [MonsterPacks]
-  _: rid
+  BuffDefinition: BuffDefinitions
   _: [Stats]
+  BuffStatValues: [i32]
+  _: [MonsterPackCounts]
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: [_]
-  _: i32
-  _: i32
-  _: rid
+  InfluencePackSizeStat: Stats
   _: i32
   _: i32
   _: i32
@@ -20,7 +17,7 @@ type AtlasInfluenceData {
   _: bool
   _: bool
   _: bool
-  _: rid
-  _: rid
-  _: rid
+  ZanaInfluenceChanceStat: Stats
+  ZanaInfluenceMagicChanceStat: Stats
+  ZanaInfluenceRareChanceStat: Stats
 }

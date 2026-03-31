@@ -4,10 +4,10 @@ type TableCharge {
   _: f32
   _: f32
   _: bool
-  _: rid
+  MiscAnimatedArtVariations: MiscAnimatedArtVariations
   _: bool
-  _: [rid]
-  _: rid
+  TravelAnimation: [MiscAnimated]
+  ImpactAnimation: MiscAnimated
   _: i32
   _: i32
   _: i32

@@ -1,21 +1,21 @@
 # Added 3.11
 type MonsterDeathConditions {
-  _: string
-  _: [rid]
+  Id: string @unique
+  BuffDefinition: [BuffDefinitions]
   _: bool
   _: i32
-  _: [rid]
+  Stat: [Stats]
   _: bool
   _: i32
-  _: rid
+  Rarity: Rarity
   _: bool
-  _: [rid]
+  Mods: [Mods]
   _: i32
   _: bool
-  _: [rid]
+  Animation: [Animation]
   _: i32
-  _: rid
-  _: rid
+  ActiveSkill1: ActiveSkills
+  ActiveSkill2: ActiveSkills
   _: i32
   _: i32
 }

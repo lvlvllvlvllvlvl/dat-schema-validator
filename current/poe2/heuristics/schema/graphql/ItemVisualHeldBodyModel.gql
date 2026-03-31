@@ -1,13 +1,13 @@
 # Added 4.1
 type ItemVisualHeldBodyModel {
   ItemVisualIdentity: ItemVisualIdentity @unique
-  MarauderAnimatedObject: string
-  RangerAnimatedObject: string
-  WitchAnimatedObject: string
-  DuelistAnimatedObject: string
-  TemplarAnimatedObject: string
-  ShadowAnimatedObject: string
-  ScionAnimatedObject: string
+  MarauderAnimatedObject: string @file(ext: ".ao")
+  RangerAnimatedObject: string @file(ext: ".ao")
+  WitchAnimatedObject: string @file(ext: ".ao")
+  DuelistAnimatedObject: string @file(ext: ".ao")
+  TemplarAnimatedObject: string @file(ext: ".ao")
+  ShadowAnimatedObject: string @file(ext: ".ao")
+  ScionAnimatedObject: string @file(ext: ".ao")
   MarauderBone: string
   RangerBone: string
   WitchBone: string

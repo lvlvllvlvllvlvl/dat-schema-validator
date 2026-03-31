@@ -3,7 +3,7 @@ type EnvironmentTransitions {
   Id: string @unique
   OTFiles: [string] @file(ext: ".ot")
   _: i32
-  _: [_]
+  Environment: [Environments]
   _: [string]
-  _: f32
+  _: i32
 }

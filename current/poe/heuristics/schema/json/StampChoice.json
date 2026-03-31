@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Room",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,7 +20,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "LakeRooms"
       }
     },
     "size": 16
@@ -66,7 +67,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "StampFamily",
     "offset": 44,
     "unknownArray": false,
     "unique": false,
@@ -74,25 +75,29 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "StampFamily"
       }
     },
     "size": 16
   },
   {
+    "name": "Achievements",
+    "offset": 60,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
-    "offset": 60,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "name": "",
+    "name": "HASH16",
     "offset": 76,
     "unknownArray": false,
     "unique": false,
@@ -100,7 +105,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },

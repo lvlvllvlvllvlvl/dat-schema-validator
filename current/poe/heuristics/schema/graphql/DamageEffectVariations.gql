@@ -1,20 +1,11 @@
 # Added 3.17
 type DamageEffectVariations {
   Id: string @unique
-  _: [_]
+  MiscAnimated: [MiscAnimated]
+  Particles: [string] @file(ext: ".pet")
+  _: i32
+  _: i32
   _: [string]
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: bool
-  _: bool
-  _: bool
-  _: rid
+  _: [string]
+  EffectPack: MiscEffectPacks
 }

@@ -1,0 +1,6 @@
+# Added 4.4
+type MicrotransactionReviveEffects {
+  Id: string @unique
+  _: i32
+  _: bool
+}

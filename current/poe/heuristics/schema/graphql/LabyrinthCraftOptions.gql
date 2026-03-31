@@ -11,6 +11,6 @@ type LabyrinthCraftOptions {
   _: bool
   Achievement: [AchievementItems]
   _: bool
-  _: rid
+  SoundEffect: SoundEffects
   _: i32
 }

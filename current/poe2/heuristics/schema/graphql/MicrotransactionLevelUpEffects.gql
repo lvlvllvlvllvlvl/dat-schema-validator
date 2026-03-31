@@ -1,0 +1,12 @@
+# Added 4.1
+type MicrotransactionLevelUpEffects {
+  Id: string @unique
+  Animation: MiscAnimated
+  EffectPack: MiscEffectPacks
+  Stat: Stats
+  MiscObject: MiscObjects
+  _: string
+  Script: string
+  _: string
+  SoundEffect: LevelUpSoundEffect
+}

@@ -1,7 +1,7 @@
 # Added 4.1
 type PortalAudio {
-  _: rid
-  _: rid
-  _: rid
+  Event: PortalAudioEvents
+  PortalVariation: MicrotransactionPortalVariations
+  NPCAudio: NPCTextAudio
   _: i32
 }

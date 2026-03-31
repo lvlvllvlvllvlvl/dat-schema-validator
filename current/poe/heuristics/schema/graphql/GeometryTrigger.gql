@@ -1,10 +1,8 @@
 # Added 3.11
 type GeometryTrigger {
-  _: i32
-  _: rid
-  _: rid
-  _: i32
-  _: i32
+  Id: i32 @unique
+  GrantedEffect: GrantedEffects
+  Animation: MiscAnimated
   _: i32
   _: i32
   _: i32
@@ -18,39 +16,36 @@ type GeometryTrigger {
   _: i32
   _: i32
   _: i32
-  _: bool
   _: i32
-  _: bool
-  _: i32
-  _: i32
-  _: bool
-  _: i32
-  _: [rid]
   _: i32
   _: bool
   _: i32
   _: bool
   _: bool
+  _: f32
+  _: i32
+  _: i32
+  GroundMarker: [MiscAnimated]
+  _: i32
+  _: bool
   _: i32
   _: bool
   _: bool
-  _: rid
+  _: i32
   _: bool
   _: bool
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32 # All rows empty
   _: rid
   _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: u16 # All rows empty
   _: bool
+  _: i32
+  _: i32
+  Stats: [Stats]
+  StatValues: [i32]
+  _: i32
+  _: f32
+  _: i32
+  _: bool
+  _: i32
+  _: i32
+  _: i32
 }

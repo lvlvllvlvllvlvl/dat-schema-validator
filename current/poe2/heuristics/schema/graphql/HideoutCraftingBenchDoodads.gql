@@ -1,5 +1,5 @@
 # Added 4.1
 type HideoutCraftingBenchDoodads {
-  _: rid @unique
-  _: rid
+  CraftingBench: HideoutDoodads @unique
+  InterfaceVisuals: HideoutCraftingBenchInterfaceVisuals
 }

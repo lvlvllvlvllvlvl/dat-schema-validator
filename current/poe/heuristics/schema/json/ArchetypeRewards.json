@@ -26,7 +26,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Archetype",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -34,7 +34,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Archetypes"
       }
     },
     "size": 16

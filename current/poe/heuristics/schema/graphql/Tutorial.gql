@@ -6,7 +6,7 @@ type Tutorial {
   IsEnabled: bool
   _: i32
   _: [i32]
-  _: rid
+  QuestFlag: QuestFlags
   _: i32
   _: [i32]
   _: bool

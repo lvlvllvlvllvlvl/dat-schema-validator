@@ -19,5 +19,5 @@ type HeistNPCs {
   HeistJobsKey: HeistJobs
   Equip_AchievementItemsKeys: [AchievementItems]
   AOFile: string @file(ext: ".ao")
-  _: rid
+  Inventory: Inventories
 }

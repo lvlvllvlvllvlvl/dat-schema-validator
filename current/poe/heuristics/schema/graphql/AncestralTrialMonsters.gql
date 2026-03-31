@@ -1,8 +1,8 @@
 # Added 3.22
 type AncestralTrialMonsters {
-  _: rid
+  Unit: AncestralTrialUnits
   Monster: MonsterVarieties
-  _: rid
+  Animation: MiscAnimated
   _: i32
   Achievement: [AchievementItems]
   _: bool

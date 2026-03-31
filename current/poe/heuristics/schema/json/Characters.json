@@ -211,7 +211,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "StartingMeleeSkill",
     "offset": 80,
     "unknownArray": false,
     "unique": false,
@@ -219,7 +219,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GrantedEffectsPerLevel"
       }
     },
     "size": 16
@@ -364,7 +365,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "StartSupportGem",
     "offset": 188,
     "unknownArray": false,
     "unique": true,
@@ -372,7 +373,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SkillGems"
       }
     },
     "size": 16
@@ -386,7 +388,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SkillGems"
       }
     },
     "size": 16
@@ -400,13 +403,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SkillGems"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "StartingWeaponBase",
     "offset": 236,
     "unknownArray": false,
     "unique": false,
@@ -414,7 +418,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -774,7 +779,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "GhostArmMtx",
     "offset": 520,
     "unknownArray": false,
     "unique": true,
@@ -782,7 +787,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscEffectPacks"
       }
     },
     "size": 16
@@ -862,7 +868,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "LightningCloneBreach",
     "offset": 580,
     "unknownArray": false,
     "unique": true,
@@ -870,7 +876,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MonsterVarieties"
       }
     },
     "size": 16
@@ -884,7 +891,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MonsterVarieties"
       }
     },
     "size": 16

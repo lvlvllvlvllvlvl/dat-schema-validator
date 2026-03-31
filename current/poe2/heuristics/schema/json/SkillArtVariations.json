@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "AnimatedArt",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,52 +20,53 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimatedArtVariations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "BeamArt",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "MiscBeamsArtVariations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "EffectPacksArt",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "MiscEffectPacksArtVariations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ObjectArt",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "MiscObjectsArtVariations"
       }
     },
     "size": 16
@@ -83,7 +84,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffVisuals",
     "offset": 88,
     "unknownArray": false,
     "unique": false,
@@ -91,7 +92,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffVisualsArtVariations"
       }
     },
     "size": 16
@@ -112,7 +114,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ProjectileArt",
     "offset": 120,
     "unknownArray": false,
     "unique": false,
@@ -120,13 +122,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ProjectilesArtVariations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Stat",
     "offset": 136,
     "unknownArray": false,
     "unique": false,
@@ -134,28 +137,29 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MonsterVarieties",
     "offset": 152,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "MonsterVarietiesArtVariations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ActiveSkill",
     "offset": 168,
     "unknownArray": false,
     "unique": false,
@@ -163,22 +167,23 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ActiveSkills"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "GrantedEffect",
     "offset": 184,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "GrantedEffects"
       }
     },
     "size": 16

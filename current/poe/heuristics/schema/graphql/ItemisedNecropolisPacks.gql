@@ -3,6 +3,6 @@ type ItemisedNecropolisPacks {
   Item: BaseItemTypes @unique
   Pack: NecropolisPacks
   Description: string @localized
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: i32
+  _: i32
 }

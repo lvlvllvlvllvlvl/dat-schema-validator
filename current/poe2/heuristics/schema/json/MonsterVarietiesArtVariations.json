@@ -27,15 +27,18 @@
     "size": 4
   },
   {
+    "name": "MonsterVarietiesKeys",
+    "offset": 12,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MonsterVarieties"
       }
     },
-    "offset": 12,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

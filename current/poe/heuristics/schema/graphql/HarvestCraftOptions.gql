@@ -5,15 +5,15 @@ type HarvestCraftOptions @tags(list: ["crafting"]) {
   Tier: HarvestCraftTiers
   Command: string
   Parameters: string
-  _: [_]
-  HASH16: i16
+  MirageAchievements: [AchievementItems]
+  HASH16: u16
   Description: string @localized
   IsEnchant: bool
   LifeforceType: i32
   LifeforceCost: i32
   SacredCost: i32
   _: bool
-  Achievements: [AchievementItems]
+  NecropolisAchievements: [AchievementItems]
   _: i32
   _: i32
 }

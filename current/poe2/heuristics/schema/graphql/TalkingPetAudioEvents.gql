@@ -1,11 +1,11 @@
 # Added 4.1
 type TalkingPetAudioEvents {
-  Event: string
+  Event: string @unique
   _: i32
   _: i32
   _: i32
-  _: [i32]
-  _: [i32]
-  _: i32
+  BaseItemTypeKey: [BaseItemTypes]
+  ItemClass: [ItemClasses]
+  RepeatCooldown: i32
   _: i32
 }

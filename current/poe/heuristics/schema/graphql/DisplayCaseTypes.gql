@@ -1,0 +1,14 @@
+# Added 3.28
+type DisplayCaseTypes {
+  Id: string @unique
+  _: i32
+  Base: string
+  HoverMiddle: string
+  HoverRight: string
+  Glass: string
+  CrackedGlass: string
+  TopLeftCorner: string
+  TopRightCorner: string
+  BottomLeftCorner: string
+  BottomRightCorner: string
+}

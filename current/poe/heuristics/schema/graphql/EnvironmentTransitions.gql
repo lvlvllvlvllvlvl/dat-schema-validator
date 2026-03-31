@@ -2,8 +2,8 @@
 type EnvironmentTransitions {
   Id: string @unique
   OTFiles: [string] @file(ext: ".ot")
-  _: i32 @unique
-  _: [_]
+  _: i32
+  Environment: [Environments]
   _: [_] # All rows empty
-  _: i32 # All rows empty
+  _: i32
 }

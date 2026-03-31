@@ -19,7 +19,7 @@ type ExplodingStormBuffs {
   _: i32
   BuffDefinitionsKey2: BuffDefinitions
   IsOnlySpawningNearPlayer: bool
-  _: rid
-  _: rid
+  PlayerBuffTemplate: BuffTemplates
+  MonsterBuffTemplate: BuffTemplates
   _: bool
 }

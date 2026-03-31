@@ -2,5 +2,5 @@
 type NPCShop {
   Id: string @unique
   _: i32
-  _: [rid]
+  TabColours: [Colours]
 }

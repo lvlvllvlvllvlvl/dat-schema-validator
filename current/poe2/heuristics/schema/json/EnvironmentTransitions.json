@@ -24,6 +24,11 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -31,21 +36,22 @@
         "size": 4
       }
     },
-    "offset": 24,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "Environment",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Environments"
       }
     },
-    "offset": 28,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "type": {
@@ -57,14 +63,18 @@
     "unique": false
   },
   {
+    "name": "",
+    "offset": 60,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "decimal": {
+      "integer": {
+        "unsigned": false,
         "size": 4
       }
     },
-    "offset": 60,
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

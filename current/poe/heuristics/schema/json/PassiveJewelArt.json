@@ -39,7 +39,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "SoundEffect",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -47,7 +47,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16

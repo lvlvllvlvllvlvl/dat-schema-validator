@@ -11,7 +11,7 @@ type Projectiles {
   _: bool
   InheritsFrom: string @files(ext: [".ot", ".otc"])
   _: i32
-  _: rid
+  MiscAnimated: MiscAnimated
   _: i32
   _: bool
   _: bool
@@ -21,8 +21,8 @@ type Projectiles {
   _: i32
   _: i32
   _: i32
-  _: rid
-  _: rid
+  MiscAnimatedFlash: MiscAnimated
+  MiscAnimatedArrowNova: MiscAnimated
   _: i32
   _: i32
   _: i32

@@ -12,16 +12,19 @@
     "size": 8
   },
   {
+    "name": "BuffVisual",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffVisuals"
       }
     },
-    "offset": 8,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",

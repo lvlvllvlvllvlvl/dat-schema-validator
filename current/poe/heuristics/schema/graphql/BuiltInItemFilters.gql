@@ -1,0 +1,10 @@
+# Added 3.26
+type BuiltInItemFilters {
+  Id: string @unique
+  Name: string @localized
+  Filter: string
+  _: string
+  _: bool
+  _: bool
+  _: string
+}

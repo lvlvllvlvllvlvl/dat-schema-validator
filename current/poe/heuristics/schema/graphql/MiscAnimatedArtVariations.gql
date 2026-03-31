@@ -1,8 +1,8 @@
 # Added 3.14
 type MiscAnimatedArtVariations {
   Id: string
-  _: [_]
+  Animation: [MiscAnimated]
   _: i32
   _: i32
-  _: rid
+  Stats: Stats
 }

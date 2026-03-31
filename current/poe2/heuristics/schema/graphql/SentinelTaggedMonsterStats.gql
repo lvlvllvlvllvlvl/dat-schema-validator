@@ -2,7 +2,7 @@
 type SentinelTaggedMonsterStats {
   TaggedStat: Stats
   _: Stats
-  _: [rid]
+  BuffTemplate: [BuffTemplates]
   _: rid
   _: rid
 }

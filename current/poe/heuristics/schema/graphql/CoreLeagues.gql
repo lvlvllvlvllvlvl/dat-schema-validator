@@ -3,13 +3,13 @@ type CoreLeagues {
   Id: string @unique
   _: bool
   _: bool
-  _: Stats
-  _: [Stats]
-  _: Stats
-  _: Stats
-  _: Stats
-  _: [Stats]
-  _: Stats
+  DisableChanceStat: Stats
+  DisableStat: [Stats]
+  LeagueChanceStat: Stats
+  AdditionalLeagueChanceStat: Stats
+  BaseLeagueChanceStat: Stats
+  ForcedSpawnStat: [Stats]
+  LeagueCountOverrideStat: Stats
   _: rid
   _: i32
   _: bool
@@ -18,5 +18,5 @@ type CoreLeagues {
   _: bool
   _: [Stats]
   _: bool
-  _: rid
+  _: Stats
 }

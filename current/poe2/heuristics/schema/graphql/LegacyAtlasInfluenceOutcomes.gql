@@ -6,5 +6,5 @@ type LegacyAtlasInfluenceOutcomes {
   _: i32
   _: i32
   _: rid
-  _: [_]
+  Mods: [Mods]
 }

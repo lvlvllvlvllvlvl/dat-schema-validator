@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Stat",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -8,13 +8,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "LifeVisual",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -22,13 +23,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "HudLifeVisuals"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "EnergyShieldVisual",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -36,13 +38,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "HudEnergyShieldVisuals"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ManaVisual",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -50,40 +53,52 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "HudManaVisuals"
       }
     },
     "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "TradeVisual",
     "offset": 64,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "TradeWindowVisuals"
       }
     },
-    "offset": 80,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "ManaFlaskVisual",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "HudManaVisuals"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 96,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 96,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

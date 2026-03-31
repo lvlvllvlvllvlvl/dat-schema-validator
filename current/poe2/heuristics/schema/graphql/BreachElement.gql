@@ -1,6 +1,6 @@
 # Added 4.1
 type BreachElement {
-  Element: string
+  Element: string @unique
   _: rid
   BaseBreachstone: BaseItemTypes
   BossMapMod: Stats

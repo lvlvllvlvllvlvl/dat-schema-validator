@@ -1,5 +1,6 @@
 # Added 3.21
 type CosmeticsEquipPanelMode {
   Id: string @unique
-  _: [_]
+  PanelUpperBackground: string
+  UpperBackground: string
 }

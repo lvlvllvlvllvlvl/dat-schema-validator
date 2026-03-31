@@ -5,5 +5,5 @@ type VillageUpgradeCategories {
   Name: string @localized
   Icon: string
   Text: string @localized
-  _: rid
+  JobType: VillageJobTypes
 }

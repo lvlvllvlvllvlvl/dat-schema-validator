@@ -338,7 +338,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MinStat",
     "offset": 126,
     "unknownArray": false,
     "unique": false,
@@ -346,7 +346,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
@@ -457,7 +458,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MultiPartAchievement",
     "offset": 171,
     "unknownArray": false,
     "unique": false,
@@ -465,7 +466,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MultiPartAchievements"
       }
     },
     "size": 16

@@ -1,8 +1,8 @@
 # Added 4.1
 type ProjectilesArtVariations {
-  Projectile: string
+  Id: string
   Variant: i32
-  _: [_]
+  Projectiles: [Projectiles]
   _: i32
   _: rid
 }

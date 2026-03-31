@@ -266,7 +266,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Inventory",
     "offset": 220,
     "unknownArray": false,
     "unique": false,
@@ -274,7 +274,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Inventories"
       }
     },
     "size": 16

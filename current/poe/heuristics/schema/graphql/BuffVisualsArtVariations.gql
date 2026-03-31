@@ -1,6 +1,6 @@
 # Added 3.14
 type BuffVisualsArtVariations {
   Buff: string
-  _: [_]
+  BuffVisual: [BuffVisuals]
   _: i32
 }

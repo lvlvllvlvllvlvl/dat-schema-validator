@@ -3,8 +3,8 @@ type SanctumRoomTypes {
   Id: string @unique
   _: bool
   _: bool
-  _: rid
-  _: rid
+  QuestFlagEnter: SessionQuestFlags
+  QuestFlagComplete: SessionQuestFlags
   _: bool
   Icon: string
   _: bool

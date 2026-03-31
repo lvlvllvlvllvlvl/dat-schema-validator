@@ -15,7 +15,7 @@
     "size": 16
   },
   {
-    "name": "HASH16",
+    "name": "HASH32",
     "offset": 16,
     "unknownArray": false,
     "unique": true,
@@ -23,7 +23,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
@@ -87,6 +87,11 @@
     "size": 4
   },
   {
+    "name": "",
+    "offset": 52,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -94,9 +99,6 @@
         "size": 4
       }
     },
-    "offset": 52,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

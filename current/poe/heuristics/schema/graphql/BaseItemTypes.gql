@@ -33,5 +33,5 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   Achievement2: [AchievementItems]
   IgnoreQuantBonus: bool
   _: bool
-  _: rid
+  ShopTag: ShopTag
 }

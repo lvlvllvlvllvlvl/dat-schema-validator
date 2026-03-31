@@ -564,16 +564,16 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "KalandraAchievement",
     "offset": 422,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -591,7 +591,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "HeistAchievement",
     "offset": 439,
     "unknownArray": false,
     "unique": false,
@@ -599,7 +599,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -632,7 +633,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "UniqueStat1",
     "offset": 467,
     "unknownArray": false,
     "unique": false,
@@ -640,13 +641,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "UniqueStat2",
     "offset": 483,
     "unknownArray": false,
     "unique": false,
@@ -654,13 +656,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "UniqueStat3",
     "offset": 499,
     "unknownArray": false,
     "unique": false,
@@ -668,13 +671,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "UniqueStat4",
     "offset": 515,
     "unknownArray": false,
     "unique": false,
@@ -682,7 +686,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16

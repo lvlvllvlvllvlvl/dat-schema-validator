@@ -1,8 +1,0 @@
-# Added 3.25
-type villageproduction {
-  _: string @unique
-  _: rid
-  _: rid @unique
-  _: i32
-  _: rid
-}

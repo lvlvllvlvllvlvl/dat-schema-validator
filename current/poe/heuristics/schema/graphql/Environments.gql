@@ -3,12 +3,11 @@ type Environments {
   Id: string @unique
   Base_ENVFile: string @file(ext: ".env")
   Corrupted_ENVFiles: [string] @file(ext: ".env")
-  _: [rid]
-  _: [rid]
-  _: [_]
+  QuestFlag1: [QuestFlags]
+  QuestFlag2: [QuestFlags]
+  _: [i32]
   EnvironmentTransitionsKey: EnvironmentTransitions
   PreloadGroup: PreloadGroups
-  _: u16 # All rows empty
   _: bool
-  _: u16
+  _: f32
 }

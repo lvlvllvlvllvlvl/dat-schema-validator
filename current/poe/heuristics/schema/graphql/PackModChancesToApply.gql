@@ -1,0 +1,6 @@
+# Added 3.24
+type PackModChancesToApply {
+  Mod: Mods
+  Chance: i32
+  Guaranteed: bool
+}

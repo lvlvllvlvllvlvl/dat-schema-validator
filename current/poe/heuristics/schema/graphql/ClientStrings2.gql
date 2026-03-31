@@ -1,0 +1,10 @@
+# Added 3.26
+type ClientStrings2 {
+  Id: string @unique
+  Text: string @localized
+  XBoxText: string @localized
+  XBoxText2: string @localized
+  HASH32: u32
+  PlaystationText: string @localized
+  _: string
+}

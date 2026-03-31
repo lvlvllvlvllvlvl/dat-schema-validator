@@ -4,6 +4,6 @@ type AzmeriFeatureRooms {
   _: i32
   _: string
   _: string
-  _: [_]
+  Achievements: [AchievementItems]
   _: bool
 }

@@ -99,12 +99,18 @@
     "size": 16
   },
   {
+    "name": "Ruleset",
+    "offset": 89,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true,
+        "table": "Rulesets"
+      }
     },
-    "offset": 89,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

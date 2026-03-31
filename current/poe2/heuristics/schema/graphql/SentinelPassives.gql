@@ -3,11 +3,11 @@ type SentinelPassives {
   Id: string @unique
   HASH16: i32
   _: string @localized
-  _: [rid]
+  Stats: [SentinelPassiveStats]
   _: [i32]
   _: i32
   _: i32
-  _: rid
+  PassiveType: SentinelPassiveTypes
   _: i32
   _: i32
   _: i32

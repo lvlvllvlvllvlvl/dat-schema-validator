@@ -1,17 +1,17 @@
 # Added 3.11
 type BetrayalDialogue {
-  _: rid
+  Id: BetrayalTargets
   _: i32
   _: i32
   _: [i32]
   BetrayalTargetsKey: BetrayalTargets
   _: i32
-  _: rid
-  _: [rid]
+  Job: BetrayalJobs
+  Relationship: [BetrayalRelationshipState]
   BetrayalUpgradesKey: BetrayalUpgrades
   _: bool
   _: [i32]
-  _: [rid]
+  PossibleChoices: [BetrayalChoiceActions]
   _: bool
   _: [i32]
   NPCTextAudioKey: NPCTextAudio

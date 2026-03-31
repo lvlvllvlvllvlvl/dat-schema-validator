@@ -1,7 +1,7 @@
 # Added 3.21
 type CrucibleEndgameMonsterPacks {
   Tier: string @unique
-  _: [_]
+  _: [i32]
   _: i32
   _: i32
   _: bool

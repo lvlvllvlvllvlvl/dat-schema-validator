@@ -1,6 +1,6 @@
 # Added 3.11
 type IndexableSupportGems @tags(list: ["crafting"]) {
-  Index: i32 @unique
-  SupportGem: SkillGems
+  Index: i32
+  SupportGem: SkillGems @unique
   Name: string @localized
 }

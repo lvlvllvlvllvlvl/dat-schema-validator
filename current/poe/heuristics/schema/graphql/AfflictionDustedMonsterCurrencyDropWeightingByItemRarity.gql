@@ -1,5 +1,5 @@
 # Added 3.23
 type AfflictionDustedMonsterCurrencyDropWeightingByItemRarity {
-  _: rid
-  _: i32
+  Rarity: Rarity
+  CurrencyDropWeighting: f32
 }

@@ -1,8 +1,8 @@
 # Added 4.1
 type GenericLeagueRewardTypeVisuals {
   Type: GenericLeagueRewardTypes
-  _: rid
-  _: rid
+  MapIcon: MinimapIcons
+  Animation: MiscAnimated
   _: f32
   Icon: string
   Name: string @localized

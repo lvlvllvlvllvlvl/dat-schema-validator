@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -8,7 +8,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BetrayalTargets"
       }
     },
     "size": 16
@@ -89,7 +90,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Job",
     "offset": 60,
     "unknownArray": false,
     "unique": false,
@@ -97,13 +98,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BetrayalJobs"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Relationship",
     "offset": 76,
     "unknownArray": false,
     "unique": false,
@@ -111,7 +113,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BetrayalRelationshipState"
       }
     },
     "size": 16
@@ -159,7 +162,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "PossibleChoices",
     "offset": 125,
     "unknownArray": false,
     "unique": false,
@@ -167,7 +170,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BetrayalChoiceActions"
       }
     },
     "size": 16

@@ -1,0 +1,5 @@
+# Added 3.28
+type UniqueUpgradesClient {
+  BaseItemType: BaseItemTypes @unique
+  ItemVisualIdentity: [ItemVisualIdentity]
+}

@@ -152,55 +152,67 @@
     "size": 1
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Stats",
     "offset": 99,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
-    "offset": 115,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "name": "",
+    "name": "MultiPartAchievement1",
+    "offset": 115,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MultiPartAchievements"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MapAchievement",
     "offset": 131,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true,
+        "table": "MapTierAchievements"
+      }
     },
     "size": 16
   },
   {
+    "name": "MultiPartAchievement2",
+    "offset": 147,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MultiPartAchievements"
       }
     },
-    "offset": 147,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "name": "",
+    "name": "MultiPartAchievement3",
     "offset": 163,
     "unknownArray": false,
     "unique": false,
@@ -208,7 +220,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MultiPartAchievements"
       }
     },
     "size": 16
@@ -271,6 +284,11 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 216,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -278,10 +296,7 @@
         "size": 4
       }
     },
-    "offset": 216,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
@@ -296,28 +311,34 @@
     "size": 1
   },
   {
+    "name": "Area",
+    "offset": 233,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
-    "offset": 233,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "Stat",
+    "offset": 249,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
-    "offset": 249,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",

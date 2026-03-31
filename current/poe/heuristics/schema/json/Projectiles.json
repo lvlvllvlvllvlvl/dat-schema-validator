@@ -141,7 +141,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MiscAnimated",
     "offset": 79,
     "unknownArray": false,
     "unique": false,
@@ -149,7 +149,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -278,7 +279,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MiscAnimatedFlash",
     "offset": 141,
     "unknownArray": false,
     "unique": false,
@@ -286,13 +287,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscAnimatedArrowNova",
     "offset": 157,
     "unknownArray": false,
     "unique": false,
@@ -300,7 +302,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16

@@ -1,0 +1,8 @@
+# Added 3.26
+type TimeTrackingMapDeviceInterfaceArtVariation {
+  MapDevice: MapDevices @unique
+  Art: string
+  _: [i32]
+  _: [i32]
+  _: [i32]
+}

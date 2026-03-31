@@ -75,7 +75,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "DeliriumAchievement",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -83,7 +83,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16

@@ -7,10 +7,10 @@ type MonsterConditions {
   NotStat: [Stats]
   MapBoss: bool
   NotMapBoss: bool
-  _: [rid]
+  Tags: [Tags]
   _: [string]
   _: i32
   _: i32
   _: i32
-  HASH32: i32
+  HASH32: u32
 }

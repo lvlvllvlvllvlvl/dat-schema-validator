@@ -36,8 +36,7 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
+      "decimal": {
         "size": 4
       }
     },
@@ -52,7 +51,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTextAudio"
       }
     },
     "size": 16

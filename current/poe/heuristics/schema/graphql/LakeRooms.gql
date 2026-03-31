@@ -13,12 +13,12 @@ type LakeRooms @tags(list: ["item:itemized"]) {
   Icon: string
   _: i32
   MinLevel: i32
-  _: rid
+  StampFamily: StampFamily
   _: bool
   ExtraStats: [Stats]
   ExtraStatsValues: [i32]
   ReminderText: string @localized
-  TextAudio: NPCTextAudio
-  _: rid
+  TextAudioIntro: NPCTextAudio
+  TextAudioOutro: NPCTextAudio
   _: bool
 }

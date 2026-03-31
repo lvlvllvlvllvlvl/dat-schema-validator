@@ -1,0 +1,8 @@
+# Added 3.25
+type VillageProduction {
+  Id: string @unique
+  Input: VillageResources
+  Output: VillageResources
+  BaseProductionTime: i32
+  Job: VillageJobs
+}

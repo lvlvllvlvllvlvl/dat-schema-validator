@@ -1,0 +1,10 @@
+# Added 3.25
+type ActiveSkillRequirements {
+  GrantedEffect: GrantedEffects
+  BuffDefinition: BuffDefinitions
+  _: i32
+  _: bool
+  _: i32
+  Stat: Stats
+  Icon: ActiveSkillRequirementIcons
+}

@@ -71,7 +71,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Achievement",
     "offset": 72,
     "unknownArray": false,
     "unique": false,
@@ -79,13 +79,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AfflictionAchievement",
     "offset": 88,
     "unknownArray": false,
     "unique": false,
@@ -93,13 +94,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "League",
     "offset": 104,
     "unknownArray": false,
     "unique": false,
@@ -107,7 +109,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "CoreLeagues"
       }
     },
     "size": 16

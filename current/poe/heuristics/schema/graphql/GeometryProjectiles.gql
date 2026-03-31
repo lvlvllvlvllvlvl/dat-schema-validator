@@ -1,7 +1,7 @@
 # Added 3.11
 type GeometryProjectiles {
-  _: i32
-  _: rid
+  Id: i32 @unique
+  Projectile: Projectiles
   _: bool
   _: i32
   _: bool
@@ -14,11 +14,11 @@ type GeometryProjectiles {
   _: bool
   _: i32
   _: i32
+  _: bool
   _: i32
   _: bool
   _: bool
-  _: bool
-  _: rid
+  GeometryChannel: GeometryChannel
   _: bool
   _: rid
   _: i32

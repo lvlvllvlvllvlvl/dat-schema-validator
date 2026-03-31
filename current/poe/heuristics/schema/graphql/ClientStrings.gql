@@ -4,7 +4,7 @@ type ClientStrings {
   Text: string @localized
   XBoxText: string @localized
   XBoxText2: string @localized
-  HASH32: i32
+  HASH32: u32
   PlaystationText: string @localized
   _: string @localized
 }

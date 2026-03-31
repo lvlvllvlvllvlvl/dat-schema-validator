@@ -96,7 +96,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Tags",
     "offset": 74,
     "unknownArray": false,
     "unique": false,
@@ -104,7 +104,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Tags"
       }
     },
     "size": 16
@@ -175,7 +176,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },

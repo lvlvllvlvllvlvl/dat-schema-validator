@@ -1,23 +1,23 @@
 # Added 3.22
 type AncestralTrialTribes {
   Id: string @unique
-  NPC: NPCs
+  NPCHub: NPCs
   Portrait: string
   TribeIcon: string
   TribeName: string @unique @localized
   FavourTracker: string
   _: [rid]
   Name: string @localized
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: [rid]
-  _: rid
-  _: [rid]
+  QuestFlagLike: QuestFlags
+  QuestFlagDislike: QuestFlags
+  QuestFlagFightLost: QuestFlags
+  QuestFlagFightWin: QuestFlags
+  Achievement: [AchievementItems]
+  MinimapIcon: MinimapIcons
+  AchievementRuthless: [AchievementItems]
   _: i32
   _: i32
   _: i32
   _: i32
-  _: rid
+  NPCArena: NPCs
 }

@@ -1,6 +1,6 @@
 # Added 4.1
 type MicrotransactionFireworksVariations {
-  BaseItemTypesKey: BaseItemTypes
+  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
   AOFile: string @file(ext: ".ao")
   _: bool
 }

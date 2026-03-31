@@ -36,7 +36,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "QuestFlagEnter",
     "offset": 10,
     "unknownArray": false,
     "unique": false,
@@ -44,13 +44,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SessionQuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlagComplete",
     "offset": 26,
     "unknownArray": false,
     "unique": false,
@@ -58,7 +59,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SessionQuestFlags"
       }
     },
     "size": 16

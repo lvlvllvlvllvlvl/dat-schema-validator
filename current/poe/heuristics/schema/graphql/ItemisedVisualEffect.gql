@@ -1,24 +1,24 @@
 # Added 3.11
 type ItemisedVisualEffect {
-  EffectBaseType: BaseItemTypes
+  Mtx: MtxTypeGameSpecific
   VisualEffect: ItemVisualEffect
   VisualIdentity: ItemVisualIdentity
   Stats: [Stats]
   ItemClasses: [ItemClasses]
-  _: [rid]
+  BaseItemTypes: [BaseItemTypes]
   _: bool
   _: [i32]
   _: [i32]
   _: bool
-  _: [_]
+  Name: [Words]
   _: bool
   _: [_] # All rows empty
-  _: [_]
-  _: [_]
-  _: [_]
+  _: [rid]
+  GrantedEffect: [GrantedEffectsPerLevel]
+  OnKillEffect: [MicrotransactionOnKillEffects]
   _: rid
   _: bool
-  _: rid
-  _: rid
+  EffectSlotType: MicrotransactionSkillGemEffectSlotTypes
+  VisualEffectType: ItemisedVisualEffectExclusiveTypes
   _: bool
 }

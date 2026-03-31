@@ -362,7 +362,7 @@
     "size": 1
   },
   {
-    "name": "StatSet",
+    "name": "StatSet1",
     "offset": 203,
     "unknownArray": false,
     "unique": false,
@@ -377,7 +377,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "StatSet2",
     "offset": 219,
     "unknownArray": false,
     "unique": false,
@@ -385,7 +385,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GrantedEffectStatSets"
       }
     },
     "size": 16

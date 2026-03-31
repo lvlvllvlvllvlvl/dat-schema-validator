@@ -160,7 +160,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "NPCPortrait",
     "offset": 86,
     "unknownArray": false,
     "unique": false,
@@ -168,42 +168,51 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCPortraits"
       }
     },
     "size": 16
   },
   {
+    "name": "",
+    "offset": 102,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 102,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 103,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
+      "decimal": {
         "size": 4
       }
     },
-    "offset": 103,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "Cooldown",
+    "offset": 107,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscCooldowns"
       }
     },
-    "offset": 107,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

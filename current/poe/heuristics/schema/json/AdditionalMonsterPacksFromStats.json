@@ -135,14 +135,18 @@
     "size": 16
   },
   {
+    "name": "T17SpawnChanceStatsKey",
+    "offset": 108,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
-    "offset": 108,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

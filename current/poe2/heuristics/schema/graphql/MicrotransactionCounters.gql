@@ -1,0 +1,7 @@
+# Added 4.1
+type MicrotransactionCounters {
+  Id: string @unique
+  CountInterval: f32
+  HASH32: u32
+  FunctionCall: string
+}

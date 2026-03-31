@@ -36,7 +36,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "DisableChanceStat",
     "offset": 10,
     "unknownArray": false,
     "unique": false,
@@ -51,7 +51,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "DisableStat",
     "offset": 26,
     "unknownArray": false,
     "unique": false,
@@ -66,7 +66,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "LeagueChanceStat",
     "offset": 42,
     "unknownArray": false,
     "unique": false,
@@ -81,7 +81,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AdditionalLeagueChanceStat",
     "offset": 58,
     "unknownArray": false,
     "unique": false,
@@ -96,7 +96,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "BaseLeagueChanceStat",
     "offset": 74,
     "unknownArray": false,
     "unique": false,
@@ -111,7 +111,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ForcedSpawnStat",
     "offset": 90,
     "unknownArray": false,
     "unique": false,
@@ -126,7 +126,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "LeagueCountOverrideStat",
     "offset": 106,
     "unknownArray": false,
     "unique": false,
@@ -236,23 +236,30 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 177,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 177,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 178,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
-    "offset": 178,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

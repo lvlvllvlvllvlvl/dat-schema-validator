@@ -1,21 +1,22 @@
 # Added 4.1
 type MicrotransactionObjectEffects {
   Id: string @unique
-  _: [_]
-  Script: string
-  _: [_]
-  _: [_]
-  _: rid
-  _: [_]
+  _: string
+  Script1: string
+  Script2: string
+  EffectPack: [MiscEffectPacks]
+  MiscObject: [MiscObjects]
+  CorpseSinkVariation: CorpseSinkVariations
+  MiscAnimated: [MiscAnimated]
+  _: bool
+  _: bool
+  _: bool
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: [string]
+  _: f32
+  _: bool
   _: i32
   _: i32
   _: bool

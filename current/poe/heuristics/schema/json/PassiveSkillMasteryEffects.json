@@ -102,7 +102,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "GrantedEffect",
     "offset": 54,
     "unknownArray": false,
     "unique": false,
@@ -110,7 +110,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GrantedEffectsPerLevel"
       }
     },
     "size": 16

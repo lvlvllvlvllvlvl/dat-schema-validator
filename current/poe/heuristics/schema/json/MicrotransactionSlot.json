@@ -15,7 +15,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "ShopTag",
     "offset": 4,
     "unknownArray": false,
     "unique": false,
@@ -23,7 +23,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ShopTag"
       }
     },
     "size": 16
@@ -42,7 +43,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "InventorySlot",
     "offset": 28,
     "unknownArray": false,
     "unique": false,
@@ -50,13 +51,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Inventories"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "FlaskSlot",
     "offset": 44,
     "unknownArray": false,
     "unique": false,
@@ -125,6 +127,11 @@
     "size": 1
   },
   {
+    "name": "",
+    "offset": 58,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -132,8 +139,6 @@
         "size": 4
       }
     },
-    "offset": 58,
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

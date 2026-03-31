@@ -1,6 +1,6 @@
 # Added 4.1
 type HideoutStashDoodads {
-  _: rid @unique
+  Id: HideoutDoodads @unique
   _: bool
   _: bool
   _: bool

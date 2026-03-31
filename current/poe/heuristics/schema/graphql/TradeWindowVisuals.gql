@@ -1,0 +1,12 @@
+# Added 3.24
+type TradeWindowVisuals {
+  Id: string @unique
+  PCTradeWindow: string
+  ConsoleTradeWindow: string
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: [i32]
+  _: bool
+}

@@ -224,7 +224,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "WeaponEffect",
     "offset": 194,
     "unknownArray": false,
     "unique": false,
@@ -232,7 +232,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SkillWeaponEffects"
       }
     },
     "size": 16
@@ -250,52 +251,69 @@
     "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "decimal": {
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 218,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "decimal": {
+      "integer": {
+        "unsigned": false,
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 222,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 226,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 227,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 227,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 228,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 228,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

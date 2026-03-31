@@ -1,6 +1,6 @@
 # Added 4.1
 type HarvestCraftCostScalingByBasetype {
-  _: rid
-  _: rid
-  _: i32
+  Craft: HarvestCraftOptions
+  BaseItemType: BaseItemTypes
+  Scale: i32
 }
