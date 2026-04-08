@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "Result_BaseItemTypesKey",
+    "name": "Result_Mtx",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -21,13 +21,13 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "BaseItemTypes"
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16
   },
   {
-    "name": "Ingredients_BaseItemTypesKeys",
+    "name": "Ingredients_Mtx",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -36,7 +36,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "table": "BaseItemTypes"
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16

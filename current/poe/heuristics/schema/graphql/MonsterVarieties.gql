@@ -24,11 +24,11 @@ type MonsterVarieties {
   "in percent"
   ExperienceMultiplier: i32
   _: [i32]
-  _: i32
-  _: i32
-  _: i32
-  CriticalStrikeChance: i32
-  _: i32
+  MinAgroRange: i32
+  MaxAgroRange: i32
+  SpotlightColour1: i32
+  SpotlightColour2: i32
+  SpotlightColour3: i32
   GrantedEffectsKeys: [GrantedEffects]
   AISFile: string @file(ext: ".ais")
   ModsKeys2: [Mods]
@@ -58,7 +58,7 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: i32
-  HASH16: i16
+  HASH16: u16
   _: bool
   _: string @localized
   KillWhileOnslaughtIsActive_AchievementItemsKey: AchievementItems
@@ -83,7 +83,7 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: f32
-  _: i32
+  AilmentThreshold: i32
   EPKFile: string
   _: i32
   MonsterConditionalEffectPacksKey: MonsterConditionalEffectPacks

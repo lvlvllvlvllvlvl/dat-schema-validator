@@ -1,7 +1,7 @@
 # Added 3.11
 type TerrainPlugins {
   Id: string @unique
-  _: i32 @unique
+  _: i32
   _: bool
   _: bool
 }

@@ -15,6 +15,6 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   _: i32
   Mods: [Mods]
   _: bool
-  _: [_] # All rows empty
+  _: [i32]
   AtlasNode: AtlasNode
 }

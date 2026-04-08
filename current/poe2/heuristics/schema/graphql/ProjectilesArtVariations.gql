@@ -4,5 +4,5 @@ type ProjectilesArtVariations {
   Variant: i32
   Projectiles: [Projectiles]
   _: i32
-  _: rid
+  Stat: Stats
 }

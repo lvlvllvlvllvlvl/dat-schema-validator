@@ -1,7 +1,7 @@
 # Added 3.11
 type Characters {
   Id: string @unique
-  Name: string @unique @localized
+  Name: string @localized
   AOFile: string @file(ext: ".ao")
   ACTFile: string @file(ext: ".act")
   BaseMaxLife: i32
@@ -32,7 +32,7 @@ type Characters {
   _: SkillGems
   StartingWeaponBase: BaseItemTypes
   _: i32
-  _: [rid]
+  Mods: [Mods]
   PassiveTreeImage: string @file(ext: ".dds")
   _: i32
   _: i32

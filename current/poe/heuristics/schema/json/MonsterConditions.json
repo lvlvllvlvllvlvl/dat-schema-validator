@@ -111,14 +111,17 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "NotTags",
     "offset": 90,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true,
+        "table": "Tags"
+      }
     },
     "size": 16
   },
@@ -138,7 +141,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MinimumLevel",
     "offset": 110,
     "unknownArray": false,
     "unique": false,
@@ -153,7 +156,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MaximumLevel",
     "offset": 114,
     "unknownArray": false,
     "unique": false,

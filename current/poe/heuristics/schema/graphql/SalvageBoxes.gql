@@ -1,6 +1,6 @@
 # Added 3.11
 type SalvageBoxes {
-  BaseItemType: BaseItemTypes
+  MtxType: MtxTypeGameSpecific
   Id: string @unique
   _: string
 }

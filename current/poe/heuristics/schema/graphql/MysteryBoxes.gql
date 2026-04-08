@@ -1,6 +1,6 @@
 # Added 3.11
 type MysteryBoxes {
-  BaseItemTypesKey: BaseItemTypes
+  MtxTypesKey: MtxTypes
   BK2File: string @file(ext: ".bk2")
   BoxId: string
   BundleId: string

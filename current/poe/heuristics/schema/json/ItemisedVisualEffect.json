@@ -184,7 +184,7 @@
     "unique": false
   },
   {
-    "name": "",
+    "name": "Character",
     "offset": 163,
     "unknownArray": false,
     "unique": false,
@@ -192,7 +192,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Characters"
       }
     },
     "size": 16

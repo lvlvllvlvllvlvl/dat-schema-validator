@@ -139,7 +139,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Ascendancy",
     "offset": 109,
     "unknownArray": false,
     "unique": false,
@@ -147,7 +147,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Ascendancy"
       }
     },
     "size": 16

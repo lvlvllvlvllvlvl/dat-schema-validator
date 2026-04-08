@@ -76,7 +76,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "UnlockQuestFlag",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -84,7 +84,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16

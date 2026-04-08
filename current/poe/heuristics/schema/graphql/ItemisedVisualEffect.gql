@@ -13,7 +13,7 @@ type ItemisedVisualEffect {
   Name: [Words]
   _: bool
   _: [_] # All rows empty
-  _: [rid]
+  Character: [Characters]
   GrantedEffect: [GrantedEffectsPerLevel]
   OnKillEffect: [MicrotransactionOnKillEffects]
   _: rid

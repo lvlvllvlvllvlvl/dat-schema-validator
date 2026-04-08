@@ -806,11 +806,27 @@
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": false
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
-    "size": 8
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 530,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   },
   {
     "name": "",

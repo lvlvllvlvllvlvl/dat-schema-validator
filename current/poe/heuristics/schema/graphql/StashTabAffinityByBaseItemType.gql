@@ -1,0 +1,5 @@
+# Added 3.27
+type StashTabAffinityByBaseItemType {
+  BaseItemType: BaseItemTypes @unique
+  StashTabAffinityId: [StashTabAffinityId]
+}

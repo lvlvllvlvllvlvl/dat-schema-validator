@@ -4,7 +4,7 @@ type NPCMaster {
   Signature_ModsKey: Mods
   SpawnWeight_TagsKeys: [Tags]
   SpawnWeight_Values: [i32]
-  _: rid
+  Stat: Stats
   Achievement: [AchievementItems]
   AfflictionAchievement: [AchievementItems]
   League: CoreLeagues

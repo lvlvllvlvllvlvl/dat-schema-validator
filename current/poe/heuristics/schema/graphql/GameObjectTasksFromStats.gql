@@ -2,8 +2,8 @@
 type GameObjectTasksFromStats {
   Stat: Stats @unique
   GameObjectTask: GameObjectTasks
-  _: bool
   _: i32
+  _: bool
   _: bool
   _: bool
   _: bool

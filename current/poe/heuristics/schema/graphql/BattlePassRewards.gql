@@ -6,7 +6,7 @@ type BattlePassRewards {
   _: i32
   _: bool
   Id: string
-  RewardedMTX: [BaseItemTypes]
+  RewardedMTX: [MtxTypeGameSpecific]
   _: i32
   RewardDescription: string @localized
   _: string
@@ -14,17 +14,11 @@ type BattlePassRewards {
   _: i32
   _: bool
   RewardTitle: string @localized
-  _: rid
-  _: bool
+  ItemFrameType: ItemFrameType
   _: i32
   _: i32
   _: i32
   _: i32
+  BaseItemTypeReward: BaseItemTypes
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: bool
-  _: bool
-  _: bool
 }

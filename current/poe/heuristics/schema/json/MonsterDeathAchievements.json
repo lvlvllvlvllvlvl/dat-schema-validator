@@ -84,7 +84,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Area",
     "offset": 73,
     "unknownArray": false,
     "unique": false,
@@ -92,7 +92,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -311,7 +312,7 @@
     "size": 1
   },
   {
-    "name": "Area",
+    "name": "LeagueArea",
     "offset": 233,
     "unknownArray": false,
     "unique": false,

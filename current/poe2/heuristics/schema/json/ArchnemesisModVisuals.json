@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "MiscAnimated",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -27,7 +27,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "StampFamily",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -35,13 +35,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "StampFamily"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscEffectPack",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -49,13 +50,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscEffectPacks"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffVisual",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -70,7 +72,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Monster",
     "offset": 72,
     "unknownArray": false,
     "unique": false,
@@ -85,7 +87,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MonsterMiscAnimated",
     "offset": 88,
     "unknownArray": false,
     "unique": false,
@@ -100,7 +102,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MonsterEffectPack",
     "offset": 104,
     "unknownArray": false,
     "unique": false,
@@ -108,7 +110,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscEffectPacks"
       }
     },
     "size": 16

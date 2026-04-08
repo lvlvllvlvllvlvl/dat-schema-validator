@@ -1,7 +1,7 @@
 # Added 3.23
 type InfluenceAmbushVariations {
-  _: rid
-  _: i32
+  Id: i32 @unique
+  Stat: Stats
   _: f32
   Monsters: [MonsterVarieties]
   _: i32

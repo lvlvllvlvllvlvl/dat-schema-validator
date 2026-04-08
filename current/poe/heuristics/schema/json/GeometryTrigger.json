@@ -485,7 +485,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MiscAnimated",
     "offset": 148,
     "unknownArray": false,
     "unique": false,
@@ -493,7 +493,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16

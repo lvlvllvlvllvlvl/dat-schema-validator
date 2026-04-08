@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Accuracy",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -27,23 +27,8 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "IsPlayerMinion",
     "offset": 12,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "IsSummoned",
-    "offset": 16,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -55,7 +40,7 @@
   },
   {
     "name": "Armour",
-    "offset": 17,
+    "offset": 13,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -70,6 +55,21 @@
   },
   {
     "name": "Evasion",
+    "offset": 17,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "EnergyShield",
     "offset": 21,
     "unknownArray": false,
     "unique": false,
@@ -99,7 +99,7 @@
     "size": 4
   },
   {
-    "name": "MonsterResistancesKey",
+    "name": "Resistances",
     "offset": 29,
     "unknownArray": false,
     "unique": false,
@@ -114,7 +114,7 @@
     "size": 16
   },
   {
-    "name": "IsLargeAbyssMonster",
+    "name": "AltLife1",
     "offset": 45,
     "unknownArray": false,
     "unique": false,
@@ -126,7 +126,7 @@
     "size": 1
   },
   {
-    "name": "IsSmallAbyssMonster",
+    "name": "AltLife2",
     "offset": 46,
     "unknownArray": false,
     "unique": false,
@@ -138,7 +138,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "BaseDamageIgnoresAttackSpeed",
     "offset": 47,
     "unknownArray": false,
     "unique": false,

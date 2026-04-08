@@ -1,8 +1,8 @@
 # Added 3.11
 type MicrotransactionCombineFormula {
   Id: string @unique
-  Result_BaseItemTypesKey: BaseItemTypes
-  Ingredients_BaseItemTypesKeys: [BaseItemTypes]
+  Result_Mtx: MtxTypeGameSpecific
+  Ingredients_Mtx: [MtxTypeGameSpecific]
   BK2File: string @file(ext: ".bk2")
   _: [i32]
   _: i32

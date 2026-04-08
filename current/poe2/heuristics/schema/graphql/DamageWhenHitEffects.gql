@@ -1,6 +1,6 @@
 # Added 4.1
 type DamageWhenHitEffects {
-  _: rid @unique
-  _: rid
+  Stat: Stats @unique
+  HitEffect: DamageHitEffects
   _: bool
 }

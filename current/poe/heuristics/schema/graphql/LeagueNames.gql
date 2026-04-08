@@ -1,6 +1,6 @@
 # Added 3.24
 type LeagueNames {
   Id: string @unique
-  Name1: string @unique @localized
-  Name2: string @unique @localized
+  Name1: string @localized
+  Name2: string @localized
 }

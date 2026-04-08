@@ -1,6 +1,6 @@
 # Added 4.1
 type TieredMicrotransactions {
-  MTX: BaseItemTypes @unique
+  MTX: MtxTypeGameSpecific @unique
   TierThresholds: [i32]
   _: Stats
   _: [i32]

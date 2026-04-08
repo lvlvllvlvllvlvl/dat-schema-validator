@@ -57,7 +57,8 @@ type WorldAreas {
   TerrainPlugin: TerrainPlugins
   _: bool
   _: bool
-  _: WorldAreas
+  _: i32
+  _: i32
   _: i32
   _: [i32]
   LeagueChance1: WorldAreaLeagueChances

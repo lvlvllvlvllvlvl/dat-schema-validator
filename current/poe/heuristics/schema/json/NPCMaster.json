@@ -57,7 +57,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Stat",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -65,7 +65,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16

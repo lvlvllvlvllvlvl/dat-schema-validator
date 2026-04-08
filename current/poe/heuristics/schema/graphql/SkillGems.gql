@@ -15,8 +15,8 @@ type SkillGems @tags(list: ["item:def"]) {
   _: bool
   AwakenedVariant: SkillGems
   RegularVariant: SkillGems
-  _: i32
+  GemColour: i32
   ItemExperienceType: ItemExperienceTypes
   MtxSlotTypes: [MicrotransactionSkillGemEffectSlotTypes]
-  GemEffects: [GemEffects]
+  GemVariants: [GemEffects]
 }

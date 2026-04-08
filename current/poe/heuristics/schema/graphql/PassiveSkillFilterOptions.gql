@@ -1,7 +1,7 @@
 # Added 3.11
 type PassiveSkillFilterOptions {
   Id: string @unique
-  _: rid
+  FilterCatagory: PassiveSkillFilterCatagories
   Name: string
   _: string
 }

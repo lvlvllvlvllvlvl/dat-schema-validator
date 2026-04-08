@@ -1,13 +1,10 @@
 # Added 3.20
 type HardModeExtraContentChances {
   Id: string @unique
-  _: i32
-  _: i32
+  SingleSpawnChance: i32
+  DoubleSpawnChance: i32
+  TripleSpawnChance: i32
+  NoSpawnChance: i32
+  Leagues: [CoreLeagues]
   _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
 }

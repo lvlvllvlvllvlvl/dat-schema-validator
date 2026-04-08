@@ -15,7 +15,10 @@ type ExecuteGEAL {
   _: [_] # All rows empty
   _: bool
   _: i32
-  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32
   _: bool
   Script: string
   _: bool

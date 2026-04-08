@@ -440,7 +440,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Mods",
     "offset": 256,
     "unknownArray": false,
     "unique": false,
@@ -448,7 +448,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
     "size": 16

@@ -1,6 +1,6 @@
 # Added 3.21
 type CrucibleDifficulty {
-  Number: string @unique
+  Number: string
   Name: string @unique @localized
   _: i32
   _: i32

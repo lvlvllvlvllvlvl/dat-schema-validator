@@ -8,9 +8,9 @@ type MonsterConditions {
   MapBoss: bool
   NotMapBoss: bool
   Tags: [Tags]
-  _: [string]
+  NotTags: [Tags]
   _: i32
-  _: i32
-  _: i32
+  MinimumLevel: i32
+  MaximumLevel: i32
   HASH32: u32
 }

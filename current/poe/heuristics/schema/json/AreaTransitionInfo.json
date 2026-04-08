@@ -30,7 +30,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AnimationType",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -38,13 +38,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AreaTransitionAnimationTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AnimationMarauder",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -52,13 +53,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AreaTransitionAnimations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AnimationRanger",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
@@ -66,13 +68,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AreaTransitionAnimations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AnimationWitch",
     "offset": 80,
     "unknownArray": false,
     "unique": false,
@@ -80,13 +83,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AreaTransitionAnimations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AnimationDualist",
     "offset": 96,
     "unknownArray": false,
     "unique": false,
@@ -94,13 +98,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AreaTransitionAnimations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AnimationTemplar",
     "offset": 112,
     "unknownArray": false,
     "unique": false,
@@ -108,13 +113,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AreaTransitionAnimations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AnimationShadow",
     "offset": 128,
     "unknownArray": false,
     "unique": false,
@@ -122,13 +128,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AreaTransitionAnimations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AnimationScion",
     "offset": 144,
     "unknownArray": false,
     "unique": false,
@@ -136,7 +143,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AreaTransitionAnimations"
       }
     },
     "size": 16
@@ -157,7 +165,7 @@
     "size": 16
   },
   {
-    "name": "MiscObject",
+    "name": "MiscObjectGround",
     "offset": 176,
     "unknownArray": false,
     "unique": false,
@@ -187,7 +195,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "BossObject",
     "offset": 196,
     "unknownArray": false,
     "unique": false,
@@ -195,7 +203,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscObjects"
       }
     },
     "size": 16

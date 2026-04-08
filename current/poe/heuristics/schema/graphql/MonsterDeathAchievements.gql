@@ -6,7 +6,7 @@ type MonsterDeathAchievements {
   _: bool
   PlayerConditionsKeys: [PlayerConditions]
   MonsterDeathConditionsKeys: [MonsterDeathConditions]
-  _: [rid]
+  Area: [WorldAreas]
   _: i32
   _: i32
   _: bool
@@ -22,7 +22,7 @@ type MonsterDeathAchievements {
   MultiPartAchievementConditionsKeys: [MultiPartAchievementConditions]
   _: [i32]
   _: bool
-  Area: [WorldAreas]
+  LeagueArea: [WorldAreas]
   Stat: [Stats]
   _: bool
 }

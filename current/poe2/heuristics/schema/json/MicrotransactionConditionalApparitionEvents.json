@@ -1,21 +1,7 @@
 [
   {
-    "name": "",
+    "name": "EventId",
     "offset": 0,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 16,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -27,6 +13,21 @@
       }
     },
     "size": 4
+  },
+  {
+    "name": "Apparition",
+    "offset": 4,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MicrotransactionConditionalApparitions"
+      }
+    },
+    "size": 16
   },
   {
     "name": "",

@@ -1,7 +1,7 @@
 # Added 4.1
 type MicrotransactionConditionalApparitionEvents {
-  _: rid
-  _: i32
+  EventId: i32
+  Apparition: MicrotransactionConditionalApparitions
   _: f32
   _: NPCTextAudio
   _: bool

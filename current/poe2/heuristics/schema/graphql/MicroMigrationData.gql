@@ -2,6 +2,6 @@
 type MicroMigrationData {
   Mtx: MtxTypeGameSpecific
   _: i32
-  _: rid
+  MysteryBox: MysteryBoxes
   MtxPack: MtxTypeGameSpecific
 }

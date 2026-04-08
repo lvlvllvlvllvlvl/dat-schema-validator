@@ -4,9 +4,9 @@ type AncestralTrialTribes {
   NPCHub: NPCs
   Portrait: string
   TribeIcon: string
-  TribeName: string @unique @localized
+  TribeName: string @localized
   FavourTracker: string
-  _: [rid]
+  UnlockQuestFlag: [QuestFlags]
   Name: string @localized
   QuestFlagLike: QuestFlags
   QuestFlagDislike: QuestFlags

@@ -312,7 +312,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinAgroRange",
     "offset": 176,
     "unknownArray": false,
     "unique": false,
@@ -327,7 +327,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MaxAgroRange",
     "offset": 180,
     "unknownArray": false,
     "unique": false,
@@ -342,7 +342,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "SpotlightColour1",
     "offset": 184,
     "unknownArray": false,
     "unique": false,
@@ -357,7 +357,7 @@
     "size": 4
   },
   {
-    "name": "CriticalStrikeChance",
+    "name": "SpotlightColour2",
     "offset": 188,
     "unknownArray": false,
     "unique": false,
@@ -372,7 +372,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "SpotlightColour3",
     "offset": 192,
     "unknownArray": false,
     "unique": false,
@@ -774,7 +774,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 2
       }
     },
@@ -1118,7 +1118,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "AilmentThreshold",
     "offset": 676,
     "unknownArray": false,
     "unique": false,

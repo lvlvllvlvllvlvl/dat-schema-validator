@@ -4,6 +4,6 @@ type EnvironmentTransitions {
   OTFiles: [string] @file(ext: ".ot")
   _: i32
   Environment: [Environments]
-  _: [_] # All rows empty
+  _: [string]
   _: i32
 }

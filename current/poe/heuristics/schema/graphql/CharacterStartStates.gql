@@ -10,5 +10,5 @@ type CharacterStartStates {
   CharacterStartQuestStateKeys: [CharacterStartQuestState]
   _: bool
   InfoText: string
-  _: rid
+  Ascendancy: Ascendancy
 }

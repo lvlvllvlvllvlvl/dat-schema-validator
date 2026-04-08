@@ -2,16 +2,16 @@
 type AreaTransitionInfo {
   StartingArea: WorldAreas
   EndingArea: WorldAreas
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  AnimationType: AreaTransitionAnimationTypes
+  AnimationMarauder: AreaTransitionAnimations
+  AnimationRanger: AreaTransitionAnimations
+  AnimationWitch: AreaTransitionAnimations
+  AnimationDualist: AreaTransitionAnimations
+  AnimationTemplar: AreaTransitionAnimations
+  AnimationShadow: AreaTransitionAnimations
+  AnimationScion: AreaTransitionAnimations
   Animation: MiscAnimated
-  MiscObject: [MiscObjects]
+  MiscObjectGround: [MiscObjects]
   _: i32
-  _: [rid]
+  BossObject: [MiscObjects]
 }

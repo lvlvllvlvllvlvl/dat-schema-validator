@@ -6,5 +6,5 @@ type AtlasUpgradesInventoryLayout {
   _: i32
   Objective: string @localized
   GrantAtlasUpgrade: QuestFlags
-  _: rid
+  SoundEffect: SoundEffects
 }

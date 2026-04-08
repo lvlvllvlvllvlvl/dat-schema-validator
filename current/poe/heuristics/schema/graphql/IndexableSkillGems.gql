@@ -5,5 +5,5 @@ type IndexableSkillGems {
   Name1: string @localized
   SkillGem2: [SkillGems]
   Name2: string @localized
-  _: IndexableSkillGems
+  IndexRuthless: IndexableSkillGems
 }

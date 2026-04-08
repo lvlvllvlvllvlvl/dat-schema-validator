@@ -1,4 +1,4 @@
-"rownum","Id","Rarity","Stat","NotRarity","NotStat","MapBoss","NotMapBoss","Tags","[string]_90","i32_106","i32_110","i32_114","HASH32"
+"rownum","Id","Rarity","Stat","NotRarity","NotStat","MapBoss","NotMapBoss","Tags","NotTags","i32_106","MinimumLevel","MaximumLevel","HASH32"
 0,"IsNormalMonster",0,"","",[],"","",[],[],0,1,100,0
 1,"IsMagicMonster",1,"","",[],"","",[],[],0,1,100,0
 2,"IsRareMonster",2,"","",[],"","",[],[],0,1,100,0
@@ -88,7 +88,7 @@
 86,"HasDropsAndExperience","","","",[889],"","",[],[],0,1,100,0
 87,"HasDropSlots","",1,"",[],"","",[],[],0,1,100,0
 88,"IsLegionMonster","","","",[],"","",[446],[],0,1,100,0
-89,"IsNotLegionChest","","","",[],"","",[],"[""琀攀挀琀""]",0,1,100,0
+89,"IsNotLegionChest","","","",[],"","",[],[1085],0,1,100,0
 90,"IsLegionChest","","","",[],"","",[1085],[],0,1,100,0
 91,"IsRunicMonster","","","",[],"","",[1086],[],0,1,100,0
 92,"IsIncursionMonster","","","",[],"","",[306],[],0,1,100,0

@@ -1,6 +1,6 @@
 # Added 4.1
 type AtlasFavouredMapSlots {
-  _: i32 @unique
-  _: i32 @unique
-  _: string @unique @localized
+  SlotId: i32 @unique
+  _: i32
+  Unlock: string @localized
 }

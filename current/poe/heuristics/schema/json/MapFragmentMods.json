@@ -196,8 +196,9 @@
     "interval": false,
     "type": {
       "array": true,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "size": 16

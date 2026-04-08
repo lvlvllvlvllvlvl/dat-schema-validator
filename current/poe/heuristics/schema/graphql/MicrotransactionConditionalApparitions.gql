@@ -4,9 +4,12 @@ type MicrotransactionConditionalApparitions {
   Stats: [Stats]
   StatValues: [i32]
   PeriodicVariation: MicrotransactionPeriodicCharacterEffectVariations
-  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
   _: i32
   _: bool
-  _: i32
   _: bool
 }

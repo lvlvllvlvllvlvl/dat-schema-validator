@@ -3,12 +3,12 @@ type MercenaryClasses {
   Id: string @unique
   MonsterVariety: MonsterVarieties
   _: i32
-  Build: MercenaryBuilds
+  TerrainFeature: ExtraTerrainFeatures
   _: i32
   _: i32
-  Icon: string
-  House: string
-  _: MercenaryClasses
-  _: [_] # All rows empty
+  ClassIcon: string
+  HouseIcon: string
+  Attribute: MercenaryAttributes
+  HouseBuffIcon: string
   MonsterVarietyAllied: MonsterVarieties
 }

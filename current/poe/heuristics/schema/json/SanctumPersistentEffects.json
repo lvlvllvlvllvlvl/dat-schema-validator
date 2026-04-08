@@ -203,7 +203,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "ConditionalAchievement",
     "offset": 118,
     "unknownArray": false,
     "unique": false,
@@ -211,13 +211,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ConditionalAchievements"
       }
     },
     "size": 16
   },
   {
-    "name": "Guard",
+    "name": "Achievements",
     "offset": 134,
     "unknownArray": false,
     "unique": false,
@@ -226,7 +227,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "table": "MonsterVarieties"
+        "table": "AchievementItems"
       }
     },
     "size": 16

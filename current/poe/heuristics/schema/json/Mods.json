@@ -362,9 +362,8 @@
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true
       }
     },
     "size": 16
@@ -397,7 +396,7 @@
     "size": 16
   },
   {
-    "name": "ChestModType",
+    "name": "ArchnemesisType",
     "offset": 262,
     "unknownArray": false,
     "unique": false,
@@ -658,7 +657,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "HeistAchievements",
     "offset": 440,
     "unknownArray": false,
     "unique": false,
@@ -667,7 +666,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "table": "GrantedEffectsPerLevel"
+        "table": "AchievementItems"
       }
     },
     "size": 16

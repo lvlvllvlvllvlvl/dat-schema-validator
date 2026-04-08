@@ -1,8 +1,8 @@
 # Added 3.26
 type MercenaryInventories {
-  Id: MercenaryClasses @unique
+  Id: Inventories @unique
   _: i32
-  _: i32
-  _: i32
+  PositionX: i32
+  PositionY: i32
   _: i32
 }

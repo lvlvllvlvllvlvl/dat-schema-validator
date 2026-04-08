@@ -93,7 +93,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "table": "BaseItemTypes"
+        "table": "MtxTypeGameSpecific"
       }
     },
     "size": 16
@@ -194,7 +194,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "ItemFrameType",
     "offset": 90,
     "unknownArray": false,
     "unique": false,
@@ -202,7 +202,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemFrameType"
       }
     },
     "size": 16
@@ -215,13 +216,16 @@
     "interval": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "size": 1
+    "size": 4
   },
   {
     "name": "",
-    "offset": 107,
+    "offset": 110,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -236,7 +240,7 @@
   },
   {
     "name": "",
-    "offset": 111,
+    "offset": 114,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -251,7 +255,7 @@
   },
   {
     "name": "",
-    "offset": 115,
+    "offset": 118,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -265,8 +269,23 @@
     "size": 4
   },
   {
+    "name": "BaseItemTypeReward",
+    "offset": 122,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
     "name": "",
-    "offset": 119,
+    "offset": 138,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -278,101 +297,5 @@
       }
     },
     "size": 4
-  },
-  {
-    "name": "",
-    "offset": 123,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 127,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 131,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 135,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 139,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 140,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 141,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
   }
 ]
