@@ -7,14 +7,14 @@ type NPCMaster {
   _: bool
   SpawnWeight_TagsKeys: [Tags]
   SpawnWeight_Values: [i32]
-  _: rid
+  Audio: NPCAudio
   _: i32
   AreaDescription: string @localized
-  _: rid
+  AwardDisplay: AwardDisplay
   _: i32
-  _: Stats
+  MasterChanceStat: Stats
   HasAreaMissions: bool
+  MasterAdditionalChanceStat: [Stats]
   _: [rid]
-  _: [rid]
-  _: rid
+  MasterMissionOnCompletionStat: Stats
 }

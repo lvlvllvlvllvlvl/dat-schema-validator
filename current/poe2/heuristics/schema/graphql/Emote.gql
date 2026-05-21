@@ -1,0 +1,10 @@
+# Added 4.4
+type Emote {
+  Id: string @unique
+  _: i16
+  Animation: Animation
+  Mtx: MtxTypeGameSpecific
+  Description: string
+  _: string
+  _: bool
+}

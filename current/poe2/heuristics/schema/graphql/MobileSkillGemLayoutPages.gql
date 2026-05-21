@@ -1,0 +1,6 @@
+# Added 4.1
+type MobileSkillGemLayoutPages {
+  Id: string @unique
+  Menu: string
+  Name: string @localized
+}

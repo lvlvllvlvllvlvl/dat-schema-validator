@@ -15,7 +15,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "TwoWeaponSlots",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -39,7 +39,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Damage",
     "offset": 18,
     "unknownArray": false,
     "unique": false,
@@ -47,13 +47,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "CritChance",
     "offset": 34,
     "unknownArray": false,
     "unique": false,
@@ -61,13 +62,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinPhys",
     "offset": 50,
     "unknownArray": false,
     "unique": false,
@@ -75,13 +77,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MaxPhys",
     "offset": 66,
     "unknownArray": false,
     "unique": false,
@@ -89,13 +92,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinFire",
     "offset": 82,
     "unknownArray": false,
     "unique": false,
@@ -103,13 +107,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MaxFire",
     "offset": 98,
     "unknownArray": false,
     "unique": false,
@@ -117,13 +122,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinCold",
     "offset": 114,
     "unknownArray": false,
     "unique": false,
@@ -131,13 +137,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MaxCold",
     "offset": 130,
     "unknownArray": false,
     "unique": false,
@@ -145,13 +152,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinLightning",
     "offset": 146,
     "unknownArray": false,
     "unique": false,
@@ -159,13 +167,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MaxLightning",
     "offset": 162,
     "unknownArray": false,
     "unique": false,
@@ -173,13 +182,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinChaos",
     "offset": 178,
     "unknownArray": false,
     "unique": false,
@@ -187,13 +197,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MaxChaos",
     "offset": 194,
     "unknownArray": false,
     "unique": false,
@@ -201,13 +212,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "CritMulti",
     "offset": 210,
     "unknownArray": false,
     "unique": false,
@@ -215,13 +227,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "PhysDamage",
     "offset": 226,
     "unknownArray": false,
     "unique": false,
@@ -229,13 +242,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "FireDamage",
     "offset": 242,
     "unknownArray": false,
     "unique": false,
@@ -243,13 +257,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ColdDamage",
     "offset": 258,
     "unknownArray": false,
     "unique": false,
@@ -257,13 +272,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Knockback",
     "offset": 274,
     "unknownArray": false,
     "unique": false,
@@ -271,13 +287,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "CritKnockback",
     "offset": 290,
     "unknownArray": false,
     "unique": false,
@@ -285,13 +302,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Accuracy",
     "offset": 306,
     "unknownArray": false,
     "unique": false,
@@ -299,13 +317,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AccuracyInc",
     "offset": 322,
     "unknownArray": false,
     "unique": false,
@@ -313,13 +332,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AttackSpeed",
     "offset": 338,
     "unknownArray": false,
     "unique": false,
@@ -327,13 +347,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MeleeRange",
     "offset": 354,
     "unknownArray": false,
     "unique": false,
@@ -341,13 +362,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ElementalDamage",
     "offset": 370,
     "unknownArray": false,
     "unique": false,
@@ -355,13 +377,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Tag",
     "offset": 386,
     "unknownArray": false,
     "unique": false,
@@ -369,7 +392,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Tags"
       }
     },
     "size": 16

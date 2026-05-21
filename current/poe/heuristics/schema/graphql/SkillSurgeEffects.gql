@@ -1,6 +1,8 @@
 # Added 3.11
 type SkillSurgeEffects {
+  Id: string @unique
   GrantedEffectsKey: GrantedEffects
+  Stat: Stats
   _: string
   _: bool
   _: bool
@@ -8,9 +10,12 @@ type SkillSurgeEffects {
   MiscAnimated: MiscAnimated
   _: bool
   _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: [_] # All rows empty
   _: i32
-  _: bool
-  _: bool
-  _: bool
-  _: bool
 }

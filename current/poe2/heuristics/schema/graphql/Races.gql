@@ -6,8 +6,8 @@ type Races {
   _: string
   _: i32
   _: i32
-  _: [rid]
+  Area: [WorldAreas]
   _: i32
   _: [i32]
-  _: [rid]
+  ModFamily: [ModFamily]
 }

@@ -30,7 +30,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlagStart",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -38,7 +38,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -57,7 +58,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "QuestFlagEnd",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -65,7 +66,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -93,7 +95,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16

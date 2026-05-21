@@ -1,0 +1,6 @@
+# Added 4.1
+type SkillEvents {
+  Id: string @unique
+  AudioEvent: CharacterAudioEvents
+  HASH32: u32
+}

@@ -1,0 +1,6 @@
+# Added 4.1
+type NPCShops {
+  Id: string @unique
+  _: i32
+  Shop: NPCShop
+}

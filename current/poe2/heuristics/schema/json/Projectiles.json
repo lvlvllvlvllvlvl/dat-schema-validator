@@ -264,7 +264,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MiscAnimatedFlash",
     "offset": 137,
     "unknownArray": false,
     "unique": false,
@@ -272,13 +272,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscAnimatedArrowNova",
     "offset": 153,
     "unknownArray": false,
     "unique": false,
@@ -286,7 +287,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -418,7 +420,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "MiscAnimatedBounce",
     "offset": 230,
     "unknownArray": false,
     "unique": false,
@@ -426,13 +428,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MiscAnimatedImpact",
     "offset": 246,
     "unknownArray": false,
     "unique": false,
@@ -440,13 +443,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "DamageEffect1",
     "offset": 262,
     "unknownArray": false,
     "unique": false,
@@ -454,7 +458,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "DamageEffectVariations"
       }
     },
     "size": 16
@@ -484,7 +489,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "DamageEffect2",
     "offset": 287,
     "unknownArray": false,
     "unique": false,
@@ -492,7 +497,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "DamageEffectVariations"
       }
     },
     "size": 16
@@ -510,7 +516,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "BounceOverride",
     "offset": 311,
     "unknownArray": false,
     "unique": false,
@@ -518,7 +524,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BallisticBounceOverride"
       }
     },
     "size": 16

@@ -1,0 +1,10 @@
+# Added 4.1
+type BallisticBounceBehaviour {
+  Id: string @unique
+  _: f32
+  _: f32
+  _: i32
+  _: bool
+  _: i32
+  _: bool
+}

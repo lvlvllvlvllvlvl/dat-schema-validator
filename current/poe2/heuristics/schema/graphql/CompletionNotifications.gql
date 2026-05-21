@@ -1,0 +1,13 @@
+# Added 4.1
+type CompletionNotifications {
+  Id: string @unique
+  Title: string @localized
+  Description: string @localized
+  _: f32
+  UIArt: string
+  SoundEffect: SoundEffects
+  Video: string
+  _: [i32]
+  _: Colours
+  _: Colours
+}

@@ -13,7 +13,7 @@ type MapPins {
   _: string
   ParentMapPin: MapPins
   MetadataId: string
-  _: rid
+  PinProperty: VisualPinProperties
   QuestFlag2: QuestFlags
   _: string @localized
   _: bool

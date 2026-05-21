@@ -2,14 +2,14 @@
 type Pet {
   Id: string @unique
   MtxTypeGameSpecific: MtxTypeGameSpecific @unique
-  HASH16: i16
-  HASH32: i32
+  HASH16: u16
+  HASH32: u32
   Size: i32
   _: bool
   _: bool
-  _: [rid]
-  _: rid
-  _: [rid]
+  HideoutTags: [HideoutDoodadTags]
+  HideoutCategory: HideoutDoodadCategory
+  GrantedSkill: [GrantedEffectsPerLevel]
   _: i32
   _: bool
   _: rid
@@ -17,5 +17,5 @@ type Pet {
   _: bool
   _: bool
   _: string
-  _: rid
+  ReviveEffect: MicrotransactionReviveEffects
 }

@@ -1,8 +1,8 @@
 # Added 4.1
 type MiscAnimatedArtVariations {
   Id: string
-  _: [MiscAnimated]
+  Animation: [MiscAnimated]
   _: i32
   _: i32
-  _: rid
+  Stats: Stats
 }

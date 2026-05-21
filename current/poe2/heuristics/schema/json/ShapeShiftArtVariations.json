@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Id",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ShapeShiftForms"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "VariationId",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "VisualIdentity",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ShapeShiftVisualIdentity"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EffectSource",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscEffectPacks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EffectDestination",
+    "offset": 52,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscEffectPacks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EffectParticles",
+    "offset": 68,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscEffectPacks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EffectFadeIn",
+    "offset": 84,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscEffectPacks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EffectPersistent",
+    "offset": 100,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscEffectPacks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 116,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  }
+]

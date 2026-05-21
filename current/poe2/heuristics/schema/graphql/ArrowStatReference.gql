@@ -1,0 +1,5 @@
+# Added 4.1
+type ArrowStatReference {
+  _: i32
+  _: string @unique @file(ext: ".fmt")
+}

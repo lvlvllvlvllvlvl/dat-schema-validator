@@ -1,6 +1,6 @@
 # Added 4.1
 type GenericLeagueRewardTypes @tags(list: ["item:droptable"]) {
   Id: string @unique
-  _: i32
-  _: i32
+  MinLevel: i32
+  MaxLevel: i32
 }

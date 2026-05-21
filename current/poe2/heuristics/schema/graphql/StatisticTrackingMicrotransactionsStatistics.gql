@@ -3,11 +3,11 @@ type StatisticTrackingMicrotransactionsStatistics {
   StatisticTrackingMtx: StatisticTrackingMicrotransactions
   _: i32
   _: i32
-  _: rid
+  VisualIdentity: ItemVisualIdentity
   _: bool
   Icon: string
   _: bool
-  _: rid
+  Description: ClientStrings2
   CounterType: StatisticTrackingMicrotransactionCounterType
   _: i32
 }

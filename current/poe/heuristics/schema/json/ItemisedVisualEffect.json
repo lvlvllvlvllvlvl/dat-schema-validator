@@ -295,5 +295,35 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "name": "GameObjectTask",
+    "offset": 261,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "GameObjectTasks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 277,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   }
 ]

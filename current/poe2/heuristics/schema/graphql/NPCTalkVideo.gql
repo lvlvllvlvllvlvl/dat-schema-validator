@@ -1,0 +1,9 @@
+# Added 4.3
+type NPCTalkVideo {
+  Id: string @unique
+  Video: string @file(ext: ".bk2")
+  _: bool
+  _: bool
+  _: f32
+  _: bool
+}

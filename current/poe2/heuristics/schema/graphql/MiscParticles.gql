@@ -1,0 +1,7 @@
+# Added 4.2
+type MiscParticles {
+  Id: string @unique
+  PETFile: string
+  _: i32
+  _: [_] # All rows empty
+}

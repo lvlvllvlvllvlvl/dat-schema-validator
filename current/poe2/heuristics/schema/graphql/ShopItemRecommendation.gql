@@ -1,0 +1,15 @@
+# Added 4.3
+type ShopItemRecommendation {
+  Id: string @unique
+  _: [rid]
+  Ascendancy: [Ascendancy]
+  QuestFlag: [QuestFlags]
+  _: [_] # All rows empty
+  ItemClass: [ItemClasses]
+  _: [i32]
+  SkillGem: [SkillGems]
+  Mtx: string @unique
+  _: bool
+  _: bool
+  _: bool
+}

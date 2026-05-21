@@ -1,31 +1,31 @@
 # Added 4.1
 type WieldableClasses {
   ItemClass: ItemClasses
+  TwoWeaponSlots: bool
   _: bool
-  _: bool
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  Damage: Stats
+  CritChance: Stats
+  MinPhys: Stats
+  MaxPhys: Stats
+  MinFire: Stats
+  MaxFire: Stats
+  MinCold: Stats
+  MaxCold: Stats
+  MinLightning: Stats
+  MaxLightning: Stats
+  MinChaos: Stats
+  MaxChaos: Stats
+  CritMulti: Stats
+  PhysDamage: Stats
+  FireDamage: Stats
+  ColdDamage: Stats
+  Knockback: Stats
+  CritKnockback: Stats
+  Accuracy: Stats
+  AccuracyInc: Stats
+  AttackSpeed: Stats
+  MeleeRange: Stats
+  ElementalDamage: Stats
+  Tag: Tags
   _: i32
 }

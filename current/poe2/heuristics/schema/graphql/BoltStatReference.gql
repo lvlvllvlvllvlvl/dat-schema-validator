@@ -1,0 +1,5 @@
+# Added 4.1
+type BoltStatReference {
+  Id: i32
+  AOFile: string @unique @file(ext: ".ao")
+}

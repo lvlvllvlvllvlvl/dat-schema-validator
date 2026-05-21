@@ -6,11 +6,11 @@ type CharacterStartStates {
   Level: i32
   PassiveSkillsKeys: [PassiveSkills]
   CharacterStartStateSet: CharacterStartStateSet
-  _: rid
+  HubArea: WorldAreas
   CharacterStartQuestStates: [CharacterStartQuestState]
   _: bool
   InfoText: string
-  _: rid
+  Ascendancy: Ascendancy
   _: [rid]
   _: [rid]
   _: [_] # All rows empty

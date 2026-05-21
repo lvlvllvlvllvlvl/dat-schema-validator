@@ -144,7 +144,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "BaseItemTypesKey",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
@@ -152,7 +152,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -170,7 +171,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "ModsKeys",
     "offset": 81,
     "unknownArray": false,
     "unique": false,
@@ -178,13 +179,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "TagsKeys",
     "offset": 97,
     "unknownArray": false,
     "unique": false,
@@ -192,13 +194,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Tags"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ChestEffectsKey",
     "offset": 113,
     "unknownArray": false,
     "unique": false,
@@ -206,13 +209,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ChestEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinLevel",
     "offset": 129,
     "unknownArray": false,
     "unique": false,
@@ -240,7 +244,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "MaxLevel",
     "offset": 141,
     "unknownArray": false,
     "unique": false,
@@ -269,7 +273,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "UnlockItem",
     "offset": 161,
     "unknownArray": false,
     "unique": false,
@@ -277,13 +281,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Encounter_AchievementItemsKeys",
     "offset": 177,
     "unknownArray": false,
     "unique": false,
@@ -291,13 +296,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Environment",
     "offset": 193,
     "unknownArray": false,
     "unique": false,
@@ -305,13 +311,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Environments"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "InheritsFrom",
     "offset": 209,
     "unknownArray": false,
     "unique": false,
@@ -335,7 +342,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MinimapIcons",
     "offset": 218,
     "unknownArray": false,
     "unique": false,
@@ -343,7 +350,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MinimapIcons"
       }
     },
     "size": 16
@@ -417,7 +425,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Colour",
     "offset": 267,
     "unknownArray": false,
     "unique": false,
@@ -425,13 +433,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Colours"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "OutlineColour",
     "offset": 283,
     "unknownArray": false,
     "unique": false,
@@ -439,7 +448,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Colours"
       }
     },
     "size": 16
@@ -469,7 +479,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "LeagueChallenges",
     "offset": 301,
     "unknownArray": false,
     "unique": false,
@@ -477,13 +487,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "IsHardmode",
     "offset": 317,
     "unknownArray": false,
     "unique": false,
@@ -495,17 +506,19 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "StatsHardmode",
     "offset": 318,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
     },
-    "size": 16,
-    "localized": true
+    "size": 16
   },
   {
     "name": "",

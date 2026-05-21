@@ -1437,5 +1437,20 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "name": "MonsterCategory",
+    "offset": 778,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MonsterCategories"
+      }
+    },
+    "size": 16
   }
 ]

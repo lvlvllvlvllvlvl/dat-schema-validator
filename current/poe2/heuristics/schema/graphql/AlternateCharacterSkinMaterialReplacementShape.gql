@@ -1,0 +1,6 @@
+# Added 4.2
+type AlternateCharacterSkinMaterialReplacementShape {
+  Character: Characters
+  _: i32
+  MeshList: [string]
+}

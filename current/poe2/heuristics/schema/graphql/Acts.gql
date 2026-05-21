@@ -8,13 +8,13 @@ type Acts {
   _: i32
   IsEndGame: bool
   _: i32
+  QuestFlags1: [QuestFlags]
   _: [rid]
   _: [rid]
-  _: [rid]
-  _: rid
-  _: [rid]
+  WorldAreaMap: WorldAreas
+  QuestFlags2: [QuestFlags]
   Description: string @localized
   _: rid
   _: bool
-  _: rid @unique
+  WorldAreaTown: WorldAreas
 }

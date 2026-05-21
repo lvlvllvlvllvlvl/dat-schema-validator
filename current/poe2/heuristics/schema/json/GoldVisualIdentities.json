@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Icon",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "EndgameMapPinIcons"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "VisualIdentity",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ItemVisualIdentity"
+      }
+    },
+    "size": 16
+  }
+]

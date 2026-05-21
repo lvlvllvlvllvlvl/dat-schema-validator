@@ -1,8 +1,8 @@
 # Added 4.1
 type GeometryAttack {
-  _: i32
-  _: [rid]
-  _: [rid]
+  Id: i32 @unique
+  Animation: [MiscAnimated] @unique
+  HitEffect: [MiscAnimated]
   _: i32
   _: i32
   _: i32
@@ -28,17 +28,17 @@ type GeometryAttack {
   _: bool
   _: i32
   _: bool
-  _: rid
-  _: [i32]
+  BuffDefinition: BuffDefinitions
+  BuffValues: [i32]
   _: i32
   _: bool
   _: bool
-  _: rid
+  BuffVisual: BuffVisuals
   _: bool
   _: [i32]
   _: bool
   _: bool
-  _: rid
+  GeometryChannel: GeometryChannel
   _: bool
   _: bool
   _: [_] # All rows empty
@@ -53,7 +53,7 @@ type GeometryAttack {
   _: i32
   _: i32
   _: bool
-  _: rid
+  ExecuteGeal: ExecuteGEAL
   _: bool
   _: bool
   _: i32
@@ -62,9 +62,9 @@ type GeometryAttack {
   _: bool
   _: bool
   _: bool
-  _: rid
+  GroundEffect: GroundEffectTypes
   _: string
   _: i32
   _: i32
-  _: [_]
+  MonsterVariety: [MonsterVarieties]
 }

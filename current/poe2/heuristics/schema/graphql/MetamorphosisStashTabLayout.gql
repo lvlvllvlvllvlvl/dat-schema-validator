@@ -8,5 +8,6 @@ type MetamorphosisStashTabLayout {
   Width: i32
   Height: i32
   SlotSize: i32
-  _: [_]
+  _: string
+  _: string
 }

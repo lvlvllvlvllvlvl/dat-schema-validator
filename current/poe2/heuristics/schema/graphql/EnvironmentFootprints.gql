@@ -1,0 +1,6 @@
+# Added 4.1
+type EnvironmentFootprints {
+  Environment: Environments
+  _: i32
+  AOFile: [string] @file(ext: ".ao")
+}

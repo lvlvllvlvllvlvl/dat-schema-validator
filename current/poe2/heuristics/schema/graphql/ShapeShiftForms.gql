@@ -19,11 +19,11 @@ type ShapeShiftForms {
   _: bool
   _: i32
   _: bool
-  _: i32 @unique
-  _: [_]
+  _: i32
+  ShapeShiftedStats: [Stats]
   _: string
   _: bool
   _: bool
-  _: rid
-  _: string @localized
+  ArtVariationStat: Stats
+  Name: string @localized
 }

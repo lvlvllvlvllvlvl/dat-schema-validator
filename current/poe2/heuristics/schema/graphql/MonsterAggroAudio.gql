@@ -1,0 +1,9 @@
+# Added 4.3
+type MonsterAggroAudio {
+  Id: string @unique
+  Audio: string
+  OGGFiles: [string]
+  _: f32
+  _: f32
+  InheritFrom: string
+}

@@ -1,6 +1,6 @@
 [
   {
-    "name": "ShapeShiftForm",
+    "name": "BaseForm",
     "offset": 0,
     "unknownArray": false,
     "unique": false,
@@ -15,7 +15,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ShapeShiftTransform",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -23,13 +23,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ShapeShiftForms"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Pose",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -48,15 +49,14 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
+      "decimal": {
         "size": 4
       }
     },
     "size": 4
   },
   {
-    "name": "",
+    "name": "Animation",
     "offset": 44,
     "unknownArray": false,
     "unique": false,
@@ -64,7 +64,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Animation"
       }
     },
     "size": 16

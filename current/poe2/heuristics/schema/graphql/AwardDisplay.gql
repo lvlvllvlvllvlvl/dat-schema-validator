@@ -10,6 +10,6 @@ type AwardDisplay {
   _: string
   ForegroundImage: string
   OGGFile: string @file(ext: ".ogg")
-  _: rid
+  QuestFlag: QuestFlags
   _: i32
 }

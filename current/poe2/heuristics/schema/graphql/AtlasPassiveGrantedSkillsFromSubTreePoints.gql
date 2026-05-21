@@ -1,0 +1,7 @@
+# Added 4.3
+type AtlasPassiveGrantedSkillsFromSubTreePoints {
+  Passive: PassiveSkills
+  Tree: AtlasPassiveSkillSubTrees
+  _: i32
+  BackgroundArt: string
+}

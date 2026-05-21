@@ -142,7 +142,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AudioCharacter",
     "offset": 160,
     "unknownArray": false,
     "unique": false,
@@ -150,7 +150,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AudioCharacterClass"
       }
     },
     "size": 16
@@ -212,7 +213,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Name",
     "offset": 240,
     "unknownArray": false,
     "unique": false,
@@ -220,7 +221,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Words"
       }
     },
     "size": 16

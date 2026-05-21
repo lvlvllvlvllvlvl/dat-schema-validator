@@ -1,0 +1,12 @@
+# Added 4.4
+type ShapeShiftArtVariations {
+  Id: ShapeShiftForms
+  VariationId: i32
+  VisualIdentity: ShapeShiftVisualIdentity
+  EffectSource: MiscEffectPacks
+  EffectDestination: MiscEffectPacks
+  EffectParticles: MiscEffectPacks
+  EffectFadeIn: MiscEffectPacks
+  EffectPersistent: MiscEffectPacks
+  _: bool
+}

@@ -186,20 +186,22 @@
     "size": 4
   },
   {
+    "name": "WorldAreas2",
+    "offset": 113,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Tags"
       }
     },
-    "offset": 113,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "name": "Formation",
+    "name": "PackFormation",
     "offset": 129,
     "unknownArray": false,
     "unique": false,
@@ -343,12 +345,15 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 210,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 210,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

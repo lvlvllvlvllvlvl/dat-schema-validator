@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "SkillCrafting",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,7 +20,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SkillCraftingData"
       }
     },
     "size": 16
@@ -33,7 +34,9 @@
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "size": 16
   },

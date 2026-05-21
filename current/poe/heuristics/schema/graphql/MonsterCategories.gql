@@ -1,0 +1,5 @@
+type MonsterCategories {
+  Tag: Tags
+  Name: string @unique @localized
+  _: i32
+}

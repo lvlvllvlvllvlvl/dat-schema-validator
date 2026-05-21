@@ -1,0 +1,8 @@
+# Added 4.1
+type KioskModeCharacterTutorials {
+  Id: string @unique
+  Character: Characters
+  Description: string @localized
+  PopupArt: string
+  DescriptionGerman: string @localized
+}

@@ -35,7 +35,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 2
       }
     },
@@ -109,26 +109,26 @@
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 82,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
     "size": 4
+  },
+  {
+    "name": "",
+    "offset": 70,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
   },
   {
     "name": "Suffix",

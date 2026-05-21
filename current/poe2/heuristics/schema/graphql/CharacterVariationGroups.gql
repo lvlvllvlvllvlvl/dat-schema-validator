@@ -1,0 +1,6 @@
+# Added 4.1
+type CharacterVariationGroups {
+  Id: string @unique
+  CharacterBase: Characters
+  CharacterVariation: Characters
+}

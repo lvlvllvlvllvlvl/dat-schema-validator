@@ -224,7 +224,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "WeaponEffect",
     "offset": 194,
     "unknownArray": false,
     "unique": false,
@@ -232,13 +232,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SkillWeaponEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "FadeInVisual",
     "offset": 210,
     "unknownArray": false,
     "unique": false,
@@ -252,7 +253,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "AudioEvent",
     "offset": 218,
     "unknownArray": false,
     "unique": false,
@@ -260,7 +261,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "CharacterAudioEvents"
       }
     },
     "size": 16

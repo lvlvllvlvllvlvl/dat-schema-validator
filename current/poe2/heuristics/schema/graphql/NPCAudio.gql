@@ -1,14 +1,11 @@
 # Added 4.1
 type NPCAudio {
   Id: string @unique
-  _: [i32]
+  Audio: [string] @file(ext: ".ogg")
   _: [i32]
   VolumePercentage: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: [rid]
-  _: [i32]
-  _: [i32]
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
 }

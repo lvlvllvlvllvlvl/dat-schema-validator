@@ -1,0 +1,7 @@
+# Added 4.1
+type MobileTutorialGroup {
+  Id: string @unique
+  QuestFlag: QuestFlags
+  _: bool
+  _: bool
+}

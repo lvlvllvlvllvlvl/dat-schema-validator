@@ -1,0 +1,11 @@
+# Added 4.3
+type PrimalAvatarVarieties {
+  Monster: MonsterVarieties
+  SkillGem: SkillGems
+  ACTFile: string
+  AOFile: string
+  _: f32
+  _: f32
+  GrantedEffect: GrantedEffects
+  _: f32
+}

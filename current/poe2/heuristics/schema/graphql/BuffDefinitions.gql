@@ -35,7 +35,7 @@ type BuffDefinitions {
   _: [i32]
   _: bool
   _: bool
-  _: [rid]
+  MultiPartAchievement: [MultiPartAchievements]
   _: bool
   Stats2: [Stats]
   GrantedFlags: [Stats]
@@ -51,7 +51,7 @@ type BuffDefinitions {
   _: [Stats]
   _: [i32]
   _: i32
-  _: [rid]
+  PreloadGroup: [PreloadGroups]
   _: bool
   _: bool
   _: bool

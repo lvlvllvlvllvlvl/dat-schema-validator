@@ -27,7 +27,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffDefinition",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -35,13 +35,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffStatValues",
     "offset": 40,
     "unknownArray": false,
     "unique": false,

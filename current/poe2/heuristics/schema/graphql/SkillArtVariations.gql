@@ -13,10 +13,10 @@ type SkillArtVariations {
   MonsterVarieties: [MonsterVarietiesArtVariations]
   ActiveSkill: [ActiveSkills]
   GrantedEffect: [GrantedEffects]
-  _: [string]
+  Monster: [string]
   _: i32
-  _: [_]
-  _: [_]
-  _: [_]
-  _: rid
+  MiscProjectileArt: [MiscProjectileModArtVariations]
+  MiscParticleArt: [MiscParticlesArtVariations]
+  SkillWeaponEffectsArt: [SkillWeaponEffectsArtVariations]
+  ArtVariationStat: Stats
 }

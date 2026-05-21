@@ -16,7 +16,7 @@ type Characters {
   BaseStrength: i32
   BaseDexterity: i32
   BaseIntelligence: i32
-  _: [rid]
+  StartingSkill: [GrantedEffectsPerLevel]
   Description: string @localized
   StartSkillGem: BaseItemTypes
   _: rid
@@ -33,7 +33,7 @@ type Characters {
   _: rid
   _: rid
   _: [rid]
-  _: rid
+  LevelUpEffect: MiscEffectPacks
   _: rid
   _: i32
   PassiveTreeImage: string @file(ext: ".dds")
@@ -59,17 +59,17 @@ type Characters {
   Attr: string
   AttrLowercase: string
   Script: string
-  _: rid
+  GhostArmMtx: MiscEffectPacks
   _: i32
   _: f32
   _: f32
   _: f32
   BaseClass: string
-  _: rid
-  _: rid
-  _: [rid]
+  StartingPassive: StartingPassiveSkills
+  StartingWeapon: BaseItemTypes
+  CreationIcons: [CharacterCreationIcons]
   _: f32
   GemCuttingIcon: string
-  _: rid
-  _: rid
+  Portrait: NPCPortraits
+  _: ItemVisualIdentity
 }

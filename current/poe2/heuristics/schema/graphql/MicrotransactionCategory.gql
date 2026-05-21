@@ -3,10 +3,8 @@ type MicrotransactionCategory {
   Id: i32 @unique
   Name: string @localized
   _: i32
-  _: [_]
+  _: [i32]
   _: i32
-  _: bool
-  _: u16 # All rows empty
-  _: bool
-  _: rid
+  _: i32
+  ShopTag: ShopTag
 }

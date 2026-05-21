@@ -1,5 +1,5 @@
 # Added 4.1
-type CraftingBenchSortCategories {
+type CraftingBenchSortCategories @tags(list: ["crafting"]) {
   Id: string @unique
   Name: ClientStrings
   IsVisible: bool

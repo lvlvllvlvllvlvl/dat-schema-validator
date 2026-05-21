@@ -1,0 +1,6 @@
+# Added 4.1
+type MobileAscendancyThresholds {
+  Id: string @unique
+  Level: i32
+  QuestFlag: QuestFlags
+}

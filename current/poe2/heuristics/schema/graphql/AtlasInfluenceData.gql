@@ -3,17 +3,15 @@ type AtlasInfluenceData {
   InfluencePack: AtlasInfluenceOutcomes
   MonsterPacks: [MonsterPacks]
   BuffDefinition: BuffDefinitions
-  _: [Stats]
+  SpawnChanceStat: [Stats]
   BuffStatValues: [i32]
-  _: [_]
+  SpawnChanceValue: [i32]
   _: i32
   _: i32
-  _: rid
+  InfluencePackSizeStat: Stats
   _: i32
   _: i32
   _: i32
   _: i32
-  _: bool
-  _: u16 # All rows empty
-  _: bool
+  _: i32
 }

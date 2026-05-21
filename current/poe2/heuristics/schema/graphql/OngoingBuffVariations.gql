@@ -1,0 +1,10 @@
+# Added 4.1
+type OngoingBuffVariations {
+  ActiveSkill: ActiveSkills
+  BuffDefinition1: BuffDefinitions
+  BuffDefinition1Stats: [Stats]
+  _: bool
+  Stats2: [Stats]
+  BuffDefinition2: BuffDefinitions
+  BuffDefinition2Stats: [Stats]
+}

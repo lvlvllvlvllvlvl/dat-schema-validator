@@ -45,7 +45,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "VisualIdentity",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -53,7 +53,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemVisualIdentity"
       }
     },
     "size": 16
@@ -95,7 +96,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Description",
     "offset": 50,
     "unknownArray": false,
     "unique": false,
@@ -103,7 +104,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ClientStrings2"
       }
     },
     "size": 16

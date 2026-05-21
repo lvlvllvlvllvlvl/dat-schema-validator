@@ -1,0 +1,6 @@
+# Added 4.1
+type AreaStatsPerDifficulty {
+  Stat: AreaDifficultyStats
+  Difficulty: i32
+  _: i32
+}

@@ -42,7 +42,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "IsNonMasterDoodad",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -54,7 +54,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "InheritsFrom",
     "offset": 49,
     "unknownArray": false,
     "unique": false,
@@ -90,7 +90,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Tags",
     "offset": 59,
     "unknownArray": false,
     "unique": false,
@@ -98,7 +98,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "HideoutDoodadTags"
       }
     },
     "size": 16
@@ -116,7 +117,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Hideout",
     "offset": 76,
     "unknownArray": false,
     "unique": false,
@@ -124,13 +125,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Hideouts"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Category",
     "offset": 92,
     "unknownArray": false,
     "unique": false,
@@ -138,7 +140,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "HideoutDoodadCategory"
       }
     },
     "size": 16
@@ -171,7 +174,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "AchievementReward",
     "offset": 113,
     "unknownArray": false,
     "unique": false,
@@ -179,7 +182,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementSetRewards"
       }
     },
     "size": 16
@@ -197,7 +201,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "HideoutSpecial",
     "offset": 130,
     "unknownArray": false,
     "unique": false,
@@ -205,25 +209,28 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Hideouts"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "HideoutItems",
     "offset": 146,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": false
+      }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "HideoutItemLink",
     "offset": 162,
     "unknownArray": false,
     "unique": false,

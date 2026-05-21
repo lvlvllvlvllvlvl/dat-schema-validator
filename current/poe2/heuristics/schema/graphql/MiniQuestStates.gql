@@ -1,10 +1,10 @@
 # Added 4.1
 type MiniQuestStates {
   _: i32
-  QuestFlags1: [QuestFlags]
-  QuestFlags2: [QuestFlags]
+  QuestFlagsStart: [QuestFlags]
+  QuestFlagsEnd: [QuestFlags]
   _: string
-  _: i32
+  Act: i32
   TSIFile: string @file(ext: ".tsi")
   _: i32
 }

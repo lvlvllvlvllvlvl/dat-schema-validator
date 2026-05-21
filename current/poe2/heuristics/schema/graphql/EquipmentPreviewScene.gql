@@ -1,0 +1,6 @@
+# Added 4.3
+type EquipmentPreviewScene {
+  Id: string @unique
+  Environment: Environments
+  AOFile: string @file(ext: ".ao")
+}

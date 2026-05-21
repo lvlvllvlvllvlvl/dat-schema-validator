@@ -1,0 +1,7 @@
+# Added 4.1
+type MobileActOneAtlasQuestProgression {
+  Id: string @unique
+  QuestFlag1: QuestFlags
+  QuestFlag2: QuestFlags
+  QuestFlags3: [QuestFlags]
+}

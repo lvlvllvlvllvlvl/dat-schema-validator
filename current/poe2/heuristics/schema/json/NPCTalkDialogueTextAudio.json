@@ -52,7 +52,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "NPC1",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -60,7 +60,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCs"
       }
     },
     "size": 16
@@ -138,7 +139,7 @@
     "unique": false
   },
   {
-    "name": "",
+    "name": "NPC2",
     "offset": 120,
     "unknownArray": false,
     "unique": false,
@@ -146,13 +147,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCs"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "NPC3",
     "offset": 136,
     "unknownArray": false,
     "unique": false,
@@ -160,75 +162,89 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCs"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlag1",
     "offset": 152,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
+      }
     },
     "size": 16
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "QuestFlag2",
     "offset": 168,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
-    "offset": 184,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlag3",
+    "offset": 184,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "QuestFlag4",
     "offset": 200,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
+      }
     },
-    "size": 16,
-    "localized": true
+    "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlag5",
     "offset": 216,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
+      }
     },
-    "size": 16,
-    "localized": true
+    "size": 16
   },
   {
-    "name": "",
+    "name": "Video",
     "offset": 232,
     "unknownArray": false,
     "unique": false,
@@ -236,18 +252,22 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTalkVideo"
       }
     },
     "size": 16
   },
   {
+    "name": "Script",
+    "offset": 248,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 248,
-    "size": 8,
-    "unique": false
+    "size": 8
   }
 ]

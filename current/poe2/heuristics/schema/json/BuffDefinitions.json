@@ -458,7 +458,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MultiPartAchievement",
     "offset": 171,
     "unknownArray": false,
     "unique": false,
@@ -466,7 +466,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MultiPartAchievements"
       }
     },
     "size": 16
@@ -680,7 +681,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "PreloadGroup",
     "offset": 332,
     "unknownArray": false,
     "unique": false,
@@ -688,7 +689,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PreloadGroups"
       }
     },
     "size": 16
@@ -718,12 +720,15 @@
     "size": 1
   },
   {
+    "name": "",
+    "offset": 350,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 350,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

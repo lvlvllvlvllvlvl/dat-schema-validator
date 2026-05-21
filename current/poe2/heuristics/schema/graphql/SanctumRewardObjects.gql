@@ -1,0 +1,7 @@
+# Added 4.1
+type SanctumRewardObjects {
+  Id: string @unique
+  _: i32
+  _: bool
+  Description: ClientStrings
+}

@@ -14,6 +14,6 @@ type UniqueChests {
   ChestsKey: Chests
   Achievement: [AchievementItems]
   _: i32
-  _: bool
   _: i32
+  _: bool
 }

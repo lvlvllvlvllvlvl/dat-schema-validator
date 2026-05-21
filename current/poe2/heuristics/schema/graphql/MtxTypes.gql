@@ -1,7 +1,7 @@
 # Added 4.1
 type MtxTypes {
   Id: string @unique
-  _: i32 @unique
+  HASH32: u32
   Name: string @localized
   _: string @localized
   Description1: string @localized
@@ -10,7 +10,7 @@ type MtxTypes {
   Type: string @localized
   _: rid
   _: rid
-  _: rid
+  ShopTag: ShopTag
   _: string
   _: i32
   _: i32

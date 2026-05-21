@@ -2,15 +2,15 @@
 type IndicatorConditions {
   Id: string @unique
   _: i32
-  _: [Stats]
+  MonsterStats: [Stats]
   _: i32
   _: bool
   _: bool
-  _: Stats
+  ConditionStat: Stats
   _: bool
   _: bool
   _: [i32]
   _: i32
   _: i32
-  _: [_]
+  Rarity: [Rarity]
 }

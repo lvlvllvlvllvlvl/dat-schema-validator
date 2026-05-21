@@ -1,0 +1,7 @@
+# Added 4.2
+type CurrencyConsumeEffects {
+  BaeItemType: BaseItemTypes
+  _: string
+  ConsumeEffect: string
+  _: f32
+}

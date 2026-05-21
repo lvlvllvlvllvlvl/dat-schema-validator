@@ -10,7 +10,8 @@ type SkillGems @tags(list: ["item:def"]) {
   GemType: i32
   _: bool
   _: bool
-  Awakened: rid
+  AwakenedVariant: SkillGems
+  RegularVariant: SkillGems
   GemColour: i32
   MinLevelReq: i32
   ItemExperienceType: ItemExperienceTypes
@@ -26,8 +27,8 @@ type SkillGems @tags(list: ["item:def"]) {
   _: bool
   _: i32
   _: bool
-  _: [rid]
+  SearchTerms: [SkillGemSearchTerms]
   Tier: i32
-  _: [_]
+  GroundEffect: [GroundEffects]
   _: [_] # All rows empty
 }

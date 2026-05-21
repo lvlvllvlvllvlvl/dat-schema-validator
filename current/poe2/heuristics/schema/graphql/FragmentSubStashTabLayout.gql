@@ -9,10 +9,10 @@ type FragmentSubStashTabLayout {
   _: i32
   _: i32
   _: i32
-  _: rid
+  SubStashPage: FragmentStashSubPages
   _: bool
   _: i32
-  _: rid
-  _: rid
+  ItemClass: ItemClasses
+  StashPages: FragmentStashPages
   _: i32
 }

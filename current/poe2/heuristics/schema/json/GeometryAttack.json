@@ -1,6 +1,6 @@
 [
   {
-    "name": "",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -15,21 +15,22 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Animation",
     "offset": 4,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "HitEffect",
     "offset": 20,
     "unknownArray": false,
     "unique": false,
@@ -37,7 +38,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16
@@ -395,7 +397,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "BuffDefinition",
     "offset": 127,
     "unknownArray": false,
     "unique": false,
@@ -403,13 +405,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "BuffValues",
     "offset": 143,
     "unknownArray": false,
     "unique": false,
@@ -463,7 +466,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "BuffVisual",
     "offset": 165,
     "unknownArray": false,
     "unique": false,
@@ -471,7 +474,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffVisuals"
       }
     },
     "size": 16
@@ -528,7 +532,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "GeometryChannel",
     "offset": 200,
     "unknownArray": false,
     "unique": false,
@@ -536,7 +540,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GeometryChannel"
       }
     },
     "size": 16
@@ -723,7 +728,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "ExecuteGeal",
     "offset": 257,
     "unknownArray": false,
     "unique": false,
@@ -731,42 +736,42 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ExecuteGEAL"
       }
     },
     "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "boolean": true
-    },
+    "name": "",
     "offset": 273,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 274,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 275,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -774,11 +779,14 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 279,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -786,70 +794,92 @@
         "size": 4
       }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 283,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "boolean": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
+    "size": 4
+  },
+  {
+    "name": "",
     "offset": 287,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
+    "size": 1
+  },
+  {
+    "name": "",
     "offset": 288,
-    "size": 1,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 289,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 289,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "GroundEffect",
+    "offset": 290,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GroundEffectTypes"
       }
     },
-    "offset": 290,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 306,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "offset": 306,
-    "size": 8,
-    "unique": false
+    "size": 8
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 314,
-    "size": 4,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -857,20 +887,36 @@
         "size": 4
       }
     },
-    "offset": 318,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 318,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "MonsterVariety",
+    "offset": 322,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MonsterVarieties"
       }
     },
-    "offset": 322,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

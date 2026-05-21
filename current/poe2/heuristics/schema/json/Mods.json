@@ -1059,7 +1059,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "BuffTemplate2",
     "offset": 616,
     "unknownArray": false,
     "unique": false,
@@ -1067,7 +1067,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffTemplates"
       }
     },
     "size": 16

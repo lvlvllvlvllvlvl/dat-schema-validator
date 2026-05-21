@@ -3,19 +3,18 @@ type NPCTextAudio {
   Id: string @unique
   Characters: [Characters]
   Text: string @localized
-  AudioFiles: [string]
-  _: i32 @localized
-  _: i32
+  AudioFiles: [string] @file(ext: ".ogg")
+  _: string
   _: bool
   _: bool
   _: i32
   _: i32
   _: i32
   NPCs: [NPCs]
-  _: rid
+  NPCPortrait: NPCPortraits
   _: f32
-  _: [_]
+  Cooldown: [MiscCooldowns]
   _: i32
-  _: rid
+  NPCTalkVideo: NPCTalkVideo
   _: bool
 }

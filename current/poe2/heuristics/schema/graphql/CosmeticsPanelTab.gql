@@ -1,0 +1,9 @@
+# Added 4.2
+type CosmeticsPanelTab {
+  Id: string @unique
+  Slot: [MicrotransactionSlot]
+  _: string @localized
+  _: [MicrotransactionSlot]
+  _: string
+  _: [MicrotransactionSlot]
+}

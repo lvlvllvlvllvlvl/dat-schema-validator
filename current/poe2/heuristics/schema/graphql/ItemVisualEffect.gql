@@ -21,7 +21,8 @@ type ItemVisualEffect {
   _: string @file(ext: ".epk")
   _: string @file(ext: ".epk")
   _: string @file(ext: ".epk")
-  _: string
-  _: string
-  _: string
+  _: string @file(ext: ".epk")
+  _: string @file(ext: ".epk")
+  _: string @file(ext: ".epk")
+  _: string @file(ext: ".epk")
 }

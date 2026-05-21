@@ -3,10 +3,10 @@ type HideoutNPCs {
   Hideout_NPC: NPCs
   HideoutDoodad: HideoutDoodads @unique
   _: rid
-  _: rid
+  QuestFlag: QuestFlags
   _: i32
-  _: rid
+  Quest: Quest
   _: i32
-  _: rid
+  Ruleset: Rulesets
   _: bool
 }

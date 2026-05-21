@@ -17,9 +17,9 @@ type BuffVisuals {
   EPKFiles: [string] @file(ext: ".epk")
   BuffVisualOrbs: [BuffVisualOrbs]
   MiscAnimated3: MiscAnimated
-  _: rid
-  _: BuffVisuals
-  _: rid
+  WeaponEffect: SkillWeaponEffects
+  FadeInVisual: BuffVisuals
+  AudioEvent: CharacterAudioEvents
   _: f32
   _: f32
   _: bool

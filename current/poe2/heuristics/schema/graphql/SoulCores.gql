@@ -3,6 +3,6 @@ type SoulCores {
   BaseItemType: BaseItemTypes @unique
   RequiredLevel: i32
   Limit: SoulCoreLimits
-  _: rid
+  Description: ClientStrings2
   Type: SoulCoreTypes
 }

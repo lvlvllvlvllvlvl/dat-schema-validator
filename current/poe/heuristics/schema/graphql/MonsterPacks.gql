@@ -3,15 +3,15 @@ type MonsterPacks {
   Id: string @unique
   _: i32
   WorldAreasKeys: [WorldAreas]
-  _: i32
-  _: i32
+  MinCount: i32
+  MaxCount: i32
   BossMonsterSpawnChance: i32
   BossMonsterCount: i32
   BossMonster_MonsterVarietiesKeys: [MonsterVarieties]
   _: bool
   _: [i32]
-  _: [string]
-  TagsKeys: [Tags]
+  Grounds: [string]
+  Tags: [Tags]
   MinLevel: i32
   MaxLevel: i32
   WorldAreas2: [Tags]

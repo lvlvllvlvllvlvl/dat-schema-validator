@@ -156,7 +156,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "WorldArea",
     "offset": 113,
     "unknownArray": false,
     "unique": false,
@@ -164,7 +164,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -254,7 +255,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "QuestItem",
     "offset": 190,
     "unknownArray": false,
     "unique": false,
@@ -262,7 +263,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
     "size": 16

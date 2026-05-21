@@ -15,7 +15,7 @@
     "size": 16
   },
   {
-    "name": "Cost",
+    "name": "BaseCost",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -30,7 +30,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "BaseCostPerlevel",
     "offset": 20,
     "unknownArray": false,
     "unique": false,
@@ -44,22 +44,21 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "CostExponentPerLevel",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
+      "decimal": {
         "size": 4
       }
     },
     "size": 4
   },
   {
-    "name": "",
+    "name": "NewTab",
     "offset": 28,
     "unknownArray": false,
     "unique": false,
@@ -71,14 +70,18 @@
     "size": 1
   },
   {
+    "name": "TabName",
+    "offset": 29,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ClientStrings"
       }
     },
-    "offset": 29,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

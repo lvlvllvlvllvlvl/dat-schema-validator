@@ -7,7 +7,7 @@ type WorldAreas {
   HasWaypoint: bool
   Connections_WorldAreasKeys: [WorldAreas]
   AreaLevel: i32
-  HASH16: i16
+  HASH16: u16
   _: i32
   _: i32
   LoadingScreens: [string] @file(ext: ".dds")

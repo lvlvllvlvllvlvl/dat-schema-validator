@@ -67,13 +67,13 @@ type Mods @tags(list: ["crafting"]) {
   _: BuffTemplates
   _: Mods
   _: i32
-  _: i32
+  _: BuffTemplates
   _: i32
   _: GrantedEffectsPerLevel
   BuffTemplate: BuffTemplates
   ArchnemesisMinionMod: Mods
   HASH32: u32
-  _: [rid]
+  BuffTemplate2: [BuffTemplates]
   _: i32
   _: [GrantedEffectsPerLevel]
   RadiusJewelType: i32

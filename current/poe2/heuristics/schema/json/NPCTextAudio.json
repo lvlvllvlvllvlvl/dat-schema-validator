@@ -59,28 +59,9 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "size": 4,
-    "localized": true
-  },
-  {
-    "name": "",
-    "offset": 52,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 8
   },
   {
     "name": "",
@@ -167,40 +148,55 @@
     "size": 16
   },
   {
+    "name": "NPCPortrait",
+    "offset": 86,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCPortraits"
       }
     },
-    "offset": 86,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 102,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "decimal": {
         "size": 4
       }
     },
-    "offset": 102,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "Cooldown",
+    "offset": 106,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscCooldowns"
       }
     },
-    "offset": 106,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 122,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -208,28 +204,33 @@
         "size": 4
       }
     },
-    "offset": 122,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "NPCTalkVideo",
+    "offset": 126,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTalkVideo"
       }
     },
-    "offset": 126,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 142,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 142,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

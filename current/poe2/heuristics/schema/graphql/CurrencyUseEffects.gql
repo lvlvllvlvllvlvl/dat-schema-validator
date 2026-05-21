@@ -5,7 +5,6 @@ type CurrencyUseEffects {
   SoundFile: string @file(ext: ".ogg")
   _: bool
   BK2File2: string @file(ext: ".bk2")
-  _: u16 # All rows empty
   _: bool
-  _: u16
+  _: f32
 }

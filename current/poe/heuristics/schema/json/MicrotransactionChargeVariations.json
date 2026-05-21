@@ -3,7 +3,7 @@
     "name": "Mtx",
     "offset": 0,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -15,10 +15,25 @@
     "size": 16
   },
   {
-    "name": "PowerChargeVisual",
+    "name": "",
     "offset": 16,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "PowerChargeVisual",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -31,9 +46,9 @@
   },
   {
     "name": "EnduranceChargeVisual",
-    "offset": 32,
+    "offset": 36,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -46,9 +61,9 @@
   },
   {
     "name": "FrenzyChargeVisual",
-    "offset": 48,
+    "offset": 52,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,

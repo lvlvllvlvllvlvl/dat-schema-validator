@@ -1,0 +1,6 @@
+# Added 4.1
+type AdvancedCraftingBenchCustomTags {
+  Id: string @unique
+  Tag: string @localized
+  _: i32
+}

@@ -44,7 +44,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestFlag",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -52,7 +52,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -73,7 +74,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Quest",
     "offset": 68,
     "unknownArray": false,
     "unique": false,
@@ -81,7 +82,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Quest"
       }
     },
     "size": 16
@@ -102,7 +104,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Ruleset",
     "offset": 88,
     "unknownArray": false,
     "unique": false,
@@ -110,18 +112,22 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Rulesets"
       }
     },
     "size": 16
   },
   {
+    "name": "",
+    "offset": 104,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 104,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

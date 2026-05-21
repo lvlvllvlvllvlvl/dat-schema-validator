@@ -3,21 +3,21 @@ type HideoutDoodads {
   MtxTypeGameSpecific: MtxTypeGameSpecific @unique
   Variation_AOFiles: [string] @file(ext: ".ao")
   _: [i32]
+  IsNonMasterDoodad: bool
+  InheritsFrom: string @files(ext: [".ot", ".otc"])
   _: bool
-  _: string
   _: bool
+  Tags: [HideoutDoodadTags]
   _: bool
-  _: [rid]
-  _: bool
-  _: rid
-  _: rid
+  Hideout: Hideouts
+  Category: HideoutDoodadCategory
   _: i32
   _: bool
-  _: rid
+  AchievementReward: AchievementSetRewards
   _: bool
-  _: rid
-  _: [string]
-  _: HideoutDoodads
+  HideoutSpecial: Hideouts
+  HideoutItems: [HideoutDoodads]
+  HideoutItemLink: HideoutDoodads
   _: bool
   _: bool
 }

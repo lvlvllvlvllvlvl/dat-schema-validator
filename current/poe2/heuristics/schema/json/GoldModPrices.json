@@ -90,7 +90,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "CraftingTags",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -98,7 +98,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AdvancedCraftingBenchCustomTags"
       }
     },
     "size": 16

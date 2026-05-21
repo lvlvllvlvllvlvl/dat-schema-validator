@@ -1,0 +1,5 @@
+# Added 4.1
+type NPCPortraitAOOverrides {
+  Id: string @unique
+  NPCPortrait: NPCPortraits
+}

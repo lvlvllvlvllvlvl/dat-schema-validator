@@ -37,7 +37,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "WeatherArt",
     "offset": 24,
     "unknownArray": false,
     "unique": true,
@@ -52,7 +52,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "BeamArt",
     "offset": 40,
     "unknownArray": false,
     "unique": true,
@@ -60,7 +60,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscBeams"
       }
     },
     "size": 16

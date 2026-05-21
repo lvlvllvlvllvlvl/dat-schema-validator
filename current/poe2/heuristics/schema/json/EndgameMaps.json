@@ -102,7 +102,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MapPin",
     "offset": 80,
     "unknownArray": false,
     "unique": false,
@@ -110,13 +110,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "EndgameMapPins"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Decorations",
     "offset": 96,
     "unknownArray": false,
     "unique": false,
@@ -124,13 +125,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "EndgameMapDecorations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "MapContentSet",
     "offset": 112,
     "unknownArray": false,
     "unique": false,
@@ -138,13 +140,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "EndgameMapContentSet"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "CorruptedPin",
     "offset": 128,
     "unknownArray": false,
     "unique": false,
@@ -152,7 +155,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "EndgameMapPins"
       }
     },
     "size": 16
@@ -188,7 +192,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MapPinCompleted",
     "offset": 152,
     "unknownArray": false,
     "unique": false,
@@ -196,13 +200,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "EndgameMapPins"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ObjectiveDescription",
     "offset": 168,
     "unknownArray": false,
     "unique": false,
@@ -210,7 +215,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ClientStrings2"
       }
     },
     "size": 16

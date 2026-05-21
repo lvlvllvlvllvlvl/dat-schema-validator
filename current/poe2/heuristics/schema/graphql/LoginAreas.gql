@@ -1,0 +1,6 @@
+# Added 4.1
+type LoginAreas {
+  Id: string @unique
+  WorldArea: WorldAreas
+  Environment: Environments
+}

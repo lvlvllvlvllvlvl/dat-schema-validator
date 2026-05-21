@@ -175,14 +175,18 @@
     "size": 8
   },
   {
+    "name": "MiscObjectDummy",
+    "offset": 98,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscObjects"
       }
     },
-    "offset": 98,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

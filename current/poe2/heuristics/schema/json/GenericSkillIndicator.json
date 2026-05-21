@@ -15,7 +15,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Indicator",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -23,13 +23,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GameObjectTasks"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Condition",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -37,7 +38,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "IndicatorConditions"
       }
     },
     "size": 16

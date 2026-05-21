@@ -1,0 +1,6 @@
+# Added 4.1
+type AreaDifficultyStats {
+  Id: Stats @unique
+  Area: [WorldAreas]
+  Stat: Stats
+}

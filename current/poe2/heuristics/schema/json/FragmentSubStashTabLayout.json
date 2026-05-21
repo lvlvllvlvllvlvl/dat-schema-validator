@@ -132,7 +132,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "SubStashPage",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
@@ -140,7 +140,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "FragmentStashSubPages"
       }
     },
     "size": 16
@@ -173,7 +174,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "ItemClass",
     "offset": 85,
     "unknownArray": false,
     "unique": false,
@@ -181,13 +182,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemClasses"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "StashPages",
     "offset": 101,
     "unknownArray": false,
     "unique": false,
@@ -195,7 +197,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "FragmentStashPages"
       }
     },
     "size": 16

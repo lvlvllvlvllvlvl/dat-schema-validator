@@ -1,0 +1,6 @@
+# Added 4.2
+type MiscParticlesArtVariations {
+  Id: string
+  Particle: [MiscParticles]
+  _: i32
+}

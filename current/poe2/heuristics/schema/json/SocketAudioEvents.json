@@ -1,0 +1,32 @@
+[
+  {
+    "name": "SkillGem",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "SkillGems"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "AudioEvent",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "CharacterAudioEvents"
+      }
+    },
+    "size": 16
+  }
+]

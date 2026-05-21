@@ -20,7 +20,10 @@ type QuestRewards @tags(list: ["item:reward"]) {
   _: bool
   _: bool
   _: [_] # All rows empty
-  _: rid
+  _: i32
+  _: i32
+  _: i32
+  _: i32
   _: i32
   _: i32
   _: i32

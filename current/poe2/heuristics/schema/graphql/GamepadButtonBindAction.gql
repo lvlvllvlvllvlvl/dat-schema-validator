@@ -1,0 +1,8 @@
+# Added 4.1
+type GamepadButtonBindAction {
+  Id: string @unique
+  Icon: string
+  Description: string @localized
+  Name: string @localized
+  FlaskSlot: bool
+}

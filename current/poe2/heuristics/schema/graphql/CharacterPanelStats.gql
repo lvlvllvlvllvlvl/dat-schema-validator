@@ -10,9 +10,9 @@ type CharacterPanelStats {
   _: bool
   _: [i32]
   _: i32
-  _: [_]
+  StatsKeys4: [Stats]
   _: bool
-  _: [_]
+  StatsKeys5: [Stats]
   _: bool
-  _: [_]
+  StatsKeys6: [Stats]
 }

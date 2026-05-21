@@ -1,0 +1,7 @@
+# Added 4.1
+type MinionCommands {
+  GrantedEffect: GrantedEffects
+  BuffDefinition: BuffDefinitions
+  _: rid
+  EffectPack: MiscEffectPacks
+}

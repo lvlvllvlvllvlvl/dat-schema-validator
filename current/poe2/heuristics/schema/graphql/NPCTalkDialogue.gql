@@ -1,7 +1,7 @@
 # Added 4.3
 type NPCTalkDialogue {
   Id: string @unique
+  SkillCrafting: [SkillCraftingData]
   _: [rid]
-  _: [string]
   _: i32
 }

@@ -30,7 +30,7 @@
     "size": 16
   },
   {
-    "name": "StatsKeys",
+    "name": "Stats1Keys",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -45,7 +45,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Stat1Values",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -60,18 +60,11 @@
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "",
     "offset": 52,
-    "size": 4,
-    "unique": true
-  },
-  {
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -79,11 +72,29 @@
         "size": 4
       }
     },
-    "offset": 56,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "Stat2Values",
+    "offset": 60,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -91,24 +102,29 @@
         "size": 4
       }
     },
-    "offset": 60,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "Stats2Keys",
+    "offset": 76,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
-    "offset": 76,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 92,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -116,18 +132,18 @@
         "size": 4
       }
     },
-    "offset": 92,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 108,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 108,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

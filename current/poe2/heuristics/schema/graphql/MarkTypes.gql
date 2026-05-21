@@ -1,6 +1,6 @@
 # Added 4.3
 type MarkTypes {
   Id: string @unique
-  _: rid @unique
-  _: rid @unique
+  BuffDefinition: BuffDefinitions
+  ActionType: ActionTypes
 }

@@ -93,7 +93,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Audio",
     "offset": 59,
     "unknownArray": false,
     "unique": false,
@@ -101,7 +101,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCAudio"
       }
     },
     "size": 16
@@ -135,7 +136,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "AwardDisplay",
     "offset": 87,
     "unknownArray": false,
     "unique": false,
@@ -143,7 +144,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AwardDisplay"
       }
     },
     "size": 16
@@ -164,7 +166,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MasterChanceStat",
     "offset": 107,
     "unknownArray": false,
     "unique": false,
@@ -191,7 +193,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "MasterAdditionalChanceStat",
     "offset": 124,
     "unknownArray": false,
     "unique": false,
@@ -199,7 +201,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
@@ -219,7 +222,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MasterMissionOnCompletionStat",
     "offset": 156,
     "unknownArray": false,
     "unique": false,
@@ -227,7 +230,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16

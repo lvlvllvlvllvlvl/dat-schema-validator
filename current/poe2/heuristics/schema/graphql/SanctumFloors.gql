@@ -8,5 +8,5 @@ type SanctumFloors {
   Description: string @localized
   Summary: ClientStrings
   Itemised: BaseItemTypes
-  _: i32 @unique
+  MinLevel: i32
 }

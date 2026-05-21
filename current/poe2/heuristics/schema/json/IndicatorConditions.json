@@ -27,7 +27,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MonsterStats",
     "offset": 12,
     "unknownArray": false,
     "unique": false,
@@ -81,7 +81,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "ConditionStat",
     "offset": 34,
     "unknownArray": false,
     "unique": false,
@@ -165,15 +165,18 @@
     "size": 4
   },
   {
+    "name": "Rarity",
+    "offset": 76,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Rarity"
       }
     },
-    "offset": 76,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

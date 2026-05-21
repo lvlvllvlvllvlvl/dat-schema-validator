@@ -1,0 +1,8 @@
+# Added 4.1
+type BloodHitEffects {
+  BloodType: BloodTypes
+  _: i32
+  Effect: DamageEffectVariations
+  _: rid
+  _: rid
+}

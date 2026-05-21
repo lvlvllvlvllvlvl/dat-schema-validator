@@ -5,8 +5,8 @@ type Tutorial {
   ClientString: ClientStrings
   IsEnabled: bool
   _: i32
-  _: [i32]
-  QuestFlag: QuestFlags
+  QuestFlags: [QuestFlags]
+  QuestFlagComplete: QuestFlags
   _: i32
   _: [i32]
   _: bool

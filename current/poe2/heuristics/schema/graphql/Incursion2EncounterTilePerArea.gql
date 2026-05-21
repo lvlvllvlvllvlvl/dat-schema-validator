@@ -1,5 +1,5 @@
 # Added 4.4
 type Incursion2EncounterTilePerArea {
-  _: rid @unique
+  Area: WorldAreas @unique
   _: string
 }

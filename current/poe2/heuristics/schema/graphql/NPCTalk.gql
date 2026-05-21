@@ -21,20 +21,20 @@ type NPCTalk {
   _: [i32]
   _: i32
   _: bool
-  _: rid
+  BaseItemTypes: BaseItemTypes
   _: [i32]
   _: bool
   DialogueOption2: string
-  _: rid
-  _: rid
+  ConsoleQuickAction: NPCTalkConsoleQuickActions
+  Music1: Music
   _: i32
-  _: [rid]
+  _: [_] # All rows empty
   _: i32
-  _: rid
+  Music2: Music
   _: i32
-  _: rid
+  QuestFlag2: QuestFlags
   _: bool
   _: i32
   _: NPCTalk
-  _: [rid]
+  TalkDialogue: [NPCTalkDialogue]
 }

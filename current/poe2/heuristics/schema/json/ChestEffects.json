@@ -156,29 +156,51 @@
     "size": 8
   },
   {
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
+    "name": "Normal_Open_EPKFile",
     "offset": 104,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   },
   {
+    "name": "Magic_Open_EPKFile",
+    "offset": 112,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "array": false,
+      "string": {}
     },
+    "size": 8
+  },
+  {
+    "name": "Rare_Open_EPKFile",
     "offset": 120,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Unique_Open_EPKFile",
+    "offset": 128,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   }
 ]

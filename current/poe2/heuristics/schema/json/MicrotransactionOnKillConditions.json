@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Rarity",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,7 +20,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MicrotransactionRarityDisplay"
       }
     },
     "size": 16
@@ -134,7 +135,7 @@
     "unique": false
   },
   {
-    "name": "",
+    "name": "Stats",
     "offset": 98,
     "unknownArray": false,
     "unique": false,
@@ -142,7 +143,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16

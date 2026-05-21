@@ -1,10 +1,10 @@
 # Added 4.1
 type ShapeShiftTransformData {
-  ShapeShiftForm: ShapeShiftForms
-  _: rid
-  _: string
-  _: i32
-  _: rid
+  BaseForm: ShapeShiftForms
+  ShapeShiftTransform: ShapeShiftForms
+  Pose: string
+  _: f32
+  Animation: Animation
   _: bool
   _: bool
   _: bool

@@ -2,9 +2,9 @@
 type MicrotransactionJewelVariations {
   MtxTypeGameSpecific: MtxTypeGameSpecific @unique
   _: i32
-  _: string
-  _: string
+  ActiveArt: string
+  BackgroundArt: string
   _: i32
-  _: string
-  _: rid
+  BackgroundPupil: string
+  RadiiArt: PassiveJewelRadiiArt
 }

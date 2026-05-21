@@ -1,0 +1,12 @@
+# Added 4.1
+type HapticEvents {
+  Id: string @unique
+  HapticAudio: string
+  _: i32
+  _: f32
+  _: bool
+  _: i32
+  _: i32
+  _: f32
+  _: f32
+}

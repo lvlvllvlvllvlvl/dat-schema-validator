@@ -1,7 +1,7 @@
 # Added 4.1
 type CharacterCreationDialogue {
   Character: Characters @unique
+  IntroAudio: NPCTextAudio
   _: rid
-  _: rid
-  _: rid
+  EscapeAudio: NPCTextAudio
 }

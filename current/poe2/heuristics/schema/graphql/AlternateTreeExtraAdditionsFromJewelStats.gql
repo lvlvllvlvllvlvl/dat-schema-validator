@@ -1,0 +1,7 @@
+# Added 4.3
+type AlternateTreeExtraAdditionsFromJewelStats {
+  Id: Stats @unique
+  Stat: Stats
+  NodeType: i32
+  JewelType: AlternateTreeVersions
+}

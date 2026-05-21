@@ -3,22 +3,17 @@ type Animation {
   Id: string @unique
   _: bool
   _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  Mainhand_AnimationKey: Animation
+  Offhand_AnimationKey: Animation
   _: bool
-  _: rid
-  _: i32
-  _: i32
+  Stat: Stats
+  AnimationStart: Animation
   _: bool
-  _: i32
-  _: i32
-  _: [_]
+  AnimationEnd: Animation
+  _: [Animation]
   _: bool
   _: i32
   _: bool
-  _: i32
-  _: i32
-  _: [_]
+  _: Animation
+  _: [Animation]
 }

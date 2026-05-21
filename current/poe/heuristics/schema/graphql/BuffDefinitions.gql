@@ -6,9 +6,9 @@ type BuffDefinitions {
   Removable: bool
   Name: string @localized
   StatsKeys: [Stats]
-  _: bool
+  CancelOnDeath: bool
   _: i32
-  _: bool
+  ShowCount: bool
   Maximum_StatsKey: Stats
   Current_StatsKey: Stats
   _: bool
@@ -28,19 +28,19 @@ type BuffDefinitions {
   _: bool
   MinStat: Stats
   _: bool
-  _: i32
+  UIStackMode: i32
   _: bool
-  _: bool
+  IsSkillBuff: bool
   _: i32
   _: [i32]
   _: bool
   _: bool
   MultiPartAchievement: [MultiPartAchievements]
   _: bool
-  _: [Stats]
-  BinaryStats: [Stats]
-  _: [Stats]
-  _: [Stats]
+  Stats2: [Stats]
+  GrantedFlags: [Stats]
+  GrantedStats: [Stats]
+  ConditionStats: [Stats]
   _: bool
   _: bool
   _: bool

@@ -66,22 +66,22 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "QuestFlags",
     "offset": 37,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
   },
   {
-    "name": "QuestFlag",
+    "name": "QuestFlagComplete",
     "offset": 53,
     "unknownArray": false,
     "unique": false,
@@ -165,12 +165,15 @@
     "size": 4
   },
   {
+    "name": "",
+    "offset": 95,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 95,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

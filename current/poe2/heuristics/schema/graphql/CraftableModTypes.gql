@@ -1,5 +1,5 @@
 # Added 4.1
-type CraftableModTypes {
+type CraftableModTypes @tags(list: ["crafting"]) {
   ModType: ModType
   HASH16: u16
 }

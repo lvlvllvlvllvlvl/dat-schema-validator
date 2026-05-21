@@ -1,8 +1,8 @@
 # Added 4.1
 type GeometryTrigger {
   _: i32
-  _: rid
-  _: rid
+  GrantedEffect: GrantedEffects
+  Animation: MiscAnimated
   _: i32
   _: i32
   _: i32
@@ -25,7 +25,7 @@ type GeometryTrigger {
   _: i32
   _: bool
   _: i32
-  _: [rid]
+  GroundMarker: [MiscAnimated]
   _: i32
   _: bool
   _: i32
@@ -34,13 +34,13 @@ type GeometryTrigger {
   _: i32
   _: bool
   _: bool
-  _: rid
+  MiscAnimated: MiscAnimated
   _: bool
   _: bool
   _: i32
   _: i32
-  _: [rid]
-  _: [i32]
+  Stats: [Stats]
+  StatValues: [i32]
   _: i32
   _: f32
   _: i32

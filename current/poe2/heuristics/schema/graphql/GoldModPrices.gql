@@ -6,5 +6,5 @@ type GoldModPrices {
   _: i32
   _: i32
   CraftableType: CraftableModTypes
-  _: [rid]
+  CraftingTags: [AdvancedCraftingBenchCustomTags]
 }

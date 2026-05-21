@@ -1,11 +1,11 @@
 # Added 4.1
 type FixedHideoutDoodadTypes {
   Id: string @unique
-  HideoutDoodads: [HideoutDoodads]
-  BaseTypeHideoutDoodads: HideoutDoodads
+  HideoutDoodadsKeys: [HideoutDoodads]
+  BaseTypeHideoutDoodadsKey: HideoutDoodads
   _: i32
   _: i32
   _: bool
-  _: rid
-  _: rid
+  UnlockQuest: Quest
+  WorldArea: WorldAreas
 }

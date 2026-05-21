@@ -1,0 +1,17 @@
+# Added 4.1
+type CaravanStops {
+  Area: WorldAreas
+  _: string
+  _: f32
+  _: i32
+  _: i32
+  _: i32
+  QuestFlag: QuestFlags
+  _: string
+  _: string
+  _: MapPins
+  _: rid
+  _: [WorldAreas]
+  _: MapPins
+  _: rid
+}

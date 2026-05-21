@@ -18,10 +18,10 @@ type PantheonPanelLayout {
   Effect4_Values: [i32]
   GodName1: string @localized
   Effect2_Values: [i32]
-  QuestFlag: QuestFlags
-  _: rid
-  _: rid
-  _: rid
+  QuestFlag1: QuestFlags
+  QuestFlag2: QuestFlags
+  QuestFlag3: QuestFlags
+  QuestFlag4: QuestFlags
   _: bool
   _: [_] # All rows empty
 }

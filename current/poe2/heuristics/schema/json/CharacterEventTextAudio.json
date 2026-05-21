@@ -45,6 +45,11 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -52,19 +57,21 @@
         "size": 4
       }
     },
-    "offset": 48,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
+    "name": "NPCDialogue",
+    "offset": 52,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTalkDialogue"
       }
     },
-    "offset": 52,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

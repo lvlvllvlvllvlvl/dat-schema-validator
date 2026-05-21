@@ -6,18 +6,18 @@ type MonsterDeathAchievements {
   _: bool
   PlayerConditionsKeys: [PlayerConditions]
   MonsterDeathConditionsKeys: [MonsterDeathConditions]
-  _: [rid]
+  Area: [WorldAreas]
   _: i32
   _: i32
   _: bool
   _: bool
-  _: rid
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: rid
+  Stats: Stats
+  MultiPartAchievement1: [MultiPartAchievements]
+  MapAchievement: [MapTierAchievements]
+  MultiPartAchievement2: [MultiPartAchievements]
+  MultiPartAchievement3: MultiPartAchievements
   _: i32
-  _: [_] # All rows empty
+  NearbyMonsterConditionsKeys: [NearbyMonsterConditions]
   _: bool
   _: [_] # All rows empty
   _: bool

@@ -6,12 +6,9 @@ type MicrotransactionAfkEffects {
   GrantedEffect: GrantedEffectsPerLevel
   _: i32
   _: i32
+  Stats: [Stats]
   FlyingStat: [Stats]
   _: bool
-  _: i32 # All rows empty
-  _: i32 @unique
-  _: bool
-  _: i32 # All rows empty
-  _: u16 # All rows empty
+  EffectPack: MiscEffectPacks
   _: bool
 }

@@ -246,7 +246,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "TwoHandSoundType",
     "offset": 218,
     "unknownArray": false,
     "unique": false,
@@ -254,7 +254,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WeaponSoundTypes"
       }
     },
     "size": 16
@@ -598,7 +599,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -811,7 +813,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "UniqueStat1",
     "offset": 655,
     "unknownArray": false,
     "unique": false,
@@ -819,13 +821,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "UniqueStat2",
     "offset": 671,
     "unknownArray": false,
     "unique": false,
@@ -833,13 +836,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "UniqueStat3",
     "offset": 687,
     "unknownArray": false,
     "unique": false,
@@ -847,13 +851,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "UniqueStat4",
     "offset": 703,
     "unknownArray": false,
     "unique": false,
@@ -861,7 +866,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
@@ -939,7 +945,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AudioEvent",
     "offset": 815,
     "unknownArray": false,
     "unique": false,
@@ -947,7 +953,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "CharacterAudioEvents"
       }
     },
     "size": 16
@@ -1037,7 +1044,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "CharacterSkin",
     "offset": 887,
     "unknownArray": false,
     "unique": false,
@@ -1045,13 +1052,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AlternateCharacterSkin"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "OneHandSoundType",
     "offset": 903,
     "unknownArray": false,
     "unique": false,
@@ -1059,13 +1067,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WeaponSoundTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "DropSoundEffect",
     "offset": 919,
     "unknownArray": false,
     "unique": false,
@@ -1073,13 +1082,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Animation",
     "offset": 935,
     "unknownArray": false,
     "unique": false,
@@ -1087,7 +1097,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
     "size": 16

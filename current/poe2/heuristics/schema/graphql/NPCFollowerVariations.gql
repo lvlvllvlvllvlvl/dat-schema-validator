@@ -12,7 +12,7 @@ type NPCFollowerVariations {
   _: bool
   _: bool
   _: [_] # All rows empty
-  _: [_]
+  QuestFlag: [QuestFlags]
   _: i32
   _: bool
   _: bool

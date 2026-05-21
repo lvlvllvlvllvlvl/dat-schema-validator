@@ -1,9 +1,9 @@
 # Added 4.1
 type MinionStats {
-  Stat: Stats @unique
-  _: [rid]
-  _: [rid]
-  _: [rid]
+  MinionStat: Stats @unique
+  PlayerStat: [Stats]
+  MinionType: [MinionType]
+  MinionType2: [MinionType]
   _: bool
-  _: bool
+  CompanionStat: bool
 }

@@ -75,7 +75,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "BaseItemTypes",
     "offset": 80,
     "unknownArray": false,
     "unique": false,
@@ -83,7 +83,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
@@ -143,16 +144,19 @@
     "size": 1
   },
   {
+    "name": "Name",
+    "offset": 130,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Words"
       }
     },
-    "offset": 130,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
@@ -180,40 +184,49 @@
     "unique": false
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "Character",
     "offset": 163,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Characters"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "GrantedEffect",
     "offset": 179,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GrantedEffectsPerLevel"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "OnKillEffect",
     "offset": 195,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MicrotransactionOnKillEffects"
+      }
+    },
+    "size": 16
   },
   {
     "name": "",
@@ -242,7 +255,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "EffectSlotType",
     "offset": 228,
     "unknownArray": false,
     "unique": false,
@@ -250,13 +263,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MicrotransactionSkillGemEffectSlotTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "VisualEffectType",
     "offset": 244,
     "unknownArray": false,
     "unique": false,
@@ -264,7 +278,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemisedVisualEffectExclusiveTypes"
       }
     },
     "size": 16
@@ -292,5 +307,35 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "name": "GameObjectTask",
+    "offset": 262,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "GameObjectTasks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 278,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   }
 ]

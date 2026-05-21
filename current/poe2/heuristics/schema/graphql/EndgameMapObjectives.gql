@@ -1,0 +1,8 @@
+# Added 4.4
+type EndgameMapObjectives {
+  Id: string @unique
+  ObjectiveText: string @localized
+  CompletionText: string @localized
+  ContentIcon: string
+  MiniMapIcon: MinimapIcons
+}

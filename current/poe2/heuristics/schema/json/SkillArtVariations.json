@@ -189,15 +189,23 @@
     "size": 16
   },
   {
+    "name": "Monster",
+    "offset": 200,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 200,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 216,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -205,55 +213,66 @@
         "size": 4
       }
     },
-    "offset": 216,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "MiscProjectileArt",
     "offset": 220,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscProjectileModArtVariations"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "MiscParticleArt",
     "offset": 236,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscParticlesArtVariations"
       }
     },
-    "offset": 252,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "SkillWeaponEffectsArt",
+    "offset": 252,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "SkillWeaponEffectsArtVariations"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ArtVariationStat",
+    "offset": 268,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
-    "offset": 268,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

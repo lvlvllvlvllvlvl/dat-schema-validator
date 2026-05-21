@@ -1,4 +1,4 @@
-"rownum","Id","UIFile","ClientString","IsEnabled","i32_33","[i32]_37","QuestFlag","i32_69","[i32]_73","bool_89","bool_90","i32_91","bool_95"
+"rownum","Id","UIFile","ClientString","IsEnabled","i32_33","QuestFlags","QuestFlagComplete","i32_69","[i32]_73","bool_89","bool_90","i32_91","bool_95"
 0,"SkillGemTutorial","",59,"",0,[],11,100,[],"",1,0,1
 1,"LifeFlaskTutorial","",59,"",0,[],22,100,[],"",1,0,1
 2,"ManaFlaskTutorial","",59,"",0,[],220,100,[],"",1,0,1
@@ -35,7 +35,7 @@
 33,"StatusAilments","Metadata/UI/InGameState/TutorialPanel/StatusAilments.ui",3053,1,3,[1772],1728,10,[],"","",0,1
 34,"Strongboxes","Metadata/UI/InGameState/TutorialPanel/Strongboxes.ui",3156,1,2,[1785],1756,25,[],"",1,0,1
 35,"CraftingAndCurrency","Metadata/UI/InGameState/TutorialPanel/CraftingAndCurrency.ui",3058,1,3,[1774],1731,10,[],"","",0,1
-36,"AurasAndHeralds","Metadata/UI/InGameState/TutorialPanel/AurasAndHeralds.ui",3061,1,10,"[3641,0]",1733,20,[],"",1,0,1
+36,"AurasAndHeralds","Metadata/UI/InGameState/TutorialPanel/AurasAndHeralds.ui",3061,1,10,"[3641,1775]",1733,20,[],"",1,0,1
 37,"Jewels","Metadata/UI/InGameState/TutorialPanel/Jewels.ui",3062,1,5,[1776],1734,90,[],"",1,0,1
 38,"Essences","Metadata/UI/InGameState/TutorialPanel/Essences.ui",3768,1,2,[1938],1939,90,[],"",1,0,1
 39,"ForsakenMasters","Metadata/UI/InGameState/TutorialPanel/ForsakenMasters.ui",3063,"",3,[3641],1735,25,[],"",1,0,1
@@ -55,7 +55,7 @@
 53,"HelpfulTips","Metadata/UI/InGameState/TutorialPanel/HelpfulTipsPC.ui",3060,1,12,[],1732,20,[],"","",0,1
 54,"SocialPanel","Metadata/UI/InGameState/TutorialPanel/Social.ui",3025,1,7,[],1729,25,[],1,"",0,1
 55,"DivinationCards","Metadata/UI/InGameState/TutorialPanel/DivinationCards.ui",3069,1,15,[1777],1742,50,[],"",1,1,1
-56,"Microtransactions","Metadata/UI/InGameState/TutorialPanel/ShopMicrotransactions.ui",3070,1,10,"[3972,0]",1743,90,[],"","",0,1
+56,"Microtransactions","Metadata/UI/InGameState/TutorialPanel/ShopMicrotransactions.ui",3070,1,10,"[3972,1784]",1743,90,[],"","",0,1
 57,"Mapping","Metadata/UI/InGameState/TutorialPanel/Mapping.ui",3072,"",55,[1783],1745,75,[1035],"",1,0,1
 58,"AtlasObjectives","Metadata/UI/InGameState/TutorialPanel/AtlasObjectives.ui",4795,"",60,[],2147,72,[295],"","",0,1
 59,"Ladders","Metadata/UI/InGameState/TutorialPanel/Ladders.ui",3073,"",8,[3641],"",8,[],"",1,0,1

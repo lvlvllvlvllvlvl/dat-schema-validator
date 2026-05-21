@@ -11,33 +11,33 @@ type Chests {
   _: bool
   _: i32
   _: [rid]
-  _: rid
+  BaseItemTypesKey: BaseItemTypes
   _: bool
-  _: [rid]
-  _: [rid]
-  _: rid
-  _: i32
+  ModsKeys: [Mods]
+  TagsKeys: [Tags]
+  ChestEffectsKey: ChestEffects
+  MinLevel: i32
   _: string @localized
-  _: i32
+  MaxLevel: i32
   _: rid
-  _: rid
+  UnlockItem: BaseItemTypes
+  Encounter_AchievementItemsKeys: [AchievementItems]
+  Environment: Environments
+  InheritsFrom: string @files(ext: [".ot", ".otc"])
+  _: bool
+  MinimapIcons: MinimapIcons
   _: [rid]
-  _: rid
   _: string
-  _: bool
-  _: rid
-  _: [rid]
-  _: string
   _: i32
   _: i32
   _: bool
-  _: rid
-  _: rid
+  Colour: Colours
+  OutlineColour: Colours
   _: bool
   _: bool
-  _: [rid]
-  _: bool
-  _: [string] @localized
+  LeagueChallenges: [AchievementItems]
+  IsHardmode: bool
+  StatsHardmode: [Stats]
   _: bool
   _: bool
   _: bool

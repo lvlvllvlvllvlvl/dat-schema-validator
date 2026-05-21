@@ -8,14 +8,14 @@ type NPCShop {
   _: [_] # All rows empty
   _: [_] # All rows empty
   _: [_] # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
   _: i32
-  _: [_]
-  _: rid
-  _: i32 @unique
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  _: i32
+  _: i32
+  NPCs: [NPCs]
+  _: i32
+  _: i32
+  _: [_] # All rows empty
+  _: i32
   _: bool
   _: rid
 }

@@ -156,7 +156,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "KeywordPopup",
     "offset": 96,
     "unknownArray": false,
     "unique": true,
@@ -164,7 +164,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "KeywordPopups"
       }
     },
     "size": 16
@@ -215,7 +216,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MapObjective",
     "offset": 148,
     "unknownArray": false,
     "unique": true,
@@ -223,7 +224,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "EndgameMapObjectives"
       }
     },
     "size": 16

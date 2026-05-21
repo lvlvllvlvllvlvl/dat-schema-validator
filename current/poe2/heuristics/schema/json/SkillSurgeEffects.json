@@ -12,8 +12,53 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "GrantedEffectsKey",
     "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "GrantedEffects"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Stat",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "SurgeType",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "SurgeTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 56,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -25,43 +70,7 @@
   },
   {
     "name": "",
-    "offset": 16,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 17,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 18,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 19,
+    "offset": 64,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -75,7 +84,7 @@
   },
   {
     "name": "",
-    "offset": 35,
+    "offset": 80,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -87,7 +96,7 @@
   },
   {
     "name": "",
-    "offset": 36,
+    "offset": 81,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -99,7 +108,7 @@
   },
   {
     "name": "",
-    "offset": 37,
+    "offset": 82,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -111,22 +120,7 @@
   },
   {
     "name": "",
-    "offset": 38,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 42,
+    "offset": 83,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -138,7 +132,7 @@
   },
   {
     "name": "",
-    "offset": 43,
+    "offset": 84,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -150,7 +144,7 @@
   },
   {
     "name": "",
-    "offset": 44,
+    "offset": 85,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -162,21 +156,7 @@
   },
   {
     "name": "",
-    "offset": 45,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 61,
+    "offset": 86,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -188,7 +168,55 @@
   },
   {
     "name": "",
-    "offset": 62,
+    "offset": 87,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 88,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 89,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 90,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 91,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -202,19 +230,7 @@
   },
   {
     "name": "",
-    "offset": 78,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 79,
+    "offset": 107,
     "unknownArray": false,
     "unique": false,
     "interval": false,

@@ -1,12 +1,12 @@
 # Added 4.1
 type ExtraTerrainFeatures {
   Id: string @unique
-  ArmFiles: [string]
-  TdtFiles: [string]
+  ArmFiles: [string] @file(ext: ".arm")
+  TdtFiles: [string] @file(ext: ".tdt")
   _: [string]
   _: [i32]
   _: ExtraTerrainFeatures
-  _: rid
+  WorldAreasKey: WorldAreas
   _: bool
   _: i32
 }

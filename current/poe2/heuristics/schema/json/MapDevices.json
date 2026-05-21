@@ -180,14 +180,18 @@
     "size": 16
   },
   {
+    "name": "HideoutDoodad",
+    "offset": 94,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "HideoutDoodads"
       }
     },
-    "offset": 94,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

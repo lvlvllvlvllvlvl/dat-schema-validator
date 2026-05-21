@@ -27,16 +27,19 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "string": {}
     },
-    "offset": 24,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
-    "name": "",
+    "name": "MicrotransactionPortalVariation",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -44,13 +47,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MicrotransactionPortalVariations"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "AreaLevel",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -65,7 +69,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "QuestFlag",
     "offset": 60,
     "unknownArray": false,
     "unique": false,
@@ -73,7 +77,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -130,17 +135,19 @@
     "size": 1
   },
   {
+    "name": "OpenAchievemnts",
+    "offset": 83,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
-    "offset": 83,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
@@ -155,17 +162,19 @@
     "size": 1
   },
   {
+    "name": "Mods",
+    "offset": 100,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Mods"
       }
     },
-    "offset": 100,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",

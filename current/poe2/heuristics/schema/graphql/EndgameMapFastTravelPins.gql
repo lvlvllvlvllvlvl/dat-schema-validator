@@ -1,0 +1,12 @@
+# Added 4.2
+type EndgameMapFastTravelPins {
+  Id: string @unique
+  Name: string @localized
+  BackgroundArt: string
+  LocationArt: string
+  LocationHoverArt: string
+  _: string
+  PinPopUpArt: string
+  _: i32
+  _: string @localized
+}

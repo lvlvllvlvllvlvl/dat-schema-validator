@@ -1,21 +1,22 @@
 # Added 4.1
 type SkillSurgeEffects {
   Id: string @unique
+  GrantedEffectsKey: GrantedEffects
+  Stat: Stats
+  SurgeType: SurgeTypes
   _: string
-  _: bool
-  _: bool
-  _: bool
   _: rid
   _: bool
   _: bool
   _: bool
-  _: i32
   _: bool
   _: bool
   _: bool
-  _: rid
+  _: bool
+  _: bool
+  _: bool
+  _: bool
   _: bool
   _: [rid]
-  _: bool
   _: f32
 }

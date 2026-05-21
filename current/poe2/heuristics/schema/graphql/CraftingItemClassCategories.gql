@@ -1,5 +1,5 @@
 # Added 4.1
-type CraftingItemClassCategories {
+type CraftingItemClassCategories @tags(list: ["crafting"]) {
   Id: string @unique
   ItemClasses: [ItemClasses]
   _: string

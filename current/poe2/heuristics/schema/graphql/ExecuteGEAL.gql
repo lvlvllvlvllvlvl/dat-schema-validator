@@ -1,7 +1,6 @@
 # Added 4.1
 type ExecuteGEAL {
-  _: i32
-  _: i32
+  Id: string @unique
   MiscAnimated: [MiscAnimated]
   _: i32
   _: i32
@@ -29,11 +28,8 @@ type ExecuteGEAL {
   _: i32
   _: bool
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: string
+  MetadataIDs: [string] @files(ext: [".ot", ".otc"])
+  ScriptCommand: string
   _: string
   _: string
   _: string

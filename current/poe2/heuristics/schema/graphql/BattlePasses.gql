@@ -6,6 +6,6 @@ type BattlePasses {
   China_BK2File: string @localized
   MapCompletionCount: i32
   _: bool
-  _: string @unique
-  _: rid @unique
+  _: string
+  Mtx: MtxTypes
 }

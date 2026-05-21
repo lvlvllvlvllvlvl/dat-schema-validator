@@ -1,0 +1,6 @@
+# Added 4.3
+type CraftingSpreeCurrencies @tags(list: ["crafting"]) {
+  Id: string @unique
+  BaseItemTypesKey: BaseItemTypes
+  HasSpecificBaseItem: bool
+}

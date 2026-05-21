@@ -15,7 +15,7 @@
     "size": 4
   },
   {
-    "name": "QuestFlags1",
+    "name": "QuestFlagsStart",
     "offset": 4,
     "unknownArray": false,
     "unique": false,
@@ -30,7 +30,7 @@
     "size": 16
   },
   {
-    "name": "QuestFlags2",
+    "name": "QuestFlagsEnd",
     "offset": 20,
     "unknownArray": false,
     "unique": false,
@@ -57,7 +57,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Act",
     "offset": 44,
     "unknownArray": false,
     "unique": false,
@@ -84,6 +84,11 @@
     "size": 8
   },
   {
+    "name": "",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -91,8 +96,6 @@
         "size": 4
       }
     },
-    "offset": 56,
-    "size": 4,
-    "unique": false
+    "size": 4
   }
 ]

@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "GroundEffect",
     "offset": 8,
     "unknownArray": false,
     "unique": false,
@@ -20,13 +20,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GroundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "Visual",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -34,13 +35,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffVisuals"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "VisualMoving",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -48,7 +50,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffVisuals"
       }
     },
     "size": 16
@@ -96,7 +99,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "DeathEffect",
     "offset": 68,
     "unknownArray": false,
     "unique": false,
@@ -104,7 +107,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscEffectPacks"
       }
     },
     "size": 16
@@ -122,7 +126,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "CorpseExplodeEffect",
     "offset": 100,
     "unknownArray": false,
     "unique": false,
@@ -130,7 +134,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscEffectPacks"
       }
     },
     "size": 16

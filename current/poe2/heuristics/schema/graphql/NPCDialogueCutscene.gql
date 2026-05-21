@@ -1,0 +1,13 @@
+# Added 4.1
+type NPCDialogueCutscene {
+  Id: string @unique
+  _: bool
+  Script: string
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: string
+  _: string
+}

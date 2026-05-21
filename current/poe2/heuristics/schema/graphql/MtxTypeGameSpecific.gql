@@ -3,12 +3,9 @@ type MtxTypeGameSpecific {
   Type: MtxTypes @unique
   HASH32: u32
   DDSFile: string @file(ext: ".dds")
+  Category: i32
+  _: [i32]
   _: i32
-  _: [_]
+  _: [i32]
   _: bool
-  _: i32
-  _: i32 # All rows empty
-  _: i32
-  _: i32
-  _: i32
 }

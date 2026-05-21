@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Mtx",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MtxTypeGameSpecific"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ShapeShiftForm",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ShapeShiftForms"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "VisualIdentity",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ShapeShiftVisualIdentity"
+      }
+    },
+    "size": 16
+  }
+]

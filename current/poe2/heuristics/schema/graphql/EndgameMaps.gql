@@ -7,14 +7,14 @@ type EndgameMaps {
   FlavourText: string @localized
   _: i32
   _: [i32]
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  MapPin: EndgameMapPins
+  Decorations: EndgameMapDecorations
+  MapContentSet: EndgameMapContentSet
+  CorruptedPin: EndgameMapPins
   _: i32
   _: i32
-  _: rid
-  _: rid
+  MapPinCompleted: EndgameMapPins
+  ObjectiveDescription: ClientStrings2
   MapLocations: [EndgameMapLocation]
   SpecialMapText: string @localized
   SpecialMapFlavourText: string @localized

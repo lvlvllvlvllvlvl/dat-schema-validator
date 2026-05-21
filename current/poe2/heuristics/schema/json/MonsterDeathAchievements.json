@@ -84,7 +84,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Area",
     "offset": 73,
     "unknownArray": false,
     "unique": false,
@@ -92,7 +92,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
     "size": 16
@@ -152,7 +153,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Stats",
     "offset": 99,
     "unknownArray": false,
     "unique": false,
@@ -160,52 +161,59 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "MultiPartAchievement1",
     "offset": 115,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MultiPartAchievements"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "MapAchievement",
     "offset": 131,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MapTierAchievements"
       }
     },
-    "offset": 147,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "name": "",
+    "name": "MultiPartAchievement2",
+    "offset": 147,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MultiPartAchievements"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MultiPartAchievement3",
     "offset": 163,
     "unknownArray": false,
     "unique": false,
@@ -213,7 +221,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MultiPartAchievements"
       }
     },
     "size": 16
@@ -234,17 +243,19 @@
     "size": 4
   },
   {
+    "name": "NearbyMonsterConditionsKeys",
+    "offset": 183,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NearbyMonsterConditions"
       }
     },
-    "offset": 183,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",

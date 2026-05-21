@@ -1,0 +1,18 @@
+# Added 4.1
+type TreasureHunterMissions {
+  Id: string @unique
+  _: rid
+  _: rid
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: i32
+  _: i32
+  _: i32
+  _: string
+  _: string
+  OTFile: string
+  _: bool
+  _: i32
+  _: i32
+}

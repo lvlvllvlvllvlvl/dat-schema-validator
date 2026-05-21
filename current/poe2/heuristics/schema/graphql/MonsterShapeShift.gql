@@ -1,15 +1,15 @@
 # Added 4.1
 type MonsterShapeShift {
   Id: i32 @unique
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  MonsterSource: MonsterVarieties
+  MonsterShapeshift: MonsterVarieties
+  EffectSource: MiscEffectPacks
+  EffectDestination: MiscEffectPacks
   _: [string]
   _: [string]
   _: [string]
   _: [string]
-  _: rid
+  BuffTemplate: BuffTemplates
   _: rid
   _: string
   _: string

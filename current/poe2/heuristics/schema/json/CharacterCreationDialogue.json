@@ -15,7 +15,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "IntroAudio",
     "offset": 16,
     "unknownArray": false,
     "unique": true,
@@ -23,7 +23,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTextAudio"
       }
     },
     "size": 16
@@ -43,7 +44,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "EscapeAudio",
     "offset": 48,
     "unknownArray": false,
     "unique": true,
@@ -51,7 +52,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCTextAudio"
       }
     },
     "size": 16

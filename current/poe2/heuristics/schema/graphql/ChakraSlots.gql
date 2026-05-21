@@ -1,0 +1,5 @@
+# Added 4.3
+type ChakraSlots {
+  Id: i32 @unique
+  ItemClass: ItemClasses
+}

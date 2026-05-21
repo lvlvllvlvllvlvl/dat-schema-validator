@@ -1,0 +1,11 @@
+# Added 4.4
+type EndgameMapTablets {
+  BaseItemType: BaseItemTypes
+  MapStats: [Stats]
+  MapStatValues: [i32]
+  TowerStat: Stats
+  MapObjective: EndgameMapObjectives
+  MapContent: EndgameMapContent
+  QuantityStat: [Stats]
+  QuantityStatValues: [i32]
+}

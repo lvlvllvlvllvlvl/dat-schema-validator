@@ -3,16 +3,16 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   Id: string @unique
   RecipeItems: [BaseItemTypes]
   _: [string]
-  _: rid
+  MicrotransactionPortalVariation: MicrotransactionPortalVariations
+  AreaLevel: i32
+  QuestFlag: QuestFlags
   _: i32
-  _: rid
-  _: i32
   _: bool
   _: bool
   _: bool
-  _: [_] # All rows empty
+  OpenAchievemnts: [AchievementItems]
   _: bool
-  _: [_] # All rows empty
+  Mods: [Mods]
   _: bool
   _: bool
 }

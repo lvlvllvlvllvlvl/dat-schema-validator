@@ -1,0 +1,5 @@
+# Added 4.4
+type MicrotransactionSlotFromShapeShiftForm {
+  ShapeShiftForm: ShapeShiftForms
+  MtxSlotId: i32 @unique
+}

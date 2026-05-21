@@ -1,8 +1,8 @@
 # Added 4.1
 type WeaponTypes @tags(list: ["item:def"]) {
   BaseItemType: BaseItemTypes @unique
-  Critical: i32
-  _: rid
+  CritChance: i32
+  WeaponClass: WeaponClasses
   "1000 / speed -> attacks per second"
   Speed: i32
   DamageMin: i32

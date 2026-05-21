@@ -20,7 +20,7 @@ type ItemVisualIdentity {
   TemplarShape: string
   ShadowShape: string
   ScionShape: string
-  _: rid
+  TwoHandSoundType: WeaponSoundTypes
   _: i32
   Pickup_AchievementItems: [AchievementItems]
   SMFiles: [string] @file(ext: ".sm")
@@ -47,7 +47,7 @@ type ItemVisualIdentity {
   IsTier16Icon: bool
   _: [i32]
   _: bool
-  _: [rid]
+  _: [AchievementItems]
   _: [string]
   _: [string]
   _: [string]
@@ -65,17 +65,17 @@ type ItemVisualIdentity {
   _: string
   _: string
   Composition: ItemVisualCompositions
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  UniqueStat1: Stats
+  UniqueStat2: Stats
+  UniqueStat3: Stats
+  UniqueStat4: Stats
   _: [string]
   _: [string]
   _: [string]
   _: [string]
   _: [string]
   _: [string]
-  _: rid
+  AudioEvent: CharacterAudioEvents
   _: string
   _: string
   _: string
@@ -83,9 +83,9 @@ type ItemVisualIdentity {
   _: string
   _: string
   _: string
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  CharacterSkin: AlternateCharacterSkin
+  OneHandSoundType: WeaponSoundTypes
+  DropSoundEffect: SoundEffects
+  Animation: MiscAnimated
   _: string
 }

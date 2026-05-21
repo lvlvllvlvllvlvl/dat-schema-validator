@@ -181,7 +181,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "PinProperty",
     "offset": 148,
     "unknownArray": false,
     "unique": false,
@@ -189,7 +189,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "VisualPinProperties"
       }
     },
     "size": 16

@@ -10,14 +10,12 @@ type CharacterAudioEvents {
   JackTheAxe_CharacterTextAudioKeys: [CharacterTextAudio]
   _: bool
   _: bool
-  _: [_]
-  _: i32
-  _: i32
+  Cooldown: [MiscCooldowns]
+  _: CharacterAudioEvents
   _: bool
-  _: [_]
+  QuestFlag: [QuestFlags]
   _: rid
-  _: i32
-  _: i32
+  _: CharacterAudioEvents
   _: i32
   _: i32
 }

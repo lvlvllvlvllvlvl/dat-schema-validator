@@ -261,7 +261,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "StatContextFlags",
     "offset": 257,
     "unknownArray": false,
     "unique": false,
@@ -269,7 +269,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "VirtualStatContextFlags"
       }
     },
     "size": 16
@@ -700,14 +701,18 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 672,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
-    "offset": 672,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

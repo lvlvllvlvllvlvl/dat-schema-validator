@@ -19,26 +19,34 @@
     "interval": false,
     "type": {
       "array": true,
-      "string": {}
+      "key": {
+        "foreign": false
+      }
     },
     "size": 16
   },
   {
+    "name": "",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 24,
-    "size": 1,
-    "unique": false
+    "size": 1
   },
   {
+    "name": "",
+    "offset": 25,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "offset": 25,
-    "size": 1,
-    "unique": false
+    "size": 1
   }
 ]

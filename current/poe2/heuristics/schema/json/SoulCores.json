@@ -45,7 +45,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "Description",
     "offset": 36,
     "unknownArray": false,
     "unique": false,
@@ -53,7 +53,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ClientStrings2"
       }
     },
     "size": 16

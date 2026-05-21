@@ -1,0 +1,19 @@
+# Added 4.2
+type TempestTypes {
+  Id: string @unique
+  MiscObject: MiscObjects @unique
+  _: rid
+  _: i32
+  _: bool
+  BuffTemplatePlayer: BuffTemplates
+  BuffTemplateMonster: BuffTemplates
+  _: bool
+  _: Stats
+  _: i32
+  _: rid
+  MiscBeam: MiscBeams
+  _: string
+  _: string
+  _: string
+  _: i32
+}

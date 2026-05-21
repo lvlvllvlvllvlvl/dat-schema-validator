@@ -1,0 +1,7 @@
+# Added 4.1
+type TouchInteractionType {
+  Id: string @unique
+  Art: string
+  ArtHighlight: string
+  _: string
+}

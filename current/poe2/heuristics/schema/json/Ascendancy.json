@@ -217,7 +217,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "SelectSound",
     "offset": 117,
     "unknownArray": false,
     "unique": false,
@@ -225,13 +225,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ConfirmDownSound",
     "offset": 133,
     "unknownArray": false,
     "unique": false,
@@ -239,13 +240,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ConfirmUpSound",
     "offset": 149,
     "unknownArray": false,
     "unique": false,
@@ -253,7 +255,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "SoundEffects"
       }
     },
     "size": 16

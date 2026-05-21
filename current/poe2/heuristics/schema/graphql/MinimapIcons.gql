@@ -7,7 +7,6 @@ type MinimapIcons {
   _: bool
   MinimapIconPointerMaxDistance: i32
   _: i32
-  _: i32 @localized
-  _: i32 # All rows empty
+  Name: string @localized
   _: i32
 }

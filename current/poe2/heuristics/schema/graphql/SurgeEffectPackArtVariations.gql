@@ -1,0 +1,9 @@
+# Added 4.1
+type SurgeEffectPackArtVariations {
+  Id: string @unique
+  _: i32
+  VisualEffect: ItemVisualEffect
+  _: i32
+  _: i32
+  _: bool
+}

@@ -1,8 +1,8 @@
 # Added 4.1
 type GenericSkillIndicator {
   Stat: Stats @unique
-  _: rid
-  _: [rid]
+  Indicator: GameObjectTasks
+  Condition: [IndicatorConditions]
   _: [string]
   _: [string]
   _: [string]

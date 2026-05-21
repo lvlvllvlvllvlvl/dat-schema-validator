@@ -1,0 +1,8 @@
+# Added 4.1
+type CharacterCreationIcons {
+  Id: string @unique
+  Name: string @localized
+  Description: string @localized
+  Video: string @file(ext: ".bk2")
+  Icon: string @file(ext: ".dds")
+}

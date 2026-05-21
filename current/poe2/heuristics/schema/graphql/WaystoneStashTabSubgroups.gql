@@ -3,7 +3,5 @@ type WaystoneStashTabSubgroups {
   Tier: i32 @unique
   Text: string @unique
   Colour: i32
-  _: string
-  _: i32 # All rows empty
-  _: i32 # All rows empty
+  ItemClass: ItemClasses
 }

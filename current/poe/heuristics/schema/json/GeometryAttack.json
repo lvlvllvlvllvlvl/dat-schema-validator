@@ -466,7 +466,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "BuffVisual",
     "offset": 165,
     "unknownArray": false,
     "unique": false,
@@ -474,7 +474,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffVisuals"
       }
     },
     "size": 16

@@ -1,0 +1,7 @@
+# Added 4.1
+type GamepadItemActionTypes {
+  Id: string @unique
+  ClientString: ClientStrings
+  _: bool
+  _: bool
+}

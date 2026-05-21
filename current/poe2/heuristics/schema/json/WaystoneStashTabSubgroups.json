@@ -42,38 +42,18 @@
     "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "string": {}
-    },
+    "name": "ItemClass",
     "offset": 16,
-    "size": 8,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "ItemClasses"
       }
     },
-    "offset": 24,
-    "size": 4,
-    "noData": true,
-    "unique": false
-  },
-  {
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "offset": 28,
-    "size": 4,
-    "noData": true,
-    "unique": false
+    "size": 16
   }
 ]

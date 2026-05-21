@@ -3,7 +3,7 @@ type Shrines {
   Id: string @unique
   TimeoutInSeconds: i32
   ChargesShared: bool
-  Player_ShrineBuffsKey: rid
+  Player_ShrineBuffsKey: BuffTemplates
   _: i32
   _: i32
   Monster_ShrineBuffsKey: rid
@@ -20,9 +20,9 @@ type Shrines {
   Description: ClientStrings
   Name: ClientStrings
   _: bool
+  Mods: Mods
+  MonsterPacks: [MonsterPacks]
   _: rid
-  _: [_] # All rows empty
-  _: rid
-  _: Stats
-  _: Stats
+  MapSpawnChanceStat: Stats
+  MapShrineEffectStat: Stats
 }

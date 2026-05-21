@@ -17,7 +17,7 @@ type Ascendancy {
   Disabled: bool
   BaseAscendancy: Ascendancy
   UIArt: PassiveSkillTreeUIArt
-  _: rid
-  _: rid
-  _: rid
+  SelectSound: SoundEffects
+  ConfirmDownSound: SoundEffects
+  ConfirmUpSound: SoundEffects
 }

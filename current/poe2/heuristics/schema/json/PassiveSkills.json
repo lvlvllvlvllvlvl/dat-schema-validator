@@ -440,7 +440,7 @@
     "size": 16
   },
   {
-    "name": "AtlasnodeGroup",
+    "name": "AtlasNodeGroup",
     "offset": 220,
     "unknownArray": false,
     "unique": false,
@@ -594,7 +594,7 @@
     "size": 1
   },
   {
-    "name": "KeystoneId",
+    "name": "AudioEvent",
     "offset": 286,
     "unknownArray": false,
     "unique": false,
@@ -602,7 +602,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "CharacterAudioEvents"
       }
     },
     "size": 16

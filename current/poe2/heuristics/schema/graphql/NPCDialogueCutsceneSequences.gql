@@ -1,0 +1,11 @@
+# Added 4.1
+type NPCDialogueCutsceneSequences {
+  Cutscene: NPCDialogueCutscene
+  _: i32
+  _: i32
+  _: rid
+  Script1: string
+  _: bool
+  Script2: string
+  _: bool
+}

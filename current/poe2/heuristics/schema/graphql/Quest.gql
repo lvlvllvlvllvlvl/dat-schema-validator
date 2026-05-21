@@ -12,6 +12,6 @@ type Quest {
   TrackerGroup: QuestTrackerGroup
   _: bool
   _: bool
-  _: [rid]
-  _: [_]
+  NormalReward: [QuestRewardType]
+  QuestFlag: [QuestFlags]
 }

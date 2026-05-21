@@ -1,0 +1,12 @@
+# Added 4.1
+type UltimatumRooms {
+  Id: string @unique
+  ARMFile: string @file(ext: ".arm")
+  EncounterType: UltimatumEncounterTypes
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  NPCAudio: NPCTextAudio
+}

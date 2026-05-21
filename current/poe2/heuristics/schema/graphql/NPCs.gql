@@ -3,19 +3,19 @@ type NPCs {
   Id: string @unique
   Name: string @localized
   Metadata: string @files(ext: [".ot", ".otc"])
-  _: rid
+  QuestFlags: QuestFlags
   NPCMasterKey: NPCMaster
   ShortName: string @localized
-  _: i32
+  Act: i32
   NPCAudios1: [NPCAudio]
   NPCAudios2: [NPCAudio]
-  HASH16: i16
+  HASH16: u16
   _: NPCs
   Portrait: NPCPortraits
   DialogueStyle: NPCDialogueStyles
-  _: rid
+  ShopSet: NPCShopSets
   Gender: string
   _: bool
   _: string
-  _: rid
+  NPCType: NPCType
 }

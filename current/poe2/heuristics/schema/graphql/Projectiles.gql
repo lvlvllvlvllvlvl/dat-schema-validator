@@ -20,8 +20,8 @@ type Projectiles {
   _: i32
   _: i32
   _: i32
-  _: rid
-  _: rid
+  MiscAnimatedFlash: MiscAnimated
+  MiscAnimatedArrowNova: MiscAnimated
   _: i32
   _: i32
   _: i32
@@ -31,14 +31,14 @@ type Projectiles {
   _: bool
   _: [i32]
   _: string
-  _: rid
-  _: rid
-  _: rid
+  MiscAnimatedBounce: MiscAnimated
+  MiscAnimatedImpact: MiscAnimated
+  DamageEffect1: DamageEffectVariations
   _: bool
   _: string
-  _: rid
+  DamageEffect2: DamageEffectVariations
   _: string
-  _: rid
+  BounceOverride: BallisticBounceOverride
   _: string
   _: [string]
   _: [string]

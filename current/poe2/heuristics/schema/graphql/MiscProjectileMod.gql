@@ -4,7 +4,7 @@ type MiscProjectileMod {
   _: string
   _: string
   AOFile: string @file(ext: ".ao")
-  _: rid
+  EffectPack: MiscEffectPacks
   _: rid
   _: string
 }

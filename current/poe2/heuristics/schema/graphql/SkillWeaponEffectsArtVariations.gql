@@ -1,0 +1,6 @@
+# Added 4.3
+type SkillWeaponEffectsArtVariations {
+  Id: string @unique
+  WeaponEffect: [SkillWeaponEffects]
+  _: SkillWeaponEffectsArtVariations
+}

@@ -37,7 +37,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "QuestFlags",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -45,7 +45,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -79,7 +80,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "Act",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
@@ -132,7 +133,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 2
       }
     },
@@ -183,7 +184,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ShopSet",
     "offset": 142,
     "unknownArray": false,
     "unique": false,
@@ -191,7 +192,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCShopSets"
       }
     },
     "size": 16
@@ -233,7 +235,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "NPCType",
     "offset": 175,
     "unknownArray": false,
     "unique": false,
@@ -241,7 +243,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "NPCType"
       }
     },
     "size": 16

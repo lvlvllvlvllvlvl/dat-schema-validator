@@ -3,7 +3,7 @@ type AzmeriWoodsDustType {
   Id: string @unique
   Name: string @localized
   Icon: string
-  _: MiscAnimated
-  _: rid
+  WeatherArt: MiscAnimated
+  BeamArt: MiscBeams
   Text: string @localized
 }

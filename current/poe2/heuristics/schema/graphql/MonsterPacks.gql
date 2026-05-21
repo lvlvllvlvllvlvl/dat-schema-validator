@@ -13,8 +13,8 @@ type MonsterPacks {
   Tags: [Tags]
   MinLevel: i32
   MaxLevel: i32
-  _: [_] # All rows empty
-  Formation: PackFormation
+  WorldAreas2: [Tags]
+  PackFormation: PackFormation
   _: i32
   _: bool
   _: [string]

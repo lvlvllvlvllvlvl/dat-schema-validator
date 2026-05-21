@@ -17,7 +17,7 @@ type MonsterVarieties {
   ModelSizeMultiplier: i32
   _: i32
   _: i32
-  _: rid
+  WeaponSoundType: WeaponSoundTypes
   _: i32
   _: i32
   Tags: [Tags]
@@ -33,7 +33,7 @@ type MonsterVarieties {
   AISFile: string @file(ext: ".ais")
   Mods2: [Mods]
   Stance: string
-  _: rid
+  BloodType: BloodTypes
   Name: string @localized
   "in percent"
   DamageMultiplier: i32
@@ -83,7 +83,7 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: f32
-  AilmentThreshold: i32 @localized
+  _: i32 @localized
   SinkEffect: i32
   _: i32
   MonsterConditionalEffectPack: MonsterConditionalEffectPacks
@@ -97,14 +97,11 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32 @localized
-  _: i32
+  InheritsFrom: [string]
   _: i32
   _: i32
   BossHealthBar: bool
-  _: rid
+  TauntGrantedEffect: GrantedEffects
   _: i32
   _: bool
   _: i32
@@ -112,22 +109,22 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: bool
-  _: rid
+  Questflag: QuestFlags
   _: f32
   _: f32
   _: bool
   _: [string]
   _: [rid]
   _: i32
-  _: i32
-  _: f32
+  PoiseThreshold: i32
+  AttackCrit: f32
   _: rid
   _: bool
   _: i32
   _: bool
   _: i32
   MonsterCategory: MonsterCategories
-  _: rid
+  AggroAudio: MonsterAggroAudio
   _: i32
   _: rid
   _: bool

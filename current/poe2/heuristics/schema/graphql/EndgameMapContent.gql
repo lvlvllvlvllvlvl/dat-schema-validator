@@ -11,9 +11,9 @@ type EndgameMapContent {
   Icon: string @file(ext: ".dds")
   Description: string @localized
   Name: string @localized
-  _: rid
+  KeywordPopup: KeywordPopups
   _: [i32]
   Stats: [Stats]
   _: i32
-  _: rid
+  MapObjective: EndgameMapObjectives
 }

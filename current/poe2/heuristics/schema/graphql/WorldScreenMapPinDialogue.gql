@@ -1,0 +1,6 @@
+# Added 4.1
+type WorldScreenMapPinDialogue {
+  Id: MapPins @unique
+  _: i32
+  NPCTalk: [NPCTalk]
+}

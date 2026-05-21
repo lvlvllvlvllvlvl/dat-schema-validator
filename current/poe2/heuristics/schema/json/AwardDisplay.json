@@ -128,7 +128,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "QuestFlag",
     "offset": 68,
     "unknownArray": false,
     "unique": false,
@@ -136,7 +136,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16

@@ -4,19 +4,19 @@ type NPCTalkDialogueTextAudio {
   TargetCharacter: Characters
   Text: string @localized
   OGGFiles: [string] @file(ext: ".ogg")
-  _: [rid]
+  NPC1: [NPCs]
   _: rid
   TargetCharacters: [Characters]
   _: i32
   _: i32
   _: [_] # All rows empty
-  _: [rid]
-  _: [rid]
-  _: [string]
-  _: [_]
-  _: [_]
-  _: [string] @localized
-  _: [string] @localized
-  _: rid
-  _: string
+  NPC2: [NPCs]
+  NPC3: [NPCs]
+  QuestFlag1: [QuestFlags]
+  QuestFlag2: [QuestFlags]
+  QuestFlag3: [QuestFlags]
+  QuestFlag4: [QuestFlags]
+  QuestFlag5: [QuestFlags]
+  Video: NPCTalkVideo
+  Script: string
 }

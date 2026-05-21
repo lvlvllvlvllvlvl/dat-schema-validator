@@ -1,0 +1,11 @@
+# Added 4.1
+type DestructiveDamageEffects {
+  Id: string @unique
+  StatKeys1: [Stats]
+  BuffDefinition: [BuffDefinitions]
+  StatKeys2: [Stats]
+  StatKey3: Stats
+  StatKey3Value: f32
+  StatKeys4: [Stats]
+  _: bool
+}

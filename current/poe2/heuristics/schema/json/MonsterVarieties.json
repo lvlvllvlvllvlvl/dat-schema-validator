@@ -222,7 +222,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "WeaponSoundType",
     "offset": 128,
     "unknownArray": false,
     "unique": false,
@@ -230,7 +230,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WeaponSoundTypes"
       }
     },
     "size": 16
@@ -440,7 +441,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "BloodType",
     "offset": 256,
     "unknownArray": false,
     "unique": false,
@@ -448,7 +449,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BloodTypes"
       }
     },
     "size": 16
@@ -1115,7 +1117,7 @@
     "size": 4
   },
   {
-    "name": "AilmentThreshold",
+    "name": "",
     "offset": 688,
     "unknownArray": false,
     "unique": false,
@@ -1317,65 +1319,16 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "InheritsFrom",
     "offset": 747,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "array": true,
+      "string": {}
     },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 751,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 755,
-    "unknownArray": false,
-    "unique": true,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4,
-    "localized": true
-  },
-  {
-    "name": "",
-    "offset": 759,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 16
   },
   {
     "name": "",
@@ -1420,7 +1373,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "TauntGrantedEffect",
     "offset": 772,
     "unknownArray": false,
     "unique": false,
@@ -1428,7 +1381,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GrantedEffects"
       }
     },
     "size": 16
@@ -1533,7 +1487,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Questflag",
     "offset": 810,
     "unknownArray": false,
     "unique": false,
@@ -1541,7 +1495,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -1625,7 +1580,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "PoiseThreshold",
     "offset": 871,
     "unknownArray": false,
     "unique": false,
@@ -1640,7 +1595,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "AttackCrit",
     "offset": 875,
     "unknownArray": false,
     "unique": false,
@@ -1737,7 +1692,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AggroAudio",
     "offset": 921,
     "unknownArray": false,
     "unique": false,
@@ -1745,7 +1700,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MonsterAggroAudio"
       }
     },
     "size": 16

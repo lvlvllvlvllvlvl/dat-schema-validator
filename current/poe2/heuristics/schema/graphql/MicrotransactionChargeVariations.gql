@@ -1,7 +1,11 @@
 # Added 4.1
 type MicrotransactionChargeVariations {
-  Mtx: MtxTypeGameSpecific @unique
+  Mtx: MtxTypeGameSpecific
+  _: i32
   PowerChargeVisual: BuffVisuals
   EnduranceChargeVisual: BuffVisuals
   FrenzyChargeVisual: BuffVisuals
+  PowerChargeMasteryVisual: BuffVisuals
+  EnduranceChargeMasteryVisual: BuffVisuals
+  FrenzyChargeMasteryVisual: BuffVisuals
 }

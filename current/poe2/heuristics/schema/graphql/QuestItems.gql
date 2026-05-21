@@ -2,7 +2,7 @@
 type QuestItems {
   BaseItemType: BaseItemTypes @unique
   TriggeredQuestFlag: QuestFlags
-  _: QuestFlags
+  QuestComplete: QuestFlags
   _: i32
   _: [_] # All rows empty
   _: bool
@@ -11,9 +11,9 @@ type QuestItems {
   Description: ClientStrings
   Script: string
   _: rid
-  _: rid
+  QuestFlag: QuestFlags
   _: i32
-  _: [rid]
-  _: QuestFlags
-  _: rid
+  NPCs: [NPCs]
+  QuestFlagUsed: QuestFlags
+  BuffVisual: BuffVisuals
 }

@@ -163,7 +163,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "NormalReward",
     "offset": 87,
     "unknownArray": false,
     "unique": false,
@@ -171,21 +171,25 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestRewardType"
       }
     },
     "size": 16
   },
   {
+    "name": "QuestFlag",
+    "offset": 103,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
-    "offset": 103,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]
