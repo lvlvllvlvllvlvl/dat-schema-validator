@@ -10,4 +10,5 @@ type Incursion2Rooms {
   IsBossReward: bool
   Name: string @localized
   Icon_DDSFile: string @file(ext: ".dds")
+  RewardUnlockStat: Stats
 }

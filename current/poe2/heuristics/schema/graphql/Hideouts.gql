@@ -1,7 +1,7 @@
 # Added 4.1
 type Hideouts {
   HideoutArea: WorldAreas @unique
-  HASH16: i16
+  HASH16: u16
   HideoutFile: string @file(ext: ".hideout")
   ClaimSideArea: WorldAreas
   HideoutImage: string

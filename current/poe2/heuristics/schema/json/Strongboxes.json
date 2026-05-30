@@ -97,5 +97,50 @@
       }
     },
     "size": 4
+  },
+  {
+    "name": "BasicSpawnChanceStat",
+    "offset": 46,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "RequiredSpawnStat",
+    "offset": 62,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BlockingSpawnStat",
+    "offset": 78,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
   }
 ]

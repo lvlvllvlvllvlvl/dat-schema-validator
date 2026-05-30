@@ -106,5 +106,34 @@
       }
     },
     "size": 4
+  },
+  {
+    "name": "",
+    "offset": 27,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EffectPack",
+    "offset": 43,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MiscEffectPacks"
+      }
+    },
+    "size": 16
   }
 ]

@@ -1,40 +1,20 @@
 # Added 4.1
 type CraftingBenchOptions @tags(list: ["crafting"]) {
-  HideoutNPC: HideoutNPCs
-  Order: i32
-  AddMod: Mods
-  Cost_BaseItemTypes: [BaseItemTypes]
-  Cost_Values: [i32]
-  RequiredLevel: i32
-  Name: string @localized
-  CraftingBenchCustomAction: CraftingBenchCustomActions
-  ItemClasses: [ItemClasses]
-  Links: i32
-  SocketColours: string
-  Sockets: i32
-  ItemQuantity: i32
-  _: [i32]
-  Description: string @localized
-  IsDisabled: bool
-  IsAreaOption: bool
-  RecipeIds: [RecipeUnlockDisplay] @ref(column: "RecipeId")
-  Tier: i32
-  CraftingItemClassCategories: [CraftingItemClassCategories]
+  Id: string @unique
+  _: rid
+  _: string
+  _: string
+  _: rid
   _: i32
-  UnlockCategory: CraftingBenchUnlockCategories
-  UnveilsRequired: i32
-  UnveilsRequired2: i32
   _: [rid]
-  KalandraAchievement: [AchievementItems]
-  _: i32
-  _: i32
-  VeiledMod: Mods
-  AddEnchantment: Mods
-  SortCategory: CraftingBenchSortCategories
-  ModType: ModType
+  _: [rid]
+  CraftingCategory: [CraftingItemClassCategories]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
   _: bool
-  _: i32
-  Stat1: Stats
-  Stat2: Stats
-  Stat3: Stats
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: rid
+  _: rid
+  _: bool
 }

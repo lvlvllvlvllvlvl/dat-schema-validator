@@ -129,7 +129,7 @@
     "size": 4
   },
   {
-    "name": "SlotIcon",
+    "name": "SlotStyle",
     "offset": 49,
     "unknownArray": false,
     "unique": false,
@@ -138,7 +138,22 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "DynamicStashSlots"
+        "table": "StashTabInventorySlotStyle"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "SubGroup",
+    "offset": 65,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "SocketableStashTabSubGroup"
       }
     },
     "size": 16

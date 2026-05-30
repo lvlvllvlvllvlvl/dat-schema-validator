@@ -15,23 +15,8 @@
     "size": 16
   },
   {
-    "name": "ProjectileOverride",
-    "offset": 16,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "ProjectileOverrides"
-      }
-    },
-    "size": 16
-  },
-  {
     "name": "",
-    "offset": 32,
+    "offset": 16,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -43,5 +28,20 @@
       }
     },
     "size": 4
+  },
+  {
+    "name": "ProjectileOverride",
+    "offset": 20,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ProjectileOverrides"
+      }
+    },
+    "size": 16
   }
 ]

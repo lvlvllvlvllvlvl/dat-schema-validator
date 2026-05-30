@@ -4,4 +4,5 @@ type CharacterPanelTabs {
   _: i32
   Text: string @localized
   _: i32
+  _: bool
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ChestMod",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ArchnemesisMod",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ArchnemesisMods"
+      }
+    },
+    "size": 16
+  }
+]

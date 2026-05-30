@@ -2,7 +2,7 @@
 type MemoryLineType {
   Id: string @unique
   MemoryLine: AtlasMemoryLine
-  HASH16: i16
+  HASH16: u16
   Stats: [Stats]
   StatValues: [i32]
   _: i32

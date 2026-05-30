@@ -5,7 +5,7 @@ type LabyrinthCraftOptions {
   Text: string @localized
   Script: string
   ScriptArgument: string
-  HASH16: i16
+  HASH16: u16
   _: bool
   Tier: LabyrinthCraftOptionTiers
   _: bool

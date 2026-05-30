@@ -2,5 +2,5 @@
 type StrongboxPacks {
   Id: i32
   _: i32
-  MonsterPack: MonsterPacks
+  MonsterPack: MonsterPacks @unique
 }

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Inventory",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Inventories"
+      }
+    },
+    "size": 16
+  }
+]

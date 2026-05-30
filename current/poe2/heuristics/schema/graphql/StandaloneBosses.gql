@@ -1,0 +1,7 @@
+type StandaloneBosses {
+  Monster: MonsterVarieties
+  _: i32
+  _: bool
+  InvisibleMonster: [MonsterVarieties]
+  _: [i32]
+}

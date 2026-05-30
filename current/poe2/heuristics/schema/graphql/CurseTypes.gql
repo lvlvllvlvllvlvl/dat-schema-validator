@@ -1,8 +1,8 @@
 # Added 4.3
 type CurseTypes {
   Id: string @unique
-  _: rid @unique
+  BuffDefinition: BuffDefinitions
   _: bool
-  HexproofStat: Stats @unique
-  _: rid @unique
+  HexproofStat: Stats
+  ActionType: ActionTypes
 }

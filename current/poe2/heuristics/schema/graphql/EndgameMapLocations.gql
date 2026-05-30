@@ -1,0 +1,8 @@
+type EndgameMapLocations {
+  Map: EndgameMaps
+  _: i32
+  Biomes: [EndgameMapBiomes]
+  AdjacentBiomes: [EndgameMapBiomes]
+  _: i32
+  _: [i32]
+}

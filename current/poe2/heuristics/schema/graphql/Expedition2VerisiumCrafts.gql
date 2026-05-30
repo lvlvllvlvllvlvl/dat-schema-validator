@@ -1,0 +1,11 @@
+type Expedition2VerisiumCrafts {
+  OriginalBaseType: BaseItemTypes
+  UniqueName: Words
+  NewBaseType: BaseItemTypes
+  CraftingItem: [BaseItemTypes]
+  CraftingItemCount: [i32]
+  _: [i32]
+  _: [_] # All rows empty
+  _: i32
+  _: Words
+}

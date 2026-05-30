@@ -2,5 +2,5 @@
 type EssenceTargetItemCategories {
   Id: string @unique
   ItemClasses: [ItemClasses]
-  Text: string @unique @localized
+  Text: string @localized
 }

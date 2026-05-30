@@ -54,43 +54,41 @@
     "size": 4
   },
   {
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "QuestFlag1",
     "offset": 44,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "QuestFlag2",
     "offset": 60,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 76,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -98,9 +96,21 @@
         "size": 4
       }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 92,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
   }
 ]

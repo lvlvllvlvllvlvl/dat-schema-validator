@@ -1,0 +1,6 @@
+type QuestFlagVisuals {
+  QuestFlag: QuestFlags
+  Ascendancy: Ascendancy
+  _: i32
+  ItemVisualIdentity: ItemVisualIdentity @unique
+}

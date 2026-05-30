@@ -6,7 +6,7 @@ type Shrines {
   Player_ShrineBuffsKey: BuffTemplates
   _: i32
   _: i32
-  Monster_ShrineBuffsKey: rid
+  Monster_ShrineBuffsKey: BuffTemplates
   SummonMonster_MonsterVarietiesKey: MonsterVarieties
   SummonPlayer_MonsterVarietiesKey: MonsterVarieties
   _: i32
@@ -25,4 +25,7 @@ type Shrines {
   _: rid
   MapSpawnChanceStat: Stats
   MapShrineEffectStat: Stats
+  ElementalShrineChanceStat: Stats
+  EnableStat: [Stats]
+  BossBuffTemplate: BuffTemplates
 }

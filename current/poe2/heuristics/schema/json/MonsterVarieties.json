@@ -1761,5 +1761,58 @@
       }
     },
     "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 974,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 990,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 1006,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 1022,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
   }
 ]

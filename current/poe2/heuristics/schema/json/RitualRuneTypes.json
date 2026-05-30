@@ -348,5 +348,35 @@
       }
     },
     "size": 4
+  },
+  {
+    "name": "EnableStat",
+    "offset": 249,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ChanceStat",
+    "offset": 265,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
   }
 ]

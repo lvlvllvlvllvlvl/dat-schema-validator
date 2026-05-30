@@ -55,5 +55,20 @@
       }
     },
     "size": 4
+  },
+  {
+    "name": "Stat",
+    "offset": 44,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
   }
 ]

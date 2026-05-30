@@ -1,0 +1,10 @@
+type EndgameRegionActionButtonsRequiredQuestFlags {
+  Button: EndgameRegionActionButtons
+  _: i32
+  _: rid
+  _: i32
+  QuestFlag: QuestFlags
+  _: rid
+  _: bool
+  KeywordPopup: KeywordPopups
+}

@@ -1,7 +1,7 @@
 # Added 3.28
 type ItemConditions {
   Id: string @unique
-  _: [_] # All rows empty
+  ItemClasses: [ItemClasses]
   _: i32
   _: i32
   _: bool

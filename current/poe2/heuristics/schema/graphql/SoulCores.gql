@@ -5,4 +5,11 @@ type SoulCores {
   Limit: SoulCoreLimits
   Description: ClientStrings2
   Type: SoulCoreTypes
+  TierHigher: SoulCores
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  ExtraDescription: ClientStrings2
+  _: bool
 }

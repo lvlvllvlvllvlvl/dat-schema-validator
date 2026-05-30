@@ -413,9 +413,9 @@
     "interval": false,
     "type": {
       "array": true,
-      "key": {
-        "foreign": true,
-        "table": "GroundEffects"
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "size": 16
@@ -432,5 +432,55 @@
     "noData": true,
     "unknownArray": true,
     "unique": false
+  },
+  {
+    "name": "BaseSkillGem",
+    "offset": 239,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false
+      }
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 247,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 248,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 249,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   }
 ]

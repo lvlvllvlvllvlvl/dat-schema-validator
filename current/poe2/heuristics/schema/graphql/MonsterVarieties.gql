@@ -129,4 +129,8 @@ type MonsterVarieties {
   _: rid
   _: bool
   _: [i32]
+  _: [_] # All rows empty
+  _: [i32]
+  _: [_] # All rows empty
+  _: string
 }

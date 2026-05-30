@@ -10,5 +10,5 @@ type CurrencyStashTabLayout {
   ShowIfEmpty: bool
   SlotGroup: i32
   SlotSize: i32
-  SlotIcon: DynamicStashSlots
+  SlotStyle: StashTabInventorySlotStyle
 }

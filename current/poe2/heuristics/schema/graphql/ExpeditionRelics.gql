@@ -3,7 +3,16 @@ type ExpeditionRelics {
   Id: string @unique
   Name: string @localized
   ItemTag: Tags
-  AOFile: string
+  AOFiles: [string]
   MinLevel: i32
   MaxLevel: i32
+  WorldArea: WorldAreas
+  _: i32
+  _: i32
+  MiscObject: MiscObjects
+  _: bool
+  _: bool
+  _: i32
+  _: i32
+  _: i32
 }

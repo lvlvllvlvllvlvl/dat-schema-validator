@@ -1,0 +1,5 @@
+type EndgameMapRevealTypes {
+  Id: string @unique
+  Script1: string
+  Script2: string
+}

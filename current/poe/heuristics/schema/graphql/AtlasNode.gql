@@ -16,7 +16,7 @@ type AtlasNode {
   DivCards: [BaseItemTypes]
   DivCardsHardmode: [BaseItemTypes]
   Tier: i32
-  HASH16: i16
+  HASH16: u16
   IsUniqueMap: bool
   Region: AtlasRegions
   Node_DDSFile: string @file(ext: ".dds")

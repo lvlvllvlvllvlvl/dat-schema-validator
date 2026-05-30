@@ -1,7 +1,7 @@
 # Added 3.11
 type Hideouts {
   HideoutArea: WorldAreas
-  HASH16: i16
+  HASH16: u16
   HideoutFile: string @file(ext: ".hideout")
   SpawnAreas: [WorldAreas]
   ClaimSideArea: WorldAreas

@@ -1,0 +1,9 @@
+type AfflictionStartDialogueOverrides {
+  Id: i32 @unique
+  _: i32
+  _: i32
+  QuestFlag: QuestFlags
+  QuestFlagHeard: QuestFlags
+  NPCAudio: [NPCTextAudio]
+  _: i32
+}

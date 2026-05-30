@@ -1,5 +1,5 @@
 # Added 4.1
 type WeaponSoundTypes {
-  _: string @unique
-  _: string @unique
+  Id: string @unique
+  Sound: string
 }

@@ -1,0 +1,6 @@
+type Expedition2RemnantRewardPerArea {
+  Area: WorldAreas
+  Reward: BaseItemTypes
+  RewardCount: i32
+  QuestFlag: QuestFlags
+}

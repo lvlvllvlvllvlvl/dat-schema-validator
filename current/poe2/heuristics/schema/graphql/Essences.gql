@@ -2,12 +2,15 @@
 type Essences {
   BaseItemType: BaseItemTypes @unique
   HASH32: u32
-  _: [i32]
-  _: [Mods]
+  TankModValues: [i32]
+  MonsterTankMods: [Mods]
   _: [i32]
   MonsterMod: Mods
   Perfect: bool
   UpgradeResult: Essences
   Tier: i32
   MapStat: Stats
+  _: rid
+  _: [_] # All rows empty
+  ReplacementType: [EssenceReplacementType]
 }

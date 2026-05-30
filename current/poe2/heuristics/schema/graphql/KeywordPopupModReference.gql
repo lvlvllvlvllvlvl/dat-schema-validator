@@ -1,0 +1,5 @@
+type KeywordPopupModReference {
+  Id: string @unique
+  Mod: Mods
+  StatDescription: string @file(ext: ".csd")
+}

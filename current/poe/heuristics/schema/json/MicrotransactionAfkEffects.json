@@ -45,7 +45,7 @@
     "name": "GrantedEffect",
     "offset": 40,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -112,5 +112,25 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 81,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 97,
+    "size": 1,
+    "unique": false
   }
 ]

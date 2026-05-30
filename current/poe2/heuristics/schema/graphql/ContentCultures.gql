@@ -1,0 +1,10 @@
+type ContentCultures {
+  Id: string @unique
+  Tags: [Tags]
+  _: rid
+  _: rid
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: i32
+  _: i32
+}

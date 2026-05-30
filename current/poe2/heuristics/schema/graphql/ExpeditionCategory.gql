@@ -1,0 +1,5 @@
+type ExpeditionCategory {
+  Id: string @unique
+  Art: string
+  Name: string @localized
+}

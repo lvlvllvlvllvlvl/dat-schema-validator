@@ -85,5 +85,83 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "HighlightEPK",
+    "offset": 88,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "RevealAnimation",
+    "offset": 96,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscAnimated"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "RitualHighlightEPK",
+    "offset": 112,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "RitualSelectedEPK",
+    "offset": 120,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "DeliriumHighlightEPK",
+    "offset": 128,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "AudioAnimation",
+    "offset": 136,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscAnimated"
+      }
+    },
+    "size": 16
   }
 ]

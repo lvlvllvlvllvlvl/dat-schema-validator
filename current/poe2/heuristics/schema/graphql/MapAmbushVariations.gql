@@ -1,7 +1,7 @@
 # Added 4.2
 type MapAmbushVariations {
   Id: i32 @unique
-  Stat: Stats
+  Stat: Stats @unique
   MonsterVariety: [MonsterVarieties]
   _: f32
   _: i32

@@ -1,7 +1,7 @@
 # Added 4.1
 type Characters {
   Id: string @unique
-  Name: string @unique @localized
+  Name: string @localized
   AOFile: string @file(ext: ".ao")
   ACTFile: string @file(ext: ".act")
   BaseMaxLife: i32
@@ -34,11 +34,9 @@ type Characters {
   _: rid
   _: [rid]
   LevelUpEffect: MiscEffectPacks
-  _: rid
   _: i32
   PassiveTreeImage: string @file(ext: ".dds")
-  _: i32 @localized
-  _: i32
+  _: string
   AttrsAsId: string @unique
   LoginScreen: string @file(ext: ".ao")
   PlayerCritter: string

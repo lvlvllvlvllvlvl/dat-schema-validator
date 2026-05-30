@@ -1,6 +1,6 @@
 # Added 4.1
 type RogueExiles {
-  MonsterVarietiesKey: MonsterVarieties @unique
+  MonsterVarietiesKey: MonsterVarieties
   _: rid
   _: rid
   _: rid
@@ -9,11 +9,18 @@ type RogueExiles {
   _: rid
   _: rid
   _: rid
-  _: [i32]
   AudioCharacter: AudioCharacterClass
   _: rid
   _: rid
   _: rid
   _: rid
   Name: Words
+  SpawnChanceStats: [Stats]
+  _: i32
+  VariationStat1: [Stats]
+  VariationStat2: [Stats]
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: rid
+  _: i32
 }

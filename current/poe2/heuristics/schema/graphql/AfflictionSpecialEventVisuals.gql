@@ -1,0 +1,5 @@
+type AfflictionSpecialEventVisuals {
+  Id: string @unique
+  Icon: string @file(ext: ".dds")
+  IconBright: string @file(ext: ".dds")
+}

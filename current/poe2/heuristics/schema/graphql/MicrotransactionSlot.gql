@@ -12,4 +12,5 @@ type MicrotransactionSlot {
   SlotName: string @localized
   FrameArt: string
   _: i32
+  _: string
 }

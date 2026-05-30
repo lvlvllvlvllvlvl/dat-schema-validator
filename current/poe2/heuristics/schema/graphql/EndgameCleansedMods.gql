@@ -2,4 +2,5 @@
 type EndgameCleansedMods {
   Mod: Mods @unique
   _: [i32]
+  _: bool
 }

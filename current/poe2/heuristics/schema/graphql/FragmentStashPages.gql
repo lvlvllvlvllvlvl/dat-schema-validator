@@ -1,6 +1,0 @@
-# Added 4.3
-type FragmentStashPages {
-  Id: string @unique
-  Text: string @unique @localized
-  Icon: string
-}

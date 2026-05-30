@@ -3,9 +3,13 @@ type ExpeditionAreas {
   Area: WorldAreas
   PosX: i32
   PosY: i32
-  Tags: [Tags]
-  _: [i32]
   _: bool
   TextAudio: NPCTextAudio
   CompletionAchievements: [AchievementItems]
+  _: bool
+  _: bool
+  _: i32
+  _: i32
+  _: bool
+  _: bool
 }

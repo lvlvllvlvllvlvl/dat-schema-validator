@@ -423,5 +423,59 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "",
+    "offset": 308,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 312,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 328,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 344,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   }
 ]

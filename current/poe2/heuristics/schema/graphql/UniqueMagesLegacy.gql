@@ -1,0 +1,6 @@
+type UniqueMagesLegacy {
+  Name: string
+  DisplayText: string @localized
+  Stats: [Stats]
+  StatValues: [i32]
+}

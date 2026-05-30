@@ -2,7 +2,7 @@
 type SentinelStorageLayout {
   Id: string @unique
   StoredItem: BaseItemTypes
-  DroneType: DroneTypes
+  _: rid
   _: bool
   TabIcon: string
   XOffset: i32

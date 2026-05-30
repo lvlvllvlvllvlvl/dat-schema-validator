@@ -4,7 +4,7 @@ type Achievements {
   Description: string @localized
   SetId: AchievementSetsDisplay @ref(column: "Id")
   Objective: string @localized
-  HASH16: i16
+  HASH16: u16
   _: bool
   HideAchievementItems: bool
   _: bool

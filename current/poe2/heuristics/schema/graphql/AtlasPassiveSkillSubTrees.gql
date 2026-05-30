@@ -10,4 +10,8 @@ type AtlasPassiveSkillSubTrees {
   _: ClientStrings
   _: ClientStrings
   _: ClientStrings
+  _: string
+  _: string
+  _: f32
+  Description: string @localized
 }

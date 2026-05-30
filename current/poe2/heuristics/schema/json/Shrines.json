@@ -92,7 +92,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffTemplates"
       }
     },
     "size": 16
@@ -347,6 +348,51 @@
       "key": {
         "foreign": true,
         "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ElementalShrineChanceStat",
+    "offset": 242,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "EnableStat",
+    "offset": 258,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BossBuffTemplate",
+    "offset": 274,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "BuffTemplates"
       }
     },
     "size": 16

@@ -45,7 +45,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "RewardType1",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -53,13 +53,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GenericLeagueRewardTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "RewardType2",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
@@ -67,7 +68,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "GenericLeagueRewardTypes"
       }
     },
     "size": 16

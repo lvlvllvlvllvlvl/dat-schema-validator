@@ -1,0 +1,11 @@
+type EndgameQuickTravelHubs {
+  Area: EndgameMaps
+  Button: string @file(ext: ".dds")
+  ButtonHover: string @file(ext: ".dds")
+  AtlasSubTree: AtlasPassiveSkillSubTrees
+  Description1: ClientStrings
+  _: [i32]
+  _: i32
+  Description2: ClientStrings
+  Sound: SoundEffects
+}

@@ -3,6 +3,6 @@ type SentinelPassiveTypes {
   Id: string @unique
   DefaultIcon: string
   ActiveIcon: string
-  DroneType: DroneTypes
+  _: rid
   _: i32
 }

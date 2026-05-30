@@ -1,0 +1,12 @@
+type BrequelEncounterSkills {
+  Id: string @unique
+  _: rid
+  Description: string @localized
+  Art: string
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  Stat: Stats
+}

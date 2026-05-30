@@ -1,0 +1,135 @@
+[
+  {
+    "name": "OriginalBaseType",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "UniqueName",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Words"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "NewBaseType",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "CraftingItem",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "CraftingItemCount",
+    "offset": 64,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 96,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "name": "",
+    "offset": 112,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 116,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Words"
+      }
+    },
+    "size": 16
+  }
+]

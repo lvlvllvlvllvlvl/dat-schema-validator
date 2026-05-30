@@ -1,0 +1,13 @@
+type PassiveTreeDecorators {
+  Id: string @unique
+  BackgroundArt: string
+  BlockedArt: string
+  Description: string @localized
+  _: i32
+  _: i32
+  _: f32
+  _: f32
+  _: f32
+  SkillTree: PassiveSkillTrees
+  _: f32
+}

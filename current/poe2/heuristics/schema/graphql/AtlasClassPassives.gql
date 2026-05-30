@@ -1,0 +1,12 @@
+type AtlasClassPassives {
+  Id: string @unique
+  Class: AtlasClassPassiveClasses
+  KeystoneArt: string
+  KeystoneArtActive: string
+  Stats: [Stats]
+  StatValues: [i32]
+  Name: string @localized
+  FlavourText: string @localized
+  _: u16
+  _: i32
+}

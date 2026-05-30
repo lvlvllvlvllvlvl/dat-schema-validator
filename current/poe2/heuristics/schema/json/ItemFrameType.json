@@ -102,7 +102,7 @@
     "name": "Separator",
     "offset": 58,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -156,11 +156,37 @@
     "name": "ColorMarkup",
     "offset": 99,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 107,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 115,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": false
+      }
     },
     "size": 8
   }

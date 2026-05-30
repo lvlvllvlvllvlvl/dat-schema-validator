@@ -1,19 +1,12 @@
 # Added 4.1
 type EndgameMapContent {
   Id: string @unique
-  SpawnChance: [i32]
-  _: i32
-  _: i32
-  _: i32 @localized
-  _: i32
-  InherentStat: [Stats]
-  InherentStatValues: [i32]
-  Icon: string @file(ext: ".dds")
+  Stats: [Stats]
+  StatValues: [i32]
   Description: string @localized
   Name: string @localized
-  KeywordPopup: KeywordPopups
-  _: [i32]
-  Stats: [Stats]
   _: i32
   MapObjective: EndgameMapObjectives
+  VisualIdentity: EndgameMapContentVisualIdentity @unique
+  _: bool
 }

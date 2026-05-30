@@ -114,5 +114,20 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "name": "KeywordPopup",
+    "offset": 48,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "KeywordPopups"
+      }
+    },
+    "size": 16
   }
 ]

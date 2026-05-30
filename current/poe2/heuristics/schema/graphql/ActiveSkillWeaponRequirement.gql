@@ -4,4 +4,5 @@ type ActiveSkillWeaponRequirement {
   WieldableClasses: [WieldableClasses]
   String: ClientStrings
   _: i32
+  Stat: Stats
 }

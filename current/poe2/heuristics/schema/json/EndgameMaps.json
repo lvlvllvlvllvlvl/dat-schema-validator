@@ -1,22 +1,7 @@
 [
   {
-    "name": "",
-    "offset": 0,
-    "unknownArray": false,
-    "unique": true,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
     "name": "WorldArea",
-    "offset": 4,
+    "offset": 0,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -31,22 +16,7 @@
   },
   {
     "name": "",
-    "offset": 20,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 36,
+    "offset": 16,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -60,7 +30,7 @@
   },
   {
     "name": "FlavourText",
-    "offset": 52,
+    "offset": 32,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -73,7 +43,7 @@
   },
   {
     "name": "",
-    "offset": 60,
+    "offset": 40,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -88,7 +58,7 @@
   },
   {
     "name": "",
-    "offset": 64,
+    "offset": 44,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -103,7 +73,7 @@
   },
   {
     "name": "MapPin",
-    "offset": 80,
+    "offset": 60,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -118,7 +88,7 @@
   },
   {
     "name": "Decorations",
-    "offset": 96,
+    "offset": 76,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -133,7 +103,7 @@
   },
   {
     "name": "MapContentSet",
-    "offset": 112,
+    "offset": 92,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -148,7 +118,7 @@
   },
   {
     "name": "CorruptedPin",
-    "offset": 128,
+    "offset": 108,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -163,7 +133,7 @@
   },
   {
     "name": "",
-    "offset": 144,
+    "offset": 124,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -178,7 +148,7 @@
   },
   {
     "name": "",
-    "offset": 148,
+    "offset": 128,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -193,7 +163,7 @@
   },
   {
     "name": "MapPinCompleted",
-    "offset": 152,
+    "offset": 132,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -208,7 +178,7 @@
   },
   {
     "name": "ObjectiveDescription",
-    "offset": 168,
+    "offset": 148,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -222,23 +192,8 @@
     "size": 16
   },
   {
-    "name": "MapLocations",
-    "offset": 184,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "EndgameMapLocation"
-      }
-    },
-    "size": 16
-  },
-  {
     "name": "SpecialMapText",
-    "offset": 200,
+    "offset": 164,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -251,7 +206,7 @@
   },
   {
     "name": "SpecialMapFlavourText",
-    "offset": 208,
+    "offset": 172,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -264,7 +219,7 @@
   },
   {
     "name": "SpecialMapHelpText",
-    "offset": 216,
+    "offset": 180,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -274,5 +229,154 @@
     },
     "size": 8,
     "localized": true
+  },
+  {
+    "name": "",
+    "offset": 188,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 192,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 196,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 200,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 204,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 208,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 209,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 210,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 226,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 227,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8,
+    "localized": true
+  },
+  {
+    "name": "",
+    "offset": 235,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "decimal": {
+        "size": 4
+      }
+    },
+    "size": 4
   }
 ]

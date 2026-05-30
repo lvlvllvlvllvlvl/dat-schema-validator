@@ -474,20 +474,6 @@
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 280,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
       "integer": {
         "unsigned": false,
         "size": 4
@@ -497,6 +483,30 @@
   },
   {
     "name": "PassiveTreeImage",
+    "offset": 268,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "",
+    "offset": 276,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "AttrsAsId",
     "offset": 284,
     "unknownArray": false,
     "unique": true,
@@ -508,51 +518,8 @@
     "size": 8
   },
   {
-    "name": "",
-    "offset": 292,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4,
-    "localized": true
-  },
-  {
-    "name": "",
-    "offset": 296,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "AttrsAsId",
-    "offset": 300,
-    "unknownArray": false,
-    "unique": true,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
     "name": "LoginScreen",
-    "offset": 308,
+    "offset": 292,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -564,7 +531,7 @@
   },
   {
     "name": "PlayerCritter",
-    "offset": 316,
+    "offset": 300,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -576,7 +543,7 @@
   },
   {
     "name": "PlayerEffect",
-    "offset": 324,
+    "offset": 308,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -588,7 +555,7 @@
   },
   {
     "name": "AfterImage",
-    "offset": 332,
+    "offset": 316,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -600,7 +567,7 @@
   },
   {
     "name": "Mirage",
-    "offset": 340,
+    "offset": 324,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -615,7 +582,7 @@
   },
   {
     "name": "CloneImmobile",
-    "offset": 356,
+    "offset": 340,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -630,7 +597,7 @@
   },
   {
     "name": "ReplicateClone",
-    "offset": 372,
+    "offset": 356,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -645,7 +612,7 @@
   },
   {
     "name": "LightningClone",
-    "offset": 388,
+    "offset": 372,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -660,7 +627,7 @@
   },
   {
     "name": "",
-    "offset": 404,
+    "offset": 388,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -674,7 +641,7 @@
   },
   {
     "name": "",
-    "offset": 408,
+    "offset": 392,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -688,7 +655,7 @@
   },
   {
     "name": "SkillTreeBackground",
-    "offset": 412,
+    "offset": 396,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -700,7 +667,7 @@
   },
   {
     "name": "Clone",
-    "offset": 420,
+    "offset": 404,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -720,7 +687,7 @@
         "foreign": true
       }
     },
-    "offset": 436,
+    "offset": 420,
     "size": 16,
     "noData": true,
     "unknownArray": true,
@@ -728,7 +695,7 @@
   },
   {
     "name": "MirageWarrior",
-    "offset": 452,
+    "offset": 436,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -743,7 +710,7 @@
   },
   {
     "name": "DoubleTwo",
-    "offset": 468,
+    "offset": 452,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -758,7 +725,7 @@
   },
   {
     "name": "DarkExile",
-    "offset": 484,
+    "offset": 468,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -773,7 +740,7 @@
   },
   {
     "name": "Attr",
-    "offset": 500,
+    "offset": 484,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -785,7 +752,7 @@
   },
   {
     "name": "AttrLowercase",
-    "offset": 508,
+    "offset": 492,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -797,7 +764,7 @@
   },
   {
     "name": "Script",
-    "offset": 516,
+    "offset": 500,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -809,7 +776,7 @@
   },
   {
     "name": "GhostArmMtx",
-    "offset": 524,
+    "offset": 508,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -824,7 +791,7 @@
   },
   {
     "name": "",
-    "offset": 540,
+    "offset": 524,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -839,7 +806,7 @@
   },
   {
     "name": "",
-    "offset": 544,
+    "offset": 528,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -853,7 +820,7 @@
   },
   {
     "name": "",
-    "offset": 548,
+    "offset": 532,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -867,7 +834,7 @@
   },
   {
     "name": "",
-    "offset": 552,
+    "offset": 536,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -881,7 +848,7 @@
   },
   {
     "name": "BaseClass",
-    "offset": 556,
+    "offset": 540,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -893,7 +860,7 @@
   },
   {
     "name": "StartingPassive",
-    "offset": 564,
+    "offset": 548,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -908,7 +875,7 @@
   },
   {
     "name": "StartingWeapon",
-    "offset": 580,
+    "offset": 564,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -923,7 +890,7 @@
   },
   {
     "name": "CreationIcons",
-    "offset": 596,
+    "offset": 580,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -938,7 +905,7 @@
   },
   {
     "name": "",
-    "offset": 612,
+    "offset": 596,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -952,7 +919,7 @@
   },
   {
     "name": "GemCuttingIcon",
-    "offset": 616,
+    "offset": 600,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -964,7 +931,7 @@
   },
   {
     "name": "Portrait",
-    "offset": 624,
+    "offset": 608,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -979,7 +946,7 @@
   },
   {
     "name": "",
-    "offset": 640,
+    "offset": 624,
     "unknownArray": false,
     "unique": false,
     "interval": false,

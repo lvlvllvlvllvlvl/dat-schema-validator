@@ -1,0 +1,10 @@
+type StashTabInventorySlotStyle {
+  Id: string @unique
+  BackgroundArt: string
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}

@@ -276,5 +276,65 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "",
+    "offset": 198,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "MapContent",
+    "offset": 202,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "EndgameMapContent"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 218,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "AtlasStat",
+    "offset": 222,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
   }
 ]

@@ -1,0 +1,13 @@
+type BreachStashTabLayout {
+  Id: string @unique
+  BaseItemType: BaseItemTypes
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  SlotStyle: StashTabInventorySlotStyle
+}

@@ -1,0 +1,4 @@
+type BrequelTreeSlots {
+  PassiveSkill: PassiveSkills @unique
+  BrequelSubTree: BrequelPassiveSubTrees
+}

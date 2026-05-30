@@ -1,8 +1,6 @@
 # Added 4.1
 type EndgameMaps {
-  _: i32
   WorldArea: WorldAreas @unique
-  _: [i32]
   _: [rid]
   FlavourText: string @localized
   _: i32
@@ -15,8 +13,18 @@ type EndgameMaps {
   _: i32
   MapPinCompleted: EndgameMapPins
   ObjectiveDescription: ClientStrings2
-  MapLocations: [EndgameMapLocation]
   SpecialMapText: string @localized
   SpecialMapFlavourText: string @localized
   SpecialMapHelpText: string @localized
+  _: i32
+  _: i32
+  _: f32
+  _: f32
+  _: f32
+  _: bool
+  _: bool
+  _: [rid]
+  _: bool
+  _: string @localized
+  _: f32
 }

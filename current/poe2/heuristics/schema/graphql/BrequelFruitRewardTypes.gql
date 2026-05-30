@@ -1,0 +1,11 @@
+type BrequelFruitRewardTypes {
+  Id: string @unique
+  Name: string @localized
+  Description: string @localized
+  PCPrompt: string @localized
+  ConsolePrompt: string @localized
+  _: [_] # All rows empty
+  _: i32
+  _: i32
+  _: rid
+}

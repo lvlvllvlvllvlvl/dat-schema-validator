@@ -1,21 +1,22 @@
 # Added 4.1
 type GraphicalItemReceptacle {
   Id: string @unique
-  _: string
-  _: ClientStrings
+  BackgroundArt: string
+  HoverMessage: ClientStrings
   _: bool
   _: bool
   SoundEffect: SoundEffects
   _: string
   ErrorMessage: ClientStrings
   Script: string
-  _: ClientStrings
   _: bool
-  _: string
-  _: string
-  _: bool
-  Name: ClientStrings2
-  _: string
-  _: ClientStrings
-  _: string
+  AreaName: ClientStrings2
+  Icon: string
+  Description: ClientStrings
+  _: f32
+  _: f32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
 }

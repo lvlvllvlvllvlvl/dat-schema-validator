@@ -1,6 +1,1 @@
-# Added 4.2
-type UniqueMapSkillBooks {
-  BaseItem: BaseItemTypes @unique
-  _: i32 @unique
-  _: i32 @unique
-}
+enum UniqueMapSkillBooks @indexing(first: 0) { _ }

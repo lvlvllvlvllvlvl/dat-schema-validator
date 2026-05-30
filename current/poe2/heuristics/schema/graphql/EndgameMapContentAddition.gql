@@ -1,0 +1,17 @@
+type EndgameMapContentAddition {
+  Id: string @unique
+  Mods: [Mods]
+  WorldAreas: [WorldAreas]
+  _: [_] # All rows empty
+  _: bool
+  _: i32
+  _: i32
+  _: [EndgameMapContent]
+  CompletionNotification: CompletionNotifications
+  _: [rid]
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+}

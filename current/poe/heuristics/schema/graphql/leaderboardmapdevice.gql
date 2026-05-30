@@ -1,0 +1,16 @@
+type leaderboardmapdevice {
+  _: string @unique
+  _: [_] # All rows empty
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: string @unique
+  _: i32
+  _: string
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+}

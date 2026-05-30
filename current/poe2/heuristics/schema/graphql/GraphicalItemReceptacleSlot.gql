@@ -6,7 +6,7 @@ type GraphicalItemReceptacleSlot {
   _: i32
   _: string
   _: string
-  BaseItemType: BaseItemTypes @unique
+  BaseItemType: [BaseItemTypes]
   SoundEffect: SoundEffects
   _: string
 }

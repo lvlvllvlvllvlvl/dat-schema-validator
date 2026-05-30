@@ -1,0 +1,11 @@
+type EndgameMapNodeStats {
+  Stat: Stats
+  _: i32
+  MiscAnimated: MiscAnimated
+  Mods: Mods
+  _: [_] # All rows empty
+  MapVisualIdentity: EndgameMapContentVisualIdentity
+  Name: ClientStrings2
+  Description: ClientStrings2
+  _: bool
+}

@@ -1,0 +1,9 @@
+type EndgameMapBiomeGroundTypes {
+  Id: string @unique
+  _: string @file(ext: ".gt")
+  _: string @file(ext: ".gt")
+  _: string @file(ext: ".gt")
+  _: string @file(ext: ".gt")
+  _: string @file(ext: ".gt")
+  _: string @file(ext: ".gt")
+}

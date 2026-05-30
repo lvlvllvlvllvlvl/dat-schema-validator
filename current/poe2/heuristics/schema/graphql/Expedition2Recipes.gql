@@ -1,0 +1,22 @@
+type Expedition2Recipes {
+  Id: string @unique
+  Runes: [Expedition2Runes]
+  Description: string
+  RuneCountRequired: i32
+  MinLevelReq: i32
+  MaxLevelReq: i32
+  Reward: BaseItemTypes
+  RewardCount: i32
+  _: rid
+  _: rid
+  _: string
+  _: string
+  _: bool
+  _: i32
+  _: bool
+  _: i32
+  QuestFlag: QuestFlags
+  Category: ExpeditionCategory
+  RuneWeights: [Expedition2RunesWeights]
+  DisabledText: ClientStrings
+}

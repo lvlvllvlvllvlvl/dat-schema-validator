@@ -1,0 +1,13 @@
+type Expedition2RunesWeights {
+  Id: string @unique
+  _: i32
+  _: i32
+  Rune: Expedition2Runes
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+}

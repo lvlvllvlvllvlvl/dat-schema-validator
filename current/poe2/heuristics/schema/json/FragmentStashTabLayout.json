@@ -87,7 +87,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "HideIfEmpty",
     "offset": 28,
     "unknownArray": false,
     "unique": false,
@@ -129,40 +129,13 @@
     "size": 4
   },
   {
-    "name": "HideIfEmpty",
+    "name": "BaseItemType",
     "offset": 37,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "Subtab",
-    "offset": 38,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "StoredItems",
-    "offset": 42,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
       "key": {
         "foreign": true,
         "table": "BaseItemTypes"
@@ -172,7 +145,7 @@
   },
   {
     "name": "",
-    "offset": 58,
+    "offset": 53,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -183,30 +156,18 @@
     "size": 1
   },
   {
-    "name": "",
-    "offset": 59,
+    "name": "SlotStyle",
+    "offset": 54,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "",
-    "offset": 67,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "StashTabInventorySlotStyle"
       }
     },
-    "size": 4
+    "size": 16
   }
 ]

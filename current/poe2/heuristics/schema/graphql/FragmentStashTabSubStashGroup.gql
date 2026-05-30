@@ -1,0 +1,7 @@
+type FragmentStashTabSubStashGroup {
+  Id: string @unique
+  Name: string @localized
+  Art: string
+  ParentTab: FragmentStashTabSubStashGroup
+  _: bool
+}

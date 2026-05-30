@@ -1,0 +1,10 @@
+type EndgameRegionActionButtons {
+  Id: string @unique
+  QuickUseIcon: string
+  Description: ClientStrings2
+  ButtonArt: string
+  SoundEffectImpact: SoundEffects
+  SoundEffectStart: SoundEffects
+  _: bool
+  _: f32
+}

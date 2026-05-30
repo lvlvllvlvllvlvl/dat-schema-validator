@@ -45,38 +45,8 @@
     "size": 4
   },
   {
-    "name": "Tags",
+    "name": "",
     "offset": 24,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "Tags"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 40,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 56,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -88,7 +58,7 @@
   },
   {
     "name": "TextAudio",
-    "offset": 57,
+    "offset": 25,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -103,7 +73,7 @@
   },
   {
     "name": "CompletionAchievements",
-    "offset": 73,
+    "offset": 41,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -115,5 +85,83 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "",
+    "offset": 57,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 58,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 59,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 63,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "",
+    "offset": 67,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "",
+    "offset": 68,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   }
 ]

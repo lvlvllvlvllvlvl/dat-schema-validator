@@ -9,7 +9,7 @@ type AegisVariations {
   DefinitionBuff: BuffDefinitions
   DefinitionDepleted: BuffDefinitions
   DefinitionValue: BuffDefinitions
+  AnimatedEffect: [MiscAnimated]
   _: bool
-  _: rid
   _: [string]
 }

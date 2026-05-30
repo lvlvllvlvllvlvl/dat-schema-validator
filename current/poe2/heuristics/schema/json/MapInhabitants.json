@@ -1,0 +1,47 @@
+[
+  {
+    "name": "StatsKey",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MonsterPacksKeys",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MonsterPacks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "BossMonsters",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "MonsterVarieties"
+      }
+    },
+    "size": 16
+  }
+]

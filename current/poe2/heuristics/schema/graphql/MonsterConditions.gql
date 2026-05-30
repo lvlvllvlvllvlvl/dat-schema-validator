@@ -13,4 +13,5 @@ type MonsterConditions {
   MinimumLevel: i32
   MaximumLevel: i32
   HASH32: u32
+  BuffDefinition: BuffDefinitions
 }

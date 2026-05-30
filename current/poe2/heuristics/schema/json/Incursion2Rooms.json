@@ -128,5 +128,20 @@
       "string": {}
     },
     "size": 8
+  },
+  {
+    "name": "RewardUnlockStat",
+    "offset": 79,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
   }
 ]

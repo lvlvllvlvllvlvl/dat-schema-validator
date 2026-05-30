@@ -1,7 +1,7 @@
 # Added 4.1
 type PassiveJewelUniqueArt {
   Id: i32 @unique
-  Name: Words
+  Name: Words @unique
   _: rid
   JewelArt: string
   _: rid

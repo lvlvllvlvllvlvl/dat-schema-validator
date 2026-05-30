@@ -6,5 +6,6 @@ type PassiveJewelSlots {
   ReplacesSlot: PassiveJewelSlots
   ProxySlot: PassiveSkills
   StartIndices: [i32]
-  _: rid
+  _: i32
+  _: bool
 }

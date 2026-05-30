@@ -3,7 +3,7 @@ type Incubators @tags(list: ["item:def"]) {
   BaseItemType: BaseItemTypes @unique
   _: i32
   Reward: string @localized
-  HASH32: i32
+  HASH32: u32
   AchievementItemsKeys: [AchievementItems]
   _: bool
   RewardDescription: ClientStrings

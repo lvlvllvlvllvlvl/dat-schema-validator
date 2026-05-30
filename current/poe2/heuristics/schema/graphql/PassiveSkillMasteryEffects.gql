@@ -1,7 +1,7 @@
 # Added 4.1
 type PassiveSkillMasteryEffects {
   Id: string @unique
-  HASH16: u16 @unique
+  HASH16: u16
   Stats: [Stats]
   Stat1Value: i32
   Stat2Value: i32

@@ -1,1 +1,11 @@
-enum AchievementSetRewards @indexing(first: 0) { _ }
+# Added 4.1
+type AchievementSetRewards @tags(list: ["mtx:reward"]) {
+  SetId: AchievementSetsDisplay @ref(column: "Id")
+  AchievementsRequired: i32
+  Rewards: [MtxTypeGameSpecific]
+  TotemPieceEveryNAchievements: i32
+  Message: string @localized
+  NotificationIcon: string @file(ext: ".dds")
+  HideoutName: string @localized
+  Id: string @unique
+}

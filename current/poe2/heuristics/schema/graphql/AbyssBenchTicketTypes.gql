@@ -6,6 +6,7 @@ type AbyssBenchTicketTypes {
   _: i32
   MaximumItemLevel: i32
   MinimumModLevel: i32
-  _: i32
+  _: f32
   _: bool
+  Tag: Tags
 }

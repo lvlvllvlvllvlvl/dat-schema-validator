@@ -116,20 +116,8 @@
     "size": 8
   },
   {
-    "name": "OGGFile",
-    "offset": 60,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
     "name": "QuestFlag",
-    "offset": 68,
+    "offset": 60,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -144,7 +132,7 @@
   },
   {
     "name": "",
-    "offset": 84,
+    "offset": 76,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -156,5 +144,32 @@
       }
     },
     "size": 4
+  },
+  {
+    "name": "AwardVideo",
+    "offset": 80,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "SoundEffect",
+    "offset": 88,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "SoundEffects"
+      }
+    },
+    "size": 16
   }
 ]

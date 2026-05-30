@@ -6,13 +6,10 @@ type FragmentStashTabLayout {
   FirstSlotIndex: i32
   Width: i32
   Height: i32
-  _: bool
+  HideIfEmpty: bool
   Tab: i32
   SlotSize: i32
-  HideIfEmpty: bool
-  Subtab: i32
-  StoredItems: [BaseItemTypes]
+  BaseItemType: BaseItemTypes
   _: bool
-  _: string
-  _: i32
+  SlotStyle: StashTabInventorySlotStyle
 }

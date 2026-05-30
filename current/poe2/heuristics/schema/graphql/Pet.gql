@@ -1,7 +1,7 @@
 # Added 4.1
 type Pet {
   Id: string @unique
-  MtxTypeGameSpecific: MtxTypeGameSpecific @unique
+  MtxTypeGameSpecific: MtxTypeGameSpecific
   HASH16: u16
   HASH32: u32
   Size: i32

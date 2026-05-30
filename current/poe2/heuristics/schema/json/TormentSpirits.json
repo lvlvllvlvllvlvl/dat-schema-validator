@@ -371,5 +371,65 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "MapChanceStat",
+    "offset": 304,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MapEnabledStat",
+    "offset": 320,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Stats"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ChestMod",
+    "offset": 336,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Mods"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "MiscBeam",
+    "offset": 352,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscBeams"
+      }
+    },
+    "size": 16
   }
 ]

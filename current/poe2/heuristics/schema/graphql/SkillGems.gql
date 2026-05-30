@@ -29,6 +29,10 @@ type SkillGems @tags(list: ["item:def"]) {
   _: bool
   SearchTerms: [SkillGemSearchTerms]
   Tier: i32
-  GroundEffect: [GroundEffects]
+  GroundEffect: [i32]
   _: [_] # All rows empty
+  BaseSkillGem: SkillGems
+  _: bool
+  _: bool
+  _: bool
 }

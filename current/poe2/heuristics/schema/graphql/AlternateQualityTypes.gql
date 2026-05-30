@@ -5,4 +5,5 @@ type AlternateQualityTypes @tags(list: ["item:def"]) {
   Item: BaseItemTypes
   ModEffectStat: ModEffectStats
   HASH16: u16
+  ItemClass: [ItemClasses]
 }

@@ -1,0 +1,13 @@
+type GraphicalItemExchange {
+  Id: string
+  BackgroundArt: string
+  Red: i32
+  Green: i32
+  Blue: i32
+  _: i32
+  _: i32
+  _: i32
+  ButtonLabel: ClientStrings2
+  _: rid
+  _: i32
+}

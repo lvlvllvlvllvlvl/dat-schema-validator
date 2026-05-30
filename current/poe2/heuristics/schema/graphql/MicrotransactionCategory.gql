@@ -7,4 +7,5 @@ type MicrotransactionCategory {
   _: i32
   _: i32
   ShopTag: ShopTag
+  Description: string @localized
 }

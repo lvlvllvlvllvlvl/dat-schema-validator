@@ -1,0 +1,8 @@
+type Expedition2ElementalModConversions {
+  Id: string @unique
+  FireMod: Mods
+  ColdMod: Mods
+  LightningMod: Mods
+  ChaosMod: Mods
+  _: bool
+}

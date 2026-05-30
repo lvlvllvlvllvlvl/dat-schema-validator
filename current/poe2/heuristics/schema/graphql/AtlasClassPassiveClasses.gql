@@ -1,0 +1,14 @@
+type AtlasClassPassiveClasses {
+  Id: string @unique
+  Description: string @localized
+  _: [i32]
+  _: i32
+  TabActive: string @file(ext: ".dds")
+  TabInactive: string @file(ext: ".dds")
+  MasterNormal: string @file(ext: ".dds")
+  ActiveHover: string @file(ext: ".dds")
+  FrameBackground: string @file(ext: ".dds")
+  ButtonBase: string
+  ButtonActive: string
+  Tab: string
+}

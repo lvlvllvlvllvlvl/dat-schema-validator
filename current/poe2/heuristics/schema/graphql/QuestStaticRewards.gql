@@ -9,4 +9,5 @@ type QuestStaticRewards {
   Message: ClientStrings
   _: i32
   _: bool
+  Achievement: QuestAchievements
 }

@@ -7,4 +7,7 @@ type Strongboxes {
   _: bool
   SpawnWeightIncrease: Stats
   SpawnWeightHardmode: i32
+  BasicSpawnChanceStat: Stats
+  RequiredSpawnStat: [Stats]
+  BlockingSpawnStat: [Stats]
 }

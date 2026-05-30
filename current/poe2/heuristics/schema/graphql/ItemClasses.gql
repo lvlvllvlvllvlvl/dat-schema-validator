@@ -27,4 +27,5 @@ type ItemClasses @tags(list: ["crafting"]) {
   EquipAchievement: AchievementItems
   UsableInMapDevice: bool
   _: bool
+  _: bool
 }

@@ -14,7 +14,7 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   Tags: [Tags]
   ModDomain: ModDomains
   ItemVisualIdentity: ItemVisualIdentity
-  HASH32: u32 @unique
+  HASH32: u32
   VendorRecipe_AchievementItems: [AchievementItems]
   "the inflection identifier used for i18n in related fields"
   Inflection: string @localized
@@ -32,4 +32,8 @@ type BaseItemTypes @tags(list: ["item:def", "item:droptable"]) {
   Achievement: [AchievementItems]
   ShopTag: ShopTag
   _: rid
+  _: i32
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: [_] # All rows empty
 }

@@ -9,7 +9,8 @@ type AwardDisplay {
   _: string
   _: string
   ForegroundImage: string
-  OGGFile: string @file(ext: ".ogg")
   QuestFlag: QuestFlags
   _: i32
+  AwardVideo: string
+  SoundEffect: SoundEffects
 }

@@ -10,4 +10,6 @@ type StatisticTrackingMicrotransactionsStatistics {
   Description: ClientStrings2
   CounterType: StatisticTrackingMicrotransactionCounterType
   _: i32
+  _: i32
+  _: bool
 }

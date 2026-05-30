@@ -2,4 +2,5 @@
 type EndgameMapContentSet {
   Id: string @unique
   Content: [EndgameMapContent]
+  _: bool
 }

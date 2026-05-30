@@ -210,7 +210,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
@@ -447,5 +447,44 @@
       }
     },
     "size": 16
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 310,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 326,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 342,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   }
 ]

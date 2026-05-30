@@ -13,4 +13,6 @@ type ItemFrameType {
   Rarity: Rarity
   DisplayString: ClientStrings
   ColorMarkup: string
+  _: string
+  _: ItemFrameType
 }

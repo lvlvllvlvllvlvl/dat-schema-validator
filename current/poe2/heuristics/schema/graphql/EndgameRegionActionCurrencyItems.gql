@@ -1,0 +1,8 @@
+type EndgameRegionActionCurrencyItems {
+  Region: EndgameRegionActionButtons
+  _: i32
+  BaseItemTypes: BaseItemTypes
+  KeywordPopup: KeywordPopups
+  _: rid
+  _: bool
+}

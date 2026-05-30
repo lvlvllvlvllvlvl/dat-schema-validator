@@ -15,7 +15,7 @@
     "name": "",
     "offset": 8,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -27,7 +27,7 @@
     "name": "",
     "offset": 16,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -39,7 +39,7 @@
     "name": "",
     "offset": 24,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -51,7 +51,7 @@
     "name": "",
     "offset": 32,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -63,7 +63,7 @@
     "name": "",
     "offset": 40,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -75,7 +75,7 @@
     "name": "",
     "offset": 48,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -87,7 +87,7 @@
     "name": "",
     "offset": 56,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -99,7 +99,7 @@
     "name": "",
     "offset": 64,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -123,7 +123,7 @@
     "name": "",
     "offset": 73,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -135,12 +135,27 @@
     "name": "",
     "offset": 81,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8
+  },
+  {
+    "name": "",
+    "offset": 89,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   }
 ]

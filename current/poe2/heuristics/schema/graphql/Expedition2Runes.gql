@@ -1,0 +1,12 @@
+type Expedition2Runes {
+  Id: string @unique
+  _: rid
+  ArchnemesisMod: ArchnemesisMods
+  ArchnemesisModPower: ArchnemesisMods
+  _: i32
+  TomeArt: string
+  RemnantArt: string
+  HitEffect: Stats
+  EnemyArt: string
+  _: string
+}

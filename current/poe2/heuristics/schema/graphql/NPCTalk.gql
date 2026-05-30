@@ -7,10 +7,10 @@ type NPCTalk {
   _: [QuestFlags]
   _: [QuestFlags]
   Script: string
-  TextAudio: NPCTextAudio
+  QuestFlags1: [QuestFlags]
   Category: NPCTalkCategory
   QuestRewardOffersKey: QuestRewardOffers
-  QuestFlag: QuestFlags
+  QuestFlag2: QuestFlags
   NPCTextAudioKeys: [NPCTextAudio]
   Script2: string
   _: bool
@@ -19,7 +19,7 @@ type NPCTalk {
   _: [i32]
   _: i32
   _: [i32]
-  _: i32
+  _: [i32]
   _: bool
   BaseItemTypes: BaseItemTypes
   _: [i32]
@@ -28,13 +28,16 @@ type NPCTalk {
   ConsoleQuickAction: NPCTalkConsoleQuickActions
   Music1: Music
   _: i32
-  _: [_] # All rows empty
+  _: [rid]
   _: i32
   Music2: Music
   _: i32
-  QuestFlag2: QuestFlags
+  QuestFlag3: QuestFlags
   _: bool
   _: i32
   _: NPCTalk
   TalkDialogue: [NPCTalkDialogue]
+  _: bool
+  Ascendancy: [Ascendancy]
+  _: bool
 }

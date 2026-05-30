@@ -1,6 +1,6 @@
 # Added 4.1
 type ItemisedVisualEffect {
-  EffectBaseType: BaseItemTypes @unique
+  Mtx: MtxTypeGameSpecific
   VisualEffect: ItemVisualEffect
   VisualIdentity: ItemVisualIdentity
   Stats: [Stats]
@@ -24,4 +24,5 @@ type ItemisedVisualEffect {
   _: bool
   GameObjectTask: GameObjectTasks
   _: i32
+  _: bool
 }

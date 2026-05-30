@@ -1,0 +1,12 @@
+type GraphicalItemReceptacleAdditionalButton {
+  Receptacle: GraphicalItemReceptacle
+  _: i32
+  Instructions: ClientStrings2
+  _: i32
+  _: string
+  BaseItemType: BaseItemTypes
+  _: [i32]
+  _: bool
+  _: i32
+  _: i32
+}

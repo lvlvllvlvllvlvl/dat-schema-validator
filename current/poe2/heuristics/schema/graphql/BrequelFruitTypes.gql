@@ -1,0 +1,7 @@
+type BrequelFruitTypes {
+  BaseItemType: BaseItemTypes @unique
+  Reward: BrequelFruitRewardTypes
+  _: i32
+  _: i32
+  _: rid
+}

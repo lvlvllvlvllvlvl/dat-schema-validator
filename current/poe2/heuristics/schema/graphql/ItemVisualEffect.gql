@@ -8,7 +8,7 @@ type ItemVisualEffect {
   _: string
   TwoHandedSwordEPKFile: string @file(ext: ".epk")
   TwoHandedStaffEPKFile: string @file(ext: ".epk")
-  HASH16: i16 @unique
+  HASH16: u16
   _: bool
   _: bool
   TwoHandedMaceEPKFile: string @file(ext: ".epk")

@@ -9,4 +9,5 @@ type HideoutNPCs {
   _: i32
   Ruleset: Rulesets
   _: bool
+  HideoutDoodads: [HideoutDoodads]
 }

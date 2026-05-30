@@ -382,5 +382,34 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "FadeOutEffect",
+    "offset": 279,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "MiscEffectPacks"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 295,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "size": 16
   }
 ]

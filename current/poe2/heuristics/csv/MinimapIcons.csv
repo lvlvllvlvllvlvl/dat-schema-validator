@@ -8,7 +8,7 @@
 6,"QuestItem",2,2,"","",250,0,"","","","","","","","","","",2
 7,"Shrine",2,2,1,"",150,0,"","","","","","","","","","",2
 8,"StoryGlyph",2,2,"",1,250,0,"","","","","","","","","","",2
-9,"Waypoint",2,2,"",1,250,0,"Waypoint","Point de téléportation","Wegpunkt","ウェイポイント","거점","Marcador","Портал","Transportador","เวย์พอยน์","傳送點",2
+9,"Waypoint",2,2,"",1,250,0,"Waypoint","Point de téléportation","Wegpunkt","ウェイポイント","거점","Ponto de Rota","Портал","Transportador","เวย์พอยน์","傳送點",2
 10,"RedFlag",2,2,1,"",250,0,"","","","","","","","","","",2
 11,"BlueFlag",2,2,1,"",250,0,"","","","","","","","","","",2
 12,"GreenFlag",2,2,1,"",250,0,"","","","","","","","","","",2
@@ -622,12 +622,12 @@
 620,"StoneAltarTall",2,2,1,"",250,0,"","","","","","","","","","",2
 621,"StoneAltarShort",2,2,1,"",250,0,"","","","","","","","","","",2
 622,"HealingWell",2,2,"","",250,0,"Well","Puits","Brunnen","井戸","우물","Poço","Колодец","Pozo","บ่อน้ำ","水井",2
-623,"Checkpoint",2,2,"","",250,0,"Checkpoint","Point de contrôle","Kontrollpunkt","チェックポイント","체크포인트","Marcação","Контрольная точка","Punto de control","เช็คพอยน์","記錄點",2
+623,"Checkpoint",2,2,"","",250,0,"Checkpoint","Point de contrôle","Kontrollpunkt","チェックポイント","체크포인트","Ponto de Controle","Контрольная точка","Punto de control","เช็คพอยน์","記錄點",2
 624,"WaterwaysLever",2,2,"","",250,0,"","","","","","","","","","",2
-625,"CheckpointNotActive",2,2,"","",250,0,"Checkpoint","Point de contrôle","Kontrollpunkt","チェックポイント","체크포인트","Marcação","Контрольная точка","Punto de control","เช็คพอยน์","記錄點",2
-626,"MillerActive",2,2,"","",400,0,"Besieged Encampment","Campement assiégé","Belagertes Lager","包囲された野営地","포위당한 야영지","Acampamento Cercado","Осаждённый лагерь","Campamento asediado","ค่ายที่ถูกรุกราน","被圍攻的營地",2
+625,"CheckpointNotActive",2,2,"","",250,0,"Checkpoint","Point de contrôle","Kontrollpunkt","チェックポイント","체크포인트","Ponto de Controle","Контрольная точка","Punto de control","เช็คพอยน์","記錄點",2
+626,"MillerActive",2,2,"","",400,0,"Besieged Encampment","Campement assiégé","Belagertes Lager","包囲された野営地","포위당한 야영지","Acampamento Sitiado","Осаждённый лагерь","Campamento asediado","ค่ายที่ถูกรุกราน","被圍攻的營地",2
 627,"MillerInactive",2,2,"","",400,0,"","","","","","","","","","",2
-628,"CroneActive",2,2,"","",400,0,"Frostblood Ritual","Rituel de givresang","Frostblutritual","凍血の儀式","서리피 의식","Ritual Gela-Sangue","Ритуал морозной крови","Ritual de escarcha","พิธีโลหิตเยือกแข็ง","霜血祭祀",2
+628,"CroneActive",2,2,"","",400,0,"Frostblood Ritual","Rituel de givresang","Frostblutritual","凍血の儀式","서리피 의식","Ritual Gela-sangue","Ритуал морозной крови","Ritual de escarcha","พิธีโลหิตเยือกแข็ง","霜血祭祀",2
 629,"CroneInactive",2,2,"","",400,0,"","","","","","","","","","",2
 630,"MudBurrowerActive",2,2,"","",400,0,"Vile Nest","Nid abominable","Unheilvolles Nest","邪悪な巣","끔찍한 둥지","Ninho Vil","Мерзкое гнездо","Nido vil","รังสามานย์","惡毒巢穴",2
 631,"MudBurrowerInactive",2,2,"","",400,0,"","","","","","","","","","",2
@@ -645,15 +645,15 @@
 643,"GargoyleInactive",2,2,"","",250,0,"","","","","","","","","","",2
 644,"CountActive",2,2,"","",250,0,"Throne of the Wolf","Trône du Loup","Thron des Wolfes","狼の玉座","늑대의 옥좌","Trono do Lobo","Трон волка","Trono del lobo","บัลลังก์หมาป่า","狼之王座",2
 645,"CountInactive",2,2,"","",250,0,"","","","","","","","","","",2
-646,"RathbreakerActive",2,2,"","",250,0,"Raider's Cliffs","Falaises des pillards","Klippen des Räubers","急襲者の崖","습격자의 절벽","Penhasco do Saqueador","Утёсы рейдеров","Riscos del saqueador","หน้าผาผู้รุกราน","劫掠者斷崖",2
+646,"RathbreakerActive",2,2,"","",250,0,"Raider's Cliffs","Falaises des pillards","Klippen des Räubers","急襲者の崖","습격자의 절벽","Penhascos do Saqueador","Утёсы рейдеров","Riscos del saqueador","หน้าผาผู้รุกราน","劫掠者斷崖",2
 647,"RathbreakerInactive",2,2,"","",250,0,"","","","","","","","","","",2
-648,"BalbalaActive",2,2,"","",250,0,"Prison of the Disgraced","Prison de la Disgrâce","Gefängnis der Entehrten","恥辱の監獄","오욕당한 자의 감옥","Prisão do Desgraçado","Темница бесчестья","Prisión de la deshonra","ที่จองจำผู้อัปยศ","恥辱牢獄",2
+648,"BalbalaActive",2,2,"","",250,0,"Prison of the Disgraced","Prison de la Disgrâce","Gefängnis der Entehrten","恥辱の監獄","오욕당한 자의 감옥","Prisão da Desonrada","Темница бесчестья","Prisión de la deshonra","ที่จองจำผู้อัปยศ","恥辱牢獄",2
 649,"BalbalaInactive",2,2,"","",250,0,"","","","","","","","","","",2
 650,"GateMechanismActive",2,2,"","",250,0,"Gate Mechanism","Mécanisme de la porte","Tor-Mechanismus","門の機構","관문 장치","Mecanismo do Portão","Механизм ворот","Mecanismo de la puerta","กลไกประตู","大門機關",2
 651,"GateMechanismInactive",2,2,"","",250,0,"","","","","","","","","","",2
-652,"LimActive",2,2,"","",250,0,"Forward Command Tents","Tentes de commandement avancées","Kommandozelte an der Front","前線指揮所","전방 지휘 막사","Tendas Dianteiras de Comando","Передовой командный шатёр ","Tiendas de mando de avanzada","เต็นท์บัญชาส่วนหน้า","前線指揮營帳",2
+652,"LimActive",2,2,"","",250,0,"Forward Command Tents","Tentes de commandement avancées","Kommandozelte an der Front","前線指揮所","전방 지휘 막사","Barracas de Comando Avançado","Передовой командный шатёр ","Tiendas de mando de avanzada","เต็นท์บัญชาส่วนหน้า","前線指揮營帳",2
 653,"LimInactive",2,2,"","",250,0,"","","","","","","","","","",2
-654,"PerennialHumanActive",2,2,"","",250,0,"Infested Tower","Tour infestée","Verseuchter Turm","蔓延る塔","감염된 탑","Torre Infestado","Заражённая башня","Torre infestada","หอคอยอาบเชื้อ","染疫尖塔",2
+654,"PerennialHumanActive",2,2,"","",250,0,"Infested Tower","Tour infestée","Verseuchter Turm","蔓延る塔","감염된 탑","Torre Infestada","Заражённая башня","Torre infestada","หอคอยอาบเชื้อ","染疫尖塔",2
 655,"PerennialHumanInactive",2,2,"","",250,0,"","","","","","","","","","",2
 656,"KabalaActive",2,2,"","",250,0,"The Venom Pit","La Fosse du Venin","Die Giftgrube","毒の穴","독액 구덩이","O Fosso Venenoso","Ядовитая яма","El foso venenoso","หลุมอสรพิษ","毒坑",2
 657,"KabalaInactive",2,2,"","",250,0,"","","","","","","","","","",2
@@ -661,90 +661,90 @@
 659,"BeetleBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 660,"ForsakenSonActive",2,2,"","",250,0,"The Vestibule ","Le Vestibule","Das Vestibül ","前庭","현관","O Vestíbulo","Вестибюль","El vestíbulo","โถงทางเข้า","大廳",2
 661,"ForsakenSonInactive",2,2,"","",250,0,"","","","","","","","","","",2
-662,"MastodonActive",2,2,"","",250,0,"Blackrib Pit","Fosse de Côtenoire","Schwarzrippengrube","ブラックリブの穴","검은갈비뼈 구덩이","Fosso da Costela Negra","Чёрнохребтая яма","Foso de huesos","หลุมแบล็คริบ","黑骨坑",2
+662,"MastodonActive",2,2,"","",250,0,"Blackrib Pit","Fosse de Côtenoire","Schwarzrippengrube","ブラックリブの穴","검은갈비뼈 구덩이","Fosso do Costela Negra","Чёрнохребтая яма","Foso de huesos","หลุมแบล็คริบ","黑骨坑",2
 663,"MastodonInactive",2,2,"","",250,0,"","","","","","","","","","",2
-664,"TitanRuneActive",2,2,"","",250,0,"Ancient Seal","Sceau antique","Uraltes Siegel","古代の封印","고대의 봉인","Selo Ancestral","Древняя печать","Sello antiguo","ผนึกดึกดำบรรพ์","古代封印",2
+664,"TitanRuneActive",2,2,"","",250,0,"Ancient Seal","Sceau antique","Uraltes Siegel","古代の封印","고대의 봉인","Selo Antigo","Древняя печать","Sello antiguo","ผนึกดึกดำบรรพ์","古代封印",2
 665,"TitanRuneInactive",2,2,"","",250,0,"","","","","","","","","","",2
 666,"TitanHandActive",3,3,"","",250,0,"","","","","","","","","","",2
 667,"TitanHandInactive",2,2,"","",250,0,"","","","","","","","","","",2
-668,"TitanActive",2,2,"","",250,0,"Dais of Reckoning","Dais du Jugement","Podium der Abrechnung","清算の高座","심판의 연단","Plataforma da Vingança","Помост воздаяния","Tarima del juicio final","แท่นผลึกกรรมสนอง","清算講臺",2
+668,"TitanActive",2,2,"","",250,0,"Dais of Reckoning","Dais du Jugement","Podium der Abrechnung","清算の高座","심판의 연단","Plataforma do Acerto de Contas","Помост воздаяния","Tarima del juicio final","แท่นผลึกกรรมสนอง","清算講臺",2
 669,"TitanInactive",2,2,"","",250,0,"","","","","","","","","","",2
-670,"TorGulActive",2,2,"","",250,0,"The Defiled Spire","La Flèche profanée","Die entweihte Turmspitze","冒涜された尖塔","더럽혀진 첨탑","A Espiral Profanada","Осквернённый шпиль","La torre profanada","ยอดแหลมมัวหมอง","玷汙尖塔",2
+670,"TorGulActive",2,2,"","",250,0,"The Defiled Spire","La Flèche profanée","Die entweihte Turmspitze","冒涜された尖塔","더럽혀진 첨탑","A Torre Profanada","Осквернённый шпиль","La torre profanada","ยอดแหลมมัวหมอง","玷汙尖塔",2
 671,"TorGulInactive",2,2,"","",250,0,"","","","","","","","","","",2
-672,"RudjaActive",2,2,"","",250,0,"Munitions Bunker","Dépôt de munitions","Munitionsbunker","弾薬貯蔵庫","탄약 벙커","Bunker das Munições","Бункер снабжения","Búnker de municiones","บังเกอร์ยุทโธปกรณ์","彈藥碉堡",2
+672,"RudjaActive",2,2,"","",250,0,"Munitions Bunker","Dépôt de munitions","Munitionsbunker","弾薬貯蔵庫","탄약 벙커","Bunker de Munições","Бункер снабжения","Búnker de municiones","บังเกอร์ยุทโธปกรณ์","彈藥碉堡",2
 673,"RudjaInactive",2,2,"","",250,0,"","","","","","","","","","",2
 674,"PerennialCorruptedActive",2,2,"","",250,0,"The Faridun Throne","Le Trône des Fariduns","Der Faridun-Thron","ファリドゥンの玉座","파리둔 왕좌","O Trono Faridun","Трон фаридунцев","El trono faridun","บัลลังก์ฟาริดัน","法里登王座",2
 675,"PerennialCorruptedInactive",2,2,"","",250,0,"","","","","","","","","","",2
 676,"PlayerGravestone",2,2,1,"",250,0,"","","","","","","","","","",2
 677,"ClearfellCampsiteActive",2,2,"","",250,0,"Mysterious Campsite","Campement mystérieux","Mysteriöser Lagerplatz","謎の露営地","수수께끼의 야영지","Acampamento Misterioso","Загадочный лагерь","Campamento misterioso","ค่ายปริศนา","神秘營區",2
 678,"ClearfellCampsiteInactive",2,2,"","",250,0,"","","","","","","","","","",2
-679,"CarnivorousPlantActive",2,2,"","",250,0,"The Moving Bramble","Les Ronces vivaces","Der bewegliche Dornbusch","動く茨","움직이는 가시나무","O Espinhal Móvel","Ползучие кусты","La zarza movediza","พุ่มหนามเคลื่อนที่","移動刺荊",2
+679,"CarnivorousPlantActive",2,2,"","",250,0,"The Moving Bramble","Les Ronces vivaces","Der bewegliche Dornbusch","動く茨","움직이는 가시나무","O Espinheiro Móvel","Ползучие кусты","La zarza movediza","พุ่มหนามเคลื่อนที่","移動刺荊",2
 680,"CarnivorousPlantInactive",2,2,"","",250,0,"","","","","","","","","","",2
 681,"MedallionUI",2,2,1,"",250,0,"","","","","","","","","","",2
 682,"MausoleumSecretActive",2,2,"","",250,0,"Forgotten Riches","Richesses oubliées","Versteckte Reichtümer","忘れ去られた財貨","잊혀진 재물","Riquezas Esquecidas","Забытые богатства","Riquezas olvidadas","สมบัติที่ถูกลืม","忘卻財富",2
 683,"MausoleumSecretInactive",2,2,"","",250,0,"","","","","","","","","","",2
-684,"GraveyardSecretActive",2,2,"","",250,0,"Ancient Ruin","Vestige antique","Antike Ruine","古代の遺跡","고대 유적","Ruínas Antigas","Древние развалины","Ruinas antiguas","ซากโบราณ","古老遺跡",2
+684,"GraveyardSecretActive",2,2,"","",250,0,"Ancient Ruin","Vestige antique","Antike Ruine","古代の遺跡","고대 유적","Ruína Antiga","Древние развалины","Ruinas antiguas","ซากโบราณ","古老遺跡",2
 685,"GraveyardSecretInactive",2,2,"","",250,0,"","","","","","","","","","",2
 686,"CourtyardSecretActive",2,2,"","",250,0,"The Gallows","Les Potences","Die Galgen","絞首台","교수대","A Forca","Виселица","El patíbulo","ตะแลงแกง","絞刑架",2
 687,"CourtyardSecretInactive",2,2,"","",250,0,"","","","","","","","","","",2
-688,"HuntingGroundsSecretActive",2,2,"","",250,0,"Dryadic Ritual","Rituel dryadique","Dryadisches Ritual","ドリュアスの儀式","드라이어드의 의식","Ritual Dryádico","Ритуал дриад","Ritual driádico","พิธีนางไม้","樹靈祭祀",2
+688,"HuntingGroundsSecretActive",2,2,"","",250,0,"Dryadic Ritual","Rituel dryadique","Dryadisches Ritual","ドリュアスの儀式","드라이어드의 의식","Ritual das Dríades","Ритуал дриад","Ritual driádico","พิธีนางไม้","樹靈祭祀",2
 689,"HuntingGroundsSecretInactive",2,2,"","",250,0,"","","","","","","","","","",2
-690,"FarmlandsSecretActive",2,2,"","",250,0,"Crop Circle","Cercle de culture","Kornkreis","クロップ・サークル","수수께끼의 원무늬","Círculo de Cultivo","Круг на поле","Círculo en los cultivos","วงต้นกล้าเตียนโล่ง","麥田圈",2
+690,"FarmlandsSecretActive",2,2,"","",250,0,"Crop Circle","Cercle de culture","Kornkreis","クロップ・サークル","수수께끼의 원무늬","Agroglifos","Круг на поле","Círculo en los cultivos","วงต้นกล้าเตียนโล่ง","麥田圈",2
 691,"FarmlandsSecretInactive",2,2,"","",250,0,"","","","","","","","","","",2
 692,"TitanGrottoEntranceActive",2,2,"","",250,0,"","","","","","","","","","",2
 693,"TitanGrottoEntranceInActive",2,2,"","",250,0,"","","","","","","","","","",2
-694,"TombEncounterActive",2,2,"","",250,0,"Embattled Trove","Trésor assiégé","Umkämpfter Schatz","窮地の宝物","교전 중인 발견물","Tesouro Atingido","Находка на амбразурах","Tesoro asediado","ขุมทรัพย์ที่ถูกจู่โจม","爭戰的寶庫",2
+694,"TombEncounterActive",2,2,"","",250,0,"Embattled Trove","Trésor assiégé","Umkämpfter Schatz","窮地の宝物","교전 중인 발견물","Tesouro Disputado","Находка на амбразурах","Tesoro asediado","ขุมทรัพย์ที่ถูกจู่โจม","爭戰的寶庫",2
 695,"TombEncounterInactive",2,2,"","",250,0,"","","","","","","","","","",2
 696,"KethSanctumOfferingEncounterActive",2,2,"","",250,0,"Elemental Offering","Offrande élémentaire","Elementaropfer","元素の供物","원소 공물","Oferenda Elemental","Подношение стихии","Ofrenda elemental","เครื่องเซ่นไหว้แก่ธาตุ","元素奉獻",2
 697,"KethSanctumOfferingEncounterInactive",2,2,"","",250,0,"","","","","","","","","","",2
-698,"LowerTempleDistrictBeetleAmbushActive",2,2,"","",250,0,"Golden Tomb","Tombeau doré","Goldenes Grab","黄金の墓","황금 무덤","Túmulo Dourado","Золотая гробница","Tumba dorada","หลุมฝังศพทองคำ","耀金墓室",2
+698,"LowerTempleDistrictBeetleAmbushActive",2,2,"","",250,0,"Golden Tomb","Tombeau doré","Goldenes Grab","黄金の墓","황금 무덤","Tumba de Ouro","Золотая гробница","Tumba dorada","หลุมฝังศพทองคำ","耀金墓室",2
 699,"LowerTempleDistrictBeetleAmbushInactive",2,2,"","",250,0,"","","","","","","","","","",2
-700,"SandsweptMarshCorpseSecretActive",2,2,"","",250,0,"Hanging Tree","Arbre des pendus","Galgenbaum","首吊りの木","매달린 나무","Árvore Suspensa","Дерево висельников","Árbol del ahorcado","ต้นแขวนคอ","吊樹",2
+700,"SandsweptMarshCorpseSecretActive",2,2,"","",250,0,"Hanging Tree","Arbre des pendus","Galgenbaum","首吊りの木","매달린 나무","Árvore do Enforcamento","Дерево висельников","Árbol del ahorcado","ต้นแขวนคอ","吊樹",2
 701,"SandsweptMarshCorpseSecretInactive",2,2,"","",250,0,"","","","","","","","","","",2
-702,"RootdredgeBossActive",2,2,"","",250,0,"Foul Ritual","Rituel fétide","Verderbtes Ritual","不快な儀式","더러운 의식","Ritual Fétido","Гнусный ритуал","Ritual repugnante","พิธีโสโครก","邪惡祭祀",2
+702,"RootdredgeBossActive",2,2,"","",250,0,"Foul Ritual","Rituel fétide","Verderbtes Ritual","不快な儀式","더러운 의식","Ritual Pérfido","Гнусный ритуал","Ritual repugnante","พิธีโสโครก","邪惡祭祀",2
 703,"RootdredgeBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 704,"SilverbackBlackfistBossActive",2,2,"","",250,0,"Temple Ruins","Ruines du temple","Tempelruinen","寺院の遺跡","사원 유적","Ruínas do Templo","Развалины храма","Ruinas del templo","ซากวิหาร","神廟遺跡",2
 705,"SilverbackBlackfistBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
-706,"SnakePitBossActive",2,2,"","",250,0,"Den of the Serpent Priestess","Antre de la Prêtresse des serpents","Höhle der Schlangenpriesterin","蛇巫女の巣","독사 여사제의 소굴","Covil da Sacerdotisa da Serpente","Логово змеиной жрицы","Guarida de la sacerdotisa serpiente","รังของนักบวชงูใหญ่","巨蛇女祭司的巢穴",2
+706,"SnakePitBossActive",2,2,"","",250,0,"Den of the Serpent Priestess","Antre de la Prêtresse des serpents","Höhle der Schlangenpriesterin","蛇巫女の巣","독사 여사제의 소굴","Toca da Sacerdotisa-serpente","Логово змеиной жрицы","Guarida de la sacerdotisa serpiente","รังของนักบวชงูใหญ่","巨蛇女祭司的巢穴",2
 707,"SnakePitBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 708,"XyclucianBossActive",2,2,"","",250,0,"Deadly Nest","Nid mortel","Tödliches Nest","致死の巣","치명적인 둥지","Ninho Mortal","Смертоносное гнездо","Nido letal","รังมหาภัย","致命巢穴",2
 709,"XyclucianBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
-710,"BlackjawBossActive",2,2,"","",250,0,"The Oubliette","Les Oubliettes","Der Kerker","土牢","지하 감옥","O Esquecimento","Каменный мешок","El calabozo","ห้องขังใต้ดิน","地牢",2
+710,"BlackjawBossActive",2,2,"","",250,0,"The Oubliette","Les Oubliettes","Der Kerker","土牢","지하 감옥","O Calabouço","Каменный мешок","El calabozo","ห้องขังใต้ดิน","地牢",2
 711,"BlackjawBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
-712,"ZicoatlBossActive",2,2,"","",250,0,"Grand Soul Core Nexus","Nexus du grand Noyau d'âme","Großer Seelenkern-Nexus","巨大ソウルコアの中核","우수한 영혼 핵 연결부","Nexus do Núcleo D'alma Grandioso","Центр главного Ядра душ","Nexo de núcleo de alma grande","ศูนย์กลางแกนวิญญาณยิ่งใหญ่","宏偉靈魂核心聖域",2
+712,"ZicoatlBossActive",2,2,"","",250,0,"Grand Soul Core Nexus","Nexus du grand Noyau d'âme","Großer Seelenkern-Nexus","巨大ソウルコアの中核","우수한 영혼 핵 연결부","Nexus do Grande Núcleo d'Alma","Центр главного Ядра душ","Nexo de núcleo de alma grande","ศูนย์กลางแกนวิญญาณยิ่งใหญ่","宏偉靈魂核心聖域",2
 713,"ZicoatlBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 714,"IgnagdukBossActive",2,2,"","",250,0,"Gor-gor Mog","Gor-gor Mog","Gor-gor Mog","ゴールゴール・モグ","고르고르 모그","Gor-gor Mog","Гор-гор Мог","Gor-gor Mog","กอร์-กอร์ ม็อก","茍茍摩格",2
 715,"IgnagdukBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 716,"GoldcrushBossActive",2,2,"","",250,0,"The Aureaduct","L'Aureaduc","Das Golddukt","アウレアダクト","오레아덕트","Aureaduto","Золотой ров","El aureaducto","ทางหลอมทอง","金黃之道",2
 717,"GoldcrushBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
-718,"QueenOfFilthBossActive",2,2,"","",250,0,"Stenchpools","Bassins méphitiques","Stinkende Becken","悪臭の溜まり場","썩은 내 웅덩이","Poças de Fedor","Вонючие болота","Charcas pestilentes","บ่อโสมม","惡臭之池",2
+718,"QueenOfFilthBossActive",2,2,"","",250,0,"Stenchpools","Bassins méphitiques","Stinkende Becken","悪臭の溜まり場","썩은 내 웅덩이","Poças Fedidas","Вонючие болота","Charcas pestilentes","บ่อโสมม","惡臭之池",2
 719,"QueenOfFilthBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 720,"KaazuliBossActive",2,2,"","",250,0,"Altar of the Sun","Autel du Soleil","Altar der Sonne","太陽の祭壇","태양의 제단","Altar do Sol","Алтарь Солнца","Altar del sol","แท่นดวงตะวัน","烈日祭壇",2
 721,"KaazuliBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 722,"ViperNapuatziBossActive",2,2,"","",250,0,"Legion Blockade","Barrage de la Légion","Blockade der Legion","リージョンの封鎖","군단 봉쇄","Bloqueio da Legião","Блокада Легиона","Barricada de la legión","ด่านกองพัน","軍團壁壘",2
 723,"ViperNapuatziBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
-724,"DoryaniBossActive",2,2,"","",250,0,"The Testing Pit","La Fosse à essais","Die Versuchsgrube","試験の大穴","시험 구덩이","O Poço de Testes","Испытательная яма","El foso de pruebas","หลุมทดลอง","試煉巨坑",2
+724,"DoryaniBossActive",2,2,"","",250,0,"The Testing Pit","La Fosse à essais","Die Versuchsgrube","試験の大穴","시험 구덩이","O Fosso de Testes","Испытательная яма","El foso de pruebas","หลุมทดลอง","試煉巨坑",2
 725,"DoryaniBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
-726,"CarverBogLandmarkActive",2,2,"","",250,0,"Flameskin Ritual","Rituel de la peau de flammes","Flammenhaut-Ritual","フレイムスキンの儀式","화염피부 의식","Ritual da Peleardente","Ритуал огненной кожи","Ritual de piel en llamas","พิธีหนังเพลิง","火膚儀式",2
+726,"CarverBogLandmarkActive",2,2,"","",250,0,"Flameskin Ritual","Rituel de la peau de flammes","Flammenhaut-Ritual","フレイムスキンの儀式","화염피부 의식","Ritual da Pele de Chamas","Ритуал огненной кожи","Ritual de piel en llamas","พิธีหนังเพลิง","火膚儀式",2
 727,"CarverBogLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-728,"MarakethSanctumLocker",2,2,"","",250,0,"Relic Locker","Casier de Reliques","Relikttruhe","レリックロッカー","유물 사물함","Cofre de Relíquias","Сундук с реликвиями","Cofre de reliquias","ล็อกเกอร์วัตถุตกทอด","聖物密櫃",2
+728,"MarakethSanctumLocker",2,2,"","",250,0,"Relic Locker","Casier de Reliques","Relikttruhe","レリックロッカー","유물 사물함","Armário de Relíquias","Сундук с реликвиями","Cofre de reliquias","ล็อกเกอร์วัตถุตกทอด","聖物密櫃",2
 729,"MarakethSanctumRoomSelector",2,2,"","",250,0,"","","","","","","","","","",2
 730,"MarakethSanctumFountain",2,2,"","",250,0,"","","","","","","","","","",2
 731,"MarakethSanctumKey",2,2,"","",250,0,"","","","","","","","","","",2
-732,"MarakethSanctumAscendancyAltar",2,2,"","",250,0,"Altar of Ascendancy","Autel d'Ascendance","Altar der Aszendenz","アセンダンシーの祭壇","전직 제단","Altar de Ascensão","Алтарь Восхождения","Altar de ascendencia","แท่นครองอำนาจ","昇華之殿",2
-733,"JungleDepthsLandmarkGraveActive",2,2,"","",250,0,"Jungle Grave","Tombe dans la jungle","Dschungelgrab","ジャングルの墓場","밀림 무덤","Sepultura da Selva","Могила в джунглях","Tumba de la jungla","หลุมศพป่าดงดิบ","叢林墓園",2
+732,"MarakethSanctumAscendancyAltar",2,2,"","",250,0,"Altar of Ascendancy","Autel d'Ascendance","Altar der Aszendenz","アセンダンシーの祭壇","전직 제단","Altar de Ascendência","Алтарь Восхождения","Altar de ascendencia","แท่นครองอำนาจ","昇華之殿",2
+733,"JungleDepthsLandmarkGraveActive",2,2,"","",250,0,"Jungle Grave","Tombe dans la jungle","Dschungelgrab","ジャングルの墓場","밀림 무덤","Sepulcro da Selva","Могила в джунглях","Tumba de la jungla","หลุมศพป่าดงดิบ","叢林墓園",2
 734,"JungleDepthsLandmarkGraveInactive",2,2,"","",250,0,"","","","","","","","","","",2
-735,"SandsweptMarshLandmarkActive",2,2,"","",250,0,"Azak Campfire","Feu de camp azak","Azak-Lagerfeuer","アザクの焚き火","아자크 모닥불","Fogueira de Azak","Кострище Азак","Hoguera de los azak","ค่ายกองไฟอาซัค","阿札克營火",2
+735,"SandsweptMarshLandmarkActive",2,2,"","",250,0,"Azak Campfire","Feu de camp azak","Azak-Lagerfeuer","アザクの焚き火","아자크 모닥불","Fogueira Azak","Кострище Азак","Hoguera de los azak","ค่ายกองไฟอาซัค","阿札克營火",2
 736,"SandsweptMarshLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 737,"CorruptionAltarActive",2,2,"","",250,0,"","","","","","","","","","",2
 738,"CorruptionAltarInactive",2,2,"","",250,0,"","","","","","","","","","",2
 739,"LowerMachinariumCorruptionDeviceLandmarkActive",2,2,"","",250,0,"Paquate's Mechanism","Mécanisme de Paquate","Mechanismus von Paquate","パクアテの装置","파콰테의 장치","Mecanismo de Paquate","Механизм Паквате","Mecanismo de Paquate","กลไกของปะควาเท","帕科特的機關",2
 740,"LowerMachinariumCorruptionDeviceLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-741,"UpperMachinariumTreasureRoomLandmarkActive",2,2,"","",250,0,"Supply Room","La Réserve","Vorratsraum","備品室","보급실","Salão de Suprimentos","Зал снабжения","Sala de suministros","ห้องเสบียง","補給室",2
+741,"UpperMachinariumTreasureRoomLandmarkActive",2,2,"","",250,0,"Supply Room","La Réserve","Vorratsraum","備品室","보급실","Sala de Suprimentos","Зал снабжения","Sala de suministros","ห้องเสบียง","補給室",2
 742,"UpperMachinariumTreasureRoomLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-743,"JungleOutskirtsMaggotAmbushLandmarkActive",2,2,"","",250,0,"Larva Hollow","Cavité des larves","Larvenhölle","幼生の窪み","유생 동혈","Larva Oca","Личиночная впадина","Hondonada de larvas","โพรงตัวอ่อน","蠕蟲幽地",2
+743,"JungleOutskirtsMaggotAmbushLandmarkActive",2,2,"","",250,0,"Larva Hollow","Cavité des larves","Larvenhölle","幼生の窪み","유생 동혈","Covil das Larvas","Личиночная впадина","Hondonada de larvas","โพรงตัวอ่อน","蠕蟲幽地",2
 744,"JungleOutskirtsMaggotAmbushLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-745,"JungleDepthsAndOutskirtsExplorerLandmarkActive",2,2,"","",250,0,"Troubled Camp","Camp agité","Gebeuteltes Lager","物騒なキャンプ","곤경에 처한 야영지","Acampamento Problemático","Лагерь в беде","Campamento conflictivo","ค่ายทุกข์ยาก","動亂營地",2
+745,"JungleDepthsAndOutskirtsExplorerLandmarkActive",2,2,"","",250,0,"Troubled Camp","Camp agité","Gebeuteltes Lager","物騒なキャンプ","곤경에 처한 야영지","Acampamento em Apuros","Лагерь в беде","Campamento conflictivo","ค่ายทุกข์ยาก","動亂營地",2
 746,"JungleDepthsAndOutskirtsExplorerLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 747,"ChimeralWetlandsExplorerLandmarkActive",2,2,"","",250,0,"Ravaged Camp","Camp ravagé","Verwüstetes Lager","荒廃したキャンプ","황폐한 야영지","Acampamento Devastado","Разорённый лагерь","Campamento devastado","ค่ายที่ถูกล้างผลาญ","殘摧營地",2
 748,"ChimeralWetlandsExplorerLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
@@ -752,26 +752,26 @@
 750,"VastiriOutskirtsExplorerLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 751,"WaterwaysShamanLandmarkActive",2,2,"","",250,0,"Shaman's Hut","Cabane du Shaman","Schamanenhütte","シャーマンの小屋","주술사의 오두막","Cabana do Xamã","Хижина шаманки","Cabaña del chamán","กระท่อมคนทรง","薩滿小屋",2
 752,"WaterwaysShamanLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-753,"FriendlyCauldronCroneActive",3,3,"","",400,0,"Bubbling Respite","Refuge bouillonnant","Sprudelnder Ruheort","沸き立つ小休止","부글대는 휴식","Refúgio Borbulhante","Бурлящее укрытие","Refugio burbujeante","ที่พักกายฟองฟอด","沸騰喘息",2
+753,"FriendlyCauldronCroneActive",3,3,"","",400,0,"Bubbling Respite","Refuge bouillonnant","Sprudelnder Ruheort","沸き立つ小休止","부글대는 휴식","Abrigo Borbulhante","Бурлящее укрытие","Refugio burbujeante","ที่พักกายฟองฟอด","沸騰喘息",2
 754,"FriendlyCauldronCroneInactive",3,3,"","",400,0,"","","","","","","","","","",2
 755,"DrownedCrawlerAmbushActive",2,2,"","",250,0,"Swarming Nest","Nid grouillant","Schwarmnest","群がる巣","몰려드는 둥지","Ninho do Enxame","Роящееся гнездо","Nido abarrotado","รังรุมเขมือบ","群湧巢穴",2
 756,"DrownedCrawlerAmbushInactive",2,2,"","",250,0,"","","","","","","","","","",2
-757,"CraftingBenchIcon",2,2,"","",250,0,"Salvage Bench","Établi de recyclage","Verwertungswerkbank","サルベージベンチ","분해 작업대","Mesa de Reciclagem","Верстак для разборки","Mesa de reciclaje","โต๊ะรื้อ","回收台",2
+757,"CraftingBenchIcon",2,2,"","",250,0,"Salvage Bench","Établi de recyclage","Verwertungswerkbank","サルベージベンチ","분해 작업대","Bancada de Reciclagem","Верстак для разборки","Mesa de reciclaje","โต๊ะรื้อ","回收台",2
 758,"OghamVillageRenlysToolsActive",2,2,"","",250,0,"Renly's Workshop","Atelier de Renly","Renlys Werkstatt","レンリーの工房","렌리의 작업장","Oficina do Renly","Мастерская Ренли","Taller de Renly","โรงปฏิบัติงานของเรนลีย์","倫利的工作坊",2
 759,"OghamVillageRenlysToolsInactive",2,2,"","",250,0,"","","","","","","","","","",2
-760,"SnakePitLandmarkActive",2,2,"","",250,0,"Priesthood Crypt","Crypte du sacerdoce","Krypta der Priesterschaft","聖職者の地下聖堂","사제단 지하실","Cripta do Sacerdotismo","Жреческая крипта","Cripta sacerdotal","สุสานนักบวช","祭司墓穴",2
+760,"SnakePitLandmarkActive",2,2,"","",250,0,"Priesthood Crypt","Crypte du sacerdoce","Krypta der Priesterschaft","聖職者の地下聖堂","사제단 지하실","Cripta do Sacerdócio","Жреческая крипта","Cripta sacerdotal","สุสานนักบวช","祭司墓穴",2
 761,"SnakePitLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-762,"ChimeralWetlandsFlowerGauntletLandmarkActive",2,2,"","",250,0,"Toxic Bloom","Floraison toxique","Giftige Blüte","有毒な花","맹독성 꽃","Florescer Tóxico","Ядовитые цветы","Flor tóxica","ดอกพิษร้าย","劇毒之花",2
+762,"ChimeralWetlandsFlowerGauntletLandmarkActive",2,2,"","",250,0,"Toxic Bloom","Floraison toxique","Giftige Blüte","有毒な花","맹독성 꽃","Esplendor Tóxico","Ядовитые цветы","Flor tóxica","ดอกพิษร้าย","劇毒之花",2
 763,"ChimeralWetlandsFlowerGauntletLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-764,"SunkenRuinsSubareaLandmarkActive",2,2,"","",250,0,"Shinies","Choses brillantes","Glitzer","輝き","귀중품","Brilhos","Блестяшки","Seres brillantes","ของแวววาว","閃亮之物",2
+764,"SunkenRuinsSubareaLandmarkActive",2,2,"","",250,0,"Shinies","Choses brillantes","Glitzer","輝き","귀중품","Brilhantes","Блестяшки","Seres brillantes","ของแวววาว","閃亮之物",2
 765,"SunkenRuinsSubareaLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 766,"SacredSpiresShrineLandmarkActive",2,2,"","",250,0,"Sisters of Garukhan","Sœurs de Garukhan","Schwestern von Garukhan","ガルカーンの姉妹達","가루칸의 자매들","Irmãs de Garukhan","Сёстры Гарухан","Hermanas de Garukhan","พี่น้องการูคาน","卡洛翰的姐妹",2
 767,"SacredSpiresShrineLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 768,"MarakethSanctumKeyConverterActive",2,2,"","",250,0,"Keth Forge","Forge de Keth","Keth-Schmiede","ケスの鍜治場","케스 대장간","Forja de Keth","Кетская кузня","Forja de Keth","เตาหลอมเค็ท","凱斯熔爐",2
 769,"MarakethSanctumKeyConverterInactive",2,2,"","",250,0,"","","","","","","","","","",2
-770,"UtzaalGoldenIdolLandmarkActive",2,2,"","",250,0,"Peculiar Fortunes","Fortunes singulières","Sonderbare Reichtümer","特異な富","기이한 재물","Fortunas Peculiáres","Исключительные ценности","Fortunas peculiares","ทรัพย์สมบัติน่าฉงน","古怪的財寶",2
+770,"UtzaalGoldenIdolLandmarkActive",2,2,"","",250,0,"Peculiar Fortunes","Fortunes singulières","Sonderbare Reichtümer","特異な富","기이한 재물","Tesouros Peculiares","Исключительные ценности","Fortunas peculiares","ทรัพย์สมบัติน่าฉงน","古怪的財寶",2
 771,"UtzaalGoldenIdolLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-772,"AggoratSacrificialHeartLandmarkActive",2,2,"","",250,0,"Blood Sacrifice","Sacrifice de sang","Blutopfer","血の生贄","피의 희생","Sacrifício Sangrento","Кровавое жертвоприношение","Sacrificio de sangre","แท่นสังเวยโลหิต","血犧",2
+772,"AggoratSacrificialHeartLandmarkActive",2,2,"","",250,0,"Blood Sacrifice","Sacrifice de sang","Blutopfer","血の生贄","피의 희생","Sacrifício de Sangue","Кровавое жертвоприношение","Sacrificio de sangre","แท่นสังเวยโลหิต","血犧",2
 773,"AggoratSacrificialHeartLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 774,"UtzaalUltimatumKeyLandmarkActive",2,2,"","",250,0,"Trialmaster's Challenge","Défi du Maître des Épreuves","Herausforderung des Prüfungsmeisters","トライアルマスターの挑戦状","시련의 대가의 도전","Desafio do Mestre das Provações","Испытание Мастера испытаний","Desafío del Maestro de pruebas","การท้าทายของผู้คุมบททดสอบ","試煉大師的挑戰",2
 775,"UtzaalUltimatumKeyLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
@@ -793,9 +793,9 @@
 791,"KethSanctumSacrophagusLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 792,"BurialSpiresCorpsesLandmarkActive",2,2,"","",250,0,"Forgotten Corpses","Cadavres oubliés","Vergessene Leichen","忘れ去られた死体","잊혀진 시신","Cadáveres Esquecidos","Забытые трупы","Cadáveres olvidados","ศพที่ถูกลืม","被遺忘的屍體",2
 793,"BurialSpiresCorpsesLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-794,"MudBurrowsEggLandmarkActive",2,2,"","",250,0,"Hatchery","Couvoir","Brutplatz","孵化場","부화장","Incubadora","Кладка","Criadero","รังฟักไข่","孵化場",2
+794,"MudBurrowsEggLandmarkActive",2,2,"","",250,0,"Hatchery","Couvoir","Brutplatz","孵化場","부화장","Criadouro","Кладка","Criadero","รังฟักไข่","孵化場",2
 795,"MudBurrowsEggLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-796,"GrimTangleBossActive",2,2,"","",250,0,"Den of the Druid","Antre du Druide","Höhle des Druiden","ドルイドのアジト","드루이드의 소굴","Covil do Druida","Берлога друида","Guarida del druida","ถ้ำของดรูอิด","德魯伊巢穴",2
+796,"GrimTangleBossActive",2,2,"","",250,0,"Den of the Druid","Antre du Druide","Höhle des Druiden","ドルイドのアジト","드루이드의 소굴","Antro do Druida","Берлога друида","Guarida del druida","ถ้ำของดรูอิด","德魯伊巢穴",2
 797,"GrimTangleBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 798,"GraveyardBossActive",2,2,"","",250,0,"Memorial of the Lost","Monument des Disparus","Gedenkstätte der Verlorenen","失われし者の記念碑","잃어버린 자의 기념비","Memorial dos Esquecidos","Памятник заблудших","Monumento de los perdidos","เครื่องระลึกผู้สาบสูญ","失落者的紀念碑",2
 799,"GraveyardBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
@@ -809,7 +809,7 @@
 807,"TombWraithLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 808,"FarmlandsUnasHutLandmarkActive",2,2,"","",250,0,"Una's Home","Maison d'Una","Unas Zuhause","ウーナの家","우나의 집","Lar de Una","Дом Уны","Casa de Una","บ้านของอูน่า","烏娜的家",2
 809,"FarmlandsUnasHutLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-810,"UltimatumVaalSoulCoreGround",2,2,"","",250,0,"Vaal Soul Core","Noyau d'âme vaal","Vaal-Seelenkern","ヴァールソウルコア","바알 영혼 핵","Núcleo D'alma Vaal","Ядро душ ваал","Núcleo de alma vaal","แกนวิญญาณวาล์","瓦爾靈魂核心",2
+810,"UltimatumVaalSoulCoreGround",2,2,"","",250,0,"Vaal Soul Core","Noyau d'âme vaal","Vaal-Seelenkern","ヴァールソウルコア","바알 영혼 핵","Núcleo d'Alma Vaal","Ядро душ ваал","Núcleo de alma vaal","แกนวิญญาณวาล์","瓦爾靈魂核心",2
 811,"FlameSeed",2,2,1,"",250,0,"","","","","","","","","","",2
 812,"UltimatumMonsterAlive",2,2,1,"",250,0,"","","","","","","","","","",2
 813,"Strongbox",2,2,"","",250,0,"","","","","","","","","","",2
@@ -820,13 +820,13 @@
 818,"CastawayGoldPileActive",2,2,"","",100000,0,"","","","","","","","","","",2
 819,"CastawayGoldPileInactive",2,2,"","",100000,0,"","","","","","","","","","",2
 820,"GenericUtilityIcon",2,2,1,"",250,0,"","","","","","","","","","",2
-821,"IsleOfKinBossActive",2,2,"","",250,0,"Primal Arena","Arène primitive","Urzeitliche Arena","原始の闘技場","원시 투기장","Arena Primitiva","Первобытная арена","Arena primitiva","ลานประลองปฐมกาล","始祖競技場",2
+821,"IsleOfKinBossActive",2,2,"","",250,0,"Primal Arena","Arène primitive","Urzeitliche Arena","原始の闘技場","원시 투기장","Arena Primal","Первобытная арена","Arena primitiva","ลานประลองปฐมกาล","始祖競技場",2
 822,"IsleOfKinBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
-823,"IsleOfKinRhoaPenLandmarkRareActive",2,2,"","",250,0,"Beast Pen","Enclos de la Bête","Bestiengehege","獣の檻","야수 우리","Jaula da Besta","Звериный загон","Jaula de la bestia","คอกสัตว์ร้าย","獸欄",2
+823,"IsleOfKinRhoaPenLandmarkRareActive",2,2,"","",250,0,"Beast Pen","Enclos de la Bête","Bestiengehege","獣の檻","야수 우리","Jaula da Fera","Звериный загон","Jaula de la bestia","คอกสัตว์ร้าย","獸欄",2
 824,"IsleOfKinRhoaPenLandmarkRareInactive",2,2,"","",250,0,"","","","","","","","","","",2
-825,"IsleOfKinSulphiteSpireLandmarkActive",2,2,"","",250,0,"Voltaxic Spire","Cime voltaxique","Voltaxische Spitze","ボルタキシックスパイア","아황산염 첨탑","Torre Voltáxica","Вольтаксовый шпиль","Torre voltáxica","หินงอกวอลทาซิก","魔痕尖塔",2
+825,"IsleOfKinSulphiteSpireLandmarkActive",2,2,"","",250,0,"Voltaxic Spire","Cime voltaxique","Voltaxische Spitze","ボルタキシックスパイア","아황산염 첨탑","Pináculo Voltáxico","Вольтаксовый шпиль","Torre voltáxica","หินงอกวอลทาซิก","魔痕尖塔",2
 826,"IsleOfKinSulphiteSpireLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-827,"IsleOfKinDelveRoomLandmarkActive",2,2,"","",250,0,"Abandoned Delving Site","Site de fouille abandonné","Verlassene Grabungsstätte","放棄された採掘現場","버려진 탐광 현장","Acampamento de Escavação Abandonado","Заброшенная шахта","Sitio de excavación abandonado","สถานที่ทำเหมืองที่ถูกทิ้งร้าง","受遺棄的挖掘場",2
+827,"IsleOfKinDelveRoomLandmarkActive",2,2,"","",250,0,"Abandoned Delving Site","Site de fouille abandonné","Verlassene Grabungsstätte","放棄された採掘現場","버려진 탐광 현장","Sítio de Escavação Abandonado","Заброшенная шахта","Sitio de excavación abandonado","สถานที่ทำเหมืองที่ถูกทิ้งร้าง","受遺棄的挖掘場",2
 828,"IsleOfKinDelveRoomLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
 829,"Act4TreasureMapRoomLandmarkActive",2,2,"","",250,0,"Smuggler's Stash","Cache de contrebandier","Schmugglerversteck","密輸人のスタッシュ","밀수업자의 보관함","Baú do Contrabandista","Тайник контрабандиста","Alijo del contrabandista","หีบพ่อค้าของเถื่อน","走私犯的藏身處",2
 830,"Act4TreasureMapRoomLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
@@ -834,17 +834,17 @@
 832,"VolcanicWarrensBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 833,"VolcanicWarrensRattlecageLandmarkActive",2,2,"","",250,0,"Volcanic Nest","Nid volcanique","Vulkanisches Nest","火山の巣","화산의 둥지","Ninho Vulcânico","Вулканическое гнездо","Nido volcánico","รังภูเขาไฟ","火山之巢",2
 834,"VolcanicWarrensRattlecageLandmarkInactive",2,2,"","",250,0,"","","","","","","","","","",2
-835,"BossCheckpointActive",2,2,"","",250,0,"Checkpoint","Point de contrôle","Kontrollpunkt","チェックポイント","체크포인트","Marcador","Контрольная точка","Punto de control","เช็คพอยน์","記錄點",2
+835,"BossCheckpointActive",2,2,"","",250,0,"Checkpoint","Point de contrôle","Kontrollpunkt","チェックポイント","체크포인트","Ponto de Controle","Контрольная точка","Punto de control","เช็คพอยน์","記錄點",2
 836,"SpiritActivated",2,2,1,"",250,0,"","","","","","","","","","",2
 837,"FragementedMirror",2,2,1,"",250,0,"","","","","","","","","","",2
 838,"Recombinator",2,2,1,"",250,0,"Recombinator","Recombinateur","Rekombinator","リコンビネーター","재조합기","Recombinador","Рекомбинатор","Recombinador","เครื่องผสมไอเทม","重組裝置",2
 839,"G2_8ForgottenHollowActive",2,2,"","",250,0,"The Forgotten Hollow","Le Gouffre oublié","Die vergessene Höhle","忘却の空洞","잊혀진 동혈","O Vazio Esquecido","Забытая лощина","La hondonada olvidada","โพรงที่ถูกลืม","遺忘之谷",2
 840,"G2_8ForgottenHollowInactive",2,2,"","",250,0,"","","","","","","","","","",2
-841,"G2_10_1FaridunWarCacheActive",2,2,"","",250,0,"Faridun War Cache","Cache de guerre faridun","Faridun-Kriegstruhe","ファリドゥンの戦利品","파리둔 전쟁 은닉함","Espólios de Guerra Faridun","Военный тайник фаридунцев","Alijo de guerra faridun","หีบสงครามฟาริดัน","法里登戰爭密盒",2
+841,"G2_10_1FaridunWarCacheActive",2,2,"","",250,0,"Faridun War Cache","Cache de guerre faridun","Faridun-Kriegstruhe","ファリドゥンの戦利品","파리둔 전쟁 은닉함","Suprimentos de Guerra Faridun","Военный тайник фаридунцев","Alijo de guerra faridun","หีบสงครามฟาริดัน","法里登戰爭密盒",2
 842,"G2_10_1FaridunWarCacheInactive",2,2,"","",250,0,"","","","","","","","","","",2
 843,"G2_7TitanSwordActive",2,2,"","",250,0,"Titan's Sword","Épée du Titan","Schwert des Titanen","タイタンの剣","거신의 검","Espada do Titã","Меч Титана","Espada del titán","ดาบไททัน","泰坦之劍",2
 844,"G2_7TitanSwordInactive",2,2,"","",250,0,"","","","","","","","","","",2
-845,"SolitaryConfinementBossActive",2,2,"","",250,0,"Forsaken Deep","Profondeur abandonnée","Verlassene Tiefe","見捨てられた深部","버림받은 심연","Profundezas Esquecidas","Забытые глубины","Profundidad abandonada","เบื้องลึกที่ถูกทอดทิ้ง","遺忘深淵",2
+845,"SolitaryConfinementBossActive",2,2,"","",250,0,"Forsaken Deep","Profondeur abandonnée","Verlassene Tiefe","見捨てられた深部","버림받은 심연","Profundeza Esquecida","Забытые глубины","Profundidad abandonada","เบื้องลึกที่ถูกทอดทิ้ง","遺忘深淵",2
 846,"SolitaryConfinementBossInactive",2,2,"","",250,0,"","","","","","","","","","",2
 847,"G4_5_2GoddessOfJusticeObjectActive",2,2,"","",250,0,"","","","","","","","","","",2
 848,"G4_5_2GoddessOfJusticeObjectInactive",2,2,"","",250,0,"","","","","","","","","","",2
@@ -932,7 +932,7 @@
 930,"AbyssWellOfSouls",2,2,"","",250,0,"The Well of Souls","Le Puits des âmes","Der Brunnen der Seelen","魂の井戸","영혼의 우물","O Poço das Almas","Колодец душ","El pozo de las almas","บ่อวิญญาณ","靈魂深井",2
 931,"P2_1_TitansHeadAnvilActive",2,2,"","",250,0,"Titan's Head Anvil","Enclume de la Tête de Titan","Titanenkopf-Amboss","タイタンの頭の金床","거신의 머리 모루","Bigorna da Cabeça do Titã","Наковальня из головы Титана","Yunque de cabeza de titán","ทั่งหัวไททัน","泰坦之首鐵砧",2
 932,"P2_1_TitansHeadAnvilInactive",2,2,"","",250,0,"","","","","","","","","","",2
-933,"AtlasAnomalyEzomyte",2,2,1,1,250,0,"Draiocht Hengestone","Pierre de cromlech Draiocht","Draíocht-Henge-Stein","ドリオクトのヘンジストーン","Draiocht Hengestone","Pedra-henge Draiocht","Хендж Дриохт","Megalito de la Draiocht","วงศิลาดรีออกต์","魔幻石陣",2
+933,"AtlasAnomalyEzomyte",2,2,1,1,250,0,"Draiocht Hengestone","Pierre de cromlech Draiocht","Draíocht-Henge-Stein","ドリオクトのヘンジストーン","Draiocht Hengestone","Pedra-henge Draíocht","Хендж Дриохт","Megalito de la Draiocht","วงศิลาดรีออกต์","魔幻石陣",2
 934,"AtlasAnomalyKarui",2,2,1,1,250,0,"Karui Beacon","Balise karuie","Karui-Leuchtfeuer","カルイのビーコン","Karui Beacon","Sinalizador Karui","Маяк каруи","Faro karui","สัญญาณไฟคารุย","卡魯烽塔",2
 935,"AtlasAnomalyMaraketh",2,2,1,1,250,0,"Temporal Tether","Attache temporelle","Temporale Vorrichtung","時空の鎖","시간의 밧줄","Condutor Temporal","Временная привязь","Atadura temporal","ล่ามรั้งเวลา","時間繫繩",2
 936,"AbyssChestActive",3,3,"","",250,0,"","","","","","","","","","",2
@@ -992,3 +992,57 @@
 990,"IncursionAtziriRewardRoomInactive",2,2,"","",250,0,"","","","","","","","","","",2
 991,"IncursionCraft",2,2,1,"",250,0,"Workbench","Établi","Werkbank","作業台","작업대","Bancada","Верстак","Mesa de trabajo","โต๊ะทำงาน","工藝台",2
 992,"IncursionMedallion",2,2,1,"",250,0,"Medallion","Médaillon","Medaillon","メダリオン","메달리온","Medalhão","Медальон","Medallón","เหรียญตรา","聖徽",2
+993,"IncursionEncounterComplete",2,2,"","",250,0,"","","","","","","","","","",2
+994,"BreachHandFaceLeft",3,3,1,"",250,0,"","","","","","","","","","",2
+995,"BreachHandFaceRight",3,3,1,"",250,0,"","","","","","","","","","",2
+996,"BreachHandDownFaceLeft",3,3,1,"",250,0,"","","","","","","","","","",2
+997,"BreachHandDownFaceRight",3,3,1,"",250,0,"","","","","","","","","","",2
+998,"Expedition2RemnantActive",2,2,1,"",250,0,"","","","","","","","","","",2
+999,"Expedition2RemnantDeactivated",2,2,1,"",250,0,"","","","","","","","","","",2
+1000,"DeliriumShardBlueActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1001,"DeliriumShardBlueDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1002,"DeliriumShardRedActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1003,"DeliriumShardRedDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1004,"DeliriumShardTealActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1005,"DeliriumShardTealDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1006,"DeliriumShardPurpleActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1007,"DeliriumShardPurpleDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1008,"DeliriumMirror",2,2,1,"",250,0,"","","","","","","","","","",2
+1009,"LavaChannelActive",2,2,1,"",250,0,"Molten Flow","Molten Flow","Geschmolzener Fluss","マグマの流路","마그마 흐름","Fluxo Derretido","Расплавленный поток","Flujo fundido","หินหลอมหลั่งไหล","熔岩流域",2
+1010,"LavaChannelInactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1011,"ExpeditionCraftingBenchAct1",2,2,1,"",250,0,"Verisium Anvil","Verisium Anvil","Verisium-Amboss","ヴェリシウムの金床","베리시움 모루","Bigorna de Verísio","Веризиевая наковальня","Yunque de verisium","ทั่งเวรีเซียม","維里西姆鐵砧",2
+1012,"ExpeditionCraftingBenchAct2",2,2,1,"",250,0,"Runesmithing Knowledge","Savoir forgerunique","Wissen über das Runenschmieden","ルーンスミスの知識","룬 제작 지식","Conhecimento de Forja de Runas","Знания о руноделии","Conocimiento de forja de runas","ความรู้การสลักอักขระ","符鍛知識",2
+1013,"GenesisTree",3,3,1,"",250,0,"The Genesis Tree","L'Arbre de la genèse","Der Genesisbaum","創生の樹","기원의 나무","A Árvore de Gênese","Дерево зарождения","El árbol del génesis","ต้นมาตุรงค์","創生之樹",2
+1014,"ExpeditionAct3Pedestal",2,2,1,"",250,0,"Runesmithing Knowledge","Savoir forgerunique","Wissen über das Runenschmieden","ルーンスミスの知識","룬 제작 지식","Conhecimento de Forja de Runas","Знания о руноделии","Conocimiento de forja de runas","ความรู้การสลักอักขระ","符鍛知識",2
+1015,"ExpeditionQuestRunestoneAct1_1",2,2,1,"",250,0,"","","","","룬석","","","","","",2
+1016,"ExpeditionQuestRunestoneAct1_2",2,2,1,"",250,0,"","","","","룬석","","","","","",2
+1017,"ExpeditionQuestRunestoneAct1_3",2,2,1,"",250,0,"","","","","룬석","","","","","",2
+1018,"ExpeditionQuestRunestoneAct2_1",2,2,1,"",250,0,"Runestone","Pierre runique","Runenstein","ルーンストーン","룬석","Pedra Rúnica","Рунный камень","Piedra rúnica","ศิลาอักขระ","符文石",2
+1019,"ExpeditionQuestRunestoneAct2_2",2,2,1,"",250,0,"Runestone","Pierre runique","Runenstein","ルーンストーン","룬석","Pedra Rúnica","Рунный камень","Piedra rúnica","ศิลาอักขระ","符文石",2
+1020,"ExpeditionQuestRunestoneAct2_3",2,2,1,"",250,0,"Runestone","Pierre runique","Runenstein","ルーンストーン","룬석","Pedra Rúnica","Рунный камень","Piedra rúnica","ศิลาอักขระ","符文石",2
+1021,"ExpeditionQuestRunestoneAct3_1",2,2,1,"",250,0,"Runestone","Pierre runique","Runenstein","ルーンストーン","룬석","Pedra Rúnica","Рунный камень","Piedra rúnica","ศิลาอักขระ","符文石",2
+1022,"ExpeditionQuestRunestoneAct3_2",2,2,1,"",250,0,"Runestone","Pierre runique","Runenstein","ルーンストーン","룬석","Pedra Rúnica","Рунный камень","Piedra rúnica","ศิลาอักขระ","符文石",2
+1023,"ExpeditionQuestRunestoneAct3_3",2,2,1,"",250,0,"Runestone","Pierre runique","Runenstein","ルーンストーン","룬석","Pedra Rúnica","Рунный камень","Piedra rúnica","ศิลาอักขระ","符文石",2
+1024,"ExpeditionStarfallKnightVerisiumGeodeActive",2,2,1,"",250,0,"Verisium Geode","Verisium Geode","Verisium-Geode","ヴェリシウムジオード","베리시움 정동석","Geodo de Verísio","Веризиевая жеода","Geoda de verisium","หินโพรงเวรีเซียม","維里西姆晶核",2
+1025,"ExpeditionStarfallKnightVerisiumGeodeInactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1026,"DeliriumDecanterOfMadness",2,2,1,"",250,0,"Decanter Of Madness","Décanteur de Folie","Karaffe des Wahnsinns","狂気のデカンター","광기의 디캔터","Decantador da Loucura","Decanter Of Madness","Decantador de locura","คนโทบ้าคลั่ง","癲狂之瓶",2
+1027,"DeliriumShardOrangeActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1028,"DeliriumShardOrangeDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1029,"IncursionBiomeRoomWaterActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1030,"IncursionBiomeRoomWaterDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1031,"IncursionBiomeRoomSwampActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1032,"IncursionBiomeRoomSwampDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1033,"IncursionBiomeRoomMountainActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1034,"IncursionBiomeRoomMountainDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1035,"IncursionBiomeRoomGrassActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1036,"IncursionBiomeRoomGrassDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1037,"IncursionBiomeRoomForestActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1038,"IncursionBiomeRoomForestDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1039,"IncursionBiomeRoomDesertActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1040,"IncursionBiomeRoomDesertDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1041,"PLACEHOLDERNAME",2,2,1,"",250,0,"","","","","","","","","","",2
+1042,"PLACEHOLDERNAME2",2,2,1,"",250,0,"","","","","","","","","","",2
+1043,"GrandMirrorActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1044,"GrandMirrorDeactive",2,2,1,"",250,0,"","","","","","","","","","",2
+1045,"WildBreachBossActive",2,2,1,"",250,0,"","","","","","","","","","",2
+1046,"WildBreachBossInactive",2,2,1,"",250,0,"","","","","","","","","","",2

@@ -6,4 +6,10 @@ type EndgameMapPins {
   ActivePin: MiscAnimated
   FailedPin: MiscAnimated
   CompletePin: MiscAnimated
+  HighlightEPK: string @file(ext: ".epk")
+  RevealAnimation: MiscAnimated
+  RitualHighlightEPK: string @file(ext: ".epk")
+  RitualSelectedEPK: string @file(ext: ".epk")
+  DeliriumHighlightEPK: string @file(ext: ".epk")
+  AudioAnimation: MiscAnimated
 }

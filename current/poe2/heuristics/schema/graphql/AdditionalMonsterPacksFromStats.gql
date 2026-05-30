@@ -9,4 +9,5 @@ type AdditionalMonsterPacksFromStats {
   StatsValues: [i32]
   _: i32
   PackSizeStatsKey: Stats
+  Rarity: Rarity
 }

@@ -9,4 +9,6 @@ type SkillMorphDisplay {
   _: [f32]
   _: bool
   _: bool
+  ActiveSkill: ActiveSkills
+  _: bool
 }

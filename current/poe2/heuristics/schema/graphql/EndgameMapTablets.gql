@@ -6,6 +6,5 @@ type EndgameMapTablets {
   TowerStat: Stats
   MapObjective: EndgameMapObjectives
   MapContent: EndgameMapContent
-  QuantityStat: [Stats]
-  QuantityStatValues: [i32]
+  League: CoreLeagues
 }

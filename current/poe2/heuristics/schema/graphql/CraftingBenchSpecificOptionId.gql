@@ -1,5 +1,1 @@
-# Added 4.1
-type CraftingBenchSpecificOptionId {
-  _: string @unique
-  _: rid
-}
+enum CraftingBenchSpecificOptionId @indexing(first: 0) { _ }

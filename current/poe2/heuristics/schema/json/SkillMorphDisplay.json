@@ -120,5 +120,32 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "name": "ActiveSkill",
+    "offset": 90,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ActiveSkills"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 106,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   }
 ]

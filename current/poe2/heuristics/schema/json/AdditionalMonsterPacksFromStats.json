@@ -133,5 +133,20 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "Rarity",
+    "offset": 108,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Rarity"
+      }
+    },
+    "size": 16
   }
 ]

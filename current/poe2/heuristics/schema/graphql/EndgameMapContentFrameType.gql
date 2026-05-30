@@ -1,0 +1,4 @@
+type EndgameMapContentFrameType {
+  Id: string @unique
+  Frame: string
+}

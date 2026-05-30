@@ -1,1 +1,6 @@
-enum MapInhabitants @indexing(first: 0) { _ }
+# Added 4.1
+type MapInhabitants {
+  StatsKey: Stats
+  MonsterPacksKeys: [MonsterPacks]
+  BossMonsters: [MonsterVarieties]
+}

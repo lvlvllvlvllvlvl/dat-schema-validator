@@ -1,0 +1,12 @@
+type ItemConditions {
+  Id: string @unique
+  ItemClasses: [ItemClasses]
+  _: i32
+  _: i32
+  _: bool
+  MinLevel: i32
+  MaxLevel: i32
+  BaseItemTypes: [BaseItemTypes]
+  Tags: Tags
+  Words: Words
+}

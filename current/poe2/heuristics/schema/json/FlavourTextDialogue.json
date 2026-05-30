@@ -1,0 +1,32 @@
+[
+  {
+    "name": "FlavourText",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "FlavourText"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "NPCDialogue",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  }
+]

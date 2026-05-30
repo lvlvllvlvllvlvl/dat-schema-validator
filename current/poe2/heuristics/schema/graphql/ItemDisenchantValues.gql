@@ -1,6 +1,6 @@
 # Added 4.1
 type ItemDisenchantValues {
   Rarity: Rarity @unique
-  BaseItemType: BaseItemTypes @unique
+  BaseItemType: BaseItemTypes
   BaseValue: i32
 }

@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "BuffDefinition",
     "offset": 8,
     "unknownArray": false,
     "unique": true,
@@ -20,7 +20,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "BuffDefinitions"
       }
     },
     "size": 16
@@ -53,7 +54,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ActionType",
     "offset": 41,
     "unknownArray": false,
     "unique": true,
@@ -61,7 +62,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ActionTypes"
       }
     },
     "size": 16

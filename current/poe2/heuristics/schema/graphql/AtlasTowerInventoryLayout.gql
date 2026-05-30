@@ -1,10 +1,9 @@
 # Added 4.2
 type AtlasTowerInventoryLayout {
-  Slot: i32 @unique
-  RequiredModifiers: i32 @unique
-  BlockedIcon: string @unique
+  Slot: i32
+  RequiredModifiers: i32
   _: i32
-  _: i32 @unique
   _: i32
-  UnblockedIcon: string @unique
+  _: [rid]
+  _: bool
 }

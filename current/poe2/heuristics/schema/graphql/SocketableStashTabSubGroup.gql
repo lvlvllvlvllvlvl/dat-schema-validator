@@ -1,0 +1,7 @@
+type SocketableStashTabSubGroup {
+  Id: string @unique
+  Name: string @localized
+  Icon: string
+  PageArt: string
+  FirstPage: bool
+}

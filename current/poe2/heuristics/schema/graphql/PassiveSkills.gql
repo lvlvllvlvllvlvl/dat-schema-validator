@@ -57,4 +57,18 @@ type PassiveSkills {
   VisibleForAscendancy: Ascendancy
   _: bool
   NodeFrameArt: PassiveSkillTreeNodeFrameArt
+  _: bool
+  _: i32
+  _: bool
+  BrequelTree: BrequelPassiveSubTrees
+  _: i32
+  _: bool
+  StatValue6: i32
+  StatValue7: i32
+  _: i32
+  _: i32
+  _: rid
+  _: i32
+  QuestFlag: QuestFlags
+  Requirement: ClientStrings
 }

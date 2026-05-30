@@ -1,5 +1,14 @@
 # Added 4.2
 type ExpeditionStashTabLayout {
   Id: string @unique
-  BaseItemType: BaseItemTypes @unique
+  BaseItemType: BaseItemTypes
+  XOffset: i32
+  YOffset: i32
+  Tab: i32
+  HideIfEmpty: bool
+  FirstSlotIndex: i32
+  SlotSize: i32
+  Width: i32
+  Height: i32
+  SlotStyle: StashTabInventorySlotStyle
 }

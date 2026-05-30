@@ -1,10 +1,10 @@
 # Added 4.1
 type NPCVendorDialogueConditions {
   Id: string @unique
-  _: rid
-  _: rid
+  Rarity: Rarity
+  ItemClass: ItemClasses
   _: i32
   _: rid
   _: i32
-  _: rid
+  Words: Words
 }

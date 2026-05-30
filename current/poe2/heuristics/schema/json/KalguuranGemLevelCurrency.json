@@ -1,0 +1,32 @@
+[
+  {
+    "name": "BaseItemType",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "GemLevel",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  }
+]

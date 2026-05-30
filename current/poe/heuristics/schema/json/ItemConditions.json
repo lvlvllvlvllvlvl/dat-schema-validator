@@ -12,17 +12,19 @@
     "size": 8
   },
   {
+    "name": "ItemClasses",
+    "offset": 8,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemClasses"
       }
     },
-    "offset": 8,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",

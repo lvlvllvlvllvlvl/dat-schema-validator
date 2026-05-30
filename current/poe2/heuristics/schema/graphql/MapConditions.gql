@@ -1,0 +1,13 @@
+type MapConditions {
+  Id: string @unique
+  Area: WorldAreas
+  RequiredStats: [Stats]
+  IgnoreStats: [Stats]
+  RequiredTag: [Tags]
+  IgnoreTag: [Tags]
+  MinLevel: i32
+  MaxLevel: i32
+  TagStats: [Stats]
+  Tags: [Tags]
+  _: i32
+}

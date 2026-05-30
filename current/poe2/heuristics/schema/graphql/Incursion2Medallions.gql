@@ -9,4 +9,5 @@ type Incursion2Medallions {
   Description: string @localized
   SoundEffect: SoundEffects
   _: i32
+  Stat: Stats
 }

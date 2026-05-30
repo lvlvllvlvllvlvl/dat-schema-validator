@@ -39,4 +39,5 @@ type ActiveSkills {
   StatDescription: string
   WeaponRequirements: ActiveSkillWeaponRequirement
   _: i32
+  _: string
 }

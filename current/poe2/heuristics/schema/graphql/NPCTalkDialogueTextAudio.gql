@@ -15,8 +15,8 @@ type NPCTalkDialogueTextAudio {
   QuestFlag1: [QuestFlags]
   QuestFlag2: [QuestFlags]
   QuestFlag3: [QuestFlags]
-  QuestFlag4: [QuestFlags]
-  QuestFlag5: [QuestFlags]
+  QuestFlag4: [i32]
+  QuestFlag5: [i32]
   Video: NPCTalkVideo
   Script: string
 }

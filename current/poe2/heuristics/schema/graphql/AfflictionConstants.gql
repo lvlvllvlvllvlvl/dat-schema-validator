@@ -1,0 +1,5 @@
+type AfflictionConstants {
+  Id: string @unique
+  Value: i32
+  _: rid
+}

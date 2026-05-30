@@ -25,4 +25,8 @@ type TormentSpirits {
   _: i32
   _: i32
   _: [i32]
+  MapChanceStat: Stats
+  MapEnabledStat: [Stats]
+  ChestMod: Mods
+  MiscBeam: MiscBeams
 }

@@ -90,31 +90,16 @@
     "size": 16
   },
   {
-    "name": "QuantityStat",
+    "name": "League",
     "offset": 96,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
-      "array": true,
+      "array": false,
       "key": {
         "foreign": true,
-        "table": "Stats"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "QuantityStatValues",
-    "offset": 112,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+        "table": "CoreLeagues"
       }
     },
     "size": 16

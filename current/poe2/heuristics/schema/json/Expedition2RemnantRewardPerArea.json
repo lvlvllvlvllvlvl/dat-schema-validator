@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Area",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "WorldAreas"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "Reward",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "RewardCount",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "QuestFlag",
+    "offset": 36,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "QuestFlags"
+      }
+    },
+    "size": 16
+  }
+]

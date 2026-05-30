@@ -1,1 +1,7 @@
-enum AfflictionStartDialogue @indexing(first: 0) { _ }
+# Added 4.1
+type AfflictionStartDialogue {
+  WorldAreasKey: WorldAreas
+  NPCAudio: [NPCTextAudio]
+  _: [i32]
+  _: i32
+}

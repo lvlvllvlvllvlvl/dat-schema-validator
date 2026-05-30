@@ -8,4 +8,6 @@ type Inventories {
   _: i32
   _: bool
   _: i32
+  _: rid
+  EffectPack: [MiscEffectPacks]
 }

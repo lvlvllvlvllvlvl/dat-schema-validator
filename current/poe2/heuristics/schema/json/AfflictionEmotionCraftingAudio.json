@@ -1,0 +1,47 @@
+[
+  {
+    "name": "BaseItemType",
+    "offset": 0,
+    "unknownArray": false,
+    "unique": true,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "BaseItemTypes"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "NPCAudio1",
+    "offset": 16,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "NPCAudio2",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "NPCTextAudio"
+      }
+    },
+    "size": 16
+  }
+]

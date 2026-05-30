@@ -61,5 +61,35 @@
     },
     "size": 8,
     "localized": true
+  },
+  {
+    "name": "ItemReference",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "KeywordPopupItemReference"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "ModReference",
+    "offset": 56,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "KeywordPopupModReference"
+      }
+    },
+    "size": 16
   }
 ]

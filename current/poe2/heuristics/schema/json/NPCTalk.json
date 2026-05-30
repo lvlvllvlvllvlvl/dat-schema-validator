@@ -100,16 +100,16 @@
     "size": 8
   },
   {
-    "name": "TextAudio",
+    "name": "QuestFlags1",
     "offset": 84,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
-      "array": false,
+      "array": true,
       "key": {
         "foreign": true,
-        "table": "NPCTextAudio"
+        "table": "QuestFlags"
       }
     },
     "size": 16
@@ -145,7 +145,7 @@
     "size": 16
   },
   {
-    "name": "QuestFlag",
+    "name": "QuestFlag2",
     "offset": 132,
     "unknownArray": false,
     "unique": false,
@@ -277,17 +277,17 @@
     "unique": false,
     "interval": false,
     "type": {
-      "array": false,
+      "array": true,
       "integer": {
         "unsigned": false,
         "size": 4
       }
     },
-    "size": 4
+    "size": 16
   },
   {
     "name": "",
-    "offset": 230,
+    "offset": 242,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -299,7 +299,7 @@
   },
   {
     "name": "BaseItemTypes",
-    "offset": 231,
+    "offset": 243,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -314,7 +314,7 @@
   },
   {
     "name": "",
-    "offset": 247,
+    "offset": 259,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -329,7 +329,7 @@
   },
   {
     "name": "",
-    "offset": 263,
+    "offset": 275,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -341,7 +341,7 @@
   },
   {
     "name": "DialogueOption2",
-    "offset": 264,
+    "offset": 276,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -353,7 +353,7 @@
   },
   {
     "name": "ConsoleQuickAction",
-    "offset": 272,
+    "offset": 284,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -368,7 +368,7 @@
   },
   {
     "name": "Music1",
-    "offset": 288,
+    "offset": 300,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -383,7 +383,7 @@
   },
   {
     "name": "",
-    "offset": 304,
+    "offset": 316,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -397,21 +397,22 @@
     "size": 4
   },
   {
+    "name": "",
+    "offset": 320,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
         "foreign": true
       }
     },
-    "offset": 308,
-    "size": 16,
-    "noData": true,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
     "name": "",
-    "offset": 324,
+    "offset": 336,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -426,7 +427,7 @@
   },
   {
     "name": "Music2",
-    "offset": 328,
+    "offset": 340,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -441,7 +442,7 @@
   },
   {
     "name": "",
-    "offset": 344,
+    "offset": 356,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -455,8 +456,8 @@
     "size": 4
   },
   {
-    "name": "QuestFlag2",
-    "offset": 348,
+    "name": "QuestFlag3",
+    "offset": 360,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -471,7 +472,7 @@
   },
   {
     "name": "",
-    "offset": 364,
+    "offset": 376,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -483,7 +484,7 @@
   },
   {
     "name": "",
-    "offset": 365,
+    "offset": 377,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -498,7 +499,7 @@
   },
   {
     "name": "",
-    "offset": 369,
+    "offset": 381,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -512,7 +513,7 @@
   },
   {
     "name": "TalkDialogue",
-    "offset": 377,
+    "offset": 389,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -524,5 +525,44 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "",
+    "offset": 405,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
+  },
+  {
+    "name": "Ascendancy",
+    "offset": 406,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Ascendancy"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "",
+    "offset": 422,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "size": 1
   }
 ]

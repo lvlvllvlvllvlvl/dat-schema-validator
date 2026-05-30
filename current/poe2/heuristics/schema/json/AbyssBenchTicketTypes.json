@@ -97,8 +97,7 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
+      "decimal": {
         "size": 4
       }
     },
@@ -115,5 +114,20 @@
       "boolean": true
     },
     "size": 1
+  },
+  {
+    "name": "Tag",
+    "offset": 53,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Tags"
+      }
+    },
+    "size": 16
   }
 ]

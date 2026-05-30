@@ -27,7 +27,7 @@
     "size": 16
   },
   {
-    "name": "DroneType",
+    "name": "",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -35,8 +35,7 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "DroneTypes"
+        "foreign": true
       }
     },
     "size": 16

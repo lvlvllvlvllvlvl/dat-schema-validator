@@ -1,0 +1,7 @@
+type Expedition2MonsterFactions {
+  Id: string @unique
+  MonsterPack: [MonsterPacks]
+  _: i32
+  _: i32
+  _: i32
+}

@@ -1,4 +1,7 @@
-"rownum","Id","Content"
-0,"All","[0,1,3,4,5,2,6]"
-1,"None",[]
-2,"NoExtraTerrainFeatures","[0,1,3,4,5,6]"
+"rownum","Id","Content","bool_24"
+0,"All",[],""
+1,"DisallowAll",[],1
+2,"MovingPlatform","[2,6,8]",1
+3,"IrradiatedOnly",[5],""
+4,"IrradiatedAndPowerfulBossOnly","[5,0]",""
+5,"QuestAreaOnly",[9],""

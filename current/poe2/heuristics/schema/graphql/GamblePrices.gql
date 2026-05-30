@@ -1,9 +1,0 @@
-# Added 4.1
-type GamblePrices {
-  BaseItemType: BaseItemTypes @unique
-  BaseCost: i32
-  BaseCostPerlevel: f32
-  CostExponentPerLevel: f32
-  NewTab: bool
-  TabName: ClientStrings
-}

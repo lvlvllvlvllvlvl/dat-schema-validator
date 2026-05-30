@@ -20,4 +20,8 @@ type CoreLeagues {
   _: bool
   _: i32
   MapObjective: EndgameMapObjectives
+  _: i32
+  MapContent: EndgameMapContent
+  _: i32
+  AtlasStat: Stats
 }

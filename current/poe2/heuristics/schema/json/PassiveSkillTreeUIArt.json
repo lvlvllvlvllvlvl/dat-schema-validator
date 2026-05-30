@@ -196,5 +196,20 @@
       }
     },
     "size": 16
+  },
+  {
+    "name": "MultipleChoiceFrame",
+    "offset": 161,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
+      }
+    },
+    "size": 16
   }
 ]

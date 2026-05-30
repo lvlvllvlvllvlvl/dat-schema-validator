@@ -22,7 +22,6 @@ type CurrencyItems @tags(list: ["item:def", "item:recipe"]) {
   ChangedForHardmode: bool
   DescriptionHardmode: string @localized
   IsGold: bool
-  UsageHint: string @localized
   _: bool
   _: bool
   _: i32

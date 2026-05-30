@@ -221,9 +221,9 @@
     "interval": false,
     "type": {
       "array": true,
-      "key": {
-        "foreign": true,
-        "table": "QuestFlags"
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "size": 16
@@ -236,9 +236,9 @@
     "interval": false,
     "type": {
       "array": true,
-      "key": {
-        "foreign": true,
-        "table": "QuestFlags"
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "size": 16
