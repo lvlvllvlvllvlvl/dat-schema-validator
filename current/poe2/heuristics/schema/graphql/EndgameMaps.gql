@@ -1,7 +1,7 @@
 # Added 4.1
 type EndgameMaps {
   WorldArea: WorldAreas @unique
-  _: [rid]
+  Environment: [Environments]
   FlavourText: string @localized
   _: i32
   _: [i32]
@@ -23,7 +23,7 @@ type EndgameMaps {
   _: f32
   _: bool
   _: bool
-  _: [rid]
+  MapContent: [EndgameMapContent]
   _: bool
   _: string @localized
   _: f32

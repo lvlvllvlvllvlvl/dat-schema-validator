@@ -10,8 +10,8 @@ type EndgameMapBiomes {
   _: f32
   _: i32
   Name: string @localized
-  _: rid
   WorldArea: WorldAreas
+  BossWorldArea: WorldAreas
   _: [i32]
   AreaTag: Tags
   MonsterTag: Tags

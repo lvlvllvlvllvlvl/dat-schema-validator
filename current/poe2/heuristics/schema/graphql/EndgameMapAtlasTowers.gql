@@ -1,9 +1,9 @@
 # Added 4.5
 type EndgameMapAtlasTowers {
-  _: rid
+  RevealType: EndgameMapRevealTypes
   _: i32
-  _: [rid]
-  _: rid
-  _: [rid]
-  _: [rid]
+  AtlasNodes: [EndgameMapAtlas]
+  SessionQuestFlag: SessionQuestFlags
+  TowerAtlas: [EndgameMapAtlas]
+  FortressAtlas: [EndgameMapAtlas]
 }

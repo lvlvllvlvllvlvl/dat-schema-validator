@@ -2,6 +2,6 @@
 type EndgameMapContentWeightings {
   MapContent: EndgameMapContent
   _: i32
-  _: [rid]
-  _: [i32]
+  MapBiome: [EndgameMapBiomes]
+  Weighting: [i32]
 }

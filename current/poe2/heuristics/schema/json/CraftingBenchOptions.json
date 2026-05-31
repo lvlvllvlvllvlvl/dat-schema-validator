@@ -19,23 +19,22 @@
     "interval": false,
     "type": {
       "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "type": {
+      "array": true,
       "key": {
         "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 24,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "offset": 16,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
     "name": "",
@@ -50,7 +49,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "SortCategory",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -58,7 +57,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "CraftingBenchSortCategories"
       }
     },
     "size": 16

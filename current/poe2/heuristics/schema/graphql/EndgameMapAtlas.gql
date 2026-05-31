@@ -1,32 +1,32 @@
 # Added 4.5
 type EndgameMapAtlas {
-  _: PassiveSkills
-  _: [EndgameMaps]
+  Passives: PassiveSkills
+  Map: [EndgameMaps]
   _: i32
-  _: [rid]
+  Biome: [EndgameMapBiomes]
   _: i32
   _: rid
   Stats: [Stats]
   StatValues: [i32]
-  _: rid
+  MapPin: EndgameMapPins
   _: i32
-  _: rid
+  BlockedMessage: ClientStrings2
   _: bool
   _: bool
   _: bool
-  _: rid
+  SubTree: AtlasPassiveSkillSubTrees
   _: i32
   _: i32
-  _: rid
+  MapObjective: EndgameMapObjectives
   _: i32
   _: EndgameMapAtlas
-  _: rid
-  _: rid
-  _: rid
-  _: rid
+  BiomeGroundType: EndgameMapBiomeGroundTypes
+  MapDecoration1: EndgameMapDecorations
+  MapDecoration2: EndgameMapDecorations
+  Quest: Quest
   _: i32
   _: i32
   _: bool
   _: bool
-  _: rid
+  ClientString: ClientStrings2
 }

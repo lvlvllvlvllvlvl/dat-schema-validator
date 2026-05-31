@@ -138,7 +138,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "WorldArea",
     "offset": 48,
     "unknownArray": false,
     "unique": false,
@@ -146,13 +146,14 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreas"
       }
     },
     "size": 16
   },
   {
-    "name": "WorldArea",
+    "name": "BossWorldArea",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
