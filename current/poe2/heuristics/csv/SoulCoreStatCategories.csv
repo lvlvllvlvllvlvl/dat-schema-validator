@@ -1,8 +1,8 @@
 "rownum","Id","TargetItemClasses","Display","Display (French)","Display (German)","Display (Japanese)","Display (Korean)","Display (Portuguese)","Display (Russian)","Display (Spanish)","Display (Thai)","Display (Traditional Chinese)","i32_32"
 0,"All",[],"All Equipment","Équipement (Tous)","Alle Ausrüstungsgegenstände","全ての装備品","모든 장비","Todos os Equipamentos","Всё снаряжение","Todo el equipamiento","ไอเทมสวมใส่ทั้งหมด","所有裝備",8
 1,"Martial Weapon",[],"[MartialWeapon|Martial Weapon]","[MartialWeapon|Arme martiale]","[MartialWeapon|Kampfwaffe]","[MartialWeapon|マーシャル武器]","[MartialWeapon|무도 무기]","[MartialWeapon|Arma Marcial]","[MartialWeapon|Боевое оружие]","[MartialWeapon|Arma marcial]","[MartialWeapon|อาวุธจู่โจม]","[MartialWeapon|軍用武器]",0
-2,"Caster Weapon","[8,14,32]","[CasterWeapon|Caster Weapon]","[CasterWeapon|Arme de Lanceur de sorts]","[CasterWeapon|Zaubererwaffe]","[CasterWeapon|キャスター武器]","[CasterWeapon|시전자 무기]","[CasterWeapon|Arma de Conjurador]","Жезл или посох","[CasterWeapon|Arma de lanzador de hechizos]","[CasterWeapon|อาวุธนักเวท]","[CasterWeapon|法術武器]",8
-3,"Wand or Staff","[8,14]","Wand or Staff","Baguette ou Bâton","Zauberstab oder Stab","ワンドまたはスタッフ","마법봉 또는 지팡이","Varinha ou Cajado","Wand or Staff","Varita o báculo","ไม้กายสิทธิ์หรือไม้พลอง","法杖或長杖",8
+2,"Caster Weapon","[8,14,32]","[CasterWeapon|Caster Weapon]","[CasterWeapon|Arme de Lanceur de sorts]","[CasterWeapon|Zaubererwaffe]","[CasterWeapon|キャスター武器]","[CasterWeapon|시전자 무기]","[CasterWeapon|Arma de Conjurador]","[CasterWeapon|Чародейское оружие]","[CasterWeapon|Arma de lanzador de hechizos]","[CasterWeapon|อาวุธนักเวท]","[CasterWeapon|法術武器]",8
+3,"Wand or Staff","[8,14]","Wand or Staff","Baguette ou Bâton","Zauberstab oder Stab","ワンドまたはスタッフ","마법봉 또는 지팡이","Varinha ou Cajado","Жезл или посох","Varita o báculo","ไม้กายสิทธิ์หรือไม้พลอง","法杖或長杖",8
 4,"Armour",[],"Armour","Pièce d'armure","Rüstung","防具","방어구","Armaduras","Доспехи","Armadura","เกราะ","護甲",5
 5,"Body Armour",[24],"","","","","","","","","","",8
 6,"Boots",[23],"","","","","","","","","","",8
@@ -11,9 +11,9 @@
 9,"Gloves",[22],"","","","","","","","","","",8
 10,"Helmet",[25],"","","","","","","","","","",8
 11,"Sceptre",[32],"","","","","","","","","","",8
-12,"Shield",[26],"Shields","Boucliers","Schilde","盾","방패","Escudos","Shields","Escudos","โล่","盾牌",8
+12,"Shield",[26],"Shields","Boucliers","Schilde","盾","방패","Escudos","Щиты","Escudos","โล่","盾牌",8
 13,"Buckler",[93],"","","","","","","","","","",8
-14,"Shield or Buckler","[26,93]","Shields and Bucklers","Boucliers et Bocles","Schilde und Faustschilde","盾またはバックラー","방패와 버클러","Broquéis e Escudos","Shields and Bucklers","Escudos y broqueles","โล่และบัคเลอร์","盾牌和輕盾",8
+14,"Shield or Buckler","[26,93]","Shields and Bucklers","Boucliers et Bocles","Schilde und Faustschilde","盾またはバックラー","방패와 버클러","Broquéis e Escudos","Щиты и баклеры","Escudos y broqueles","โล่และบัคเลอร์","盾牌和輕盾",8
 15,"Two Hand Mace",[17],"","","","","","","","","","",8
 16,"One Hand Mace",[12],"","","","","","","","","","",8
 17,"Crossbow",[79],"","","","","","","","","","",8
@@ -22,10 +22,10 @@
 20,"Wand",[8],"","","","","","","","","","",8
 21,"Staff",[14],"","","","","","","","","","",8
 22,"Talisman",[109],"","","","","","","","","","",8
-23,"Martial Or Caster Weapon","[8,14,32]","Weapon","Arme","Waffe","武器","무기","Arma","[MartialWeapon|Боевое оружие], жезл или посох","Arma","อาวุธ","武器",0
-24,"Martial Weapon Wand or Staff","[8,14]","[MartialWeapon|Martial Weapon], Wand or Staff","[MartialWeapon|Arme martiale], Baguette ou Bâton","[MartialWeapon|Kampfwaffe], Zauberstab oder Stab","[CasterWeapon|キャスター武器]、ワンドまたはスタッフ","[MartialWeapon|무도 무기], 마법봉 또는 지팡이","[MartialWeapon|Arma Marcial], Varinha ou Cajado","[MartialWeapon|Martial Weapon], Wand or Staff","[MartialWeapon|Arma marcial], varita o báculo","[MartialWeapon|อาวุธจู่โจม], ไม้กายสิทธิ์ หรือคทา","[MartialWeapon|軍用武器]、法杖或長杖",0
-25,"Quarterstaff or Spear","[57,78]","Quarterstaff or Spear","Bâton de combat ou Lance","Kampfstab oder Speer","クォータースタッフまたはスピア","육척봉 또는 창","Bastão ou Lança","Quarterstaff or Spear","Bastón o lanza","ไม้พลองวรยุทธ์หรือหอก","細杖或長矛",8
-26,"Two Handed Weapon","[57,17,109,79,13,14]","Two Handed Weapon","Arme à deux mains","Zweihandwaffe","両手武器","양손 무기","Arma de Duas Mãos","Two Handed Weapon","Arma a dos manos","อาวุธสองมือ","雙手武器",8
-27,"Maces or Talisman","[12,17,109]","One Hand Mace, Two Hand Mace or Talisman","Masse à une main, Masse à deux mains ou Talisman","Einhandstreitkolben, Zweihandstreitkolben oder Talisman","片手メイス、両手メイスまたはタリスマン","한손 철퇴, 양손 철퇴 또는 부적","Maça de Uma Mão, Maça de Duas Mãos ou Talismã","One Hand Mace, Two Hand Mace or Talisman","Maza a una mano, maza a dos manos o talismán","กระบองมือเดียว, กระบองสองมือ หรือเครื่องราง","單手錘、雙手錘或魔符",8
-28,"Crossbow Bow or Spear","[78,79,13]","Crossbow, Bow or Spear","Arbalète, Arc ou Lance","Armbrust, Bogen oder Speer","クロスボウ、弓またはスピア","석궁, 활 또는 창","Arco, Besta ou Lança","Crossbow, Bow or Spear","Ballesta, arco o lanza","หน้าไม้, ธนู หรือหอก","十字弓、弓或長矛",8
-29,"One Hand Mace or Quarterstaff","[12,57]","One Hand Mace or Quarterstaff","Masse à une main ou Bâton de combat","Einhandstreitkolben oder Kampfstab","片手メイスまたはクォータースタッフ","한손 철퇴 또는 육척봉","Maça de Uma Mão ou Bastão","One Hand Mace or Quarterstaff","Maza a una mano o bastón","กระบองมือเดียวหรือไม้พลองวรยุทธ์","單手錘或細杖",8
+23,"Martial Or Caster Weapon","[8,14,32]","Weapon","Arme","Waffe","武器","무기","Arma","Оружие","Arma","อาวุธ","武器",0
+24,"Martial Weapon Wand or Staff","[8,14]","[MartialWeapon|Martial Weapon], Wand or Staff","[MartialWeapon|Arme martiale], Baguette ou Bâton","[MartialWeapon|Kampfwaffe], Zauberstab oder Stab","[CasterWeapon|キャスター武器]、ワンドまたはスタッフ","[MartialWeapon|무도 무기], 마법봉 또는 지팡이","[MartialWeapon|Arma Marcial], Varinha ou Cajado","[MartialWeapon|Боевое оружие], жезл или посох","[MartialWeapon|Arma marcial], varita o báculo","[MartialWeapon|อาวุธจู่โจม], ไม้กายสิทธิ์ หรือคทา","[MartialWeapon|軍用武器]、法杖或長杖",0
+25,"Quarterstaff or Spear","[57,78]","Quarterstaff or Spear","Bâton de combat ou Lance","Kampfstab oder Speer","クォータースタッフまたはスピア","육척봉 또는 창","Bastão ou Lança","Боевой посох или копьё","Bastón o lanza","ไม้พลองวรยุทธ์หรือหอก","細杖或長矛",8
+26,"Two Handed Weapon","[57,17,109,79,13,14]","Two Handed Weapon","Arme à deux mains","Zweihandwaffe","両手武器","양손 무기","Arma de Duas Mãos","Двуручное оружие","Arma a dos manos","อาวุธสองมือ","雙手武器",8
+27,"Maces or Talisman","[12,17,109]","One Hand Mace, Two Hand Mace or Talisman","Masse à une main, Masse à deux mains ou Talisman","Einhandstreitkolben, Zweihandstreitkolben oder Talisman","片手メイス、両手メイスまたはタリスマン","한손 철퇴, 양손 철퇴 또는 부적","Maça de Uma Mão, Maça de Duas Mãos ou Talismã","Одноручная булава, двуручная булава или талисман","Maza a una mano, maza a dos manos o talismán","กระบองมือเดียว, กระบองสองมือ หรือเครื่องราง","單手錘、雙手錘或魔符",8
+28,"Crossbow Bow or Spear","[78,79,13]","Crossbow, Bow or Spear","Arbalète, Arc ou Lance","Armbrust, Bogen oder Speer","クロスボウ、弓またはスピア","석궁, 활 또는 창","Arco, Besta ou Lança","Самострел, лук или копьё","Ballesta, arco o lanza","หน้าไม้, ธนู หรือหอก","十字弓、弓或長矛",8
+29,"One Hand Mace or Quarterstaff","[12,57]","One Hand Mace or Quarterstaff","Masse à une main ou Bâton de combat","Einhandstreitkolben oder Kampfstab","片手メイスまたはクォータースタッフ","한손 철퇴 또는 육척봉","Maça de Uma Mão ou Bastão","Одноручная булава или боевой посох","Maza a una mano o bastón","กระบองมือเดียวหรือไม้พลองวรยุทธ์","單手錘或細杖",8

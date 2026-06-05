@@ -1,7 +1,7 @@
 # Added 4.1
 type CraftingBenchOptions @tags(list: ["crafting"]) {
   Id: string @unique
-  _: string
+  _: string @localized
   _: [_] # All rows empty
   _: string
   SortCategory: CraftingBenchSortCategories

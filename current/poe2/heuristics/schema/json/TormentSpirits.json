@@ -431,5 +431,40 @@
       }
     },
     "size": 16
+  },
+  {
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "offset": 368,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 376,
+    "size": 4,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 380,
+    "size": 4,
+    "noData": true,
+    "unique": false
   }
 ]

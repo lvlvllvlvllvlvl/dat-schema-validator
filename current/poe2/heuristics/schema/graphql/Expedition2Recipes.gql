@@ -2,7 +2,7 @@
 type Expedition2Recipes {
   Id: string @unique
   Runes: [Expedition2Runes]
-  Description: string
+  Description: string @localized
   RuneCountRequired: i32
   MinLevelReq: i32
   MaxLevelReq: i32

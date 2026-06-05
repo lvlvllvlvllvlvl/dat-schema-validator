@@ -29,4 +29,7 @@ type TormentSpirits {
   MapEnabledStat: [Stats]
   ChestMod: Mods
   MiscBeam: MiscBeams
+  _: string
+  _: i32 # All rows empty
+  _: i32 # All rows empty
 }

@@ -1,0 +1,15 @@
+type abyssstashtablayout {
+  _: string @unique
+  _: rid @unique
+  _: i32
+  _: i32
+  _: rid
+  _: i32 # All rows empty
+  _: bool
+  _: i32
+  _: i32
+  _: bool
+  _: i32
+  _: u16 # All rows empty
+  _: bool
+}
