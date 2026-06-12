@@ -1,18 +1,18 @@
 "rownum","Id","Animation","EffectPack","Stat","MiscObject","string_72","Script","string_88","SoundEffect"
-0,"MTXBlackStarRing",6851,"",15272,"","","","",1
-1,"MTXFieryLevelUp",6813,"",15181,"","","","",""
-2,"MTXDeshretsBlessingLevelUp","",871,19847,"","","","",""
-3,"MTXValkyrieWingsLevelUp","",961,21235,"","","","",1
-4,"MTXFlyingParadeTwilightLevelUp","","",21627,"","","Delay( 1.0, { DoRandom(\r\n\t\t\t{\r\n\t\t\t\tlocal parade = PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/TwilightOrderHarpy1.ao' );\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tlocal parade = PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/TwilightOrderHarpy2.ao' );\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tlocal parade = PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/TwilightOrderHarpy3.ao' );\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tlocal parade = PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/TwilightOrderHarpy4.ao' );\r\n\t\t\t} );\r\n} );\t\t\t\r\nPlayEffectAttached( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/fx/ao/fireworks.ao' );","",""
-5,"MTXBloodyLevelUp",9856,"",23243,"","","AddEffectPack( 'MicrotransactionBloodyLevelup' );","",""
-6,"MTXGildedLevelUp",9857,"",23244,"","","Delay( 0.9, { \r\n\t\t\t\tAddEffectPack( 'MicrotransactionGildedLevelUp' );\r\n\t\t\t} );","",""
-7,"MTXCrystalLevelUp",9858,"",23245,"","","Delay( 0.5, { \r\n\t\t\t\tRemoveEffectPack( 'Metadata/Effects/Microtransactions/char_level_up/MidasTouch/crystal/epk/crystal_lvlup.epk' ); \r\n\t\t\t\tAddEffectPack( 'Metadata/Effects/Microtransactions/char_level_up/MidasTouch/crystal/epk/crystal_lvlup.epk' ); \r\n\t\t\t} );","",""
-8,"MTXMagicNatureLevelUp","","",24099,"","","PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/MagicNature/magicnature_lvlup.ao');","",""
-9,"MTXVerminSwarmLevelUp","",1221,24247,"","","","",""
-10,"MTXTimeFreezeLevelUp",10221,1222,24267,"","","","",""
-11,"MTXPhoenixRebirthLevelUp","",1229,24349,"","","DetachAllOfType( 'Metadata/Effects/Microtransactions/char_level_up/Phoenix/PhoenixWings.ao' );\r\nAddAttached( 'Metadata/Effects/Microtransactions/char_level_up/Phoenix/PhoenixWings.ao', aux_Back_attachment );","",1
-12,"MTXGhostLevelUp",10257,1239,24403,"","","","",1
-13,"MTXOracleDruidLevelUp","",1253,24511,"","","PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/OracleDruid/ao/oracle_druid_lvl_up.ao' );","",1
-14,"MTXBloodHowlLevelUp","","",24512,"","","PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/blood_howl/blood_howl_lvlup.ao' );","",1
-15,"MTXVerisiumLevelUp","",1370,25979,1101,"","","",1
-16,"MTXSacredTreeLevelUp","","",26230,"","","PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/SpiritWalker/spiritwalker_lvl_up.ao' );","",1
+0,"MTXBlackStarRing",6851,"",15273,"","","","",1
+1,"MTXFieryLevelUp",6813,"",15182,"","","","",""
+2,"MTXDeshretsBlessingLevelUp","",871,19848,"","","","",""
+3,"MTXValkyrieWingsLevelUp","",961,21236,"","","","",1
+4,"MTXFlyingParadeTwilightLevelUp","","",21628,"","","Delay( 1.0, { DoRandom(\r\n\t\t\t{\r\n\t\t\t\tlocal parade = PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/TwilightOrderHarpy1.ao' );\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tlocal parade = PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/TwilightOrderHarpy2.ao' );\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tlocal parade = PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/TwilightOrderHarpy3.ao' );\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\tlocal parade = PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/TwilightOrderHarpy4.ao' );\r\n\t\t\t} );\r\n} );\t\t\t\r\nPlayEffectAttached( 'Metadata/Effects/Microtransactions/char_level_up/FlyingParade/fx/ao/fireworks.ao' );","",""
+5,"MTXBloodyLevelUp",9856,"",23244,"","","AddEffectPack( 'MicrotransactionBloodyLevelup' );","",""
+6,"MTXGildedLevelUp",9857,"",23245,"","","Delay( 0.9, { \r\n\t\t\t\tAddEffectPack( 'MicrotransactionGildedLevelUp' );\r\n\t\t\t} );","",""
+7,"MTXCrystalLevelUp",9858,"",23246,"","","Delay( 0.5, { \r\n\t\t\t\tRemoveEffectPack( 'Metadata/Effects/Microtransactions/char_level_up/MidasTouch/crystal/epk/crystal_lvlup.epk' ); \r\n\t\t\t\tAddEffectPack( 'Metadata/Effects/Microtransactions/char_level_up/MidasTouch/crystal/epk/crystal_lvlup.epk' ); \r\n\t\t\t} );","",""
+8,"MTXMagicNatureLevelUp","","",24100,"","","PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/MagicNature/magicnature_lvlup.ao');","",""
+9,"MTXVerminSwarmLevelUp","",1221,24248,"","","","",""
+10,"MTXTimeFreezeLevelUp",10221,1222,24268,"","","","",""
+11,"MTXPhoenixRebirthLevelUp","",1229,24350,"","","DetachAllOfType( 'Metadata/Effects/Microtransactions/char_level_up/Phoenix/PhoenixWings.ao' );\r\nAddAttached( 'Metadata/Effects/Microtransactions/char_level_up/Phoenix/PhoenixWings.ao', aux_Back_attachment );","",1
+12,"MTXGhostLevelUp",10257,1239,24404,"","","","",1
+13,"MTXOracleDruidLevelUp","",1253,24512,"","","PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/OracleDruid/ao/oracle_druid_lvl_up.ao' );","",1
+14,"MTXBloodHowlLevelUp","","",24513,"","","PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/blood_howl/blood_howl_lvlup.ao' );","",1
+15,"MTXVerisiumLevelUp","",1372,25983,1101,"","","",1
+16,"MTXSacredTreeLevelUp","","",26234,"","","PlayEffect( 'Metadata/Effects/Microtransactions/char_level_up/SpiritWalker/spiritwalker_lvl_up.ao' );","",1

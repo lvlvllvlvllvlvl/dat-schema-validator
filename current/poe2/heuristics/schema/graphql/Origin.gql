@@ -1,5 +1,5 @@
 # Added 4.5
 type Origin {
   Id: string @unique
-  Format: string
+  Format: string @localized
 }
