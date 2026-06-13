@@ -59,7 +59,7 @@
     "size": 4
   },
   {
-    "name": "QuestFlag",
+    "name": "QuestItem",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -68,13 +68,13 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "QuestFlags"
+        "table": "BaseItemTypes"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "ErrorDescription",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -82,7 +82,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ClientStrings2"
       }
     },
     "size": 16

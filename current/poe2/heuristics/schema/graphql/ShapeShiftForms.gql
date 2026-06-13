@@ -4,7 +4,7 @@ type ShapeShiftForms {
   AOFile: string @file(ext: ".ao")
   StatsKeys: [Stats]
   StatsValues: [i32]
-  _: rid
+  WeaponSound: WeaponSoundTypes
   _: i32
   _: string
   _: i32

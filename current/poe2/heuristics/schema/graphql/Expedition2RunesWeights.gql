@@ -3,12 +3,11 @@ type Expedition2RunesWeights {
   Id: string @unique
   _: i32
   _: i32
-  Rune: Expedition2Runes
+  HighlightedRune: Expedition2Runes
+  MinAreaLevel: i32
+  MaxAreaLevel: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  _: string
   _: bool
   _: i32
 }

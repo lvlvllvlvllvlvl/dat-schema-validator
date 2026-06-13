@@ -4,8 +4,8 @@ type EndgameRegionActionButtonsRequiredQuestFlags {
   _: i32
   _: rid
   _: i32
-  QuestFlag: QuestFlags
-  _: rid
+  QuestItem: BaseItemTypes
+  ErrorDescription: ClientStrings2
   _: bool
   KeywordPopup: KeywordPopups
 }

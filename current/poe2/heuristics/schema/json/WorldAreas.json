@@ -812,7 +812,7 @@
     "unique": false
   },
   {
-    "name": "",
+    "name": "LeagueChances",
     "offset": 526,
     "unknownArray": false,
     "unique": false,
@@ -820,7 +820,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "WorldAreaLeagueChances"
       }
     },
     "size": 16

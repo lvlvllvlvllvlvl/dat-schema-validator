@@ -1,39 +1,21 @@
 [
   {
-    "name": "Region",
+    "name": "Id",
     "offset": 0,
     "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true,
-        "table": "EndgameRegionActionButtons"
-      }
+      "string": {}
     },
-    "size": 16
+    "size": 8
   },
   {
-    "name": "",
-    "offset": 16,
+    "name": "StoredItem",
+    "offset": 8,
     "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "BaseItemTypes",
-    "offset": 20,
-    "unknownArray": false,
-    "unique": false,
+    "unique": true,
     "interval": false,
     "type": {
       "array": false,
@@ -45,7 +27,52 @@
     "size": 16
   },
   {
-    "name": "KeywordPopup",
+    "name": "XOffset",
+    "offset": 24,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "YOffset",
+    "offset": 28,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "SlotSize",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
+  },
+  {
+    "name": "SlotStyle",
     "offset": 36,
     "unknownArray": false,
     "unique": false,
@@ -54,29 +81,14 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "KeywordPopups"
+        "table": "StashTabInventorySlotStyle"
       }
     },
     "size": 16
   },
   {
-    "name": "ErrorDescription",
+    "name": "HideIfEmpty",
     "offset": 52,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "ClientStrings2"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 68,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -87,8 +99,8 @@
     "size": 1
   },
   {
-    "name": "",
-    "offset": 69,
+    "name": "FirstSlotIndex",
+    "offset": 53,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -103,7 +115,7 @@
   },
   {
     "name": "",
-    "offset": 73,
+    "offset": 57,
     "unknownArray": false,
     "unique": false,
     "interval": false,
@@ -117,17 +129,33 @@
     "size": 4
   },
   {
-    "name": "",
-    "offset": 77,
+    "name": "Width",
+    "offset": 61,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
-    "size": 16
+    "size": 4
+  },
+  {
+    "name": "Height",
+    "offset": 65,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "size": 4
   }
 ]

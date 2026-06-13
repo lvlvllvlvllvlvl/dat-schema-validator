@@ -1,6 +1,6 @@
 # Added 3.22
 type TieredMicrotransactionsVisuals {
-  MTX: MtxTypes
+  MTX: MtxTypeGameSpecific
   Tier: i32
   Description: string @localized
   DDSFile: string @file(ext: ".dds")

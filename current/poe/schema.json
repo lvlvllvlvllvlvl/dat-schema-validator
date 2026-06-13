@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1780178352,
+  "createdAt": 1781332753,
   "tables": [
     {
       "validFor": 1,
@@ -174,6 +174,19 @@
           "interval": false
         },
         {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
           "name": "AudioCharacter",
           "description": null,
           "array": false,
@@ -250,116 +263,6 @@
           "references": {
             "table": "Words"
           },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "SpawnChanceStats",
-          "description": null,
-          "array": true,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "Stats"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "VariationStat1",
-          "description": null,
-          "array": true,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "Stats"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "VariationStat2",
-          "description": null,
-          "array": true,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "Stats"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": true,
-          "type": "array",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": true,
-          "type": "array",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -2171,20 +2074,22 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "SpawnTags",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "Tags"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "SpawnWeights",
           "description": null,
           "array": true,
           "type": "i32",
@@ -2332,6 +2237,21 @@
           "localized": false,
           "references": {
             "table": "MiscBeams"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StrongboxEffect",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "MiscEffectPacks"
           },
           "until": null,
           "file": null,
@@ -39875,6 +39795,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -44365,7 +44298,7 @@
       "tags": []
     },
     {
-      "validFor": 3,
+      "validFor": 1,
       "name": "BrequelPassiveSubTrees",
       "columns": [
         {
@@ -44420,6 +44353,71 @@
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
+      "name": "BrequelPassiveSubTrees",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": true,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Wombgift",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RewardStringSingle",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ClientStrings2"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RewardStringMultiple",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ClientStrings2"
           },
           "until": null,
           "file": null,
@@ -59686,14 +59684,14 @@
           "interval": false
         },
         {
-          "name": "NPCAudio",
+          "name": "CharacterAudio",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "NPCTextAudio"
+            "table": "CharacterTextAudio"
           },
           "until": null,
           "file": null,
@@ -69086,7 +69084,7 @@
           "interval": false
         },
         {
-          "name": "Life",
+          "name": "MonsterLife",
           "description": null,
           "array": false,
           "type": "i32",
@@ -69164,58 +69162,6 @@
           "interval": false
         },
         {
-          "name": "AltLife1",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "AltDamage1",
-          "description": null,
-          "array": false,
-          "type": "f32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "AltDamage2",
-          "description": null,
-          "array": false,
-          "type": "f32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "AltLife2",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "EvasiveEvasion",
           "description": null,
           "array": false,
@@ -69242,7 +69188,7 @@
           "interval": false
         },
         {
-          "name": "StunThreshold",
+          "name": "PoiseThreshold",
           "description": null,
           "array": false,
           "type": "i32",
@@ -69255,7 +69201,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "AltLife2",
           "description": null,
           "array": false,
           "type": "i32",
@@ -69268,7 +69214,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "LeechResistance",
           "description": null,
           "array": false,
           "type": "i32",
@@ -69281,7 +69227,59 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "MoreElementalDamage",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "MoreChaosDamage",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RareUniqueLeechResistance",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "UniqueMonsterDamageTakenFromMinions",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "MoreDamageAgainstNonUnique",
           "description": null,
           "array": false,
           "type": "i32",
@@ -81065,7 +81063,7 @@
           "unique": false,
           "localized": false,
           "references": {
-            "table": "Stats"
+            "table": "EffectivenessCostConstants"
           },
           "until": null,
           "file": null,
@@ -109943,23 +109941,10 @@
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "SinkEffect",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
@@ -118348,7 +118333,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "SinisterJewelSocket",
           "description": null,
           "array": false,
           "type": "bool",
@@ -142122,13 +142107,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "LeagueChances",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "WorldAreaLeagueChances"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -157132,7 +157119,7 @@
           "unique": false,
           "localized": false,
           "references": {
-            "table": "MtxTypes"
+            "table": "MtxTypeGameSpecific"
           },
           "until": null,
           "file": null,
@@ -157848,6 +157835,160 @@
           "references": {
             "table": "Mods"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
+      "name": "AbyssStashTabLayout",
+      "columns": [
+        {
+          "name": "Id",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "StoredItem",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "BaseItemTypes"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "XOffset",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "YOffset",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SlotSize",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SlotStyle",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "StashTabInventorySlotStyle"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "HideIfEmpty",
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "FirstSlotIndex",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Width",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Height",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -166165,14 +166306,14 @@
           "interval": false
         },
         {
-          "name": "Environment",
+          "name": "MonsterPacks",
           "description": null,
           "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "Environments"
+            "table": "MonsterPacks"
           },
           "until": null,
           "file": null,
@@ -166831,14 +166972,14 @@
           "interval": false
         },
         {
-          "name": "QuestFlag",
+          "name": "QuestItem",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "QuestFlags"
+            "table": "BaseItemTypes"
           },
           "until": null,
           "file": null,
@@ -166846,13 +166987,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "ErrorDescription",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "ClientStrings2"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -166952,10 +167095,25 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "ErrorDescription",
           "description": null,
           "array": false,
           "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ClientStrings2"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,
@@ -166968,7 +167126,33 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "bool",
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": null,
@@ -168248,14 +168432,14 @@
           "interval": false
         },
         {
-          "name": "HitEffect",
+          "name": "ModType",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "Stats"
+            "table": "ModType"
           },
           "until": null,
           "file": null,
@@ -168335,7 +168519,7 @@
           "interval": false
         },
         {
-          "name": "Rune",
+          "name": "HighlightedRune",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -168350,7 +168534,20 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "MinAreaLevel",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "MaxAreaLevel",
           "description": null,
           "array": false,
           "type": "i32",
@@ -168379,33 +168576,7 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
@@ -170681,6 +170852,19 @@
           "description": null,
           "array": false,
           "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,
@@ -177327,13 +177511,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "SoundEffect",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "SoundEffects"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -178375,6 +178561,28 @@
     },
     {
       "validFor": 2,
+      "name": "RecheckActiveSkillEnabledStats",
+      "columns": [
+        {
+          "name": "Stat",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Stats"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        }
+      ],
+      "tags": []
+    },
+    {
+      "validFor": 2,
       "name": "ReservationSkillsAudio",
       "columns": [
         {
@@ -179182,13 +179390,15 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "WeaponSound",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "WeaponSoundTypes"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -180349,26 +180559,30 @@
       "name": "StandaloneOverride",
       "columns": [
         {
-          "name": null,
+          "name": "BaseMonster",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "MonsterVarieties"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "Override",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "MonsterVarieties"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -180859,7 +181073,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsSocketBound",
           "description": null,
           "array": false,
           "type": "bool",
@@ -182965,14 +183179,14 @@
       "name": "UncutGemTiers",
       "columns": [
         {
-          "name": "BaseItemType",
+          "name": "ItemClass",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "BaseItemTypes"
+            "table": "ItemClasses"
           },
           "until": null,
           "file": null,
@@ -182993,7 +183207,7 @@
           "interval": false
         },
         {
-          "name": "NewBaseItemType",
+          "name": "BaseItemTypes",
           "description": null,
           "array": false,
           "type": "foreignrow",

@@ -240,7 +240,7 @@
     "size": 4
   },
   {
-    "name": "NPCAudio",
+    "name": "CharacterAudio",
     "offset": 143,
     "unknownArray": false,
     "unique": false,
@@ -249,7 +249,7 @@
       "array": true,
       "key": {
         "foreign": true,
-        "table": "NPCTextAudio"
+        "table": "CharacterTextAudio"
       }
     },
     "size": 16

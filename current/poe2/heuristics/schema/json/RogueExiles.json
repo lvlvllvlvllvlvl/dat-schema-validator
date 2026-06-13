@@ -127,6 +127,11 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 144,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "integer": {
@@ -134,75 +139,92 @@
         "size": 4
       }
     },
-    "offset": 144,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "AudioCharacter",
     "offset": 160,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AudioCharacterClass"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 176,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 192,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 208,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16
+  },
+  {
+    "name": "",
     "offset": 224,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
+    "size": 16
+  },
+  {
+    "name": "Name",
     "offset": 240,
-    "size": 16,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "Words"
+      }
+    },
+    "size": 16
   }
 ]

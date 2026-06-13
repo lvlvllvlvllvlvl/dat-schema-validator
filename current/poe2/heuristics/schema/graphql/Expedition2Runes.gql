@@ -7,7 +7,7 @@ type Expedition2Runes {
   _: i32
   TomeArt: string
   RemnantArt: string
-  HitEffect: Stats
+  ModType: ModType
   EnemyArt: string
   _: string
 }

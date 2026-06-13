@@ -95,7 +95,7 @@
     "size": 8
   },
   {
-    "name": "HitEffect",
+    "name": "ModType",
     "offset": 76,
     "unknownArray": false,
     "unique": false,
@@ -104,7 +104,7 @@
       "array": false,
       "key": {
         "foreign": true,
-        "table": "Stats"
+        "table": "ModType"
       }
     },
     "size": 16

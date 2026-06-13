@@ -1,0 +1,14 @@
+# Added 4.5
+type AbyssStashTabLayout {
+  Id: string @unique
+  StoredItem: BaseItemTypes
+  XOffset: i32
+  YOffset: i32
+  SlotSize: i32
+  SlotStyle: StashTabInventorySlotStyle
+  HideIfEmpty: bool
+  FirstSlotIndex: i32
+  _: i32
+  Width: i32
+  Height: i32
+}

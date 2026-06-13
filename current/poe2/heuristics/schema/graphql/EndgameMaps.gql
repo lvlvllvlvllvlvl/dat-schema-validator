@@ -1,7 +1,7 @@
 # Added 4.1
 type EndgameMaps {
   WorldArea: WorldAreas @unique
-  Environment: [Environments]
+  MonsterPacks: [MonsterPacks]
   FlavourText: string @localized
   _: i32
   _: [i32]

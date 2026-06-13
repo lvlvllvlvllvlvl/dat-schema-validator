@@ -1,6 +1,6 @@
 # Added 4.1
 type UncutGemTiers {
-  BaseItemType: BaseItemTypes
+  ItemClass: ItemClasses
   Tier: i32
-  NewBaseItemType: BaseItemTypes
+  BaseItemTypes: BaseItemTypes
 }

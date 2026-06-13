@@ -83,8 +83,7 @@ type MonsterVarieties {
   _: i32
   _: i32
   _: f32
-  _: i32 @localized
-  SinkEffect: i32
+  SinkEffect: string
   _: i32
   MonsterConditionalEffectPack: MonsterConditionalEffectPacks
   _: bool

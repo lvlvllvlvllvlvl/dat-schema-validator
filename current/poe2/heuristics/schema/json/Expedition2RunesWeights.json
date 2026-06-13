@@ -42,7 +42,7 @@
     "size": 4
   },
   {
-    "name": "Rune",
+    "name": "HighlightedRune",
     "offset": 16,
     "unknownArray": false,
     "unique": false,
@@ -57,7 +57,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MinAreaLevel",
     "offset": 32,
     "unknownArray": false,
     "unique": false,
@@ -72,7 +72,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MaxAreaLevel",
     "offset": 36,
     "unknownArray": false,
     "unique": false,
@@ -109,27 +109,9 @@
     "interval": false,
     "type": {
       "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
+      "string": {}
     },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 48,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 8
   },
   {
     "name": "",

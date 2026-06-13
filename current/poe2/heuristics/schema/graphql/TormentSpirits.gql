@@ -17,8 +17,8 @@ type TormentSpirits {
   ModsKeys3: [Mods]
   QuestFlags: [QuestFlags]
   StatsKeys2: Stats
-  _: [rid]
-  _: [i32]
+  SpawnTags: [Tags]
+  SpawnWeights: [i32]
   _: rid
   ModsKeys4: Mods @unique
   DropsBaseItems: [BaseItemTypes]
@@ -29,5 +29,5 @@ type TormentSpirits {
   MapEnabledStat: [Stats]
   ChestMod: Mods
   MiscBeam: MiscBeams
-  _: rid
+  StrongboxEffect: MiscEffectPacks
 }

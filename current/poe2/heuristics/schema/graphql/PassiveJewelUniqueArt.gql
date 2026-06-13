@@ -4,6 +4,6 @@ type PassiveJewelUniqueArt {
   Name: Words @unique
   _: rid
   JewelArt: string
-  _: rid
+  SoundEffect: SoundEffects
   KeystoneArt: string
 }

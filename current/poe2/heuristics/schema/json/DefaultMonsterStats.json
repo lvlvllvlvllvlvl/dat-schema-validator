@@ -56,7 +56,7 @@
     "size": 4
   },
   {
-    "name": "Life",
+    "name": "MonsterLife",
     "offset": 20,
     "unknownArray": false,
     "unique": true,
@@ -145,7 +145,7 @@
     "size": 4
   },
   {
-    "name": "AltLife1",
+    "name": "EvasiveEvasion",
     "offset": 44,
     "unknownArray": false,
     "unique": true,
@@ -160,28 +160,30 @@
     "size": 4
   },
   {
-    "name": "AltDamage1",
+    "name": "AilmentThreshold",
     "offset": 48,
     "unknownArray": false,
     "unique": true,
     "interval": false,
     "type": {
       "array": false,
-      "decimal": {
+      "integer": {
+        "unsigned": false,
         "size": 4
       }
     },
     "size": 4
   },
   {
-    "name": "AltDamage2",
+    "name": "PoiseThreshold",
     "offset": 52,
     "unknownArray": false,
     "unique": true,
     "interval": false,
     "type": {
       "array": false,
-      "decimal": {
+      "integer": {
+        "unsigned": false,
         "size": 4
       }
     },
@@ -203,7 +205,7 @@
     "size": 4
   },
   {
-    "name": "EvasiveEvasion",
+    "name": "LeechResistance",
     "offset": 60,
     "unknownArray": false,
     "unique": false,
@@ -218,7 +220,7 @@
     "size": 4
   },
   {
-    "name": "AilmentThreshold",
+    "name": "MoreElementalDamage",
     "offset": 64,
     "unknownArray": false,
     "unique": false,
@@ -233,7 +235,7 @@
     "size": 4
   },
   {
-    "name": "StunThreshold",
+    "name": "MoreChaosDamage",
     "offset": 68,
     "unknownArray": false,
     "unique": false,
@@ -248,7 +250,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "RareUniqueLeechResistance",
     "offset": 72,
     "unknownArray": false,
     "unique": false,
@@ -263,7 +265,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "UniqueMonsterDamageTakenFromMinions",
     "offset": 76,
     "unknownArray": false,
     "unique": false,
@@ -278,7 +280,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "MoreDamageAgainstNonUnique",
     "offset": 80,
     "unknownArray": false,
     "unique": false,
