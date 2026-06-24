@@ -13,4 +13,5 @@ type PassiveSkillOverrides {
   RequiresAdjacent: i32
   MaxAdjacent: i32
   AllocatedPassiveSkill: PassiveSkills
+  _: [_]
 }
