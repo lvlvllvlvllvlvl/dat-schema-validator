@@ -14,10 +14,9 @@ type Expedition2Recipes {
   _: string
   _: bool
   _: i32
-  _: bool
   _: i32
-  QuestFlag: QuestFlags
-  Category: ExpeditionCategory
-  RuneWeights: [Expedition2RunesWeights]
-  DisabledText: ClientStrings
+  _: rid
+  _: rid
+  _: [_]
+  _: rid
 }

@@ -5,9 +5,9 @@ type Expedition2Runes {
   ArchnemesisMod: ArchnemesisMods
   ArchnemesisModPower: ArchnemesisMods
   _: i32
-  TomeArt: string
-  RemnantArt: string
-  ModType: ModType
-  EnemyArt: string
+  _: i32 # All rows empty
+  _: string
+  _: rid @unique
+  _: string
   _: string
 }

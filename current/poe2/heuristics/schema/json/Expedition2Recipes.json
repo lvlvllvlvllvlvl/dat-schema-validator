@@ -194,23 +194,6 @@
     "size": 4
   },
   {
-    "name": "",
-    "offset": 117,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "",
-    "offset": 118,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -218,66 +201,53 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 117,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "QuestFlag",
-    "offset": 122,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "QuestFlags"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 121,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "Category",
-    "offset": 138,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "ExpeditionCategory"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 137,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "RuneWeights",
-    "offset": 154,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "Expedition2RunesWeights"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 153,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "DisabledText",
-    "offset": 170,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "ClientStrings"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 169,
+    "size": 16,
+    "unique": false
   }
 ]
