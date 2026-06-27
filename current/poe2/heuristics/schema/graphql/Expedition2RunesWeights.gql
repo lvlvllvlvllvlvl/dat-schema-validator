@@ -1,13 +1,13 @@
 # Added 4.5
 type Expedition2RunesWeights {
   Id: string @unique
-  _: i32
-  _: i32
+  RecipeRuneCount: i32
+  HighlightedRuneSlot: i32
   HighlightedRune: Expedition2Runes
   MinAreaLevel: i32
   MaxAreaLevel: i32
   _: i32
-  _: string
+  TableComments: string
   _: bool
   _: i32
 }

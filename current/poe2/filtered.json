@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1781332753,
+  "createdAt": 1782543386,
   "tables": [
     {
       "validFor": 1,
@@ -168975,6 +168975,79 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": "RewardGemLevel",
+          "description": null,
+          "array": false,
+          "type": "i32",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "QuestFlag",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "QuestFlags"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Category",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ExpeditionCategory"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RuneWeights",
+          "description": null,
+          "array": true,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Expedition2RunesWeights"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "DisabledText",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "ClientStrings"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": [],
@@ -169107,10 +169180,64 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "TomeArt",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "RemnantArt",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "Mod",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Mods"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "EnemyArt",
+          "description": null,
+          "array": false,
+          "type": "string",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "TomeArt2",
+          "description": null,
+          "array": false,
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
@@ -169141,7 +169268,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "RecipeRuneCount",
           "description": null,
           "array": false,
           "type": "i32",
@@ -169154,7 +169281,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "HighlightedRuneSlot",
           "description": null,
           "array": false,
           "type": "i32",
@@ -169221,7 +169348,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "TableComments",
           "description": null,
           "array": false,
           "type": "string",

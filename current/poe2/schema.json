@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1781332753,
+  "createdAt": 1782543386,
   "tables": [
     {
       "validFor": 1,
@@ -168179,20 +168179,7 @@
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
+          "name": "RewardGemLevel",
           "description": null,
           "array": false,
           "type": "i32",
@@ -168393,19 +168380,6 @@
           "interval": false
         },
         {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "TomeArt",
           "description": null,
           "array": false,
@@ -168432,14 +168406,14 @@
           "interval": false
         },
         {
-          "name": "ModType",
+          "name": "Mod",
           "description": null,
           "array": false,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "ModType"
+            "table": "Mods"
           },
           "until": null,
           "file": null,
@@ -168460,7 +168434,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "TomeArt2",
           "description": null,
           "array": false,
           "type": "string",
@@ -168493,7 +168467,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "RecipeRuneCount",
           "description": null,
           "array": false,
           "type": "i32",
@@ -168506,7 +168480,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "HighlightedRuneSlot",
           "description": null,
           "array": false,
           "type": "i32",
@@ -168573,7 +168547,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "TableComments",
           "description": null,
           "array": false,
           "type": "string",

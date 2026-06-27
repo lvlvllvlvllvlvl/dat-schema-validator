@@ -194,6 +194,11 @@
     "size": 4
   },
   {
+    "name": "RewardGemLevel",
+    "offset": 117,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -201,53 +206,66 @@
         "size": 4
       }
     },
-    "offset": 117,
-    "size": 4,
-    "unique": false
+    "size": 4
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "QuestFlag",
     "offset": 121,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "QuestFlags"
       }
     },
-    "offset": 137,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "Category",
+    "offset": 137,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "ExpeditionCategory"
+      }
+    },
+    "size": 16
+  },
+  {
+    "name": "RuneWeights",
+    "offset": 153,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Expedition2RunesWeights"
       }
     },
-    "offset": 153,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "DisabledText",
+    "offset": 169,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ClientStrings"
       }
     },
-    "offset": 169,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]
