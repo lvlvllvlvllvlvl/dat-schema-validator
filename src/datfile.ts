@@ -2,9 +2,14 @@ import { ZstdDec } from "@oneidentity/zstd-js/decompress";
 import * as fs from "fs/promises";
 import path from "path";
 import { SchemaTable } from "pathofexile-dat-schema";
-import * as newBundles from "pathofexile-dat/bundles.js";
+import {
+  decompressSliceInBundle,
+  decompressedBundleSize,
+  getDirContent,
+  readIndexBundle,
+  getFileInfo,
+} from "pathofexile-dat/bundles.js";
 import { ColumnStats, DatFile, Header, getHeaderLength, readColumn } from "pathofexile-dat/dat.js";
-import * as oldBundles from "pathofexile-dat7/bundles.js";
 import { PossibleHeaders, graphqlType, headerTypes, possibleColumnHeaders } from "./heuristic.js";
 import { isBefore } from "./versions.js";
 
@@ -47,7 +52,6 @@ export class FileLoader {
 
   constructor(
     private bundleLoader: IBundleLoader,
-    private bundles: typeof newBundles | typeof oldBundles,
     private newVerson: boolean,
     private index: {
       bundlesInfo: Uint8Array;
@@ -59,22 +63,17 @@ export class FileLoader {
 
   static async create(bundleLoader: IBundleLoader) {
     const newVersion = isBefore("3.21.0", bundleLoader.patchVer);
-    const bundles = newVersion ? newBundles : oldBundles;
-    const indexBin = await bundleLoader.fetchFile("_.index.bin");
-    const indexBundle = await bundles.decompressSliceInBundle(new Uint8Array(indexBin));
-    const _index = bundles.readIndexBundle(indexBundle);
-    const pathReps = await bundles.decompressSliceInBundle(_index.pathRepsBundle);
-
-    return new FileLoader(bundleLoader, bundles, newVersion, {
-      bundlesInfo: _index.bundlesInfo,
-      filesInfo: _index.filesInfo,
-      pathReps: pathReps,
-      dirsInfo: _index.dirsInfo,
-    });
+    const indexBin = new Uint8Array(await bundleLoader.fetchFile("_.index.bin"));
+    const indexBundle = new Uint8Array(decompressedBundleSize(indexBin));
+    decompressSliceInBundle(indexBin, 0, indexBundle);
+    const { bundlesInfo, filesInfo, dirsInfo, pathRepsBundle } = readIndexBundle(indexBundle);
+    const pathReps = new Uint8Array(decompressedBundleSize(pathRepsBundle));
+    decompressSliceInBundle(pathRepsBundle, 0, pathReps);
+    return new FileLoader(bundleLoader, newVersion, { bundlesInfo, filesInfo, pathReps, dirsInfo });
   }
 
-  async getFileContents(fullPath: string): Promise<ArrayBuffer> {
-    const location = this.bundles.getFileInfo(
+  async getFileContents(fullPath: string): Promise<Uint8Array<ArrayBuffer>> {
+    const location = getFileInfo(
       this.newVerson ? fullPath.toLowerCase() : fullPath,
       this.index.bundlesInfo,
       this.index.filesInfo,
@@ -82,16 +81,14 @@ export class FileLoader {
     if (!location) {
       throw new Error("no location found for " + fullPath);
     }
-    const bundleBin = await this.bundleLoader.fetchFile(location.bundle);
-    return this.bundles.decompressSliceInBundle(
-      new Uint8Array(bundleBin),
-      location.offset,
-      location.size,
-    );
+    const bundleBin = new Uint8Array(await this.bundleLoader.fetchFile(location.bundle));
+    const result = new Uint8Array(location.size);
+    decompressSliceInBundle(bundleBin, location.offset, result);
+    return result;
   }
 
   listFiles(dir: string) {
-    return this.bundles.getDirContent(
+    return getDirContent(
       this.newVerson ? dir.toLowerCase() : dir,
       this.index.pathReps,
       this.index.dirsInfo,
