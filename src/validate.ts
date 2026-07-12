@@ -499,6 +499,7 @@ if (db && !quiet) {
 }
 const dbTime = performance.now();
 await db?.populateSpecialTables();
+await db?.finalize();
 await db?.close();
 if (db && !quiet) {
   console.log("...", Math.round(performance.now() - dbTime), "ms");

@@ -240,18 +240,25 @@ export function exportAllRows(
     data.find(({ rows }, i) => {
       rows.find((row, j) => {
         if (Array.isArray(row)) {
+          if (!header.type.array) {
+            console.error(`Array column ${header.name} in ${datFiles[i].name} is not an array`);
+            throw new Error(`Array column ${header.name} in ${datFiles[i].name} is not an array`);
+          }
           if (annotate && row.find((cell, k) => cell !== data[0].rows[j]![k])) {
             header.localized = true;
           }
         } else {
-          if (seen[i].has(row)) {
-            header.unique = false;
+          if (header.unique) {
+            if (seen[i].has(row)) {
+              header.unique = false;
+            } else {
+              seen[i].add(row);
+            }
           }
           if (annotate && row !== data[0].rows[j]) {
             header.localized = true;
           }
         }
-        seen[i].add(row);
 
         // if there's nothing more to learn, return true, ending the find loops
         return header.localized && !header.unique;

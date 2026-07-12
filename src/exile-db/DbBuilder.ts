@@ -28,8 +28,12 @@ export class DbBuilder {
 
   constructor(dbPath: string, generateNames = false) {
     this._generateNames = generateNames;
+    const nativeDb = new Database(dbPath);
+    nativeDb.pragma("page_size = 16384");
+    nativeDb.pragma("journal_mode = OFF");
+    nativeDb.pragma("synchronous = OFF");
     this._db = new Kysely({
-      dialect: new SqliteDialect({ database: new Database(dbPath) }),
+      dialect: new SqliteDialect({ database: nativeDb }),
     });
   }
 
@@ -92,7 +96,7 @@ export class DbBuilder {
       }
 
       builder = builder.addColumn(column.name || `offset_${column.offset}`, columnType, (col) =>
-        column.unique ? col.unique() : col,
+        column.unique && !column.type.array ? col.unique() : col,
       );
     }
 
@@ -214,6 +218,29 @@ export class DbBuilder {
     if (type.decimal) return "decimal";
     if (type.key) return "integer";
     throw new Error(`Unknown type ${JSON.stringify(type)}`);
+  }
+
+  public async finalize() {
+    await this._db.schema
+      .createIndex("idx_relations_source")
+      .on("relations")
+      .columns(["source_table", "source_row"])
+      .execute();
+
+    await this._db.schema
+      .createIndex("idx_relations_target")
+      .on("relations")
+      .columns(["target_table", "target_row"])
+      .execute();
+
+    for (const lang of this.languages) {
+      await sql`insert into ${sql.table(lang)}(${sql.table(lang)}) values('optimize')`.execute(
+        this._db,
+      );
+    }
+
+    await sql`VACUUM`.execute(this._db);
+    await sql`ANALYZE`.execute(this._db);
   }
 
   async close() {
