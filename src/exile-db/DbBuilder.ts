@@ -233,6 +233,12 @@ export class DbBuilder {
       .columns(["target_table", "target_row"])
       .execute();
 
+    await this._db.schema
+      .createIndex("idx_all_relations")
+      .on("relations")
+      .columns(["source_table", "source_column", "target_table"])
+      .execute();
+
     for (const lang of this.languages) {
       await sql`insert into ${sql.table(lang)}(${sql.table(lang)}) values('optimize')`.execute(
         this._db,
