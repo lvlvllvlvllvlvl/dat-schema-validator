@@ -35,6 +35,7 @@ jobs:
       - run: npx -y tsx src/validate.ts --quiet
       - run: npx -y tsx src/validate.ts --poe2 --quiet
       - run: find * -name '*.csv' -size +50M -print -delete # usually an error in the heuristic
+      - run: for i in current/*/dat.sqlite; do split -b 10m "$i" "$i".; done
       - run: for i in current/*/dat.sqlite; do stat --format='{"size":%s,"created":%W}' "$i" > "$i.json"; done
 
       - name: commit changes
