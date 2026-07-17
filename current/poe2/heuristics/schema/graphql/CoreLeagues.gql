@@ -23,5 +23,5 @@ type CoreLeagues {
   _: i32
   MapContent: EndgameMapContent
   _: i32
-  _: [_]
+  AtlasStats: [Stats]
 }

@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1782543386,
+  "createdAt": 1784263324,
   "tables": [
     {
       "validFor": 1,
@@ -58223,19 +58223,6 @@
           "name": null,
           "description": null,
           "array": false,
-          "type": "bool",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
           "type": "f32",
           "unique": false,
           "localized": false,
@@ -58274,8 +58261,8 @@
         {
           "name": null,
           "description": null,
-          "array": false,
-          "type": "bool",
+          "array": true,
+          "type": "string",
           "unique": false,
           "localized": false,
           "references": null,
@@ -58287,8 +58274,8 @@
         {
           "name": null,
           "description": null,
-          "array": true,
-          "type": "string",
+          "array": false,
+          "type": "i32",
           "unique": false,
           "localized": false,
           "references": null,
@@ -66006,9 +65993,9 @@
           "interval": false
         },
         {
-          "name": "AtlasStat",
+          "name": "AtlasStats",
           "description": null,
-          "array": false,
+          "array": true,
           "type": "foreignrow",
           "unique": false,
           "localized": false,
@@ -123216,19 +123203,6 @@
           "description": null,
           "array": false,
           "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "bool",
           "unique": false,
           "localized": false,
           "references": null,
