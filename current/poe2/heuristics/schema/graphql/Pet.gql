@@ -11,11 +11,10 @@ type Pet {
   HideoutCategory: HideoutDoodadCategory
   GrantedSkill: [GrantedEffectsPerLevel]
   _: i32
-  _: bool
   _: rid
   _: bool
   _: bool
   _: bool
   _: string
-  ReviveEffect: MicrotransactionReviveEffects
+  _: rid
 }

@@ -11,10 +11,9 @@ type Pet {
   HideoutCategory: HideoutDoodadCategory
   Skills: [GrantedEffectsPerLevel]
   _: i32
-  _: bool
   _: rid
   _: bool
   _: bool
   _: string
-  DropEffect: DropEffects
+  _: rid
 }
