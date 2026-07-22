@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1784263324,
+  "createdAt": 1784713726,
   "tables": [
     {
       "validFor": 1,
@@ -51479,6 +51479,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -54496,6 +54509,45 @@
           "references": {
             "table": "ShopTag"
           },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": true,
+          "type": "array",
+          "unique": false,
+          "localized": false,
+          "references": null,
           "until": null,
           "file": null,
           "files": null,
@@ -120660,6 +120712,19 @@
           "file": null,
           "files": null,
           "interval": false
+        },
+        {
+          "name": null,
+          "description": null,
+          "array": false,
+          "type": "bool",
+          "unique": false,
+          "localized": false,
+          "references": null,
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
         }
       ],
       "tags": []
@@ -121509,7 +121574,7 @@
           "interval": false
         },
         {
-          "name": "StatValue6",
+          "name": "Stat6Value",
           "description": null,
           "array": false,
           "type": "i32",
@@ -121522,7 +121587,7 @@
           "interval": false
         },
         {
-          "name": "StatValue7",
+          "name": "Stat7Value",
           "description": null,
           "array": false,
           "type": "i32",
