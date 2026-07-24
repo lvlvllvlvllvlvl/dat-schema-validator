@@ -1,0 +1,6 @@
+type DeepwaterUpgrades {
+  Id: string @unique
+  QuestState: i32
+  Stats: [Stats]
+  StatsValues: [i32]
+}

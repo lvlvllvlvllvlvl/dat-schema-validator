@@ -964,7 +964,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "QuestState",
     "offset": 642,
     "unknownArray": false,
     "unique": false,
@@ -977,5 +977,18 @@
       }
     },
     "size": 4
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 646,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   }
 ]

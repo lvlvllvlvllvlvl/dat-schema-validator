@@ -486,5 +486,20 @@
     "noData": true,
     "unknownArray": true,
     "unique": false
+  },
+  {
+    "name": "TalismanEnchants",
+    "offset": 358,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true,
+        "table": "Mods"
+      }
+    },
+    "size": 16
   }
 ]

@@ -68,5 +68,6 @@ type WorldAreas {
   Ruleset: Rulesets
   _: i32
   QuestFlag: QuestFlags
-  _: i32
+  QuestState: i32
+  _: [_] # All rows empty
 }

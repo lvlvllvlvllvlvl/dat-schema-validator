@@ -1,11 +1,31 @@
 # Added 3.28
 type DynamicCraftingBenchTypes {
   Id: string @unique
-  _: string
+  _: string @localized
   BackgroundArt: string
   Description: string
-  Name: string
+  Name: string @localized
   SoundEffect: SoundEffects
   _: [rid]
   _: i32
+  _: rid
+  _: rid
+  _: string
+  _: [_] # All rows empty
+  _: [_] # All rows empty
+  _: i32 # All rows empty
+  _: rid
+  _: i32 # All rows empty
+  _: bool
+  _: rid
+  _: rid
+  _: string
+  _: i32 # All rows empty
+  _: rid
+  _: rid
+  _: i32 # All rows empty
+  _: string
+  _: bool
+  _: rid
+  _: rid
 }

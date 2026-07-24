@@ -1,4 +1,5 @@
 # Added 3.11
 type MicrotransactionCharacterPortraitVariations {
   MtxTypeGameSpecific: MtxTypeGameSpecific
+  _: i32 @unique
 }

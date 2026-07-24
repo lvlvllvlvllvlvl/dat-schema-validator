@@ -1,44 +1,53 @@
-"rownum","Id","NPC","NPCAudio","DialogueCondition","i32_56","i32_60"
-0,"ManInBox_AsyncListItem",[783],24341,[0],0,1
-1,"ManInBox_AsyncPriceLower",[783],24391,[1],0,1
-2,"ManInBox_AsyncPriceHigher",[783],24365,[2],0,1
-3,"ManInBox_AsyncItemSoldInZone",[783],24418,[3],0,1
-4,"ManInBox_OpenAwayShop",[783],24502,[4],0,1
-5,"ManInBox_AsyncItemSoldInOutOfZone",[783],24454,[5],0,1
-6,"ManInBox_AsyncItemBoughtAway",[783],24257,[6],0,1
-7,"ManInBox_CEPlaceOrder",[783],24290,[7],0,1
-8,"ManInBox_CEReceiveOrder",[783],24311,[8],0,1
-9,"Faustus_AsyncTradeLowerPrice","[676,678,677,796]",23863,[1],0,1
-10,"Faustus_AsyncTradeRaisePrice","[676,678,677,796]",23878,[2],0,1
-11,"Faustus_AsyncTradeList","[676,678,677,796]",23848,[0],0,1
-12,"Faustus_AsyncTradeSellOutOfZone","[676,678,677,796]",23907,[5],0,1
-13,"Faustus_AsyncTradeBuy","[676,678,677,796]",23921,[6],0,1
-14,"Faustus_CXPlaceOrder","[678,677]",18809,[7],0,1
-15,"Faustus_CXReceiveOrder","[678,677]",18797,[8],0,1
-16,"DjinnTrader_AsyncListItem",[793],25614,[0],0,1
-17,"DjinnTrader_AsyncPriceLower",[793],25640,[1],0,1
-18,"DjinnTrader_AsyncPriceHigher",[793],25665,[2],0,1
-19,"DjinnTrader_AsyncItemSoldInZone",[793],25689,[3],0,1
-20,"DjinnTrader_AsyncItemSoldOutOfZone",[793],25710,[5],0,1
-21,"DjinnTrader_AsyncItemBought",[793],25733,[6],0,1
-22,"DjinnTrader_CEPlaceOrder",[793],25759,[7],0,1
-23,"DjinnTrader_CEReceiveOrder",[793],25784,[8],0,1
-24,"DjinnTrader_OpenAwayShop",[793],25808,[4],0,1
-25,"VampireServant_AsyncListItem",[795],25953,[0],0,1
-26,"VampireServant_AsyncPriceLower",[795],25890,[1],0,1
-27,"VampireServant_AsyncPriceHigher",[795],25877,[2],0,1
-28,"VampireServant_AsyncItemSoldInZone",[795],26001,[3],0,1
-29,"VampireServant_AsyncItemSoldOutOfZone",[795],26017,[5],0,1
-30,"VampireServant_AsyncItemBought",[795],25980,[6],0,1
-31,"VampireServant_CEPlaceOrder",[795],25901,[7],0,1
-32,"VampireServant_CEReceiveOrder",[795],25917,[8],0,1
-33,"VampireServant_OpenAwayShop",[795],25991,[4],0,1
-34,"FleabagTrader_AsyncListitem",[797],26079,[0],0,1
-35,"FleabagTrader_AsyncPriceLower",[797],26097,[1],0,1
-36,"FleabagTrader_AsyncPriceHigher",[797],26109,[2],0,1
-37,"FleabagTrader_AsyncItemSoldInZone",[797],26125,[3],0,1
-38,"FleabagTrader_AsyncItemSoldOutOfZone",[797],26140,[5],0,1
-39,"FleabagTrader_AsyncItemBought",[797],26151,[6],0,1
-40,"FleabagTrader_CEPlaceOrder",[797],26182,[7],0,1
-41,"FleabagTrader_CEReceiveOrder",[797],26194,[8],0,1
-42,"FleabagTrader_OpenAwayShop",[797],26170,[4],0,1
+"rownum","Id","NPC","NPCAudio","DialogueCondition","i32_56","i32_60","string_64"
+0,"ManInBox_AsyncListItem",[784],24341,[0],0,1,""
+1,"ManInBox_AsyncPriceLower",[784],24391,[1],0,1,""
+2,"ManInBox_AsyncPriceHigher",[784],24365,[2],0,1,""
+3,"ManInBox_AsyncItemSoldInZone",[784],24418,[3],0,1,""
+4,"ManInBox_OpenAwayShop",[784],24502,[4],0,1,""
+5,"ManInBox_AsyncItemSoldInOutOfZone",[784],24454,[5],0,1,""
+6,"ManInBox_AsyncItemBoughtAway",[784],24257,[6],0,1,""
+7,"ManInBox_CEPlaceOrder",[784],24290,[7],0,1,""
+8,"ManInBox_CEReceiveOrder",[784],24311,[8],0,1,""
+9,"Faustus_AsyncTradeLowerPrice","[677,679,678,805]",23863,[1],0,1,""
+10,"Faustus_AsyncTradeRaisePrice","[677,679,678,805]",23878,[2],0,1,""
+11,"Faustus_AsyncTradeList","[677,679,678,805]",23848,[0],0,1,""
+12,"Faustus_AsyncTradeSellOutOfZone","[677,679,678,805]",23907,[5],0,1,""
+13,"Faustus_AsyncTradeBuy","[677,679,678,805]",23921,[6],0,1,""
+14,"Faustus_CXPlaceOrder","[679,678]",18809,[7],0,1,""
+15,"Faustus_CXReceiveOrder","[679,678]",18797,[8],0,1,""
+16,"DjinnTrader_AsyncListItem",[802],25614,[0],0,1,""
+17,"DjinnTrader_AsyncPriceLower",[802],25640,[1],0,1,""
+18,"DjinnTrader_AsyncPriceHigher",[802],25665,[2],0,1,""
+19,"DjinnTrader_AsyncItemSoldInZone",[802],25689,[3],0,1,""
+20,"DjinnTrader_AsyncItemSoldOutOfZone",[802],25710,[5],0,1,""
+21,"DjinnTrader_AsyncItemBought",[802],25733,[6],0,1,""
+22,"DjinnTrader_CEPlaceOrder",[802],25759,[7],0,1,""
+23,"DjinnTrader_CEReceiveOrder",[802],25784,[8],0,1,""
+24,"DjinnTrader_OpenAwayShop",[802],25808,[4],0,1,""
+25,"VampireServant_AsyncListItem",[804],25953,[0],0,1,""
+26,"VampireServant_AsyncPriceLower",[804],25890,[1],0,1,""
+27,"VampireServant_AsyncPriceHigher",[804],25877,[2],0,1,""
+28,"VampireServant_AsyncItemSoldInZone",[804],26001,[3],0,1,""
+29,"VampireServant_AsyncItemSoldOutOfZone",[804],26017,[5],0,1,""
+30,"VampireServant_AsyncItemBought",[804],25980,[6],0,1,""
+31,"VampireServant_CEPlaceOrder",[804],25901,[7],0,1,""
+32,"VampireServant_CEReceiveOrder",[804],25917,[8],0,1,""
+33,"VampireServant_OpenAwayShop",[804],25991,[4],0,1,""
+34,"FleabagTrader_AsyncListitem",[806],26087,[0],0,1,""
+35,"FleabagTrader_AsyncPriceLower",[806],26105,[1],0,1,""
+36,"FleabagTrader_AsyncPriceHigher",[806],26117,[2],0,1,""
+37,"FleabagTrader_AsyncItemSoldInZone",[806],26133,[3],0,1,""
+38,"FleabagTrader_AsyncItemSoldOutOfZone",[806],26148,[5],0,1,""
+39,"FleabagTrader_AsyncItemBought",[806],26159,[6],0,1,""
+40,"FleabagTrader_CEPlaceOrder",[806],26190,[7],0,1,""
+41,"FleabagTrader_CEReceiveOrder",[806],26202,[8],0,1,""
+42,"FleabagTrader_OpenAwayShop",[806],26178,[4],0,1,""
+43,"DavinBossHead_Listing",[816],27092,[0],0,1,"QueueAnimation( idle_generic_01 );"
+44,"DavinBossHead_AdjustLower",[816],27113,[1],0,1,"QueueAnimation( idle_generic_02 );"
+45,"DavinBossHead_AdjustHigher",[816],27135,[2],0,1,"QueueAnimation( idle_generic_01 );"
+46,"DavinBossHead_ItemSoldInZone",[816],27154,[3],0,1,"QueueAnimation( idle_generic_01 );"
+47,"DavinBossHead_ItemSoldOutOfZone",[816],27174,[5],0,1,"QueueAnimation( idle_generic_01 );"
+48,"DavinBossHead_ItemBought",[816],27253,[6],0,1,"QueueAnimation( idle_generic_01 );"
+49,"DavinBossHead_CurrencyPlaceOrder",[816],27192,[7],0,1,"QueueAnimation( idle_generic_01 );"
+50,"DavinBossHead_CurrencyReceived",[816],27210,[8],0,1,"QueueAnimation( idle_generic_01 );"
+51,"DavinBossHead_OpenAwayShop",[816],27277,[4],0,1,"QueueAnimation( idle_relaxed_04 );"

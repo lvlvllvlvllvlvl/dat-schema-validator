@@ -2,7 +2,7 @@
 type TypeTags {
   Id: string @unique
   Tag: Tags
-  Name: string
+  Name: string @localized
   Icon: string
   _: Stats
 }

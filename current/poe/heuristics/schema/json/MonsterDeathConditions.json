@@ -153,38 +153,18 @@
     "size": 4
   },
   {
-    "name": "",
-    "offset": 87,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "Animation",
-    "offset": 88,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "Animation"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 87,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 104,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -192,44 +172,33 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 103,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "ActiveSkill1",
-    "offset": 108,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "ActiveSkills"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 107,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "ActiveSkill2",
-    "offset": 124,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "ActiveSkills"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 123,
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 140,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -237,14 +206,11 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 139,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 144,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -252,6 +218,8 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 143,
+    "size": 4,
+    "unique": false
   }
 ]

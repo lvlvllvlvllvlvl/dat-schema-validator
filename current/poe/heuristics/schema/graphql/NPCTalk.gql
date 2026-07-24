@@ -37,4 +37,5 @@ type NPCTalk {
   _: i32
   _: NPCTalk
   Inventory: Inventories
+  _: string @localized
 }

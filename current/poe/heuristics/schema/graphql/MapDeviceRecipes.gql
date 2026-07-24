@@ -17,4 +17,5 @@ type MapDeviceRecipes @tags(list: ["item:recipe"]) {
   _: bool
   _: [i32]
   AtlasNode: AtlasNode
+  _: bool
 }

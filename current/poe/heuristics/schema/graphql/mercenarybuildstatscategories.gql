@@ -1,0 +1,4 @@
+type mercenarybuildstatscategories {
+  _: string @unique
+  _: string @unique @localized
+}

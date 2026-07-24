@@ -1,0 +1,16 @@
+type DeepwaterLockerLayout {
+  Id: string @unique
+  _: rid
+  _: bool
+  _: string
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: rid
+  _: i32
+  _: string @localized
+}

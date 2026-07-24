@@ -1,0 +1,8 @@
+type mercenarybuildextrastats {
+  _: string @unique
+  _: rid
+  _: i32
+  _: i32
+  _: rid
+  _: i32 # All rows empty
+}

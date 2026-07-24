@@ -186,10 +186,12 @@
   {
     "type": {
       "array": false,
-      "string": {}
+      "key": {
+        "foreign": true
+      }
     },
     "offset": 106,
-    "size": 8,
+    "size": 16,
     "unique": false
   },
   {
@@ -199,7 +201,7 @@
         "foreign": true
       }
     },
-    "offset": 114,
+    "offset": 122,
     "size": 16,
     "unique": false
   }

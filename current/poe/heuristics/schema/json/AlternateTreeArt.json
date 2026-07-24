@@ -18,7 +18,7 @@
     "name": "Circle1",
     "offset": 16,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -30,7 +30,7 @@
     "name": "Circle2",
     "offset": 24,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
@@ -42,12 +42,23 @@
     "name": "Glow",
     "offset": 32,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
     "size": 8
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 40,
+    "size": 16,
+    "unique": false
   }
 ]

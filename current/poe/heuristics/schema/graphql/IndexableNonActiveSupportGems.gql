@@ -1,0 +1,5 @@
+type IndexableNonActiveSupportGems {
+  Index: i32
+  SupportGem: SkillGems
+  Name: string @localized
+}

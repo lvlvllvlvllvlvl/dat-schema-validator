@@ -1,0 +1,11 @@
+type graphicalitemreceptacleslot {
+  _: rid
+  _: i32 @unique
+  _: rid
+  _: i32 @unique
+  _: string @unique
+  _: string @unique
+  _: [_]
+  _: string
+  _: [_] # All rows empty
+}

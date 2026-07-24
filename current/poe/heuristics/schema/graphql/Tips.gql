@@ -3,4 +3,10 @@ type Tips {
   Id: string @unique
   Text: string @localized
   TextXBox: string @localized
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: [_] # All rows empty
+  _: i32
 }

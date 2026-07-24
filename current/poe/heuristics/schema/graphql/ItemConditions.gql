@@ -7,4 +7,7 @@ type ItemConditions {
   _: bool
   MinLevel: i32
   MaxLevel: i32
+  _: [_] # All rows empty
+  _: rid
+  _: rid
 }

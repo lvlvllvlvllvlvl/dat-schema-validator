@@ -16,4 +16,7 @@ type LeagueInfo {
   _: string @localized
   _: [i32]
   _: string
+  _: u16 # All rows empty
+  _: bool
+  _: u16
 }

@@ -1,0 +1,10 @@
+type breachstashtabsubstashgroup {
+  _: string @unique
+  _: string @unique @localized
+  _: i32
+  _: i32
+  _: string @unique
+  _: string
+  _: bool
+  _: f32
+}
