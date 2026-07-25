@@ -643,11 +643,11 @@
     "size": 16
   },
   {
-    "name": "Heist_SubStatValue1",
+    "name": "Stat7Value",
     "offset": 455,
     "unknownArray": false,
     "unique": false,
-    "interval": false,
+    "interval": true,
     "type": {
       "array": false,
       "integer": {
@@ -658,22 +658,19 @@
     "size": 4
   },
   {
-    "name": "Heist_SubStatValue2",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 459,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "Heist_Stat0",
+    "name": "Stat7",
     "offset": 463,
     "unknownArray": false,
     "unique": false,
@@ -688,7 +685,7 @@
     "size": 16
   },
   {
-    "name": "Heist_Stat1",
+    "name": "Stat8",
     "offset": 479,
     "unknownArray": false,
     "unique": false,
@@ -703,11 +700,11 @@
     "size": 16
   },
   {
-    "name": "Heist_AddStatValue1",
+    "name": "Stat8Value",
     "offset": 495,
     "unknownArray": false,
     "unique": false,
-    "interval": false,
+    "interval": true,
     "type": {
       "array": false,
       "integer": {
@@ -718,11 +715,6 @@
     "size": 4
   },
   {
-    "name": "Heist_AddStatValue2",
-    "offset": 499,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -730,7 +722,9 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 499,
+    "size": 4,
+    "unique": false
   },
   {
     "name": "InfluenceType",

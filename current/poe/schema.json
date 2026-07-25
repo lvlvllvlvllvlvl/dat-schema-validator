@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1784923245,
+  "createdAt": 1784953474,
   "tables": [
     {
       "validFor": 1,
@@ -101872,7 +101872,7 @@
           "interval": false
         },
         {
-          "name": "Heist_SubStatValue1",
+          "name": "Stat7Min",
           "description": null,
           "array": false,
           "type": "i32",
@@ -101885,7 +101885,7 @@
           "interval": false
         },
         {
-          "name": "Heist_SubStatValue2",
+          "name": "Stat7Max",
           "description": null,
           "array": false,
           "type": "i32",
@@ -101898,7 +101898,7 @@
           "interval": false
         },
         {
-          "name": "Heist_StatsKey0",
+          "name": "StatsKey7",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -101913,7 +101913,7 @@
           "interval": false
         },
         {
-          "name": "Heist_StatsKey1",
+          "name": "StatsKey8",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -101928,7 +101928,7 @@
           "interval": false
         },
         {
-          "name": "Heist_AddStatValue1",
+          "name": "Stat8Min",
           "description": null,
           "array": false,
           "type": "i32",
@@ -101941,7 +101941,7 @@
           "interval": false
         },
         {
-          "name": "Heist_AddStatValue2",
+          "name": "Stat8Max",
           "description": null,
           "array": false,
           "type": "i32",
@@ -102864,7 +102864,7 @@
           "interval": false
         },
         {
-          "name": "Heist_SubStatValue1",
+          "name": "Stat7Value",
           "description": null,
           "array": false,
           "type": "i32",
@@ -102874,23 +102874,10 @@
           "until": null,
           "file": null,
           "files": null,
-          "interval": false
+          "interval": true
         },
         {
-          "name": "Heist_SubStatValue2",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "Heist_Stat0",
+          "name": "Stat7",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -102905,7 +102892,7 @@
           "interval": false
         },
         {
-          "name": "Heist_Stat1",
+          "name": "Stat8",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -102920,7 +102907,7 @@
           "interval": false
         },
         {
-          "name": "Heist_AddStatValue1",
+          "name": "Stat8Value",
           "description": null,
           "array": false,
           "type": "i32",
@@ -102930,20 +102917,7 @@
           "until": null,
           "file": null,
           "files": null,
-          "interval": false
-        },
-        {
-          "name": "Heist_AddStatValue2",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
+          "interval": true
         },
         {
           "name": "InfluenceType",

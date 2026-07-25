@@ -40,22 +40,20 @@ type Mods @tags(list: ["crafting"]) {
   _: i32
   Stat6: AchievementItems
   MaxLevel: i32
-  _: bool
+  _: Stats
   CraftingItemClassRestrictions: [Stats]
-  MonsterOnDeath: Stats
+  MonsterOnDeath: string
+  _: InfluenceTypes
+  HeistAchievements: [Tags]
+  Stat7Value: i32
   _: i32
-  HeistAchievements: [AchievementItems]
-  Heist_SubStatValue1: InfluenceTypes
-  Heist_SubStatValue2: Tags
-  Heist_Stat0: Stats
-  Heist_Stat1: Stats
-  Heist_AddStatValue1: i32
-  Heist_AddStatValue2: i32
+  Stat7: Stats
+  Stat8: Stats
+  Stat8Value: i32
+  _: i32
   InfluenceType: i32
   ImplicitTags: [Tags]
   _: bool
-  _: i32
-  _: i32
   _: i32
   _: i32
   _: i32
@@ -70,9 +68,11 @@ type Mods @tags(list: ["crafting"]) {
   _: BuffTemplates
   _: i32
   _: GrantedEffectsPerLevel
+  _: i32
+  _: i32
   BuffTemplate: BuffTemplates
   ArchnemesisMinionMod: Mods
-  HASH32: u32
+  HASH32: u32 @unique
   BuffTemplate2: [BuffTemplates]
   _: i32
   _: [GrantedEffectsPerLevel]
