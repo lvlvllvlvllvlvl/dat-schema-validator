@@ -1,0 +1,10 @@
+# Added 3.29
+type KeywordPopups {
+  Id: string @unique
+  Term: string @localized
+  Definition: string @localized
+  _: string
+  _: string
+  ItemReference: KeywordPopupItemReference
+  ModReference: KeywordPopupModReference
+}

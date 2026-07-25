@@ -1,0 +1,11 @@
+# Added 3.29
+type KeywordPopupItemReference {
+  Id: string @unique
+  BaseItemType: BaseItemTypes
+  UniqueName: Words
+  ItemVisualIdentity: ItemVisualIdentity
+  FlavourText: FlavourText
+  Rarity: Rarity
+  ItemLevel: i32
+  _: bool
+}
