@@ -1,0 +1,9 @@
+# Added 3.29
+type MercenaryBuildExtraStats {
+  Id: string @unique
+  Stat: Stats
+  _: i32
+  _: i32
+  _: i32
+  Category: MercenaryBuildStatsCategories
+}

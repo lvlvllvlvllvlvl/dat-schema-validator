@@ -112,25 +112,32 @@
     "unique": false
   },
   {
+    "name": "UniqueName",
+    "offset": 57,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Words"
       }
     },
-    "offset": 57,
-    "size": 16,
-    "unique": false
+    "size": 16
   },
   {
+    "name": "",
+    "offset": 73,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
         "foreign": true
       }
     },
-    "offset": 73,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

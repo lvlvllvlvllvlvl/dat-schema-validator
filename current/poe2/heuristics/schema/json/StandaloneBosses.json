@@ -42,7 +42,7 @@
     "size": 1
   },
   {
-    "name": "InvisibleMonster",
+    "name": "",
     "offset": 21,
     "unknownArray": false,
     "unique": false,
@@ -50,8 +50,7 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "MonsterVarieties"
+        "foreign": true
       }
     },
     "size": 16

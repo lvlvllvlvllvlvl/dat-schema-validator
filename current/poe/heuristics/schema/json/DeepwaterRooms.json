@@ -12,7 +12,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "ArmFiles",
     "offset": 8,
     "unknownArray": false,
     "unique": true,
@@ -39,7 +39,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Name",
     "offset": 20,
     "unknownArray": false,
     "unique": false,
@@ -97,7 +97,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Biome",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -105,7 +105,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "DeepwaterBiomes"
       }
     },
     "size": 16
@@ -170,7 +171,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stats",
     "offset": 84,
     "unknownArray": false,
     "unique": false,
@@ -178,13 +179,14 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "Stats"
       }
     },
     "size": 16
   },
   {
-    "name": "",
+    "name": "StatValues",
     "offset": 100,
     "unknownArray": false,
     "unique": false,
@@ -225,7 +227,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "AchievementItems",
     "offset": 125,
     "unknownArray": false,
     "unique": false,
@@ -233,7 +235,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16

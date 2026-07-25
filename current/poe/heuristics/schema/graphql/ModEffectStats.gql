@@ -2,11 +2,11 @@
 type ModEffectStats {
   StatsKey: Stats
   TagsKeys: [Tags]
-  _: bool
+  ApplyToExplicit: bool
   _: i32
-  _: bool
-  _: bool
-  _: bool
-  _: i32
-  _: bool
+  ApplyToImplicit: bool
+  ApplyToPrefix: bool
+  ApplyToSuffix: bool
+  Multiplier: i32
+  ApplyToEnchant: bool
 }

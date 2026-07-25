@@ -1,21 +1,21 @@
 # Added 3.29
 type DeepwaterRooms {
   Id: string @unique
-  _: string
+  ArmFiles: string @file(ext: ".arm")
   _: i32
-  _: string @localized
+  Name: string @localized
   _: i32
   _: i32
+  _: i32
+  Biome: DeepwaterBiomes
   _: i32
   _: rid
   _: i32
-  _: rid
   _: i32
-  _: i32
-  _: [rid]
-  _: [i32]
+  Stats: [Stats]
+  StatValues: [i32]
   _: DeepwaterRooms
   _: bool
-  _: [rid]
+  AchievementItems: [AchievementItems]
   _: bool
 }

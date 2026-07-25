@@ -293,15 +293,18 @@
     "size": 16
   },
   {
+    "name": "BuildStats",
+    "offset": 227,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MercenaryBuildExtraStats"
       }
     },
-    "offset": 227,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

@@ -11,7 +11,7 @@ type MercenaryClasses {
   Attribute: MercenaryAttributes
   HouseBuffIcon: string
   MonsterVarietyAllied: MonsterVarieties
-  _: [_]
-  _: [_]
-  _: string @localized
+  HouseSpawnChanceStats: [Stats]
+  AttributeSpawnChanceStats: [Stats]
+  HouseName: string @localized
 }

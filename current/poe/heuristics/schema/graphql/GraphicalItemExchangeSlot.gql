@@ -1,0 +1,21 @@
+# Added 3.29
+type GraphicalItemExchangeSlot {
+  Item: GraphicalItemExchange
+  _: i32
+  Inventory: Inventories
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  _: bool
+  ItemCondition: [ItemConditions]
+  GlowArt: string
+  _: i32
+  _: string
+  _: bool
+  _: bool
+}

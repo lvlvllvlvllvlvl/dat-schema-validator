@@ -1,0 +1,10 @@
+# Added 3.29
+type BreachStashTabSubStashGroup {
+  Id: string @unique
+  Name: string @localized
+  Group: BreachStashTabSubStashGroup
+  Icon: string
+  _: string
+  _: bool
+  _: f32
+}

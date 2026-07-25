@@ -3,7 +3,7 @@ type MiscObjects {
   Id: string @unique
   EffectVirtualPath: string @files(ext: [".ot", ".otc"])
   PreloadGroupsKeys: [PreloadGroups]
+  EffectHASH32: u32
   _: i32
-  _: i32
-  _: i32
+  ObjectHASH32: u32
 }

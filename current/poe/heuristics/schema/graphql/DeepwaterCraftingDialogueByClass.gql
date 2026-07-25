@@ -1,7 +1,7 @@
 # Added 3.29
 type DeepwaterCraftingDialogueByClass {
-  _: rid
-  _: [rid]
-  _: [i32]
+  ItemClass: ItemClasses
+  NPCDialogue: [NPCTextAudio]
+  DialogueWeighting: [i32]
   _: i32
 }

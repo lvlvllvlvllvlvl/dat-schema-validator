@@ -184,15 +184,18 @@
     "size": 16
   },
   {
+    "name": "TattooBlockingPassive",
+    "offset": 140,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkills"
       }
     },
-    "offset": 140,
-    "size": 16,
-    "unknownArray": true,
-    "unique": false
+    "size": 16
   }
 ]

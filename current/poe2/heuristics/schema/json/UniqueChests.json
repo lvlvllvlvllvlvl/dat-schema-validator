@@ -126,16 +126,16 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "DaemonMods",
     "offset": 89,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
+      "key": {
+        "foreign": true,
+        "table": "Mods"
       }
     },
     "size": 16

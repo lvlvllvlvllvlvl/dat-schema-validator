@@ -51,14 +51,18 @@
     "size": 8
   },
   {
+    "name": "ConnectionArt",
+    "offset": 40,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeConnectionArt"
       }
     },
-    "offset": 40,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

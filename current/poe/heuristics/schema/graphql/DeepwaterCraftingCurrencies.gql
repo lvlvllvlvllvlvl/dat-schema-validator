@@ -1,14 +1,14 @@
 # Added 3.29
 type DeepwaterCraftingCurrencies {
-  _: rid
+  Currency: CurrencyItems
   _: i32
   _: i32
   _: i32
-  _: i32
+  Cost: i32
   _: i32
   _: [_] # All rows empty
   _: [_] # All rows empty
-  _: rid
+  NPCAudio: NPCTextAudio
   _: i32
   _: string @localized
   _: bool

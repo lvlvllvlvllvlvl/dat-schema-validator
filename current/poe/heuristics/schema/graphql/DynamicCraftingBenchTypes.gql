@@ -10,22 +10,18 @@ type DynamicCraftingBenchTypes {
   _: i32
   _: rid
   _: rid
-  _: string
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: i32 # All rows empty
   _: rid
-  _: i32 # All rows empty
+  _: rid
   _: bool
   _: rid
   _: rid
-  _: string
-  _: i32 # All rows empty
   _: rid
   _: rid
-  _: i32 # All rows empty
+  _: rid
+  _: rid
+  _: rid
   _: string
   _: bool
-  _: rid
-  _: rid
+  OpenSound: SoundEffects
+  CloseSound: SoundEffects
 }

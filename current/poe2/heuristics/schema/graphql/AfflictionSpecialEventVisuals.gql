@@ -2,6 +2,6 @@
 type AfflictionSpecialEventVisuals {
   Id: string @unique
   Icon: string @file(ext: ".dds")
+  Icon2: string @file(ext: ".dds")
   IconBright: string @file(ext: ".dds")
-  _: string
 }

@@ -8,6 +8,6 @@ type MicrotransactionAfkEffects {
   _: i32
   FlyingStat: [Stats]
   _: bool
-  _: rid
+  EffectPack: MiscEffectPacks
   _: bool
 }

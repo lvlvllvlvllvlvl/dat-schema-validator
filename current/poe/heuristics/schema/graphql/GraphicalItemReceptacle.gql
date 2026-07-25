@@ -1,0 +1,25 @@
+# Added 3.29
+type GraphicalItemReceptacle {
+  Id: string @unique
+  BackgroundArt: string
+  HoverMessage: ClientStrings
+  _: bool
+  _: bool
+  SoundEffect: SoundEffects
+  _: string
+  ErrorMessage: ClientStrings
+  Script: string
+  _: bool
+  AreaName: ClientStrings2
+  Icon: string
+  Description: ClientStrings
+  _: f32
+  _: f32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: bool
+  SoundEffect1: SoundEffects
+  SoundEffect2: SoundEffects
+}

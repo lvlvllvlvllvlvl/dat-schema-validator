@@ -1,0 +1,6 @@
+# Added 3.29
+type ModSlotType {
+  Id: string @unique
+  _: string
+  ClientString: ClientStrings
+}

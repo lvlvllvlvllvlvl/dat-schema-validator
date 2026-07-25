@@ -1,0 +1,5 @@
+# Added 3.29
+type MercenaryBuildStatsCategories {
+  Id: string @unique
+  Name: string @localized
+}

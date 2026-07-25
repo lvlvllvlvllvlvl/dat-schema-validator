@@ -1,5 +1,5 @@
 # Added 4.3
 type StatisticTrackingMicrotransactionOnEnteringArea {
-  _: rid @unique
+  Area: WorldAreas @unique
   _: i32
 }

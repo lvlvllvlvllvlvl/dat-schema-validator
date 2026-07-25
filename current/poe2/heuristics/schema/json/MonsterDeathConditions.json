@@ -153,105 +153,101 @@
     "size": 4
   },
   {
-    "name": "",
-    "offset": 87,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 87,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "Animation",
-    "offset": 88,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "Animation"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 88,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 104,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "ActiveSkill1",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 108,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "ActiveSkills"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "ActiveSkill2",
     "offset": 124,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "ActiveSkills"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 140,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "boolean": true
+    },
     "offset": 144,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 1,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
-        "size": 4
+        "unsigned": true,
+        "size": 2
       }
     },
-    "size": 4
+    "offset": 145,
+    "size": 2,
+    "noData": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 147,
+    "size": 1,
+    "unique": false
   }
 ]

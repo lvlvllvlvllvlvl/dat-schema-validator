@@ -2,8 +2,8 @@
 type ModEffectStats {
   Stat: Stats
   Tags: [Tags]
-  _: bool
+  ApplyToExplicit: bool
   _: i32
-  _: bool
-  MaxStacks: i32
+  ApplyToImplicit: bool
+  Multiplier: i32
 }
