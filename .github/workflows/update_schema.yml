@@ -23,17 +23,40 @@ jobs:
           node-version: 20
       - name: npm install
         run: npm ci
+      - name: read local version
+        id: local-version
+        run: |
+          echo "poe1=$(cat version.txt)" >> "$GITHUB_OUTPUT"
+          echo "poe2=$(cat version2.txt)" >> "$GITHUB_OUTPUT"
+          echo "schema=$(cat schema.txt)" >> "$GITHUB_OUTPUT"
       - name: get version
         id: get-version
-        run: echo "version=$(curl --fail 'https://ggpk.exposed/version?poe=1' | sed -r 's|.*/([0-9](\.[0-9]+)+)/$|\1|') / $(curl --fail 'https://ggpk.exposed/version?poe=2' | sed -r 's|.*/([0-9](\.[0-9]+)+)/$|\1|')" >> "$GITHUB_OUTPUT"
+        run: |
+          POE1=$(curl --fail 'https://ggpk.exposed/version?poe=1' | sed -r 's|.*/([0-9](\.[0-9]+)+)/$|\1|')
+          POE2=$(curl --fail 'https://ggpk.exposed/version?poe=2' | sed -r 's|.*/([0-9](\.[0-9]+)+)/$|\1|')
+          git ls-remote https://github.com/poe-tool-dev/dat-schema.git refs/heads/main > schema.txt
+          echo "schema=$(cat schema.txt)" >> "$GITHUB_OUTPUT"
+          echo "poe1=$POE1" >> "$GITHUB_OUTPUT"
+          echo "poe2=$POE2" >> "$GITHUB_OUTPUT"
+          echo "version=$POE1 / $POE2" >> "$GITHUB_OUTPUT"
       - name: cache cdn downloads
         uses: actions/cache@v3
         with:
           path: .cache
           key: poecdn-${{ steps.get-version.outputs.version }}
 
-      - run: npx -y tsx src/validate.ts --quiet
-      - run: npx -y tsx src/validate.ts --poe2 --quiet
+      - name: validate poe1
+        if: >
+          github.event_name != 'schedule' ||
+          steps.get-version.outputs.poe1 != steps.local-version.outputs.poe1 ||
+          steps.get-version.outputs.schema != steps.local-version.outputs.schema
+        run: npx -y tsx src/validate.ts --quiet
+      - name: validate poe2
+        if: >
+          github.event_name != 'schedule' ||
+          steps.get-version.outputs.poe2 != steps.local-version.outputs.poe2 ||
+          steps.get-version.outputs.schema != steps.local-version.outputs.schema
+        run: npx -y tsx src/validate.ts --poe2 --quiet
       - run: find * -name '*.csv' -size +50M -print -delete # usually an error in the heuristic
       - run: for i in current/*/dat.sqlite; do split -db 10m "$i" "$i".; done
       - run: for i in current/*/dat.sqlite; do stat --format='{"size":%s,"created":%W}' "$i" > "$i.json"; done
