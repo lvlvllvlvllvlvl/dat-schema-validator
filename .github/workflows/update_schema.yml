@@ -57,9 +57,14 @@ jobs:
           steps.get-version.outputs.poe2 != steps.local-version.outputs.poe2 ||
           steps.get-version.outputs.schema != steps.local-version.outputs.schema
         run: npx -y tsx src/validate.ts --poe2 --quiet
-      - run: find * -name '*.csv' -size +50M -print -delete # usually an error in the heuristic
-      - run: for i in current/*/dat.sqlite; do split -db 10m "$i" "$i".; done
-      - run: for i in current/*/dat.sqlite; do stat --format='{"size":%s,"created":%W}' "$i" > "$i.json"; done
+      - name: remove large csv files
+        run: find * -name '*.csv' -size +50M -print -delete # usually an error in the heuristic
+      - name: prepare sqlite files
+        run: |
+          [ -f current/poe/dat.sqlite ] || curl --fail -L https://repoe-fork.github.io/dat-export/poe/dat.sqlite -o current/poe/dat.sqlite
+          [ -f current/poe2/dat.sqlite ] || curl --fail -L https://repoe-fork.github.io/dat-export/poe2/dat.sqlite -o current/poe2/dat.sqlite
+          for i in current/*/dat.sqlite; do split -db 10m "$i" "$i".; done
+          for i in current/*/dat.sqlite; do stat --format='{"size":%s,"created":%W}' "$i" > "$i.json"; done
 
       - name: commit changes
         id: autocommit
