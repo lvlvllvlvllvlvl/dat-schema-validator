@@ -1,7 +1,7 @@
 # Added 3.11
 type DivinationCardArt @tags(list: ["item:def"]) {
-  BaseItemTypesKey: BaseItemTypes
-  VirtualFile: string
-  Influences: [InfluenceTypes]
-  _: string
+  BaseItemTypesKey: BaseItemTypes @unique
+  ArtFile: string
+  Effects: [CardAnimatedEffects]
+  MaskFile: string
 }

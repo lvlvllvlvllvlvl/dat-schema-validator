@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1784993664,
+  "createdAt": 1785366864,
   "tables": [
     {
       "validFor": 1,
@@ -2279,7 +2279,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "BaseItemTypes"
@@ -2290,7 +2290,7 @@
           "interval": false
         },
         {
-          "name": "VirtualFile",
+          "name": "ArtFile",
           "description": null,
           "array": false,
           "type": "string",
@@ -2303,14 +2303,14 @@
           "interval": false
         },
         {
-          "name": "Influences",
+          "name": "Effects",
           "description": null,
           "array": true,
           "type": "enumrow",
           "unique": false,
           "localized": false,
           "references": {
-            "table": "InfluenceTypes"
+            "table": "CardAnimatedEffects"
           },
           "until": null,
           "file": null,
@@ -2318,7 +2318,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "MaskFile",
           "description": null,
           "array": false,
           "type": "string",
@@ -189828,6 +189828,20 @@
       "name": "InvasionMonsterRoles",
       "indexing": 0,
       "enumerators": []
+    },
+    {
+      "validFor": 3,
+      "name": "CardAnimatedEffects",
+      "indexing": 0,
+      "enumerators": [
+        "SHAPER",
+        "ELDER",
+        "CRUSADER",
+        "EYRIE",
+        "BASILISK",
+        "ADJUDICATOR",
+        "ZANA"
+      ]
     },
     {
       "validFor": 3,
