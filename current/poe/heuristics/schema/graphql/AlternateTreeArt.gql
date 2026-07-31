@@ -1,8 +1,9 @@
 # Added 3.19
 type AlternateTreeArt {
   TreeVersion: AlternateTreeVersions @unique
-  Circle1: string
-  Circle2: string
-  Glow: string
-  ConnectionArt: PassiveSkillTreeConnectionArt
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: rid
 }

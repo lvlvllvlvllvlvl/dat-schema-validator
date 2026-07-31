@@ -15,54 +15,58 @@
     "size": 16
   },
   {
-    "name": "Circle1",
-    "offset": 16,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "Circle2",
-    "offset": 24,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "Glow",
-    "offset": 32,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "ConnectionArt",
-    "offset": 40,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "PassiveSkillTreeConnectionArt"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 16,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 32,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 48,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 64,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 80,
+    "size": 16,
+    "unique": false
   }
 ]

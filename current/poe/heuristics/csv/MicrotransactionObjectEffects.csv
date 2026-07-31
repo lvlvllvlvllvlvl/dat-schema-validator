@@ -2,14 +2,14 @@
 0,"MicrotransactionBreachHandOnKill","","Delay( 1.75,\r\n{\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/Misc/rare_unique_kill/breach/epks/corpse_dragged_down.epk\"" );\r\n} );","Delay( 1.0,\r\n{\r\n  PlayEffect( \""Metadata/Effects/Microtransactions/Misc/rare_unique_kill/breach/breachhole.ao\"", scale:0.65 );\r\n} );",[],[],4,[],"","","",0,0,0,[],0,"",0,0
 1,"MicrotransactionSkySwordOnKill","","","",[585],[1232],"",[],"","","",0,0,0,[],0,"",0,0
 2,"MicrotransactionBirdsOnRareKill","","","",[586],[1233],1,[],"","","",0,0,0,[],0,"",0,0
-3,"MicrotransactionMoltenLiquifyOnKill","","SetCurrentAnimationSpeed(0.02);","",[592],[],5,[7112],"","","",0,0,0,[],0,"",0,0
-4,"MicrotransactionBloodAndGoreOnKill","","","",[595],[],6,[7111],"","","",0,0,0,[],0,"",0,0
-5,"RaijuScourgeLightningOnKill","","","",[],[],"","[7055,7055,7055,7055,7055]","","","",1,7,0,[],0,"",0,0
+3,"MicrotransactionMoltenLiquifyOnKill","","SetCurrentAnimationSpeed(0.02);","",[592],[],5,[7113],"","","",0,0,0,[],0,"",0,0
+4,"MicrotransactionBloodAndGoreOnKill","","","",[595],[],6,[7112],"","","",0,0,0,[],0,"",0,0
+5,"RaijuScourgeLightningOnKill","","","",[],[],"","[7056,7056,7056,7056,7056]","","","",1,7,0,[],0,"",0,0
 6,"MicrotransactionCordycepBowOnKill","","","","[603,604]",[],"",[],"","","",0,0,2,[],0,"",0,0
-7,"MicrotransactionStatueOnKill","","","",[],[],"",[7113],"","","",0,0,0,[],0,"",0,0
-8,"MicrotransactionAnchorOnKill","","","",[615],[],"",[7289],"","","",0,0,0,"[""frameupper""]",0.28,"",0,0
-9,"MicrotransactionSharkAttackOnKill","","Delay( 1.13,\r\n{\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/Misc/rare_unique_kill/shark/epk/chomped_down.epk\"", 1.5 );\r\n} );","",[],[],"",[7290],"","","",0,0,0,"[""frameupper""]",1,"",0,0
-10,"MicrotransactionTentacleConsumeOnKill","","Delay( 1.9,\r\n{\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/Misc/rare_unique_kill/tentacle/epk/chomped_down.epk\"", 1.5 );\r\n} );","",[],[],"","[7291,7292,7293,7294,7295]","","","",0,0,0,"[""root""]",1,1,0,0
+7,"MicrotransactionStatueOnKill","","","",[],[],"",[7114],"","","",0,0,0,[],0,"",0,0
+8,"MicrotransactionAnchorOnKill","","","",[615],[],"",[7290],"","","",0,0,0,"[""frameupper""]",0.28,"",0,0
+9,"MicrotransactionSharkAttackOnKill","","Delay( 1.13,\r\n{\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/Misc/rare_unique_kill/shark/epk/chomped_down.epk\"", 1.5 );\r\n} );","",[],[],"",[7291],"","","",0,0,0,"[""frameupper""]",1,"",0,0
+10,"MicrotransactionTentacleConsumeOnKill","","Delay( 1.9,\r\n{\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/Misc/rare_unique_kill/tentacle/epk/chomped_down.epk\"", 1.5 );\r\n} );","",[],[],"","[7292,7293,7294,7295,7296]","","","",0,0,0,"[""root""]",1,1,0,0
 11,"MicrotransactionDragonFireOnKill","","Delay( 2.15,\r\n{\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/on_kill/Dragon_Fire/epk/disintegrate_down.epk\"", 1.5 );\r\n} );","",[],[1312],"",[],"","","",0,0,0,"[""frameupper""]",2,"",0,0
 12,"MicrotransactionBlackHoleOnKill","","Delay(0.1, {this.black_hole = FindClosestObject( \""Metadata/Effects/Microtransactions/Misc/uniques/BlackHole/blackhole\"" ); this.black_hole_position = black_hole.GetPositionValues(  );\r\n\t\tthis.position = this.GetPositionValues(  );\r\n\t\tthis.sopx = black_hole_position[0] - position[0];\r\n\t\tthis.on_kill_black_hole_position += sopx;\r\n\t\tthis.sopy = black_hole_position[1] - position[1];\r\n\t\tthis.on_kill_black_hole_position += sopy;\r\n\t\tthis.sopz = black_hole_position[2] - position[2];\r\n\t\tthis.on_kill_black_hole_position += sopz; });","",[614],[1311],"",[],"","","",0,0,0,[],0,"",0,0
 13,"MicrotransactionVaalPalmHoleOnKill","","","",[629],[1334],"",[],"","","",0,0,0,"[""frameupper""]",0.1,"",0,0
@@ -18,55 +18,55 @@
 16,"MicrotransactionNecroticFlamesOnKill","","","",[633],[1347],"",[],"","","",0,0,0,"[""frameupper""]",1,"",500,0
 17,"MicrotransactionAesirZeusLightningOnKill","","","",[635],[1349],"",[],"","","",0,0,0,"[""frameupper""]",2,"",1600,0
 18,"MicrotransactionSulphiteShatterOnKill","","","",[647],[1362],"",[],"","","",0,0,0,"[""frameupper""]",1,"",0,0
-19,"MicrotransactionVoodooKingGlovesOnKillNormal","","","",[],[1409],"",[7490],"","","",0,0,0,[],0,"",0,0
-20,"MicrotransactionVoodooKingGlovesOnKillMagic","","","",[],[1409],"",[7490],"","","",0,0,0,[],0,"",0,0
-21,"MicrotransactionVoodooKingGlovesOnKillRare","","","",[],"[1409,1409,1409,1409,1409,1409]","",[7490],"","","",0,0,0,[],0,"",0,0
-22,"MicrotransactionVoodooKingGlovesOnKillUnique","","","",[],"[1409,1409,1409,1409,1409,1409,1409,1409,1409,1409,1409,1409]","",[7490],"","","",0,0,0,[],0,"",0,0
+19,"MicrotransactionVoodooKingGlovesOnKillNormal","","","",[],[1409],"",[7491],"","","",0,0,0,[],0,"",0,0
+20,"MicrotransactionVoodooKingGlovesOnKillMagic","","","",[],[1409],"",[7491],"","","",0,0,0,[],0,"",0,0
+21,"MicrotransactionVoodooKingGlovesOnKillRare","","","",[],"[1409,1409,1409,1409,1409,1409]","",[7491],"","","",0,0,0,[],0,"",0,0
+22,"MicrotransactionVoodooKingGlovesOnKillUnique","","","",[],"[1409,1409,1409,1409,1409,1409,1409,1409,1409,1409,1409,1409]","",[7491],"","","",0,0,0,[],0,"",0,0
 23,"MicrotransactionSandwraithMastodon","","","",[],[1393],"",[],"","","",0,0,0,[],0,"",0,0
 24,"MicrotransactionSandwraithPlayerGEAL","","this.bone_storm = GetAttachedAOByType( \""Metadata/Effects/Microtransactions/BodyArmours/CoreMarakethAssassin/bone_tornado.ao\"" );\r\nthis.bone_storm.controller.SetStateTo( bones, 0 );","",[],[],"",[],"","","",0,0,0,[],0,"",0,0
 25,"NightLotusRareUniqueOnKill","","","","[664,669]",[],"",[],"","","",0,0,0,[],0,"",0,0
 26,"LocustOnKillEffect","","","",[672],[],"",[],"","","",0,0,0,[],0,"",0,0
-27,"MicrotransactionChaosOrbFinisher","","","",[],[],"",[7522],"","","",0,0,0,[],0,"",0,0
-28,"MicrotransactionExaltedOrbFinisher","","","",[],[],"",[7523],"","","",0,0,0,[],0,"",0,0
-29,"MicrotransactionVaalOrbFinisher","","","",[],[],"",[7524],"","","",0,0,0,[],0,"",0,0
-30,"MicrotransactionMirrorFinisher","","","",[],[],"",[7525],"","","",0,0,0,[],0,"",0,0
+27,"MicrotransactionChaosOrbFinisher","","","",[],[],"",[7523],"","","",0,0,0,[],0,"",0,0
+28,"MicrotransactionExaltedOrbFinisher","","","",[],[],"",[7524],"","","",0,0,0,[],0,"",0,0
+29,"MicrotransactionVaalOrbFinisher","","","",[],[],"",[7525],"","","",0,0,0,[],0,"",0,0
+30,"MicrotransactionMirrorFinisher","","","",[],[],"",[7526],"","","",0,0,0,[],0,"",0,0
 31,"MicrotransactionShaperSlamFinisher","","","",[],[1363],"",[],"","","",0,0,0,"[""frameupper""]",1,"",0,0
 32,"HeadhunterOnRareKill","","","IfExists( this.mtx_headhunter_controller, (){this.mtx_headhunter_controller.Call(rare_flare);}, ()\r\n\t\t{\r\n\t\t\tthis.mtx_headhunter_controller = SpawnObject( \""Metadata/Effects/Microtransactions/Character_FX/Headhunter/SkullController\"" );\r\nthis.mtx_headhunter_controller.AddToPlayerWakeGroup();\r\n\t\tglobals.always_serialised += this.mtx_headhunter_controller;\r\n\t\t\tthis.mtx_headhunter_controller.AttachToGameObject( this, root );\r\n\t\t} );\r\n\t\tthis.mtx_headhunter_controller.skulls_to_spawn += other_party;",[],[],"",[],"","","",0,0,0,[],0,"",0,0
-33,"DivineArtilleryStrikeRareOnKill","","","",[675],[],"",[7529],"","","",0,0,0,"[""frameupper""]",3,"",0,0
-34,"MicrotransactionIceShatterFinisher","","","",[679],[],"",[7545],"","","",0,0,0,"[""frameupper""]",2,"",0,0
+33,"DivineArtilleryStrikeRareOnKill","","","",[675],[],"",[7530],"","","",0,0,0,"[""frameupper""]",3,"",0,0
+34,"MicrotransactionIceShatterFinisher","","","",[679],[],"",[7546],"","","",0,0,0,"[""frameupper""]",2,"",0,0
 35,"MicrotransactionPillarOfFlameOnKill","","Delay( 2.00,\r\n{\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/on_kill/PillarOfFlame/epk/body_burnt_burst.epk\"", 4.0 );\r\n} );\r\nDelay( 4.00,\r\n{\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/on_kill/PillarOfFlame/epk/disintegrate_down.epk\"");\r\n    AddEffectPack( \""Metadata/Effects/Microtransactions/on_kill/PillarOfFlame/epk/disintegrate_down_idle.epk\"");\r\n} );","",[680],[1364],"",[],"","","",0,0,0,"[""frameupper""]",1,"",1000,0
-36,"MTXCrabArmourCrabsOnKill","","","",[],"[1410,1411,1412,1413]","",[7553],"","","",0,0,0,[],0,"",0,0
+36,"MTXCrabArmourCrabsOnKill","","","",[],"[1410,1411,1412,1413]","",[7554],"","","",0,0,0,[],0,"",0,0
 37,"MtxMultislashOnKill","","","",[705],[],"",[],"","","",0,0,0,[],0,"",0,0
-38,"MtxIonCannonOnKill","","","",[],[],"",[7555],"","","",0,0,0,[],0,"",0,0
+38,"MtxIonCannonOnKill","","","",[],[],"",[7556],"","","",0,0,0,[],0,"",0,0
 39,"MtxBloodCycloneOnKill","","","",[706],[],"",[],"","","",0,0,0,[],0,"",0,0
-40,"MtxKaruiElbowDrop","","","",[],[],"",[7556],"","","",0,0,0,[],0,"",0,0
-41,"MtxKaomGroundnPound","","","",[],[],"",[7557],"","","",0,0,0,[],0,"",0,0
+40,"MtxKaruiElbowDrop","","","",[],[],"",[7557],"","","",0,0,0,[],0,"",0,0
+41,"MtxKaomGroundnPound","","","",[],[],"",[7558],"","","",0,0,0,[],0,"",0,0
 42,"MtxVerisiumKnight","","","",[],[1469],"",[],"","","",0,0,0,"[""root""]",1.5,"",0,0
-43,"MtxExplodingHeart","","","",[],[],"",[7561],"","","",0,0,0,[],0,"",0,0
-44,"MicrotransactionHokoRareFinisher","","","",[],[],"",[7662],"","","",0,0,0,[],0,"",0,0
-45,"MicrotransactionBreachClap","","","",[729],[],"",[7675],"","","",0,0,0,"[""<root>""]",1.1,"",1100,0
+43,"MtxExplodingHeart","","","",[],[],"",[7562],"","","",0,0,0,[],0,"",0,0
+44,"MicrotransactionHokoRareFinisher","","","",[],[],"",[7663],"","","",0,0,0,[],0,"",0,0
+45,"MicrotransactionBreachClap","","","",[729],[],"",[7676],"","","",0,0,0,"[""<root>""]",1.1,"",1100,0
 46,"MicrotransactionBrambleGhastTentacle","","","",[734],[1579],"",[],"","","",0,0,0,"[""grp_chest""]",0.25,"",1450,0
-47,"MicrotransactionGuillotineExecutioner","","","",[],[],"",[7696],"","","",0,0,0,[],0,"",0,0
-48,"MicrotransactionSoulCoaster","","","",[733],[],"",[7698],"","","",0,0,0,"[""grp_chest""]",1.25,"",1000,0
+47,"MicrotransactionGuillotineExecutioner","","","",[],[],"",[7697],"","","",0,0,0,[],0,"",0,0
+48,"MicrotransactionSoulCoaster","","","",[733],[],"",[7699],"","","",0,0,0,"[""grp_chest""]",1.25,"",1000,0
 49,"MicrotransactionHusbandWife","","","",[731],[1577],"",[],"","","",0,0,0,"[""frameupper""]",2.5,"",2100,0
 50,"MicrotransactionQueenofFilth","","RemoveEffectPack( 'Metadata/Effects/Spells/hit_and_blood/EPKs/corpseState_Blood.epk' );","",[732],[1578],"",[],"","","",0,0,0,"[""frameupper""]",1.5,"",1500,0
 51,"MicrotransactionDeathSoulstealerFinisher","","","",[735],[1581],"",[],"","","",0,0,0,"[""frameupper""]",0.9,"",2950,0
-52,"MicrotransactionZodiacDragon","","","",[],[],"",[7719],"","","",0,0,0,"[""frameupper""]",2.5,"",0,0
+52,"MicrotransactionZodiacDragon","","","",[],[],"",[7720],"","","",0,0,0,"[""frameupper""]",2.5,"",0,0
 53,"MicrotransactionPhrecianMagistrate","","","",[736],[],"",[],"","","",0,0,0,[],0,"",0,0
 54,"MicrotransactionCryptkeeper","","","",[743],[],"",[],"","","",0,0,0,[],0,"",0,0
 55,"MicrotransactionJusticeUniqueFinisher","","Delay( 0.1, \r\n    {\r\n        this.finisher = FindClosestObject( 'Metadata/Effects/Microtransactions/on_kill/GoddessOfJustice/GoddessJustice' );\r\n        If( this.finisher.CurrentAnimationIndex() == 0,\r\n        {\r\n\t\t\tDelay( 4.075,\r\n\t\t\t\t{\r\n\t\t\t\t\tRemoveEffectPack( 'Metadata/Effects/Spells/hit_and_blood/EPKs/corpseState_Blood.epk' );\r\n\t\t\t\t\tAddEffectPack( 'Metadata/Effects/Microtransactions/on_kill/GoddessOfJustice/epk/disintegrate_down.epk' );\r\n\t\t\t\t} );\r\n        },\r\n        {\r\n\t\t\tDelay( 3.9,\r\n\t\t\t\t{\r\n\t\t\t\t\tAddEffectPack( 'Metadata/Effects/Microtransactions/on_kill/GoddessOfJustice/epk/corpse_soul.epk' );\r\n\t\t\t\t} );\r\n        } );\r\n    } );","",[],[1616],"",[],"","","",0,0,0,[],0,"",0,0
-56,"MicrotransactionCrueltyFinisher","","","",[],[],8,[7811],"","","",0,0,0,"[""frameupper""]",0.75,"",0,0
-57,"MicrotransactionKetzuli","","","",[748],[],"",[7816],"","","",0,0,0,"[""frameupper""]",2,"",1650,0
-58,"MicrotransactionDoryaniClampFinisher","","Delay( 2.5, \r\n    {\r\n\t\tRemoveEffectPack( 'Metadata/Effects/Spells/hit_and_blood/EPKs/corpseState_Blood.epk' );\r\n    } );","",[749],[],"",[7817],"","","",0,0,0,[],0,"",0,0
-59,"MicrotransactionDoryaniDeviceFinisher","","Delay( 1.985, \r\n    {\r\n\t\tRemoveEffectPack( 'Metadata/Effects/Spells/hit_and_blood/EPKs/corpseState_Blood.epk' );\r\n    } );","",[750],[],"",[7818],"","","",0,0,0,[],0,"",1500,0
-60,"MicrotransactionDoryaniFlamethrowerFinisher","","Delay( 0.5, \r\n    {\r\n\t\tRemoveEffectPack( 'Metadata/Effects/Spells/hit_and_blood/EPKs/corpseState_Blood.epk' );\r\n    } );","",[751],[],"",[7819],"","","",0,0,0,[],0,"",500,0
-61,"MicrotransactionDoryaniLaserFinisher","","","",[752],[],"",[7820],"","","",0,0,0,[],0,"",0,0
-62,"MonarchOfTrathusLionFinisher","","","",[],[],"",[7893],"","","",0,0,0,[],0,"",0,0
-63,"HandOfXeshtFinisher","","","",[],[],"",[7932],"","","",0,0,0,[],0,"",0,0
-64,"MicrotransactionGhostlyCannons","","","",[],[],"",[7963],"","","",0,0,0,"[""grp_chest""]",1,"",0,0
-65,"PlummetingChandelierFinisher","","","",[],[],"",[7974],"","","",0,0,0,"[""frameupper""]",0.5,"",0,0
-66,"PhoenixFireFinisher","","","",[787],[],"",[7978],"","","",0,0,0,[],0,"",2100,0
-67,"GiantCentipedeFinisher","","","",[],[],"",[7979],"","","",0,0,0,[],0,"",0,0
+56,"MicrotransactionCrueltyFinisher","","","",[],[],8,[7812],"","","",0,0,0,"[""frameupper""]",0.75,"",0,0
+57,"MicrotransactionKetzuli","","","",[748],[],"",[7817],"","","",0,0,0,"[""frameupper""]",2,"",1650,0
+58,"MicrotransactionDoryaniClampFinisher","","Delay( 2.5, \r\n    {\r\n\t\tRemoveEffectPack( 'Metadata/Effects/Spells/hit_and_blood/EPKs/corpseState_Blood.epk' );\r\n    } );","",[749],[],"",[7818],"","","",0,0,0,[],0,"",0,0
+59,"MicrotransactionDoryaniDeviceFinisher","","Delay( 1.985, \r\n    {\r\n\t\tRemoveEffectPack( 'Metadata/Effects/Spells/hit_and_blood/EPKs/corpseState_Blood.epk' );\r\n    } );","",[750],[],"",[7819],"","","",0,0,0,[],0,"",1500,0
+60,"MicrotransactionDoryaniFlamethrowerFinisher","","Delay( 0.5, \r\n    {\r\n\t\tRemoveEffectPack( 'Metadata/Effects/Spells/hit_and_blood/EPKs/corpseState_Blood.epk' );\r\n    } );","",[751],[],"",[7820],"","","",0,0,0,[],0,"",500,0
+61,"MicrotransactionDoryaniLaserFinisher","","","",[752],[],"",[7821],"","","",0,0,0,[],0,"",0,0
+62,"MonarchOfTrathusLionFinisher","","","",[],[],"",[7894],"","","",0,0,0,[],0,"",0,0
+63,"HandOfXeshtFinisher","","","",[],[],"",[7933],"","","",0,0,0,[],0,"",0,0
+64,"MicrotransactionGhostlyCannons","","","",[],[],"",[7964],"","","",0,0,0,"[""grp_chest""]",1,"",0,0
+65,"PlummetingChandelierFinisher","","","",[],[],"",[7975],"","","",0,0,0,"[""frameupper""]",0.5,"",0,0
+66,"PhoenixFireFinisher","","","",[787],[],"",[7979],"","","",0,0,0,[],0,"",2100,0
+67,"GiantCentipedeFinisher","","","",[],[],"",[7980],"","","",0,0,0,[],0,"",0,0
 68,"TheEndFinisherEffect","","","",[],[1711],"",[],"","","",0,0,0,[],0,"",0,0
 69,"BackttheScrollFinisher","","","",[],[1710],"",[],"","","",0,0,0,[],0,"",0,0
 70,"StygianFinisher","","","",[803],[],"",[],"","","",0,0,0,[],0,"",0,0
@@ -75,6 +75,6 @@
 73,"AbyssalCrystalFinisherEffect","","","",[833],[],"",[],"","","",0,0,0,[],0,"",0,0
 74,"SwordSlashFinisherEffect","","","",[],[1802],"",[],"","","",0,0,0,[],0,"",0,0
 75,"TimeRewindFinisherEffect","","","",[834],[1826],"",[],"","","",0,0,0,[],0,"",0,0
-76,"SharkAttackFinisherEffect","","","",[],[],"",[8223],"","","",0,0,0,[],0,"",210,0
-77,"KaruiDeepwaterFinisherEffect","","","",[],[],"",[8256],"","","",0,0,0,"[""grp_chest""]",0,"",0,1000
-78,"PustuleExplodeFinisherEffect","","this.AddEffectPack( 'Metadata/Effects/Microtransactions/on_kill/PustuleExplode/epk/corpse_fx.epk' );","",[837],[],"",[8237],"","","",0,0,0,[],0,"",0,0
+76,"SharkAttackFinisherEffect","","","",[],[],"",[8225],"","","",0,0,0,[],0,"",210,0
+77,"KaruiDeepwaterFinisherEffect","","","",[],[],"",[8258],"","","",0,0,0,"[""grp_chest""]",0,"",0,1000
+78,"PustuleExplodeFinisherEffect","","this.AddEffectPack( 'Metadata/Effects/Microtransactions/on_kill/PustuleExplode/epk/corpse_fx.epk' );","",[837],[],"",[8239],"","","",0,0,0,[],0,"",0,0

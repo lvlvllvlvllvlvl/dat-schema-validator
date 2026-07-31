@@ -38,4 +38,6 @@ type Chests {
   IsHardmode: bool
   StatsHardmode: [Stats]
   _: bool
+  _: [_]
+  _: bool
 }
