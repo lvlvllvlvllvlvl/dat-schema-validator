@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1785366864,
+  "createdAt": 1785709307,
   "tables": [
     {
       "validFor": 1,
@@ -21830,7 +21830,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "AreaLevel",
           "description": null,
           "array": false,
           "type": "i32",
@@ -23162,7 +23162,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "NPCs"
@@ -23459,7 +23459,7 @@
           "interval": false
         },
         {
-          "name": "Scaling",
+          "name": "ValueMulti",
           "description": null,
           "array": false,
           "type": "f32",
@@ -23472,7 +23472,7 @@
           "interval": false
         },
         {
-          "name": "Name",
+          "name": "Client",
           "description": null,
           "array": false,
           "type": "string",
@@ -23497,7 +23497,7 @@
           "description": null,
           "array": false,
           "type": "i32",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": null,
           "until": null,
@@ -23506,7 +23506,7 @@
           "interval": false
         },
         {
-          "name": "MarkersMultiply",
+          "name": "ValueMultiLessThan",
           "description": null,
           "array": false,
           "type": "f32",
@@ -23645,7 +23645,7 @@
           "description": null,
           "array": false,
           "type": "foreignrow",
-          "unique": false,
+          "unique": true,
           "localized": false,
           "references": {
             "table": "HeistContracts"
@@ -23727,7 +23727,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "JobLevel",
           "description": null,
           "array": false,
           "type": "i32",

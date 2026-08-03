@@ -1,6 +1,6 @@
 # Added 4.1
 type HeistObjectiveValueDescriptions {
-  Tier: i32
-  MarkersMultiply: f32
+  Tier: i32 @unique
+  ValueMultiLessThan: f32
   Description: string @localized
 }

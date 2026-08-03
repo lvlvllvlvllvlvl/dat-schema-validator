@@ -1,6 +1,6 @@
 # Added 4.1
 type HeistNPCs {
-  NPCsKey: NPCs
+  NPCsKey: NPCs @unique
   MonsterVarietiesKey: MonsterVarieties
   SkillLevel_HeistJobsKeys: [HeistJobs]
   PortraitFile: string

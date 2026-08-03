@@ -1,12 +1,12 @@
 # Added 3.12
 type HeistQuestContracts {
-  HeistContractsKey: HeistContracts
+  HeistContractsKey: HeistContracts @unique
   HeistObjectivesKey: HeistObjectives
   HeistNPCsKey: [HeistNPCs]
   HeistJobsKey: HeistJobs
   _: i32
   _: i32
-  _: i32
+  JobLevel: i32
   _: bool
   HeistRoomsKey1: HeistRooms
   WorldAreasKey: WorldAreas
