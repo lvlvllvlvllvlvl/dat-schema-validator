@@ -2,14 +2,9 @@
 type PassiveSkillTreeUIArt {
   Id: string @unique
   _: bool
-  _: string @unique
-  _: bool
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: rid
-  _: rid
-  _: rid
-  _: i32 # All rows empty
-  _: u16 # All rows empty
-  _: bool
+  Ornament: string
+  BackgroundArt: PassiveSkillTreeGroupBackgroundArt
+  PassiveFrame: PassiveSkillTreeNodeFrameArt
+  NotableFrame: PassiveSkillTreeNodeFrameArt
+  KeystoneFrame: PassiveSkillTreeNodeFrameArt
 }

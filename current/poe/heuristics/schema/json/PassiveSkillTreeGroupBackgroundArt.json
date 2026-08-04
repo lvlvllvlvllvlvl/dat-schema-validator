@@ -1,6 +1,6 @@
 [
   {
-    "name": "Id",
+    "name": "",
     "offset": 0,
     "unknownArray": false,
     "unique": true,
@@ -12,20 +12,8 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "Small",
     "offset": 8,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
-  },
-  {
-    "name": "Ornament",
-    "offset": 9,
     "unknownArray": false,
     "unique": true,
     "interval": false,
@@ -36,63 +24,63 @@
     "size": 8
   },
   {
-    "name": "BackgroundArt",
-    "offset": 17,
+    "name": "SmallBlank",
+    "offset": 16,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true,
-        "table": "PassiveSkillTreeGroupBackgroundArt"
-      }
+      "string": {}
     },
-    "size": 16
+    "size": 8
   },
   {
-    "name": "PassiveFrame",
-    "offset": 33,
+    "name": "Medium",
+    "offset": 24,
     "unknownArray": false,
     "unique": true,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true,
-        "table": "PassiveSkillTreeNodeFrameArt"
-      }
+      "string": {}
     },
-    "size": 16
+    "size": 8
   },
   {
-    "name": "NotableFrame",
-    "offset": 49,
+    "name": "MediumBlank",
+    "offset": 32,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "string": {}
+    },
+    "size": 8
+  },
+  {
+    "name": "Large",
+    "offset": 40,
     "unknownArray": false,
     "unique": true,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true,
-        "table": "PassiveSkillTreeNodeFrameArt"
-      }
+      "string": {}
     },
-    "size": 16
+    "size": 8
   },
   {
-    "name": "KeystoneFrame",
-    "offset": 65,
+    "name": "LargeBlank",
+    "offset": 48,
     "unknownArray": false,
-    "unique": true,
+    "unique": false,
     "interval": false,
     "type": {
       "array": false,
-      "key": {
-        "foreign": true,
-        "table": "PassiveSkillTreeNodeFrameArt"
-      }
+      "string": {}
     },
-    "size": 16
+    "size": 8
   }
 ]

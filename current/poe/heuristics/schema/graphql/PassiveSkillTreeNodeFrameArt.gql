@@ -1,0 +1,9 @@
+# Added 3.29
+type PassiveSkillTreeNodeFrameArt {
+  Id: string @unique
+  Normal: string
+  CanAllocate: string
+  Active: string
+  Mask: string @file(ext: ".dds")
+  Header: string
+}
