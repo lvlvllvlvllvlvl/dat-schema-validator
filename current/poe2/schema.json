@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1785833938,
+  "createdAt": 1785864970,
   "tables": [
     {
       "validFor": 1,
@@ -8278,12 +8278,14 @@
         },
         {
           "name": "GameMode",
-          "description": "0: All, 1: Normal, 2: Ruthless",
+          "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "GameModes"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -19502,7 +19504,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "IsProportionalToStackSize",
           "description": null,
           "array": false,
           "type": "bool",
@@ -19530,20 +19532,22 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "GameMode",
           "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "GameModes"
+          },
           "until": null,
           "file": null,
           "files": null,
           "interval": false
         },
         {
-          "name": null,
+          "name": "RancourCost",
           "description": null,
           "array": false,
           "type": "i32",
@@ -105258,12 +105262,14 @@
         },
         {
           "name": "GameMode",
-          "description": "0: All, 1: Normal, 2: Ruthless",
+          "description": null,
           "array": false,
-          "type": "i32",
+          "type": "enumrow",
           "unique": false,
           "localized": false,
-          "references": null,
+          "references": {
+            "table": "GameModes"
+          },
           "until": null,
           "file": null,
           "files": null,
@@ -189597,6 +189603,16 @@
         "NECROPOLIS_HAUNTED",
         "NECROPOLIS_DEVOTED",
         "MEMORY_ALTAR"
+      ]
+    },
+    {
+      "validFor": 3,
+      "name": "GameModes",
+      "indexing": 0,
+      "enumerators": [
+        "ALL",
+        "NORMAL",
+        "RUTHLESS"
       ]
     },
     {
