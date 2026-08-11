@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1785864970,
+  "createdAt": 1786481186,
   "tables": [
     {
       "validFor": 1,
@@ -41872,7 +41872,7 @@
           "interval": false
         },
         {
-          "name": "Skill1",
+          "name": "Skills1",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -41887,7 +41887,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Skills2Count",
           "description": null,
           "array": false,
           "type": "i32",
@@ -41900,7 +41900,7 @@
           "interval": false
         },
         {
-          "name": "Skill2",
+          "name": "Skills2",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -41941,7 +41941,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Skills3Count",
           "description": null,
           "array": false,
           "type": "i32",
@@ -41954,7 +41954,7 @@
           "interval": false
         },
         {
-          "name": "Skill3",
+          "name": "Skills3",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -42023,7 +42023,7 @@
           "interval": false
         },
         {
-          "name": "BuildName",
+          "name": "Name",
           "description": null,
           "array": false,
           "type": "string",
@@ -42049,7 +42049,7 @@
           "interval": false
         },
         {
-          "name": "Infamous",
+          "name": "IsInfamous",
           "description": null,
           "array": false,
           "type": "bool",
@@ -42133,7 +42133,7 @@
           "interval": false
         },
         {
-          "name": "BuildStats",
+          "name": "ExtraStats",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -42183,7 +42183,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Value1",
           "description": null,
           "array": false,
           "type": "i32",
@@ -42196,7 +42196,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Value2",
           "description": null,
           "array": false,
           "type": "i32",
@@ -42209,7 +42209,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "Value3",
           "description": null,
           "array": false,
           "type": "i32",
@@ -42673,56 +42673,10 @@
     },
     {
       "validFor": 3,
-      "name": "MercenaryRenownLevels",
-      "columns": [
-        {
-          "name": "RenownLevel",
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": null,
-          "description": null,
-          "array": false,
-          "type": "i32",
-          "unique": false,
-          "localized": false,
-          "references": null,
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        }
-      ],
-      "tags": []
-    },
-    {
-      "validFor": 3,
       "name": "MercenarySkills",
       "columns": [
         {
-          "name": "Id",
+          "name": "GrantedEffect",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -42767,7 +42721,7 @@
           "interval": false
         },
         {
-          "name": "SecondaryGrantedEffect",
+          "name": "EncounterGrantedEffect",
           "description": null,
           "array": false,
           "type": "foreignrow",
@@ -42808,7 +42762,7 @@
           "interval": false
         },
         {
-          "name": null,
+          "name": "RequiredLevel",
           "description": null,
           "array": false,
           "type": "i32",
@@ -42994,7 +42948,7 @@
           "interval": false
         },
         {
-          "name": "Stat",
+          "name": "Stats",
           "description": null,
           "array": true,
           "type": "foreignrow",
@@ -43076,7 +43030,7 @@
           "interval": false
         },
         {
-          "name": "Variant",
+          "name": "Tier",
           "description": null,
           "array": false,
           "type": "i32",

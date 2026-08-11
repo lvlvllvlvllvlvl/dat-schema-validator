@@ -2,24 +2,24 @@
 type MercenaryBuilds {
   Id: string @unique
   Class: MercenaryClasses
-  Skill1: [MercenarySkills]
-  _: i32
-  Skill2: [MercenarySkills]
+  Skills1: [MercenarySkills]
+  Skills2Count: i32
+  Skills2: [MercenarySkills]
   _: i32
   _: [_] # All rows empty
-  _: i32
-  Skill3: [MercenarySkills]
+  Skills3Count: i32
+  Skills3: [MercenarySkills]
   _: [string]
   Tags: [Tags]
   AIFile: string
   HASH16: u16
-  BuildName: string @localized
+  Name: string @localized
   _: i32
-  Infamous: bool
+  IsInfamous: bool
   IdleSkill: MercenarySkills
   _: string
   _: [string]
   Achievements: [AchievementItems]
   WieldableTypes: [MercenaryWieldableTypes]
-  BuildStats: [MercenaryBuildExtraStats]
+  ExtraStats: [MercenaryBuildExtraStats]
 }

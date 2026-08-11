@@ -4,13 +4,13 @@ type MercenarySupports {
   _: i32
   _: i32
   _: i32
-  Stat: [Stats]
+  Stats: [Stats]
   StatValues: [i32]
   Name: string @localized
   SupportFamily: MercenarySupportFamilies
   HASH16: u16
   GemIcon: string
-  Variant: i32
+  Tier: i32
   _: [_] # All rows empty
   _: [_] # All rows empty
 }
