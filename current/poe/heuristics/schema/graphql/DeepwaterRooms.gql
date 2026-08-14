@@ -15,7 +15,7 @@ type DeepwaterRooms {
   Stats: [Stats]
   StatValues: [i32]
   _: DeepwaterRooms
-  _: bool
+  Special: bool
   AchievementItems: [AchievementItems]
   _: bool
 }
