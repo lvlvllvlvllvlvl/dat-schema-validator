@@ -10,4 +10,5 @@ type Strongboxes {
   BasicSpawnChanceStat: Stats
   RequiredSpawnStat: [Stats]
   BlockingSpawnStat: [Stats]
+  _: bool
 }

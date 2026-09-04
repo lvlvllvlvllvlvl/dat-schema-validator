@@ -8,7 +8,7 @@
 6,"FirstForm","First Form","Première forme","Erste Form","第一形態","1차 형태","Primeira Forma","Первая форма","Primera forma","ร่างแรก","第一型態",1,1,1
 7,"SecondForm","Second Form","Deuxième forme","Zweite Form","第二形態","2차 형태","Segunda Forma","Вторая форма","Segunda forma","ร่างสอง","第二型態",1,1,1
 8,"InitialStrike","Initial Strike","Frappe initiale","Erstschlag","第一ストライク","최초 타격","Golpe Inicial","Первый удар","Golpe inicial","ฟาดเริ่มแรก","首次打擊",1,1,1
-9,"FinalStrike","Final Strike","Frappe finale","Letzter Schlag","最終ストライク","최후 타격","Golpe Final","Завершающий удар","Golpe final","ฟาดสุดท้าย","最終打擊",1,1,1
+9,"FinalStrike","Final Strike","Frappe finale","Finaler Schlag","最終ストライク","최후 타격","Golpe Final","Завершающий удар","Golpe final","ฟาดสุดท้าย","最終打擊",1,1,1
 10,"DamageOverTime","Damage over Time","Dégâts sur la durée","Schaden über Zeit","継続ダメージ","지속 피해","Dano Degenerativo","Постепенный урон","Daño degenerativo","ความเสียหายต่อเนื่อง","持續傷害",1,1,1
 11,"Beam","Beam","Rayon","Strahl","ビーム","광선","Feixe","Луч","Haz","ลำแสง","射線",1,1,1
 12,"Base","Base","Base","Basis","基礎","기본","Base","Базовый","Base","พื้นฐาน","基礎",1,1,1
@@ -33,7 +33,7 @@
 31,"CastOnFrostbolt","Cast on Frostbolt","Lancé sur Globe de givre","Zaubern von Frostkugel","フロストボルト時キャスト","서리 구체 시 시전","Conjurar em Seta Gélida","Сотворение на Морозном шаре","Lanzar sobre Descarga de escarcha","ร่ายบนบอลน้ำแข็ง","隨寒冰彈施放",1,1,1
 32,"Nova","Nova","Nova","Nova","ノヴァ","폭발","Nova","Кольцо","Nova","กระจาย","新星",1,1,1
 33,"NormalStrike","Normal Strikes","Frappes normales","Normale Schläge","通常ストライク","일반 타격","Golpes Normais","Обычные удары","Golpes normales","ฟาดธรรมดา","一般打擊",1,1,1
-34,"PerfectStrike","Perfect Strike","Frappe parfaite","Perfekter Schlag","完全ストライク","완벽한 타격","Golpe Perfeito","Идеальный удар","Golpe perfecto","ฟาดตรงจังหวะ","完美打擊",1,1,1
+34,"PerfectStrike","Perfect Strike","Frappe parfaite","Perfekter Schlag","完全ストライク","완벽한 타격","Golpe Perfeito","Идеальный удар","Golpe perfecto","ฟาดไร้พลาด","完美打擊",1,1,1
 35,"Collision","Collision","Collision","Kollision","衝突","충돌","Colisão","Столкновение","Colisión","การชน","碰撞",1,1,1
 36,"Vines","Vines","Lianes","Ranken","ツタ","덩굴","Vinhas","Лозы","Enredaderas","เถาวัลย์","藤蔓",1,1,1
 37,"Support","Support","Soutien","Unterstützung","サポート","보조","Reforço","Поддержка","Asistencia","เสริม","輔助",1,1,1
@@ -57,7 +57,7 @@
 55,"Illusion","Illusion","Illusion","Illusion","幻影","환상","Ilusão","Иллюзия","Ilusión","ร่างลวงตา","幻影",1,1,1
 56,"VoidIllusion","Void Illusion","Illusion du Néant","Leerenillusion","ヴォイドイリュージョン","공허 환상","Ilusão Vazia","Иллюзия пустоты","Ilusión de vacío","ห้วงว่างลวงตา","虛空幻影",1,1,1
 57,"Shrapnel","Shrapnel","Shrapnel","Schrapnell","弾片","파편","Estilhaços","Шрапнель","Metralla","สะเก็ดระเบิด","彈片",1,1,1
-58,"GroundEffect","Ground Surface","Surface de sol","Bodenflächen","地表領域","지대 효과","Superfície no Chão","Наземный эффект","Superficie de suelo","พื้นปกคลุม","地面",1,1,1
+58,"GroundEffect","Ground Surface","Surface de sol","Bodenfläche","地表領域","지대 효과","Superfície no Chão","Наземный эффект","Superficie de suelo","พื้นปกคลุม","地面",1,1,1
 59,"ProjectileHideDescription","Projectile","Projectile","Projektil","投射物","투사체","Projétil","Снаряд","Proyectil","โพรเจกไทล์","投射物",1,1,""
 60,"ImpactHideDescription","Impact","Impact","Einschlag","衝撃","충격","Impacto","Воздействие","Choque","กระทบ","衝擊",1,1,""
 61,"Mark","Mark","Marque","Mal","呪印","징표","Marca","Метка","Señal","คำแช่ง","印記",1,1,1
@@ -98,7 +98,7 @@
 96,"Fire","Fire","Feu","Feuer","火","화염","Fogo","Огонь","Fuego","ไฟ","火焰",1,1,1
 97,"Lightning","Lightning","Foudre","Blitz","雷","번개","Eletricidade","Молния","Rayo","สายฟ้า","閃電",1,1,1
 98,"Cold","Cold","Froid","Kälte","冷気","냉기","Frio","Холод","Hielo","น้ำแข็ง","冰冷",1,1,1
-99,"LingeringIgnite","Lingering Ignite","Embrasement persistant","Anhaltende Entzündung","残存する発火","지속되는 점화","Incêndio Persistente","Длительный поджог","Quemadura persistente","ลุกไหม้ ที่มีผลต่อไป","殘留點燃",1,1,1
+99,"LingeringIgnite","Lingering Ignite","Embrasement persistant","Anhaltende Entzündung","残存する発火","지속되는 점화","Incêndio Persistente","Длительный поджог","Quemadura persistente","ลุกไหม้คงอยู่","殘留點燃",1,1,1
 100,"Heal","Heal","Soin","Heilung","癒し","치유","Cura","Исцеление","Curación","รักษา","治療",1,1,1
 101,"PoisonBurst","Poison Burst","Explosion de Poison","Giftexplosion","毒爆発","독 격발","Explosão de Veneno","Вспышка яда","Estallido de veneno","พิษปะทุ","毒素爆發",1,1,1
 102,"Ignite","Ignite","Embrasement rémanent","Entzünden","発火","점화","Incêndio","Поджог","Quemadura","ลุกไหม้","點燃",1,1,1
@@ -115,7 +115,7 @@
 113,"FireWave","Fire Wave","Vague de feu","Feuerwelle","ファイヤーウェーブ","화염 파도","Onda de Fogo","Волна огня","Ola de fuego","คลื่นไฟ","火焰波",1,1,1
 114,"HeavyStun","Heavy Stun","Étourdissement massif","Schwere Betäubung","ヘビースタン","강력 기절","Atordoamento Total","Сильное оглушение","Aturdimiento total","สตันหนัก","沉重暈眩",1,1,1
 115,"Spear","Spear","Lance","Speer","槍","창","Lança","Копьё","Lanza","หอก","長矛",1,1,1
-116,"Detonation","Detonation","Détonation","Detonation","起爆","기폭","Detonação","Детонация","Detonación","การจุุดระเบิด","引爆",1,1,1
+116,"Detonation","Detonation","Détonation","Detonation","起爆","기폭","Detonação","Детонация","Detonación","การจุดระเบิด","引爆",1,1,1
 117,"FireSurge","Fire Surge","Éruption de feu","Feuerwoge","ファイヤーサージ","화염 쇄도","Fúria de Fogo","Всплеск огня","Sobrecarga de fuego","กระแสไฟ","火焰波動",1,1,1
 118,"ColdSurge","Cold Surge","Éruption de froid","Kältewoge","ファイヤーサージ","냉기 쇄도","Fúria de Frio","Всплеск холода","Sobrecarga de hielo","กระแสน้ำแข็ง","冰冷波動",1,1,1
 119,"LightningSurge","Lightning Surge","Éruption de foudre","Blitzwoge","ファイヤーサージ","번개 쇄도","Fúria Elétrica","Всплеск молнии","Sobrecarga de rayo","กระแสสายฟ้า","閃電波動",1,1,1
@@ -157,12 +157,12 @@
 155,"FireInfused","Fire-Infused","Infusé de feu","Feuerinfusioniert","ファイヤーインフューズ","화염 주입","Tem Infusão Quente","Насыщение огнём","Infundido con fuego","ชุบพลังไฟ","火焰灌注",1,1,1
 156,"ColdInfused","Cold-Infused","Infusé de froid","Kälteinfusioniert","コールドインフューズ","냉기 주입","Tem Infusão Fria","Насыщение холодом","Infundida con hielo","ชุบพลังน้ำแข็ง","冰冷灌注",1,1,1
 157,"LightningInfused","Lightning-Infused","Infusé de foudre","Blitzinfusioniert","ライトニングインフューズ","번개 주입","Tem Infusão Elétrica","Насыщение молнией","Infundida con rayo","ชุบพลังสายฟ้า","閃電灌注",1,1,1
-158,"VerisiumInfused","Verisium-Infused","Verisium-Infused","Verisiuminfusioniert","ヴェリシウムインフューズ","베리시움 주입","Impregnado de Verísio","Насыщение веризием","Infundida con verisium","ชุบพลังเวริเซียม","維里西姆灌注",1,1,1
+158,"VerisiumInfused","Verisium-Infused","Imprégné de Vérisium","Verisiuminfusioniert","ヴェリシウムインフューズ","베리시움 주입","Impregnado de Verísio","Насыщение веризием","Infundida con verisium","ชุบพลังเวริเซียม","維里西姆灌注",1,1,1
 159,"Flask","Flask","Flacon","Fläschchen","フラスコ","플라스크","Frasco","Бутыль","Frasco","ขวดยา","藥劑",1,1,1
 160,"AcidicBurst","Acidic Burst","Explosion acide","Säureausbruch","アシッドバースト","산성 격발","Explosão Ácida","Кислотный взрыв","Estallido ácido","ระเบิดกัดพิษ","強酸爆發",1,1,1
 161,"MiniFlask","Mini Flasks","Mini-Flacons","Minifläschchen","ミニフラスコ","마나 플라스크","Minifrascos","Мини-бутыли","Minifrascos","ขวดยาจิ๋ว","小型藥劑",1,1,1
 162,"Core","Core","Noyau","Kern","コア","핵심","Básico","Основа","Núcleo","แก่น","核心",1,1,1
-163,"FieryReclamation","Fiery Reclamation","Récupération ardente","Feurige Eroberung","炎の再生","불타는 교화","Recuperação Ardente","Огненное очищение","Reclamo ardiente","เพลิงเรียกคืน","燃炎回收",1,1,1
+163,"FieryReclamation","Fiery Reclamation","Réclamation ardente","Feurige Eroberung","炎の再生","불타는 교화","Recuperação Ardente","Огненное очищение","Reclamo ardiente","เพลิงเรียกคืน","燃炎回收",1,1,1
 164,"Projectiles","Projectiles","Projectiles","Projektile","投射物","투사체","Projéteis","Снаряды","Proyectiles","โพรเจกไทล์","投射物",1,1,1
 165,"VsMarked","Vs Marked","Contre Marqués","Vs Malträger","対呪印状態の敵","징표 찍힌 상대","Vs. Marcado","Против отмеченных","vs. señalados","ต่อศัตรูที่ถูกแช่ง","對有印記者",1,1,1
 166,"Blast","Blast","Explosion","Stoß","ブラスト","돌풍","Rajada","Взрыв","Explosión","ระเบิด","爆破",1,1,1
@@ -172,7 +172,7 @@
 170,"Leap","Leap","Bond","Sprung","リープスラム","도약","Salto","Наскок","Salto","กระโจน","跳躍",1,1,1
 171,"ApocalypseFire","Meteor","Météore","Meteor","メテオ","유성","Meteoro","Метеор","Meteorito","อุกกาบาต","隕石",1,1,1
 172,"ApocalypseCold","Hailstorm","Averse de grêle","Hagelsturm","ヘイルストーム","우박폭풍","Saraivada de Granizo","Град","Tormenta de granizo","พายุลูกเห็บ","冰雹",1,1,1
-173,"ApocalypseLightningPulse","Crash Lightning","Foudre écrasante","Blitzeinschlag","クラッシュライトニング","충격 번개","Raio Retumbante","Сокрушающая молния","Rayo de choque","ฟ้าคะนอง","雷殞",1,1,1
+173,"ApocalypseLightningPulse","Crash Lightning","Foudre écrasante","Blitzeinschlag","クラッシュライトニング","충격 번개","Raio Retumbante","Сокрушающая молния","Choque de rayo","ฟ้าคะนอง","雷殞",1,1,1
 174,"ApocalypseLightningFinalStrike","Final Strike","Frappe finale","Letzter Schlag","最終ストライク","최후 타격","Golpe Final","Финальный удар","Golpe final","ผ่าสุดท้าย","最終轟擊",1,1,1
 175,"Charge","Charge","Charge","Ansturm","チャージ","돌진","Carga","Заряд","Carga","ชาร์จ","衝鋒",1,1,1
 176,"HolyBlastWave","Holy Blast Wave","Holy Blast Wave","Heilige Schockwelle","ホーリーブラストウェーブ","신성한 폭발의 물결","Onda de Impacto Sagrada","Волна священного взрыва","Oleada de explosión divina","คลื่นพลังระเบิดศักดิ์สิทธิ์","聖威衝波",1,1,1
@@ -188,7 +188,7 @@
 186,"Cackle","Cackle","Gloussement","Geschnatter","嘲笑","큭큭","Gargalhada","Стая","Clan","ฝูง","竊笑",1,1,1
 187,"Rune","Rune","Rune","Rune","ルーン","룬","Runa","Руна","Runa","อักขระ","符文",1,1,1
 188,"Emergence","Emergence","Émergence","Aufkommen","出現","등장","Surgimento","Появление","Surgimiento","ปรากฏการณ์","降臨",1,1,1
-189,"OilGround","Oil Ground","Sol huileux","Öllachen","オイル領域","기름 지대","Chão Oleado","Промасленная земля","Suelo aceitoso","พื้นน้ำมัน","油滑地面",1,1,1
+189,"OilGround","Oil Ground","Sol huileux","Öliger Boden","オイル領域","기름 지대","Chão Oleado","Промасленная земля","Suelo aceitoso","พื้นน้ำมัน","油滑地面",1,1,1
 190,"ChargedMark","Charged Mark","Marque chargée","Geladenes Mal","電荷の呪印","충전된 징표","Marca Carregada","Заряженная метка","Señal cargada","คำแช่งปล่อยประจุ","蓄電印記",1,1,1
 191,"Throw","Throw","Throw","Wurf","投擲","투척","Arremesso","Бросок","Lanzamiento","โยน","投擲",1,1,1
 192,"Physical","Physical","Physique","Physisch","物理","물리","Físico","Физический","Físico","กายภาพ","物理",1,1,1

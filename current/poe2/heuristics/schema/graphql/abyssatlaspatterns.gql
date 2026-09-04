@@ -1,0 +1,7 @@
+type abyssatlaspatterns {
+  _: string @unique
+  _: rid @unique
+  _: i32 # All rows empty
+  _: [_]
+  _: rid @unique
+}

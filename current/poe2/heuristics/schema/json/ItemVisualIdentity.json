@@ -246,563 +246,414 @@
     "size": 8
   },
   {
-    "name": "TwoHandSoundType",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 218,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "WeaponSoundTypes"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 234,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "Pickup_AchievementItems",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 238,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "AchievementItems"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "SMFiles",
+    "type": {
+      "array": true,
+      "string": {}
+    },
     "offset": 254,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "string": {}
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "Identify_AchievementItems",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 270,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "AchievementItems"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "EPKFile",
+    "type": {
+      "array": false,
+      "string": {}
+    },
     "offset": 286,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "Corrupt_AchievementItems",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 294,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "AchievementItems"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "IsAlternateArt",
+    "type": {
+      "array": false,
+      "boolean": true
+    },
     "offset": 310,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 1,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
-  },
-  {
-    "name": "",
     "offset": 311,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "CreateCorruptedJewelAchievementItem",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 312,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "AchievementItems"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "AnimationLocation",
+    "type": {
+      "array": false,
+      "string": {}
+    },
     "offset": 328,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 336,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 344,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 352,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 360,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 368,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 376,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 384,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 392,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 400,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 408,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 416,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 424,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "IsAtlasOfWorldsMapIcon",
+    "type": {
+      "array": false,
+      "boolean": true
+    },
     "offset": 432,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 1,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
-  },
-  {
-    "name": "IsTier16Icon",
     "offset": 433,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "boolean": true
-    },
-    "size": 1
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 434,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 450,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 450,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 451,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "AchievementItems"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 451,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": true,
+      "string": {}
+    },
     "offset": 467,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 483,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 499,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 515,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 531,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 547,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "string": {}
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 563,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
-      "string": {}
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 579,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 587,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
-      "array": false,
-      "string": {}
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 595,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 603,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
-      "array": false,
-      "string": {}
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 611,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 619,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
-      "array": false,
-      "string": {}
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 627,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
-    "offset": 635,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 643,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "Composition",
-    "offset": 651,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -810,321 +661,251 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 651,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "UniqueStat1",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 655,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Stats"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "UniqueStat2",
     "offset": 671,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Stats"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "UniqueStat3",
     "offset": 687,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Stats"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "UniqueStat4",
     "offset": 703,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "Stats"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": true,
+      "string": {}
+    },
     "offset": 719,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 735,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 751,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 767,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 783,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "string": {}
     },
-    "size": 16
-  },
-  {
-    "name": "",
     "offset": 799,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "string": {}
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "AudioEvent",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 815,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "CharacterAudioEvents"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "",
+    "type": {
+      "array": false,
+      "string": {}
+    },
     "offset": 831,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 839,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 847,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 855,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 863,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 871,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 8,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
-  },
-  {
-    "name": "",
     "offset": 879,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "CharacterSkin",
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 887,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "AlternateCharacterSkin"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "OneHandSoundType",
     "offset": 903,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "WeaponSoundTypes"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "DropSoundEffect",
     "offset": 919,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "SoundEffects"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "Animation",
     "offset": 935,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "MiscAnimated"
-      }
-    },
-    "size": 16
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "ShieldHeldAnimatedObject",
+    "type": {
+      "array": false,
+      "string": {}
+    },
     "offset": 951,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "string": {}
-    },
-    "size": 8
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "SheathAnimatedObject",
-    "offset": 959,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "offset": 959,
+    "size": 8,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 967,
+    "size": 1,
+    "unique": false
   }
 ]

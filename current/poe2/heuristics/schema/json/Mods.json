@@ -358,61 +358,52 @@
     "size": 16
   },
   {
-    "name": "MonsterMetadata",
+    "type": {
+      "array": true,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
     "offset": 238,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "offset": 254,
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "MonsterKillAchievements",
-    "offset": 246,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "AchievementItems"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "ChestModType",
     "offset": 262,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "ModType"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "Stat5Value",
     "offset": 278,
-    "unknownArray": false,
-    "unique": false,
-    "interval": true,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -422,114 +413,97 @@
         "size": 4
       }
     },
-    "offset": 282,
+    "offset": 294,
     "size": 4,
     "unique": false
   },
   {
-    "name": "Stat5",
-    "offset": 286,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 298,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Stats"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "FullAreaClear_AchievementItems",
     "offset": 302,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "AchievementItems"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "AchievementItems",
     "offset": 318,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "AchievementItems"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "GenerationWeight_Tags",
     "offset": 334,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "Tags"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "GenerationWeight_Values",
     "offset": 350,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 16
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "ModifyMapsAchievements",
-    "offset": 366,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "AchievementItems"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 366,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "Stat6Value",
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
     "offset": 382,
-    "unknownArray": false,
-    "unique": false,
-    "interval": true,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -539,31 +513,11 @@
         "size": 4
       }
     },
-    "offset": 386,
+    "offset": 398,
     "size": 4,
     "unique": false
   },
   {
-    "name": "Stat6",
-    "offset": 390,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true,
-        "table": "Stats"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "MaxLevel",
-    "offset": 406,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -571,53 +525,65 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 402,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 410,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 406,
+    "size": 16,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 422,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 426,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "CraftingItemClassRestrictions",
-    "offset": 411,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "ItemClasses"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 427,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "MonsterOnDeath",
-    "offset": 427,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "string": {}
     },
-    "size": 8
+    "offset": 443,
+    "size": 8,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 435,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -625,37 +591,22 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 451,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "HeistAchievements",
-    "offset": 439,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "AchievementItems"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "Stat7Value",
     "offset": 455,
-    "unknownArray": false,
-    "unique": false,
-    "interval": true,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
   },
   {
     "type": {
@@ -665,54 +616,43 @@
         "size": 4
       }
     },
-    "offset": 459,
+    "offset": 471,
     "size": 4,
     "unique": false
   },
   {
-    "name": "Stat7",
-    "offset": 463,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 475,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Stats"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "Stat8",
     "offset": 479,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 16,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "Stats"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "Stat8Value",
     "offset": 495,
-    "unknownArray": false,
-    "unique": false,
-    "interval": true,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
+    "size": 16,
+    "unique": false
   },
   {
     "type": {
@@ -722,16 +662,11 @@
         "size": 4
       }
     },
-    "offset": 499,
+    "offset": 511,
     "size": 4,
     "unique": false
   },
   {
-    "name": "InfluenceType",
-    "offset": 503,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -739,41 +674,44 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 515,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "ImplicitTags",
-    "offset": 507,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 519,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "key": {
-        "foreign": true,
-        "table": "Tags"
+        "foreign": true
       }
     },
-    "size": 16
+    "offset": 523,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 523,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 539,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "",
-    "offset": 524,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "integer": {
@@ -781,59 +719,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 528,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 532,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 536,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 540,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -841,14 +731,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 544,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -856,14 +743,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 548,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -871,14 +755,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 552,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -886,14 +767,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 556,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -901,14 +779,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 560,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -916,14 +791,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 564,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -931,14 +803,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 568,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -946,14 +815,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 572,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -961,14 +827,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 576,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -976,14 +839,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 580,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -991,14 +851,11 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "",
     "offset": 584,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -1006,130 +863,150 @@
         "size": 4
       }
     },
-    "size": 4
-  },
-  {
-    "name": "BuffTemplate",
     "offset": 588,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 592,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 596,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 600,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "key": {
-        "foreign": true,
-        "table": "BuffTemplates"
+        "foreign": true
       }
     },
-    "size": 16
-  },
-  {
-    "name": "ArchnemesisMinionMod",
     "offset": 604,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": false
-      }
-    },
-    "size": 8
+    "size": 16,
+    "unique": false
   },
   {
-    "name": "HASH32",
-    "offset": 612,
-    "unknownArray": false,
-    "unique": true,
-    "interval": false,
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 620,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 624,
+    "size": 4,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 628,
+    "size": 4,
+    "unique": true
+  },
+  {
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 632,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 648,
+    "size": 1,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
         "unsigned": true,
-        "size": 4
+        "size": 2
       }
     },
-    "size": 4
+    "offset": 649,
+    "size": 2,
+    "noData": true,
+    "unique": false
   },
   {
-    "name": "BuffTemplate2",
-    "offset": 616,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "BuffTemplates"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "",
-    "offset": 632,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "",
-    "offset": 636,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": true,
-      "key": {
-        "foreign": true,
-        "table": "GrantedEffectsPerLevel"
-      }
-    },
-    "size": 16
-  },
-  {
-    "name": "RadiusJewelType",
-    "offset": 652,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
-    "type": {
-      "array": false,
-      "integer": {
-        "unsigned": false,
-        "size": 4
-      }
-    },
-    "size": 4
-  },
-  {
-    "name": "IsEssenceOnlyModifier",
-    "offset": 656,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
     "type": {
       "array": false,
       "boolean": true
     },
-    "size": 1
+    "offset": 651,
+    "size": 1,
+    "unique": false
   },
   {
-    "name": "SpawnLevel_Override",
-    "offset": 657,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": true,
+      "key": {
+        "foreign": true
+      }
+    },
+    "offset": 652,
+    "size": 16,
+    "noData": true,
+    "unknownArray": true,
+    "unique": false
+  },
+  {
     "type": {
       "array": false,
       "integer": {
@@ -1137,14 +1014,32 @@
         "size": 4
       }
     },
-    "size": 4
+    "offset": 668,
+    "size": 4,
+    "unique": false
   },
   {
-    "name": "SpawnWeight_Values",
-    "offset": 661,
-    "unknownArray": false,
-    "unique": false,
-    "interval": false,
+    "type": {
+      "array": false,
+      "boolean": true
+    },
+    "offset": 672,
+    "size": 1,
+    "unique": false
+  },
+  {
+    "type": {
+      "array": false,
+      "integer": {
+        "unsigned": false,
+        "size": 4
+      }
+    },
+    "offset": 673,
+    "size": 4,
+    "unique": false
+  },
+  {
     "type": {
       "array": true,
       "integer": {
@@ -1152,6 +1047,9 @@
         "size": 4
       }
     },
-    "size": 16
+    "offset": 677,
+    "size": 16,
+    "unknownArray": true,
+    "unique": false
   }
 ]

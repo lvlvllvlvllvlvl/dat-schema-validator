@@ -20,62 +20,58 @@ type ItemVisualIdentity {
   TemplarShape: string
   ShadowShape: string
   ScionShape: string
-  TwoHandSoundType: WeaponSoundTypes
+  _: [_]
   _: i32
-  Pickup_AchievementItems: [AchievementItems]
-  SMFiles: [string] @file(ext: ".sm")
-  Identify_AchievementItems: [AchievementItems]
-  EPKFile: string @file(ext: ".epk")
-  Corrupt_AchievementItems: [AchievementItems]
-  IsAlternateArt: bool
+  _: [_] # All rows empty
+  _: [string]
+  _: [_] # All rows empty
+  _: string
+  _: [_] # All rows empty
   _: bool
-  CreateCorruptedJewelAchievementItem: AchievementItems
-  AnimationLocation: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  IsAtlasOfWorldsMapIcon: bool
-  IsTier16Icon: bool
-  _: [i32]
   _: bool
-  _: [AchievementItems]
+  _: rid
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: bool
+  _: bool
+  _: [_] # All rows empty
+  _: bool
+  _: [_] # All rows empty
   _: [string]
   _: [string]
   _: [string]
   _: [string]
   _: [string]
   _: [string]
-  _: [string]
+  _: [_] # All rows empty
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
   _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  _: string
-  Composition: ItemVisualCompositions
-  UniqueStat1: Stats
-  UniqueStat2: Stats
-  UniqueStat3: Stats
-  UniqueStat4: Stats
+  _: i32
+  _: rid
+  _: rid
+  _: rid
+  _: rid
   _: [string]
   _: [string]
   _: [string]
   _: [string]
   _: [string]
   _: [string]
-  AudioEvent: CharacterAudioEvents
+  _: rid
   _: string
   _: string
   _: string
@@ -83,10 +79,11 @@ type ItemVisualIdentity {
   _: string
   _: string
   _: string
-  CharacterSkin: AlternateCharacterSkin
-  OneHandSoundType: WeaponSoundTypes
-  DropSoundEffect: SoundEffects
-  Animation: MiscAnimated
-  ShieldHeldAnimatedObject: string @file(ext: ".ao")
-  SheathAnimatedObject: string @file(ext: ".ao")
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: string
+  _: string
+  _: bool
 }

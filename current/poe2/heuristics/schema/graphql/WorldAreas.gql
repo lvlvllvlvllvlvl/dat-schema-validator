@@ -60,26 +60,26 @@ type WorldAreas {
   LeagueChances: WorldAreaLeagueChances
   _: rid
   _: i32
-  _: rid
   _: i32
   _: i32
   _: i32
-  Ruleset: Rulesets
-  _: i32
-  _: [WorldAreas]
-  _: [i32]
-  _: [i32]
-  QuestFlags: [QuestFlags]
+  _: bool
+  _: u16 # All rows empty
+  _: bool
+  _: [_]
+  _: [_]
+  _: [_]
+  _: [_]
   _: i32
   _: string @localized
   _: i32
-  _: i32
+  _: i32 # All rows empty
   _: bool
   _: i32
   _: i32
   _: bool
-  _: [rid]
-  _: [i32]
+  _: [_]
+  _: [_]
   _: [_] # All rows empty
-  _: [i32]
+  _: [_]
 }

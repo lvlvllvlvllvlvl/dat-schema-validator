@@ -12,4 +12,5 @@ type EndgameMapPins {
   RitualSelectedEPK: string @file(ext: ".epk")
   DeliriumHighlightEPK: string @file(ext: ".epk")
   AudioAnimation: MiscAnimated
+  _: rid
 }

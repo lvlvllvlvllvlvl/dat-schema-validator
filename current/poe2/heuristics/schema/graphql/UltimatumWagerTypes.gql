@@ -5,4 +5,5 @@ type UltimatumWagerTypes {
   CurrencyItem: CurrencyItems
   Count: i32
   DisplayText: string @localized
+  _: i32 # All rows empty
 }

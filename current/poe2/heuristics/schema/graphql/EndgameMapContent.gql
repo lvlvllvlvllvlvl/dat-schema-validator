@@ -7,6 +7,6 @@ type EndgameMapContent {
   Name: string @localized
   _: i32
   MapObjective: EndgameMapObjectives
-  VisualIdentity: EndgameMapContentVisualIdentity @unique
+  VisualIdentity: EndgameMapContentVisualIdentity
   _: bool
 }

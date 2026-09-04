@@ -1,0 +1,5 @@
+type shapeshiftcharactereffectreplacements {
+  _: rid
+  _: rid @unique
+  _: string @unique
+}
