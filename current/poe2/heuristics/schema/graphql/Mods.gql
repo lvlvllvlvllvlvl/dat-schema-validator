@@ -23,65 +23,62 @@ type Mods @tags(list: ["crafting"]) {
   SpawnWeight_Tags: [ModAuraFlags]
   _: [i32]
   Tags: [Tags]
-  GrantedEffectsPerLevel: [GrantedEffectsPerLevel]
-  AuraFlags: [i32]
-  _: [_]
-  _: string
-  _: [_] # All rows empty
-  _: [_] # All rows empty
+  GrantedEffectsPerLevel: [AchievementItems]
+  AuraFlags: [ModType]
+  _: [i32]
+  MonsterMetadata: Stats
+  MonsterKillAchievements: [AchievementItems]
+  ChestModType: [AchievementItems]
+  Stat5Value: Tags
   _: i32
+  Stat5: AchievementItems
+  FullAreaClear_AchievementItems: [AchievementItems]
+  AchievementItems: [Stats]
+  GenerationWeight_Tags: [Tags]
+  GenerationWeight_Values: [i32]
+  ModifyMapsAchievements: [ItemClasses]
+  Stat6Value: i32
   _: i32
-  _: rid
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: [_] # All rows empty
-  _: [_] # All rows empty
+  Stat6: AchievementItems
+  MaxLevel: i32
+  _: Stats
+  CraftingItemClassRestrictions: [Stats]
+  MonsterOnDeath: string
+  _: InfluenceTypes
+  HeistAchievements: [Tags]
+  Stat7Value: i32
   _: i32
+  Stat7: Stats
+  Stat8: Stats
+  Stat8Value: i32
   _: i32
-  _: rid
-  _: i32
-  _: bool
-  _: [_] # All rows empty
-  _: string
-  _: i32
-  _: [_] # All rows empty
-  _: i32
-  _: i32
-  _: rid
-  _: rid
-  _: i32
-  _: i32
-  _: i32
-  _: [_]
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: rid
-  _: i32
-  _: i32
-  _: i32 @unique
-  _: [_]
-  _: bool
-  _: u16 # All rows empty
-  _: bool
-  _: [_] # All rows empty
-  _: i32
+  InfluenceType: i32
+  ImplicitTags: [Tags]
   _: bool
   _: i32
-  _: [_]
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: i32
+  _: BuffTemplates
+  _: Mods
+  _: i32
+  _: BuffTemplates
+  _: i32
+  _: GrantedEffectsPerLevel
+  _: i32
+  _: i32
+  BuffTemplate: BuffTemplates
+  ArchnemesisMinionMod: Mods
+  HASH32: u32 @unique
+  BuffTemplate2: [BuffTemplates]
+  _: i32
+  _: [GrantedEffectsPerLevel]
+  RadiusJewelType: i32
+  IsEssenceOnlyModifier: bool
+  SpawnLevel_Override: i32
+  SpawnWeight_Values: [i32]
 }
