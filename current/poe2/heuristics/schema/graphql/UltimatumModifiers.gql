@@ -19,14 +19,13 @@ type UltimatumModifiers {
   MapStats: [Stats]
   MapStatValues: [i32]
   MapMods: [Mods]
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: i32 # All rows empty
-  _: [_]
   _: i32
   _: i32
+  _: i32
+  PreviousTiers: [UltimatumModifiers]
+  NextTier: UltimatumModifiers
   _: bool
-  _: [_]
+  _: [i32]
   _: i32
   _: i32
 }
