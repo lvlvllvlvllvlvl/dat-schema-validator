@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "createdAt": 1788719005,
+  "createdAt": 1788816653,
   "tables": [
     {
       "validFor": 1,
@@ -178270,36 +178270,6 @@
           "interval": false
         },
         {
-          "name": "SapphirePrefix",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "Mods"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
-          "name": "SapphireSuffix",
-          "description": null,
-          "array": false,
-          "type": "foreignrow",
-          "unique": false,
-          "localized": false,
-          "references": {
-            "table": "Mods"
-          },
-          "until": null,
-          "file": null,
-          "files": null,
-          "interval": false
-        },
-        {
           "name": "EmeraldPrefix",
           "description": null,
           "array": false,
@@ -178316,6 +178286,36 @@
         },
         {
           "name": "EmeraldSuffix",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Mods"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SapphirePrefix",
+          "description": null,
+          "array": false,
+          "type": "foreignrow",
+          "unique": false,
+          "localized": false,
+          "references": {
+            "table": "Mods"
+          },
+          "until": null,
+          "file": null,
+          "files": null,
+          "interval": false
+        },
+        {
+          "name": "SapphireSuffix",
           "description": null,
           "array": false,
           "type": "foreignrow",
