@@ -68,7 +68,7 @@ type MonsterVarieties {
   Part1_Mods: [Mods]
   Part2_Mods: [Mods]
   Endgame_Mods: [Mods]
-  _: rid
+  _: AchievementItems
   _: i32
   _: i32
   _: [rid]
@@ -76,7 +76,7 @@ type MonsterVarieties {
   _: i32
   SinkAnimation_AOFile: string @file(ext: ".ao")
   _: bool
-  _: [rid]
+  _: [i32]
   _: bool
   _: bool
   _: bool

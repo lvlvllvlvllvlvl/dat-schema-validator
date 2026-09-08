@@ -2,8 +2,8 @@
 type MercenaryBuildExtraStats {
   Id: string @unique
   Stat: Stats
-  Value1: i32
-  Value2: i32
-  Value3: i32
+  Level24: i32
+  Level68: i32
+  Level84: i32
   Category: MercenaryBuildStatsCategories
 }

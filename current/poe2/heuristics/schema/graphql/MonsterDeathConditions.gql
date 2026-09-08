@@ -12,12 +12,10 @@ type MonsterDeathConditions {
   Mods: [Mods]
   _: i32
   _: bool
-  _: [_]
+  Animation: [Animation]
   _: i32
-  _: rid
-  _: rid
+  ActiveSkill1: ActiveSkills
+  ActiveSkill2: ActiveSkills
   _: i32
-  _: bool
-  _: u16 # All rows empty
-  _: bool
+  _: i32
 }

@@ -2,7 +2,7 @@
 type Commands {
   Id: string @unique
   Command: string @localized
-  _: bool
+  SendsGenericCommandPacket: bool
   EnglishCommand: string
   Description: string @localized
   _: bool

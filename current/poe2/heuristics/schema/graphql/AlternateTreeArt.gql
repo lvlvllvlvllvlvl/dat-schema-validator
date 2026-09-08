@@ -2,6 +2,6 @@
 type AlternateTreeArt {
   TreeVersion: AlternateTreeVersions @unique
   UIArt: PassiveSkillTreeUIArt
-  MasteryArt: PassiveSkillTreeMasteryArt
+  KeystoneFrameArt: PassiveSkillTreeMasteryArt
   JewelRadiiArt: PassiveJewelRadiiArt
 }

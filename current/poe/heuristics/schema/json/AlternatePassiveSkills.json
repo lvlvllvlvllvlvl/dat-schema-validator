@@ -380,14 +380,18 @@
     "size": 4
   },
   {
+    "name": "NodeSounds",
+    "offset": 168,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeSounds"
       }
     },
-    "offset": 168,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

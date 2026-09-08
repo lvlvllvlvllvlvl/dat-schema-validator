@@ -3,6 +3,6 @@ type MiscAnimatedArtVariations {
   Id: string
   Animation: [MiscAnimated]
   _: i32
-  _: i32
+  Variant: i32
   Stats: Stats
 }

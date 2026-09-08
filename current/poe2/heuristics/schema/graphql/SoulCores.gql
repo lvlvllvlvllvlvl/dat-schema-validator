@@ -7,9 +7,9 @@ type SoulCores {
   Type: SoulCoreTypes
   TierHigher: SoulCores
   IsSocketBound: bool
-  _: bool
-  _: bool
-  _: bool
+  CanSocketInMartialArtistSlots: bool
+  CanSocketInUniqueItems: bool
+  CanSocketInJewellery: bool
   ExtraDescription: ClientStrings2
   _: bool
   CanSocketInCorruptedSanctified: bool

@@ -1,23 +1,24 @@
 # Added 4.1
 type Stats @tags(list: ["crafting"]) {
   Id: string @unique
-  _: bool
+  "Sends changes to registered external stat listeners"
+  IsPublic: bool
   IsLocal: bool
   IsWeaponLocal: bool
   Semantic: StatSemantics
-  _: bool
+  "Routes changes into the party-visible stat update list"
+  IsParty: bool
   IsVirtual: bool
   MainHandAlias_Stat: Stats
   OffHandAlias_Stat: Stats
-  _: bool
+  "Propagates changes into child or layered stat containers for recalculation"
+  IsProxied: bool
   HASH32: u32
   BelongsActiveSkills: [ActiveSkills] @ref(column: "Id")
   Category: PassiveSkillStatCategories
   _: bool
-  _: bool
-  """
-  If not, displayed in advanced mod description as " — Unscalable Value"
-  """
+  "Marks stats that are registered by ApplyDamageFunctions"
+  IsApplyDamageFunctionStat: bool
   IsScalable: bool
   ContextFlags: [VirtualStatContextFlags]
   DotFlag: [VirtualStatContextFlags]

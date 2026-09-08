@@ -1,0 +1,8 @@
+# Added 4.5
+type AbyssAtlasPatterns {
+  Id: string @unique
+  _: i32
+  ContentType: EndgameMapContent
+  Mods: [Mods]
+  Animation: MiscAnimated
+}

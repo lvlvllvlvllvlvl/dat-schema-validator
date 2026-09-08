@@ -1,9 +1,0 @@
-# Added 4.5
-type ritualworldareagroups {
-  _: rid @unique
-  _: i32
-  _: [_]
-  _: rid @unique
-  _: [_]
-  _: bool
-}

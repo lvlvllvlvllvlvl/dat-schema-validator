@@ -165,14 +165,18 @@
     "size": 16
   },
   {
+    "name": "",
+    "offset": 152,
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "MiscAnimated"
       }
     },
-    "offset": 152,
-    "size": 16,
-    "unique": false
+    "size": 16
   }
 ]

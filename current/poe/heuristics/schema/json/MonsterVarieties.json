@@ -27,7 +27,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "MovementSpeed",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -919,7 +919,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "AchievementItems"
       }
     },
     "size": 16
@@ -1031,8 +1032,9 @@
     "interval": false,
     "type": {
       "array": true,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "size": 16

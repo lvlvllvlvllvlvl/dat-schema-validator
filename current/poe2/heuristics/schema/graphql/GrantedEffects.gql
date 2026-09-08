@@ -24,7 +24,8 @@ type GrantedEffects {
   _: bool
   RegularVariant: GrantedEffects
   _: bool
-  _: i32
+  "Used as the ID for tables like GeometryAttack"
+  SkillID: i32
   _: i32
   _: i32
   _: bool

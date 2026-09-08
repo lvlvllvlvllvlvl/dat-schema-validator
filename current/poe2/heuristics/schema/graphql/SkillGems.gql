@@ -8,8 +8,8 @@ type SkillGems @tags(list: ["item:def"]) {
   IsVaalVariant: bool
   GlobalSkillLevelStat: Stats
   GemType: i32
-  _: bool
-  _: bool
+  RegisterPrimaryGrantedEffect: bool
+  RegisterSecondaryGrantedEffect: bool
   AwakenedVariant: SkillGems
   RegularVariant: SkillGems
   GemColour: i32

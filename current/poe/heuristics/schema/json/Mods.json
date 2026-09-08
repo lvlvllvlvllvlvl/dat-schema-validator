@@ -355,15 +355,16 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AuraFlags",
     "offset": 222,
     "unknownArray": false,
     "unique": false,
     "interval": false,
     "type": {
       "array": true,
-      "key": {
-        "foreign": true
+      "integer": {
+        "unsigned": false,
+        "size": 4
       }
     },
     "size": 16
@@ -792,7 +793,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "HasHardmodeStatValues",
     "offset": 524,
     "unknownArray": false,
     "unique": false,
@@ -804,7 +805,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "Stat1MinHardmode",
     "offset": 525,
     "unknownArray": false,
     "unique": false,
@@ -819,7 +820,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat1MaxHardmode",
     "offset": 529,
     "unknownArray": false,
     "unique": false,
@@ -834,7 +835,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat2MinHardmode",
     "offset": 533,
     "unknownArray": false,
     "unique": false,
@@ -849,7 +850,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat2MaxHardmode",
     "offset": 537,
     "unknownArray": false,
     "unique": false,
@@ -864,7 +865,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat3MinHardmode",
     "offset": 541,
     "unknownArray": false,
     "unique": false,
@@ -879,7 +880,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat3MaxHardmode",
     "offset": 545,
     "unknownArray": false,
     "unique": false,
@@ -894,7 +895,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat4MinHardmode",
     "offset": 549,
     "unknownArray": false,
     "unique": false,
@@ -909,7 +910,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat4MaxHardmode",
     "offset": 553,
     "unknownArray": false,
     "unique": false,
@@ -924,7 +925,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat5MinHardmode",
     "offset": 557,
     "unknownArray": false,
     "unique": false,
@@ -939,7 +940,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat5MaxHardmode",
     "offset": 561,
     "unknownArray": false,
     "unique": false,
@@ -954,7 +955,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat6MinHardmode",
     "offset": 565,
     "unknownArray": false,
     "unique": false,
@@ -969,7 +970,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat6MaxHardmode",
     "offset": 569,
     "unknownArray": false,
     "unique": false,
@@ -984,7 +985,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat7MinHardmode",
     "offset": 573,
     "unknownArray": false,
     "unique": false,
@@ -999,7 +1000,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat7MaxHardmode",
     "offset": 577,
     "unknownArray": false,
     "unique": false,
@@ -1014,7 +1015,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat8MinHardmode",
     "offset": 581,
     "unknownArray": false,
     "unique": false,
@@ -1029,7 +1030,7 @@
     "size": 4
   },
   {
-    "name": "",
+    "name": "Stat8MaxHardmode",
     "offset": 585,
     "unknownArray": false,
     "unique": false,
@@ -1133,7 +1134,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "IsUnscalable",
     "offset": 653,
     "unknownArray": false,
     "unique": false,

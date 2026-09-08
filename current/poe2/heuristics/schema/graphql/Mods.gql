@@ -54,23 +54,23 @@ type Mods @tags(list: ["crafting"]) {
   _: i32
   InfluenceType: i32
   ImplicitTags: [Tags]
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: BuffTemplates
-  _: Mods
-  _: i32
-  _: BuffTemplates
-  _: i32
-  _: GrantedEffectsPerLevel
-  _: i32
-  _: i32
+  HasHardmodeStatValues: bool
+  Stat1MinHardmode: i32
+  Stat1MaxHardmode: i32
+  Stat2MinHardmode: i32
+  Stat2MaxHardmode: i32
+  Stat3MinHardmode: i32
+  Stat3MaxHardmode: i32
+  Stat4MinHardmode: i32
+  Stat4MaxHardmode: i32
+  Stat5MinHardmode: BuffTemplates
+  Stat5MaxHardmode: Mods
+  Stat6MinHardmode: i32
+  Stat6MaxHardmode: BuffTemplates
+  Stat7MinHardmode: i32
+  Stat7MaxHardmode: GrantedEffectsPerLevel
+  Stat8MinHardmode: i32
+  Stat8MaxHardmode: i32
   BuffTemplate: BuffTemplates
   ArchnemesisMinionMod: Mods
   HASH32: u32 @unique

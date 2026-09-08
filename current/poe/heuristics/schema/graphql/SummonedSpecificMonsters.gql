@@ -2,15 +2,16 @@
 type SummonedSpecificMonsters {
   Id: i32 @unique
   MonsterVarietiesKey: MonsterVarieties
-  _: i32
+  "Fallback key used to load game-object resources when MonsterVarietiesKey is null"
+  GameObjectRegisterKey: i32
   SummonEffect: MiscAnimated
   _: bool
   _: bool
   _: i32
   _: i32
   _: bool
-  ModFamily: ModFamily
-  _: rid
+  BuffDefinition: BuffDefinitions
+  BuffVisual: BuffVisuals
   _: i32
   _: bool
   _: i32

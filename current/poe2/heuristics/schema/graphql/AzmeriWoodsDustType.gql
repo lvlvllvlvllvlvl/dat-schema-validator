@@ -6,9 +6,9 @@ type AzmeriWoodsDustType {
   WeatherArt: MiscAnimated
   BeamArt: MiscBeams
   Text: string @localized
-  _: rid @unique
-  _: [_]
-  _: rid @unique
-  _: rid @unique
-  _: rid @unique
+  BuffTemplate: BuffTemplates
+  WispAnimations: [MiscAnimated]
+  ReleaseAnimation: MiscAnimated
+  WeatherAnimation: MiscAnimated
+  DustAnimation: Mods
 }

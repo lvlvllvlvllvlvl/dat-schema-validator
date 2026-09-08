@@ -4,17 +4,20 @@ type Projectiles {
   AOFiles: [string] @file(ext: ".ao")
   LoopAnimationIds: [string]
   ImpactAnimationIds: [string]
+  "Raw speed. The client multiplies this by 0.092 to get world units per second"
   ProjectileSpeed: i32
-  _: bool
-  _: i32
-  _: bool
+  "Projectile ends at point where user clicks on the screen"
+  UseTargetLocation: bool
+  CollisionRadius: i32
+  RandomizeVisualRotationOnSpawn: bool
   _: bool
   InheritsFrom: string @files(ext: [".ot", ".otc"])
   _: i32
   MiscAnimated: MiscAnimated
-  _: i32
-  _: bool
-  _: bool
+  "Wider radius used to find collision candidates"
+  CollisionCandidateRadius: i32
+  ApplyProjectileSpeedToAuxiliarySpeed: bool
+  AuxiliarySpeedCannotBeBelowBase: bool
   Stuck_AOFile: [string] @file(ext: ".ao")
   Bounce_AOFile: string @file(ext: ".ao")
   _: i32
@@ -25,11 +28,11 @@ type Projectiles {
   MiscAnimatedArrowNova: MiscAnimated
   _: i32
   _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: [string]
-  _: bool
-  _: [i32]
+  VisualScaleMinPercent: i32
+  VisualScaleMaxPercent: i32
+  MiscEffectPackArtVariation: i32
+  FizzleAnimationNames: [string]
+  InheritOwnerVisualScale: bool
+  CollisionBehaviourFlags: [i32]
   _: string
 }

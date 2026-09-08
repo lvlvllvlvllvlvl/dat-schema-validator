@@ -1,10 +1,11 @@
 # Added 4.1
 type AlternateSkillTargetingBehaviours {
   Id: string @unique
-  _: i32
+  "Maximum targeting distance used when no actor-specific override applies"
+  MaxDistance: i32
   ClientStrings: ClientStrings
-  _: i32
-  _: i32
-  _: i32
-  _: [i32]
+  MaxMineTargetingDistance: i32
+  MaxTrapTargetingDistance: i32
+  MaxTotemTargetingDistance: i32
+  TargetingFlags: [i32]
 }

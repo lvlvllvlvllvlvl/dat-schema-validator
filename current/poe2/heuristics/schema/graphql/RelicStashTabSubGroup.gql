@@ -1,0 +1,7 @@
+# Added 4.5
+type RelicStashTabSubGroup {
+  Id: string @unique
+  ButtonArt: string
+  Name: string @localized
+  SubTab: bool
+}

@@ -1,7 +1,7 @@
 # Added 3.11
 type ModType {
   Name: string @unique
-  _: [Stats]
+  Stats: [Stats]
   ModSellPriceTypesKeys: [ModSellPriceTypes]
   _: bool
 }

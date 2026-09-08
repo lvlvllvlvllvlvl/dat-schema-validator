@@ -1,0 +1,9 @@
+# Added 4.5
+type RitualWorldAreaGroups {
+  _: WorldAreas
+  _: i32
+  Boss: [MonsterVarieties]
+  CompletionQuestFlag: QuestFlags
+  BossStandalone: [MonsterVarieties]
+  _: bool
+}

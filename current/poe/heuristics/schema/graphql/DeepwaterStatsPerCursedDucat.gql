@@ -1,0 +1,6 @@
+# Added 3.29
+type DeepwaterStatsPerCursedDucat {
+  Count: i32
+  Stats: [Stats]
+  StatValues: [i32]
+}

@@ -24,7 +24,7 @@ type Mods @tags(list: ["crafting"]) {
   SpawnWeight_Values: [i32]
   TagsKeys: [Tags]
   GrantedEffectsPerLevelKeys: [GrantedEffectsPerLevel]
-  _: [rid]
+  AuraFlags: [ModAuraFlags]
   MonsterMetadata: string
   MonsterKillAchievements: [AchievementItems]
   ArchnemesisType: [ModType]
@@ -54,28 +54,28 @@ type Mods @tags(list: ["crafting"]) {
   Stat8Max: i32
   InfluenceTypes: InfluenceTypes
   ImplicitTagsKeys: [Tags]
-  _: bool
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
-  _: i32
+  HasHardmodeStatValues: bool
+  Stat1MinHardmode: i32
+  Stat1MaxHardmode: i32
+  Stat2MinHardmode: i32
+  Stat2MaxHardmode: i32
+  Stat3MinHardmode: i32
+  Stat3MaxHardmode: i32
+  Stat4MinHardmode: i32
+  Stat4MaxHardmode: i32
+  Stat5MinHardmode: i32
+  Stat5MaxHardmode: i32
+  Stat6MinHardmode: i32
+  Stat6MaxHardmode: i32
+  Stat7MinHardmode: i32
+  Stat7MaxHardmode: i32
+  Stat8MinHardmode: i32
+  Stat8MaxHardmode: i32
   BuffTemplate1: BuffTemplates
   ArchnemesisMinionMod: Mods
   HASH32: u32
   BuffTemplate2: [BuffTemplates]
   GameMode: GameModes
   GrantedEffectRuthless: [GrantedEffectsPerLevel]
-  _: bool
+  IsUnscalable: bool
 }

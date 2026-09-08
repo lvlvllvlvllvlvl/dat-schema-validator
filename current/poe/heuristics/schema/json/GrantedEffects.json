@@ -108,7 +108,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "HASH32",
     "offset": 70,
     "unknownArray": false,
     "unique": false,
@@ -116,7 +116,7 @@
     "type": {
       "array": false,
       "integer": {
-        "unsigned": false,
+        "unsigned": true,
         "size": 4
       }
     },
@@ -150,7 +150,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "LifeLeechBehaviourCategory",
     "offset": 91,
     "unknownArray": false,
     "unique": false,
@@ -207,7 +207,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "CooldownNotRecoverDuringActive",
     "offset": 116,
     "unknownArray": false,
     "unique": false,
@@ -305,7 +305,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "SkillID",
     "offset": 190,
     "unknownArray": false,
     "unique": false,

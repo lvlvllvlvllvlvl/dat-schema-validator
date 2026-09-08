@@ -10,8 +10,8 @@ type ActiveSkills {
   WeaponRestriction_ItemClassesKeys: [ItemClasses]
   WebsiteDescription: string
   WebsiteImage: string
-  _: bool
-  _: string
+  HideOnWebsite: bool
+  GrantedEffect: string
   _: bool
   SkillTotemId: SkillTotems
   IsManuallyCasted: bool
@@ -19,9 +19,9 @@ type ActiveSkills {
   Output_StatKeys: [Stats]
   MinionActiveSkillTypes: [ActiveSkillType]
   _: bool
-  _: bool
-  _: [Stats]
-  _: i32
+  IsGem: bool
+  SecondarySkillSpecificStats: [Stats]
+  SkillMine: i32
   AlternateSkillTargetingBehavioursKey: AlternateSkillTargetingBehaviours
   _: bool
   AIFile: string @file(ext: ".ai")

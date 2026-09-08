@@ -343,7 +343,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ItemStance",
     "offset": 242,
     "unknownArray": false,
     "unique": false,
@@ -351,7 +351,8 @@
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "ItemStances"
       }
     },
     "size": 16

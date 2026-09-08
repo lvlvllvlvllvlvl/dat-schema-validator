@@ -2,8 +2,8 @@
 type AchievementSetsDisplay {
   Id: i32 @unique
   Title: string @localized
-  _: string
-  _: string @localized
+  Art: string
+  Description: string @localized
   _: bool
   _: string
 }

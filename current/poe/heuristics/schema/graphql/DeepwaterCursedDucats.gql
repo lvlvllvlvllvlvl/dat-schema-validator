@@ -1,0 +1,5 @@
+# Added 3.29
+type DeepwaterCursedDucats {
+  BaseItemType: BaseItemTypes
+  Id: i32 @unique
+}

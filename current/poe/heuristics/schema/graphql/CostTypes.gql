@@ -3,5 +3,5 @@ type CostTypes {
   Id: string @unique
   StatsKey: Stats
   FormatText: string @localized
-  _: i32
+  Divisor: i32
 }

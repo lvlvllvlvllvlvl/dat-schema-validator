@@ -11,8 +11,8 @@ type SkillGems @tags(list: ["item:def"]) {
   _: bool
   _: bool
   _: bool
-  _: bool
-  _: bool
+  RegisterPrimaryGrantedEffect: bool
+  RegisterSecondaryGrantedEffect: bool
   AwakenedVariant: SkillGems
   RegularVariant: SkillGems
   GemColour: i32

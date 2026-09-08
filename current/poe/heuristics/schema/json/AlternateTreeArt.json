@@ -15,58 +15,78 @@
     "size": 16
   },
   {
-    "type": {
-      "array": false,
-      "key": {
-        "foreign": true
-      }
-    },
+    "name": "ConnectionArt",
     "offset": 16,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeConnectionArt"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "KeystoneFrameArt",
     "offset": 32,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "RadiiArt",
     "offset": 48,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveJewelRadiiArt"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "NotableFrameArt",
     "offset": 64,
-    "size": 16,
-    "unique": false
-  },
-  {
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
     "type": {
       "array": false,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
       }
     },
+    "size": 16
+  },
+  {
+    "name": "AscendancyFrameArt",
     "offset": 80,
-    "size": 16,
-    "unique": false
+    "unknownArray": false,
+    "unique": false,
+    "interval": false,
+    "type": {
+      "array": false,
+      "key": {
+        "foreign": true,
+        "table": "PassiveSkillTreeNodeFrameArt"
+      }
+    },
+    "size": 16
   }
 ]

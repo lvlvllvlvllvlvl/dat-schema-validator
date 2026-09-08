@@ -27,7 +27,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "CategoryCode",
     "offset": 24,
     "unknownArray": false,
     "unique": false,
@@ -52,7 +52,7 @@
     "localized": true
   },
   {
-    "name": "",
+    "name": "CraftingBenchTypes",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -60,7 +60,8 @@
     "type": {
       "array": true,
       "key": {
-        "foreign": true
+        "foreign": true,
+        "table": "CraftingBenchTypes"
       }
     },
     "size": 16
