@@ -42,7 +42,7 @@
     "size": 16
   },
   {
-    "name": "ColdDamageStats",
+    "name": "LightningDamageStats",
     "offset": 40,
     "unknownArray": false,
     "unique": false,
@@ -57,7 +57,7 @@
     "size": 16
   },
   {
-    "name": "LightningDamageStats",
+    "name": "ColdDamageStats",
     "offset": 56,
     "unknownArray": false,
     "unique": false,
@@ -303,7 +303,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "PhysicalStunMultiplierStat",
     "offset": 278,
     "unknownArray": false,
     "unique": false,
@@ -318,7 +318,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "FakeHitForAilments",
     "offset": 294,
     "unknownArray": false,
     "unique": false,
@@ -332,7 +332,7 @@
     "size": 8
   },
   {
-    "name": "",
+    "name": "IsFakeHitForAilments",
     "offset": 302,
     "unknownArray": false,
     "unique": false,
@@ -344,7 +344,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "DoubleCritChanceStat",
     "offset": 303,
     "unknownArray": false,
     "unique": false,
@@ -359,7 +359,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "BaseCritChanceStat",
     "offset": 319,
     "unknownArray": false,
     "unique": false,
@@ -374,7 +374,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "PhysicalFreezeMultiplierStat",
     "offset": 335,
     "unknownArray": false,
     "unique": false,
@@ -389,7 +389,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "FireStunMultiplierStat",
     "offset": 351,
     "unknownArray": false,
     "unique": false,
@@ -404,7 +404,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ColdStunMultiplierStat",
     "offset": 367,
     "unknownArray": false,
     "unique": false,
@@ -419,7 +419,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "LightningStunMultiplierStat",
     "offset": 383,
     "unknownArray": false,
     "unique": false,
@@ -434,7 +434,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ChaosStunMultiplierStat",
     "offset": 399,
     "unknownArray": false,
     "unique": false,
@@ -449,7 +449,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "FireFreezeMultiplierStat",
     "offset": 415,
     "unknownArray": false,
     "unique": false,
@@ -464,7 +464,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ColdFreezeMultiplierStat",
     "offset": 431,
     "unknownArray": false,
     "unique": false,
@@ -479,7 +479,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "LightningFreezeMultiplierStat",
     "offset": 447,
     "unknownArray": false,
     "unique": false,
@@ -494,7 +494,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ChaosFreezeMultiplierStat",
     "offset": 463,
     "unknownArray": false,
     "unique": false,
@@ -509,7 +509,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "PhysicalPinMultiplierStat",
     "offset": 479,
     "unknownArray": false,
     "unique": false,
@@ -524,7 +524,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "FirePinMultiplierStat",
     "offset": 495,
     "unknownArray": false,
     "unique": false,
@@ -539,7 +539,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ColdPinMultiplierStat",
     "offset": 511,
     "unknownArray": false,
     "unique": false,
@@ -554,7 +554,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "LightningPinMultiplierStat",
     "offset": 527,
     "unknownArray": false,
     "unique": false,
@@ -569,7 +569,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "ChaosPinMultiplierStat",
     "offset": 543,
     "unknownArray": false,
     "unique": false,
@@ -596,7 +596,7 @@
     "size": 1
   },
   {
-    "name": "",
+    "name": "AccuracyRatingStat",
     "offset": 560,
     "unknownArray": false,
     "unique": false,
@@ -611,7 +611,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AccuracyRatingIncreasedStat",
     "offset": 576,
     "unknownArray": false,
     "unique": false,
@@ -626,7 +626,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AccuracyOverrideFromMinionParentStat",
     "offset": 592,
     "unknownArray": false,
     "unique": false,
@@ -641,7 +641,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AccuracyRatingFinalStat",
     "offset": 608,
     "unknownArray": false,
     "unique": false,
@@ -656,7 +656,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AccuracyUnaffectedByDistanceStat",
     "offset": 624,
     "unknownArray": false,
     "unique": false,
@@ -671,7 +671,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "AlwaysHitStat",
     "offset": 640,
     "unknownArray": false,
     "unique": false,
@@ -686,7 +686,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "CanEvadeStat",
     "offset": 656,
     "unknownArray": false,
     "unique": false,
@@ -701,7 +701,7 @@
     "size": 16
   },
   {
-    "name": "",
+    "name": "EventualCritStat",
     "offset": 672,
     "unknownArray": false,
     "unique": false,
